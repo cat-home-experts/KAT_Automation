@@ -1,0 +1,1092 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkpoint>
+   <description>Demo</description>
+   <name>Checkpoint</name>
+   <tag></tag>
+   <excel-source-info>
+      <is-from-test-data>false</is-from-test-data>
+      <source-url>C:\Users\davidho\Katalon Studio\Start\Data Files\Search_TradeName_Data.xlsx</source-url>
+      <source-type>ExcelFile</source-type>
+      <sheet-name-or-separator>Sheet1</sheet-name-or-separator>
+      <is-using-relative-path>false</is-using-relative-path>
+      <is-using-first-row-as-header>true</is-using-first-row-as-header>
+   </excel-source-info>
+   <taken-date>2019-07-19T11:28:30.539</taken-date>
+   <column-names>
+      <column-name>tradeName</column-name>
+      <column-name>tradeNameLocation</column-name>
+      <column-name>tradeNameLocationVerification</column-name>
+      <column-name>primeContact</column-name>
+      <column-name>tradeClassification</column-name>
+      <column-name>tradeLocation</column-name>
+      <column-name>tradeLocationVerification</column-name>
+      <column-name>error_Messages_Returned</column-name>
+      <column-name>comments</column-name>
+   </column-names>
+   <checkpoint-data><![CDATA[[
+  [
+    {
+      "value": "Foster Tree Care",
+      "checked": false
+    },
+    {
+      "value": "Gosport",
+      "checked": false
+    },
+    {
+      "value": "Gosport, Hampshire",
+      "checked": false
+    },
+    {
+      "value": "Jim Foster",
+      "checked": false
+    },
+    {
+      "value": "Tree Surgeon",
+      "checked": false
+    },
+    {
+      "value": "Gosport",
+      "checked": false
+    },
+    {
+      "value": "Tree Surgeon in Gosport",
+      "checked": true
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "Search on Trade and town - Verified Data Returned",
+      "checked": false
+    }
+  ],
+  [
+    {
+      "value": "Burton Electrical Services",
+      "checked": false
+    },
+    {
+      "value": "Orkney",
+      "checked": false
+    },
+    {
+      "value": "Retford, Nottinghamshire",
+      "checked": false
+    },
+    {
+      "value": "James Burton",
+      "checked": false
+    },
+    {
+      "value": "Tree Surgeon",
+      "checked": false
+    },
+    {
+      "value": "PO12 2HE",
+      "checked": false
+    },
+    {
+      "value": "Tree Surgeon in PO12 2HE",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "Search on Trade and postcode - Verified Data Returned",
+      "checked": false
+    }
+  ],
+  [
+    {
+      "value": "Planvale Services",
+      "checked": false
+    },
+    {
+      "value": "Rugby",
+      "checked": false
+    },
+    {
+      "value": "Banbury, Oxfordshire",
+      "checked": false
+    },
+    {
+      "value": "Andrew Whitaker",
+      "checked": false
+    },
+    {
+      "value": "Electrician",
+      "checked": false
+    },
+    {
+      "value": "Orkney",
+      "checked": false
+    },
+    {
+      "value": "Electrician in Orkney",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "Search on Trade and Island Name - Verified Data Returned",
+      "checked": false
+    }
+  ],
+  [
+    {
+      "value": "Charnocks Automotive",
+      "checked": false
+    },
+    {
+      "value": "Angmering",
+      "checked": false
+    },
+    {
+      "value": "Littlehampton, West Sussex",
+      "checked": false
+    },
+    {
+      "value": "Dan Hunt",
+      "checked": false
+    },
+    {
+      "value": "Plumber",
+      "checked": false
+    },
+    {
+      "value": "Rugby",
+      "checked": false
+    },
+    {
+      "value": "Plumber in Rugby",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "Search on Trade and city - Verified Data Returned",
+      "checked": false
+    }
+  ],
+  [
+    {
+      "value": "Glazing Solutions",
+      "checked": false
+    },
+    {
+      "value": "Selsey",
+      "checked": false
+    },
+    {
+      "value": "Bognor Regis",
+      "checked": false
+    },
+    {
+      "value": "Mr Scott Heyburn",
+      "checked": false
+    },
+    {
+      "value": "Diagnostic Testing",
+      "checked": false
+    },
+    {
+      "value": "Angmering",
+      "checked": false
+    },
+    {
+      "value": "Diagnostic Testing in Angmering",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "Search on Trade and town - Verified Data Returned",
+      "checked": false
+    }
+  ],
+  [
+    {
+      "value": "218020",
+      "checked": false
+    },
+    {
+      "value": "Gosport",
+      "checked": false
+    },
+    {
+      "value": "Gosport, Hampshire",
+      "checked": false
+    },
+    {
+      "value": "Jim Foster",
+      "checked": false
+    },
+    {
+      "value": "Tree Surgeon",
+      "checked": false
+    },
+    {
+      "value": "Gosport",
+      "checked": false
+    },
+    {
+      "value": "Tree Surgeon in Gosport",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "Searches on CAT ID - Verified Retuned Data",
+      "checked": false
+    }
+  ],
+  [
+    {
+      "value": "402921",
+      "checked": false
+    },
+    {
+      "value": "Orkney",
+      "checked": false
+    },
+    {
+      "value": "Retford, Nottinghamshire",
+      "checked": false
+    },
+    {
+      "value": "James Burton",
+      "checked": false
+    },
+    {
+      "value": "Tree Surgeon",
+      "checked": false
+    },
+    {
+      "value": "PO12 2HE",
+      "checked": false
+    },
+    {
+      "value": "Tree Surgeon in PO12 2HE",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "Searches on CAT ID - Verified Retuned Data",
+      "checked": false
+    }
+  ],
+  [
+    {
+      "value": "308682",
+      "checked": false
+    },
+    {
+      "value": "Rugby",
+      "checked": false
+    },
+    {
+      "value": "Banbury, Oxfordshire",
+      "checked": false
+    },
+    {
+      "value": "Andrew Whitaker",
+      "checked": false
+    },
+    {
+      "value": "Electrician",
+      "checked": false
+    },
+    {
+      "value": "Orkney",
+      "checked": false
+    },
+    {
+      "value": "Electrician in Orkney",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "Searches on CAT ID - Verified Retuned Data",
+      "checked": false
+    }
+  ],
+  [
+    {
+      "value": "81557",
+      "checked": false
+    },
+    {
+      "value": "Angmering",
+      "checked": false
+    },
+    {
+      "value": "Littlehampton, West Sussex",
+      "checked": false
+    },
+    {
+      "value": "Dan Hunt",
+      "checked": false
+    },
+    {
+      "value": "Plumber",
+      "checked": false
+    },
+    {
+      "value": "Rugby",
+      "checked": false
+    },
+    {
+      "value": "Plumber in Football",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "Searches on CAT ID - Verified Retuned Data",
+      "checked": false
+    }
+  ],
+  [
+    {
+      "value": "381198",
+      "checked": false
+    },
+    {
+      "value": "Selsey",
+      "checked": false
+    },
+    {
+      "value": "Bognor Regis",
+      "checked": false
+    },
+    {
+      "value": "Mr Scott Heyburn",
+      "checked": false
+    },
+    {
+      "value": "Diagnostic Testing",
+      "checked": false
+    },
+    {
+      "value": "Angmering",
+      "checked": false
+    },
+    {
+      "value": "Diagnostic Testing in Angmering",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "Searches on CAT ID - Verified Retuned Data",
+      "checked": false
+    }
+  ],
+  [
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    }
+  ],
+  [
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    }
+  ],
+  [
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    }
+  ],
+  [
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    }
+  ],
+  [
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    }
+  ],
+  [
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    }
+  ],
+  [
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    }
+  ],
+  [
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    }
+  ],
+  [
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    }
+  ],
+  [
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    }
+  ],
+  [
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    }
+  ],
+  [
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    }
+  ],
+  [
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    }
+  ],
+  [
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    }
+  ],
+  [
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    }
+  ],
+  [
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    }
+  ],
+  [
+    {
+      "value": "Ability (South UK) Ltd",
+      "checked": false
+    },
+    {
+      "value": "Location not found",
+      "checked": false
+    },
+    {
+      "value": "Southborough, Tunbridge Wells, Kent",
+      "checked": false
+    },
+    {
+      "value": "Mr Daniel Moon",
+      "checked": false
+    },
+    {
+      "value": "Fireplaces/Stoves",
+      "checked": false
+    },
+    {
+      "value": "Kent",
+      "checked": false
+    },
+    {
+      "value": "Fireplaces/Stoves in Kent",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "Search on Trade and county -  Location Not Found",
+      "checked": false
+    }
+  ],
+  [
+    {
+      "value": "373735",
+      "checked": false
+    },
+    {
+      "value": "Location not found",
+      "checked": false
+    },
+    {
+      "value": "Southborough, Tunbridge Wells, Kent",
+      "checked": false
+    },
+    {
+      "value": "Mr Daniel Moon",
+      "checked": false
+    },
+    {
+      "value": "Fireplaces/Stoves",
+      "checked": false
+    },
+    {
+      "value": "Kent",
+      "checked": false
+    },
+    {
+      "value": "Fireplaces/Stoves in Kent",
+      "checked": false
+    },
+    {
+      "value": "",
+      "checked": false
+    },
+    {
+      "value": "Searches on CAT ID - Location Not Found",
+      "checked": false
+    }
+  ]
+]]]></checkpoint-data>
+</checkpoint>

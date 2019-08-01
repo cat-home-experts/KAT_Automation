@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Trade_Location_Search - Searches on 5  different trades in 5 different locations</description>
+   <name>Trade_Location_Search</name>
+   <tag>Search</tag>
+   <comment></comment>
+   <testCaseGuid>d0703662-70be-48ac-a983-5e2e63595d20</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ac5ddb1d-2b02-4632-af1d-5f956b0f1b74</id>
+      <masked>false</masked>
+      <name>variable</name>
+   </variable>
+</TestCaseEntity>

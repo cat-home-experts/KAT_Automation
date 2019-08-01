@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Trade_Location_Search_Single - Just 1 row of data used</description>
+   <name>Trade_Location_Search_Single_Conversion</name>
+   <tag>Search</tag>
+   <comment>Enter trade classifiction
+Set and SEARCH TRADE CLASSIFICATION
+Enter trade location
+Set and SEARCH SELECTED LOCATION
+Double click on the search button
+HIT SEARCH
+This line t be removed after stabilising script
+HIT SEARCH - again - 2 different locators used as there is something strange about the button object</comment>
+   <testCaseGuid>d89f9a58-e61a-4c03-9846-c6105b0778bc</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description>Datdriver row iterator</description>
+      <id>8ae05dbf-4e45-4c78-a978-175e12a9bb3b</id>
+      <masked>false</masked>
+      <name>row</name>
+   </variable>
+</TestCaseEntity>

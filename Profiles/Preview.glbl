@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>Preview</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description>Email</description>
+      <initValue>'ron_mactavish@gmail.com'</initValue>
+      <name>EmailAddress</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Trading Name</description>
+      <initValue>'Gutter Snipes'</initValue>
+      <name>CompanyName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Name</description>
+      <initValue>'Ron Mactavish'</initValue>
+      <name>FullName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Category</description>
+      <initValue>'Roofer'</initValue>
+      <name>TradeCategory</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Postcode</description>
+      <initValue>'SO12 4SD'</initValue>
+      <name>Postcode</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Phone Number</description>
+      <initValue>'02380554433'</initValue>
+      <name>ContactNumber</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Preview Environment</description>
+      <initValue>'https://www.preview.checkatrade.com/'</initValue>
+      <name>URL</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

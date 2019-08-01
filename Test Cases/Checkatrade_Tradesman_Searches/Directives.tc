@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Setup and |teardown methods for all test suites and test cases - We can use test listeners but seems to be aan issue with data driven process that affects these methods</description>
+   <name>Directives</name>
+   <tag>directives</tag>
+   <comment></comment>
+   <testCaseGuid>db4fbcfa-88d5-45e5-b658-695a8a5f27c3</testCaseGuid>
+</TestCaseEntity>

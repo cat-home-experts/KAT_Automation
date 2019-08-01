@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>Checkatrade_Live</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description>Live CAT Website</description>
+      <initValue>'https://www.checkatrade.com/'</initValue>
+      <name>URL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Row count on spread sheet iterator</description>
+      <initValue>1</initValue>
+      <name>row</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Flag to run configured test, designed for 1 iteration, to run multiple iterations.</description>
+      <initValue>true</initValue>
+      <name>Standalone_TC_Execution</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

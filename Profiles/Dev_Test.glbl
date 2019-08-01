@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>Dev_Test</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description>Dev Test</description>
+      <initValue>'https://admin.dev.checskatrade.com/'</initValue>
+      <name>URL</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>
