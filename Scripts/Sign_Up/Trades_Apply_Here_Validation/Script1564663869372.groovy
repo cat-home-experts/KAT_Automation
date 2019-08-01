@@ -61,8 +61,10 @@ WebUI.openBrowser('')
 	' Hit the <SUBMIT> Button  | Attempt a COMMITAL of form with no data filled |'
 	'---------------------------------------------------------------------------'
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Hit_Submit'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-
-	
+	'--------------------------------------------------'
+	' Check initial Validation Message(s) are Produced |'
+	'--------------------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	
 	

@@ -16,17 +16,8 @@ import internal.GlobalVariable as GlobalVariable
 //-----------------------------------------------
 // This Field is Required Validation Message     | - Snip - 01/08/2019
 //-----------------------------------------------
-'----------------------------------------------------------------------------------'
-'SUBMIT BUTTON IS OFF THE BOTTOM OF THE PAGE - SO NEED TO SCROLL TO BOTTOM OF PAGE  |'
-'----------------------------------------------------------------------------------'
-WebUI.scrollToElement(findTestObject('Object Repository/Page_Checkatrade Want to build your business/input_membership terms and conditions_ctl00contentbtnSubmit'), 5)
-'-------------'
-WebUI.delay(1)
-'-------------'
-'Click Submit |'
-'-------------'
-WebUI.click(findTestObject('Object Repository/Page_Checkatrade Want to build your business/input_membership terms and conditions_ctl00contentbtnSubmit'))
-//WebUI.click(findTestObject('contentbtnSubmit')) old object reference left for debug purposes
+
+WebUI.verifyTextPresent('This field is required', false)
 
 //-------------------------------------------------------
 // END                                                  | - Snip - 01/08/2019
