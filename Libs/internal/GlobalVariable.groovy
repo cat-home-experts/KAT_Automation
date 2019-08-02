@@ -59,6 +59,11 @@ Profile Web_Office_Live : Web Office Live - Requires Login</p>
      */
     public static Object ContactNumber
      
+    /**
+     * <p>Profile Preview : Invalid emil address with space and format issue</p>
+     */
+    public static Object Invalid_EMail
+     
 
     static {
         try {
@@ -75,6 +80,7 @@ Profile Web_Office_Live : Web Office Live - Requires Login</p>
             TradeCategory = selectedVariables['TradeCategory']
             Postcode = selectedVariables['Postcode']
             ContactNumber = selectedVariables['ContactNumber']
+            Invalid_EMail = selectedVariables['Invalid_EMail']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

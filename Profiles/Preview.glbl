@@ -39,4 +39,9 @@
       <initValue>'https://www.preview.checkatrade.com/'</initValue>
       <name>URL</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Invalid emil address with space and format issue</description>
+      <initValue>'Billy Bob'</initValue>
+      <name>Invalid_EMail</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
