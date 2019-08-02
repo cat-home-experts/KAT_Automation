@@ -13,6 +13,12 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('')
+//-----------------------------------------------
+// Contact number contains invalid charachters  | - Snip - 01/08/2019
+//-----------------------------------------------
 
+WebUI.verifyTextPresent('Please specify a valid phone number', false)
 
+//-------------------------------------------------------
+// END                                                  | - Snip - 01/08/2019
+//-------------------------------------------------------

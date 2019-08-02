@@ -44,4 +44,19 @@
       <initValue>'Billy Bob'</initValue>
       <name>Invalid_EMail</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Alpha Test Data</description>
+      <initValue>'ABC'</initValue>
+      <name>Validation_Data_Alpha</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Validation Data Numeric</description>
+      <initValue>'123'</initValue>
+      <name>Validation_Data_Numeric</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Validation Data Special Characters</description>
+      <initValue>'#£|'</initValue>
+      <name>Validation_Data_Special_Chars</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

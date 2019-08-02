@@ -13,6 +13,12 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('')
+//-------------------------------------------------------------------
+// Sorry, no results found, Failure to look up a trade category     | - Snip - 02/08/2019
+//-------------------------------------------------------------------
 
+WebUI.verifyTextPresent('Sorry, no results found', false)
 
+//-------------------------------------------------------
+// END                                                  | - Snip - 02/08/2019
+//-------------------------------------------------------

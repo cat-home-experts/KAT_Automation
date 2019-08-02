@@ -64,6 +64,21 @@ Profile Web_Office_Live : Web Office Live - Requires Login</p>
      */
     public static Object Invalid_EMail
      
+    /**
+     * <p>Profile Preview : Alpha Test Data</p>
+     */
+    public static Object Validation_Data_Alpha
+     
+    /**
+     * <p>Profile Preview : Validation Data Numeric</p>
+     */
+    public static Object Validation_Data_Numeric
+     
+    /**
+     * <p>Profile Preview : Validation Data Special Characters</p>
+     */
+    public static Object Validation_Data_Special_Chars
+     
 
     static {
         try {
@@ -81,6 +96,9 @@ Profile Web_Office_Live : Web Office Live - Requires Login</p>
             Postcode = selectedVariables['Postcode']
             ContactNumber = selectedVariables['ContactNumber']
             Invalid_EMail = selectedVariables['Invalid_EMail']
+            Validation_Data_Alpha = selectedVariables['Validation_Data_Alpha']
+            Validation_Data_Numeric = selectedVariables['Validation_Data_Numeric']
+            Validation_Data_Special_Chars = selectedVariables['Validation_Data_Special_Chars']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

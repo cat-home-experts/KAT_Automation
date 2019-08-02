@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Ensure that an email address is entered containing @ with no spaces present</description>
    <name>Please_Enter_Valid_Email</name>
-   <tag></tag>
+   <tag>Validation</tag>
    <comment></comment>
    <testCaseGuid>3b99aa3f-614b-4541-88bb-c09f23247f77</testCaseGuid>
 </TestCaseEntity>

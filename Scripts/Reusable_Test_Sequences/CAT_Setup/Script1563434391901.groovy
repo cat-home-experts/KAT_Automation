@@ -46,11 +46,13 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //-----------------------------------------
 'OPEN BROWSER'
-WebUI.openBrowser('')
+WebUI.openBrowser("")
 
 //-----------------------------------------
 'URL - Set from the ENVIRONMENT PROFILE '
 WebUI.navigateToUrl(GlobalVariable.URL)
+
+WebUI.waitForPageLoad(60)
 
 //-----------------------------------------
 'MAXIMIZE BROWSER '

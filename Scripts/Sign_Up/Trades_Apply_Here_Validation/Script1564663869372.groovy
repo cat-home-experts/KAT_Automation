@@ -2,6 +2,7 @@ import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import org.openqa.selenium.interactions.Pause
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -12,8 +13,12 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-
-WebUI.openBrowser('')
+import com.kms.katalon.core.util.KeywordUtil
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.WebElement;
 
 //-----------------------
 // TEST HISTORY HEADER - |                                                                                                               |
@@ -83,10 +88,45 @@ WebUI.openBrowser('')
 	'--------------------------'
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Set_Email_Address'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
+	'---------------------------------------------------------------------------------'
+	' FIll Remaining Empty Fields With Random Data - To Elicit Validation Message(s)  |'
+	'---------------------------------------------------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Set_Random_Data_In_Empty_Fields'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
+	'---------------------------------------------'
+	' Check Trade Category Validation Message     |'
+	'---------------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Validation/Sorry_No_Results_Found'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+	'---------------------------------------------------------'
+	' Check specify a valid phone number Validation Message   |'
+	'---------------------------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Validation/Please_Specify_Valid_Phone_Number'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+	'---------------------------------------------------------'
+	' Check Remaining Fields with NULL Data Validation Message|'
+	'---------------------------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Set_NULL_Data_In_Fields_Containing_Invalid_Data'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
+	
+	'5 fields reporting "This field is required'
+	
+	//WebDriver driver;
+	//int size = driver.findElements(By.xpath("//*[text()='This field is required']")).size();
+	
+	//KeywordUtil.markWarning('This field is required appears!'+ size +'times, as expected')
+	
+	WebUI.delay(50)
+	
+	KeywordUtil.markWarning('No Validation of POSTCODE apart from NULL Entry Check!')
+	KeywordUtil.markWarning('No Validation of COMPANY NAME apart from NULL Entry Check!')
+	KeywordUtil.markWarning('No Validation of YOUR FULL NAME apart from NULL Entry Check!')
 	'---------------------------------------'
 	' Set - Company Name Validation Message |'
 	'---------------------------------------'
-	WebUI.delay(10)
+	
+	
+	
 //	'--------------------------'
 //	' Set - Company Name       |'
 //	'--------------------------'
