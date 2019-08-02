@@ -14,11 +14,11 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.util.KeywordUtil
-import org.openqa.selenium.By
+/*import org.openqa.selenium.By
 import org.openqa.selenium.WebDriver
 import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WebElement;*/
 
 //-----------------------
 // TEST HISTORY HEADER - |                                                                                                               |
@@ -108,7 +108,77 @@ import org.openqa.selenium.WebElement;
 	'---------------------------------------------------------'
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Set_NULL_Data_In_Fields_Containing_Invalid_Data'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
+	'--------------------------------------------------'
+	' Check initial Validation Message(s) are Produced |' // should be 5 of these
+	'--------------------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+	// Proceed to add the remaining 5 items and commit
 	
+	'--------------------------'
+	' Set - Company Name       |'
+	'--------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Set_Company_Name'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
+	'--------------------------'
+	' Set - Full Name          |'
+	'--------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Set_Full_Name'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
+		'--------------------------'
+	' Set - Trade Category     |'
+	'--------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Set_Trade_Category'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
+	'--------------------------'
+	' lookup - Trade Category  |'
+	'--------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Lookup_Trade_Category'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
+	'--------------------------'
+	' Postcode Prompt          |'
+	'--------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Postcode_Prompt'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
+	'--------------------------'
+	' Set - Postcode           |'
+	'--------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Set_Postcode'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
+	'--------------------------'
+	' Set - Contact Number     |'
+	'--------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
+	'--------------------------'
+	' Hit the <SUBMIT> Button  |'
+	'--------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Hit_Submit'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
+	'---------------------------------------------------'
+	'Verify CONGRATULATIONS is reported after form fill '
+	'---------------------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
+	'--------------------------'
+	' Teardown - CLose Browser |'
+	'--------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.STOP_ON_FAILURE)
+	
+	'-------------------------------------------'
+	' Web Office Call to Ensure NEW CASE Opened |'
+	'-------------------------------------------'
+	
+	'------'
+	'TODO  |'
+	'------'
+	
+	WebUI.callTestCase(findTestCase('Web_Office/Case_Opened'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
+	'--------------------------'
+	' END                      |'
+	'--------------------------'
+
 	'5 fields reporting "This field is required'
 	
 	//WebDriver driver;
@@ -116,74 +186,10 @@ import org.openqa.selenium.WebElement;
 	
 	//KeywordUtil.markWarning('This field is required appears!'+ size +'times, as expected')
 	
-	WebUI.delay(50)
+	//WebUI.delay(50)
 	
 	KeywordUtil.markWarning('No Validation of POSTCODE apart from NULL Entry Check!')
 	KeywordUtil.markWarning('No Validation of COMPANY NAME apart from NULL Entry Check!')
 	KeywordUtil.markWarning('No Validation of YOUR FULL NAME apart from NULL Entry Check!')
-	'---------------------------------------'
-	' Set - Company Name Validation Message |'
-	'---------------------------------------'
-	
-	
-	
-//	'--------------------------'
-//	' Set - Company Name       |'
-//	'--------------------------'
-//	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Set_Company_Name'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-//
-//	
-//WebUI.click(findTestObject('Object Repository/Page_Checkatrade Want to build your business/input_membership terms and conditions_ctl00contentbtnSubmit'))
-//
-//WebUI.verifyTextPresent('This field is required', false)
-//
-//WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail'), 
-//    'billy bob')
-//
-//WebUI.verifyTextPresent('Please enter a valid email address', false)
-//
-//WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName'), 
-//    '')
-//
-//WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail'), 
-//    'billy_bob@gstring.com')
-//
-//WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName'), 
-//    'ACompanyName')
-//
-//WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Want to build your business/input_Your Full Name_ctl00contenttbContactName'), 
-//    'a')
-//
-//WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Want to build your business/input_Trade Category_join-now__category_autocomplete_input'), 
-//    'arthuritise')
-//
-//WebUI.verifyTextPresent('Sorry, no results found', false)
-//
-//WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Want to build your business/input_Trade Category_join-now__category_autocomplete_input'), 
-//    'Scaffolde')
-//
-//WebUI.click(findTestObject('Object Repository/Page_Checkatrade Want to build your business/a_Scaffolder'))
-//
-//WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Want to build your business/input_Trade Category_join-now__category_autocomplete_input'), 
-//    'Scaffolder')
-//
-//WebUI.click(findTestObject('Object Repository/Page_Checkatrade Want to build your business/a_Scaffolder'))
-//
-//WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Want to build your business/input_Trade Category_join-now__category_autocomplete_input'), 
-//    'Scaffolder')
-//
-//WebUI.click(findTestObject('Object Repository/Page_Checkatrade Want to build your business/b_Scaffolder'))
-//
-//WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode'), 
-//    'ffffff')
-//
-//WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob'), 
-//    'gggg')
-//
-//WebUI.verifyTextPresent('', false)
-//
-//WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob'), 
-//    '02380223344')
-//
-//WebUI.click(findTestObject('Object Repository/Page_Checkatrade Want to build your business/input_membership terms and conditions_ctl00contentbtnSubmit'))
+
 
