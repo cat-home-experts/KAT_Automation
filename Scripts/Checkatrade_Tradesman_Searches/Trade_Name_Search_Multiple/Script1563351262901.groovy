@@ -49,7 +49,7 @@ import org.openqa.selenium.Keys as Keys
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test'
-for (def row = 1; row <= findTestData('Trader_Name_Test_Data').getRowNumbers(); row++) {
+for (def row = 1; row <= findTestData('Search_CAT_ID_Data (1)').getRowNumbers(); row++) {
     //-----------------------------------------
     // Call Setup Process - Browser Startup, Navigate, Maximize and Close Cookie Nagging Element
     //-----------------------------------------
@@ -57,7 +57,7 @@ for (def row = 1; row <= findTestData('Trader_Name_Test_Data').getRowNumbers(); 
 
     //-----------------------------------------
     //-----------------------------------------
-    'Hit Search Trade Person by Name (Trade Name)'
+    'Hit Search Trade Person by Name (CAT ID)'
     //WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/Hit_Search_Trader')) // changed 26/07/19 new deployment
 	WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name'))
     //WebUI.delay(2)
@@ -70,7 +70,7 @@ for (def row = 1; row <= findTestData('Trader_Name_Test_Data').getRowNumbers(); 
     //-----------------------------------------
     'Enter Trade Name in Text Field'
     WebUI.setText(findTestObject('Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search'), findTestData(
-            'Trader_Name_Test_Data').getValue('tradeName', row))
+            'Search_CAT_ID_Data (1)').getValue('tradeName', row))
 
     //-----------------------------------------
     'Trade Name is Highlighted within the Popup List Box'
@@ -90,10 +90,10 @@ for (def row = 1; row <= findTestData('Trader_Name_Test_Data').getRowNumbers(); 
     //-----------------------------------------
     // Text OFF Page is NOT Detected - Need to scroll down to verify textual content)
     'Verify the Correct Tradesperson is Returned'
-    WebUI.verifyTextPresent(findTestData('Trader_Name_Test_Data').getValue('tradeNameLocationVerification', row), false)
+    WebUI.verifyTextPresent(findTestData('Search_CAT_ID_Data (1)').getValue('tradeNameLocationVerification', row), false)
 
     'Verify the Primary Contacts Name'
-    WebUI.verifyTextPresent(findTestData('Trader_Name_Test_Data').getValue('primeContact', row), false)
+    WebUI.verifyTextPresent(findTestData('Search_CAT_ID_Data (1)').getValue('primeContact', row), false)
 
     //-----------------------------------------
     // Call Teardown Process -

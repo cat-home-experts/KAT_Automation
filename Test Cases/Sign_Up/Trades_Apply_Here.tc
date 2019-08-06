@@ -3,6 +3,37 @@
    <description>SIgn up for a Trade ACCOUNT</description>
    <name>Trades_Apply_Here</name>
    <tag>Sign Up</tag>
-   <comment></comment>
+   <comment>--------------------------------------
+ Hit the &lt;TRADES, APPLY HERE> Button  |
+--------------------------
+ Set - Email Address      |
+--------------------------
+ Set - Company Name       |
+--------------------------
+ Set - Full Name          |
+--------------------------
+ Set - Trade Category     |
+--------------------------
+ lookup - Trade Category  |
+--------------------------
+ Postcode Prompt          |
+--------------------------
+ Set - Postcode           |
+--------------------------
+ Set - Contact Number     |
+--------------------------
+ Hit the &lt;SUBMIT> Button  |
+---------------------------------------------------
+Verify CONGRATULATIONS is reported after form fill 
+--------------------------
+ Teardown - CLose Browser |
+-------------------------------------------
+ Web Office Call to Ensure NEW CASE Opened |
+-------------------------------------------
+------
+TODO  |
+--------------------------
+ END                      |
+--------------------------</comment>
    <testCaseGuid>81b5e26e-5c5d-41bc-b414-02c1a80bfd6f</testCaseGuid>
 </TestCaseEntity>

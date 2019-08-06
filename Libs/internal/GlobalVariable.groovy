@@ -15,6 +15,7 @@ Profile Checkatrade_Live : Live CAT Website
 Profile Current_Dev_Test : Current Dev Test 
 Profile Dev_Test : Dev Test
 Profile Preview : Preview Environment
+Profile Trades_Sign_In_Dashboard : Direct link to Preview Dashboard
 Profile Web_Office_Live : Web Office Live - Requires Login</p>
      */
     public static Object URL
@@ -79,6 +80,21 @@ Profile Web_Office_Live : Web Office Live - Requires Login</p>
      */
     public static Object Validation_Data_Special_Chars
      
+    /**
+     * <p>Profile Preview : URL to compare with the starting URL before navigation</p>
+     */
+    public static Object CurrentUrl
+     
+    /**
+     * <p>Profile Trades_Sign_In_Dashboard : User Name</p>
+     */
+    public static Object Username
+     
+    /**
+     * <p>Profile Trades_Sign_In_Dashboard : Password</p>
+     */
+    public static Object Password
+     
 
     static {
         try {
@@ -99,6 +115,9 @@ Profile Web_Office_Live : Web Office Live - Requires Login</p>
             Validation_Data_Alpha = selectedVariables['Validation_Data_Alpha']
             Validation_Data_Numeric = selectedVariables['Validation_Data_Numeric']
             Validation_Data_Special_Chars = selectedVariables['Validation_Data_Special_Chars']
+            CurrentUrl = selectedVariables['CurrentUrl']
+            Username = selectedVariables['Username']
+            Password = selectedVariables['Password']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

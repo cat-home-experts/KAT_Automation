@@ -59,4 +59,9 @@
       <initValue>'#£|'</initValue>
       <name>Validation_Data_Special_Chars</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>URL to compare with the starting URL before navigation</description>
+      <initValue>''</initValue>
+      <name>CurrentUrl</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
