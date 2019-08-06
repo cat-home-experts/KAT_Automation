@@ -138,7 +138,7 @@ import org.openqa.selenium.WebElement;*/
 	'--------------------------'
 	' Postcode Prompt          |'
 	'--------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Postcode_Prompt'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Postcode_Prompt'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'--------------------------'
 	' Set - Postcode           |'
@@ -188,8 +188,8 @@ import org.openqa.selenium.WebElement;*/
 	
 	//WebUI.delay(50)
 	
-	KeywordUtil.markWarning('No Validation of POSTCODE apart from NULL Entry Check!')
-	KeywordUtil.markWarning('No Validation of COMPANY NAME apart from NULL Entry Check!')
-	KeywordUtil.markWarning('No Validation of YOUR FULL NAME apart from NULL Entry Check!')
+	KeywordUtil.markWarning('No Validation of POSTCODE apart from NULL Entry Check! * FOR INRORMATION ONLY *')
+	KeywordUtil.markWarning('No Validation of COMPANY NAME apart from NULL Entry Check! * FOR INRORMATION ONLY *')
+	KeywordUtil.markWarning('No Validation of YOUR FULL NAME apart from NULL Entry Check! * FOR INRORMATION ONLY *')
 
 

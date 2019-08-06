@@ -52,6 +52,8 @@ WebUI.openBrowser("")
 'URL - Set from the ENVIRONMENT PROFILE '
 WebUI.navigateToUrl(GlobalVariable.URL)
 
+//-----------------------------------------
+'WAIT for browser to load - waits up to 60 seconds before timeout occurs '
 WebUI.waitForPageLoad(60)
 
 //-----------------------------------------

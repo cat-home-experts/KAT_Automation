@@ -49,7 +49,7 @@ import org.openqa.selenium.Keys as Keys
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test'
-for (def row = 1; row <= findTestData('searchTestData').getRowNumbers(); row++) {
+for (def row = 1; row <= findTestData('Trader_Name_Test_Data').getRowNumbers(); row++) {
     //-----------------------------------------
     // Call Setup Process - Browser Startup, Navigate, Maximize and Close Cookie Nagging Element
     //-----------------------------------------
@@ -70,7 +70,7 @@ for (def row = 1; row <= findTestData('searchTestData').getRowNumbers(); row++) 
     //-----------------------------------------
     'Enter Trade Name in Text Field'
     WebUI.setText(findTestObject('Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search'), findTestData(
-            'searchTestData').getValue('tradeName', row))
+            'Trader_Name_Test_Data').getValue('tradeName', row))
 
     //-----------------------------------------
     'Trade Name is Highlighted within the Popup List Box'
@@ -90,10 +90,10 @@ for (def row = 1; row <= findTestData('searchTestData').getRowNumbers(); row++) 
     //-----------------------------------------
     // Text OFF Page is NOT Detected - Need to scroll down to verify textual content)
     'Verify the Correct Tradesperson is Returned'
-    WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeNameLocationVerification', row), false)
+    WebUI.verifyTextPresent(findTestData('Trader_Name_Test_Data').getValue('tradeNameLocationVerification', row), false)
 
     'Verify the Primary Contacts Name'
-    WebUI.verifyTextPresent(findTestData('searchTestData').getValue('primeContact', row), false)
+    WebUI.verifyTextPresent(findTestData('Trader_Name_Test_Data').getValue('primeContact', row), false)
 
     //-----------------------------------------
     // Call Teardown Process -

@@ -81,9 +81,9 @@ import internal.GlobalVariable as GlobalVariable
 	//WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_Search'), FailureHandling.CONTINUE_ON_FAILURE)
 	//------------------------------------------------------------------------------------------------------------------------------------------------
 	'Expected cantantenated text is Returned'
-	WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeLocationVerification', 1), false)
+	WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeLocationVerification', 5), false)
 	
-	WebUI.delay(10)
+	//WebUI.delay(10)
 	//------------------------------------------------------------------------------------------------------------------------------------------------
 	//scrapedSearchResult = WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeLocationVerification', 1), false)
 	//------------------------------------------------------------------------------------------------------------------------------------------------
