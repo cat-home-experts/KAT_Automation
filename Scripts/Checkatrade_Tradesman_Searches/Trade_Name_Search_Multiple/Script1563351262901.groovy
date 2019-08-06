@@ -48,6 +48,7 @@ import org.openqa.selenium.Keys as Keys
 //  THEN -  The Resulting Search Results Page is Returned, Along With a Valid Result                             |
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
+
 'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test'
 for (def row = 1; row <= findTestData('Search_CAT_ID_Data (1)').getRowNumbers(); row++) {
     //-----------------------------------------

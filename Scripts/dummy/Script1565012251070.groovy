@@ -20,33 +20,10 @@ WebUI.navigateToUrl('https://www.preview.checkatrade.com/')
 
 WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/div_close'))
 
-WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/span_apply here'))
+WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_Give feedback                                on a trade youve used'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail'), 
-    'hhhh')
+WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_Which member do you want to review_feedback-form__company_autocomplete_input'), 
+    '1')
 
-WebUI.click(findTestObject('Object Repository/Page_Checkatrade Want to build your business/div_Email AddressPlease enter a valid email address'))
-
-WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName'), 
-    'hhhh')
-
-WebUI.click(findTestObject('Object Repository/Page_Checkatrade Want to build your business/div_Trades Application'))
-
-WebUI.click(findTestObject('Object Repository/Page_Checkatrade Want to build your business/div_Trades Application_1'))
-
-WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail'), 
-    'hhhh@gmail.com')
-
-WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Want to build your business/input_Your Full Name_ctl00contenttbContactName'), 
-    'hhggh ghghhg ghghhgh')
-
-WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Want to build your business/input_Trade Category_join-now__category_autocomplete_input'), 
-    'roofer')
-
-WebUI.setText(findTestObject('Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode'), 'po12 4sd')
-
-WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob'), 
-    '02380565656')
-
-WebUI.click(findTestObject('Object Repository/Page_Checkatrade Want to build your business/input_membership terms and conditions_ctl00contentbtnSubmit'))
+WebUI.closeBrowser()
 

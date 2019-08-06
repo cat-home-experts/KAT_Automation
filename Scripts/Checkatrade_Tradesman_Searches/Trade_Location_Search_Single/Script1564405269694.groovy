@@ -50,6 +50,7 @@ import internal.GlobalVariable as GlobalVariable
 //-----------------------------------------
 'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test\r\n'
 //for (def row = 1; row <= findTestData('searchTestData').getRowNumbers(); row++) {
+	def row = 1
 	//-----------------------------------------
    //Test Listener Manages Startup Processes
 	WebUI.openBrowser('')
@@ -63,11 +64,11 @@ import internal.GlobalVariable as GlobalVariable
 	WebUI.click(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/div_close'))
 	'Set and SEARCH TRADE CLASSIFICATION'
 	WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/input_Search through overrecommended vetted and monitored trades and service providers for free_trade_autocomplete_input'),
-		findTestData('searchTestData').getValue('tradeClassification', 1))
+		findTestData('searchTestData').getValue('tradeClassification', row))
 	//------------------------------------------------------------------------------------------------------------------------------------------------
 	'Set and SEARCH SELECTED LOCATION'
 	WebUI.setText(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_location'),
-		findTestData('searchTestData').getValue('tradeLocation', 1))
+		findTestData('searchTestData').getValue('tradeLocation', row))
 	//------------------------------------------------------------------------------------------------------------------------------------------------
 	
 	'HIT SEARCH'
@@ -81,7 +82,7 @@ import internal.GlobalVariable as GlobalVariable
 	//WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_Search'), FailureHandling.CONTINUE_ON_FAILURE)
 	//------------------------------------------------------------------------------------------------------------------------------------------------
 	'Expected cantantenated text is Returned'
-	WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeLocationVerification', 5), false)
+	WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeLocationVerification', row), false)
 	
 	//WebUI.delay(10)
 	//------------------------------------------------------------------------------------------------------------------------------------------------
