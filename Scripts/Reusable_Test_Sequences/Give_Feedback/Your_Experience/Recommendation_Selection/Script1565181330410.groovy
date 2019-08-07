@@ -12,15 +12,24 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+//--------------------------------------------------------------------
+// Give Feedback - Set Recommendation Yes OR No (Default = Yes)      | - Snip - 07/08/2019
+//--------------------------------------------------------------------
+'Check DEFAULT Setting'
+WebUI.verifyElementChecked(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_Yes'), 1)
 
-WebUI.navigateToUrl('https://www.preview.checkatrade.com/')
+//-------------------------------------------
+'Set Recommendation - Yes or No'
+if (GlobalVariable.YE_Recommendations == "Yes") {
+    WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_Yes'))
+} else {
+    WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_No'))
+}
+//-------------------------------------------
 
-WebUI.click(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/span_on a trade youve used'))
+//------------------------------------
+// END                               | - Snip - 07/08/2019
+//------------------------------------
 
-WebUI.setText(findTestObject('Page_Checkatrade Give your feedback/input_Which member do you want to review_feedback-form__company_autocomplete_input'), 
-    'test account')
 
-WebUI.click(findTestObject('Page_Checkatrade Give your feedback/input_Which member do you want to review_feedback-form__company_autocomplete_input'))

@@ -86,6 +86,11 @@ Profile Web_Office_Live : Web Office Live - Requires Login</p>
     public static Object CurrentUrl
      
     /**
+     * <p>Profile Preview : Give Feedback - Recommend? true OR false</p>
+     */
+    public static Object YE_Recommendations
+     
+    /**
      * <p>Profile Trades_Sign_In_Dashboard : User Name</p>
      */
     public static Object Username
@@ -116,6 +121,7 @@ Profile Web_Office_Live : Web Office Live - Requires Login</p>
             Validation_Data_Numeric = selectedVariables['Validation_Data_Numeric']
             Validation_Data_Special_Chars = selectedVariables['Validation_Data_Special_Chars']
             CurrentUrl = selectedVariables['CurrentUrl']
+            YE_Recommendations = selectedVariables['YE_Recommendations']
             Username = selectedVariables['Username']
             Password = selectedVariables['Password']
             

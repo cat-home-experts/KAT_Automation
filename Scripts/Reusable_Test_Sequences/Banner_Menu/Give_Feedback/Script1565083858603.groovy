@@ -24,12 +24,12 @@ WebUI.click(findTestObject('Object Repository/Page_Checkatrade Find a tradespers
 
 //----------------------------------------
 'Verify "Give your feedback" text is returned when the page loads '
-WebUI.verifyTextPresent('Give your feedback', false)
+//WebUI.verifyTextPresent('Give your feedback', false)
 //----------------------------------------
 
 //----------------------------------------
 'Verify "Which member do you want to review?" text is returned when the page loads '
-WebUI.verifyTextPresent('Which member do you want to review?', false)
+//WebUI.verifyTextPresent('Which member do you want to review?', false)
 //----------------------------------------
 
 //-------------------------------------------------------

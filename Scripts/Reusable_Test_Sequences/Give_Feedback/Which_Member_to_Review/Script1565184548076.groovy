@@ -12,15 +12,23 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+//--------------------------------------------------------------------
+// Give Feedback - Set Recommendation Yes OR No (Default = Yes)      | - Snip - 07/08/2019
+//--------------------------------------------------------------------
 
-WebUI.navigateToUrl('https://www.preview.checkatrade.com/')
+'Peculiarity - a disabled <NEXT> button is on the signin page, you enter criteria and load is automatic'
 
-WebUI.click(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/span_on a trade youve used'))
+//-------------------------------------------
+' Set the Trade Name or CAT ID in the Text Search Field'
+WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_Which member do you want to review_feedback-form__company_autocomplete_input'),
+	'Test Account')
 
-WebUI.setText(findTestObject('Page_Checkatrade Give your feedback/input_Which member do you want to review_feedback-form__company_autocomplete_input'), 
-    'test account')
-
+//-------------------------------------------
+'Submit the search criteria using click'
 WebUI.click(findTestObject('Page_Checkatrade Give your feedback/input_Which member do you want to review_feedback-form__company_autocomplete_input'))
+//-------------------------------------------
+
+//------------------------------------
+// END                               | - Snip - 07/08/2019
+//------------------------------------

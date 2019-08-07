@@ -13,3 +13,61 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+//-----------------------
+// TEST HISTORY HEADER - |
+//-----------------------
+// Any changes to this script, please update the next available row below, with date, in the DATE CREATED column,
+// Your Name in the CREATED BY column, and Finaly, The actual change implemented in the NOTES column.
+//
+//---------------------------------------------------------------------------------------------------------------
+//       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
+//---------------------------------------------------------------------------------------------------------------
+// Prove the function under the GIVE FEEDBACK |                 |                  |                             |
+// header link, Verify each of the defined    |    07/08/2019   |     Dave Horne   |                             |
+// areas is intact and available              |                 |                  |                             |
+//---------------------------------------------------------------------------------------------------------------
+//                                            |                 |                  |                             |
+//---------------------------------------------------------------------------------------------------------------
+//                                            |                 |                  |                             |
+//---------------------------------------------------------------------------------------------------------------
+//                                            |                 |                  |                             |
+//---------------------------------------------------------------------------------------------------------------
+//                                            |                 |                  |                             |
+//---------------------------------------------------------------------------------------------------------------
+//
+//---------------------------------------------------------------------------------------------------------------
+//                                                                                                               |
+//	GIVEN - The Chekatrade Website 'SEARCHPAGE' is Presented on a Client Device                                  |
+//                                                                                                               |
+//	WHEN -  We Click on 'GIVE FEEDBACK' from the header banner on the homepage                                   |
+//                                                                                                               |
+//  THEN -  The GIVE FEEDBACK PORTAL is presented to the user, an entry fied is presented for entering           |
+//          Traders name or CAT ID.                                                                              |
+//                                                                                                               |
+//---------------------------------------------------------------------------------------------------------------
+
+//-----------------------------------------
+// Call Setup Process - Browser Startup, Navigate, Maximize and Close Cookie Nagging Element
+//-----------------------------------------
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
+	//-----------------------------------------
+	'----------------------------------------------------'
+	' Hit the <Give Feedback> link in the header banner  |'
+	'----------------------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Banner_Menu/Give_Feedback'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+	
+	//------------------------------------------------------------------------
+	// * * * * * * *   WIP - Work in progress - todo TODO   * * * * * * *    |
+	//------------------------------------------------------------------------
+	
+
+	'--------------------------'
+	' Teardown - CLose Browser |'
+	'--------------------------'
+	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.STOP_ON_FAILURE)
+
+	
+	'--------------------------'
+	' END                      |'
+	'--------------------------'

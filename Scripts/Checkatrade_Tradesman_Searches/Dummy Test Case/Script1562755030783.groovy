@@ -13,3 +13,42 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://www.preview.checkatrade.com/')
+
+WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/div_close'))
+
+WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_Give feedback                                on a trade youve used'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_Which member do you want to review_feedback-form__company_autocomplete_input'), 
+    'Test Account')
+
+WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_No'))
+
+WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_Yes'))
+
+WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_The agreed price'))
+
+WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_I requested additional work and paid the agreed price'))
+
+WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_More than the agreed price but I was kept informed'))
+
+WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_More than the agreed price but I wasnt kept informed'))
+
+WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_Not applicable - no estimate given'))
+
+WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_The agreed price'))
+
+WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_Yes'))
+
+WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_No'))
+
+WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_Yes'))
+
+WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_No_ctl00contentButton4'))
+
+WebUI.closeBrowser()
+
+
+
