@@ -13,16 +13,16 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-//----------------------------------------------------------------------------------------------------------
-// Set the defined value from the associated spreadsheet into the associated CAT Search Location Text Box   |
-//---------------------------------------------------------------------------------------------------------- 
-'---------------------------------'
+//------------------------------------
+// Scroll - To Footer                | - Snip - 07/08/2019
+//------------------------------------
 
-'Set and SEARCH SELECTED LOCATION'
-
-'---------------------------------'
-WebUI.setText(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_location'), 
-    findTestData('searchTestData').getValue('tradeLocation', GlobalVariable.row))
+//-------------------------------------------
+'Scroll - To Footer on the bottom of the page (sometime off the screen) '
+'Scroll Element into VIEW, as the following text to verify can be off the screen'
+    WebUI.scrollToElement(findTestObject('Page_of_Results/div_see all_footer__van-with-trailer'), 60)
+	WebUI.delay(1)
+//-------------------------------------------
 
 //------------------------------------
 // END                               | - Snip - 07/08/2019

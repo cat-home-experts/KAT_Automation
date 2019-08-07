@@ -13,16 +13,15 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-//----------------------------------------------------------------------------------------------------------
-// Set the defined value from the associated spreadsheet into the associated CAT Search Location Text Box   |
-//---------------------------------------------------------------------------------------------------------- 
-'---------------------------------'
+//-------------------------------------------------------
+// Verification - Required Search Returned as Expected  | - Snip - 07/08/2019
+//-------------------------------------------------------
 
-'Set and SEARCH SELECTED LOCATION'
-
-'---------------------------------'
-WebUI.setText(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_location'), 
-    findTestData('searchTestData').getValue('tradeLocation', GlobalVariable.row))
+// verifies the returns of Classification aagainst Location
+//-------------------------------------------
+'Expected cantantenated text is Returned'
+WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeLocationVerification', GlobalVariable.row), false)
+//-------------------------------------------
 
 //------------------------------------
 // END                               | - Snip - 07/08/2019

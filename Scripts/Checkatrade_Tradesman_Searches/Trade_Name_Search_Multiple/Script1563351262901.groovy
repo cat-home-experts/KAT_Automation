@@ -41,7 +41,7 @@ import org.openqa.selenium.Keys as Keys
 //                                                                                                               |
 //	GIVEN - The Chekatrade Website 'SEARCHPAGE' is Presented on a Client Device                                  |
 //                                                                                                               |
-//	WHEN -  We we Click on 'look up member by name' Below the Trade entry Text box                               |
+//	WHEN -  We Click on 'look up member by name' Below the Trade entry Text box                                  |
 //                                                                                                               |
 //	AND  -	We Enter The Traders 'Business Name' OR 'CAT ID' as Search Criteria and Hit SEARCH                   |
 //                                                                                                               |
@@ -50,57 +50,49 @@ import org.openqa.selenium.Keys as Keys
 //---------------------------------------------------------------------------------------------------------------
 
 'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test'
-for (def row = 1; row <= findTestData('Search_CAT_ID_Data (1)').getRowNumbers(); row++) {
+for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Search_CAT_ID_Data (1)').getRowNumbers(); GlobalVariable.row++) {
     //-----------------------------------------
     // Call Setup Process - Browser Startup, Navigate, Maximize and Close Cookie Nagging Element
     //-----------------------------------------
     WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
+	
+	'---------------------------------------------------------------------'
+	' Select Search on Trader Name (or ID) From Home page/Search Screen   |'
+	'---------------------------------------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Click_Search_Trade_Name'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
-    //-----------------------------------------
-    //-----------------------------------------
-    'Hit Search Trade Person by Name (CAT ID)'
-    //WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/Hit_Search_Trader')) // changed 26/07/19 new deployment
-	WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name'))
-    //WebUI.delay(2)
-    WebUI.waitForPageLoad(60)
+	'---------------------------------------'
+	' Enter Trader Name (or ID) to Search   |'
+	'---------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Enter_Trade_Name'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
+	'---------------------------------------'
+	' Enter Trader Name (or ID) to Search   |'
+	'---------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Search_Trade_Name'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
-    //-----------------------------------------
-    ' Wait for Element '
+	'------------------------------------------'
+	' Scroll to Page Footer to Reveal Results  |'
+	'------------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Scroll_to_Footer'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
-    //WebUI.waitForElementVisible('Object Repository/Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search', 10)
-    //-----------------------------------------
-    'Enter Trade Name in Text Field'
-    WebUI.setText(findTestObject('Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search'), findTestData(
-            'Search_CAT_ID_Data (1)').getValue('tradeName', row))
+	'------------------------------------------'
+	' Verify Correct Location is Returned     |'
+	'------------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Verification_Location'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+		
+	'------------------------------------------'
+	' Verify Primary Contact is Returned     |'
+	'------------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Verification_Primary_Contact'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
+	'--------------------------'
+	' Teardown - CLose Browser |'
+	'--------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.STOP_ON_FAILURE)
 
-    //-----------------------------------------
-    'Trade Name is Highlighted within the Popup List Box'
-
-    //-----------------------------------------
-    'Click on the Page to Refresh Search Results'
-    WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name'))
-
-    //-----------------------------------------
-    //WebUI.delay(2)
-    WebUI.waitForPageLoad(60)
-
-    //-----------------------------------------
-    'Scroll Element into VIEW, as the following text to verify can be off the screen'
-    WebUI.scrollToElement(findTestObject('Page_of_Results/div_see all_footer__van-with-trailer'), 60)
-	WebUI.delay(1)
-    //-----------------------------------------
-    // Text OFF Page is NOT Detected - Need to scroll down to verify textual content)
-    'Verify the Correct Tradesperson is Returned'
-    WebUI.verifyTextPresent(findTestData('Search_CAT_ID_Data (1)').getValue('tradeNameLocationVerification', row), false)
-
-    'Verify the Primary Contacts Name'
-    WebUI.verifyTextPresent(findTestData('Search_CAT_ID_Data (1)').getValue('primeContact', row), false)
-
-    //-----------------------------------------
-    // Call Teardown Process -
-    //-----------------------------------------
-    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.STOP_ON_FAILURE 
-	//------------------------------------------------------------------------------------------------------------------------------------------------
-    )
+	'--------------------------'
+	' END                      |'
+	'--------------------------'
 }
 

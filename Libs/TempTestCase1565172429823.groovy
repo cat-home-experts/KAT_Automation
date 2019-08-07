@@ -14,9 +14,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.m
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.cucumber.keyword.internal.CucumberDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\davidho\\AppData\\Local\\Temp\\Katalon\\Test Cases\\Checkatrade_Tradesman_Searches\\Trade_Location_Search_Single\\20190806_151553\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\davidho\\AppData\\Local\\Temp\\Katalon\\Test Cases\\Checkatrade_Tradesman_Searches\\Trade_Name_Search_Multiple\\20190807_110709\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Checkatrade_Tradesman_Searches/Trade_Location_Search_Single', new TestCaseBinding('Test Cases/Checkatrade_Tradesman_Searches/Trade_Location_Search_Single',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('Test Cases/Checkatrade_Tradesman_Searches/Trade_Name_Search_Multiple', new TestCaseBinding('Test Cases/Checkatrade_Tradesman_Searches/Trade_Name_Search_Multiple',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     

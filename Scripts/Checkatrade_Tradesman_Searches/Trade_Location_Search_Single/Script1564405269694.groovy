@@ -50,47 +50,45 @@ import internal.GlobalVariable as GlobalVariable
 //-----------------------------------------
 'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test\r\n'
 //for (def row = 1; row <= findTestData('searchTestData').getRowNumbers(); row++) {
-	def row = 1
+	//def row = 1
+	GlobalVariable.row = 1 // Uses frist row of the already defined datapool spreadsheet 
 	//-----------------------------------------
-   //Test Listener Manages Startup Processes
-	WebUI.openBrowser('')
-
-	'URL - Set from the ENVIRONMENT PROFILE '
-	WebUI.navigateToUrl(GlobalVariable.URL)
-
-	WebUI.maximizeWindow()
-
-	'Closes COOKIE nagging element '
-	WebUI.click(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/div_close'))
-	'Set and SEARCH TRADE CLASSIFICATION'
-	WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/input_Search through overrecommended vetted and monitored trades and service providers for free_trade_autocomplete_input'),
-		findTestData('searchTestData').getValue('tradeClassification', row))
-	//------------------------------------------------------------------------------------------------------------------------------------------------
-	'Set and SEARCH SELECTED LOCATION'
-	WebUI.setText(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_location'),
-		findTestData('searchTestData').getValue('tradeLocation', row))
-	//------------------------------------------------------------------------------------------------------------------------------------------------
-	
-	'HIT SEARCH'
-	WebUI.scrollToElement(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search'), 5)
-	'-------------'
-	
-	WebUI.doubleClick(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search'))
-	
-	//------------------------------------------------------------------------------------------------------------------------------------------------
-	'HIT SEARCH - again - 2 different locators used as there is something strange about the button object'
-	//WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_Search'), FailureHandling.CONTINUE_ON_FAILURE)
-	//------------------------------------------------------------------------------------------------------------------------------------------------
-	'Expected cantantenated text is Returned'
-	WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeLocationVerification', row), false)
-	
-	//WebUI.delay(10)
-	//------------------------------------------------------------------------------------------------------------------------------------------------
-	//scrapedSearchResult = WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeLocationVerification', 1), false)
-	//------------------------------------------------------------------------------------------------------------------------------------------------
-	//System.out.print(scrapedSearchResult+" Was returned after the Trade - Location Search")
+	// Call Startup Process - Browser Startup, Navigate, Maximize and Close Cookie Nagging Element
 	//-----------------------------------------
-	// Test Listener Manages Teardown Processes
-	//'Scraped Search Result From Sub Header NOT IMPLEMENED YET'
-	WebUI.closeBrowser()
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
+	//-----------------------------------------
+	
+	'---------------------------------------'
+	' Set and SEARCH TRADE CLASSIFICATION   |'
+	'---------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Enter_Trade_Classification'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+	'---------------------------------------'
+	' Set and SEARCH TRADE LOCATION         |'
+	'---------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Enter_Trade_Location'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+	'---------------------------------------'
+	' Scroll Search Button into View        |'
+	'---------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Scroll_To_Search_Button'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+	'---------------------------------------'
+	' Hit Search Button                     |'
+	'---------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Hit_Search_Button'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+	'---------------------------------------'
+	' Verify Returned Page is as Expected   |'
+	'---------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Verification'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+	'--------------------------'
+	' Teardown - CLose Browser |'
+	'--------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.STOP_ON_FAILURE)
+		
+	'--------------------------'
+	' END                      |'
+	'--------------------------'
 //}

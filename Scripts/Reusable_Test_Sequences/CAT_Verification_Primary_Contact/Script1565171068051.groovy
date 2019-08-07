@@ -12,18 +12,17 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import NewTestListener as NewTestListener
-import org.openqa.selenium.Keys as Keys
 
-WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/input_Search through overrecommended vetted and monitored trades and service providers for free_trade_autocomplete_input'), 
-    'Tree Surgeon')
+//-------------------------------------------------------
+// Verification - Required Search Returned as Expected  | - Snip - 07/08/2019
+//-------------------------------------------------------
 
-WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/input_Not here_location'), 
-    'Gosport')
+// verifies the returns of the Primary Contact for a Trader Name or CAT ID Search
+//-------------------------------------------
+   'Verify the Primary Contacts Name'
+    WebUI.verifyTextPresent(findTestData('Search_CAT_ID_Data (1)').getValue('primeContact', GlobalVariable.row), false)
+//-------------------------------------------
 
-WebUI.sendKeys(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_Search'), Keys.chord(Keys.ENTER))
-
-WebUI.verifyTextPresent('Tree-Surgeon in Gosport', false)
-
-WebUI.verifyTextPresent('Members can help', false)
-
+//------------------------------------
+// END                               | - Snip - 07/08/2019
+//------------------------------------

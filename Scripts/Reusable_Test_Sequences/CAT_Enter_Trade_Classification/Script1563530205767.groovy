@@ -22,5 +22,6 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/input_Search through overrecommended vetted and monitored trades and service providers for free_trade_autocomplete_input'), 
     findTestData('searchTestData').getValue('tradeClassification', GlobalVariable.row))
 
-//---------------------------------
-// END
+//------------------------------------
+// END                               | - Snip - 07/08/2019
+//------------------------------------

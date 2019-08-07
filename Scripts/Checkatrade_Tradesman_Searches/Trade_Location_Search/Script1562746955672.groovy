@@ -48,39 +48,80 @@ import org.openqa.selenium.Keys as Keys
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test\r\n'
-for (def row = 1; row <= findTestData('searchTestData').getRowNumbers(); row++) { //def removed for globalisation
-    //-----------------------------------------
-	// Call Setup Process - Browser Startup, Navigate, Maximize and Close Cookie Nagging Element
+for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('searchTestData').getRowNumbers(); GlobalVariable.row++) { //def removed for globalisation
+	
+	//-----------------------------------------
+	// Call Startup Process - Browser Startup, Navigate, Maximize and Close Cookie Nagging Element
 	//-----------------------------------------
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 	//-----------------------------------------
 	
-    //-----------------------------------------
-    'SEARCH TRADE CLASSIFICATION'
-    WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/input_Search through overrecommended vetted and monitored trades and service providers for free_trade_autocomplete_input'), 
-        findTestData('searchTestData').getValue('tradeClassification', row))
+	'---------------------------------------'
+	' Set and SEARCH TRADE CLASSIFICATION   |'
+	'---------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Enter_Trade_Classification'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
-    //------------------------------------------------------------------------------------------------------------------------------------------------
-    'SEARCH SELECTED LOCATION'
-    WebUI.setText(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_location'), 
-        findTestData('searchTestData').getValue('tradeLocation', row))
+	'---------------------------------------'
+	' Set and SEARCH TRADE LOCATION         |'
+	'---------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Enter_Trade_Location'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
-	 //------------------------------------------------------------------------------------------------------------------------------------------------
-	'Double click on the search button'
-	
-	'HIT SEARCH'
-	
-	'--------------------------------'
+	'---------------------------------------'
+	' Scroll Search Button into View        |'
+	'---------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Scroll_To_Search_Button'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+	'---------------------------------------'
+	' Hit Search Button                     |'
+	'---------------------------------------'
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Hit_Search_Button'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-	
-	//------------------------------------------------------------------------------------------------------------------------------------------------
-    'Expected cantantenated text is Returned'
-    WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeLocationVerification', row), false)
 
- 	//-----------------------------------------
-	// Call Teardown Process -
-	//-----------------------------------------
+	'---------------------------------------'
+	' Verify Returned Page is as Expected   |'
+	'---------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Verification'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+	'--------------------------'
+	' Teardown - CLose Browser |'
+	'--------------------------'
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.STOP_ON_FAILURE)
-	//------------------------------------------------------------------------------------------------------------------------------------------------
+		
+	'--------------------------'
+	' END                      |'
+	'--------------------------'
+
+//    //-----------------------------------------
+//	// Call Setup Process - Browser Startup, Navigate, Maximize and Close Cookie Nagging Element
+//	//-----------------------------------------
+//	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
+//	//-----------------------------------------
+//	
+//    //-----------------------------------------
+//    'SEARCH TRADE CLASSIFICATION'
+//    WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/input_Search through overrecommended vetted and monitored trades and service providers for free_trade_autocomplete_input'), 
+//        findTestData('searchTestData').getValue('tradeClassification', GlobalVariable.row))
+//
+//    //------------------------------------------------------------------------------------------------------------------------------------------------
+//    'SEARCH SELECTED LOCATION'
+//    WebUI.setText(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_location'), 
+//        findTestData('searchTestData').getValue('tradeLocation', GlobalVariable.row))
+//
+//	 //------------------------------------------------------------------------------------------------------------------------------------------------
+//	'Double click on the search button'
+//	
+//	'HIT SEARCH'
+//	
+//	'--------------------------------'
+//	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Hit_Search_Button'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+//	
+//	//------------------------------------------------------------------------------------------------------------------------------------------------
+//    'Expected cantantenated text is Returned'
+//    WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeLocationVerification', GlobalVariable.row), false)
+//
+// 	//-----------------------------------------
+//	// Call Teardown Process -
+//	//-----------------------------------------
+//	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.STOP_ON_FAILURE)
+//	//------------------------------------------------------------------------------------------------------------------------------------------------
 	
 }

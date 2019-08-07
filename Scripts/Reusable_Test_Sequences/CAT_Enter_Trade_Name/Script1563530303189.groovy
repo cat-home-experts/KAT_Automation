@@ -13,3 +13,17 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+
+//---------------------------------------------
+// Enter Trade Name or CAT Identity to Search  | - Snip - 07/08/2019
+//---------------------------------------------
+
+	//-------------------------------------------
+    'Enter Trade Name (OR CAT ID) in Text Field'
+    WebUI.setText(findTestObject('Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search'), findTestData(
+            'Search_CAT_ID_Data (1)').getValue('tradeName', GlobalVariable.row))
+	//-------------------------------------------
+
+//------------------------------------
+// END                               | - Snip - 07/08/2019
+//------------------------------------

@@ -13,16 +13,20 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-//----------------------------------------------------------------------------------------------------------
-// Set the defined value from the associated spreadsheet into the associated CAT Search Location Text Box   |
-//---------------------------------------------------------------------------------------------------------- 
-'---------------------------------'
+//--------------------------------------------------------------------------------
+// Click Link to Search on Trade Name (and ID) From the Home Page search Screen  | - Snip - 07/08/2019
+//--------------------------------------------------------------------------------
 
-'Set and SEARCH SELECTED LOCATION'
-
-'---------------------------------'
-WebUI.setText(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_location'), 
-    findTestData('searchTestData').getValue('tradeLocation', GlobalVariable.row))
+   //-----------------------------------------
+    'Hit Search Trade Person by Name (or CAT ID)'
+    //WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/Hit_Search_Trader')) // changed 26/07/19 new deployment
+	WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name'))
+	//-----------------------------------------
+	
+	//-----------------------------------------
+	'Waits only as long as required'
+    WebUI.waitForPageLoad(60)
+	//-----------------------------------------
 
 //------------------------------------
 // END                               | - Snip - 07/08/2019
