@@ -13,14 +13,14 @@
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
@@ -34,7 +34,7 @@
       <value>id(&quot;ctl00_content_ctlYourExperienceUpdatePanel&quot;)/div[@class=&quot;row top-buffer&quot;]/div[@class=&quot;col-xs-12 col-sm-8 col-md-8&quot;]/div[@class=&quot;form__controls&quot;]/label[@class=&quot;form__radio&quot;]/span[1]</value>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>

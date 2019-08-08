@@ -65,8 +65,8 @@
       <name>CurrentUrl</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>Give Feedback - Recommend? true OR false</description>
-      <initValue>findTestData('Give_Feedback (1)').getValue(1, 1)</initValue>
+      <description>Fix thre format error here Give Feedback - Recommend? true OR false</description>
+      <initValue>true</initValue>
       <name>YE_Recommendations</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

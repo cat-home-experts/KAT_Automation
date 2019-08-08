@@ -14,22 +14,31 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 //--------------------------------------------------------------------
-// Give Feedback - Set Recommendation Yes OR No (Default = Yes)      | - Snip - 07/08/2019
+// Give Feedback - Set Recommendation Yes OR No (Default = Yes)      | - Snip - 08/08/2019
 //--------------------------------------------------------------------
 'Check DEFAULT Setting'
-WebUI.verifyElementChecked(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_Yes'), 1)
+//WebUI.verifyElementChecked(findTestObject('//*[@id="ctl00_content_rbRecommend_rbYes"]'), 1)  TODO
+'TODO'
+//-------------------------------------------
+'read data from spreadsheet'
+def data = findTestData('Data Files/Give_Feedback (1)')  // put this into a method
+String YE_Recommend = data.getValue("YE_Recommendations", 1)// global rowindex
+
 
 //-------------------------------------------
-'Set Recommendation - Yes or No'
-if (GlobalVariable.YE_Recommendations == "Yes") {
+'Set Recommendation - Yes or No                            TO  FIX'
+if (YE_Recommend.equals("Yes")) {
     WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_Yes'))
+	//Check Page Is Virgo Intactus
+	
+	
+	
+	
 } else {
     WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_No'))
 }
 //-------------------------------------------
 
 //------------------------------------
-// END                               | - Snip - 07/08/2019
+// END                               | - Snip - 08/08/2019
 //------------------------------------
-
-

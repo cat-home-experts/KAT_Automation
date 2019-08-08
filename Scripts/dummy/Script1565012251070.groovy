@@ -14,13 +14,3 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('https://www.preview.checkatrade.com/')
-
-WebUI.click(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/span_on a trade youve used'))
-
-WebUI.setText(findTestObject('Page_Checkatrade Give your feedback/input_Which member do you want to review_feedback-form__company_autocomplete_input'), 
-    'test account')
-
-WebUI.click(findTestObject('Page_Checkatrade Give your feedback/input_Which member do you want to review_feedback-form__company_autocomplete_input'))

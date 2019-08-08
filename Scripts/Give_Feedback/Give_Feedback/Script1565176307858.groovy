@@ -49,8 +49,14 @@ import internal.GlobalVariable as GlobalVariable
 //-----------------------------------------
 // Call Setup Process - Browser Startup, Navigate, Maximize and Close Cookie Nagging Element
 //-----------------------------------------
+	
+'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test\r\n'
+for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (1)').getRowNumbers(); GlobalVariable.row++) { //def removed for globalisation
+
+
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 	//-----------------------------------------
+	
 	'----------------------------------------------------'
 	' Hit the <Give Feedback> link in the header banner  |'
 	'----------------------------------------------------'
@@ -69,7 +75,7 @@ import internal.GlobalVariable as GlobalVariable
 	//------------------------------------------------------------------------
 	// * * * * * * *   WIP - Work in progress - todo TODO   * * * * * * *    |
 	//------------------------------------------------------------------------
-	
+	WebUI.delay(10) // for debug
 
 	'--------------------------'
 	' Teardown - CLose Browser |'
@@ -80,3 +86,4 @@ import internal.GlobalVariable as GlobalVariable
 	'--------------------------'
 	' END                      |'
 	'--------------------------'
+}
