@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description>Test object with id 'Object Repository/&lt;input id=&quot;ctl00_content_rbRecommend_rbYes&quot; type=&quot;radio&quot; name=&quot;ctl00$content$rbRecommend$rbl&quot; value=&quot;rbYes&quot; checked=&quot;checked&quot;></description>
+   <name>Default_Selected</name>
+   <tag></tag>
+   <elementGuidId>152b0855-6ba6-41c5-8169-d1d5a96ba691</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>#ctl00_content_rbRecommend_rbYes
+</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value>//*[@id=&quot;ctl00_content_rbRecommend_rbYes&quot;]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value></value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value></value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value></value>
+   </webElementXpaths>
+</WebElementEntity>

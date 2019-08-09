@@ -66,17 +66,4 @@ class Directives {
 		println status
 	}
 
-/*class CAT_StartUp{	
-	
-	//Test Listener Manages Startup Processes
-	WebUI.openBrowser('')
-	
-	'URL - Set from the ENVIRONMENT PROFILE '
-	WebUI.navigateToUrl(GlobalVariable.URL)
-	
-	WebUI.maximizeWindow()
-	
-	'Closes COOKIE nagging element '
-	WebUI.click(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/div_close'))
-	}*/
 }

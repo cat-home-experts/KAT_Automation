@@ -57,9 +57,9 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 	//-----------------------------------------
 	
-	'----------------------------------------------------'
-	' Hit the <Give Feedback> link in the header banner  |'
-	'----------------------------------------------------'
+	'-----------------------------------------------------'
+	' Hit the <Give Feedback> link in the header banner   |'
+	'-----------------------------------------------------'
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Banner_Menu/Give_Feedback'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 	'-----------------------------------------------------'
@@ -67,10 +67,30 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (
 	'-----------------------------------------------------'
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Which_Member_to_Review'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
-	'---------------------------------------------------------------------------------------'
-	' Your Experience (page 1) Returned with Recommendation Selection Set to Yes (Default)  |'
-	'---------------------------------------------------------------------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Recommendation_Selection'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	'--------------------------------------'
+	' Your Experience (page 1) Processing  |'
+	'--------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Your_Experience'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
+	'--------------------------------------'
+	' Your Scores (page 2) Processing      |'
+	'--------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Scores/Your_Scores'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+	'--------------------------------------'
+	' Your Details (page 3) Processing     |'
+	'--------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Details/Your_Details'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+	'--------------------------------------'
+	' Further Info (page 4) Processing     |'
+	'--------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Further_Information/Further_Information'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+	'--------------------------------------'
+	' Processing Completion                |'
+	'--------------------------------------'
+
 	
 	//------------------------------------------------------------------------
 	// * * * * * * *   WIP - Work in progress - todo TODO   * * * * * * *    |

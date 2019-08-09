@@ -12,31 +12,37 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import sun.util.logging.resources.logging_pt_BR
 
 //--------------------------------------------------------------------
-// Give Feedback - Set Recommendation Yes OR No (Default = Yes)      | - Snip - 08/08/2019
+// Give Feedback - Set Recommendation Yes OR No (Default = Yes)      | - Snip - 08/08/2019  -TO REFACTOR
 //--------------------------------------------------------------------
-'Check DEFAULT Setting'
+'-----------------------'
+'Check DEFAULT Setting  |     TODO  value="rbYes" checked="checked"> DONE?'
+'-----------------------'
 //WebUI.verifyElementChecked(findTestObject('//*[@id="ctl00_content_rbRecommend_rbYes"]'), 1)  TODO
-'TODO'
+//WebUI.verifyElementChecked(findTestObject('Object Repository/Page_Checkatrade Give your feedback/Default_Selected'), 10)
+//WebUI.verifyElementAttributeValue('Object Repository/Page_Checkatrade Give your feedback/Default_Selected', 'value', '"rbYes" checked="checked">', 1)
+WebUI.verifyElementPresent('Object Repository/Page_Checkatrade Give your feedback/Default_Selected', 1)
 //-------------------------------------------
-'read data from spreadsheet'
+
+'--------------------------------'
+'Read data from spreadsheet      |'
+'--------------------------------'
 def data = findTestData('Data Files/Give_Feedback (1)')  // put this into a method
-String YE_Recommend = data.getValue("YE_Recommendations", 1)// global rowindex
-
-
+String YE_Recommend = data.getValue("YE_Recommendations", GlobalVariable.row)// global rowindex 1
 //-------------------------------------------
-'Set Recommendation - Yes or No                            TO  FIX'
+
+'--------------------------------'
+'Set Recommendation - Yes or No  |'
+'--------------------------------'
 if (YE_Recommend.equals("Yes")) {
     WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_Yes'))
-	//Check Page Is Virgo Intactus
-	
-	
-	
-	
-} else {
+} 
+else if (YE_Recommend.equals("No")) {
     WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_No'))
 }
+'--------------------------------'
 //-------------------------------------------
 
 //------------------------------------

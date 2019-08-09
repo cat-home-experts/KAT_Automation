@@ -13,3 +13,35 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+//---------------------------------------------------------------------
+// Test Sequence to Deal With Everything on the <Your Experience> Page | - Snip - 09/08/2019
+//---------------------------------------------------------------------
+
+'---------------------------------------------------------------------------------------'
+' Your Experience (page 1) Returned with Recommendation Selection Set to Yes (Default)  |'
+'---------------------------------------------------------------------------------------'
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Recommendation_Selection'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//-------------------------------------------------------
+// END                                                  | - Snip - 09/08/2019
+//-------------------------------------------------------
+
+
+
+
+
+
