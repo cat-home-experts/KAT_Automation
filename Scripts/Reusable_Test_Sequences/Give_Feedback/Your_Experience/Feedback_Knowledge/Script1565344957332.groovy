@@ -13,7 +13,6 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-
 //----------------------------------------------------------------------------------------
 // Give Feedback - Knowledge that you could provide feedback? Yes OR No (Default = NONE) | - Snip - 08/08/2019  -TO REFACTOR
 //----------------------------------------------------------------------------------------

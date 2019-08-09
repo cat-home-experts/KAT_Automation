@@ -13,5 +13,14 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+com.sun.org.apache.xpath.internal.operations.String Datasheet_Parser(def Data_Source, def Column_Header, def Cell_Content) {
 
+	'-----------------------------------------------------------------------------------------'
+	'Extract a cell value/content from the specified data source, column_header at row_count  |'
+	'-----------------------------------------------------------------------------------------'
+	
+	def data = findTestData(Data_Source)  
+	String Cell_Content = data.getValue(Column_Header, GlobalVariable.row)
+	
+	}
 

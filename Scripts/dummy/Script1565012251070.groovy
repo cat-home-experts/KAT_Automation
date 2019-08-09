@@ -27,6 +27,8 @@ WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Give your feedb
 
 WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_Test Account'))
 
+WebUI.verifyElementVisible('Object Repository/Page_Checkatrade Give your feedback/span_The agreed price')
+
 WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_The agreed price'))
 
 WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_Yes'))

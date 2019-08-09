@@ -20,7 +20,7 @@ import internal.GlobalVariable as GlobalVariable
 '---------------------------------------------------------------------------------------'
 ' Your Experience (page 1) Returned with Recommendation Selection Set to Yes (Default)  |'
 '---------------------------------------------------------------------------------------'
-WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Recommendation_Selection'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Validation/Your_Experience_Initial_Page_State'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 
 

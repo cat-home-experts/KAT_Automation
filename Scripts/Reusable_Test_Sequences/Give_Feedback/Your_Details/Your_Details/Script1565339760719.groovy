@@ -19,7 +19,7 @@ import internal.GlobalVariable as GlobalVariable
 //------------------------------------------------------------------
 
 '---------------------------------------------------------------------------------------'
-' Your Experience (page 1) Returned with Recommendation Selection Set to Yes (Default)  |'
+' Your Details (page 3)                                       |'
 '---------------------------------------------------------------------------------------'
 //WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Recommendation_Selection'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 

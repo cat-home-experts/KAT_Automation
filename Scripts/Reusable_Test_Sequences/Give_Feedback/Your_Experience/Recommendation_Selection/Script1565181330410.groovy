@@ -17,20 +17,13 @@ import sun.util.logging.resources.logging_pt_BR
 //--------------------------------------------------------------------
 // Give Feedback - Set Recommendation Yes OR No (Default = Yes)      | - Snip - 08/08/2019  -TO REFACTOR
 //--------------------------------------------------------------------
-'-----------------------'
-'Check DEFAULT Setting  |     TODO  value="rbYes" checked="checked"> DONE?'
-'-----------------------'
-//WebUI.verifyElementChecked(findTestObject('//*[@id="ctl00_content_rbRecommend_rbYes"]'), 1)  TODO
-//WebUI.verifyElementChecked(findTestObject('Object Repository/Page_Checkatrade Give your feedback/Default_Selected'), 10)
-//WebUI.verifyElementAttributeValue('Object Repository/Page_Checkatrade Give your feedback/Default_Selected', 'value', '"rbYes" checked="checked">', 1)
-WebUI.verifyElementPresent('Object Repository/Page_Checkatrade Give your feedback/Default_Selected', 1)
-//-------------------------------------------
 
 '--------------------------------'
 'Read data from spreadsheet      |'
 '--------------------------------'
 def data = findTestData('Data Files/Give_Feedback (1)')  // put this into a method
 String YE_Recommend = data.getValue("YE_Recommendations", GlobalVariable.row)// global rowindex 1
+
 //-------------------------------------------
 
 '--------------------------------'
