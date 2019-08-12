@@ -3,13 +3,14 @@
    <description></description>
    <name>Feedback_Knowledge</name>
    <tag></tag>
-   <comment>-----------------------
-Check DEFAULT Setting  |     TODO  value=&quot;rbYes&quot; checked=&quot;checked&quot;> DONE?
------------------------
---------------------------------
-Read data from spreadsheet      |
-------------------------------------------------
-Set Knowledge of feedback process? - Yes or No  |
---------------------------------</comment>
+   <comment>--------------------------------
+Read data from spreadsheet      |</comment>
    <testCaseGuid>6d141f12-9f3e-4e1a-9d69-c713ab7ae2e9</testCaseGuid>
+   <variable>
+      <defaultValue>'Yes'</defaultValue>
+      <description>Reporter had knowledge of the feedback process before entering int the required work</description>
+      <id>3dd56168-d883-4e85-954c-481281230f12</id>
+      <masked>false</masked>
+      <name>YE_Feedback_Knowledge</name>
+   </variable>
 </TestCaseEntity>

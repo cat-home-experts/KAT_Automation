@@ -3,6 +3,20 @@
    <description></description>
    <name>Quotation_Selection</name>
    <tag></tag>
-   <comment></comment>
+   <comment>-----------------------
+Check DEFAULT Setting  |     Default Setting - Nothing Selected
+-----------------------
+--------------------------------
+Read data from spreadsheet      |
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Set Quotation - Agreed_estimate -OR- Additional_work -OR- More_than_agreed_price_informed -OR- More_than_agreed_price_not_informed -OR- No_estimate|
+--------------------------------</comment>
    <testCaseGuid>59551bb2-3dde-4ab3-9f44-e604b303d6fe</testCaseGuid>
+   <variable>
+      <defaultValue>'Agreed_estimate'</defaultValue>
+      <description>Cost of work estimation</description>
+      <id>7e07bf3d-cfb1-43e4-a48b-701ec6ebc94e</id>
+      <masked>false</masked>
+      <name>YE_Estimate</name>
+   </variable>
 </TestCaseEntity>

@@ -22,21 +22,25 @@ import sun.util.logging.resources.logging_pt_BR
 'Read data from spreadsheet      |'
 '--------------------------------'
 def data = findTestData('Data Files/Give_Feedback (1)')  // put this into a method
-String YE_Recommend = data.getValue("YE_Recommendations", GlobalVariable.row)// global rowindex 1
+YE_Recommend = data.getValue("YE_Recommendations", GlobalVariable.row)// global rowindex 1
 
+System.out.println("Your Experience, Recommendation, Click on the "+YE_Recommend+" Option Button ");
 //-------------------------------------------
 
-'--------------------------------'
-'Set Recommendation - Yes or No  |'
-'--------------------------------'
-if (YE_Recommend.equals("Yes")) {
-    WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_Yes'))
-} 
-else if (YE_Recommend.equals("No")) {
-    WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_No'))
-}
-'--------------------------------'
-//-------------------------------------------
+//'--------------------------------'
+//'Set Recommendation - Yes or No  |'
+//'--------------------------------'
+//if (YE_Recommend == ("Yes")) {
+//    WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Feedback_Possible'))
+//} 
+//else if (YE_Recommend == ("No")) {
+//    WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Feedback_Possible'))
+//}
+//'--------------------------------'
+//System.out.println("Your Experience, Recommendation, Click on the "+YE_Recommend+" Option Button ");
+////-------------------------------------------
+
+WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Recommend')) 
 
 //------------------------------------
 // END                               | - Snip - 08/08/2019

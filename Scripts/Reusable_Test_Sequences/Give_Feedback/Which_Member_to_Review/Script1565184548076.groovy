@@ -21,12 +21,14 @@ import internal.GlobalVariable as GlobalVariable
 
 //-------------------------------------------
 ' Set the Trade Name or CAT ID in the Text Search Field'
+'--------------------------------------------'
 WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_Which member do you want to review_feedback-form__company_autocomplete_input'),
 	findTestData('Give_Feedback (1)').getValue('Account_Verification_Name', GlobalVariable.row))
 
 WebUI.delay(1)
 //-------------------------------------------
 'Submit the search criteria using click'
+'-------------------------------------------'
 WebUI.click(findTestObject('Page_Checkatrade Give your feedback/div_Which member do you want to review'))
 //WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_Test Account'))
 //WebUI.click(findTestObject('Page_Checkatrade Give your feedback/input_Which member do you want to review_feedback-form__company_autocomplete_input'))

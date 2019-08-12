@@ -3,7 +3,25 @@
    <description>Checks the content and default settings on the &lt;Your_Experience> Page on first arrival</description>
    <name>Your_Experience_Initial_Page_State</name>
    <tag>Validation Your Experience</tag>
-   <comment>-----------------------
-Check DEFAULT Setting  |     TODO  value=&quot;rbYes&quot; checked=&quot;checked&quot;> DONE?</comment>
+   <comment>------------------------
+Check DEFAULT Settings  |     TODO  value=&quot;rbYes&quot; checked=&quot;checked&quot;> DONE?
+------------------------
+Database
+Headings
+-------------------------------------------------------------------------------------
+    Recommendation &lt;OPTION> button set to Checked by default - All else is unset     
+----------------------------------
+YOUR EXPERIENCE - Expected Fields 
+--------------------------------------
+YOUR EXPERIENCE - Expected Fields End |
+--------------------------------------
+ Traders Business Name
+ Traders Location
+ Membership Term
+-----------------
+ Textual Content |
+--------------------------
+ END                      |
+--------------------------</comment>
    <testCaseGuid>1a9ae2e8-c145-4de2-a41b-20d6a3d053a6</testCaseGuid>
 </TestCaseEntity>

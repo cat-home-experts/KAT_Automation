@@ -26,9 +26,9 @@ import internal.GlobalVariable as GlobalVariable
 'Read data from spreadsheet      |'
 '--------------------------------'
 def data = findTestData('Data Files/Give_Feedback (1)')  // put this into a method
-String YE_Estimate = data.getValue("YE_Estimate", GlobalVariable.row)// global rowindex 1
+YE_Estimate = data.getValue("YE_Estimate", GlobalVariable.row)// global rowindex 1
 //-------------------------------------------
-
+/*System.out.println("Your Experience, Estimate Accuracy, Click on the "+YE_Estimate+" Option Button ");
 '---------------------------------------------------------------------------------------------------------------------------------------------------'
 'Set Quotation - Agreed_estimate -OR- Additional_work -OR- More_than_agreed_price_informed -OR- More_than_agreed_price_not_informed -OR- No_estimate|'
 '---------------------------------------------------------------------------------------------------------------------------------------------------'
@@ -37,35 +37,39 @@ switch (YE_Estimate)
 
 {
 	case 1:
-	YE_Estimate = "Agreed_estimate"
-	WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_The agreed price'))
-	break;
-	//-----------------------------
+		YE_Estimate == "Agreed_estimate"
+		WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_The agreed price'))
+		break;
+		//-----------------------------
 	case 2:
-	YE_Estimate = "Additional_work"
-	WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_I requested additional work and paid the agreed price'))
-	break;
+		YE_Estimate == "Additional_work"
+		WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_I requested additional work and paid the agreed price'))
+		break;
 	//-----------------------------
 	case 3:
-	YE_Estimate = "More_than_agreed_price_informed"
-	WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_More than the agreed price but I was kept informed'))
-	break;
-	//-----------------------------
+		YE_Estimate == "More_than_agreed_price_informed"
+		WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_More than the agreed price but I was kept informed'))
+		break;
+		//-----------------------------
 	case 4:
-	YE_Estimate = "More_than_agreed_price_not_informed"
-	WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_More than the agreed price but I wasnt kept informed'))
-	break;
+		YE_Estimate == "More_than_agreed_price_not_informed"
+		WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_More than the agreed price but I wasnt kept informed'))
+		break;
 	//-----------------------------
 	case 1:
-	YE_Estimate = "No_estimate"
-	WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Not applicable - no estimate given'))
-	break;
-	//-----------------------------
+		YE_Estimate == "No_estimate"
+		//WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Not applicable - no estimate given'))
+		WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Not applicable - no estimate given'))
+		break;
+		//-----------------------------
 
 }
 
 '--------------------------------'
+System.out.println("Your Experience, Estimate Accuracy, Click on the "+YE_Estimate+" Option Button ");
 //-------------------------------------------
+*/
+WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_The agreed price'))
 
 //------------------------------------
 // END                               | - Snip - 08/08/2019

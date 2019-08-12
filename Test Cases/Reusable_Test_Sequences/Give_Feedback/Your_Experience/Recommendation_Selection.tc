@@ -3,6 +3,14 @@
    <description>Selects the &lt;YOUR EXPERIENCE> - Recommendation radio buttons Yes OR No</description>
    <name>Recommendation_Selection</name>
    <tag>Feedback Recommendation</tag>
-   <comment></comment>
+   <comment>--------------------------------
+Read data from spreadsheet      |</comment>
    <testCaseGuid>8b7f2bd7-71cf-4cd8-b656-db72a03ac017</testCaseGuid>
+   <variable>
+      <defaultValue>'Yes'</defaultValue>
+      <description>Would you recommend this trader (Give Feedback)</description>
+      <id>4789c808-05f0-45e0-b9f2-91337b0737b9</id>
+      <masked>false</masked>
+      <name>YE_Recommend</name>
+   </variable>
 </TestCaseEntity>

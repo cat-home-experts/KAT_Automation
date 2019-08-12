@@ -16,29 +16,29 @@ import internal.GlobalVariable as GlobalVariable
 //----------------------------------------------------------------------------------------
 // Give Feedback - Knowledge that you could provide feedback? Yes OR No (Default = NONE) | - Snip - 08/08/2019  -TO REFACTOR
 //----------------------------------------------------------------------------------------
-'-----------------------'
-'Check DEFAULT Setting  |     TODO  value="rbYes" checked="checked"> DONE?'
-'-----------------------'
-//-------------------------------------------
 
 '--------------------------------'
 'Read data from spreadsheet      |'
 '--------------------------------'
 def data = findTestData('Data Files/Give_Feedback (1)')  // put this into a method
-String YE_Feedback_Knowledge = data.getValue("YE_Feedback_Knowledge", GlobalVariable.row)// global rowindex 1
-//-------------------------------------------
+YE_Feedback_Knowledge = data.getValue("YE_Feedback_Knowledge", GlobalVariable.row)// global rowindex 1
 
+/*//-------------------------------------------
+System.out.println("Your Experience, Feedback Knowledge, Click on the "+YE_Feedback_Knowledge+" Option Button ");
 '------------------------------------------------'
 'Set Knowledge of feedback process? - Yes or No  |'
 '------------------------------------------------'
-if (YE_Feedback_Knowledge.equals("Yes")) {
-	WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes'))
+if (YE_Feedback_Knowledge == ("Yes")) {
+	WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Feedback_Possible'))
 } 
-else if (YE_Feedback_Knowledge.equals("No")) {
-	WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No'))
+else if (YE_Feedback_Knowledge == ("No")) {
+	WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Feedback_Possible'))
 }
 '--------------------------------'
+System.out.println("Your Experience, Feedback Knowledge, Click on the "+YE_Feedback_Knowledge+" Option Button ");
 //-------------------------------------------
+*/
+WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes - Copy')) // span_Yes_Feedback_Possible
 
 //------------------------------------
 // END                               | - Snip - 08/08/2019
