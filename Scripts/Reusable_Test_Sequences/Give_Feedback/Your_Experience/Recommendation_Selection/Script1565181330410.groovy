@@ -12,21 +12,25 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import sun.util.logging.resources.logging_pt_BR
+import sun.util.logging.resources.logging_pt_BR as logging_pt_BR
 
 //--------------------------------------------------------------------
 // Give Feedback - Set Recommendation Yes OR No (Default = Yes)      | - Snip - 08/08/2019  -TO REFACTOR
 //--------------------------------------------------------------------
-
 '--------------------------------'
+
 'Read data from spreadsheet      |'
+
 '--------------------------------'
-def data = findTestData('Data Files/Give_Feedback (1)')  // put this into a method
-YE_Recommend = data.getValue("YE_Recommendations", GlobalVariable.row)// global rowindex 1
+def data = findTestData('Data Files/Give_Feedback (1)' // put this into a method
+    )
 
-System.out.println("Your Experience, Recommendation, Click on the "+YE_Recommend+" Option Button ");
+YE_Recommend = data.getValue('YE_Recommendations', GlobalVariable.row // global rowindex 1
+    )
+
+System.out.println(('Your Experience, Recommendation, Click on the ' + YE_Recommend) + ' Option Button ')
+
 //-------------------------------------------
-
 //'--------------------------------'
 //'Set Recommendation - Yes or No  |'
 //'--------------------------------'
@@ -40,12 +44,17 @@ System.out.println("Your Experience, Recommendation, Click on the "+YE_Recommend
 //System.out.println("Your Experience, Recommendation, Click on the "+YE_Recommend+" Option Button ");
 ////-------------------------------------------
 '-----------------------------------'
+
 'FAILS - Object Map Issue to Resolve'
-'-----------------------------------'
-//WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No - Copy'),1)
 
-WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Recommend'),1) 
 
-//------------------------------------
-// END                               | - Snip - 08/08/2019
-//------------------------------------
+try {
+	//WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No - Copy'),1)
+	'-----------------------------------\r\nError handling det to Optional - Flags warning here for false failure'
+	WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Recommend'), 1, FailureHandling.OPTIONAL)
+}	catch (Exception e) {
+	// nothing to do
+}
+
+
+

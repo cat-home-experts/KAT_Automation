@@ -13,7 +13,6 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-
 //------------------------------------------------------------------
 // Test Sequence to Deal With Everything on the <Your_Details> Page | - Snip - 09/08/2019
 //------------------------------------------------------------------
@@ -22,18 +21,29 @@ import internal.GlobalVariable as GlobalVariable
 ' Your Details (page 3)                                                                 |'
 '---------------------------------------------------------------------------------------'
 
-WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Details/Your_Details/Consumer_or_Customer_Selection_Selection'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+'-------------------------------------'
+' Consumer or Customer Selection      |'
+'-------------------------------------'
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Details/Consumer_or_Customer_Selection'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
+'-------------------------------------'
+' Fill Personal Details               |'
+'-------------------------------------'
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Details/Personal_Details_Formfill'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Details/Your_Details/Personal_Details_Formfill'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+'-------------------------------------'
+' Fil Contact Details                 |'
+'-------------------------------------'
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Details/Contact_Details_Formfill'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
+'-------------------------------------'
+' CHeckatrade Questions               |'
+'-------------------------------------'
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Details/Checkatrade_Questions'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Details/Your_Details/Contact_Details_Formfill'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-
-
-WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Details/Your_Details/Checkatrade_Questions'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-
-
+'-------------------------------------'
+' Commit form                         |'
+'-------------------------------------'
 WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_Value Of Work_ctl00contentButton1'))
 
 

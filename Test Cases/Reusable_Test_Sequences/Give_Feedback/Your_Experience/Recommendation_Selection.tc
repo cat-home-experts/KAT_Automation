@@ -4,7 +4,9 @@
    <name>Recommendation_Selection</name>
    <tag>Feedback Recommendation</tag>
    <comment>--------------------------------
-Read data from spreadsheet      |</comment>
+Read data from spreadsheet      |
+-----------------------------------
+FAILS - Object Map Issue to Resolve</comment>
    <testCaseGuid>8b7f2bd7-71cf-4cd8-b656-db72a03ac017</testCaseGuid>
    <variable>
       <defaultValue>'Yes'</defaultValue>

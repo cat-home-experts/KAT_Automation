@@ -22,7 +22,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-// Prove the function under the GIVE FEEDBACK |                 |                  |                             |
+// Prove the function under the GIVE FEEDBACK |                 |                  |  Numorous issues correcting |
 // header link, Verify each of the defined    |    07/08/2019   |     Dave Horne   |                             |
 // areas is intact and available              |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -73,7 +73,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (
     ' Your Experience (page 1) Processing  |'
 
     '--------------------------------------'
-    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Your_Experience'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Your_Experience'), [:], FailureHandling.CONTINUE_ON_FAILURE) //optional
 
     '--------------------------------------'
 
@@ -87,14 +87,15 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (
     ' Your Scores (page 3) Processing      |'
 
     '--------------------------------------'
-     WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Scores/Your_Details'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Details/Your_Details'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
     '--------------------------------------'
 
     ' Further Info (page 4) Processing     |'
 
     '--------------------------------------'
-    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Further_Infomation/Further_Infomation'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Further_Infomation/Further_Infomation'), [:], 
+        FailureHandling.CONTINUE_ON_FAILURE)
 
     '--------------------------------------'
 
@@ -104,8 +105,8 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (
     // * * * * * * *   WIP - Work in progress - todo TODO   * * * * * * *    |
     //------------------------------------------------------------------------
     '--------------------------------------'
-   WebUI.delay(10) // for debug
-        
+    WebUI.delay(10 // for debug
+        )
 
     '--------------------------'
 

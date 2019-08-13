@@ -13,18 +13,9 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-//-------------------------------------------------------------------------
-// Test Sequence to Deal With Everything on the <Further_Information> Page | - Snip - 09/08/2019
-//-------------------------------------------------------------------------
+//--------------------------------------------------------------
+// Hit <Next> Button - From the <Your Experience> Feedback Page | - Snip - 09/08/2019
+//--------------------------------------------------------------
+'Change XPATH away from Name and use "value" <Next> OR "type" <Submit> TODO'
+WebUI.click(findTestObject('Page_Checkatrade Give your feedback/input_No_ctl00contentButton4'))
 
-'-----------------------------------------------------------------'
- 'Further information only contains <Value of Work> and <Submit>  |'
- '-----------------------------------------------------------------'
-
-
-
-
-
-//-------------------------------------------------------
-// END                                                  | - Snip - 09/08/2019
-//-------------------------------------------------------
