@@ -31,16 +31,20 @@ System.out.println("Your Experience, Recommendation, Click on the "+YE_Recommend
 //'Set Recommendation - Yes or No  |'
 //'--------------------------------'
 //if (YE_Recommend == ("Yes")) {
-//    WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Feedback_Possible'))
+//    WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Feedback'))
 //} 
 //else if (YE_Recommend == ("No")) {
-//    WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Feedback_Possible'))
+//    WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Experience_Feedback'))
 //}
 //'--------------------------------'
 //System.out.println("Your Experience, Recommendation, Click on the "+YE_Recommend+" Option Button ");
 ////-------------------------------------------
+'-----------------------------------'
+'FAILS - Object Map Issue to Resolve'
+'-----------------------------------'
+//WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No - Copy'),1)
 
-WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Recommend')) 
+WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Recommend'),1) 
 
 //------------------------------------
 // END                               | - Snip - 08/08/2019

@@ -17,15 +17,9 @@ import internal.GlobalVariable as GlobalVariable
 // Hit <Next> Button - From the <Your Experience> Feedback Page | - Snip - 09/08/2019
 //--------------------------------------------------------------
 
+'Change XPATH away from Name and use "value" <Next> OR "type" <Submit> TODO'
 WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_No_ctl00contentButton4'))
 
 //-------------------------------------------------------
 // END                                                  | - Snip - 09/08/2019
 //-------------------------------------------------------
-
-
-
-
-
-
-

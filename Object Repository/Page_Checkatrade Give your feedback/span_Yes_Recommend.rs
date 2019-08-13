@@ -7,7 +7,8 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;ctl00_content_rbRecommend_rbYes&quot;]</value>
+         <value>//*[@id=&quot;ctl00_content_ctlYourExperienceUpdatePanel&quot;]/div[1]/div[2]/div/div/label[1]
+</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

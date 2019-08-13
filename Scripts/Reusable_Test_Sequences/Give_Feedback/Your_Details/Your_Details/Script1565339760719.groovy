@@ -19,22 +19,22 @@ import internal.GlobalVariable as GlobalVariable
 //------------------------------------------------------------------
 
 '---------------------------------------------------------------------------------------'
-' Your Details (page 3)                                       |'
+' Your Details (page 3)                                                                 |'
 '---------------------------------------------------------------------------------------'
-//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Recommendation_Selection'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Details/Your_Details/Consumer_or_Customer_Selection_Selection'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Details/Your_Details/Personal_Details_Formfill'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Details/Your_Details/Contact_Details_Formfill'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Details/Your_Details/Checkatrade_Questions'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 
-
-
-
-
-
+WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_Value Of Work_ctl00contentButton1'))
 
 
 //-------------------------------------------------------

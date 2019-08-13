@@ -31,10 +31,11 @@ WebUI.verifyElementVisible('Object Repository/Page_Checkatrade Give your feedbac
 
 WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_The agreed price'))
 
-WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Feedback_Possible'))
+WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Feedback'))
 
 WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_No_ctl00contentButton4'))
 
+//-------------
 WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Checkatrade Give your feedback/select_--109876543210NA'), 
     '10', true)
 
@@ -46,6 +47,9 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Checkatrade Giv
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Checkatrade Give your feedback/select_--109876543210NA_3'), 
     '10', true)
+//-------------
+
+
 
 WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_Brief description of work done_ctl00contenttbWorkDescription'), 
     'Test Fixed Something')
@@ -56,7 +60,7 @@ WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Give your feedb
 WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Give your feedback/textarea_Your comments about the work_ctl00contenttbWorkComments'), 
     'test comments')
 
-WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Feedback_Possible'))
+WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Feedback'))
 
 WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_No_ctl00contentButton6'))
 

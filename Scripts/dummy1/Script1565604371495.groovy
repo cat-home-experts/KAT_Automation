@@ -26,11 +26,11 @@ WebUI.setText(findTestObject('Page_Checkatrade Give your feedback/input_Which me
 
 WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Test Account'))
 
-WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Feedback_Possible'))
+WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Feedback'))
 
-WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Feedback_Possible'))
+WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Experience_Feedback'))
 
-WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Feedback_Possible'))
+WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Feedback'))
 
 WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_The agreed price'))
 
@@ -42,9 +42,9 @@ WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_More than t
 
 WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Not applicable - no estimate given'))
 
-WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Feedback_Possible'))
+WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Feedback'))
 
-WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Feedback_Possible'))
+WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Experience_Feedback'))
 
-WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Feedback_Possible'))
+WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Feedback'))
 

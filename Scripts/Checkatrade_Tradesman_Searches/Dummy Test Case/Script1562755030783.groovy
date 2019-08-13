@@ -24,9 +24,9 @@ WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a
 WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_Which member do you want to review_feedback-form__company_autocomplete_input'), 
     'Test Account')
 
-WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Feedback_Possible'))
+WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Experience_Feedback'))
 
-WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Feedback_Possible'))
+WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Feedback'))
 
 WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_The agreed price'))
 
@@ -40,11 +40,11 @@ WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedbac
 
 WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_The agreed price'))
 
-WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Feedback_Possible'))
+WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Feedback'))
 
-WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Feedback_Possible'))
+WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Experience_Feedback'))
 
-WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Feedback_Possible'))
+WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Feedback'))
 
 WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_No_ctl00contentButton4'))
 

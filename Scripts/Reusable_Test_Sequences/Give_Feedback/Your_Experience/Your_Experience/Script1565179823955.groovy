@@ -44,7 +44,7 @@ WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Expe
 '---------------------------------------------------------------------------------------'
 ' Your Experience (page 1) Hit <Next> Button to Continue to <Your Scores>- (page 2)     |'
 '---------------------------------------------------------------------------------------'
-//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Hit_Next'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Hit_Next'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 
 //------------------------------------
@@ -52,16 +52,6 @@ WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Expe
 //------------------------------------
 
 
-
-
-
-
-
-
-
-//-------------------------------------------------------
-// END                                                  | - Snip - 09/08/2019
-//-------------------------------------------------------
 
 
 

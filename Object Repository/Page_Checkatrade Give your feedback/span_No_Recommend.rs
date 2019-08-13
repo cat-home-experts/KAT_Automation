@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_No - Copy</name>
+   <name>span_No_Recommend</name>
    <tag></tag>
    <elementGuidId>7349fbd0-a1eb-4080-b057-9fee848d13ff</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;ctl00_content_rbRecommend_rbNo&quot;]</value>
+         <value>//*[@id=&quot;ctl00_content_ctlYourExperienceUpdatePanel&quot;]/div[1]/div[2]/div/div/label[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

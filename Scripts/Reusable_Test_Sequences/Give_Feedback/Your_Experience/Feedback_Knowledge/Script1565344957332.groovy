@@ -29,10 +29,10 @@ System.out.println("Your Experience, Feedback Knowledge, Click on the "+YE_Feedb
 'Set Knowledge of feedback process? - Yes or No  |'
 '------------------------------------------------'
 if (YE_Feedback_Knowledge == ("Yes")) {
-	WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Feedback_Possible'))
+	WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Feedback'))
 } 
 else if (YE_Feedback_Knowledge == ("No")) {
-	WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Feedback_Possible'))
+	WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Experience_Feedback'))
 }
 '--------------------------------'
 System.out.println("Your Experience, Feedback Knowledge, Click on the "+YE_Feedback_Knowledge+" Option Button ");

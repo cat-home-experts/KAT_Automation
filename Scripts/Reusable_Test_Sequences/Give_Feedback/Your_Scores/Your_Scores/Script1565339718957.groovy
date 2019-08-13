@@ -13,29 +13,41 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-//-----------------------------------------------------------------
-// Test Sequence to Deal With Everything on the <Your_Scores> Page | - Snip - 09/08/2019
-//-----------------------------------------------------------------
+//-------------------------------------------------------------------------------------
+// Test Sequence to Deal With Everything on the <Your Scores> Page 2                  | - Snip - 13/08/2019
+//-------------------------------------------------------------------------------------
 
-'---------------------------------------------------------------------------------------'
-' Your Score (page 3) Returned     )  |'
-'---------------------------------------------------------------------------------------'
-//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Recommendation_Selection'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+'------------------------------------------------------------------------------------------'
+' Your Scores (page 2) Returned with 2 Main Sections - <Your Scores> and <Details of Work> |'
+'                                             Tidiness Listbox Selection, NA, 0 through 10 |'
+'------------------------------------------------------------------------------------------'
+'------------------------------------------------------------------------------------------'
+' Your Scores (page 2) Returned with 2 Main Sections - <Your Scores> and <Details of Work> |'
+'                          Reliability and Timekeeping Listbox Selection, NA, 0 through 10 |'
+'------------------------------------------------------------------------------------------'
+'------------------------------------------------------------------------------------------'
+' Your Scores (page 2) Returned with 2 Main Sections - <Your Scores> and <Details of Work> |'
+'                                             Courtesy Listbox Selection, NA, 0 through 10 |'
+'------------------------------------------------------------------------------------------'
+'------------------------------------------------------------------------------------------'
+' Your Scores (page 2) Returned with 2 Main Sections - <Your Scores> and <Details of Work> |'
+'                                             Courtesy Listbox Selection, NA, 0 through 10 |'
+'------------------------------------------------------------------------------------------'
 
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Your_Scores/Your_Scores_List_Box_Selection'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
+'------------------------------------------------------------------------------------------'
+' Your Scores (page 2) Returned with 2 Main Sections - <Your Scores> and <Details of Work> |'
+' Details of Work Done - Form FIll<Description>,<Approx. date>,<How Long>, <Comments> and  |'
+'                                                               <Feedback Publish Confirm> |'
+'------------------------------------------------------------------------------------------'
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Your_Scores/Details_of_work_Done_Formfill'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
+'------------------------------------------------------------------------------------------'
+' Your Experience (page 2) Hit <Next> Button to Continue to <Your Details>- (page 3)       |'
+'------------------------------------------------------------------------------------------'
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Hit_Next'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
-
-
-
-
-
-
-
-
-
-
-
-//-------------------------------------------------------
-// END                                                  | - Snip - 09/08/2019
-//-------------------------------------------------------
+//------------------------------------
+// END                               | - Snip - 13/08/2019
+//------------------------------------
