@@ -62,7 +62,7 @@ WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Scor
 WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Scores/Details_of_work_Done_Formfill'), [:], 
     FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.scrollToPosition(0, 25)
+WebUI.scrollToPosition(0, 125)
 
 'Need to SCROLL TO <Feedback Published> Option Buttons (Controls/object off the screen, so inoparable'
 
@@ -75,6 +75,6 @@ try {
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Scores/Hit_Next'), 1)
 	
 } catch (Exception e){
-	// Nothing to do, flse failure - just carry on
+	// Nothing to do, Button selected OK - false failure - just carry on
 }
 

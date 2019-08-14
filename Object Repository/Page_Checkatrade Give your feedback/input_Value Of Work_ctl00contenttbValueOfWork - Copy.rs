@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Value Of Work_ctl00contenttbValueOfWork</name>
+   <name>input_Value Of Work_ctl00contenttbValueOfWork - Copy</name>
    <tag></tag>
-   <elementGuidId>dde958c4-b18d-404e-affd-32aa9c9b2d68</elementGuidId>
+   <elementGuidId>c4927092-5797-4765-b98f-2cd843777b22</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

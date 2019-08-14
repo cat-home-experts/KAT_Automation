@@ -13,3 +13,36 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+//-------------------------------------------------------------------------
+// Give Feedback - Final page - Thank You!                                | - Snip - 14/08/2019 - To Refactor
+//-------------------------------------------------------------------------
+
+
+'------------------------------------'
+'  Verify Page Detail                |'
+'------------------------------------'
+WebUI.verifyTextPresent('A Checkatrade staff member will now review your feedback for Test Account', false)
+
+WebUI.verifyTextPresent('Finish', false)
+
+WebUI.verifyTextPresent('Thank you!', false)
+
+
+'------------------------------------'
+'  Hit Finish                        |'
+'------------------------------------'
+WebUI.click(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/a_Finish'))
+
+
+'------------------------------------'
+'  Verify Return to Home Page        |'
+'------------------------------------'
+WebUI.verifyTextPresent('Helping you find the right trade or service', false)
+
+WebUI.verifyTextPresent('Search through over 30,000 recommended, vetted and monitored trades and service providers for free.', false)
+
+WebUI.verifyTextPresent('or look up a member by name', false)
+
+//-------------------------------------------------------
+// END                                                  | - Snip - 14/08/2019 - To Refactor
+//-------------------------------------------------------

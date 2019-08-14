@@ -66,14 +66,15 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (
     ' Enter Member Trade Name OR Checkatrade ID To Review |'
 
     '-----------------------------------------------------'
-    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Which_Member_to_Review'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Which_Member_to_Review'), [:], FailureHandling.STOP_ON_FAILURE)
 
     '--------------------------------------'
 
     ' Your Experience (page 1) Processing  |'
 
     '--------------------------------------'
-    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Your_Experience'), [:], FailureHandling.CONTINUE_ON_FAILURE) //optional
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Your_Experience'), [:], FailureHandling.CONTINUE_ON_FAILURE //optional
+        )
 
     '--------------------------------------'
 
@@ -94,9 +95,16 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (
     ' Further Info (page 4) Processing     |'
 
     '--------------------------------------'
-    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Further_Infomation/Further_Infomation'), [:], 
-        FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Further_Infomation/Further_Infomation'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
+	'--------------------------------------'
+	
+	' Thank You! (page 5) Processing       |'
+	
+	'--------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Final_Page'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+	
     '--------------------------------------'
 
     ' Processing Completion                |'
@@ -105,8 +113,8 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (
     // * * * * * * *   WIP - Work in progress - todo TODO   * * * * * * *    |
     //------------------------------------------------------------------------
     '--------------------------------------'
-    WebUI.delay(10 // for debug
-        )
+    //WebUI.delay(10) // for debug
+        
 
     '--------------------------'
 

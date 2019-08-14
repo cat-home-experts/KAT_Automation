@@ -3,7 +3,7 @@
    <description></description>
    <name>span_an individual consumer</name>
    <tag></tag>
-   <elementGuidId>f40a3cd6-d372-4c70-a1e2-e6f4ee3ac675</elementGuidId>
+   <elementGuidId>bd941115-4d9b-44ad-9920-6201fca554e4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

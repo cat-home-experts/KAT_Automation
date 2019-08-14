@@ -14,17 +14,22 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 //-------------------------------------------------------------------------
-// Test Sequence to Deal With Everything on the <Further_Information> Page | - Snip - 09/08/2019
+// Give Feedback - Further Information Page - Value of Work - and Commit  | - Snip - 14/08/2019 - To Refactor
 //-------------------------------------------------------------------------
 
-'-----------------------------------------------------------------'
- 'Further information only contains <Value of Work> and <Submit>  |'
- '-----------------------------------------------------------------'
 
+'------------------------------------'
+'  Set Value of Work Completed       |'
+'------------------------------------'
+WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_Value Of Work_ctl00contenttbValueOfWork'), 
+    '10000')
 
-
+'------------------------------------'
+'  Commit Page                       |'
+'------------------------------------'
+WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_Value Of Work_ctl00contentButton1'))
 
 
 //-------------------------------------------------------
-// END                                                  | - Snip - 09/08/2019
+// END                                                  | - Snip - 14/08/2019 - To Refactor
 //-------------------------------------------------------

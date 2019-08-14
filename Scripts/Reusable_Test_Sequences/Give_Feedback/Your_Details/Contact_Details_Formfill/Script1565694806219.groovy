@@ -13,3 +13,75 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+//--------------------------------------------------------------------
+// Give Feedback - Contact Details - Formfill                        | - Snip - 14/08/2019  -TO REFACTOR
+//--------------------------------------------------------------------
+'--------------------------------'
+
+'Read data from spreadsheet      |'
+
+'--------------------------------'
+//def data = findTestData('Data Files/Give_Feedback (1)' // put this into a method
+//	)
+//
+//YE_Recommend = data.getValue('YE_Recommendations', GlobalVariable.row // global rowindex 1
+//	)
+//
+//System.out.println(('Your Experience, Recommendation, Click on the ' + YE_Recommend) + ' Option Button ')
+
+'------------------------------'
+'  Set Home Telephone Number   |'
+'------------------------------'
+WebUI.setText(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_Home telephone_ctl00contenttbCustomerHomePhone'), 
+    '02392887766')
+
+'------------------------------'
+'  Set Best Time to Contact    |'
+'------------------------------'
+WebUI.setText(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_Best time to contact you_ctl00contenttbCustomerContactTime'), 
+    'Any')
+
+'------------------------------'
+'  Set Email Address           |'
+'------------------------------'
+WebUI.setText(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_Email_ctl00contenttbCustomerEmail'), 
+    'fggfgfg@dfddfdfd.com')
+
+'------------------------------'
+'  Set Mobile Telephone Number |'
+'------------------------------'
+WebUI.setText(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_Mobile_ctl00contenttbCustomerMobile'),
+	'07788123456')
+
+
+//-------------------------------------------
+//'--------------------------------'
+//'Set Recommendation - Yes or No  |'
+//'--------------------------------'
+//if (YE_Recommend == ("Yes")) {
+//    WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Feedback'))
+//}
+//else if (YE_Recommend == ("No")) {
+//    WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Experience_Feedback'))
+//}
+//'--------------------------------'
+//System.out.println("Your Experience, Recommendation, Click on the "+YE_Recommend+" Option Button ");
+////-------------------------------------------
+'-----------------------------------'
+//
+//'FAILS - Object Map Issue to Resolve'
+//WebUI.click(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/span_a trade customer'))
+//
+//WebUI.click(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/span_an individual consumer'))
+
+//try {
+//	//WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No - Copy'),1)
+//	'-----------------------------------\r\nError handling det to Optional - Flags warning here for false failure'
+//	WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Recommend'), 1, FailureHandling.OPTIONAL)
+//}	catch (Exception e) {
+//	// nothing to do
+//}
+
+//----------------------------------------
+// End                                   |  - Snip - 14/08/2019  -TO REFACTOR
+//----------------------------------------
