@@ -32,25 +32,29 @@ import internal.GlobalVariable as GlobalVariable
 '------------------------------------'
 '  Set Verify Options - SMS OR Email |'
 '------------------------------------'
-WebUI.click(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/span_Verify by SMS (Please provide a mobile number)'))
+WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_Verify by SMS (Please provide a mobile number)'))
 
-WebUI.click(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/span_Verify by email'))
+WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_Verify by email'))
 
 '--------------------------------------'
 '  Set How You Heard About Checkatrade |'
 '--------------------------------------'
-WebUI.selectOptionByValue(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/select_Please selectOnlineRadioSports sponsorshipWord of mouthDirectoryTVTrader (including feedback cards)Other'), 
-    'other', true)
-
-WebUI.setText(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_How did you hear about Checkatrade_ctl00contenttbOther'), 
-    'word of mouth')
+//WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Checkatrade Give your feedback/select_Please selectOnlineRadioSports sponsorshipWord of mouthDirectoryTVTrader (including feedback cards)Other'), 
+//    'other', true)
+//
+//WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_How did you hear about Checkatrade_ctl00contenttbOther'), 
+//    'word of mouth')
 
 '--------------------------------------'
-'  If Other Selected - Extra Textbox   |'   // Answer to Question - Set How You Heard About Checkatrade - Above
+'  How did you hear about Textbox      |'   // Answer to Question - Set How You Heard About Checkatrade - Above
 '--------------------------------------'
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/select_Please selectOnlineRadioSports sponsorshipWord of mouthDirectoryTVTrader (including feedback cards)Other'), 
     'directory', true)
+
+'--------------------------------------'
+'  Why Use The Selected Tradesperson   |'   // Answer to Question - Set you selected the tradesperson - Above
+'--------------------------------------'
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/select_Prefer not to sayFound the Tradesperson via CheckatradecomDirected to Checkatradecom by the Tradesperson'), 
     '2', true)
@@ -64,7 +68,6 @@ WebUI.click(findTestObject('Object Repository/New Folder/Page_Checkatrade Give y
 ' Select - I am happy to receive Updates - 3rd party |'
 '----------------------------------------------------'
 WebUI.click(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/label_I am happy to receive updates from selected third parties'))
-
 
 '--------------------------------------'
 '   SUBMIT Page                        |'

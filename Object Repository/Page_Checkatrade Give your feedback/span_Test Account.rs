@@ -31,7 +31,7 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Test Account</value>
+      <value>Test Account </value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

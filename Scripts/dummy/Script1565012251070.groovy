@@ -104,8 +104,9 @@ WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedbac
 
 WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_here_ctl00contentButtonSubmit'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_Value Of Work_ctl00contenttbValueOfWork'), 
-    '10000')
+//WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_Value Of Work_ctl00contenttbValueOfWork'), 
+//    '10000')
+//
+//WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_Value Of Work_ctl00contentButton1'))
 
-WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_Value Of Work_ctl00contentButton1'))
 

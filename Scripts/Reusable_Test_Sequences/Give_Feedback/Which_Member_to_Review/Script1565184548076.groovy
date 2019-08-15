@@ -11,29 +11,39 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import internal.GlobalVariable as GlobalVariable
 
-//--------------------------------------------------------------------
-// Give Feedback - Set Recommendation Yes OR No (Default = Yes)      | - Snip - 07/08/2019
-//--------------------------------------------------------------------
+//----------------------------------------------------------------------------------
+// Give Feedback - Enter Company Name or Checkatrade ID in the Member Review Field  | - Snip - 07/08/2019
+//----------------------------------------------------------------------------------
 
-'Peculiarity - a disabled <NEXT> button is on the signin page, you enter criteria and load is automatic'
+//'--------------------------------------------------'
+//' Set the Trade Name or CAT ID in the Review Field |'
+//'--------------------------------------------------'
+WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_Which member do you want to review_feedback-form__company_autocomplete_input'), 
+    findTestData('Give_Feedback (1)').getValue('Account_Verification_Name', GlobalVariable.row))
 
+//----------------------------------------------------------------------------------
+WebUI.delay(1) // Delay removed 14/08/19, integral with the previous Settext Command (waits up to 1 second for activity to complete
+   
 //-------------------------------------------
-' Set the Trade Name or CAT ID in the Text Search Field'
-'--------------------------------------------'
-WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_Which member do you want to review_feedback-form__company_autocomplete_input'),
-	findTestData('Give_Feedback (1)').getValue('Account_Verification_Name', GlobalVariable.row))
-
-WebUI.delay(1)
-//-------------------------------------------
-'Submit the search criteria using click'
+'Submit the search criteria using click     |'
 '-------------------------------------------'
-WebUI.click(findTestObject('Page_Checkatrade Give your feedback/div_Which member do you want to review'))
-//WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_Test Account'))
-//WebUI.click(findTestObject('Page_Checkatrade Give your feedback/input_Which member do you want to review_feedback-form__company_autocomplete_input'))
-//-------------------------------------------
 
-//------------------------------------
-// END                               | - Snip - 07/08/2019
-//------------------------------------
+'----------------------------------------------------------------------'
+try {
+    'Try Catch Included 14/08/2019 - Sometimes the Trader isnt returned?   |'
+    '----------------------------------------------------------------------'
+    WebUI.click(findTestObject('Page_Checkatrade Give your feedback/div_Which member do you want to review')) //WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_Test Account')) // Previous debug
+    //WebUI.click(findTestObject('Page_Checkatrade Give your feedback/input_Which member do you want to review_feedback-form__company_autocomplete_input'))
+}
+catch (Exception e) {
+    System.out.println.(' * * * Trader OR CAT ID <Detail reported in log>') 
+
+    KeywordUtil.markFailed(' * * * Trader OR CAT ID ') 
+} 
+'----------------------------------------------------------------------'
+//////////////////////////////
+//// END
+//////////////////////////////

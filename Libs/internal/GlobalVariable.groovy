@@ -91,6 +91,11 @@ Profile Web_Office_Live : Web Office Live - Requires Login</p>
     public static Object YE_Recommendations
      
     /**
+     * <p>Profile Preview : Datasheet location (needs to change to shared repo local)</p>
+     */
+    public static Object DataSheet_Location
+     
+    /**
      * <p>Profile Trades_Sign_In_Dashboard : User Name</p>
      */
     public static Object Username
@@ -122,6 +127,7 @@ Profile Web_Office_Live : Web Office Live - Requires Login</p>
             Validation_Data_Special_Chars = selectedVariables['Validation_Data_Special_Chars']
             CurrentUrl = selectedVariables['CurrentUrl']
             YE_Recommendations = selectedVariables['YE_Recommendations']
+            DataSheet_Location = selectedVariables['DataSheet_Location']
             Username = selectedVariables['Username']
             Password = selectedVariables['Password']
             

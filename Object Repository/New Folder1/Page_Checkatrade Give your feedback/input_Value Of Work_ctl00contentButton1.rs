@@ -3,11 +3,11 @@
    <description></description>
    <name>input_Value Of Work_ctl00contentButton1</name>
    <tag></tag>
-   <elementGuidId>d3fa3d8d-c9f6-4f19-9a2d-598237129145</elementGuidId>
+   <elementGuidId>f9e6245d-b1a8-492e-b64b-267ffff8c06c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;Button1&quot;]</value>
+         <value>//input[@id='Button1']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

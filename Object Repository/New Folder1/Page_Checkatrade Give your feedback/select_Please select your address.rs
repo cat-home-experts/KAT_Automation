@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Value Of Work_ctl00contentButton1</name>
+   <name>select_Please select your address</name>
    <tag></tag>
-   <elementGuidId>d3fa3d8d-c9f6-4f19-9a2d-598237129145</elementGuidId>
+   <elementGuidId>37e43704-a26d-411e-822e-b159f0ec2c43</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;Button1&quot;]</value>
+         <value>//select[@id='ctl00_content_ctlCustomerAddress_ddlAddress']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -17,104 +17,108 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>input</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>type</name>
-      <type>Main</type>
-      <value>submit</value>
+      <value>select</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>ctl00$content$Button1</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>value</name>
-      <type>Main</type>
-      <value>Submit</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>onclick</name>
-      <type>Main</type>
-      <value>javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$content$Button1&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))</value>
+      <value>ctl00$content$ctlCustomerAddress$ddlAddress</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>Button1</value>
+      <value>ctl00_content_ctlCustomerAddress_ddlAddress</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>btn btn--primary btn--causes-validation</value>
+      <value>form__input--1-2-width required required</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-required-message</name>
+      <type>Main</type>
+      <value>Please select your address or click 'Not listed' to enter an alternative</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+	Please select your address ...
+	129 Stoke Road,Gosport,Hampshire,PO12 1SD
+	Waitrose Ltd,129 Stoke Road,Gosport,Hampshire,PO12 1SD
+	Blockbuster Video Express,131 Stoke Road,Gosport,Hampshire,PO12 1SD
+	Mayfair Snooker Club,131 Stoke Road,Gosport,Hampshire,PO12 1SD
+	First And Second Floors,133 Stoke Road,Gosport,Hampshire,PO12 1SD
+	Gosport Chiropractic Clinic,133 Stoke Road,Gosport,Hampshire,PO12 1SD
+	Hampshire County Council, Adult &amp; Childrens Services,133 Stoke Road,Gosport,Hampshire,PO12 1SD
+	Motor World,133 Stoke Road,Gosport,Hampshire,PO12 1SD
+
+</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;Button1&quot;)</value>
+      <value>id(&quot;ctl00_content_ctlCustomerAddress_ddlAddress&quot;)</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='Button1']</value>
+      <value>//select[@id='ctl00_content_ctlCustomerAddress_ddlAddress']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='ctl00_ctlMain']/div[2]/div[3]/div[2]/input[2]</value>
+      <value>//div[@id='ctl00_content_ctlYourDetailsUpdatePanel']/div[4]/div/div[2]/select</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Value Of Work'])[1]/following::input[3]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Your postcode:'])[1]/following::select[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Further information'])[2]/following::input[3]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Name:'])[1]/following::select[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='For tradespeople'])[1]/preceding::input[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Not listed...'])[1]/preceding::select[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Find Out More'])[1]/preceding::input[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Home telephone:'])[1]/preceding::select[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/input[2]</value>
+      <value>//div[4]/div/div[2]/select</value>
    </webElementXpaths>
 </WebElementEntity>
