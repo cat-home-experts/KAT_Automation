@@ -17,48 +17,32 @@ import internal.GlobalVariable as GlobalVariable
 // Give Feedback - Set Individual Consumer OR a Trade Costomer       | - Snip - 14/08/2019  -TO REFACTOR
 //--------------------------------------------------------------------
 '--------------------------------'
-
 'Read data from spreadsheet      |'
-
 '--------------------------------'
-//def data = findTestData('Data Files/Give_Feedback (1)' // put this into a method
-//	)
-//
-//YE_Recommend = data.getValue('YE_Recommendations', GlobalVariable.row // global rowindex 1
-//	)
-//
-//System.out.println(('Your Experience, Recommendation, Click on the ' + YE_Recommend) + ' Option Button ')
+def data = findTestData('Data Files/Give_Feedback (1)') // put this into a method
+YD_Consumer_Customer = data.getValue('YD_Consumer_Customer', GlobalVariable.row) // global rowindex 1
+System.out.println(('Your Details, Consumer OR Trade Customer, Click on the ' + YD_Consumer_Customer) + ' Option Button ')
 
 //-------------------------------------------
 //'--------------------------------'
-//'Set Recommendation - Yes or No  |'
+//'Set Consumer OR Trade Customer  |'
 //'--------------------------------'
-//if (YE_Recommend == ("Yes")) {
-//    WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Feedback'))
-//}
-//else if (YE_Recommend == ("No")) {
-//    WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Experience_Feedback'))
-//}
-//'--------------------------------'
-//System.out.println("Your Experience, Recommendation, Click on the "+YE_Recommend+" Option Button ");
-////-------------------------------------------
+
+try {
+	if (YD_Consumer_Customer == ("Consumer")) // Default Selection
+		WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_an individual consumer'),1)
+} catch (Exception e) {
+	// Nothing to do - Default Value - Can't Reselect using tool
+}
+'-------------------------------------------'
+if (YD_Consumer_Customer == ("Customer")) {
+    WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_a trade customer'),1)
+}
+'--------------------------------'
+System.out.println("Your Experience, Recommendation, Click on the "+YD_Consumer_Customer+" Option Button ");
+//-------------------------------------------
 '-----------------------------------'
 
-'FAILS - Object Map Issue to Resolve'
-//////WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_a trade customer'),1)
-
-
-// Default
-////WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_an individual consumer'),1)
-
-//try {
-//	//WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No - Copy'),1)
-//	'-----------------------------------\r\nError handling det to Optional - Flags warning here for false failure'
-//	WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Recommend'), 1, FailureHandling.OPTIONAL)
-//}	catch (Exception e) {
-//	// nothing to do
-//}
-
 //----------------------------------------
-// End                                   |  - Snip - 14/08/2019  -TO REFACTOR
+// End                                   |  - Snip - 14/08/2019  -TO REFACTOR - Done 16/08/2019
 //----------------------------------------

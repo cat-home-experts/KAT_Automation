@@ -17,43 +17,44 @@ import internal.GlobalVariable as GlobalVariable
 // Give Feedback - Personal Details - Formfill                       | - Snip - 14/08/2019  -TO REFACTOR
 //--------------------------------------------------------------------
 '--------------------------------'
-
 'Read data from spreadsheet      |'
-
 '--------------------------------'
-//def data = findTestData('Data Files/Give_Feedback (1)' // put this into a method
-//	)
-//
-//YE_Recommend = data.getValue('YE_Recommendations', GlobalVariable.row // global rowindex 1
-//	)
-//
-//System.out.println(('Your Experience, Recommendation, Click on the ' + YE_Recommend) + ' Option Button ')
+def data = findTestData('Data Files/Give_Feedback (1)') // put this into a method
+YD_Salutation = data.getValue('YD_Salutation', GlobalVariable.row) 
+YD_Name = data.getValue('YD_Name', GlobalVariable.row)
+YD_Company_Name = data.getValue('YD_Company_Name', GlobalVariable.row)
+YD_Postcode = data.getValue('YD_Postcode', GlobalVariable.row)
+YD_Verify_Address = data.getValue('YD_Verify_Address', GlobalVariable.row)
+YD_Consumer_Customer = data.getValue('YD_Consumer_Customer', GlobalVariable.row)
 
+//---------------------------------------------------------------------------------------------
+System.out.println(('Your Experience, Your details, Set the ' + YD_Salutation) + ' Text Box ')
+//---------------------------------------------------------------------------------------------
 '--------------------'
 '  Set  Salutation   |'
 '--------------------'
 WebUI.selectOptionByValue(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/select_MrMrsMissMsMr  MrsDrRevRevd'),
-	'Mr', true)
+	YD_Salutation, true)
 
 '--------------------'
-'  Set  Name         |'
+'  Set  Name         |' // If Customer Type Previously Selected = Consumer - Then Fill The Consumer Name Details
 '--------------------'
-WebUI.setText(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_Name_ctl00contenttbCustomerName'),
-	'Bert Millichip')
-
-// Trade Customer Selection reveals extra text box - 
-
+if (YD_Consumer_Customer == ("Consumer")) {
+	WebUI.setText(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_Name_ctl00contenttbCustomerName'),
+	YD_Name)
+}
 '----------------------'
-' Name of you company  |'  // TODO
+' Name of you company  |'   // If Customer Type Previously Selected = Customer - Then Fill The Customer Trading Name Details
 '----------------------'
-
-// TODO
-
+if (YD_Consumer_Customer == ("Customer")) {
+	WebUI.setText(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_Name of your company_ctl00contenttbCustomerCompany'), 
+    YD_Company_Name)
+}
 '--------------------'
 '  Set Postcode     |'   // LOOKUP IS Long - Need to Synch with returned data
 '--------------------'
 WebUI.setText(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_Your postcode_ctl00contentctlCustomerAddresstbPostcodeSearch'),
-	'po12 1sd')
+	YD_Postcode)
 
 '-----------------------------'
 '  Address Lookup Selection   |'
@@ -63,42 +64,19 @@ WebUI.click(findTestObject('Object Repository/New Folder/Page_Checkatrade Give y
 '-----------------------------'
 '  Address Lookup Set         |'
 '-----------------------------'
-WebUI.selectOptionByValue(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/select_Please select your address'),
-	'c1909b81-8db1-4a42-bfb8-8dbb5bbe7035', true)
+WebUI.selectOptionByLabel(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/select_Please select your address'),
+	YD_Verify_Address, true) // YD_Verify_Address // 'c1909b81-8db1-4a42-bfb8-8dbb5bbe7035'
+
+
+//WebUI.selectOptionByValue(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/select_Please select your address'),
+//	'c1909b81-8db1-4a42-bfb8-8dbb5bbe7035', true)
 
 '-----------------------------'
-'  Verify Returned Address    |'  // TODO
+'  Verify Returned Address    |'  
 '-----------------------------'
-
-// TODO
+WebUI.verifyTextPresent(YD_Verify_Address, false)
 //-------------------------------------------
-//'--------------------------------'
-//'Set Recommendation - Yes or No  |'
-//'--------------------------------'
-//if (YE_Recommend == ("Yes")) {
-//    WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Feedback'))
-//}
-//else if (YE_Recommend == ("No")) {
-//    WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Experience_Feedback'))
-//}
-//'--------------------------------'
-//System.out.println("Your Experience, Recommendation, Click on the "+YE_Recommend+" Option Button ");
-////-------------------------------------------
-'-----------------------------------'
-//
-//'FAILS - Object Map Issue to Resolve'
-//WebUI.click(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/span_a trade customer'))
-//
-//WebUI.click(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/span_an individual consumer'))
-
-//try {
-//	//WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No - Copy'),1)
-//	'-----------------------------------\r\nError handling det to Optional - Flags warning here for false failure'
-//	WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Recommend'), 1, FailureHandling.OPTIONAL)
-//}	catch (Exception e) {
-//	// nothing to do
-//}
 
 //----------------------------------------
-// End                                   |  - Snip - 14/08/2019  -TO REFACTOR
+// End                                   |  - Snip - 14/08/2019  - TO REFACTOR - Done 16/08/2019
 //----------------------------------------

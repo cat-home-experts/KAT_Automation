@@ -14,96 +14,80 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 //--------------------------------------------------------------------
-// Checkadtrade Questins - Formfill                        | - Snip - 14/08/2019  -TO REFACTOR
+// Checkadtrade Questions - Formfill                                 | - Snip - 14/08/2019  
 //--------------------------------------------------------------------
 '--------------------------------'
-
 'Read data from spreadsheet      |'
-
 '--------------------------------'
-//def data = findTestData('Data Files/Give_Feedback (1)' // put this into a method
-//	)
-//
-//YE_Recommend = data.getValue('YE_Recommendations', GlobalVariable.row // global rowindex 1
-//	)
-//
-//System.out.println(('Your Experience, Recommendation, Click on the ' + YE_Recommend) + ' Option Button ')
+def data = findTestData('Data Files/Give_Feedback (1)') // put this into a method
+YD_Feedback_Method = data.getValue('YD_Feedback_Method', GlobalVariable.row)
+YD_How_Did_You_Hear = data.getValue('YD_How_Did_You_Hear', GlobalVariable.row)
+YD_Other_Response = data.getValue('YD_Other_Response', GlobalVariable.row)
+YD_Reason_For_Tradeperson_Selection = data.getValue('YD_Reason_For_Tradeperson_Selection', GlobalVariable.row)
+YD_Receive_Chekatrade_Updates = data.getValue('YD_Receive_Chekatrade_Updates', GlobalVariable.row)
+YD_Receive_Third_Party_Updates = data.getValue('YD_Receive_Third_Party_Updates', GlobalVariable.row)
+
+//---------------------------------------------------------------------------------------------
+System.out.println(('Your Experience, Your details, Set the ' + YD_Feedback_Method) + ' Text Box ')
+//---------------------------------------------------------------------------------------------
 
 '------------------------------------'
 '  Set Verify Options - SMS OR Email |'
 '------------------------------------'
-WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_Verify by SMS (Please provide a mobile number)'))
+if (YD_Feedback_Method == "email"){
+	WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_Verify by email'))
+}
+else {
+	WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_Verify by SMS (Please provide a mobile number)'))
+}
 
-WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_Verify by email'))
+'--------------------------------------'
+' Scroll to <Next> Button              |'
+'--------------------------------------'
+
+WebUI.scrollToElement('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_here_ctl00contentButtonSubmit', 0)
 
 '--------------------------------------'
 '  Set How You Heard About Checkatrade |'
 '--------------------------------------'
-//WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Checkatrade Give your feedback/select_Please selectOnlineRadioSports sponsorshipWord of mouthDirectoryTVTrader (including feedback cards)Other'), 
-//    'other', true)
-//
-//WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_How did you hear about Checkatrade_ctl00contenttbOther'), 
-//    'word of mouth')
+ WebUI.selectOptionByValue(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/select_Please selectTVRadioOnlineDirectoryWord'), 
+     YD_How_Did_You_Hear, true)
 
 '--------------------------------------'
-'  How did you hear about Textbox      |'   // Answer to Question - Set How You Heard About Checkatrade - Above
+'  How did you hear about Textbox      |'   // Answer to Question - Set How You Heard About Checkatrade - Above (Extra Text Box Appears)
 '--------------------------------------'
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/select_Please selectOnlineRadioSports sponsorshipWord of mouthDirectoryTVTrader (including feedback cards)Other'), 
-    'directory', true)
+if (YD_How_Did_You_Hear == "Other"){
+	WebUI.selectOptionByValue(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/select_Please selectOnlineRadioSports sponsorshipWord of mouthDirectoryTVTrader (including feedback cards)Other'),
+		YD_Other_Response, true)
+}
 
 '--------------------------------------'
 '  Why Use The Selected Tradesperson   |'   // Answer to Question - Set you selected the tradesperson - Above
 '--------------------------------------'
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/select_Prefer not to sayFound the Tradesperson via CheckatradecomDirected to Checkatradecom by the Tradesperson'), 
-    '2', true)
+    YD_Reason_For_Tradeperson_Selection, true)
 
 '----------------------------------------------------'
 ' Select - I am happy to receive Updates - Checkatra |'
 '----------------------------------------------------'
-WebUI.click(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_I am happy to receive updates from Checkatrade_ctl00contentchkEmailUpdates'))
+if (YD_Receive_Chekatrade_Updates == "Yes"){
+	WebUI.click(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_I am happy to receive updates from Checkatrade_ctl00contentchkEmailUpdates'))
+}
 
 '----------------------------------------------------'
 ' Select - I am happy to receive Updates - 3rd party |'
 '----------------------------------------------------'
-WebUI.click(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/label_I am happy to receive updates from selected third parties'))
+if (YD_Receive_Third_Party_Updates == "Yes"){
+	WebUI.click(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/label_I am happy to receive updates from selected third parties'))
+}
 
 '--------------------------------------'
 '   SUBMIT Page                        |'
 '--------------------------------------'
 WebUI.click(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_here_ctl00contentButtonSubmit'))
 
-
-
-//-------------------------------------------
-//'--------------------------------'
-//'Set Recommendation - Yes or No  |'
-//'--------------------------------'
-//if (YE_Recommend == ("Yes")) {
-//    WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Feedback'))
-//}
-//else if (YE_Recommend == ("No")) {
-//    WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Experience_Feedback'))
-//}
-//'--------------------------------'
-//System.out.println("Your Experience, Recommendation, Click on the "+YE_Recommend+" Option Button ");
-////-------------------------------------------
-'-----------------------------------'
-//
-//'FAILS - Object Map Issue to Resolve'
-//WebUI.click(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/span_a trade customer'))
-//
-//WebUI.click(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/span_an individual consumer'))
-
-//try {
-//	//WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No - Copy'),1)
-//	'-----------------------------------\r\nError handling det to Optional - Flags warning here for false failure'
-//	WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Recommend'), 1, FailureHandling.OPTIONAL)
-//}	catch (Exception e) {
-//	// nothing to do
-//}
-
 //----------------------------------------
-// End                                   |  - Snip - 14/08/2019  -TO REFACTOR
+// End                                   |  - Snip - 14/08/2019  - TO REFACTOR - Done - 16/08/2019
 //----------------------------------------
