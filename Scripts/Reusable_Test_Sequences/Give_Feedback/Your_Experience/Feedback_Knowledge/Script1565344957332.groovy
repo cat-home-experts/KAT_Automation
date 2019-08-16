@@ -23,22 +23,22 @@ import internal.GlobalVariable as GlobalVariable
 def data = findTestData('Data Files/Give_Feedback (1)')  // put this into a method
 YE_Feedback_Knowledge = data.getValue("YE_Feedback_Knowledge", GlobalVariable.row)// global rowindex 1
 
-/*//-------------------------------------------
+//-------------------------------------------
 System.out.println("Your Experience, Feedback Knowledge, Click on the "+YE_Feedback_Knowledge+" Option Button ");
 '------------------------------------------------'
 'Set Knowledge of feedback process? - Yes or No  |'
 '------------------------------------------------'
 if (YE_Feedback_Knowledge == ("Yes")) {
-	WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Feedback'))
+	WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes - Copy'))
 } 
 else if (YE_Feedback_Knowledge == ("No")) {
 	WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Experience_Feedback'))
 }
 '--------------------------------'
-System.out.println("Your Experience, Feedback Knowledge, Click on the "+YE_Feedback_Knowledge+" Option Button ");
+System.out.println('Your Experience, Feedback Knowledge, Click on the <'+YE_Feedback_Knowledge+'> Option Button ');
 //-------------------------------------------
-*/
-WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes - Copy')) // span_Yes_Feedback_Possible
+
+// WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes - Copy')) // span_Yes_Feedback_Possible
 
 //------------------------------------
 // END                               | - Snip - 08/08/2019

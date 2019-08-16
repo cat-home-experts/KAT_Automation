@@ -17,29 +17,38 @@ import internal.GlobalVariable as GlobalVariable
 // Set the Listbox <Reliability> on the <Your Scores> Screen   | - Snip - 13/08/2019
 //--------------------------------------------------------------
 
+def data = findTestData('Data Files/Give_Feedback (1)')  // put this into a method      // Points directly at datasource but resolution issue
+YS_Tidiness = data.getValue("YS_Tidiness", GlobalVariable.row)
+YS_Reliability = data.getValue("YS_Reliability", GlobalVariable.row)
+YS_Courtesy = data.getValue("YS_Courtesy", GlobalVariable.row)
+YS_Workmanship = data.getValue("YS_Workmanship", GlobalVariable.row)
+'--------------------------------'
+'Read data from spreadsheet      |'
+'--------------------------------'
+
 '------------------------------------------------------'
 'Select Tidiness Value form List                       |' 
 '------------------------------------------------------'
-WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Checkatrade Give your feedback/select_--109876543210NA'),
-	'10', true)
+WebUI.selectOptionByValue(findTestObject('Page_Checkatrade Give your feedback/select_--YS_Tidiness'),
+	YS_Tidiness, true)
 
 '------------------------------------------------------'
 'Select Reliability and Timekeeping Value form List    |'  
 '------------------------------------------------------'
-WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Checkatrade Give your feedback/select_--109876543210NA_1'),
-	'10', true)
+WebUI.selectOptionByValue(findTestObject('Page_Checkatrade Give your feedback/select_--YS_Reliability'),
+	YS_Reliability, true)
 
 '------------------------------------------------------'
 'Select Courtesy Value form List                       |'
 '------------------------------------------------------'
-WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Checkatrade Give your feedback/select_--109876543210NA_2'),
-	'10', true)
+WebUI.selectOptionByValue(findTestObject('Page_Checkatrade Give your feedback/select_--YS_Courtesy'),
+	YS_Reliability, true)
 
 '------------------------------------------------------'
 'Select Quality and Workmanship Value form List        |'
 '------------------------------------------------------'
-WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Checkatrade Give your feedback/select_--109876543210NA_3'),
-	'10', true)
+WebUI.selectOptionByValue(findTestObject('Page_Checkatrade Give your feedback/select_--YS_Workmanship'),
+	YS_Workmanship, true)
 
 //--------------------------------------------------------------
 // END                                                         | - Snip - 13/08/2019

@@ -17,37 +17,27 @@ import internal.GlobalVariable as GlobalVariable
 // Test Sequence to Deal With Everything on the <Your Experience> Page 1               | - Snip - 09/08/2019
 //-------------------------------------------------------------------------------------
 '---------------------------------------------------------------------------------------'
-
 ' Your Experience (page 1) Returned with Recommendation Selection Set to Yes (Default)  |'
-
 '---------------------------------------------------------------------------------------'
 
 //WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Validation/Your_Experience_Initial_Page_State'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 '---------------------------------------------------------------------------------------'
-
 ' Your Experience (page 1) Recomment this trader?                                       |'
+'---------------------------------------------------------------------------------------'
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Recommendation_Selection'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 '---------------------------------------------------------------------------------------'
-WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Recommendation_Selection'), [:], FailureHandling.OPTIONAL)
-
-'---------------------------------------------------------------------------------------'
-
 ' Your Experience (page 1) Estimation/Quotation Accuracy?                               |'
-
 '---------------------------------------------------------------------------------------'
 WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Quotation_Selection'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 '---------------------------------------------------------------------------------------'
-
 ' Your Experience (page 1) Knowledge of Feedback Process?                               |'
-
 '---------------------------------------------------------------------------------------'
 WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Feedback_Knowledge'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 '---------------------------------------------------------------------------------------'
-
 ' Your Experience (page 1) Hit <Next> Button to Continue to <Your Scores>- (page 2)     |'
-
 '---------------------------------------------------------------------------------------'
 WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Hit_Next'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 

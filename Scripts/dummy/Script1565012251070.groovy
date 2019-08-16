@@ -36,16 +36,16 @@ WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Feedbac
 WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_No_ctl00contentButton4'))
 
 //-------------
-WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Checkatrade Give your feedback/select_--109876543210NA'), 
+WebUI.selectOptionByValue(findTestObject('Page_Checkatrade Give your feedback/select_--YS_Tidiness'), 
     '10', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Checkatrade Give your feedback/select_--109876543210NA_1'), 
+WebUI.selectOptionByValue(findTestObject('Page_Checkatrade Give your feedback/select_--YS_Reliability'), 
     '10', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Checkatrade Give your feedback/select_--109876543210NA_2'), 
+WebUI.selectOptionByValue(findTestObject('Page_Checkatrade Give your feedback/select_--YS_Courtesy'), 
     '10', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Checkatrade Give your feedback/select_--109876543210NA_3'), 
+WebUI.selectOptionByValue(findTestObject('Page_Checkatrade Give your feedback/select_--YS_Workmanship'), 
     '10', true)
 //-------------
 

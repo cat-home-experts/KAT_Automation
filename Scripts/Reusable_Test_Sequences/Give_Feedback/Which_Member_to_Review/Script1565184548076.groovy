@@ -25,7 +25,7 @@ WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Give your feedb
     findTestData('Give_Feedback (1)').getValue('Account_Verification_Name', GlobalVariable.row))
 
 //----------------------------------------------------------------------------------
-WebUI.delay(1) // Delay removed 14/08/19, integral with the previous Settext Command (waits up to 1 second for activity to complete
+WebUI.delay(1) // Delay reapplied 14/08/19, integral with the previous Settext Command (waits up to 1 second for activity to complete/work
    
 //-------------------------------------------
 'Submit the search criteria using click     |'
@@ -35,8 +35,9 @@ WebUI.delay(1) // Delay removed 14/08/19, integral with the previous Settext Com
 try {
     'Try Catch Included 14/08/2019 - Sometimes the Trader isnt returned?   |'
     '----------------------------------------------------------------------'
-    WebUI.click(findTestObject('Page_Checkatrade Give your feedback/div_Which member do you want to review')) //WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_Test Account')) // Previous debug
-    //WebUI.click(findTestObject('Page_Checkatrade Give your feedback/input_Which member do you want to review_feedback-form__company_autocomplete_input'))
+
+	//----------------------------------------------------------------------------------
+    WebUI.click(findTestObject('Page_Checkatrade Give your feedback/div_Which member do you want to review')) 
 }
 catch (Exception e) {
     System.out.println.(' * * * Trader OR CAT ID <Detail reported in log>') 

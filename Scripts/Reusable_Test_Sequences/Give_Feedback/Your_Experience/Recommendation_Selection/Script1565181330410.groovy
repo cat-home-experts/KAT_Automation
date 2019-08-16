@@ -20,11 +20,13 @@ import com.kms.katalon.core.util.KeywordUtil
 //--------------------------------------------------------------------
 // Give Feedback - Set Recommendation Yes OR No (Default = Yes)      | - Snip - 08/08/2019  -TO REFACTOR
 //--------------------------------------------------------------------
+def data = findTestData('Data Files/Give_Feedback (1)')  // put this into a method      // Points directly at datasource but resolution issue
+YE_Recommend = data.getValue("YE_Recommendations", GlobalVariable.row)// global rowindex 1
 '--------------------------------'
 'Read data from spreadsheet      |'
 '--------------------------------'
-Give_Feedback = ExcelFactory.getExcelDataWithDefaultSheet(GlobalVariable.DataSheet_Location, 'Sheet1', true)
-String YE_Recommend = Give_Feedback .getValue('YE_Recommendations', GlobalVariable.row) // (4, 2)
+//Give_Feedback = ExcelFactory.getExcelDataWithDefaultSheet(GlobalVariable.DataSheet_Location, 'Sheet1', true)
+//String YE_Recommend = Give_Feedback.getValue('YE_Recommendations', GlobalVariable.row) // (4, 2)
 
 //-------------------------------------------
 '--------------------------------'
