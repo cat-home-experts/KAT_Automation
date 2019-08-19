@@ -16,24 +16,27 @@ import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.exception.StepErrorException as StepErrorException
 import org.openqa.selenium.Keys as Keys
 
-WebUI.waitForPageLoad(1)
+//-------------------------------------------------------------------------
+// Give Feedback - Further Information Page - Value of Work - and Commit  | - Snip - 14/08/2019 - To Refactor
+//-------------------------------------------------------------------------
 
-////WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_Value Of Work_ctl00contenttbValueOfWork'), '10000')
-//WebUI.setText(findTestObject('Object Repository/New Folder1/Page_Checkatrade Give your feedback/input_Value Of Work_ctl00contenttbValueOfWork'), '12000')
+'--------------------------------'
+'Read data from spreadsheet      |'
+'--------------------------------'
+def data = findTestData('Data Files/Give_Feedback (1)') // put this into a method
+FD_Value_of_Work = data.getValue('FD_Value_of_Work', GlobalVariable.row)
 
-WebUI.sendKeys(findTestObject(URL), Keys.chord(Keys.ENTER))
-WebUI.delay(1)
-WebUI.sendKeys(findTestObject(URL), Keys.chord(Keys.ENTER))
-WebUI.delay(1)
-WebUI.sendKeys(findTestObject(URL), Keys.chord(Keys.NUMPAD1))
-WebUI.delay(1)
-WebUI.sendKeys(findTestObject(URL), Keys.chord(Keys.NUMPAD0))
-WebUI.delay(1)
-WebUI.sendKeys(findTestObject(URL), Keys.chord(Keys.NUMPAD0))
-WebUI.delay(1)
-WebUI.sendKeys(findTestObject(URL), Keys.chord(Keys.NUMPAD0))
-WebUI.delay(1)
-KeywordUtil.markPassed(" * * *  PASSED  * * *")
-''
-// end
+'--------------------------------'
+' Set the Value of Work Textbox  |'  // Warning! The previous page fill auto commits, even though there is a commit button on the form (watch for behaviour change)
+'--------------------------------'
+WebUI.setText(findTestObject('Object Repository/New Folder1/Page_Checkatrade Give your feedback/input_Value Of Work_ctl00contenttbValueOfWork'), FD_Value_of_Work)
+
+'--------------------------------'
+'Hit <Submit> button to Commit   |'
+'--------------------------------'
+WebUI.click(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_Value Of Work_ctl00contentButton1'))
+
+//-------------------------------------------------------
+// END                                                  | - Snip - 14/08/2019 - To Refactor - Done 19/08/2019
+//-------------------------------------------------------
 

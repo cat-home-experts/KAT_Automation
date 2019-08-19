@@ -13,3 +13,12 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+//-----------------------------------------------
+// This Field is Required Validation Message     | - Snip - 19/08/2019
+//-----------------------------------------------
+
+WebUI.verifyTextPresent('Please select an answer', false)
+
+//-------------------------------------------------------
+// END                                                  | - Snip - 19/08/2019
+//-------------------------------------------------------

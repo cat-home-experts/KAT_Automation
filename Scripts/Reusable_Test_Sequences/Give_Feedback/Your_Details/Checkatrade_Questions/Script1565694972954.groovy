@@ -45,28 +45,32 @@ else {
 ' Scroll to <Next> Button              |'
 '--------------------------------------'
 
-WebUI.scrollToElement('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_here_ctl00contentButtonSubmit', 0)
+WebUI.scrollToPosition(200, 0)
+//WebUI.scrollToElement('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_here_ctl00contentButtonSubmit', 0)  // xpath = //*[@id="ButtonSubmit"]
 
 '--------------------------------------'
 '  Set How You Heard About Checkatrade |'
 '--------------------------------------'
- WebUI.selectOptionByValue(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/select_Please selectTVRadioOnlineDirectoryWord'), 
+
+WebUI.waitForPageLoad(1)
+
+WebUI.selectOptionByLabel(findTestObject('Object Repository/Page_Checkatrade Give your feedback/select_Please selectTVRadioOnlineDirectoryWord'), 
      YD_How_Did_You_Hear, true)
 
 '--------------------------------------'
-'  How did you hear about Textbox      |'   // Answer to Question - Set How You Heard About Checkatrade - Above (Extra Text Box Appears)
+'  How did you hear about Textbox      |'   // Answer to Question - Set How You Heard About Checkatrade - Above 'OTHER' Selected (Extra Text Box Appears)
 '--------------------------------------'
 
 if (YD_How_Did_You_Hear == "Other"){
-	WebUI.selectOptionByValue(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/select_Please selectOnlineRadioSports sponsorshipWord of mouthDirectoryTVTrader (including feedback cards)Other'),
-		YD_Other_Response, true)
+	WebUI.setText(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_How did you hear about Checkatrade_ctl00contenttbOther'),
+		'YD_Other_Response')
 }
 
 '--------------------------------------'
 '  Why Use The Selected Tradesperson   |'   // Answer to Question - Set you selected the tradesperson - Above
 '--------------------------------------'
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/select_Prefer not to sayFound the Tradesperson via CheckatradecomDirected to Checkatradecom by the Tradesperson'), 
+WebUI.selectOptionByLabel(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/select_Prefer not to sayFound the Tradesperson via CheckatradecomDirected to Checkatradecom by the Tradesperson'), 
     YD_Reason_For_Tradeperson_Selection, true)
 
 '----------------------------------------------------'

@@ -42,9 +42,9 @@ WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Deta
 WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Details/Checkatrade_Questions'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 '-------------------------------------'
-' Commit form                         |'
+' Commit form                         |'  // WARNING - Details Auto Commit No Need To Hit The Commit Button
 '-------------------------------------'
-WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_Value Of Work_ctl00contentButton1'))
+//WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_Value Of Work_ctl00contentButton1'))
 
 
 //-------------------------------------------------------

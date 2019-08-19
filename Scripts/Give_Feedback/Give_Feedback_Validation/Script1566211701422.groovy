@@ -49,25 +49,61 @@ import internal.GlobalVariable as GlobalVariable
 //-----------------------------------------
 // Call Setup Process - Browser Startup, Navigate, Maximize and Close Cookie Nagging Element
 //-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
-	//-----------------------------------------
-	'----------------------------------------------------'
-	' Hit the <Give Feedback> link in the header banner  |'
-	'----------------------------------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Banner_Menu/Give_Feedback'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test\r\n   --------------------------------------------------------' 
+for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (1)').getRowNumbers() {         // Will Only use the first row for validation purposes  |
+    //def removed for globalisation                                                                            '-------------------------------------------------------'
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 
-	
-	//------------------------------------------------------------------------
-	// * * * * * * *   WIP - Work in progress - todo TODO   * * * * * * *    |
-	//------------------------------------------------------------------------
-	
+    //-----------------------------------------
+    '-----------------------------------------------------'
+    ' Hit the <Give Feedback> link in the header banner   |'
+    '-----------------------------------------------------'
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Banner_Menu/Give_Feedback'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
-	'--------------------------'
-	' Teardown - CLose Browser |'
-	'--------------------------'
-	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.STOP_ON_FAILURE)
+    '-----------------------------------------------------'
+    ' Enter Member Trade Name OR Checkatrade ID To Review |'
+    '-----------------------------------------------------'
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Which_Member_to_Review'), [:], FailureHandling.STOP_ON_FAILURE)
 
+    '--------------------------------------'
+    ' Your Experience (page 1) Processing  |'
+    '--------------------------------------'
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Your_Experience'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+    '--------------------------------------'
+    ' Your Scores (page 2) Processing      |'
+    '--------------------------------------'
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Scores/Your_Scores'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+    '--------------------------------------'
+    ' Your Scores (page 3) Processing      |'
+    '--------------------------------------'
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Details/Your_Details'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+    '--------------------------------------'
+    ' Further Info (page 4) Processing     |'
+    '--------------------------------------'
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Further_Infomation/Further_Information'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+	'--------------------------------------'
+	' Thank You! (page 5) Processing       |'
+	'--------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Final_Page'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
-	'--------------------------'
-	' END                      |'
-	'--------------------------'
+    '--------------------------------------'
+    ' Processing Completion                |'
+    //------------------------------------------------------------------------
+    // * * * * * * *   WIP - Work in progress - todo TODO   * * * * * * *    |
+    //------------------------------------------------------------------------
+    '--------------------------------------'
+    //WebUI.delay(10) // for debug
+    '--------------------------'
+    ' Teardown - CLose Browser |'
+    '--------------------------'
+
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.STOP_ON_FAILURE)
+    '--------------------------'
+    ' END                      |'
+    '--------------------------'
+}
+

@@ -82,12 +82,12 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (
     '--------------------------------------'
     ' Further Info (page 4) Processing     |'
     '--------------------------------------'
-    //WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Further_Infomation/Further_Information'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Further_Infomation/Further_Information'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 	'--------------------------------------'
 	' Thank You! (page 5) Processing       |'
 	'--------------------------------------'
-	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Final_Page'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Final_Page'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
     '--------------------------------------'
     ' Processing Completion                |'
@@ -100,7 +100,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (
     ' Teardown - CLose Browser |'
     '--------------------------'
 
-    //WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.STOP_ON_FAILURE)
     '--------------------------'
     ' END                      |'
     '--------------------------'

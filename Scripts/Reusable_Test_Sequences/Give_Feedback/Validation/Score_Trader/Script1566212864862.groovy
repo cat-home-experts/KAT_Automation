@@ -13,4 +13,12 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+//-----------------------------------------------
+// This Field is Required Validation Message     | - Snip - 19/08/2019
+//-----------------------------------------------
 
+WebUI.verifyTextPresent('Score trader from 0 (lowest) to 10 (highest)', false)
+
+//-------------------------------------------------------
+// END                                                  | - Snip - 19/08/2019
+//-------------------------------------------------------

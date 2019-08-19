@@ -52,7 +52,7 @@ WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Scor
 
 'Need to SCROLL TO <Feedback Published> Option Buttons (Controls/object off the screen, so inoporable until Visible'
 // Scroll Bottom of page into View
-WebUI.scrollToPosition(0, 125)
+WebUI.scrollToPosition(125, 0)
 
 '------------------------------------------------------------------------------------------'
 ' Your Experience (page 2) Hit <Next> Button to Continue to <Your Details>- (page 3)       |'
@@ -63,7 +63,7 @@ try {
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Scores/Hit_Next'), 1)
 	
 } catch (Exception e){
-	// Nothing to do, Button selected OK - just carry on
+	// button sometimes misses, will need to watch this - scrolling down to ensure in vieww, scroll was incorrectly configured previously, hopefull this will be OK now
 }
 
 //--------------------------------------------------------------

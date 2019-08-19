@@ -6,11 +6,37 @@
    <elementGuidId>ae76d313-ad2e-43d3-bc44-3ef691d5a225</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//select[@name = 'ctl00$content$ddlReferrer' and @id = 'ddlReferrer' and (text() = '
+	Please select
+	
+	
+	
+	
+	
+	
+	
+	
+
+OnlineRadioSports sponsorshipWord of mouthDirectoryTVTrader (including feedback cards)Other' or . = '
+	Please select
+	
+	
+	
+	
+	
+	
+	
+	
+
+OnlineRadioSports sponsorshipWord of mouthDirectoryTVTrader (including feedback cards)Other')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>//select[@id='ddlReferrer']</value>
+         <value>//div[@id='ctl00_content_ctlYourDetailsUpdatePanel']/div[10]/div/div[2]/select</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
