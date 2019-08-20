@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Your_Scores_Validation</name>
+   <tag></tag>
+   <comment>-------------------------------
+Trigger Validation             |
+---------------------------------------------------------------------------------------
+ Your Experience (page 1) Verify Validation> Messages - Score Trader 0 thru 10         |
+---------------------------------------------------------------------------------------
+ Your Experience (page 1) Verify Validation> Messages - This Field Is Required         |
+---------------------------------------------------------------------------------------
+ Your Experience (page 1) Verify Validation> Messages - Please Select An Answer        |
+------------------------------------------------------------------------------------------
+ Your Scores (page 2) Returned with 2 Main Sections - &lt;Your Scores> and &lt;Details of Work> |
+                                     Standard of Work Listbox Selection, NA, 0 through 10 |
+------------------------------------------------------------------------------------------
+ Your Scores (page 2) Returned with 2 Main Sections - &lt;Your Scores> and &lt;Details of Work> |
+ Details of Work Done - Form FIll&lt;Description>,&lt;Approx. date>,&lt;How Long>, &lt;Comments> and  |
+                                                               &lt;Feedback Publish Confirm> |
+------------------------------------------------------------------------------------------
+ Your Experience (page 2) Hit &lt;Next> Button to Continue to &lt;Your Details>- (page 3)       |</comment>
+   <testCaseGuid>a14e63b7-6b3d-43c8-b4c2-147a15ab3d4f</testCaseGuid>
+</TestCaseEntity>

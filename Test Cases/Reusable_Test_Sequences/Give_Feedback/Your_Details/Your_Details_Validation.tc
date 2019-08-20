@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Your_Details_Validation</name>
+   <tag></tag>
+   <comment>------------------------------------------------
+Trade  Customer Path Not Currently Implenmented |
+------------------------------------------------
+---------------------------------------------------------------------------------------
+ Your Details (page 3)                                                                 |
+---------------------------------------------------------------------------------------
+-------------------------------------
+ Submit Form - Trigger Validation    |
+---------------------------------------------------------------------------------------
+ Your Experience (page 3) Verify Validation> Messages - This Field Is Required         |
+---------------------------------------------------------------------------------------
+ Your Experience (page 3) Verify Validation> Messages  - Please Supply Home Phone      |
+-------------------------------------
+ Consumer or Customer Selection      |
+-------------------------------------
+ Fill Personal Details               |
+-------------------------------------
+ Fil Contact Details                 |
+-------------------------------------
+ CHeckatrade Questions               |
+-------------------------------------
+ Commit form                         |
+-------------------------------------</comment>
+   <testCaseGuid>d766f0ab-9a22-4e15-8d68-2ccdc40078e1</testCaseGuid>
+</TestCaseEntity>

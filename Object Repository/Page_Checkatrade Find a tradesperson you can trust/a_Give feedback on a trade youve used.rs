@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_Give feedback                                on a trade youve used</name>
+   <name>a_Give feedback on a trade youve used</name>
    <tag></tag>
-   <elementGuidId>5023aae3-8ebc-4eba-9fff-81488bad18a7</elementGuidId>
+   <elementGuidId>68e8e504-6903-4a12-a14f-aa268e1800e7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -89,12 +89,5 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[4]/a</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consumer Zone'])[1]/following::a[1]</value>
    </webElementXpaths>
 </WebElementEntity>

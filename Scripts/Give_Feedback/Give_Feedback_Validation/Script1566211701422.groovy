@@ -50,7 +50,7 @@ import internal.GlobalVariable as GlobalVariable
 // Call Setup Process - Browser Startup, Navigate, Maximize and Close Cookie Nagging Element
 //-----------------------------------------
 'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test\r\n   --------------------------------------------------------' 
-for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (1)').getRowNumbers() {         // Will Only use the first row for validation purposes  |
+for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (1)').getRowNumbers(); (GlobalVariable.row)++) {  // Will Only use the first row for validation purposes  |
     //def removed for globalisation                                                                            '-------------------------------------------------------'
     WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -65,25 +65,31 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (
     '-----------------------------------------------------'
     WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Which_Member_to_Review'), [:], FailureHandling.STOP_ON_FAILURE)
 
-    '--------------------------------------'
+	'--------------------------------------'
+	' Your Experience (page 1) Validation  |'
+	'--------------------------------------'
+	'--------------------------------------'
     ' Your Experience (page 1) Processing  |'
     '--------------------------------------'
-    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Your_Experience'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Your_Experience_Validation'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
+	'--------------------------------------'
+	' Your Scores (page 2) Validation      |'
+	'--------------------------------------'
     '--------------------------------------'
     ' Your Scores (page 2) Processing      |'
     '--------------------------------------'
-    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Scores/Your_Scores'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Scores/Your_Scores_Validation'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
     '--------------------------------------'
     ' Your Scores (page 3) Processing      |'
     '--------------------------------------'
-    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Details/Your_Details'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Details/Your_Details_Validation'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
     '--------------------------------------'
-    ' Further Info (page 4) Processing     |'
+    ' Further Info (page 4) Processing     |'                        // No Validation on Give Your Feedback (Value of Work) Page
     '--------------------------------------'
-    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Further_Infomation/Further_Information'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Further_Infomation/Further_Infomation_Validation'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 	'--------------------------------------'
 	' Thank You! (page 5) Processing       |'
@@ -102,8 +108,16 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (
     '--------------------------'
 
     WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.STOP_ON_FAILURE)
+	
+	'--------------------------'
+	' Break Out of FOR Loop    |' // FOr Validation, Only need to validate on the first DataPool Iteration
+	'--------------------------'
+	
+	if (GlobalVariable.row > 1){
+		break;
+	}
+	
     '--------------------------'
     ' END                      |'
     '--------------------------'
 }
-
