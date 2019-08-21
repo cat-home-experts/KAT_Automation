@@ -5,8 +5,73 @@
    <tag></tag>
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
-      <description>Live CAT Site</description>
-      <initValue>'https://www.preview.checkatrade.com/'</initValue>
+      <description>Live CAT Site/preview/dev test</description>
+      <initValue>'http://www.current.dev.checkatrade.com/'</initValue>
       <name>URL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Email Address</description>
+      <initValue>'ron_mctavish@gmail.com'</initValue>
+      <name>EmailAddress</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Trading Name</description>
+      <initValue>'Gutter Snipes'</initValue>
+      <name>CompanyName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Full Name</description>
+      <initValue>'Ron MacTavish'</initValue>
+      <name>FullName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Category</description>
+      <initValue>'Roofer'</initValue>
+      <name>TradeCategory</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Postcode</description>
+      <initValue>'PO12 4SD'</initValue>
+      <name>postcode</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Phone Number</description>
+      <initValue>'02380123456'</initValue>
+      <name>ContactNumber</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Invalid format email</description>
+      <initValue>'Billy Bob'</initValue>
+      <name>Invalid_Email</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Alph Validation test data</description>
+      <initValue>'ABC'</initValue>
+      <name>Validation_Data_Alpha</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Numeric validation test data</description>
+      <initValue>'123'</initValue>
+      <name>Validation_Data_Numeric</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Validation Data Special Characters</description>
+      <initValue>'#£|'</initValue>
+      <name>Validation_Data_Special_Chars</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>URL to compare with the starting URL before navigation</description>
+      <initValue>''</initValue>
+      <name>CurrentUrl</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Fix the format error here Give Feedback - Recommend? true OR false</description>
+      <initValue>true</initValue>
+      <name>YE_Recommendations</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Datasheet location (needs to change to shared repo local)</description>
+      <initValue>'C:\\\\Users\\\\davidho\\\\Katalon Studio\\\\Start\\\\Data Files\\\\Give_Feedback.xlsx'</initValue>
+      <name>DataSheet_Location</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

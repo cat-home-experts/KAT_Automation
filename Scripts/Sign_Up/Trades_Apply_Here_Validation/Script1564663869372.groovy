@@ -56,7 +56,7 @@ import org.openqa.selenium.WebElement;*/
     //-----------------------------------------
 	// Call Startup Process - Browser Startup, Navigate, Maximize and Close Cookie Nagging Element
 	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup_Old'), [:], FailureHandling.STOP_ON_FAILURE)
 	//-----------------------------------------
 	'--------------------------------------'
 	' Hit the <TRADES, APPLY HERE> Button  |'

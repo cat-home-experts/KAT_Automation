@@ -26,11 +26,11 @@ import internal.GlobalVariable as GlobalVariable
 // Nagging the Maximizes Browser              |    18/07/2019   |     Dave Horne   |                             |
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Changed OpenBrowser/Navigate URL method    |    20/08/2019   |     Dave Horne   | OpenBrowser with preset URL |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Added Privacy Policy Check and close also  |    20/08/2019   |     Dave Horne   |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Also, Closed Cookie and Privacy Nags with IF    20/08/2019   |     Dave Horne   |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -45,13 +45,14 @@ import internal.GlobalVariable as GlobalVariable
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 //-----------------------------------------
+//WebUI.openBrowser("") // 20/08/2019 this 1 line below, replaces the 2 previous lines of code
 'OPEN BROWSER'
-WebUI.openBrowser("")
+WebUI.openBrowser(GlobalVariable.URL, FailureHandling.STOP_ON_FAILURE)
 
 //-----------------------------------------
 'URL - Set from the ENVIRONMENT PROFILE '
-WebUI.navigateToUrl(GlobalVariable.URL)
 
+//WebUI.navigateToUrl(GlobalVariable.URL)  // 20/08/2019
 //-----------------------------------------
 'WAIT for browser to load - waits up to 60 seconds before timeout occurs '
 WebUI.waitForPageLoad(60)
@@ -62,15 +63,15 @@ WebUI.maximizeWindow()
 
 //-----------------------------------------
 'COOKIE POLICY POPOUT'
-WebUI.verifyTextPresent('Checkatrade.com uses cookies to make sure you get the best browsing experience', false)
+if (WebUI.verifyTextPresent('Checkatrade.com uses cookies to make sure you get the best browsing experience', false, { 
+        'Closes COOKIE nagging element '
+        WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/div_close'))
 
-//-----------------------------------------
-'Closes COOKIE nagging element '
-WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/div_close'))
+        'COOKIE POPOUT REMOVED'
+        WebUI.verifyTextNotPresent('Checkatrade.com uses cookies to make sure you get the best browsing experience', false)
+    } //-----------------------------------------
+    //-----------------------------------------
+    )) {
+    WebUI.acceptAlert()
+}
 
-//-----------------------------------------
-'COOKIE POPOUT REMOVED'
-WebUI.verifyTextNotPresent('Checkatrade.com uses cookies to make sure you get the best browsing experience', false)
-
-//-----------------------------------------
-// END
