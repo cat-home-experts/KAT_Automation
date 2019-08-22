@@ -1,0 +1,3696 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-08-21T10:34:15</date>
+  <millis>1566380055388</millis>
+  <sequence>0</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startSuite</method>
+  <thread>1</thread>
+  <message>Start Test Suite : Test Suites/Trade_Name_Multiple_Search</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="name">Trade_Name_Multiple_Search</property>
+  <property name="description">Trade_Name_Multiple_Search</property>
+  <property name="id">Test Suites/Trade_Name_Multiple_Search</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:15</date>
+  <millis>1566380055402</millis>
+  <sequence>1</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>hostName = DavidHo - VETTEDSP36RF.check.local</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="hostName">DavidHo - VETTEDSP36RF.check.local</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:15</date>
+  <millis>1566380055403</millis>
+  <sequence>2</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>os = Windows 10 32bit</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="os">Windows 10 32bit</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:15</date>
+  <millis>1566380055403</millis>
+  <sequence>3</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>hostAddress = 10.0.11.71</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="hostAddress">10.0.11.71</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:15</date>
+  <millis>1566380055404</millis>
+  <sequence>4</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>katalonVersion = 6.2.2.4</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="katalonVersion">6.2.2.4</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:15</date>
+  <millis>1566380055557</millis>
+  <sequence>5</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Checkatrade_Tradesman_Searches/Trade_Name_Search_Multiple</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/Checkatrade_Tradesman_Searches/Trade_Name_Search_Multiple</property>
+  <property name="description">Search for a trader by business name or CAT ID</property>
+  <property name="id">Test Cases/Checkatrade_Tradesman_Searches/Trade_Name_Search_Multiple</property>
+  <property name="source">C:\\Users\\davidho\\Katalon Studio\\Start\\Test Cases\\Checkatrade_Tradesman_Searches\\Trade_Name_Search_Multiple.tc</property>
+  <property name="tag">Search</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:15</date>
+  <millis>1566380055822</millis>
+  <sequence>7</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : for ([row = 1, row &amp;lt;= findTestData(\&amp;quot;Search_CAT_ID_Data (1)\&amp;quot;).getRowNumbers(), (internal.GlobalVariable.row++)])</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">53</property>
+  <property name="stepIndex">1</property>
+  <property name="description">For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:16</date>
+  <millis>1566380056714</millis>
+  <sequence>12</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Setup\&amp;quot;), [:], STOP_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">57</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:16</date>
+  <millis>1566380056820</millis>
+  <sequence>15</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/CAT_Setup</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/CAT_Setup</property>
+  <property name="description"></property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/CAT_Setup</property>
+  <property name="source">C:\\Users\\davidho\\Katalon Studio\\Start\\Test Cases\\Reusable_Test_Sequences\\CAT_Setup.tc</property>
+  <property name="tag"></property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:17</date>
+  <millis>1566380057041</millis>
+  <sequence>17</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : openBrowser(URL, STOP_ON_FAILURE)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">50</property>
+  <property name="stepIndex">1</property>
+  <property name="description">OPEN BROWSER</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:17</date>
+  <millis>1566380057196</millis>
+  <sequence>19</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Starting &amp;apos;Chrome&amp;apos; driver</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:17</date>
+  <millis>1566380057232</millis>
+  <sequence>21</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Action delay is set to 0 seconds</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:20</date>
+  <millis>1566380060456</millis>
+  <sequence>23</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>sessionId = 8d780152c0ee9b7f3b610cff5631012b</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="sessionId">8d780152c0ee9b7f3b610cff5631012b</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:20</date>
+  <millis>1566380060477</millis>
+  <sequence>24</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>browser = Chrome 76.0.3809.100</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="browser">Chrome 76.0.3809.100</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:20</date>
+  <millis>1566380060477</millis>
+  <sequence>25</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>platform = Windows 10</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="platform">Windows 10</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:20</date>
+  <millis>1566380060478</millis>
+  <sequence>26</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>seleniumVersion = 3.141.59</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="seleniumVersion">3.141.59</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:20</date>
+  <millis>1566380060478</millis>
+  <sequence>27</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>proxyInformation = ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="proxyInformation">ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:21</date>
+  <millis>1566380061784</millis>
+  <sequence>29</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Browser is opened with url: &amp;apos;http://www.current.dev.checkatrade.com/&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:21</date>
+  <millis>1566380061785</millis>
+  <sequence>30</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : openBrowser(URL, STOP_ON_FAILURE)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:21</date>
+  <millis>1566380061785</millis>
+  <sequence>31</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot;URL - Set from the ENVIRONMENT PROFILE \&amp;quot;</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">52</property>
+  <property name="stepIndex">2</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:21</date>
+  <millis>1566380061785</millis>
+  <sequence>32</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot;URL - Set from the ENVIRONMENT PROFILE \&amp;quot;</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:21</date>
+  <millis>1566380061786</millis>
+  <sequence>33</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : waitForPageLoad(60)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">56</property>
+  <property name="stepIndex">3</property>
+  <property name="description">WAIT for browser to load - waits up to 60 seconds before timeout occurs </property>
+</record>
+<record>
+  <date>2019-08-21T10:34:21</date>
+  <millis>1566380061842</millis>
+  <sequence>35</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Wait for page load successfully</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:21</date>
+  <millis>1566380061843</millis>
+  <sequence>36</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : waitForPageLoad(60)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:21</date>
+  <millis>1566380061843</millis>
+  <sequence>37</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : maximizeWindow()</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">59</property>
+  <property name="stepIndex">4</property>
+  <property name="description">MAXIMIZE BROWSER </property>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063095</millis>
+  <sequence>39</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Current window maximized</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063099</millis>
+  <sequence>40</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : maximizeWindow()</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063101</millis>
+  <sequence>41</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : try</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">64</property>
+  <property name="stepIndex">5</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063106</millis>
+  <sequence>42</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : if (TRUE)</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">66</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063170</millis>
+  <sequence>44</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : if (TRUE)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063170</millis>
+  <sequence>45</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : try</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063171</millis>
+  <sequence>46</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : catch (Exception e)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">83</property>
+  <property name="stepIndex">6</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063171</millis>
+  <sequence>47</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : out.println(\&amp;quot;Cookie Policy Message was not Presented\&amp;quot;)</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">85</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063188</millis>
+  <sequence>48</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : out.println(\&amp;quot;Cookie Policy Message was not Presented\&amp;quot;)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063188</millis>
+  <sequence>49</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : catch (Exception e)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063189</millis>
+  <sequence>50</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : try</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">90</property>
+  <property name="stepIndex">8</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063189</millis>
+  <sequence>51</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : if (verifyElementPresent(findTestObject(\&amp;quot;Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close_1\&amp;quot;)))</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">92</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063202</millis>
+  <sequence>53</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : if (verifyElementPresent(findTestObject(\&amp;quot;Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close_1\&amp;quot;)))</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063202</millis>
+  <sequence>54</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : try</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063202</millis>
+  <sequence>55</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : catch (Exception e1)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">109</property>
+  <property name="stepIndex">9</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063203</millis>
+  <sequence>56</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : out.println(\&amp;quot;Privacy Policy Message was not Presented\&amp;quot;)</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">111</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063203</millis>
+  <sequence>57</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : out.println(\&amp;quot;Privacy Policy Message was not Presented\&amp;quot;)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063203</millis>
+  <sequence>58</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : catch (Exception e1)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063204</millis>
+  <sequence>59</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/CAT_Setup</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063204</millis>
+  <sequence>60</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/CAT_Setup</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063210</millis>
+  <sequence>61</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/CAT_Setup&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063210</millis>
+  <sequence>62</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Setup\&amp;quot;), [:], STOP_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063210</millis>
+  <sequence>63</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot;---------------------------------------------------------------------\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">59</property>
+  <property name="stepIndex">2</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063211</millis>
+  <sequence>64</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot;---------------------------------------------------------------------\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063212</millis>
+  <sequence>65</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot; Select Search on Trader Name (or ID) From Home page/Search Screen   |\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">60</property>
+  <property name="stepIndex">3</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063212</millis>
+  <sequence>66</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot; Select Search on Trader Name (or ID) From Home page/Search Screen   |\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063212</millis>
+  <sequence>67</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Click_Search_Trade_Name\&amp;quot;), [:], CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">62</property>
+  <property name="stepIndex">4</property>
+  <property name="description">---------------------------------------------------------------------</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063318</millis>
+  <sequence>70</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/CAT_Click_Search_Trade_Name</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/CAT_Click_Search_Trade_Name</property>
+  <property name="description">Click on the option to search on traders name or CAT ID</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/CAT_Click_Search_Trade_Name</property>
+  <property name="source">C:\\Users\\davidho\\Katalon Studio\\Start\\Test Cases\\Reusable_Test_Sequences\\CAT_Click_Search_Trade_Name.tc</property>
+  <property name="tag">Click Trade Name ID</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063602</millis>
+  <sequence>72</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : click(findTestObject(\&amp;quot;Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">23</property>
+  <property name="stepIndex">1</property>
+  <property name="description">Hit Search Trade Person by Name (or CAT ID)</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063701</millis>
+  <sequence>79</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063701</millis>
+  <sequence>80</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : click(findTestObject(\&amp;quot;Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063702</millis>
+  <sequence>81</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : waitForPageLoad(60)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">28</property>
+  <property name="stepIndex">2</property>
+  <property name="description">Waits only as long as required</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063714</millis>
+  <sequence>83</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Wait for page load successfully</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063715</millis>
+  <sequence>84</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : waitForPageLoad(60)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063715</millis>
+  <sequence>85</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/CAT_Click_Search_Trade_Name</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063715</millis>
+  <sequence>86</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/CAT_Click_Search_Trade_Name</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063715</millis>
+  <sequence>87</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/CAT_Click_Search_Trade_Name&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063716</millis>
+  <sequence>88</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Click_Search_Trade_Name\&amp;quot;), [:], CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063716</millis>
+  <sequence>89</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot;---------------------------------------\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">64</property>
+  <property name="stepIndex">5</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063716</millis>
+  <sequence>90</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot;---------------------------------------\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063716</millis>
+  <sequence>91</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot; Enter Trader Name (or ID) to Search   |\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">65</property>
+  <property name="stepIndex">6</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063717</millis>
+  <sequence>92</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot; Enter Trader Name (or ID) to Search   |\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063717</millis>
+  <sequence>93</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Enter_Trade_Name\&amp;quot;), [:], CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">67</property>
+  <property name="stepIndex">7</property>
+  <property name="description">---------------------------------------</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:23</date>
+  <millis>1566380063794</millis>
+  <sequence>96</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/CAT_Enter_Trade_Name</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/CAT_Enter_Trade_Name</property>
+  <property name="description">Enter_Trade_Name</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/CAT_Enter_Trade_Name</property>
+  <property name="source">C:\\Users\\davidho\\Katalon Studio\\Start\\Test Cases\\Reusable_Test_Sequences\\CAT_Enter_Trade_Name.tc</property>
+  <property name="tag">Data Entry</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:24</date>
+  <millis>1566380064017</millis>
+  <sequence>98</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : setText(findTestObject(\&amp;quot;Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search\&amp;quot;), findTestData(\&amp;quot;Search_CAT_ID_Data (1)\&amp;quot;).getValue(\&amp;quot;tradeName\&amp;quot;, row))</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">23</property>
+  <property name="stepIndex">1</property>
+  <property name="description">Enter Trade Name (OR CAT ID) in Text Field</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:24</date>
+  <millis>1566380064269</millis>
+  <sequence>111</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;218020&amp;apos; is set on object &amp;apos;Object Repository/Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:24</date>
+  <millis>1566380064270</millis>
+  <sequence>112</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : setText(findTestObject(\&amp;quot;Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search\&amp;quot;), findTestData(\&amp;quot;Search_CAT_ID_Data (1)\&amp;quot;).getValue(\&amp;quot;tradeName\&amp;quot;, row))</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:24</date>
+  <millis>1566380064270</millis>
+  <sequence>113</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/CAT_Enter_Trade_Name</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:24</date>
+  <millis>1566380064270</millis>
+  <sequence>114</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/CAT_Enter_Trade_Name</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:24</date>
+  <millis>1566380064271</millis>
+  <sequence>115</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/CAT_Enter_Trade_Name&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:24</date>
+  <millis>1566380064271</millis>
+  <sequence>116</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Enter_Trade_Name\&amp;quot;), [:], CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:24</date>
+  <millis>1566380064272</millis>
+  <sequence>117</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot;---------------------------------------\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">69</property>
+  <property name="stepIndex">8</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:24</date>
+  <millis>1566380064272</millis>
+  <sequence>118</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot;---------------------------------------\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:24</date>
+  <millis>1566380064272</millis>
+  <sequence>119</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot; Enter Trader Name (or ID) to Search   |\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">70</property>
+  <property name="stepIndex">9</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:24</date>
+  <millis>1566380064273</millis>
+  <sequence>120</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot; Enter Trader Name (or ID) to Search   |\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:24</date>
+  <millis>1566380064274</millis>
+  <sequence>121</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Search_Trade_Name\&amp;quot;), [:], CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">72</property>
+  <property name="stepIndex">10</property>
+  <property name="description">---------------------------------------</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:24</date>
+  <millis>1566380064341</millis>
+  <sequence>124</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/CAT_Search_Trade_Name</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/CAT_Search_Trade_Name</property>
+  <property name="description">After entering a traders name or CAT ID to search, Hit Element to instagate search</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/CAT_Search_Trade_Name</property>
+  <property name="source">C:\\Users\\davidho\\Katalon Studio\\Start\\Test Cases\\Reusable_Test_Sequences\\CAT_Search_Trade_Name.tc</property>
+  <property name="tag">Search Trader Traders Name</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:24</date>
+  <millis>1566380064623</millis>
+  <sequence>126</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot;Hit Search Trade Person by Name (or CAT ID) after parameters are entered\&amp;quot;</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">21</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:24</date>
+  <millis>1566380064623</millis>
+  <sequence>127</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot;Hit Search Trade Person by Name (or CAT ID) after parameters are entered\&amp;quot;</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:24</date>
+  <millis>1566380064623</millis>
+  <sequence>128</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : click(findTestObject(\&amp;quot;Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">24</property>
+  <property name="stepIndex">2</property>
+  <property name="description">Click on the Page to Refresh Search Results</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:26</date>
+  <millis>1566380066035</millis>
+  <sequence>135</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:26</date>
+  <millis>1566380066036</millis>
+  <sequence>136</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : click(findTestObject(\&amp;quot;Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:26</date>
+  <millis>1566380066036</millis>
+  <sequence>137</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : waitForPageLoad(60)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">29</property>
+  <property name="stepIndex">3</property>
+  <property name="description">Waits only as long as required</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:26</date>
+  <millis>1566380066057</millis>
+  <sequence>139</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Wait for page load successfully</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:26</date>
+  <millis>1566380066058</millis>
+  <sequence>140</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : waitForPageLoad(60)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:26</date>
+  <millis>1566380066058</millis>
+  <sequence>141</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/CAT_Search_Trade_Name</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:26</date>
+  <millis>1566380066059</millis>
+  <sequence>142</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/CAT_Search_Trade_Name</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:26</date>
+  <millis>1566380066059</millis>
+  <sequence>143</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/CAT_Search_Trade_Name&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:26</date>
+  <millis>1566380066059</millis>
+  <sequence>144</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Search_Trade_Name\&amp;quot;), [:], CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:26</date>
+  <millis>1566380066060</millis>
+  <sequence>145</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot;------------------------------------------\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">74</property>
+  <property name="stepIndex">11</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:26</date>
+  <millis>1566380066060</millis>
+  <sequence>146</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot;------------------------------------------\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:26</date>
+  <millis>1566380066060</millis>
+  <sequence>147</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot; Scroll to Page Footer to Reveal Results  |\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">75</property>
+  <property name="stepIndex">12</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:26</date>
+  <millis>1566380066061</millis>
+  <sequence>148</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot; Scroll to Page Footer to Reveal Results  |\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:26</date>
+  <millis>1566380066061</millis>
+  <sequence>149</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Scroll_to_Footer\&amp;quot;), [:], CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">77</property>
+  <property name="stepIndex">13</property>
+  <property name="description">------------------------------------------</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:26</date>
+  <millis>1566380066123</millis>
+  <sequence>152</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/CAT_Scroll_to_Footer</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/CAT_Scroll_to_Footer</property>
+  <property name="description">Page extends beyond bottom of page, need to scroll the footer into view to interact</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/CAT_Scroll_to_Footer</property>
+  <property name="source">C:\\Users\\davidho\\Katalon Studio\\Start\\Test Cases\\Reusable_Test_Sequences\\CAT_Scroll_to_Footer.tc</property>
+  <property name="tag">CAT Scroll</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:26</date>
+  <millis>1566380066373</millis>
+  <sequence>154</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot;Scroll - To Footer on the bottom of the page (sometime off the screen) \&amp;quot;</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">21</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:26</date>
+  <millis>1566380066373</millis>
+  <sequence>155</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot;Scroll - To Footer on the bottom of the page (sometime off the screen) \&amp;quot;</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:26</date>
+  <millis>1566380066373</millis>
+  <sequence>156</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : scrollToElement(findTestObject(\&amp;quot;Page_of_Results/div_see all_footer__van-with-trailer\&amp;quot;), 60)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">23</property>
+  <property name="stepIndex">2</property>
+  <property name="description">Scroll Element into VIEW, as the following text to verify can be off the screen</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:26</date>
+  <millis>1566380066420</millis>
+  <sequence>164</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Scroll to object &amp;apos;Object Repository/Page_of_Results/div_see all_footer__van-with-trailer&amp;apos; successfully</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:26</date>
+  <millis>1566380066421</millis>
+  <sequence>165</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : scrollToElement(findTestObject(\&amp;quot;Page_of_Results/div_see all_footer__van-with-trailer\&amp;quot;), 60)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:26</date>
+  <millis>1566380066421</millis>
+  <sequence>166</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : delay(1)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">24</property>
+  <property name="stepIndex">3</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:27</date>
+  <millis>1566380067428</millis>
+  <sequence>168</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Delayed 1 second(s)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:27</date>
+  <millis>1566380067428</millis>
+  <sequence>169</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : delay(1)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:27</date>
+  <millis>1566380067428</millis>
+  <sequence>170</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/CAT_Scroll_to_Footer</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:27</date>
+  <millis>1566380067428</millis>
+  <sequence>171</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/CAT_Scroll_to_Footer</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:27</date>
+  <millis>1566380067428</millis>
+  <sequence>172</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/CAT_Scroll_to_Footer&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:27</date>
+  <millis>1566380067429</millis>
+  <sequence>173</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Scroll_to_Footer\&amp;quot;), [:], CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:27</date>
+  <millis>1566380067429</millis>
+  <sequence>174</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot;------------------------------------------\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">79</property>
+  <property name="stepIndex">14</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:27</date>
+  <millis>1566380067429</millis>
+  <sequence>175</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot;------------------------------------------\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:27</date>
+  <millis>1566380067429</millis>
+  <sequence>176</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot; Verify Correct Location is Returned     |\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">80</property>
+  <property name="stepIndex">15</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:27</date>
+  <millis>1566380067430</millis>
+  <sequence>177</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot; Verify Correct Location is Returned     |\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:27</date>
+  <millis>1566380067430</millis>
+  <sequence>178</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Verification_Location\&amp;quot;), [:], CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">82</property>
+  <property name="stepIndex">16</property>
+  <property name="description">------------------------------------------</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:27</date>
+  <millis>1566380067491</millis>
+  <sequence>181</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/CAT_Verification_Location</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/CAT_Verification_Location</property>
+  <property name="description">Verifies the location details are returne correctly from a traders name or CAT ID search</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/CAT_Verification_Location</property>
+  <property name="source">C:\\Users\\davidho\\Katalon Studio\\Start\\Test Cases\\Reusable_Test_Sequences\\CAT_Verification_Location.tc</property>
+  <property name="tag">Verification Tarder CAT ID</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:27</date>
+  <millis>1566380067708</millis>
+  <sequence>183</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : verifyTextPresent(findTestData(\&amp;quot;Search_CAT_ID_Data (1)\&amp;quot;).getValue(\&amp;quot;tradeNameLocationVerification\&amp;quot;, row), false)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">23</property>
+  <property name="stepIndex">1</property>
+  <property name="description">Verify the Correct Location for the Trader is Returned</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:27</date>
+  <millis>1566380067909</millis>
+  <sequence>190</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;Gosport, Hampshire&amp;apos; is present on page </message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:27</date>
+  <millis>1566380067909</millis>
+  <sequence>191</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : verifyTextPresent(findTestData(\&amp;quot;Search_CAT_ID_Data (1)\&amp;quot;).getValue(\&amp;quot;tradeNameLocationVerification\&amp;quot;, row), false)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:27</date>
+  <millis>1566380067909</millis>
+  <sequence>192</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/CAT_Verification_Location</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:27</date>
+  <millis>1566380067910</millis>
+  <sequence>193</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/CAT_Verification_Location</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:27</date>
+  <millis>1566380067910</millis>
+  <sequence>194</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/CAT_Verification_Location&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:27</date>
+  <millis>1566380067910</millis>
+  <sequence>195</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Verification_Location\&amp;quot;), [:], CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:27</date>
+  <millis>1566380067910</millis>
+  <sequence>196</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot;------------------------------------------\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">84</property>
+  <property name="stepIndex">17</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:27</date>
+  <millis>1566380067911</millis>
+  <sequence>197</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot;------------------------------------------\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:27</date>
+  <millis>1566380067911</millis>
+  <sequence>198</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot; Verify Primary Contact is Returned     |\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">85</property>
+  <property name="stepIndex">18</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:27</date>
+  <millis>1566380067912</millis>
+  <sequence>199</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot; Verify Primary Contact is Returned     |\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:27</date>
+  <millis>1566380067912</millis>
+  <sequence>200</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Verification_Primary_Contact\&amp;quot;), [:], CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">87</property>
+  <property name="stepIndex">19</property>
+  <property name="description">------------------------------------------</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:27</date>
+  <millis>1566380067971</millis>
+  <sequence>203</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/CAT_Verification_Primary_Contact</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/CAT_Verification_Primary_Contact</property>
+  <property name="description">Confirms that the primary contact details from a trader name, or CAT ID search are as expected</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/CAT_Verification_Primary_Contact</property>
+  <property name="source">C:\\Users\\davidho\\Katalon Studio\\Start\\Test Cases\\Reusable_Test_Sequences\\CAT_Verification_Primary_Contact.tc</property>
+  <property name="tag">Verification Primary Contact</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:28</date>
+  <millis>1566380068160</millis>
+  <sequence>205</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : verifyTextPresent(findTestData(\&amp;quot;Search_CAT_ID_Data (1)\&amp;quot;).getValue(\&amp;quot;primeContact\&amp;quot;, row), false)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">23</property>
+  <property name="stepIndex">1</property>
+  <property name="description">Verify the Primary Contacts Name</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:28</date>
+  <millis>1566380068320</millis>
+  <sequence>212</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;Jim Foster&amp;apos; is present on page </message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:28</date>
+  <millis>1566380068320</millis>
+  <sequence>213</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : verifyTextPresent(findTestData(\&amp;quot;Search_CAT_ID_Data (1)\&amp;quot;).getValue(\&amp;quot;primeContact\&amp;quot;, row), false)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:28</date>
+  <millis>1566380068320</millis>
+  <sequence>214</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/CAT_Verification_Primary_Contact</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:28</date>
+  <millis>1566380068320</millis>
+  <sequence>215</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/CAT_Verification_Primary_Contact</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:28</date>
+  <millis>1566380068320</millis>
+  <sequence>216</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/CAT_Verification_Primary_Contact&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:28</date>
+  <millis>1566380068321</millis>
+  <sequence>217</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Verification_Primary_Contact\&amp;quot;), [:], CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:28</date>
+  <millis>1566380068321</millis>
+  <sequence>218</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot;--------------------------\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">89</property>
+  <property name="stepIndex">20</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:28</date>
+  <millis>1566380068321</millis>
+  <sequence>219</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot;--------------------------\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:28</date>
+  <millis>1566380068321</millis>
+  <sequence>220</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot; Teardown - CLose Browser |\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">90</property>
+  <property name="stepIndex">21</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:28</date>
+  <millis>1566380068322</millis>
+  <sequence>221</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot; Teardown - CLose Browser |\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:28</date>
+  <millis>1566380068322</millis>
+  <sequence>222</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Teardown\&amp;quot;), [:], STOP_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">92</property>
+  <property name="stepIndex">22</property>
+  <property name="description">--------------------------</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:28</date>
+  <millis>1566380068379</millis>
+  <sequence>225</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/CAT_Teardown</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/CAT_Teardown</property>
+  <property name="description">Checkatrade website Clean Closure</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/CAT_Teardown</property>
+  <property name="source">C:\\Users\\davidho\\Katalon Studio\\Start\\Test Cases\\Reusable_Test_Sequences\\CAT_Teardown.tc</property>
+  <property name="tag">Teardown</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:28</date>
+  <millis>1566380068579</millis>
+  <sequence>227</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : closeBrowser()</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">50</property>
+  <property name="stepIndex">1</property>
+  <property name="description">Teardown Browser</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:29</date>
+  <millis>1566380069286</millis>
+  <sequence>229</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Browser is closed</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:29</date>
+  <millis>1566380069287</millis>
+  <sequence>230</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : closeBrowser()</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:29</date>
+  <millis>1566380069287</millis>
+  <sequence>231</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/CAT_Teardown</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:29</date>
+  <millis>1566380069289</millis>
+  <sequence>232</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/CAT_Teardown</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:29</date>
+  <millis>1566380069290</millis>
+  <sequence>233</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/CAT_Teardown&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:29</date>
+  <millis>1566380069349</millis>
+  <sequence>238</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Teardown\&amp;quot;), [:], STOP_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:29</date>
+  <millis>1566380069349</millis>
+  <sequence>239</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Setup\&amp;quot;), [:], STOP_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">57</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:29</date>
+  <millis>1566380069408</millis>
+  <sequence>242</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/CAT_Setup</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/CAT_Setup</property>
+  <property name="description"></property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/CAT_Setup</property>
+  <property name="source">C:\\Users\\davidho\\Katalon Studio\\Start\\Test Cases\\Reusable_Test_Sequences\\CAT_Setup.tc</property>
+  <property name="tag"></property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:29</date>
+  <millis>1566380069414</millis>
+  <sequence>244</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : openBrowser(URL, STOP_ON_FAILURE)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">50</property>
+  <property name="stepIndex">1</property>
+  <property name="description">OPEN BROWSER</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:29</date>
+  <millis>1566380069417</millis>
+  <sequence>246</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Starting &amp;apos;Chrome&amp;apos; driver</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:31</date>
+  <millis>1566380071940</millis>
+  <sequence>249</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>sessionId = 04f04566ce4b73d6a350c436d9d9508f</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="sessionId">04f04566ce4b73d6a350c436d9d9508f</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:31</date>
+  <millis>1566380071975</millis>
+  <sequence>250</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>browser = Chrome 76.0.3809.100</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="browser">Chrome 76.0.3809.100</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:31</date>
+  <millis>1566380071975</millis>
+  <sequence>251</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>platform = Windows 10</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="platform">Windows 10</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:31</date>
+  <millis>1566380071976</millis>
+  <sequence>252</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>seleniumVersion = 3.141.59</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="seleniumVersion">3.141.59</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:31</date>
+  <millis>1566380071977</millis>
+  <sequence>253</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>proxyInformation = ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="proxyInformation">ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:33</date>
+  <millis>1566380073238</millis>
+  <sequence>255</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Browser is opened with url: &amp;apos;http://www.current.dev.checkatrade.com/&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:33</date>
+  <millis>1566380073238</millis>
+  <sequence>256</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : openBrowser(URL, STOP_ON_FAILURE)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:33</date>
+  <millis>1566380073238</millis>
+  <sequence>257</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot;URL - Set from the ENVIRONMENT PROFILE \&amp;quot;</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">52</property>
+  <property name="stepIndex">2</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:33</date>
+  <millis>1566380073239</millis>
+  <sequence>258</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot;URL - Set from the ENVIRONMENT PROFILE \&amp;quot;</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:33</date>
+  <millis>1566380073239</millis>
+  <sequence>259</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : waitForPageLoad(60)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">56</property>
+  <property name="stepIndex">3</property>
+  <property name="description">WAIT for browser to load - waits up to 60 seconds before timeout occurs </property>
+</record>
+<record>
+  <date>2019-08-21T10:34:33</date>
+  <millis>1566380073256</millis>
+  <sequence>261</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Wait for page load successfully</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:33</date>
+  <millis>1566380073257</millis>
+  <sequence>262</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : waitForPageLoad(60)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:33</date>
+  <millis>1566380073257</millis>
+  <sequence>263</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : maximizeWindow()</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">59</property>
+  <property name="stepIndex">4</property>
+  <property name="description">MAXIMIZE BROWSER </property>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074450</millis>
+  <sequence>265</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Current window maximized</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074451</millis>
+  <sequence>266</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : maximizeWindow()</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074451</millis>
+  <sequence>267</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : try</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">64</property>
+  <property name="stepIndex">5</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074452</millis>
+  <sequence>268</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : if (TRUE)</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">66</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074460</millis>
+  <sequence>270</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : if (TRUE)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074461</millis>
+  <sequence>271</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : try</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074461</millis>
+  <sequence>272</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : catch (Exception e)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">83</property>
+  <property name="stepIndex">6</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074462</millis>
+  <sequence>273</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : out.println(\&amp;quot;Cookie Policy Message was not Presented\&amp;quot;)</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">85</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074463</millis>
+  <sequence>274</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : out.println(\&amp;quot;Cookie Policy Message was not Presented\&amp;quot;)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074463</millis>
+  <sequence>275</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : catch (Exception e)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074463</millis>
+  <sequence>276</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : try</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">90</property>
+  <property name="stepIndex">8</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074463</millis>
+  <sequence>277</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : if (verifyElementPresent(findTestObject(\&amp;quot;Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close_1\&amp;quot;)))</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">92</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074469</millis>
+  <sequence>279</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : if (verifyElementPresent(findTestObject(\&amp;quot;Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close_1\&amp;quot;)))</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074470</millis>
+  <sequence>280</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : try</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074470</millis>
+  <sequence>281</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : catch (Exception e1)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">109</property>
+  <property name="stepIndex">9</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074471</millis>
+  <sequence>282</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : out.println(\&amp;quot;Privacy Policy Message was not Presented\&amp;quot;)</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">111</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074471</millis>
+  <sequence>283</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : out.println(\&amp;quot;Privacy Policy Message was not Presented\&amp;quot;)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074472</millis>
+  <sequence>284</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : catch (Exception e1)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074472</millis>
+  <sequence>285</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/CAT_Setup</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074473</millis>
+  <sequence>286</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/CAT_Setup</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074474</millis>
+  <sequence>287</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/CAT_Setup&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074476</millis>
+  <sequence>288</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Setup\&amp;quot;), [:], STOP_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074477</millis>
+  <sequence>289</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot;---------------------------------------------------------------------\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">59</property>
+  <property name="stepIndex">2</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074478</millis>
+  <sequence>290</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot;---------------------------------------------------------------------\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074478</millis>
+  <sequence>291</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot; Select Search on Trader Name (or ID) From Home page/Search Screen   |\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">60</property>
+  <property name="stepIndex">3</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074478</millis>
+  <sequence>292</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot; Select Search on Trader Name (or ID) From Home page/Search Screen   |\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074478</millis>
+  <sequence>293</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Click_Search_Trade_Name\&amp;quot;), [:], CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">62</property>
+  <property name="stepIndex">4</property>
+  <property name="description">---------------------------------------------------------------------</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074558</millis>
+  <sequence>296</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/CAT_Click_Search_Trade_Name</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/CAT_Click_Search_Trade_Name</property>
+  <property name="description">Click on the option to search on traders name or CAT ID</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/CAT_Click_Search_Trade_Name</property>
+  <property name="source">C:\\Users\\davidho\\Katalon Studio\\Start\\Test Cases\\Reusable_Test_Sequences\\CAT_Click_Search_Trade_Name.tc</property>
+  <property name="tag">Click Trade Name ID</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074585</millis>
+  <sequence>298</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : click(findTestObject(\&amp;quot;Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">23</property>
+  <property name="stepIndex">1</property>
+  <property name="description">Hit Search Trade Person by Name (or CAT ID)</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074793</millis>
+  <sequence>305</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074794</millis>
+  <sequence>306</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : click(findTestObject(\&amp;quot;Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074795</millis>
+  <sequence>307</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : waitForPageLoad(60)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">28</property>
+  <property name="stepIndex">2</property>
+  <property name="description">Waits only as long as required</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074808</millis>
+  <sequence>309</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Wait for page load successfully</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074808</millis>
+  <sequence>310</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : waitForPageLoad(60)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074808</millis>
+  <sequence>311</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/CAT_Click_Search_Trade_Name</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074808</millis>
+  <sequence>312</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/CAT_Click_Search_Trade_Name</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074809</millis>
+  <sequence>313</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/CAT_Click_Search_Trade_Name&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074809</millis>
+  <sequence>314</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Click_Search_Trade_Name\&amp;quot;), [:], CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074809</millis>
+  <sequence>315</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot;---------------------------------------\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">64</property>
+  <property name="stepIndex">5</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074810</millis>
+  <sequence>316</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot;---------------------------------------\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074810</millis>
+  <sequence>317</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot; Enter Trader Name (or ID) to Search   |\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">65</property>
+  <property name="stepIndex">6</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074811</millis>
+  <sequence>318</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot; Enter Trader Name (or ID) to Search   |\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074811</millis>
+  <sequence>319</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Enter_Trade_Name\&amp;quot;), [:], CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">67</property>
+  <property name="stepIndex">7</property>
+  <property name="description">---------------------------------------</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074890</millis>
+  <sequence>322</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/CAT_Enter_Trade_Name</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/CAT_Enter_Trade_Name</property>
+  <property name="description">Enter_Trade_Name</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/CAT_Enter_Trade_Name</property>
+  <property name="source">C:\\Users\\davidho\\Katalon Studio\\Start\\Test Cases\\Reusable_Test_Sequences\\CAT_Enter_Trade_Name.tc</property>
+  <property name="tag">Data Entry</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:34</date>
+  <millis>1566380074936</millis>
+  <sequence>324</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : setText(findTestObject(\&amp;quot;Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search\&amp;quot;), findTestData(\&amp;quot;Search_CAT_ID_Data (1)\&amp;quot;).getValue(\&amp;quot;tradeName\&amp;quot;, row))</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">23</property>
+  <property name="stepIndex">1</property>
+  <property name="description">Enter Trade Name (OR CAT ID) in Text Field</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:35</date>
+  <millis>1566380075118</millis>
+  <sequence>337</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;402921&amp;apos; is set on object &amp;apos;Object Repository/Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:35</date>
+  <millis>1566380075119</millis>
+  <sequence>338</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : setText(findTestObject(\&amp;quot;Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search\&amp;quot;), findTestData(\&amp;quot;Search_CAT_ID_Data (1)\&amp;quot;).getValue(\&amp;quot;tradeName\&amp;quot;, row))</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:35</date>
+  <millis>1566380075119</millis>
+  <sequence>339</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/CAT_Enter_Trade_Name</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:35</date>
+  <millis>1566380075119</millis>
+  <sequence>340</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/CAT_Enter_Trade_Name</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:35</date>
+  <millis>1566380075119</millis>
+  <sequence>341</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/CAT_Enter_Trade_Name&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:35</date>
+  <millis>1566380075120</millis>
+  <sequence>342</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Enter_Trade_Name\&amp;quot;), [:], CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:35</date>
+  <millis>1566380075120</millis>
+  <sequence>343</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot;---------------------------------------\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">69</property>
+  <property name="stepIndex">8</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:35</date>
+  <millis>1566380075120</millis>
+  <sequence>344</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot;---------------------------------------\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:35</date>
+  <millis>1566380075120</millis>
+  <sequence>345</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot; Enter Trader Name (or ID) to Search   |\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">70</property>
+  <property name="stepIndex">9</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:35</date>
+  <millis>1566380075121</millis>
+  <sequence>346</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot; Enter Trader Name (or ID) to Search   |\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:35</date>
+  <millis>1566380075121</millis>
+  <sequence>347</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Search_Trade_Name\&amp;quot;), [:], CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">72</property>
+  <property name="stepIndex">10</property>
+  <property name="description">---------------------------------------</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:35</date>
+  <millis>1566380075200</millis>
+  <sequence>350</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/CAT_Search_Trade_Name</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/CAT_Search_Trade_Name</property>
+  <property name="description">After entering a traders name or CAT ID to search, Hit Element to instagate search</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/CAT_Search_Trade_Name</property>
+  <property name="source">C:\\Users\\davidho\\Katalon Studio\\Start\\Test Cases\\Reusable_Test_Sequences\\CAT_Search_Trade_Name.tc</property>
+  <property name="tag">Search Trader Traders Name</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:35</date>
+  <millis>1566380075239</millis>
+  <sequence>352</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot;Hit Search Trade Person by Name (or CAT ID) after parameters are entered\&amp;quot;</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">21</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:35</date>
+  <millis>1566380075243</millis>
+  <sequence>353</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot;Hit Search Trade Person by Name (or CAT ID) after parameters are entered\&amp;quot;</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:35</date>
+  <millis>1566380075245</millis>
+  <sequence>354</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : click(findTestObject(\&amp;quot;Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">24</property>
+  <property name="stepIndex">2</property>
+  <property name="description">Click on the Page to Refresh Search Results</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:37</date>
+  <millis>1566380077627</millis>
+  <sequence>361</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:37</date>
+  <millis>1566380077628</millis>
+  <sequence>362</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : click(findTestObject(\&amp;quot;Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name\&amp;quot;))</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:37</date>
+  <millis>1566380077629</millis>
+  <sequence>363</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : waitForPageLoad(60)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">29</property>
+  <property name="stepIndex">3</property>
+  <property name="description">Waits only as long as required</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:37</date>
+  <millis>1566380077649</millis>
+  <sequence>365</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Wait for page load successfully</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:37</date>
+  <millis>1566380077649</millis>
+  <sequence>366</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : waitForPageLoad(60)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:37</date>
+  <millis>1566380077650</millis>
+  <sequence>367</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/CAT_Search_Trade_Name</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:37</date>
+  <millis>1566380077650</millis>
+  <sequence>368</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/CAT_Search_Trade_Name</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:37</date>
+  <millis>1566380077650</millis>
+  <sequence>369</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/CAT_Search_Trade_Name&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:37</date>
+  <millis>1566380077651</millis>
+  <sequence>370</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Search_Trade_Name\&amp;quot;), [:], CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:37</date>
+  <millis>1566380077651</millis>
+  <sequence>371</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot;------------------------------------------\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">74</property>
+  <property name="stepIndex">11</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:37</date>
+  <millis>1566380077652</millis>
+  <sequence>372</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot;------------------------------------------\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:37</date>
+  <millis>1566380077652</millis>
+  <sequence>373</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot; Scroll to Page Footer to Reveal Results  |\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">75</property>
+  <property name="stepIndex">12</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:37</date>
+  <millis>1566380077652</millis>
+  <sequence>374</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot; Scroll to Page Footer to Reveal Results  |\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:37</date>
+  <millis>1566380077653</millis>
+  <sequence>375</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Scroll_to_Footer\&amp;quot;), [:], CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">77</property>
+  <property name="stepIndex">13</property>
+  <property name="description">------------------------------------------</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:37</date>
+  <millis>1566380077718</millis>
+  <sequence>378</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/CAT_Scroll_to_Footer</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/CAT_Scroll_to_Footer</property>
+  <property name="description">Page extends beyond bottom of page, need to scroll the footer into view to interact</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/CAT_Scroll_to_Footer</property>
+  <property name="source">C:\\Users\\davidho\\Katalon Studio\\Start\\Test Cases\\Reusable_Test_Sequences\\CAT_Scroll_to_Footer.tc</property>
+  <property name="tag">CAT Scroll</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:37</date>
+  <millis>1566380077732</millis>
+  <sequence>380</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot;Scroll - To Footer on the bottom of the page (sometime off the screen) \&amp;quot;</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">21</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:37</date>
+  <millis>1566380077733</millis>
+  <sequence>381</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot;Scroll - To Footer on the bottom of the page (sometime off the screen) \&amp;quot;</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:37</date>
+  <millis>1566380077734</millis>
+  <sequence>382</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : scrollToElement(findTestObject(\&amp;quot;Page_of_Results/div_see all_footer__van-with-trailer\&amp;quot;), 60)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">23</property>
+  <property name="stepIndex">2</property>
+  <property name="description">Scroll Element into VIEW, as the following text to verify can be off the screen</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:37</date>
+  <millis>1566380077818</millis>
+  <sequence>390</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Scroll to object &amp;apos;Object Repository/Page_of_Results/div_see all_footer__van-with-trailer&amp;apos; successfully</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:37</date>
+  <millis>1566380077819</millis>
+  <sequence>391</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : scrollToElement(findTestObject(\&amp;quot;Page_of_Results/div_see all_footer__van-with-trailer\&amp;quot;), 60)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:37</date>
+  <millis>1566380077820</millis>
+  <sequence>392</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : delay(1)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">24</property>
+  <property name="stepIndex">3</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:38</date>
+  <millis>1566380078824</millis>
+  <sequence>394</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Delayed 1 second(s)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:38</date>
+  <millis>1566380078825</millis>
+  <sequence>395</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : delay(1)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:38</date>
+  <millis>1566380078826</millis>
+  <sequence>396</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/CAT_Scroll_to_Footer</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:38</date>
+  <millis>1566380078827</millis>
+  <sequence>397</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/CAT_Scroll_to_Footer</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:38</date>
+  <millis>1566380078828</millis>
+  <sequence>398</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/CAT_Scroll_to_Footer&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:38</date>
+  <millis>1566380078830</millis>
+  <sequence>399</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Scroll_to_Footer\&amp;quot;), [:], CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:38</date>
+  <millis>1566380078830</millis>
+  <sequence>400</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot;------------------------------------------\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">79</property>
+  <property name="stepIndex">14</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:38</date>
+  <millis>1566380078831</millis>
+  <sequence>401</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot;------------------------------------------\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:38</date>
+  <millis>1566380078832</millis>
+  <sequence>402</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot; Verify Correct Location is Returned     |\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">80</property>
+  <property name="stepIndex">15</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:38</date>
+  <millis>1566380078834</millis>
+  <sequence>403</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot; Verify Correct Location is Returned     |\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:38</date>
+  <millis>1566380078835</millis>
+  <sequence>404</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Verification_Location\&amp;quot;), [:], CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">82</property>
+  <property name="stepIndex">16</property>
+  <property name="description">------------------------------------------</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:38</date>
+  <millis>1566380078927</millis>
+  <sequence>407</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/CAT_Verification_Location</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/CAT_Verification_Location</property>
+  <property name="description">Verifies the location details are returne correctly from a traders name or CAT ID search</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/CAT_Verification_Location</property>
+  <property name="source">C:\\Users\\davidho\\Katalon Studio\\Start\\Test Cases\\Reusable_Test_Sequences\\CAT_Verification_Location.tc</property>
+  <property name="tag">Verification Tarder CAT ID</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:38</date>
+  <millis>1566380078963</millis>
+  <sequence>409</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : verifyTextPresent(findTestData(\&amp;quot;Search_CAT_ID_Data (1)\&amp;quot;).getValue(\&amp;quot;tradeNameLocationVerification\&amp;quot;, row), false)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">23</property>
+  <property name="stepIndex">1</property>
+  <property name="description">Verify the Correct Location for the Trader is Returned</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:39</date>
+  <millis>1566380079225</millis>
+  <sequence>416</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;Retford, Nottinghamshire&amp;apos; is present on page </message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:39</date>
+  <millis>1566380079225</millis>
+  <sequence>417</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : verifyTextPresent(findTestData(\&amp;quot;Search_CAT_ID_Data (1)\&amp;quot;).getValue(\&amp;quot;tradeNameLocationVerification\&amp;quot;, row), false)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:39</date>
+  <millis>1566380079225</millis>
+  <sequence>418</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/CAT_Verification_Location</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:39</date>
+  <millis>1566380079226</millis>
+  <sequence>419</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/CAT_Verification_Location</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:39</date>
+  <millis>1566380079226</millis>
+  <sequence>420</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/CAT_Verification_Location&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:39</date>
+  <millis>1566380079226</millis>
+  <sequence>421</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Verification_Location\&amp;quot;), [:], CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:39</date>
+  <millis>1566380079227</millis>
+  <sequence>422</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot;------------------------------------------\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">84</property>
+  <property name="stepIndex">17</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:39</date>
+  <millis>1566380079227</millis>
+  <sequence>423</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot;------------------------------------------\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:39</date>
+  <millis>1566380079227</millis>
+  <sequence>424</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot; Verify Primary Contact is Returned     |\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">85</property>
+  <property name="stepIndex">18</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:39</date>
+  <millis>1566380079228</millis>
+  <sequence>425</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot; Verify Primary Contact is Returned     |\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:39</date>
+  <millis>1566380079228</millis>
+  <sequence>426</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Verification_Primary_Contact\&amp;quot;), [:], CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">87</property>
+  <property name="stepIndex">19</property>
+  <property name="description">------------------------------------------</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:39</date>
+  <millis>1566380079289</millis>
+  <sequence>429</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/CAT_Verification_Primary_Contact</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/CAT_Verification_Primary_Contact</property>
+  <property name="description">Confirms that the primary contact details from a trader name, or CAT ID search are as expected</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/CAT_Verification_Primary_Contact</property>
+  <property name="source">C:\\Users\\davidho\\Katalon Studio\\Start\\Test Cases\\Reusable_Test_Sequences\\CAT_Verification_Primary_Contact.tc</property>
+  <property name="tag">Verification Primary Contact</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:39</date>
+  <millis>1566380079295</millis>
+  <sequence>431</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : verifyTextPresent(findTestData(\&amp;quot;Search_CAT_ID_Data (1)\&amp;quot;).getValue(\&amp;quot;primeContact\&amp;quot;, row), false)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">23</property>
+  <property name="stepIndex">1</property>
+  <property name="description">Verify the Primary Contacts Name</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:39</date>
+  <millis>1566380079436</millis>
+  <sequence>438</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;James Burton&amp;apos; is present on page </message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:39</date>
+  <millis>1566380079436</millis>
+  <sequence>439</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : verifyTextPresent(findTestData(\&amp;quot;Search_CAT_ID_Data (1)\&amp;quot;).getValue(\&amp;quot;primeContact\&amp;quot;, row), false)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:39</date>
+  <millis>1566380079437</millis>
+  <sequence>440</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/CAT_Verification_Primary_Contact</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:39</date>
+  <millis>1566380079437</millis>
+  <sequence>441</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/CAT_Verification_Primary_Contact</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:39</date>
+  <millis>1566380079437</millis>
+  <sequence>442</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/CAT_Verification_Primary_Contact&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:39</date>
+  <millis>1566380079438</millis>
+  <sequence>443</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Verification_Primary_Contact\&amp;quot;), [:], CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:39</date>
+  <millis>1566380079438</millis>
+  <sequence>444</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot;--------------------------\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">89</property>
+  <property name="stepIndex">20</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:39</date>
+  <millis>1566380079438</millis>
+  <sequence>445</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot;--------------------------\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:39</date>
+  <millis>1566380079438</millis>
+  <sequence>446</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : \&amp;quot; Teardown - CLose Browser |\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">90</property>
+  <property name="stepIndex">21</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:39</date>
+  <millis>1566380079439</millis>
+  <sequence>447</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : \&amp;quot; Teardown - CLose Browser |\&amp;quot;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:39</date>
+  <millis>1566380079439</millis>
+  <sequence>448</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Teardown\&amp;quot;), [:], STOP_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">92</property>
+  <property name="stepIndex">22</property>
+  <property name="description">--------------------------</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:39</date>
+  <millis>1566380079499</millis>
+  <sequence>451</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/CAT_Teardown</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/CAT_Teardown</property>
+  <property name="description">Checkatrade website Clean Closure</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/CAT_Teardown</property>
+  <property name="source">C:\\Users\\davidho\\Katalon Studio\\Start\\Test Cases\\Reusable_Test_Sequences\\CAT_Teardown.tc</property>
+  <property name="tag">Teardown</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:39</date>
+  <millis>1566380079503</millis>
+  <sequence>453</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : closeBrowser()</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">50</property>
+  <property name="stepIndex">1</property>
+  <property name="description">Teardown Browser</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:40</date>
+  <millis>1566380080216</millis>
+  <sequence>455</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Browser is closed</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:40</date>
+  <millis>1566380080217</millis>
+  <sequence>456</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : closeBrowser()</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:40</date>
+  <millis>1566380080218</millis>
+  <sequence>457</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/CAT_Teardown</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:40</date>
+  <millis>1566380080220</millis>
+  <sequence>458</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/CAT_Teardown</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:40</date>
+  <millis>1566380080221</millis>
+  <sequence>459</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/CAT_Teardown&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:40</date>
+  <millis>1566380080326</millis>
+  <sequence>464</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Teardown\&amp;quot;), [:], STOP_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:40</date>
+  <millis>1566380080326</millis>
+  <sequence>465</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : callTestCase(findTestCase(\&amp;quot;Reusable_Test_Sequences/CAT_Setup\&amp;quot;), [:], STOP_ON_FAILURE)</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">57</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:40</date>
+  <millis>1566380080393</millis>
+  <sequence>468</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/CAT_Setup</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/CAT_Setup</property>
+  <property name="description"></property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/CAT_Setup</property>
+  <property name="source">C:\\Users\\davidho\\Katalon Studio\\Start\\Test Cases\\Reusable_Test_Sequences\\CAT_Setup.tc</property>
+  <property name="tag"></property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:40</date>
+  <millis>1566380080420</millis>
+  <sequence>470</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : openBrowser(URL, STOP_ON_FAILURE)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">50</property>
+  <property name="stepIndex">1</property>
+  <property name="description">OPEN BROWSER</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:40</date>
+  <millis>1566380080435</millis>
+  <sequence>472</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Starting &amp;apos;Chrome&amp;apos; driver</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-08-21T10:34:42</date>
+  <millis>1566380082938</millis>
+  <sequence>475</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>sessionId = d9a45aa2b6b1cfc23ed4f58392f93537</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="sessionId">d9a45aa2b6b1cfc23ed4f58392f93537</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:42</date>
+  <millis>1566380082954</millis>
+  <sequence>476</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>browser = Chrome 76.0.3809.100</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="browser">Chrome 76.0.3809.100</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:42</date>
+  <millis>1566380082954</millis>
+  <sequence>477</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>platform = Windows 10</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="platform">Windows 10</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:42</date>
+  <millis>1566380082954</millis>
+  <sequence>478</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>seleniumVersion = 3.141.59</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="seleniumVersion">3.141.59</property>
+</record>
+<record>
+  <date>2019-08-21T10:34:42</date>
+  <millis>1566380082955</millis>
+  <sequence>479</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>proxyInformation = ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="proxyInformation">ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}</property>
+</record>

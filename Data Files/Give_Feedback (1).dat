@@ -6,9 +6,9 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>26b1bcbb-3d33-4350-ba50-fec34d7a0151</dataFileGUID>
-   <dataSourceUrl>C:\Users\davidho\Katalon Studio\Start\Data Files\Give_Feedback.xlsx</dataSourceUrl>
+   <dataSourceUrl>Data Files/Give_Feedback.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
-   <isInternalPath>false</isInternalPath>
+   <isInternalPath>true</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
    <sheetName>Sheet1</sheetName>

@@ -51,30 +51,36 @@ import internal.GlobalVariable as GlobalVariable
 //-----------------------------------------
 //Test Listener Manages Startup Processes
 'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test\r\n'
-WebUI.openBrowser('')
-
-'URL - Set from the ENVIRONMENT PROFILE '
-WebUI.navigateToUrl(GlobalVariable.URL)
-
-WebUI.maximizeWindow()
-
-'Closes COOKIE nagging element '
-WebUI.click(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/div_close'))
 
 '--------------------------'
+' Startup Sequence         |'
+'--------------------------'
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 
+'--------------------------'
 ' Mobile Device Emulation  |'
-
 '--------------------------'
 
+WebUI.setViewPortSize(400, 700) // 400, 700
 'Set viewport size 703x347'
-WebUI.setViewPortSize(400, 700)
+//WebUI.setViewPortSize(findTestData('searchTestData').getValue('X_COORD', 1), findTestData('searchTestData').getValue('Y_COORD', 
+//        1 // Need to change data binding type to integer for these cells
+//        ))
+
+// GlobalVariable.row
+'--------------------------'
+' Search Trade             |'
+'--------------------------'
 
 'Set and SEARCH TRADE CLASSIFICATION'
 WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/input_Search through overrecommended vetted and monitored trades and service providers for free_trade_autocomplete_input'), 
     findTestData('searchTestData').getValue('tradeClassification', 1))
 
 //------------------------------------------------------------------------------------------------------------------------------------------------
+'--------------------------'
+' Search Location          |'
+'--------------------------'
+
 'Set and SEARCH SELECTED LOCATION'
 WebUI.setText(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_location'), 
     findTestData('searchTestData').getValue('tradeLocation', 1))
@@ -85,11 +91,7 @@ WebUI.scrollToElement(findTestObject('Object Repository/Checkatrade_Trade_Search
     5)
 
 '-------------'
-WebUI.delay(1)
-
 WebUI.doubleClick(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search'))
-
-WebUI.delay(10)
 
 //------------------------------------------------------------------------------------------------------------------------------------------------
 //WebUI.verifyTextPresent(findTestData('Crown Thinning in Gosport'), false)

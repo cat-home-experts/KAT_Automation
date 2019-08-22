@@ -70,8 +70,8 @@
       <name>YE_Recommendations</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>Datasheet location (needs to change to shared repo local)</description>
-      <initValue>'C:\\\\Users\\\\davidho\\\\Katalon Studio\\\\Start\\\\Data Files\\\\Give_Feedback.xlsx'</initValue>
+      <description>Datasheet location (needs to change to shared repo local) C:\\Users\\davidho\\Katalon Studio C:\\Users\\davidho\\Katalon Studio</description>
+      <initValue>'\\\\Start\\\\Data Files\\\\Give_Feedback.xlsx'</initValue>
       <name>DataSheet_Location</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
