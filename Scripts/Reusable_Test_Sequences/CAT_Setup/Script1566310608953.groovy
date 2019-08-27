@@ -13,6 +13,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+
 //-----------------------
 // TEST HISTORY HEADER - |                                                                                                               |
 //-----------------------
@@ -32,7 +33,9 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 // Also, Closed Cookie and Privacy Nags with IF    20/08/2019   |     Dave Horne   |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// If Either Cookie or Privacy Elements are   |                 |                  |                             |
+// Not Presented, Then a WARNING Is Flagged,  |    27/08/2019   |     Dave Horne   |                             |
+// But the Test Step Will Pass                |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //
 //---------------------------------------------------------------------------------------------------------------
@@ -45,64 +48,44 @@ import internal.GlobalVariable as GlobalVariable
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 //-----------------------------------------
-//WebUI.openBrowser("") // 20/08/2019 this 1 line below, replaces the 2 previous lines of code
-'OPEN BROWSER'
-WebUI.openBrowser(GlobalVariable.URL, FailureHandling.OPTIONAL)
-
-//-----------------------------------------
 'URL - Set from the ENVIRONMENT PROFILE '
-
-//WebUI.navigateToUrl(GlobalVariable.URL)  // 20/08/2019
-//-----------------------------------------
-'WAIT for browser to load - waits up to 60 seconds before timeout occurs '
-WebUI.waitForPageLoad(60)
+'OPEN BROWSER'
+WebUI.openBrowser(GlobalVariable.URL)// 20/08/2019
 
 //-----------------------------------------
 'MAXIMIZE BROWSER '
 WebUI.maximizeWindow()
 
 //-----------------------------------------
-//-----------------------------
-// COOKIE POLICY CHECKBOX     |
-//-----------------------------
-//-----------------------------------------
-if (WebUI.verifyTextPresent('Checkatrade.com uses cookies to make sure you get the best browsing experience', false).TRUE) {
-    // (WebUI.verifyElementVisible(findTestObject('Page_Checkatrade Find a tradesperson you can trust/div_close'), false).TRUE){
-    //-----------------------------------------
-    'COOKIE POLICY POPOUT'
-    //WebUI.verifyTextPresent('Checkatrade.com uses cookies to make sure you get the best browsing experience', false)
-    //-----------------------------------------
-    'Closes COOKIE nagging element '
-    WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/div_close'))
-    //-----------------------------------------
-    'COOKIE POPOUT REMOVED'
-    WebUI.verifyTextNotPresent('Checkatrade.com uses cookies to make sure you get the best browsing experience', false) 
-	//-----------------------------------------
-	} else (WebUI.verifyTextNotPresent('Checkatrade.com uses cookies to make sure you get the best browsing experience', false).FALSE) {
-    System.out.println('Cookie Policy Update Not Displayed')
-}
+'WAIT for browser to load - waits up to 60 seconds before timeout occurs '
+WebUI.waitForPageLoad(60)
 
-//-----------------------------
-// PRIVACY POLICY CHECKBOX    |
-//-----------------------------
-//-----------------------------------------
-if (WebUI.verifyTextPresent('We have updated our Privacy Policy, please review this', false).TRUE) {
-    //-----------------------------------------
-    'PRIVACY POLICY POPOUT'
-    //WebUI.verifyTextPresent('We have updated our Privacy Policy, please review this', false)
-    //-----------------------------------------
-    'Closes PRIVACY nagging element '
-    WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/div_close_1'))
-    //-----------------------------------------
-    'PRIVACY POPOUT REMOVED'
-    WebUI.verifyTextNotPresent('We have updated our Privacy Policy, please review this', false)
-    // '
-	} else (WebUI.verifyTextNotPresent('We have updated our Privacy Policy, please review this', false).FALSE) {
-    System.out.println('Privacy Policy Update Not Displayed')
+//----------------------------------------------
+//'Closes COOKIE nagging element, If it Exists  |'
+//----------------------------------------------
+if (WebUI.verifyElementPresent(findTestObject('Page_Checkatrade Find a tradesperson you can trust/div_close'), 1, FailureHandling.OPTIONAL)) { 
+	'---------------------------------' // // Default locator was hide_button - stopped working, use close button locator now - 27/08/2019
+	WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/div_close'))
+	'---------------------------------'
+	'COOKIE POPOUT REMOVED - Confirmed'
+	WebUI.verifyTextNotPresent('Checkatrade.com uses cookies to make sure you get the best browsing experience', false)
+} else {
+	System.out.println('The Cookie Nagging Element Wasnt presented on the '+GlobalVariable.URL+' Web Page' )
 }
-///////////////////////////////
-//  END
-///////////////////////////////
-	
-		
-	
+//----------------------------------------------
+//'Closes PRIVACY nagging element, If it Exists |'
+//----------------------------------------------
+if (WebUI.verifyElementPresent(findTestObject('Page_Checkatrade Find a tradesperson you can trust/div_close_1'), 1, FailureHandling.OPTIONAL)) { 
+	'---------------------------------'
+	WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/div_close_1'))
+	'---------------------------------'
+	'PRIVACY POPOUT REMOVED - Confirmed'
+	WebUI.verifyTextNotPresent('We have updated our Privacy Policy, please review this', false) 
+} else {
+	System.out.println('The Privacy Policy Nagging Element Wasnt presented on the '+GlobalVariable.URL+' Web Page' )
+}
+//----------------------------------------------
+
+////-----------------------------
+//// E N D                      |
+////-----------------------------

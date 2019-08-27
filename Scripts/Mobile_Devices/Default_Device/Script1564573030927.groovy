@@ -12,6 +12,7 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import java.lang.Integer as Integer
 
 //-----------------------
 // TEST HISTORY HEADER - |                   FUNCTIONAL DEMO - REFACTOR TODO                                                                                            |
@@ -53,23 +54,30 @@ import internal.GlobalVariable as GlobalVariable
 'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test\r\n'
 
 '--------------------------'
+
 ' Startup Sequence         |'
+
 '--------------------------'
 WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 
 '--------------------------'
+
 ' Mobile Device Emulation  |'
+
 '--------------------------'
 
 WebUI.setViewPortSize(400, 700) // 400, 700
 'Set viewport size 703x347'
-//WebUI.setViewPortSize(findTestData('searchTestData').getValue('X_COORD', 1), findTestData('searchTestData').getValue('Y_COORD', 
+//WebUI.setViewPortSize(findTestData('searchTestData').getValue.toInteger('X_COORD', 1), findTestData('searchTestData').getValue('Y_COORD', 
+  //      1))
+//
 //        1 // Need to change data binding type to integer for these cells
 //        ))
-
 // GlobalVariable.row
 '--------------------------'
+
 ' Search Trade             |'
+
 '--------------------------'
 
 'Set and SEARCH TRADE CLASSIFICATION'
@@ -78,7 +86,9 @@ WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Find a tradespe
 
 //------------------------------------------------------------------------------------------------------------------------------------------------
 '--------------------------'
+
 ' Search Location          |'
+
 '--------------------------'
 
 'Set and SEARCH SELECTED LOCATION'

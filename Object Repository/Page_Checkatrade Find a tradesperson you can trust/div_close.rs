@@ -4,7 +4,17 @@
    <name>div_close</name>
    <tag></tag>
    <elementGuidId>4d3c2f3c-7ee4-4ef5-a6b2-bda9957a2678</elementGuidId>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[(text() = 'close' or . = 'close')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='hide-button']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -14,7 +24,7 @@
       <value>div</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>

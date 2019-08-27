@@ -46,6 +46,8 @@ import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
+import com.kms.katalon.core.exception.StepErrorException as StepErrorException
+import com.kms.katalon.core.util.KeywordUtil
 
 class Directives {
 	/**
@@ -65,5 +67,29 @@ class Directives {
 	def I_verify_the_status_in_step(String status) {
 		println status
 	}
-
 }
+
+//public class mytools
+//	{  static void FORCESTOP()
+//		{    throw new StepErrorException("FORCEDSTOP")
+//		}
+//	}
+//public class SwitchExample {
+//		def int XCOORD, def int YCOORD
+//		static main() {
+//			
+//			switch (GlobalVariable.row) {
+//				case 1: XCOORD = 200; YCOORD = 400; break
+//				case 2: XCOORD = 300; YCOORD = 500; break 
+//				case 3: XCOORD = 400; YCOORD = 600; break		
+//				case 4: XCOORD = 500; YCOORD = 700; break		
+//				case 5: XCOORD = 600; YCOORD = 800; break		
+//				case 6: XCOORD = 700; YCOORD = 900; break		
+//				case 7: XCOORD = 800; YCOORD = 1000; break
+//				case 8: XCOORD = 900; YCOORD = 1100; break
+//				case 9: XCOORD = 1000; YCOORD = 1200; break
+//				case 10:XCOORD = 1100; YCOORD = 1300; break
+//				default: break }
+//		   }
+//		return XCOORD, YCOORD
+//	}

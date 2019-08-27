@@ -79,7 +79,7 @@ Profile Preview : Validation Data Special Characters</p>
     public static Object Validation_Data_Special_Chars
      
     /**
-     * <p>Profile default : URL to compare with the starting URL before navigation
+     * <p>Profile default : URL to compare with the starting URL before navigation, test that complete, and CAT link is clicked (for example) need to ensure dev is returned back to dev etc.
 Profile Preview : URL to compare with the starting URL before navigation</p>
      */
     public static Object CurrentUrl
@@ -91,7 +91,7 @@ Profile Preview : Fix the format error here Give Feedback - Recommend? true OR f
     public static Object YE_Recommendations
      
     /**
-     * <p>Profile default : Datasheet location (needs to change to shared repo local) C:\\Users\\davidho\\Katalon Studio C:\\Users\\davidho\\Katalon Studio
+     * <p>Profile default : Datasheet location (needs to change to shared repo local) C:\\Users\\davidho\\Katalon Studio C:\\Users\\davidho\\Katalon Studio (THIS SEEMS RESOLVED NOW) 22&#47;08&#47;2019
 Profile Preview : Datasheet location (needs to change to shared repo local)</p>
      */
     public static Object DataSheet_Location

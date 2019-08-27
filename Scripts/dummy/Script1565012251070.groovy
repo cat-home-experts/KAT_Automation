@@ -16,9 +16,8 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://www.current.dev.checkatrade.com/')
+WebUI.navigateToUrl('https://www.preview.checkatrade.com/')
 
-WebUI.click(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close'))
+WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/div_close'))
 
-WebUI.click(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close_1'))
-
+WebUI.delay(10)

@@ -6,11 +6,15 @@
    <elementGuidId>82e471fd-2ce7-42d4-9e20-60d84b66a534</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//div[@id = 'privacy-update-hide-button' and @class = 'privacy-update-btn-close']</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//div[@id='privacy-update-hide-button']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -27,14 +31,14 @@
       <value>privacy-update-hide-button</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
       <value>privacy-update-btn-close</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>

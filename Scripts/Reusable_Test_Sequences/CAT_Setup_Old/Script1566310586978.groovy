@@ -54,12 +54,12 @@ WebUI.openBrowser(GlobalVariable.URL, FailureHandling.STOP_ON_FAILURE)
 
 //WebUI.navigateToUrl(GlobalVariable.URL)  // 20/08/2019
 //-----------------------------------------
-'WAIT for browser to load - waits up to 60 seconds before timeout occurs '
-WebUI.waitForPageLoad(60)
-
-//-----------------------------------------
 'MAXIMIZE BROWSER '
 WebUI.maximizeWindow()
+
+//-----------------------------------------
+'WAIT for browser to load - waits up to 60 seconds before timeout occurs '
+WebUI.waitForPageLoad(60)
 
 //-----------------------------------------
 'COOKIE POLICY POPOUT'
@@ -68,10 +68,9 @@ if (WebUI.verifyTextPresent('Checkatrade.com uses cookies to make sure you get t
         WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/div_close'))
 
         'COOKIE POPOUT REMOVED'
-        WebUI.verifyTextNotPresent('Checkatrade.com uses cookies to make sure you get the best browsing experience', false)
-    } //-----------------------------------------
-    //-----------------------------------------
-    )) {
-    WebUI.acceptAlert()
+        WebUI.verifyTextNotPresent('Checkatrade.com uses cookies to make sure you get the best browsing experience', false) 
+		//-----------------------------------------
+        //-----------------------------------------
+    })) {
 }
 
