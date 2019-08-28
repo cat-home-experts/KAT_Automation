@@ -74,4 +74,9 @@
       <initValue>'\\\\Start\\\\Data Files\\\\Give_Feedback.xlsx'</initValue>
       <name>DataSheet_Location</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Returned data after mobile simulation search</description>
+      <initValue>'Crown Thinning in Gosport'</initValue>
+      <name>Returns_Verification</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

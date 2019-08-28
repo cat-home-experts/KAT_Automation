@@ -18,37 +18,40 @@ import sun.util.logging.resources.logging_pt_BR as logging_pt_BR
 import com.kms.katalon.core.util.KeywordUtil
 
 //--------------------------------------------------------------------
-// Give Feedback - Set Recommendation Yes OR No (Default = Yes)      | - Snip - 08/08/2019  -TO REFACTOR
+// Give Feedback - Set Recommendation Yes OR No (Default = Yes)      | - Snip - 08/08/2019  - 28/08/2019 refactored, issues corrected
 //--------------------------------------------------------------------
-def data = findTestData('Data Files/Give_Feedback (1)')  // put this into a method      // Points directly at datasource but resolution issue
-YE_Recommend = data.getValue("YE_Recommendations", GlobalVariable.row)// global rowindex 1
+def data = findTestData('Data Files/Give_Feedback (1)')  
+def YE_Recommend = data.getValue("YE_Recommendations", GlobalVariable.row) 
 '--------------------------------'
 'Read data from spreadsheet      |'
 '--------------------------------'
-//Give_Feedback = ExcelFactory.getExcelDataWithDefaultSheet(GlobalVariable.DataSheet_Location, 'Sheet1', true)
-//String YE_Recommend = Give_Feedback.getValue('YE_Recommendations', GlobalVariable.row) // (4, 2)
-
+ 
 //-------------------------------------------
 '--------------------------------'
 'Set Recommendation - Yes or No  |'
 '--------------------------------'
-try {
-	if (YE_Recommend == ("Yes")) {
-	    WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Recommend'), 1, FailureHandling.OPTIONAL)
-	} 
-	else if (YE_Recommend == ("No")) {
-	    //WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Experience_Feedback'))
-		WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Recommend'), 1, FailureHandling.OPTIONAL)
-	}
-	'--------------------------------'
-	System.out.println("Your Experience, Recommendation, Click on the "+YE_Recommend+" Option Button ");
-	//-------------------------------------------
-} catch (Exception e) {
-	//KeywordUtil.markFailed("Your Experience, Recommendation, Click on the "+YE_Recommend+" Option Button Failed to Select");
-	System.out.println("Your Experience, Recommendation, Click on the "+YE_Recommend+" Option Button (Default Selection) ");
+
+if (YE_Recommend == ("Yes")) {
+	'-----------------------------------------------------------'
+	' Selected by Default - ReSelecting causes a tool exception |'
+	' No need to re-select - RESOLVED                           |'
+	'-----------------------------------------------------------'
+    //WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Recommend'), 1, FailureHandling.OPTIONAL)
+	WebUI.click(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/Page_Checkatrade Give your feedback/span_Yes'))
+} 
+else if (YE_Recommend == ("No")) {
+    //WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Experience_Feedback'))
+	//WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Recommend'), 1, FailureHandling.OPTIONAL)
+	WebUI.click(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/Page_Checkatrade Give your feedback/span_No'))
+	//--------------------------------------------------------
+	// Complete the extra details that this selection reveals |
+	//--------------------------------------------------------
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Not_Recommend'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 }
-'-----------------------------------'
+	'--------------------------------'
+	System.out.println("Your Experience, Recommendation, Click on the <"+YE_Recommend+"> Option Button ");
+	//-------------------------------------------
 
 //----------------------------------------
-// End                                   |
+// End                                   | - Snip - 08/08/2019  - 28/08/2019 refactored, issues corrected
 //----------------------------------------

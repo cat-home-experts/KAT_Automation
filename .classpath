@@ -78,6 +78,18 @@
 	<classpathentry kind="lib" path="C:/Test/Tools/Katalon_Studio_Windows_32/plugins/org.apache.ant.launcher_1.9.6.jar"/>
 	<classpathentry kind="lib" path="C:/Test/Tools/Katalon_Studio_Windows_32/plugins/com.kms.katalon.core.appium_1.0.0.201907170724.jar"/>
 	<classpathentry kind="lib" path="C:/Test/Tools/Katalon_Studio_Windows_32/plugins/org.eclipse.equinox.common_3.8.0.v20160509-1230.jar"/>
+	<classpathentry kind="lib" path="C:/Test/Tools/Katalon_Studio_Windows_32/plugins/com.kms.katalon.core.webui_1.0.0.201907170724.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Test/Tools/Katalon_Studio_Windows_32/configuration/resources/apidocs/com.kms.katalon.core.webui/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Test/Tools/Katalon_Studio_Windows_32/plugins/org.json_20140107.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Test/Tools/Katalon_Studio_Windows_32/plugins/com.kms.katalon.core.mobile_1.0.0.201907170724.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Test/Tools/Katalon_Studio_Windows_32/configuration/resources/apidocs/com.kms.katalon.core.mobile/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Test/Tools/Katalon_Studio_Windows_32/plugins/org.apache.commons.validator_1.5.0.jar"/>
 	<classpathentry kind="lib" path="C:/Test/Tools/Katalon_Studio_Windows_32/plugins/com.kms.katalon.core.cucumber_1.0.0.201907170724.jar">
 		<attributes>
 			<attribute name="javadoc_location" value="file:/C:/Test/Tools/Katalon_Studio_Windows_32/configuration/resources/apidocs/com.kms.katalon.core.cucumber/"/>
@@ -92,12 +104,6 @@
 	<classpathentry kind="lib" path="C:/Test/Tools/Katalon_Studio_Windows_32/plugins/io.cucumber.java_3.0.2.jar"/>
 	<classpathentry kind="lib" path="C:/Test/Tools/Katalon_Studio_Windows_32/plugins/io.cucumber.tag-expressions_1.1.1.jar"/>
 	<classpathentry kind="lib" path="C:/Test/Tools/Katalon_Studio_Windows_32/plugins/io.cucumber.junit_3.0.2.jar"/>
-	<classpathentry kind="lib" path="C:/Test/Tools/Katalon_Studio_Windows_32/plugins/com.kms.katalon.core.mobile_1.0.0.201907170724.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="file:/C:/Test/Tools/Katalon_Studio_Windows_32/configuration/resources/apidocs/com.kms.katalon.core.mobile/"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Test/Tools/Katalon_Studio_Windows_32/plugins/org.apache.commons.validator_1.5.0.jar"/>
 	<classpathentry kind="lib" path="C:/Test/Tools/Katalon_Studio_Windows_32/plugins/com.kms.katalon.core.webservice_1.0.0.201907170724.jar">
 		<attributes>
 			<attribute name="javadoc_location" value="file:/C:/Test/Tools/Katalon_Studio_Windows_32/configuration/resources/apidocs/com.kms.katalon.core.webservice/"/>
@@ -108,12 +114,6 @@
 	<classpathentry kind="lib" path="C:/Test/Tools/Katalon_Studio_Windows_32/plugins/com.google.http-client.google-http-client_1.22.0.jar"/>
 	<classpathentry kind="lib" path="C:/Test/Tools/Katalon_Studio_Windows_32/plugins/ca.juliusdavies.not-yet-commons-ssl_0.3.11.jar"/>
 	<classpathentry kind="lib" path="C:/Test/Tools/Katalon_Studio_Windows_32/plugins/com.kms.katalon.preferences_1.0.0.201907170724.jar"/>
-	<classpathentry kind="lib" path="C:/Test/Tools/Katalon_Studio_Windows_32/plugins/com.kms.katalon.core.webui_1.0.0.201907170724.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="file:/C:/Test/Tools/Katalon_Studio_Windows_32/configuration/resources/apidocs/com.kms.katalon.core.webui/"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Test/Tools/Katalon_Studio_Windows_32/plugins/org.json_20140107.0.0.jar"/>
 	<classpathentry exported="true" kind="con" path="GROOVY_SUPPORT"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -14,7 +14,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import java.lang.Integer as Integer
 
-
 //-----------------------
 // TEST HISTORY HEADER - |                   FUNCTIONAL DEMO - REFACTOR TODO                                                                                            |
 //-----------------------
@@ -28,7 +27,8 @@ import java.lang.Integer as Integer
 // returned for given 'Trade' and 'Location'  |    13/07/2019   |     Dave Horne   | Using External Test Data    |
 // search criteria.                           |                 |                  | Provided on an Excel SSheet |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Extended to data Driven with var. X,Y      |    27/08/2019   |     Dave Horne   | Currently 5 different screen|
+// Resolutions set, 1 rox of data driven XL   |                 |                  | resolutions tested          |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -57,63 +57,100 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('searchTestData'
     //def removed for globalisation
     WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 	//----------------------------------------------------------
-	//    def data = findTestData('searchTestData')
+	' ALTERNATIVE SCREEN RESOLUTION SELECTION METHOD'        // |
+    //----------------------------------------------------------
+    //    def data = findTestData('searchTestData')
     //
     //    X_COORD = data.getValue('X_COORD', GlobalVariable.row)
     //
     //    Y_COORD = data.getValue('Y_COORD', GlobalVariable.row)
- 	//----------------------------------------------------------
+    //----------------------------------------------------------
     //WebUI.setViewPortSize(703, 407)
-    'Set viewport size 703x347'
-    int XCOORD = 500
-    int YCOORD = 700
-	//----------------------------------------------------------	
-	// Flaky Method, will break when the datasheet expands, issues grabbing data from excel using SetViewPortSize - 
-	// Errors returned = property doesn't exist and data resolution issues - also, the dataset spreadsheet view, in the test suite is broken?
+    //int XCOORD = 500
+    //int YCOORD = 700
+    //----------------------------------------------------------	
+    // Flaky Method, will break when the datasheet expands, issues grabbing data from excel using SetViewPortSize - 
+    // Errors returned = property doesn't exist and data resolution issues - also, the dataset spreadsheet view, in the test suite is broken?
+    //----------------------------------------------------------
+    // Feed the View Port Settings From Here (Currentyl 5 Rows in 
+    // the Datasheet - have set 10 rows here as an insurance polisy :-)
+    //----------------------------------------------------------
+    //	switch (GlobalVariable.row) {
+    //		case 1: XCOORD = 200; YCOORD = 400; break
+    //		case 2: XCOORD = 300; YCOORD = 500; break 
+    //		case 3: XCOORD = 400; YCOORD = 600; break		
+    //		case 4: XCOORD = 500; YCOORD = 700; break		
+    //		case 5: XCOORD = 600; YCOORD = 800; break		
+    //		case 6: XCOORD = 700; YCOORD = 900; break		
+    //		case 7: XCOORD = 800; YCOORD = 1000; break
+    //		case 8: XCOORD = 900; YCOORD = 1100; break
+    //		case 9: XCOORD = 1000; YCOORD = 1200; break
+    //		case 10:XCOORD = 1100; YCOORD = 1300; break
+    //		default: XCOORD = 500; YCOORD = 700; break }
+    //----------------------------------------------------------
+    // Set View Port Size
+    //----------------------------------------------------------
 	//----------------------------------------------------------
-	// Feed the View Port Settings From Here (Currentyl 5 Rows in 
-	// the Datasheet - have set 10 rows here as an insurance polisy :-)
+	' ACTUAL SCREEN RESOLUTION SELECTION METHOD USED'       // |
 	//----------------------------------------------------------
-	switch (GlobalVariable.row) {
-		case 1: XCOORD = 200; YCOORD = 400; break
-		case 2: XCOORD = 300; YCOORD = 500; break 
-		case 3: XCOORD = 400; YCOORD = 600; break		
-		case 4: XCOORD = 500; YCOORD = 700; break		
-		case 5: XCOORD = 600; YCOORD = 800; break		
-		case 6: XCOORD = 700; YCOORD = 900; break		
-		case 7: XCOORD = 800; YCOORD = 1000; break
-		case 8: XCOORD = 900; YCOORD = 1100; break
-		case 9: XCOORD = 1000; YCOORD = 1200; break
-		case 10:XCOORD = 1100; YCOORD = 1300; break
-		default: XCOORD = 500; YCOORD = 700; break }
+    // Pul X and Y from the spreadsheet (parse Integer from data sheet string value)
+    //----------------------------------------------------------
+    'Set viewport size eg. 703x347'
+    int XCOORD = Integer.parseInt(findTestData('searchTestData').getValue('X_COORD', GlobalVariable.row))
+    int YCOORD = Integer.parseInt(findTestData('searchTestData').getValue('Y_COORD', GlobalVariable.row))
 	//----------------------------------------------------------
-	// Set View Port Size
+	// Set the Integer Vlues of X and Y for View Port Viewing  |
 	//----------------------------------------------------------
     WebUI.setViewPortSize(XCOORD, YCOORD)
-
-    // WebUI.setViewPortSize(GlobalVariable.SetViewPortSize_XCOORD, GlobalVariable.SetViewPortSize_YCOORD)
-    //WebUI.setViewPortSize(findTestData("searchTestData").ge
-    //WebUI.setViewPortSize(findTestData('searchTestData').getValue('X_COORD', GlobalVariable.row),(findTestData('searchTestData').getValue('Y_COORD', GlobalVariable.row)))
-    //  'Set and SEARCH TRADE CLASSIFICATION'
+	'Page Loading'
+    WebUI.waitForPageLoad(60)
+	//---------------------------------------------------------
+	'Report on  the Current Set View Port Settings'        // |
+	//---------------------------------------------------------
+	System.out.println((('Set View Port Size is currently SET to X AXIS ' + XCOORD) + ' Y AXIS ') + YCOORD)
+	//---------------------------------------------------------------------
+	// Set The Trade Classification to Select on the Trade Search Screen  |
+	//---------------------------------------------------------------------
     WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/input_Search through overrecommended vetted and monitored trades and service providers for free_trade_autocomplete_input'), 
         findTestData('searchTestData').getValue('tradeClassification', GlobalVariable.row))
-
+	//---------------------------------------------------------------------
+	'Page Loading'
+    WebUI.waitForPageLoad(60)
     //------------------------------------------------------------------------------------------------------------------------------------------------
     'Set and SEARCH SELECTED LOCATION'
+	'---------------------------------'
     WebUI.setText(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_location'), 
         findTestData('searchTestData').getValue('tradeLocation', GlobalVariable.row))
-
+	'Page Loading'
+    WebUI.waitForPageLoad(60)
     //------------------------------------------------------------------------------------------------------------------------------------------------
-    'HIT SEARCH'
+    'Scroll to Element (off screen)'
     WebUI.scrollToElement(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search'), 
         5)
-
+	'Page Loading'
+    WebUI.waitForPageLoad(60)
     '-------------'
+    'HIT SEARCH'
     WebUI.doubleClick(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search'))
-
-	WebUI.delay(1)
+	'Page Loading'
+    WebUI.waitForPageLoad(60)
     //------------------------------------------------------------------------------------------------------------------------------------------------
+    'Scroll to Element Containing The Concantanated Test data (off screen)'
+    WebUI.scrollToElement(findTestObject('Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result'), 
+        5)
+	'Page Loading'
+    WebUI.waitForPageLoad(60)
+    //------------------------------------------------------------------------------------------------------------------------------------------------
+    WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeLocationVerification', GlobalVariable.row), false, 
+        FailureHandling.CONTINUE_ON_FAILURE)
     'Expected cantantenated text is Returned'
-    WebUI.verifyTextPresent('Crown Thinning in Gosport', false)
+	    // WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeLocationVerification', GlobalVariable.row), FailureHandling.CONTINUE_ON_FAILURE)
+    '--------------------------'
+    ' Teardown - CLose Browser |'
+    '--------------------------'
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.STOP_ON_FAILURE)
+    '--------------------------'
+    ' END  Of ITERATION        |'
+    '--------------------------'
 }
 

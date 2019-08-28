@@ -22,7 +22,7 @@ import internal.GlobalVariable as GlobalVariable
 
 //WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Validation/Your_Experience_Initial_Page_State'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 '---------------------------------------------------------------------------------------'
-' Your Experience (page 1) Recomment this trader?                                       |'
+' Your Experience (page 1) Recommend this trader?                                       |'
 '---------------------------------------------------------------------------------------'
 WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Recommendation_Selection'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 

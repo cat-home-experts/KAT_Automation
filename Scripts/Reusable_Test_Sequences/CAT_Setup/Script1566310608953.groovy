@@ -35,7 +35,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 // If Either Cookie or Privacy Elements are   |                 |                  |                             |
 // Not Presented, Then a WARNING Is Flagged,  |    27/08/2019   |     Dave Horne   |                             |
-// But the Test Step Will Pass                |                 |                  |                             |
+// But the Test Step Will Still Pass if all OK|                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //
 //---------------------------------------------------------------------------------------------------------------
@@ -70,7 +70,7 @@ if (WebUI.verifyElementPresent(findTestObject('Page_Checkatrade Find a tradesper
 	'COOKIE POPOUT REMOVED - Confirmed'
 	WebUI.verifyTextNotPresent('Checkatrade.com uses cookies to make sure you get the best browsing experience', false)
 } else {
-	System.out.println('The Cookie Nagging Element Wasnt presented on the '+GlobalVariable.URL+' Web Page' )
+	System.out.println('The Cookie Nagging Element Was not presented on the '+GlobalVariable.URL+' Web Page' )
 }
 //----------------------------------------------
 //'Closes PRIVACY nagging element, If it Exists |'
@@ -82,7 +82,7 @@ if (WebUI.verifyElementPresent(findTestObject('Page_Checkatrade Find a tradesper
 	'PRIVACY POPOUT REMOVED - Confirmed'
 	WebUI.verifyTextNotPresent('We have updated our Privacy Policy, please review this', false) 
 } else {
-	System.out.println('The Privacy Policy Nagging Element Wasnt presented on the '+GlobalVariable.URL+' Web Page' )
+	System.out.println('The Privacy Policy Nagging Element Was not presented on the '+GlobalVariable.URL+' Web Page' )
 }
 //----------------------------------------------
 

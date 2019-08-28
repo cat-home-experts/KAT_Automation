@@ -97,6 +97,11 @@ Profile Preview : Datasheet location (needs to change to shared repo local)</p>
     public static Object DataSheet_Location
      
     /**
+     * <p>Profile default : Returned data after mobile simulation search</p>
+     */
+    public static Object Returns_Verification
+     
+    /**
      * <p>Profile Checkatrade_Live : Row count on spread sheet iterator</p>
      */
     public static Object row
@@ -147,6 +152,7 @@ Profile Preview : Datasheet location (needs to change to shared repo local)</p>
             CurrentUrl = selectedVariables['CurrentUrl']
             YE_Recommendations = selectedVariables['YE_Recommendations']
             DataSheet_Location = selectedVariables['DataSheet_Location']
+            Returns_Verification = selectedVariables['Returns_Verification']
             row = selectedVariables['row']
             Standalone_TC_Execution = selectedVariables['Standalone_TC_Execution']
             Postcode = selectedVariables['Postcode']

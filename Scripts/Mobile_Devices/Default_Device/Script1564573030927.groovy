@@ -98,7 +98,7 @@ WebUI.setText(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Pa
 //------------------------------------------------------------------------------------------------------------------------------------------------
 'HIT SEARCH'
 WebUI.scrollToElement(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search'), 
-    5)
+    25)
 
 '-------------'
 WebUI.doubleClick(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search'))

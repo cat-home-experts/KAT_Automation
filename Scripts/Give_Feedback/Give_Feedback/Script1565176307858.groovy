@@ -26,7 +26,8 @@ import internal.GlobalVariable as GlobalVariable
 // header link, Verify each of the defined    |    07/08/2019   |     Dave Horne   |                             |
 // areas is intact and available              |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Adding extra test coverage, non recommend  |                 |                  |                             |
+// and the extra bits that this uncovers      |    28/08/2019   |     Dave Horne   |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -41,13 +42,16 @@ import internal.GlobalVariable as GlobalVariable
 //                                                                                                               |
 //	WHEN -  We Click on 'GIVE FEEDBACK' from the header banner on the homepage                                   |
 //                                                                                                               |
-//  THEN -  The GIVE FEEDBACK PORTAL is presented to the user, an entry fied is presented for entering           |
+//  THEN -  The GIVE FEEDBACK PORTAL is presented to the user, an entry fied is presented for entering           | 
 //          Traders name or CAT ID.                                                                              |
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 //-----------------------------------------
 // Call Setup Process - Browser Startup, Navigate, Maximize and Close Cookie Nagging Element
 //-----------------------------------------
+def data = findTestData('Data Files/Give_Feedback (1)')
+def YE_Recommend
+
 'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test\r\n'
 for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (1)').getRowNumbers(); (GlobalVariable.row)++) {
     //def removed for globalisation
@@ -71,9 +75,13 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (
 
     '--------------------------------------'
     ' Your Scores (page 2) Processing      |'
-    '--------------------------------------'
-    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Scores/Your_Scores'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-
+    '--------------------------------------'//--------
+	// Page is MISSED OUT When Reccomendation == 'NO' |
+	//------------------------------------------------
+	YE_Recommend = data.getValue("YE_Recommendations", GlobalVariable.row)
+	if (YE_Recommend == ("Yes")) {
+		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Scores/Your_Scores'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	}
     '--------------------------------------'
     ' Your Scores (page 3) Processing      |'
     '--------------------------------------'
