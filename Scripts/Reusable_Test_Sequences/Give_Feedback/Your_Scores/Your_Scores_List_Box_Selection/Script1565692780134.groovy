@@ -18,10 +18,10 @@ import internal.GlobalVariable as GlobalVariable
 //--------------------------------------------------------------
 
 def data = findTestData('Data Files/Give_Feedback (1)')  // put this into a method      // Points directly at datasource but resolution issue
-YS_Tidiness = data.getValue("YS_Tidiness", GlobalVariable.row)
-YS_Reliability = data.getValue("YS_Reliability", GlobalVariable.row)
-YS_Courtesy = data.getValue("YS_Courtesy", GlobalVariable.row)
-YS_Workmanship = data.getValue("YS_Workmanship", GlobalVariable.row)
+def YS_Tidiness = data.getValue("YS_Tidiness", GlobalVariable.row)
+def YS_Reliability = data.getValue("YS_Reliability", GlobalVariable.row)
+def YS_Courtesy = data.getValue("YS_Courtesy", GlobalVariable.row)
+def YS_Workmanship = data.getValue("YS_Workmanship", GlobalVariable.row)
 '--------------------------------'
 'Read data from spreadsheet      |'
 '--------------------------------'
@@ -53,6 +53,3 @@ WebUI.selectOptionByValue(findTestObject('Page_Checkatrade Give your feedback/se
 //--------------------------------------------------------------
 // END                                                         | - Snip - 13/08/2019
 //--------------------------------------------------------------
-
-
-

@@ -18,11 +18,11 @@ import internal.GlobalVariable as GlobalVariable
 //--------------------------------------------------------------
 
 def data = findTestData('Data Files/Give_Feedback (1)')  
-YS_Work_Description = data.getValue("YS_Work_Description", GlobalVariable.row)
-YS_Work_Date = data.getValue("YS_Work_Date", GlobalVariable.row)
-YS_Days_to_Complete = data.getValue("YS_Days_to_Complete", GlobalVariable.row)
-YS_Work_Comments = data.getValue("YS_Work_Comments", GlobalVariable.row)
-YS_Feedback_Published = data.getValue("YS_Feedback_Published", GlobalVariable.row)
+def YS_Work_Description = data.getValue("YS_Work_Description", GlobalVariable.row)
+def YS_Work_Date = data.getValue("YS_Work_Date", GlobalVariable.row)
+def YS_Days_to_Complete = data.getValue("YS_Days_to_Complete", GlobalVariable.row)
+def YS_Work_Comments = data.getValue("YS_Work_Comments", GlobalVariable.row)
+def YS_Feedback_Published = data.getValue("YS_Feedback_Published", GlobalVariable.row)
 '---------------------------------'
 'Read data from spreadsheet       |'
 '---------------------------------'
@@ -37,7 +37,7 @@ WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Give your feedb
 'Date work was done (approx)      |'
 '---------------------------------'
 
-// * * *  No Date Currently Entered, Except Default (Today) * * *  -- YS_Work_Date
+// * * *  No Date Currently Entered, Except Default (Today) * * *  -- defined - YS_Work_Date - worksheet
 
 '---------------------------------'
 'How many days did this job take? |'
@@ -50,31 +50,39 @@ WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Give your feedb
 WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Give your feedback/textarea_Your comments about the work_ctl00contenttbWorkComments'),
 	YS_Work_Comments)
 
+'---------------------------------------'
+' Scroll Bottom of Page Into View       |'
+'---------------------------------------'
+
+//WebUI.scrollToElement('Reusable_Test_Sequences/Give_Feedback/Your_Scores/Hit_Next', 1)
+
 '-----------------------------------------------------'
 'Would you like your feedback published? - Yes or No  |'
 '-----------------------------------------------------'
-try {
-	if (YS_Feedback_Published == ("Yes")) {
-		WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Feedback'))
-	}
-	else if (YS_Feedback_Published == ("No")) {
-		//WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Experience_Feedback'))
-		WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Feedback'))
-	}
-	'--------------------------------'
-	System.out.println("Your Experience, Recommendation, Click on the "+YS_Feedback_Published+" Option Button ");
-	//-------------------------------------------
-} catch (Exception e) {
-	//KeywordUtil.markFailed("Your Experience, Recommendation, Click on the "+YE_Recommend+" Option Button Failed to Select");
-	System.out.println("Your Experience, Recommendation, Click on the "+YS_Feedback_Published+" Did nt Select ");
+//try {
+if (YS_Feedback_Published == ("Yes")) {
+	WebUI.click(findTestObject('Feedback/Page_Checkatrade Give your feedback/span_Publish_Feedback_Yes'))
+	WebUI.waitForPageLoad(2)
 }
+else if (YS_Feedback_Published == ("No")) {
+	WebUI.click(findTestObject('Feedback/Page_Checkatrade Give your feedback/span_Publish_Feedback_No'))
+	//WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Feedback'))
+	WebUI.waitForPageLoad(2)
+	WebUI. verifyTextPresent('We understand that you may not want us to contact the member, and we would like to understand why', false)
+}
+'--------------------------------'
+System.out.println("Your Experience, Recommendation, Click on the "+YS_Feedback_Published+" Option Button ");
+//-------------------------------------------
+//} catch (Exception e) {
+//	//KeywordUtil.markFailed("Your Experience, Recommendation, Click on the "+YE_Recommend+" Option Button Failed to Select");
+//	System.out.println("Your Experience, Recommendation, Click on the "+YS_Feedback_Published+" Did nt Select ");
+//}
 '-----------------------------------'
 
 '---------------------------------'
 'Your comments about the work     |'
 '---------------------------------'
 WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_No_ctl00contentButton6'))
-
 
 //--------------------------------------------------------------
 // END                                                         | - Snip - 13/08/2019

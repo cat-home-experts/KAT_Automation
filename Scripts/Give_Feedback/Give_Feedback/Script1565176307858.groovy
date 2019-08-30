@@ -23,13 +23,15 @@ import internal.GlobalVariable as GlobalVariable
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
 // Prove the function under the GIVE FEEDBACK |                 |                  |  Numorous issues correcting |
-// header link, Verify each of the defined    |    07/08/2019   |     Dave Horne   |                             |
+// header link, Verify each of the defined    |    07/08/2019   |     Dave Horne   |  SUNNY DAY ONLY             |
 // areas is intact and available              |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-// Adding extra test coverage, non recommend  |                 |                  |                             |
-// and the extra bits that this uncovers      |    28/08/2019   |     Dave Horne   |                             |
+// Adding extra test coverage, non recommend  |                 |                  |  EXTENDED TO SUNNY DAY      |
+// and the extra bits that this uncovers      |    28/08/2019   |     Dave Horne   |  DAY NEGATIVES              |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Extended again for Non Recommend but work  |                 |                  |                             |
+// carried out or money exchanged hands. The  |    30/08/2019   |     Dave Horne   |                             |
+// above combination returns a new Scores page|                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -51,6 +53,7 @@ import internal.GlobalVariable as GlobalVariable
 //-----------------------------------------
 def data = findTestData('Data Files/Give_Feedback (1)')
 def YE_Recommend
+def YE_WorkCarriedOut
 
 'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test\r\n'
 for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (1)').getRowNumbers(); (GlobalVariable.row)++) {
@@ -76,14 +79,23 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (
     '--------------------------------------'
     ' Your Scores (page 2) Processing      |'
     '--------------------------------------'//--------
-	// Page is MISSED OUT When Reccomendation == 'NO' |
+	// Page is MISSED OUT When Recomendation == 'NO'  |
 	//------------------------------------------------
 	YE_Recommend = data.getValue("YE_Recommendations", GlobalVariable.row)
+	YE_WorkCarriedOut = data.getValue("YE_Work_Carried_Out", GlobalVariable.row)
+	'-------------------------------------------------'
 	if (YE_Recommend == ("Yes")) {
 		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Scores/Your_Scores'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	}
-    '--------------------------------------'
-    ' Your Scores (page 3) Processing      |'
+    '--------------------------------------'//--------------------------------------------------------------
+	// NEW Scores Page is Returned If Recomendation == 'NO' BUT WORK CARRIED OT AND/OR MONEY CHANGED HANDS  |
+	//------------------------------------------------------------------------------------------------------
+	if (YE_Recommend == ("No") && (YE_WorkCarriedOut == "Yes")) {
+		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Scores/Your_Scores_Alt'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	}
+	
+	'--------------------------------------'
+    ' Your Details (page 3) Processing     |'
     '--------------------------------------'
     WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Details/Your_Details'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -96,6 +108,12 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (
 	' Thank You! (page 5) Processing       |'
 	'--------------------------------------'
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Final_Page'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
+	'--------------------------------------'
+	'  Verify Return to Home Page          |' // Refactored 29/08/2019
+	'--------------------------------------'
+	
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Home'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
     '--------------------------------------'
     ' Processing Completion                |'

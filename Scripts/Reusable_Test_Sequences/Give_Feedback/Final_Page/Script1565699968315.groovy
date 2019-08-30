@@ -23,49 +23,42 @@ WebUI.waitForPageLoad(2)
 'Read data from spreadsheet      |'
 '--------------------------------'
 def data = findTestData('Data Files/Give_Feedback (1)') // put this into a method
-Account_Verification_Name = data.getValue('Account_Verification_Name', GlobalVariable.row)
+def Account_Verification_Name = data.getValue('Account_Verification_Name', GlobalVariable.row)
+def YE_Recommend = data.getValue("YE_Recommendations", GlobalVariable.row)
 
 '------------------------------------'
 '  Verify Page Detail                |'
 '------------------------------------'
+// If Recommendation = NO, these fields are not shown on the final page
+if (YE_Recommend == ("Yes")) {
+	'------------------------------------'
+	// Subtext review details is displayed
+	WebUI.verifyTextPresent('A Checkatrade staff member will now review your feedback for', false)
+	'------------------------------------'
+	// Account name that left the Feedback
+	WebUI.verifyTextPresent(Account_Verification_Name, false)
+	'------------------------------------'
+	// Finish Button is Displayed
+	WebUI.verifyTextPresent('Finish', false)
+	'------------------------------------'
+}
+// Clearly the customer isn't happy, and reflecting this compassion on the final page
+else if (YE_Recommend == ("No")) {
+	'------------------------------------'
+	// Subtext review details is displayed
+	WebUI.verifyTextPresent('We are very sorry that you have had a bad experience', false)
+	'------------------------------------'
+}
+
 '------------------------------------'
-// Subtext review details is displayed
-WebUI.verifyTextPresent('A Checkatrade staff member will now review your feedback for', false)
-'------------------------------------'
-// Account name that left the Feedback
-WebUI.verifyTextPresent(Account_Verification_Name, false)
-'------------------------------------'
-// Finish Button is Displayed
-WebUI.verifyTextPresent('Finish', false)
-'------------------------------------'
-// Thank You! is Displayed
-WebUI.verifyTextPresent('Thank you!', false)
+// Thank You! is Displayed (Success contains !, Non Success Doesn't
+WebUI.verifyTextPresent('Thank you', true)
 
 '------------------------------------'
 '  Hit Finish                        |'
 '------------------------------------'
 WebUI.click(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/a_Finish')) // or 4 tabs
 //WebUI.sendKeys(findTestObject(URL), Keys.chord(Keys.ENTER))
-
-'------------------------------------'
-'  Verify Return to Home Page        |'
-'------------------------------------'
-
-WebUI.waitForPageLoad(2)
-'------------------------------------'
-// Returned to Home Page
-'------------------------------------'
-// Homepage Header Displyed
-WebUI.verifyTextPresent('Helping you find the right trade or service', false)
-'------------------------------------'
-// Homepage Service Informaation is Displayed
-WebUI.verifyTextPresent('Search through over 30,000 recommended, vetted and monitored trades and service providers for free.', false)
-'------------------------------------'
-// Search by Member Trade Name is Displayed
-WebUI.verifyTextPresent('or look up a member by name', false)
-'------------------------------------'
-// Number of Reviews Published so far is Displayed
-WebUI.verifyTextPresent('reviews published so far – thank you!', false)
 
 //-------------------------------------------------------
 // END                                                  | - Snip - 14/08/2019 - To Refactor

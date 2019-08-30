@@ -3,7 +3,9 @@
    <description>Final Page displayed after commiting the feedback form, verify textual content then close, check that we are returned to home page</description>
    <name>Final_Page</name>
    <tag>Feedback Final Page</tag>
-   <comment>------------------------------------
+   <comment>--------------------------------
+Read data from spreadsheet      |
+------------------------------------
   Verify Page Detail                |
 ------------------------------------
   Hit Finish                        |

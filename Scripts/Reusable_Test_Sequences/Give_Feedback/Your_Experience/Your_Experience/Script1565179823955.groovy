@@ -13,6 +13,9 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+def data = findTestData('Data Files/Give_Feedback (1)')
+def YE_Recommend = data.getValue("YE_Recommendations", GlobalVariable.row)
+
 //-------------------------------------------------------------------------------------
 // Test Sequence to Deal With Everything on the <Your Experience> Page 1               | - Snip - 09/08/2019
 //-------------------------------------------------------------------------------------
@@ -27,19 +30,25 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Recommendation_Selection'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 '---------------------------------------------------------------------------------------'
-' Your Experience (page 1) Estimation/Quotation Accuracy?                               |'
+' SELECTING _ NOT Recommend Restructures this PAGE, So need to exclude the below tests  '
 '---------------------------------------------------------------------------------------'
-WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Quotation_Selection'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-
-'---------------------------------------------------------------------------------------'
-' Your Experience (page 1) Knowledge of Feedback Process?                               |'
-'---------------------------------------------------------------------------------------'
-WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Feedback_Knowledge'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-
-'---------------------------------------------------------------------------------------'
-' Your Experience (page 1) Hit <Next> Button to Continue to <Your Scores>- (page 2)     |'
-'---------------------------------------------------------------------------------------'
+if (YE_Recommend == ("Yes")) {
+	'---------------------------------------------------------------------------------------'
+	' Your Experience (page 1) Estimation/Quotation Accuracy?                               |'
+	'---------------------------------------------------------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Quotation_Selection'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
+	'---------------------------------------------------------------------------------------'
+	' Your Experience (page 1) Knowledge of Feedback Process?                               |'
+	'---------------------------------------------------------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Feedback_Knowledge'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+}	
+'---------------------------------------------------------------------------------------------------------'
+' Your Experience (page 1) Hit <Next> Button to Continue to <Your Scores>- (page 2) If Recommend = YES    |'
+'                                                        OR <Your Details>-(page 3) If Recommend = NO     |'
+'---------------------------------------------------------------------------------------------------------'
 WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Hit_Next'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForPageLoad(60)
 
 //-------------------------------------------------------
 // END                                                  | - Snip - 09/08/2019

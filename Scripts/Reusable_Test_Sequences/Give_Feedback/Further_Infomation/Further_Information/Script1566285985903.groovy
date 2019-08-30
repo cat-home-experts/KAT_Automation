@@ -35,8 +35,9 @@ WebUI.setText(findTestObject('Object Repository/New Folder1/Page_Checkatrade Giv
 'Hit <Submit> button to Commit   |'
 '--------------------------------'
 WebUI.click(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_Value Of Work_ctl00contentButton1'))
+WebUI.waitForPageLoad(60)
+
 
 //-------------------------------------------------------
 // END                                                  | - Snip - 14/08/2019 - To Refactor - Done 19/08/2019
 //-------------------------------------------------------
-

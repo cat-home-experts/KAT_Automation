@@ -34,19 +34,22 @@ def YE_Recommend = data.getValue("YE_Recommendations", GlobalVariable.row)
 
 if (YE_WorkCarriedOut == ("No")) {
 	WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/work_Carried_Out_span_No'))
+	WebUI.waitForPageLoad(2)
 	// Enter Comment in Revealed Field	
 	WebUI.setText(findTestObject('Object Repository/Feedback_Non_Recommend/Page_Checkatrade Give your feedback/textarea_Comments'),
 		YE_Comments)
+	WebUI.waitForPageLoad(2)
 }
 else if (YE_WorkCarriedOut == ("Yes")) {
 	WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/work_Carried_Out_span_Yes'))
+	WebUI.waitForPageLoad(2)
 }
-WebUI.waitForPageLoad(60)
 '--------------------------------------'	//-----------------------------------
 ' Would you like to Publish Feedback?  |'  	// No reveals extra comment text field (Reason), Yes Reveals Message Text
 '--------------------------------------'	//-----------------------------------
 if (YE_FeedbackPublished == ("No")) {
 	WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_No'))
+	WebUI.waitForPageLoad(2)
 	//---------------------------------------
 	// When NO Feedback Published Selected  |
 	//---------------------------------------
@@ -60,25 +63,28 @@ if (YE_FeedbackPublished == ("No")) {
                                             //--------------------------------------------------------------
 else if (YE_FeedbackPublished == ("Yes")) { // Yes Reveals another set of Selectors - Resolve Y/N          |
 	WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_Yes'))
+	WebUI.waitForPageLoad(2)
 	//---------------------------------------
 	// When YES Feedback Published Selected |
 	//---------------------------------------
 	WebUI.verifyTextPresent('By ticking ‘Yes’ you are giving us permission to contact the trade to discuss the issue. The trade will have the opportunity to a ‘right of reply’', false)
 	if (YE_Resolve == ("Yes")) {
 		WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/attempt_Resolution_span_Yes'))
+		WebUI.waitForPageLoad(2)
 	}
 	else if (YE_Resolve == ("No")) {
 		WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/attempt_Resolution_span_No'))
+		WebUI.waitForPageLoad(2)
 	}
 }
 '--------------------------------------'
 ' Nature of Issue - Selection Box      |' // Moved to bottom, last selected item, even though its about the 3rd item on the page
 '--------------------------------------'
-WebUI.waitForPageLoad(60)
+
 WebUI.selectOptionByLabel(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select ShortForm'), YE_NatureOfIssue, true)
-WebUI.waitForPageLoad(60)
+WebUI.waitForPageLoad(2)
 // Page refresh
-WebUI.delay(1)
+//WebUI.delay(1)
 //----------------------------------------
 // End                                   |
 //----------------------------------------

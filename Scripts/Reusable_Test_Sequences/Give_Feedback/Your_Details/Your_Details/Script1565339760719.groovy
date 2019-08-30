@@ -45,7 +45,7 @@ WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Deta
 ' Commit form                         |'  // WARNING - Details Auto Commit No Need To Hit The Commit Button
 '-------------------------------------'
 //WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_Value Of Work_ctl00contentButton1'))
-
+WebUI.waitForPageLoad(60)
 
 //-------------------------------------------------------
 // END                                                  | - Snip - 09/08/2019

@@ -7,7 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#ctl00_content_ctlYourExperienceUpdatePanel > div:nth-child(6) > div.col-xs-12.col-sm-8.col-md-8 > div > div > label:nth-child(2)</value>
       </entry>
       <entry>
          <key>XPATH</key>

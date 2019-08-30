@@ -47,30 +47,35 @@ System.out.println("Your Experience, Estimate Accuracy, Click on the "+YE_Estima
 '-------------------------------------------------'
 if (YE_Estimate ==("Agreed_price")) {
 	WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_The agreed price'))
+	WebUI.waitForPageLoad(2)
 }
 '-------------------------------------------------'
 //		//YE_Estimate = 2 // "Additional_work"   //
 '-------------------------------------------------'
 if (YE_Estimate ==("Additional_work")) {
 	WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_I requested additional work and paid the agreed price'))
+	WebUI.waitForPageLoad(2)
 }
 '-----------------------------------------------------------------------'
 //		//YE_Estimate = 3 // "More_than_agreed_price_informed"         //
 '-----------------------------------------------------------------------'
 if (YE_Estimate ==("More_than_agreed_price_informed")) {
 	WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_More than the agreed price but I was kept informed'))
+	WebUI.waitForPageLoad(2)
 }
 '-----------------------------------------------------------------------'
 //		//YE_Estimate = 4 // "More_than_agreed_price_not_informed"     //
 '-----------------------------------------------------------------------'
 if (YE_Estimate ==("More_than_agreed_price_not_informed")) {
 	WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_More than the agreed price but I wasnt kept informed'))
+	WebUI.waitForPageLoad(2)
 }
 '-----------------------------------------------------------------------'
 //		//YE_Estimate = 5 // "No_estimate"                             //
 '-----------------------------------------------------------------------'
 if (YE_Estimate ==("No_estimate")) {
 	WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Not applicable - no estimate given'))
+	WebUI.waitForPageLoad(2)
 }
 
 // Switch

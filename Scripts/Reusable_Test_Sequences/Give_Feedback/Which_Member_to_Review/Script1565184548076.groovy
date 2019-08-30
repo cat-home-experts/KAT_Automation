@@ -21,11 +21,15 @@ import internal.GlobalVariable as GlobalVariable
 //'--------------------------------------------------'
 //' Set the Trade Name or CAT ID in the Review Field |'
 //'--------------------------------------------------'
+
+// First hit from cold sometimes takes and age to render member lookup values
+WebUI.waitForPageLoad(60)
+//----------------------------------------------------------
 WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_Which member do you want to review_feedback-form__company_autocomplete_input'), 
     findTestData('Give_Feedback (1)').getValue('Account_Verification_Name', GlobalVariable.row))
 
 //----------------------------------------------------------------------------------
-WebUI.delay(1) // Delay reapplied 14/08/19, integral with the previous Settext Command (waits up to 1 second for activity to complete/work
+WebUI.delay(1) // page load 29/08/2019 - Delay reapplied 14/08/19, integral with the previous Settext Command (waits up to 1 second for activity to complete/work
    
 //-------------------------------------------
 'Submit the search criteria using click     |'

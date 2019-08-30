@@ -30,9 +30,11 @@ System.out.println("Your Experience, Feedback Knowledge, Click on the "+YE_Feedb
 '------------------------------------------------'
 if (YE_Feedback_Knowledge == ("Yes")) {
 	WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes - Copy'))
+	WebUI.waitForPageLoad(2)
 } 
 else if (YE_Feedback_Knowledge == ("No")) {
 	WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Experience_Feedback'))
+	WebUI.waitForPageLoad(2)
 }
 '--------------------------------'
 System.out.println('Your Experience, Feedback Knowledge, Click on the <'+YE_Feedback_Knowledge+'> Option Button ');

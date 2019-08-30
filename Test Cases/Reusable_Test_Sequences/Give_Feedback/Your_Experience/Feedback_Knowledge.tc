@@ -4,7 +4,9 @@
    <name>Feedback_Knowledge</name>
    <tag></tag>
    <comment>--------------------------------
-Read data from spreadsheet      |</comment>
+Read data from spreadsheet      |
+------------------------------------------------
+Set Knowledge of feedback process? - Yes or No  |</comment>
    <testCaseGuid>6d141f12-9f3e-4e1a-9d69-c713ab7ae2e9</testCaseGuid>
    <variable>
       <defaultValue>'Yes'</defaultValue>

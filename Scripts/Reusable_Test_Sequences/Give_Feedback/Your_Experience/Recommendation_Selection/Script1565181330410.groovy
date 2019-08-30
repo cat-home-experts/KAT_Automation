@@ -38,11 +38,13 @@ if (YE_Recommend == ("Yes")) {
 	'-----------------------------------------------------------'
     //WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Recommend'), 1, FailureHandling.OPTIONAL)
 	WebUI.click(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/Page_Checkatrade Give your feedback/span_Yes'))
+	WebUI.waitForPageLoad(2)
 } 
 else if (YE_Recommend == ("No")) {
     //WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Experience_Feedback'))
 	//WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Recommend'), 1, FailureHandling.OPTIONAL)
 	WebUI.click(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/Page_Checkatrade Give your feedback/span_No'))
+	WebUI.waitForPageLoad(5)
 	//--------------------------------------------------------
 	// Complete the extra details that this selection reveals |
 	//--------------------------------------------------------
@@ -51,7 +53,7 @@ else if (YE_Recommend == ("No")) {
 	'--------------------------------'
 	System.out.println("Your Experience, Recommendation, Click on the <"+YE_Recommend+"> Option Button ");
 	//-------------------------------------------
-
+WebUI.waitForPageLoad(60)
 //----------------------------------------
 // End                                   | - Snip - 08/08/2019  - 28/08/2019 refactored, issues corrected
 //----------------------------------------

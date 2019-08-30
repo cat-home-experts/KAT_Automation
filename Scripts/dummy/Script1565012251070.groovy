@@ -22,76 +22,24 @@ WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/d
 
 WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_Give feedback                                on a trade youve used'))
 
-WebUI.setText(findTestObject('Object Repository/Feedback_Non_Recommend/Page_Checkatrade Give your feedback/input_Which member do you want to review_feedback-form__company_autocomplete_input'), 
-    'test')
+WebUI.setText(findTestObject('Object Repository/Non Recommend/Page_Checkatrade Give your feedback/input_Which member do you want to review'), 
+    'testt')
 
-WebUI.click(findTestObject('Object Repository/Feedback_Non_Recommend/Page_Checkatrade Give your feedback/span_Chichester'))
+WebUI.click(findTestObject('Object Repository/Non Recommend/Page_Checkatrade Give your feedback/div_Which member do you want to review'))
 
-WebUI.click(findTestObject('Object Repository/Feedback_Non_Recommend/Page_Checkatrade Give your feedback/span_No'))
+WebUI.click(findTestObject('Object Repository/Non Recommend/Page_Checkatrade Give your feedback/span_More than the agreed price but I was kept informed'))
 
-WebUI.click(findTestObject('Object Repository/Feedback_Non_Recommend/Page_Checkatrade Give your feedback/span_No'))
+WebUI.click(findTestObject('Object Repository/Non Recommend/Page_Checkatrade Give your feedback/span_No'))
 
-WebUI.selectOptionByValue(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select ShortForm'), 
-    '38', true)
+WebUI.click(findTestObject('Object Repository/Non Recommend/Page_Checkatrade Give your feedback/span_No'))
 
-WebUI.selectOptionByValue(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select ShortForm'), 
-    '34', true)
+WebUI.click(findTestObject('Object Repository/Non Recommend/Page_Checkatrade Give your feedback/span_Yes'))
 
-WebUI.selectOptionByValue(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select ShortForm'), 
-    '35', true)
+WebUI.click(findTestObject('Object Repository/Non Recommend/Page_Checkatrade Give your feedback/span_No'))
 
-WebUI.selectOptionByValue(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select ShortForm'), 
-    '41', true)
+WebUI.click(findTestObject('Object Repository/Non Recommend/Page_Checkatrade Give your feedback/span_Yes'))
 
-WebUI.selectOptionByValue(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select ShortForm'), 
-    '36', true)
+WebUI.click(findTestObject('Object Repository/Non Recommend/Page_Checkatrade Give your feedback/span_No'))
 
-WebUI.click(findTestObject('Object Repository/Feedback_Non_Recommend/Page_Checkatrade Give your feedback/span_Yes (1)'))
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select ---Order DisagreementMis-InformedMis-LeadInvoice not receivedTidinessReliabilityTimekeepingCommunication IssuesCall Out ChargeOverchargingNo guaranteewarrantyAftercareCourtesyAttitudePoor workmanship'), 
-    '32', true)
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select ---Order DisagreementMis-InformedMis-LeadInvoice not receivedTidinessReliabilityTimekeepingCommunication IssuesCall Out ChargeOverchargingNo guaranteewarrantyAftercareCourtesyAttitudePoor workmanship'), 
-    '33', true)
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select ---Order DisagreementMis-InformedMis-LeadInvoice not receivedTidinessReliabilityTimekeepingCommunication IssuesCall Out ChargeOverchargingNo guaranteewarrantyAftercareCourtesyAttitudePoor workmanship'), 
-    '37', true)
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select ---Order DisagreementMis-InformedMis-LeadInvoice not receivedTidinessReliabilityTimekeepingCommunication IssuesCall Out ChargeOverchargingNo guaranteewarrantyAftercareCourtesyAttitudePoor workmanship'), 
-    '39', true)
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select ---Order DisagreementMis-InformedMis-LeadInvoice not receivedTidinessReliabilityTimekeepingCommunication IssuesCall Out ChargeOverchargingNo guaranteewarrantyAftercareCourtesyAttitudePoor workmanship'), 
-    '40', true)
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select ---Order DisagreementMis-InformedMis-LeadInvoice not receivedTidinessReliabilityTimekeepingCommunication IssuesCall Out ChargeOverchargingNo guaranteewarrantyAftercareCourtesyAttitudePoor workmanship'), 
-    '42', true)
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select ---Order DisagreementMis-InformedMis-LeadInvoice not receivedTidinessReliabilityTimekeepingCommunication IssuesCall Out ChargeOverchargingNo guaranteewarrantyAftercareCourtesyAttitudePoor workmanship'), 
-    '29', true)
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select ---Order DisagreementMis-InformedMis-LeadInvoice not receivedTidinessReliabilityTimekeepingCommunication IssuesCall Out ChargeOverchargingNo guaranteewarrantyAftercareCourtesyAttitudePoor workmanship'), 
-    '30', true)
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select ---Order DisagreementMis-InformedMis-LeadInvoice not receivedTidinessReliabilityTimekeepingCommunication IssuesCall Out ChargeOverchargingNo guaranteewarrantyAftercareCourtesyAttitudePoor workmanship'), 
-    '28', true)
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select ---Order DisagreementMis-InformedMis-LeadInvoice not receivedTidinessReliabilityTimekeepingCommunication IssuesCall Out ChargeOverchargingNo guaranteewarrantyAftercareCourtesyAttitudePoor workmanship'), 
-    '24', true)
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select ---Order DisagreementMis-InformedMis-LeadInvoice not receivedTidinessReliabilityTimekeepingCommunication IssuesCall Out ChargeOverchargingNo guaranteewarrantyAftercareCourtesyAttitudePoor workmanship'), 
-    '25', true)
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select ---Order DisagreementMis-InformedMis-LeadInvoice not receivedTidinessReliabilityTimekeepingCommunication IssuesCall Out ChargeOverchargingNo guaranteewarrantyAftercareCourtesyAttitudePoor workmanship'), 
-    '31', true)
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select ---Order DisagreementMis-InformedMis-LeadInvoice not receivedTidinessReliabilityTimekeepingCommunication IssuesCall Out ChargeOverchargingNo guaranteewarrantyAftercareCourtesyAttitudePoor workmanship'), 
-    '22', true)
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select ---Order DisagreementMis-InformedMis-LeadInvoice not receivedTidinessReliabilityTimekeepingCommunication IssuesCall Out ChargeOverchargingNo guaranteewarrantyAftercareCourtesyAttitudePoor workmanship'), 
-    '23', true)
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select ---Order DisagreementMis-InformedMis-LeadInvoice not receivedTidinessReliabilityTimekeepingCommunication IssuesCall Out ChargeOverchargingNo guaranteewarrantyAftercareCourtesyAttitudePoor workmanship'), 
-    '19', true)
-
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Object Repository/Non Recommend/Page_Checkatrade Give your feedback/span_Yes'))
 

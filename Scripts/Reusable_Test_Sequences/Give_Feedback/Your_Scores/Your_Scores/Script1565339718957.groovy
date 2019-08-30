@@ -61,6 +61,7 @@ WebUI.scrollToPosition(125, 0)
 // Hit <Next>
 try {
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Scores/Hit_Next'), 1)
+	WebUI.waitForPageLoad(60)
 	
 } catch (Exception e){
 	// button sometimes misses, will need to watch this - scrolling down to ensure in vieww, scroll was incorrectly configured previously, hopefull this will be OK now

@@ -20,7 +20,7 @@ import internal.GlobalVariable as GlobalVariable
 'Read data from spreadsheet      |'
 '--------------------------------'
 def data = findTestData('Data Files/Give_Feedback (1)') // put this into a method
-YD_Consumer_Customer = data.getValue('YD_Consumer_Customer', GlobalVariable.row) // global rowindex 1
+def YD_Consumer_Customer = data.getValue('YD_Consumer_Customer', GlobalVariable.row) // global rowindex 1
 System.out.println(('Your Details, Consumer OR Trade Customer, Click on the ' + YD_Consumer_Customer) + ' Option Button ')
 
 //-------------------------------------------
