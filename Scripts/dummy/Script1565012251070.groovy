@@ -16,30 +16,25 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://www.preview.checkatrade.com/')
+WebUI.navigateToUrl('https://www.checkatrade.com/')
 
-WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/div_close'))
+WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_Give feedbackon a trade youve used'))
 
-WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_Give feedback                                on a trade youve used'))
+WebUI.click(findTestObject('Object Repository/Feedback_Non_Recommend/Page_Checkatrade Give your feedback/div_Which member do you want to review'))
 
-WebUI.setText(findTestObject('Object Repository/Non Recommend/Page_Checkatrade Give your feedback/input_Which member do you want to review'), 
-    'testt')
+WebUI.setText(findTestObject('Object Repository/Feedback_Non_Recommend/Page_Checkatrade Give your feedback/input_Which member do you want to review_feedback-form'), 
+    'test')
 
-WebUI.click(findTestObject('Object Repository/Non Recommend/Page_Checkatrade Give your feedback/div_Which member do you want to review'))
+WebUI.click(findTestObject('Object Repository/Feedback_Non_Recommend/Page_Checkatrade Give your feedback/span_Test Account'))
 
-WebUI.click(findTestObject('Object Repository/Non Recommend/Page_Checkatrade Give your feedback/span_More than the agreed price but I was kept informed'))
+WebUI.click(findTestObject('Object Repository/Feedback_Non_Recommend/Page_Checkatrade Give your feedback/span_No'))
 
-WebUI.click(findTestObject('Object Repository/Non Recommend/Page_Checkatrade Give your feedback/span_No'))
+WebUI.click(findTestObject('Object Repository/Feedback_Non_Recommend/Page_Checkatrade Give your feedback/span_Yes'))
 
-WebUI.click(findTestObject('Object Repository/Non Recommend/Page_Checkatrade Give your feedback/span_No'))
+WebUI.click(findTestObject('Object Repository/Feedback_Non_Recommend/Page_Checkatrade Give your feedback/span_Yes'))
 
-WebUI.click(findTestObject('Object Repository/Non Recommend/Page_Checkatrade Give your feedback/span_Yes'))
+WebUI.click(findTestObject('Object Repository/Feedback_Non_Recommend/Page_Checkatrade Give your feedback/span_No'))
 
-WebUI.click(findTestObject('Object Repository/Non Recommend/Page_Checkatrade Give your feedback/span_No'))
-
-WebUI.click(findTestObject('Object Repository/Non Recommend/Page_Checkatrade Give your feedback/span_Yes'))
-
-WebUI.click(findTestObject('Object Repository/Non Recommend/Page_Checkatrade Give your feedback/span_No'))
-
-WebUI.click(findTestObject('Object Repository/Non Recommend/Page_Checkatrade Give your feedback/span_Yes'))
+WebUI.selectOptionByValue(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select_Nature_of_Issue'), 
+    '39', true)
 

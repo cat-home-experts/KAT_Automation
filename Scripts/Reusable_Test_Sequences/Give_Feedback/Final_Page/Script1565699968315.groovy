@@ -24,7 +24,8 @@ WebUI.waitForPageLoad(2)
 '--------------------------------'
 def data = findTestData('Data Files/Give_Feedback (1)') // put this into a method
 def Account_Verification_Name = data.getValue('Account_Verification_Name', GlobalVariable.row)
-def YE_Recommend = data.getValue("YE_Recommendations", GlobalVariable.row)
+def YE_Recommend = data.getValue("YE_Recommendations", GlobalVariable.row) // 
+def YE_Work_Carried_Out = data.getValue("YE_Work_Carried_Out", GlobalVariable.row)
 
 '------------------------------------'
 '  Verify Page Detail                |'
@@ -42,8 +43,8 @@ if (YE_Recommend == ("Yes")) {
 	WebUI.verifyTextPresent('Finish', false)
 	'------------------------------------'
 }
-// Clearly the customer isn't happy, and reflecting this compassion on the final page
-else if (YE_Recommend == ("No")) {
+// Clearly the customer isn't happy, and reflecting appology and compassion on the final page
+else if (YE_Recommend == ("No") && (YE_Work_Carried_Out) == ("No"))  {
 	'------------------------------------'
 	// Subtext review details is displayed
 	WebUI.verifyTextPresent('We are very sorry that you have had a bad experience', false)

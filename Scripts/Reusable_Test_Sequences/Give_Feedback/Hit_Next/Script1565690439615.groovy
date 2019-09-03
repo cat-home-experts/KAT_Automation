@@ -20,6 +20,8 @@ import internal.GlobalVariable as GlobalVariable
 'Change XPATH away from Name and use "value" <Next> OR "type" <Submit> TODO'
 WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_No_ctl00contentButton4'))
 
+WebUI.waitForPageLoad(2)
+
 //-------------------------------------------------------
 // END                                                  | - Snip - 09/08/2019
 //-------------------------------------------------------

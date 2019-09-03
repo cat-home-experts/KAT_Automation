@@ -6,14 +6,17 @@
    <elementGuidId>b1f34ec4-e2e2-4f88-8844-9c2a48dae231</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>#ctl00_content_tbTraderResponse</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;ctl00_content_tbTraderResponse&quot;]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

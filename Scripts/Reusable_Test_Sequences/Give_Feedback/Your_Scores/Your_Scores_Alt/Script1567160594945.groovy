@@ -37,7 +37,7 @@ import internal.GlobalVariable as GlobalVariable
 '------------------------------------------------------------------------------------------'
 
 // ListBox Selection Process //
-WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Scores/Your_Scores_List_Box_Selection_ALT'), [:],
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Scores/Your_Scores_List_Box_Selection_Alt'), [:],
 	FailureHandling.CONTINUE_ON_FAILURE)
 
 '------------------------------------------------------------------------------------------'
@@ -47,7 +47,7 @@ WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Scor
 '------------------------------------------------------------------------------------------'
 
 // Remaining Form Fill Process
-WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Scores/Details_of_work_Done_Formfill_ALT'), [:],
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Scores/Details_of_work_Done_Formfill_ALT'), [:], // _ALT
 	FailureHandling.CONTINUE_ON_FAILURE)
 
 'Need to SCROLL TO <Feedback Published> Option Buttons (Controls/object off the screen, so inoporable until Visible'

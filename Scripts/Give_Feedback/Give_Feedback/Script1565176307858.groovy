@@ -33,7 +33,8 @@ import internal.GlobalVariable as GlobalVariable
 // carried out or money exchanged hands. The  |    30/08/2019   |     Dave Horne   |                             |
 // above combination returns a new Scores page|                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Hardening of all assets relating to these  |    03/09/2019   |     Dave Horne   |                             |
+// Tests, after extending the dataset         |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -88,7 +89,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (
 		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Scores/Your_Scores'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	}
     '--------------------------------------'//--------------------------------------------------------------
-	// NEW Scores Page is Returned If Recomendation == 'NO' BUT WORK CARRIED OT AND/OR MONEY CHANGED HANDS  |
+	// NEW Scores Page is Returned If Recommendation == 'NO' BUT WORK CARRIED OT AND/OR MONEY CHANGED HANDS |
 	//------------------------------------------------------------------------------------------------------
 	if (YE_Recommend == ("No") && (YE_WorkCarriedOut == "Yes")) {
 		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Scores/Your_Scores_Alt'), [:], FailureHandling.CONTINUE_ON_FAILURE)
@@ -131,4 +132,3 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (
     ' END                      |'
     '--------------------------'
 }
-

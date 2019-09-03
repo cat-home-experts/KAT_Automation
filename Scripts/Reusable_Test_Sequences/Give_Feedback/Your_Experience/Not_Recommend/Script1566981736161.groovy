@@ -44,11 +44,32 @@ else if (YE_WorkCarriedOut == ("Yes")) {
 	WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/work_Carried_Out_span_Yes'))
 	WebUI.waitForPageLoad(2)
 }
+
+'--------------------------------------'
+' Nature of Issue - Selection Box      |' 
+'--------------------------------------'
+// WebUI.waitForPageLoad(2)    //
+//WebUI.selectOptionByValue(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select ShortForm'), YE_NatureOfIssue, true)
+//WebUI.selectOptionByValue(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select_Nature_of_Issue'),
+//	'39', true)
+WebUI.selectOptionByLabel(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select ShortForm'),
+	YE_NatureOfIssue, false)
+'------------------------------------------------'
+' Scroll to <NEXT> Button to reveal Text Below   |'
+'------------------------------------------------'
+//WebUI.scrollToElement(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_No_ctl00contentButton4'), 2)
+
+WebUI.waitForPageLoad(5)
+//WebUI.delay(5)
+
 '--------------------------------------'	//-----------------------------------
 ' Would you like to Publish Feedback?  |'  	// No reveals extra comment text field (Reason), Yes Reveals Message Text
 '--------------------------------------'	//-----------------------------------
 if (YE_FeedbackPublished == ("No")) {
+	WebUI.waitForPageLoad(2)
+	WebUI.waitForElementPresent(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_No'), 2)
 	WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_No'))
+	
 	WebUI.waitForPageLoad(2)
 	//---------------------------------------
 	// When NO Feedback Published Selected  |
@@ -59,15 +80,18 @@ if (YE_FeedbackPublished == ("No")) {
 	//---------------------------------------
 	WebUI.setText(findTestObject('Object Repository/Feedback_Non_Recommend/Page_Checkatrade Give your feedback/textarea_Please give your reason for this'),
 		YE_ReasonNoFeedback)
+	WebUI.waitForPageLoad(2)
 	}
                                             //--------------------------------------------------------------
 else if (YE_FeedbackPublished == ("Yes")) { // Yes Reveals another set of Selectors - Resolve Y/N          |
+	WebUI.waitForElementPresent(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_Yes'), 2)
 	WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_Yes'))
 	WebUI.waitForPageLoad(2)
 	//---------------------------------------
 	// When YES Feedback Published Selected |
 	//---------------------------------------
-	WebUI.verifyTextPresent('By ticking ‘Yes’ you are giving us permission to contact the trade to discuss the issue. The trade will have the opportunity to a ‘right of reply’', false)
+	WebUI.verifyTextPresent('By ticking ‘Yes’ you are giving us permission to contact the trade to discuss the issue', false)
+	//--------------------------------------
 	if (YE_Resolve == ("Yes")) {
 		WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/attempt_Resolution_span_Yes'))
 		WebUI.waitForPageLoad(2)
@@ -77,14 +101,7 @@ else if (YE_FeedbackPublished == ("Yes")) { // Yes Reveals another set of Select
 		WebUI.waitForPageLoad(2)
 	}
 }
-'--------------------------------------'
-' Nature of Issue - Selection Box      |' // Moved to bottom, last selected item, even though its about the 3rd item on the page
-'--------------------------------------'
-
-WebUI.selectOptionByLabel(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select ShortForm'), YE_NatureOfIssue, true)
-WebUI.waitForPageLoad(2)
-// Page refresh
-//WebUI.delay(1)
+WebUI.delay(1) //  Delay needed to give operation above time to complete
 //----------------------------------------
 // End                                   |
 //----------------------------------------

@@ -3,6 +3,19 @@
    <description>Different ListBox Arrangement to the SUNNY DAY Scenario. Presented in Vertical Fasion (Other Is Horizontal Styling)</description>
    <name>Your_Scores_List_Box_Selection_Alt</name>
    <tag>Scores</tag>
-   <comment></comment>
+   <comment>--------------------------------
+Read data from spreadsheet      |
+--------------------------------
+------------------------------------------------------
+ Wait Fro Top ListBox to be Active/Clickable          |
+------------------------------------------------------
+------------------------------------------------------
+Select Tidiness Value form List                       |
+------------------------------------------------------
+Select Reliability and Timekeeping Value form List    |
+------------------------------------------------------
+Select Courtesy Value form List                       |
+------------------------------------------------------
+Select Quality and Workmanship Value form List        |</comment>
    <testCaseGuid>34f9f220-de3f-4ceb-ae0d-e915151d3607</testCaseGuid>
 </TestCaseEntity>

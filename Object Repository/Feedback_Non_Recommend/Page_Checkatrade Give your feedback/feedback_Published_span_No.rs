@@ -14,7 +14,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;ctl00_content_ctlYourExperienceUpdatePanel&quot;]/div[6]/div[2]/div/div/label[2]</value>
+         <value>//*[@id=&quot;ctl00_content_ctlYourExperienceUpdatePanel&quot;]/div[5]/div[2]/div/div/label[2]/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

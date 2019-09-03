@@ -57,35 +57,34 @@ WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Give your feedb
 	YS_Work_Comments)
 
 '---------------------------------------'
-' Scroll Bottom of Page Into View       |'
+' Scroll Bottom of Page Into View <Next>|'
 '---------------------------------------'
-
-//WebUI.scrollToElement('Reusable_Test_Sequences/Give_Feedback/Your_Scores/Hit_Next', 1)
+WebUI.scrollToElement(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_No_ctl00contentButton6'), 2)
 
 '---------------------------------------'
-' Work is Gauranteed       - Yes or No  |'
+' Work is Guaranteed       - Yes or No  |'
 '---------------------------------------'
 if (YS_Work_Covered == ("Yes")) {
 	WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Warranty_Cover_span_Yes'))
-	WebUI.waitForPageLoad(2)
 }
 else if (YS_Work_Covered == ("No")) {
 	WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Warranty_Cover_span_No'))
-	WebUI.waitForPageLoad(2)
 }
-
+WebUI.waitForPageLoad(5)
 '---------------------------------------'
 ' Complaint Discussed      - Yes or No  |'
 '---------------------------------------'
 
 if (YS_Discussed_Complaint == ("Yes")) {
+	//WebUI.waitForElementClickable('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Discussed_Complaint_span_Yes', 2)
 	WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Discussed_Complaint_span_Yes'))
-	WebUI.waitForPageLoad(2)
-	WebUI.setText(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Complaint_Response', YS_Complaint_Response))
+	WebUI.delay(1)
+	WebUI.setText(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Complaint_Response'), YS_Complaint_Response)
 }
 else if (YS_Discussed_Complaint == ("No")) {
+	//WebUI.waitForElementClickable('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Discussed_Complaint_span_No', 2)
 	WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Discussed_Complaint_span_No'))
-	WebUI.waitForPageLoad(2)
+	WebUI.delay(1)
 	WebUI. verifyTextPresent('discuss your concerns directly with the business', false)
 }
 
@@ -97,11 +96,11 @@ else if (YS_Discussed_Complaint == ("No")) {
 //	System.out.println("Your Experience, Recommendation, Click on the "+YS_Feedback_Published+" Did nt Select ");
 //}
 '-----------------------------------'
-
+WebUI.delay(1)    // Timing Issues, the above text capture fails if there is no pause here (text verification processing time? - desktop devices arn't great performance wise)
 '---------------------------------'
 'Your comments about the work     |'
 '---------------------------------'
-//WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_No_ctl00contentButton6'))
+WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_No_ctl00contentButton6'))
 
 //--------------------------------------------------------------
 // END                                                         | - Snip - 30/08/2019

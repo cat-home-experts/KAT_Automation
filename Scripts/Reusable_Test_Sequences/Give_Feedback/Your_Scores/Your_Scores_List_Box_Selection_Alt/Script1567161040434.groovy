@@ -25,30 +25,40 @@ def YS_Workmanship = data.getValue("YS_Workmanship_ALT", GlobalVariable.row)
 '--------------------------------'
 'Read data from spreadsheet      |'
 '--------------------------------'
+//stop:
+'------------------------------------------------------'
+' Wait Fro Top ListBox to be Active/Clickable          |'
+'------------------------------------------------------'
+//WebUI.waitForElementClickable(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_--YS_Tidiness', 2))
 
 '------------------------------------------------------'
 'Select Tidiness Value form List                       |'
 '------------------------------------------------------'
 WebUI.selectOptionByValue(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_--YS_Tidiness'),
-	YS_Tidiness, true)
+	YS_Tidiness, false)
 
+WebUI.waitForPageLoad(2)
 '------------------------------------------------------'
 'Select Reliability and Timekeeping Value form List    |'
 '------------------------------------------------------'
 WebUI.selectOptionByValue(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_--YS_Reliability'),
-	YS_Reliability, true)
+	YS_Reliability, false)
 
+WebUI.waitForPageLoad(2)
 '------------------------------------------------------'
 'Select Courtesy Value form List                       |'
 '------------------------------------------------------'
 WebUI.selectOptionByValue(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_--YS_Courtesy'),
-	YS_Reliability, true)
+	YS_Reliability, false)
 
+WebUI.waitForPageLoad(2)
 '------------------------------------------------------'
 'Select Quality and Workmanship Value form List        |'
 '------------------------------------------------------'
 WebUI.selectOptionByValue(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_--YS_Workmanship'),
-	YS_Workmanship, true)
+	YS_Workmanship, false)
+
+WebUI.delay(1)
 
 //--------------------------------------------------------------
 // END                                                         | - Snip - 30/08/2019

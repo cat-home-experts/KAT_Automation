@@ -67,6 +67,8 @@ if (YS_Feedback_Published == ("Yes")) {
 else if (YS_Feedback_Published == ("No")) {
 	WebUI.click(findTestObject('Feedback/Page_Checkatrade Give your feedback/span_Publish_Feedback_No'))
 	//WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Feedback'))
+	//WebUI.scrollToElement(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_No_ctl00contentButton6'), 2)
+	// Wait for page, after selection, then verify expected text is present	
 	WebUI.waitForPageLoad(2)
 	WebUI. verifyTextPresent('We understand that you may not want us to contact the member, and we would like to understand why', false)
 }
@@ -78,7 +80,7 @@ System.out.println("Your Experience, Recommendation, Click on the "+YS_Feedback_
 //	System.out.println("Your Experience, Recommendation, Click on the "+YS_Feedback_Published+" Did nt Select ");
 //}
 '-----------------------------------'
-
+WebUI.delay(1)    // Timing Issues, the above text capture fails if there is no pause here (text verification processing time? - desktop devices arn't great performance wise)
 '---------------------------------'
 'Your comments about the work     |'
 '---------------------------------'

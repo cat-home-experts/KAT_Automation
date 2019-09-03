@@ -30,7 +30,7 @@ def YE_Recommend = data.getValue("YE_Recommendations", GlobalVariable.row)
 WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Recommendation_Selection'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 '---------------------------------------------------------------------------------------'
-' SELECTING _ NOT Recommend Restructures this PAGE, So need to exclude the below tests  '
+' SELECTING _ NO Recommend Restructures this PAGE, So need to exclude the below tests  '
 '---------------------------------------------------------------------------------------'
 if (YE_Recommend == ("Yes")) {
 	'---------------------------------------------------------------------------------------'
@@ -48,7 +48,7 @@ if (YE_Recommend == ("Yes")) {
 '                                                        OR <Your Details>-(page 3) If Recommend = NO     |'
 '---------------------------------------------------------------------------------------------------------'
 WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Hit_Next'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-WebUI.waitForPageLoad(60)
+WebUI.waitForPageLoad(2)
 
 //-------------------------------------------------------
 // END                                                  | - Snip - 09/08/2019

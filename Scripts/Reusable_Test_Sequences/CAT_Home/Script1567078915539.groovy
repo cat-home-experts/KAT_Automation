@@ -26,7 +26,8 @@ import internal.GlobalVariable as GlobalVariable
 // Moved from Final Page Test to Here         |    29/08/2019   |     Dave Horne   |                             |
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Added a check ensuring we are returned to  |    03/09/2019   |     Dave Horne   |                             |
+// the correct home page, after test execution|                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -61,7 +62,15 @@ WebUI.verifyTextPresent('or look up a member by name', false)
 '------------------------------------'
 // Number of Reviews Published so far is Displayed
 WebUI.verifyTextPresent('reviews published so far – thank you!', false)
-
+'------------------------------------'
+// Verify We Are Returning to the CORRECT Home Page
+GlobalVariable.CurrentUrl = WebUI.getUrl()
+if (GlobalVariable.CurrentUrl == GlobalVariable.URL){
+	System.out.println("We have been redirected, correctly back to home URL"+GlobalVariable.URL);
+}
+else {
+	System.out.println("We have been redirected, incorrectly back to URL"+GlobalVariable.CurrentUrl+" We should be on "+GlobalVariable.URL);
+}
 //-------------------------------------------------------
 // END                                                  | - Snip - 29/08/2019 - ok
 //-------------------------------------------------------
