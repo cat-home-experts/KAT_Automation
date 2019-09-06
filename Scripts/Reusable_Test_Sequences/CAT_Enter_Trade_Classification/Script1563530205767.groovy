@@ -14,14 +14,25 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 //----------------------------------------------------------------------------------------------------------
-// Set the defined value from the associated spreadsheet into the associated CAT Search Trade Text Box   |
+// Set the defined value from the associated spreadsheet into the associated CAT Search Trade Text Box     | Updated to work with Firefox - Click on field before entry
 //----------------------------------------------------------------------------------------------------------
 '---------------------------------'
 'Set and SEARCH SELECTED TRADE'
 '---------------------------------'
-WebUI.setText(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search through'), 
+//------------
+// ORIGINAL  |
+//------------
+//WebUI.setText(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search through'), 
+//    findTestData('searchTestData').getValue('tradeClassification', GlobalVariable.row))
+//------------
+// ORIGINAL  |
+//------------
+
+WebUI.click(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF'))
+
+WebUI.setText(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF'), 
     findTestData('searchTestData').getValue('tradeClassification', GlobalVariable.row))
 
 //------------------------------------
-// END                               | - Snip - 07/08/2019
+// END                               | - Snip - 07/08/2019 - Update - 06/09/2019
 //------------------------------------

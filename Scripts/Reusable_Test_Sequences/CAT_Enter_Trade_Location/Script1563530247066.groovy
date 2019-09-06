@@ -14,16 +14,26 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 //----------------------------------------------------------------------------------------------------------
-// Set the defined value from the associated spreadsheet into the associated CAT Search Location Text Box   |
+// Set the defined value from the associated spreadsheet into the associated CAT Search Location Text Box   | Updated to work with Firefox - Click on field before entry
 //---------------------------------------------------------------------------------------------------------- 
 '---------------------------------'
-
-'Set and SEARCH SELECTED LOCATION'
-
+'Set and SEARCH SELECTED LOCATION |'
 '---------------------------------'
-WebUI.setText(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_location'), 
-    findTestData('searchTestData').getValue('tradeLocation', GlobalVariable.row))
+//------------
+// ORIGINAL  |
+//------------
+//WebUI.setText(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_location'), 
+//    findTestData('searchTestData').getValue('tradeLocation', GlobalVariable.row))
+//------------
+// ORIGINAL  |
+//------------
+
+WebUI.click(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Not here_location'))
+
+WebUI.setText(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Not here_location'),
+	findTestData('searchTestData').getValue('tradeLocation', GlobalVariable.row))
+
 
 //------------------------------------
-// END                               | - Snip - 07/08/2019
+// END                               | - Snip - 07/08/2019 - Update - 06/09/2019
 //------------------------------------
