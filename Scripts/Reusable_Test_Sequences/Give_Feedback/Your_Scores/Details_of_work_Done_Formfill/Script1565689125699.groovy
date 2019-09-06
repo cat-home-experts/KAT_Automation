@@ -62,14 +62,14 @@ WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Give your feedb
 //try {
 if (YS_Feedback_Published == ("Yes")) {
 	WebUI.click(findTestObject('Feedback/Page_Checkatrade Give your feedback/span_Publish_Feedback_Yes'))
-	WebUI.waitForPageLoad(2)
+	WebUI.waitForPageLoad(5)
 }
 else if (YS_Feedback_Published == ("No")) {
 	WebUI.click(findTestObject('Feedback/Page_Checkatrade Give your feedback/span_Publish_Feedback_No'))
 	//WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Feedback'))
 	//WebUI.scrollToElement(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_No_ctl00contentButton6'), 2)
 	// Wait for page, after selection, then verify expected text is present	
-	WebUI.waitForPageLoad(2)
+	WebUI.waitForPageLoad(5)
 	WebUI. verifyTextPresent('We understand that you may not want us to contact the member, and we would like to understand why', false)
 }
 '--------------------------------'

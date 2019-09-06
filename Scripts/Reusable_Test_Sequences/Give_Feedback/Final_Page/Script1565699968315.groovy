@@ -27,12 +27,18 @@ def Account_Verification_Name = data.getValue('Account_Verification_Name', Globa
 def YE_Recommend = data.getValue("YE_Recommendations", GlobalVariable.row) // 
 def YE_Work_Carried_Out = data.getValue("YE_Work_Carried_Out", GlobalVariable.row)
 
+//-------------------------------------------------------------------------------
+// Ensure Page is HERE Before Testing (Firefox was slow - hence this check)     |
+//-------------------------------------------------------------------------------
+WebUI.waitForElementVisible(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/a_Finish'), 5)  
+
 '------------------------------------'
 '  Verify Page Detail                |'
 '------------------------------------'
 // If Recommendation = NO, these fields are not shown on the final page
 if (YE_Recommend == ("Yes")) {
 	'------------------------------------'
+	//WebUI.delay(2)
 	// Subtext review details is displayed
 	WebUI.verifyTextPresent('A Checkatrade staff member will now review your feedback for', false)
 	'------------------------------------'
@@ -46,6 +52,7 @@ if (YE_Recommend == ("Yes")) {
 // Clearly the customer isn't happy, and reflecting appology and compassion on the final page
 else if (YE_Recommend == ("No") && (YE_Work_Carried_Out) == ("No"))  {
 	'------------------------------------'
+	//WebUI.delay(2)
 	// Subtext review details is displayed
 	WebUI.verifyTextPresent('We are very sorry that you have had a bad experience', false)
 	'------------------------------------'

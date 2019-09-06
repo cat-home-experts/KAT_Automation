@@ -6,11 +6,11 @@
    <elementGuidId>f6639dea-4ad0-4281-980b-0d3c2eb2a607</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#ctl00_content_ctlYourExperienceUpdatePanel > div:nth-child(6) > div.col-xs-12.col-sm-8.col-md-8 > div > div > label:nth-child(2)</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
       </entry>
       <entry>
          <key>XPATH</key>

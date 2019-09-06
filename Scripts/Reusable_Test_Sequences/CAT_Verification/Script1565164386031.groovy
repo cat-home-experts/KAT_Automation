@@ -17,10 +17,14 @@ import internal.GlobalVariable as GlobalVariable
 // Verification - Required Search Returned as Expected  | - Snip - 07/08/2019
 //-------------------------------------------------------
 
-// verifies the returns of Classification aagainst Location
+// verifies the returns of Classification against Location
 //-------------------------------------------
 'Expected cantantenated text is Returned'
-WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeLocationVerification', GlobalVariable.row), false)
+WebUI.delay(1)
+//WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeLocationVerification', GlobalVariable.row), false)
+WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeClassification', GlobalVariable.row), false)
+WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeLocation', GlobalVariable.row), false)
+
 //-------------------------------------------
 
 //------------------------------------

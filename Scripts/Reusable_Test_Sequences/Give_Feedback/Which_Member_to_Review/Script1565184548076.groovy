@@ -35,6 +35,8 @@ WebUI.delay(1) // page load 29/08/2019 - Delay reapplied 14/08/19, integral with
 'Submit the search criteria using click     |'
 '-------------------------------------------'
 
+WebUI.waitForElementPresent(findTestObject('Page_Checkatrade Give your feedback/div_Which member do you want to review'), 20)
+
 '----------------------------------------------------------------------'
 try {
     'Try Catch Included 14/08/2019 - Sometimes the Trader isnt returned?   |'

@@ -33,9 +33,10 @@ import org.openqa.selenium.WebElement;*/
 // TRADE (Membership Application Form)        |    01/08/2019   |    Dave Horne    |  SUNNY DAY Scenario         |
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Trade Category is Removed - Test Commented |    04/09/2019   |    Dave Horne    |  SUNNY DAY Scenario         |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Postcode Entry Type Also Changed, Commented|                 |                  |                             |
+// Renewed - added new with extension 04092019|    04/09/2019   |    Dave Horne    |  SUNNY DAY Scenario         |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -76,13 +77,13 @@ import org.openqa.selenium.WebElement;*/
 	'--------------------------------------'
 	' Set - Email Address Incorrect Form   |'
 	'--------------------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Set_Invalid_Email_Address'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Set_INVALID_Email_Address'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'--------------------------------------'
 	' Check Email Validation Message       |'
 	'--------------------------------------'
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Validation/Please_Enter_Valid_Email'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-		
+	WebUI.delay(5)	
 	'--------------------------'
 	' Set - Email Address      |'
 	'--------------------------'
@@ -96,7 +97,7 @@ import org.openqa.selenium.WebElement;*/
 	'---------------------------------------------'
 	' Check Trade Category Validation Message     |'
 	'---------------------------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Validation/Sorry_No_Results_Found'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Validation/Sorry_No_Results_Found'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 	'---------------------------------------------------------'
 	' Check specify a valid phone number Validation Message   |'
@@ -125,18 +126,18 @@ import org.openqa.selenium.WebElement;*/
 	'--------------------------'
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Set_Full_Name'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
-		'--------------------------'
-	' Set - Trade Category     |'
 	'--------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Set_Trade_Category'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	' Set - Trade Category     |'// Changes 04/09/2019 - removed this field
+	'--------------------------'
+	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Set_Trade_Category'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'--------------------------'
-	' lookup - Trade Category  |'
+	' lookup - Trade Category  |'// Changes 04/09/2019 - removed this field
 	'--------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Lookup_Trade_Category'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Lookup_Trade_Category'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'--------------------------'
-	' Postcode Prompt          |'
+	' Postcode Prompt          |'// Changes 04/09/2019 - removed this prompt
 	'--------------------------'
 	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Postcode_Prompt'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	

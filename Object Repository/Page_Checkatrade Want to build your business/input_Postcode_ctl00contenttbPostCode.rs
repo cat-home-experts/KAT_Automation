@@ -6,8 +6,12 @@
    <elementGuidId>b5b64b2d-078c-4488-a21f-f2d8afe17ed1</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//input[@name = 'ctl00$content$tbPostCode' and @type = 'text' and @id = 'tbPostCode']</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>//input[@id='tbPostCode']</value>
+         <value>//*[@id=&quot;tbPostCode&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

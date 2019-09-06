@@ -29,7 +29,8 @@ import internal.GlobalVariable as GlobalVariable
 // Added a check ensuring we are returned to  |    03/09/2019   |     Dave Horne   |                             |
 // the correct home page, after test execution|                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Firefox - Home Page Return Slow - Detect   |    05/09/2019   |     Dave Horne   |                             |
+// <SEARCH> (Instantiated) Button Added       |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -48,6 +49,11 @@ import internal.GlobalVariable as GlobalVariable
 
 //------------------
 WebUI.waitForPageLoad(2)
+///////////////////////////////////////////////////////////
+// Wait for the <SEARCH> Button to be Instantiated       //
+///////////////////////////////////////////////////////////
+WebUI.waitForElementVisible(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search'), 10)
+
 '------------------------------------'
 // Returned to Home Page
 '------------------------------------'

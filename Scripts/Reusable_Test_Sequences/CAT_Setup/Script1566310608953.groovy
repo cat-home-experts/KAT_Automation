@@ -37,6 +37,9 @@ import internal.GlobalVariable as GlobalVariable
 // Not Presented, Then a WARNING Is Flagged,  |    27/08/2019   |     Dave Horne   |                             |
 // But the Test Step Will Still Pass if all OK|                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
+// Try/Catches Re-Applied to Cookie/Privacy   |                 |                  |                             |
+// Detection, and dispel                      |    20/08/2019   |     Dave Horne   |                             |
+//---------------------------------------------------------------------------------------------------------------
 //
 //---------------------------------------------------------------------------------------------------------------
 //                                                                                                               |
@@ -59,29 +62,41 @@ WebUI.maximizeWindow()
 //-----------------------------------------
 'WAIT for browser to load - waits up to 60 seconds before timeout occurs '
 WebUI.waitForPageLoad(60)
+WebUI.waitForElementVisible(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_Search'), 10)
 
-//----------------------------------------------
-//'Closes COOKIE nagging element, If it Exists  |'
-//----------------------------------------------
-if (WebUI.verifyElementPresent(findTestObject('Page_Checkatrade Find a tradesperson you can trust/div_close'), 1, FailureHandling.OPTIONAL)) { 
-	'---------------------------------' // // Default locator was hide_button - stopped working, use close button locator now - 27/08/2019
-	WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/div_close'))
-	'---------------------------------'
-	'COOKIE POPOUT REMOVED - Confirmed'
-	WebUI.verifyTextNotPresent('Checkatrade.com uses cookies to make sure you get the best browsing experience', false)
-} else {
+try {
+	//----------------------------------------------
+	//'Closes COOKIE nagging element, If it Exists  |'
+	//----------------------------------------------
+	if (WebUI.verifyElementPresent(findTestObject('Page_Checkatrade Find a tradesperson you can trust/div_close'), 1, FailureHandling.OPTIONAL)) { 
+		'---------------------------------' // // Default locator was hide_button - stopped working, use close button locator now - 27/08/2019
+		WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/div_close'))
+		'---------------------------------'
+		'COOKIE POPOUT REMOVED - Confirmed'
+		'---------------------------------'
+		//WebUI.verifyElementNotPresent(findTestObject('Page_Checkatrade Find a tradesperson you can trust/div_close'), 5)
+		WebUI.delay(1)
+		WebUI.verifyTextNotPresent('Checkatrade.com uses cookies to make sure you get the best browsing experience', false)
+	} 
+} catch (Exception e_cookie) {
 	System.out.println('The Cookie Nagging Element Was not presented on the '+GlobalVariable.URL+' Web Page' )
 }
-//----------------------------------------------
-//'Closes PRIVACY nagging element, If it Exists |'
-//----------------------------------------------
-if (WebUI.verifyElementPresent(findTestObject('Page_Checkatrade Find a tradesperson you can trust/div_close_1'), 1, FailureHandling.OPTIONAL)) { 
-	'---------------------------------'
-	WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/div_close_1'))
-	'---------------------------------'
-	'PRIVACY POPOUT REMOVED - Confirmed'
-	WebUI.verifyTextNotPresent('We have updated our Privacy Policy, please review this', false) 
-} else {
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+try {
+	//----------------------------------------------
+	//'Closes PRIVACY nagging element, If it Exists |'
+	//----------------------------------------------
+	if (WebUI.verifyElementPresent(findTestObject('Page_Checkatrade Find a tradesperson you can trust/div_close_1'), 1, FailureHandling.OPTIONAL)) { 
+		'---------------------------------'
+		WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/div_close_1'))
+		'---------------------------------'
+		'PRIVACY POPOUT REMOVED - Confirmed'
+		'---------------------------------'
+		//WebUI.verifyElementNotPresent(findTestObject('Page_Checkatrade Find a tradesperson you can trust/div_close_1'), 5)
+		WebUI.delay(1)
+		WebUI.verifyTextNotPresent('We have updated our Privacy Policy, please review this', false) 
+	}
+} catch (Exception e_privacy) {
 	System.out.println('The Privacy Policy Nagging Element Was not presented on the '+GlobalVariable.URL+' Web Page' )
 }
 //----------------------------------------------

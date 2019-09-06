@@ -26,9 +26,10 @@ import internal.GlobalVariable as GlobalVariable
 // Application - Confirming the CONGRATS      |    30/07/2019   |    Dave Horne    |  SUNNY DAY Scenario         |
 // Message text is presented after form submit|                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Trade Category is Removed - Test Commented |    04/09/2019   |    Dave Horne    |  SUNNY DAY Scenario         |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Postcode Entry Type Also Changed, Commented|                 |                  |                             |
+// Renewed - added new with extension 04092019|    04/09/2019   |    Dave Horne    |  SUNNY DAY Scenario         |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -75,20 +76,25 @@ import internal.GlobalVariable as GlobalVariable
 	'--------------------------'
 	' Set - Trade Category     |'
 	'--------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Set_Trade_Category'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Set_Trade_Category'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'--------------------------'
 	' lookup - Trade Category  |'
 	'--------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Lookup_Trade_Category'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Lookup_Trade_Category'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'--------------------------'
 	' Postcode Prompt          |'
 	'--------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Postcode_Prompt'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Postcode_Prompt'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'--------------------------'
 	' Set - Postcode           |'
+	'--------------------------'
+	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Set_Postcode'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
+	'--------------------------'
+	' Set - Postcode NEW       |'
 	'--------------------------'
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Set_Postcode'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	

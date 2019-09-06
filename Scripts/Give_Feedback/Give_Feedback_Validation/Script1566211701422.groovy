@@ -26,7 +26,7 @@ import internal.GlobalVariable as GlobalVariable
 // header link, Verify each of the defined    |    07/08/2019   |     Dave Horne   |                             |
 // areas is intact and available              |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Only validate on one DataSet for obvious R |    04/09/2019   |     Dave Horne   |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -52,9 +52,18 @@ import internal.GlobalVariable as GlobalVariable
 'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test\r\n   --------------------------------------------------------' 
 for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (1)').getRowNumbers(); (GlobalVariable.row)++) {  // Will Only use the first row for validation purposes  |
     //def removed for globalisation                                                                            '-------------------------------------------------------'
-    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
+    
+	//-----------------------------------------
+	'--------------------------'
+	' Break Out of FOR Loop    |' // FOr Validation, Only need to validate on the first DataPool Iteration
+	'--------------------------'
+	if (GlobalVariable.row > 1){
+		break;
+	}
+	
+	// StartUp Sequence
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 
-    //-----------------------------------------
     '-----------------------------------------------------'
     ' Hit the <Give Feedback> link in the header banner   |'
     '-----------------------------------------------------'
@@ -108,14 +117,6 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (
     '--------------------------'
 
     WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.STOP_ON_FAILURE)
-	
-	'--------------------------'
-	' Break Out of FOR Loop    |' // FOr Validation, Only need to validate on the first DataPool Iteration
-	'--------------------------'
-	
-	if (GlobalVariable.row > 1){
-		break;
-	}
 	
     '--------------------------'
     ' END                      |'

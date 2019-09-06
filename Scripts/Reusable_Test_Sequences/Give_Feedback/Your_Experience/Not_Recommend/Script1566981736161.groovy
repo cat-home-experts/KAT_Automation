@@ -44,7 +44,6 @@ else if (YE_WorkCarriedOut == ("Yes")) {
 	WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/work_Carried_Out_span_Yes'))
 	WebUI.waitForPageLoad(2)
 }
-
 '--------------------------------------'
 ' Nature of Issue - Selection Box      |' 
 '--------------------------------------'
@@ -62,18 +61,30 @@ WebUI.selectOptionByLabel(findTestObject('Feedback_Non_Recommend/Page_Checkatrad
 WebUI.waitForPageLoad(5)
 //WebUI.delay(5)
 
-'--------------------------------------'	//-----------------------------------
-' Would you like to Publish Feedback?  |'  	// No reveals extra comment text field (Reason), Yes Reveals Message Text
-'--------------------------------------'	//-----------------------------------
+'--------------------------------------'	//--------------------------------------------------------------------------------------------------
+' Would you like to Publish Feedback?  |'  	// No reveals extra comment text field (Reason), Yes Reveals Message Text - BOTH CHANGES VERIFIED  |
+'--------------------------------------'	//--------------------------------------------------------------------------------------------------
 if (YE_FeedbackPublished == ("No")) {
 	WebUI.waitForPageLoad(2)
-	WebUI.waitForElementPresent(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_No'), 2)
-	WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_No'))
-	
-	WebUI.waitForPageLoad(2)
+	//-----------------------------------------------------------
+	// Index Changes of Option Buttons Due To These Selections  |
+	//----------------------------------------------------------
+	if (YE_WorkCarriedOut == ("Yes")) {
+		WebUI.waitForElementVisible(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_No'), 5)
+		WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_No'))
+	}
+	//----------------------------------------------------------
+	if (YE_WorkCarriedOut == ("No")) {
+		WebUI.waitForElementVisible(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_No - Alt'), 5)
+		WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_No - Alt'))
+	}
+	//----------------------------------------------------------
+	WebUI.waitForPageLoad(5)
 	//---------------------------------------
 	// When NO Feedback Published Selected  |
 	//---------------------------------------
+	' Sometimes Fails To Capture text - Timing of Text Instantiation'
+	WebUI.delay(1)
 	WebUI.verifyTextPresent('By ticking ‘No’ we will not contact the trader but we may contact you.', false)
 	//---------------------------------------
 	// Comment a to Reason for NON Publish  |
@@ -84,12 +95,26 @@ if (YE_FeedbackPublished == ("No")) {
 	}
                                             //--------------------------------------------------------------
 else if (YE_FeedbackPublished == ("Yes")) { // Yes Reveals another set of Selectors - Resolve Y/N          |
-	WebUI.waitForElementPresent(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_Yes'), 2)
-	WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_Yes'))
-	WebUI.waitForPageLoad(2)
+											//--------------------------------------------------------------
+	//-----------------------------------------------------------
+	// Index Changes of Option Buttons Due To These Selections  |
+	//----------------------------------------------------------
+	if (YE_WorkCarriedOut == ("Yes")) {
+		WebUI.waitForElementVisible(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_Yes'), 5)
+		WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_Yes'))
+	}
+	//----------------------------------------------------------
+	if (YE_WorkCarriedOut == ("No")) {
+		WebUI.waitForElementVisible(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_Yes - Alt'), 5)
+		WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_Yes - Alt'))
+	}
+	//----------------------------------------------------------
+	WebUI.waitForPageLoad(5)
 	//---------------------------------------
 	// When YES Feedback Published Selected |
 	//---------------------------------------
+	' Sometimes Fails To Capture text - Timing of Text Instantiation'
+	WebUI.delay(1)
 	WebUI.verifyTextPresent('By ticking ‘Yes’ you are giving us permission to contact the trade to discuss the issue', false)
 	//--------------------------------------
 	if (YE_Resolve == ("Yes")) {

@@ -53,7 +53,7 @@ import java.lang.Integer as Integer
 // Call Setup Process - Browser Startup, Navigate, Maximize and Close Cookie Nagging Element
 //-----------------------------------------
 'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test\r\n'
-for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('searchTestData').getRowNumbers(); (GlobalVariable.row)++) {
+for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Mobile_Test_Data').getRowNumbers(); (GlobalVariable.row)++) {
     //def removed for globalisation
     WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 	//----------------------------------------------------------
@@ -111,7 +111,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('searchTestData'
 	//---------------------------------------------------------------------
 	// Set The Trade Classification to Select on the Trade Search Screen  |
 	//---------------------------------------------------------------------
-    WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/input_Search through overrecommended vetted and monitored trades and service providers for free_trade_autocomplete_input'), 
+    WebUI.setText(findTestObject('Page_Checkatrade Find a tradesperson you can trust/input_Search through'), 
         findTestData('searchTestData').getValue('tradeClassification', GlobalVariable.row))
 	//---------------------------------------------------------------------
 	'Page Loading'
@@ -138,14 +138,16 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('searchTestData'
     'Scroll to Element Containing The Concantanated Test data (off screen)'
     WebUI.scrollToElement(findTestObject('Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result'), 
         5)
+	WebUI.waitForElementVisible(findTestObject('Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result'),
+		5)
 	'Page Loading'
-    WebUI.waitForPageLoad(60)
+    WebUI.delay(1)
     //------------------------------------------------------------------------------------------------------------------------------------------------
     WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeLocationVerification', GlobalVariable.row), false, 
         FailureHandling.CONTINUE_ON_FAILURE)
     'Expected cantantenated text is Returned'
 	    // WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeLocationVerification', GlobalVariable.row), FailureHandling.CONTINUE_ON_FAILURE)
-    '--------------------------'
+	'--------------------------'
     ' Teardown - CLose Browser |'
     '--------------------------'
     WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -153,4 +155,3 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('searchTestData'
     ' END  Of ITERATION        |'
     '--------------------------'
 }
-

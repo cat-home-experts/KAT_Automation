@@ -12,6 +12,7 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
 
 //----------------------------------------------------------------------------------------------------------
 // Double click on the CAT Search Button                                                                   |
@@ -19,6 +20,18 @@ import internal.GlobalVariable as GlobalVariable
 '---------------------------------'
 'HIT SEARCH'
 '---------------------------------'
+///////////////////////////////////////////////////////////
+// Originally taking a double click to fire the search   // 
+///////////////////////////////////////////////////////////
+//WebUI.doubleClick(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search'))
+//WebUI.waitForElementVisible(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search'), 10)
+
+//WebUI.doubleClick(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Search'))
+
+
 WebUI.doubleClick(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search'))
+
+WebUI.sendKeys(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search'), Keys.chord(Keys.RETURN))
 //---------------------------------
-// END
+// END                            |
+//---------------------------------

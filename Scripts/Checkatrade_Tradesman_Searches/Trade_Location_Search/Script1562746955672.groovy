@@ -55,7 +55,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('searchTestData'
 	//-----------------------------------------
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 	//-----------------------------------------
-	
+
 	'---------------------------------------'
 	' Set and SEARCH TRADE CLASSIFICATION   |'
 	'---------------------------------------'
@@ -69,23 +69,23 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('searchTestData'
 	'---------------------------------------'
 	' Scroll Search Button into View        |'
 	'---------------------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Scroll_To_Search_Button'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Scroll_To_Search_Button'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 	'---------------------------------------'
 	' Hit Search Button                     |'
 	'---------------------------------------'
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Hit_Search_Button'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-
+	
 	'---------------------------------------'
 	' Verify Returned Page is as Expected   |'
 	'---------------------------------------'
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Verification'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-
+	
 	'--------------------------'
 	' Teardown - CLose Browser |'
 	'--------------------------'
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.STOP_ON_FAILURE)
-		
+	
 	'--------------------------'
 	' END                      |'
 	'--------------------------'
@@ -98,7 +98,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('searchTestData'
 //	
 //    //-----------------------------------------
 //    'SEARCH TRADE CLASSIFICATION'
-//    WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/input_Search through overrecommended vetted and monitored trades and service providers for free_trade_autocomplete_input'), 
+//    WebUI.setText(findTestObject('Page_Checkatrade Find a tradesperson you can trust/input_Search through'), 
 //        findTestData('searchTestData').getValue('tradeClassification', GlobalVariable.row))
 //
 //    //------------------------------------------------------------------------------------------------------------------------------------------------
@@ -123,5 +123,4 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('searchTestData'
 //	//-----------------------------------------
 //	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.STOP_ON_FAILURE)
 //	//------------------------------------------------------------------------------------------------------------------------------------------------
-	
 }

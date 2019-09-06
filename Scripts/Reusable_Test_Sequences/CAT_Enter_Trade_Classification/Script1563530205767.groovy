@@ -19,7 +19,7 @@ import internal.GlobalVariable as GlobalVariable
 '---------------------------------'
 'Set and SEARCH SELECTED TRADE'
 '---------------------------------'
-WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/input_Search through overrecommended vetted and monitored trades and service providers for free_trade_autocomplete_input'), 
+WebUI.setText(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search through'), 
     findTestData('searchTestData').getValue('tradeClassification', GlobalVariable.row))
 
 //------------------------------------

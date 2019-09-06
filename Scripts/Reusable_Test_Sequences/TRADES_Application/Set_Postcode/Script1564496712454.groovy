@@ -17,7 +17,11 @@ import internal.GlobalVariable as GlobalVariable
 // Set Postcode during membership application form fill                   | - Snip - 31/07/2019
 //------------------------------------------------------------------------
 
-WebUI.setText(findTestObject('Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode'),  GlobalVariable.Postcode)
+// Changes to input method - 04/09/2019
+
+// WebUI.setText(findTestObject('Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode'),  GlobalVariable.Postcode)
+WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Want to build your business/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode'),
+	GlobalVariable.postcode)
 
 //-------------------------------------------------------
 // END                                                  | - Snip - 31/07/2019

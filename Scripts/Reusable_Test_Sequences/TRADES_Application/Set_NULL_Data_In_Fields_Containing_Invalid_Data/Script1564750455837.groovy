@@ -24,8 +24,8 @@ WebUI.setText(findTestObject('Page_Checkatrade Want to build your business/input
 'YOUR FULL NAME'  // No Validation on FUll Name Currently (Apart from NULL Detection)
 WebUI.setText(findTestObject('Page_Checkatrade Want to build your business/input_Your Full Name_ctl00contenttbContactName'), "")
 
-'TRADE CATEGORY'
-WebUI.setText(findTestObject('Page_Checkatrade Want to build your business/input_Trade Category_join-now__category_autocomplete_input'), "")
+'TRADE CATEGORY' // Changes 04/09/2019 - removed this field
+//WebUI.setText(findTestObject('Page_Checkatrade Want to build your business/input_Trade Category_join-now__category_autocomplete_input'), "")
 
 'POSTCODE'        // No Validation on Postcode Name Currently (Apart from NULL Detection)
 WebUI.setText(findTestObject('Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode'),   "")

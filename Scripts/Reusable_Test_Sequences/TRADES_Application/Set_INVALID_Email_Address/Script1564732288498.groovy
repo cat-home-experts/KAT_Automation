@@ -17,7 +17,7 @@ import internal.GlobalVariable as GlobalVariable
 // Set Invalid Email Address during membership application form fill    | - Snip - 02/08/2019
 //-----------------------------------------------------------------------
 
-WebUI.setText(findTestObject('Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail'), GlobalVariable.Invalid_EMail)
+WebUI.setText(findTestObject('Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail'), GlobalVariable.Invalid_Email)
 
 //-------------------------------------------------------
 // END                                                  | - Snip - 02/08/2019

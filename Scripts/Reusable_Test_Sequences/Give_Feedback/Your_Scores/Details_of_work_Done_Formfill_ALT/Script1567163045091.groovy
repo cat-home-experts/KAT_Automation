@@ -76,13 +76,13 @@ WebUI.waitForPageLoad(5)
 '---------------------------------------'
 
 if (YS_Discussed_Complaint == ("Yes")) {
-	//WebUI.waitForElementClickable('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Discussed_Complaint_span_Yes', 2)
+	WebUI.waitForElementVisible(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Discussed_Complaint_span_Yes'), 5)
 	WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Discussed_Complaint_span_Yes'))
 	WebUI.delay(1)
 	WebUI.setText(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Complaint_Response'), YS_Complaint_Response)
 }
 else if (YS_Discussed_Complaint == ("No")) {
-	//WebUI.waitForElementClickable('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Discussed_Complaint_span_No', 2)
+	WebUI.waitForElementVisible(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Discussed_Complaint_span_No'), 5)
 	WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Discussed_Complaint_span_No'))
 	WebUI.delay(1)
 	WebUI. verifyTextPresent('discuss your concerns directly with the business', false)
