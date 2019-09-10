@@ -62,8 +62,8 @@ WebUI.maximizeWindow()
 //-----------------------------------------
 'WAIT for browser to load - waits up to 60 seconds before timeout occurs '
 WebUI.waitForPageLoad(60)
-WebUI.waitForElementVisible(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_Search'), 10)
-
+WebUI.waitForElementVisible(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_Search'), 25)
+// WebUI.waitForElementVisible(findTestObject('Checkatrade_Trade_Search_page/Page_Checkatrade Find a tradesperson you can trust/a_Search'), 25)
 try {
 	//----------------------------------------------
 	//'Closes COOKIE nagging element, If it Exists  |'

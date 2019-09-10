@@ -17,27 +17,35 @@ import com.kms.katalon.core.exception.StepErrorException as StepErrorException
 import org.openqa.selenium.Keys as Keys
 
 //-------------------------------------------------------------------------
-// Give Feedback - Further Information Page - Value of Work - and Commit  | - Snip - 14/08/2019 - To Refactor
+// Give Feedback - Further Information Page - Value of Work - and Commit  | - Snip - 14/08/2019 - 09/09/2019 synch added - To Refactor
 //-------------------------------------------------------------------------
 
 '--------------------------------'
-'Read data from spreadsheet      |'
+'  Read data from spreadsheet    |'
 '--------------------------------'
 def data = findTestData('Data Files/Give_Feedback (1)') // put this into a method
 FD_Value_of_Work = data.getValue('FD_Value_of_Work', GlobalVariable.row)
 
+'-----------'
+'  Synch    |'
+'-----------'
+WebUI.waitForElementVisible(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_Value Of Work_ctl00contentButton1'), 5)
+
 '--------------------------------'
-' Set the Value of Work Textbox  |'  // Warning! The previous page fill auto commits, even though there is a commit button on the form (watch for behaviour change)
+'  Set the Value of Work Textbox |'  // Warning! The previous page fill auto commits, even though there is a commit button on the form (watch for behaviour change)
 '--------------------------------'
 WebUI.setText(findTestObject('Object Repository/New Folder1/Page_Checkatrade Give your feedback/input_Value Of Work_ctl00contenttbValueOfWork'), FD_Value_of_Work)
 
 '--------------------------------'
-'Hit <Submit> button to Commit   |'
+'  Hit <Submit> button to Commit |'
 '--------------------------------'
 WebUI.click(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_Value Of Work_ctl00contentButton1'))
+
+'--------------------------------'
+'  Wait for FInal Page Load      |'
+'--------------------------------'
 WebUI.waitForPageLoad(60)
 
-
 //-------------------------------------------------------
-// END                                                  | - Snip - 14/08/2019 - To Refactor - Done 19/08/2019
+// END                                                  | - Snip - 14/08/2019 - To Refactor - Done 19/08/2019 - 09/09/2019 synch added
 //-------------------------------------------------------

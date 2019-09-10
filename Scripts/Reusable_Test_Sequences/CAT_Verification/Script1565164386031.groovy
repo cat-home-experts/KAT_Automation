@@ -20,7 +20,10 @@ import internal.GlobalVariable as GlobalVariable
 // verifies the returns of Classification against Location
 //-------------------------------------------
 'Expected cantantenated text is Returned'
-WebUI.delay(1)
+' DYNAMIC DELAY - Wait for <SEARCH> Button to Re-Appear after Search is completed'
+//WebUI.delay(1)
+WebUI.waitForElementVisible(findTestObject('Checkatrade_Trade_Search_page/Page_Checkatrade Find a tradesperson you can trust/a_Search'), 25)
+// COncantanation unrelaible - watch this space
 //WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeLocationVerification', GlobalVariable.row), false)
 WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeClassification', GlobalVariable.row), false)
 WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeLocation', GlobalVariable.row), false)

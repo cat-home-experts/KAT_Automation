@@ -14,7 +14,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 //--------------------------------------------------------------------
-// Give Feedback - Set Recommendation Yes OR No - (SET to NO)        | - Snip - 28/08/2019  -TO REFACTOR
+// Give Feedback - Set Recommendation Yes OR No - (SET to NO)        | - Snip - 28/08/2019  - 09/09/2019 added line 35, waitforelement - TO REFACTOR
 //--------------------------------------------------------------------
 def data = findTestData('Data Files/Give_Feedback (1)')  
 def YE_WorkCarriedOut = data.getValue("YE_Work_Carried_Out", GlobalVariable.row) 
@@ -32,6 +32,10 @@ def YE_Recommend = data.getValue("YE_Recommendations", GlobalVariable.row)
 ' Was work carried out/Money Exchanged |' 	// No reveals extra comment text field
 '--------------------------------------'	//-----------------------------------
 
+//--------------------------
+// Synch Added - 09/09/2019
+WebUI.waitForElementVisible(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/work_Carried_Out_span_No'), 5)
+
 if (YE_WorkCarriedOut == ("No")) {
 	WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/work_Carried_Out_span_No'))
 	WebUI.waitForPageLoad(2)
@@ -44,6 +48,10 @@ else if (YE_WorkCarriedOut == ("Yes")) {
 	WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/work_Carried_Out_span_Yes'))
 	WebUI.waitForPageLoad(2)
 }
+//--------------------------
+// Synch Added - 09/09/2019
+WebUI.waitForElementVisible(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/work_Carried_Out_span_No'), 5)
+
 '--------------------------------------'
 ' Nature of Issue - Selection Box      |' 
 '--------------------------------------'
@@ -56,10 +64,10 @@ WebUI.selectOptionByLabel(findTestObject('Feedback_Non_Recommend/Page_Checkatrad
 '------------------------------------------------'
 ' Scroll to <NEXT> Button to reveal Text Below   |'
 '------------------------------------------------'
-//WebUI.scrollToElement(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_No_ctl00contentButton4'), 2)
+WebUI.scrollToElement(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_No_ctl00contentButton4'), 2)
 
 WebUI.waitForPageLoad(5)
-//WebUI.delay(5)
+WebUI.waitForElementVisible(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select ShortForm'), 5)
 
 '--------------------------------------'	//--------------------------------------------------------------------------------------------------
 ' Would you like to Publish Feedback?  |'  	// No reveals extra comment text field (Reason), Yes Reveals Message Text - BOTH CHANGES VERIFIED  |
@@ -128,5 +136,5 @@ else if (YE_FeedbackPublished == ("Yes")) { // Yes Reveals another set of Select
 }
 WebUI.delay(1) //  Delay needed to give operation above time to complete
 //----------------------------------------
-// End                                   |
+// End                                   | 09/09/2019
 //----------------------------------------
