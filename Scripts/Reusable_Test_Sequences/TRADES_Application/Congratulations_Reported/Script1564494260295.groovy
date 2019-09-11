@@ -19,10 +19,10 @@ import internal.GlobalVariable as GlobalVariable
 
 'Wait for SUCCESS page to load'
  WebUI.waitForPageLoad(5) // dynamic, waits only for page load, not the full, alloted time (unless slow or broken url)
- 
+ WebUI.delay(1)
  //--------------------------
  // Synch Added - 09/09/2019
- WebUI.waitForElementVisible(findTestObject('Page_Checkatrade Thank you/hi_Congratulations Header'), 10)
+// WebUI.waitForElementVisible(findTestObject('Page_Checkatrade Thank you/hi_Congratulations Header'), 10)
   
 'Congratulation screen appears'
  WebUI.verifyTextPresent('Congratulations, you\'re one step closer to becoming a Checkatrade Member!', false)

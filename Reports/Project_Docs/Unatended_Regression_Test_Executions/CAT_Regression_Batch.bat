@@ -1,0 +1,1 @@
+katalon -noSplash  -runMode=console -consoleLog -noExit -projectPath="C:\Users\davidho\Katalon Studio\Start\Start.prj" -retry=3 -retryFailedTestCases=true -testSuiteCollectionPath="Test Suites/Test Suite Collection 200819"

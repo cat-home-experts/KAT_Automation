@@ -15,7 +15,9 @@ Profile Checkatrade_Live : Live CAT Website
 Profile Current_Dev_Test : Current Dev Test - Web Office
 Profile Dev_Test : Dev Test
 Profile Preview : Preview Environment
+Profile Preview_Members_Area : Preview Members Area, URL not as expected, and not where the link from the home page directs you
 Profile Trades_Sign_In_Dashboard : Direct link to Preview Dashboard
+Profile Web_Office_Current : Current Environment Web Office URL
 Profile Web_Office_Live : Web Office Live - Requires Login</p>
      */
     public static Object URL
@@ -122,12 +124,14 @@ Profile Preview : Datasheet location (needs to change to shared repo local)</p>
     public static Object Invalid_EMail
      
     /**
-     * <p>Profile Trades_Sign_In_Dashboard : User Name</p>
+     * <p>Profile Preview_Members_Area : Member Login Username
+Profile Trades_Sign_In_Dashboard : User Name</p>
      */
     public static Object Username
      
     /**
-     * <p>Profile Trades_Sign_In_Dashboard : Password</p>
+     * <p>Profile Preview_Members_Area : Member Login Password
+Profile Trades_Sign_In_Dashboard : Password</p>
      */
     public static Object Password
      

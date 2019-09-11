@@ -1,0 +1,3 @@
+Drivers can be set to auto update from the menu ->Window->Katalon Studio preferences-> sub menu ->Katalon->Web UI - <CHECK> Automatically Update WebDriver.
+
+Removes the need to manually update WebDriver after test failures occur (not sure why this isn't the default setting)

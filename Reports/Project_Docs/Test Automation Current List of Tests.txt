@@ -1,0 +1,54 @@
+Cases
+------
+1) Trade Location Search - (Multiple search routine pulling required detail from a spreadsheet (10 iteration, test data variants)
+2) Trade Name (or CATID) Search (Multiple search routine pulling required detail from a spreadsheet (10 iteration, test data variants)
+
+3) Trade Location Search Single (1 pass test for demo purposes)
+
+4) Default_Device - 400 x 700 - set to run trade/location search, above (needs extending)
+
+5) Trades_Apply_Here - E2E Joining CAT process (Sunny day - Extendible via spreadsheet)
+
+6) Trades_Apply_Here_Validation - Checks on validation of each field across the E2E process
+
+7) Give_Feedback - E2E Joining Give_Feedback process (6 pages) (Sunny day - Extendible via spreadsheet)
+
+8) Give_Feedback_Validation - Checks on validation of each field across ach of the 6 process pages through the E2E process
+
+//-------------------------------------------------------------------
+Suites - THESE ARE THE TESTS TO EXECUTE AGAINST NEW DEPLOYMENTS     |
+//-------------------------------------------------------------------
+
+1) Trade Location Multiple Test Multiple Browser (40 test cases - 4 browsers x 10 test data variants - Derived from Trade Location Search, above) provide location and trade criteria via a spreadsheet and confirm sucess of each search by verifying returned data (expected data defined on the same spreadsheet as the search criteria. 
+
+2)Trade Name Multiple Test Multiple Browser  (40 test cases - 4 browsers x 10 test data variants - Derived from Trade Name Search, above) Search on specific trade name and company/trade IDs, using the same dataset as above.
+
+//-------------------------------------------------------------------
+Test Execution Times (running all the above tests)                  |
+//-------------------------------------------------------------------
+
+Test Suite Collection 200819 - Chrome and Firefox - Preview Env 		- 8 Minutes Execution Time
+Test Suite Collection 200819 - Chrome and Firefox - Dev Test Env    		- 11 Minutes Execution Time
+Test Suite Collection 200819 - Chrome and Firefox - Current Dev Test Env    	- 11 Minutes Execution Time
+
+
+1) - Provacy Policy) We have updated our Privacy Policy, please review this here 
+2) - Cookie Nagger )Checkatrade.com uses cookies to make sure you get the best browsing experience. By continuing to use this website you are consenting to our use of cookies. For further information and to manage your cookie preferences, view Checkatrade's cookie policy
+
+
+
+//else {
+//	// No Cookie Policy Presented
+//}
+////-----------------------------------------
+//'PRIVACY POLICY POPOUT'
+if (WebUI.verifyTextPresent('We have updated our Privacy Policy, please review this', false)) {
+	
+	//-----------------------------------------
+	'Closes PRIVACY nagging element '
+	WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/div_close'))
+	
+	//-----------------------------------------
+	'COOKIE POPOUT REMOVED'
+	WebUI.verifyTextNotPresent('We have updated our Privacy Policy, please review this', false)
+}

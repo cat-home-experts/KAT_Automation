@@ -18,7 +18,7 @@ import org.openqa.selenium.Keys as Keys
 
 
 //-----------------------
-// TEST HISTORY HEADER - |                                                                                                               |
+// TEST HISTORY HEADER - |                                                                               
 //-----------------------
 // Any changes to this script, please update the next available row below, with date, in the DATE CREATED column,
 // Your NAme in the CREATED BY column, and Finaly, The actual change implemented in the NOTES column.
