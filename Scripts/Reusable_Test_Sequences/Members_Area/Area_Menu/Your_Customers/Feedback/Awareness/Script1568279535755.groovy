@@ -22,8 +22,8 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-//  Navigate <Callback Request>               |   12/09/2019    |      DH          |                             |
-//  from <Your Customers>                     |                 |                  |                             |
+//  Navigate <My Feedback><Awareness> sub tab |   12/09/2019    |      DH          |                             |
+//  from <Your Customers><Awareness>          |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -44,14 +44,14 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 
 //////////////////////////////////////////////////
-//Wait for Callback Request Element Availability//
+//   Wait for a_Awareness Element Availability  //
 //////////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/div_Callback Requests'), 5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/a_Awareness'), 5)
 
 //////////////////////////////////////////////////
-//  Click Log My Callback Request Element       //
+//   Click Log a_Awareness Element              //
 //////////////////////////////////////////////////
-WebUI.click(findTestObject('Object Repository/Page_Members Area/div_Callback Requests'))
+WebUI.click(findTestObject('Object Repository/Page_Members Area/a_Awareness'))
 
 ///////////////////////////////////////
 //                END                //

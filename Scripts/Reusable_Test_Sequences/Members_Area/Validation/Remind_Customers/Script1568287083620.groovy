@@ -22,8 +22,8 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-//  Navigate <Callback Request>               |   12/09/2019    |      DH          |                             |
-//  from <Your Customers>                     |                 |                  |                             |
+//  My Feedback Page Initial Validation Checks|   11/09/2019    |      DH          |                             |
+//  on Start up, Sub Tab = Remind Customers   |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -43,15 +43,34 @@ import internal.GlobalVariable as GlobalVariable
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 
-//////////////////////////////////////////////////
-//Wait for Callback Request Element Availability//
-//////////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/div_Callback Requests'), 5)
+////////////////////////////////////////////////////////////
+//     Wait for Customers Name Element Availability       //
+////////////////////////////////////////////////////////////
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/input_concat(Customer  s name)_customerName'), 25)
 
-//////////////////////////////////////////////////
-//  Click Log My Callback Request Element       //
-//////////////////////////////////////////////////
-WebUI.click(findTestObject('Object Repository/Page_Members Area/div_Callback Requests'))
+////////////////////////////////////////////////////////////
+//     Take an Initial Screenshot of Home After Login     //
+////////////////////////////////////////////////////////////
+//WebUI.takeScreenshot('Reports/Screenshots/Initial_Members_page.png')
+// Stores in Project <Screenshots> Folder
+CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Your_Customers_Remind_Customer.png', FailureHandling.OPTIONAL)
+
+////////////////////////////////////////////////////////////
+//         Verify Header Text on Key Portal Areas         //
+////////////////////////////////////////////////////////////
+'---------------------------------'
+'DEFAULT TAB - Published Feedback '
+'---------------------------------'
+WebUI.verifyTextPresent("Remind your customers", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("CUSTOMER NAME IS REQUIRED", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Description of work", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Customer's email, false", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Mobile number (for SMS reminder)", false)
+'----------------------------------------------'
 
 ///////////////////////////////////////
 //                END                //

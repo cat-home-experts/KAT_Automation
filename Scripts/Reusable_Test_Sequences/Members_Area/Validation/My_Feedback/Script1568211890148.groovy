@@ -22,8 +22,8 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-//  Navigate <Callback Request>               |   12/09/2019    |      DH          |                             |
-//  from <Your Customers>                     |                 |                  |                             |
+//  My Feedback Page Initial Validation Checks|   11/09/2019    |      DH          |                             |
+//  on Start up, Default Tab = Published FBack|                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -43,15 +43,36 @@ import internal.GlobalVariable as GlobalVariable
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 
-//////////////////////////////////////////////////
-//Wait for Callback Request Element Availability//
-//////////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/div_Callback Requests'), 5)
+////////////////////////////////////////////////////////////
+//     Wait for Apply Filter Element Availability         //
+////////////////////////////////////////////////////////////
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/input_Customer Town_btn btn-primary filter'), 25) 
 
-//////////////////////////////////////////////////
-//  Click Log My Callback Request Element       //
-//////////////////////////////////////////////////
-WebUI.click(findTestObject('Object Repository/Page_Members Area/div_Callback Requests'))
+////////////////////////////////////////////////////////////
+//     Take an Initial Screenshot of Home After Login     //
+////////////////////////////////////////////////////////////
+//WebUI.takeScreenshot('Reports/Screenshots/Initial_Members_page.png')
+// Stores in Project <Screenshots> Folder
+CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Your_Customers_My_Feedback.png', FailureHandling.OPTIONAL)
+
+////////////////////////////////////////////////////////////
+//         Verify Header Text on Key Portal Areas         //
+////////////////////////////////////////////////////////////
+'---------------------------------'
+'DEFAULT TAB - Published Feedback '
+'---------------------------------'
+WebUI.verifyTextPresent("This is the feedback from your customers that is available to the public", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Work Done From:", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("To:", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Customer Surname:", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Customer Town:", false)
+'----------------------------------------------'
+
+
 
 ///////////////////////////////////////
 //                END                //

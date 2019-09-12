@@ -22,8 +22,8 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-//  Navigate <Callback Request>               |   12/09/2019    |      DH          |                             |
-//  from <Your Customers>                     |                 |                  |                             |
+//  My Feedback Page Initial Validation Checks|   12/09/2019    |      DH          |                             |
+//  on Start up, Sub Tab = Callback Requests  |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -43,15 +43,32 @@ import internal.GlobalVariable as GlobalVariable
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 
-//////////////////////////////////////////////////
-//Wait for Callback Request Element Availability//
-//////////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/div_Callback Requests'), 5)
+////////////////////////////////////////////////////////////
+//     Wait for Settings Element Availability             //
+////////////////////////////////////////////////////////////
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/a_Settings'), 25)
 
-//////////////////////////////////////////////////
-//  Click Log My Callback Request Element       //
-//////////////////////////////////////////////////
-WebUI.click(findTestObject('Object Repository/Page_Members Area/div_Callback Requests'))
+////////////////////////////////////////////////////////////
+//     Take an Initial Screenshot of Home After Login     //
+////////////////////////////////////////////////////////////
+//WebUI.takeScreenshot('Reports/Screenshots/Initial_Members_page.png')
+// Stores in Project <Screenshots> Folder
+CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Your_Customers_Callback_Request.png', FailureHandling.OPTIONAL)
+
+////////////////////////////////////////////////////////////
+//         Verify Header Text on Key Portal Areas         //
+////////////////////////////////////////////////////////////
+'---------------------------------'
+'DEFAULT TAB - Published Feedback '
+'---------------------------------'
+WebUI.verifyTextPresent("Your Callback Requests", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Member Notes", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Add/Edit note", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("As soon as a customer sends you a callback request, it will be sent to your chosen destination which can be SMS, e-mail or both", false)
+'----------------------------------------------'
 
 ///////////////////////////////////////
 //                END                //

@@ -22,8 +22,8 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-//  Navigate <Callback Request>               |   12/09/2019    |      DH          |                             |
-//  from <Your Customers>                     |                 |                  |                             |
+//  My Feedback Page Initial Validation Checks|   12/09/2019    |      DH          |                             |
+//  on Start up, Sub Tab = Awareness          |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -43,15 +43,41 @@ import internal.GlobalVariable as GlobalVariable
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 
-//////////////////////////////////////////////////
-//Wait for Callback Request Element Availability//
-//////////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/div_Callback Requests'), 5)
+////////////////////////////////////////////////////////////
+//     Wait for Awareness Element Availability            //
+////////////////////////////////////////////////////////////
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/h2_Customer Feedback Awareness'), 25)
 
-//////////////////////////////////////////////////
-//  Click Log My Callback Request Element       //
-//////////////////////////////////////////////////
-WebUI.click(findTestObject('Object Repository/Page_Members Area/div_Callback Requests'))
+////////////////////////////////////////////////////////////
+//     Take an Initial Screenshot of Awareness After Login//
+////////////////////////////////////////////////////////////
+
+// Stores in Project <Screenshots> Folder
+CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Your_Customers_Awareness.png', FailureHandling.OPTIONAL)
+
+////////////////////////////////////////////////////////////
+//         Verify Header Text on Key Portal Areas         //
+////////////////////////////////////////////////////////////
+'---------------------------------'
+'THIS TAB - Awareness             '
+'---------------------------------'
+WebUI.verifyTextPresent("Feedback Statistics", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("The average awareness level across all Checkatrade members is", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("The speedometer is not shown to consumers, however should it go below 40% it could affect your membership with Checkatrade.", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("feedback received in past 30 days", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("feedback in total", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("of customers were charged what you quoted", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("of customers were charged more but kept informed", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("of customers were charged more and were not kept informed", false)
+'----------------------------------------------'
+
 
 ///////////////////////////////////////
 //                END                //
