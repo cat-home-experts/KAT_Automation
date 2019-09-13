@@ -17,15 +17,13 @@ import internal.GlobalVariable as GlobalVariable
 // TEST HISTORY HEADER - |
 //-----------------------
 // Any changes to this script, please update the next available row below, with date, in the DATE CREATED column,
-// Your Name in the CREATED BY column, and Finaly, The actual change implemented in the NOTES column.
+// Your NAme in the CREATED BY column, and Finaly, The actual change implemented in the NOTES column.
 //
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-//  My Profile Page Initial Validation Checks|   11/09/2019    |      DH          |                             |
-//  on Start up, Default Tab = Published FBack|                 |                  |                             |
-//---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//  Verify <Profile><Banner Image> Page       |   13/09/2019    |      DH          |                             |
+//  from <Grow Your Business>                 |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -44,42 +42,64 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 
 ////////////////////////////////////////////////////////////
-//     Wait for Apply Filter Element Availability         //
+//     Wait for Update Banner Element Availability        //
 ////////////////////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/i_Profile text_ace-icon fa fa-file-text-o bigger-400'), 25)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/h2_Update your company banner image here'), 25)
 
 ////////////////////////////////////////////////////////////
-//     Take an Initial Screenshot of Home After Login     //
+//     Take an Initial Screenshot of Banner Image Page    //
 ////////////////////////////////////////////////////////////
-//WebUI.takeScreenshot('Reports/Screenshots/Initial_Members_page.png')
+
 // Stores in Project <Screenshots> Folder
-CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Your_Customers_My_Profile.png', FailureHandling.OPTIONAL)
+CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Your_Customers_Banner_Image.png', FailureHandling.OPTIONAL)
 
 ////////////////////////////////////////////////////////////
 //         Verify Header Text on Key Portal Areas         //
 ////////////////////////////////////////////////////////////
 '---------------------------------'
-'DEFAULT TAB - Published Feedback '
+'THIS TAB - Banner Image          |'
 '---------------------------------'
-WebUI.verifyTextPresent("Profile text", false)
+WebUI.verifyTextPresent("Choose a new image", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Search appearances", false)
+WebUI.verifyTextPresent("The new banner image needs to be a JPEG", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Where you work", false)
+WebUI.verifyTextPresent("For best results, the image should be", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Company logo", false)
+WebUI.verifyTextPresent("The image has to be 8MB or smaller", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Banner image", false)
+WebUI.verifyTextPresent("All changes are monitored by Checkatrade staff", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Vetting information", false)
+WebUI.verifyTextPresent("By uploading an image you are confirming", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Insurance", false)
+WebUI.verifyTextPresent("House rules: All changes will be moderated", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("'Maximise your profile' video", false)
 '----------------------------------------------'
-
+// CHECKBOX IMAGE UPLOAD - CheckBox to enable Upload Button
+WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/input_image file_chkHouseRules'),5)
+'----------------------------------------------'
+'----------------------------------------------'
+// Click UPLOAD Button - CheckBox to enable Upload Button
+WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Upload Banner Image'),5)
+'----------------------------------------------'
+'----------------------------------------------'
+WebUI.verifyTextPresent("Add Banner Image", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("New Banner Image", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Select Banner Image", false)
+'----------------------------------------------'
+// NEED TO EXTEND THE TOOL IF WE ARE TO INTERACT WITH WINDOWS COMPONENTS (Explorer)
+// Clicking Select Brings Up Explorer Search Dialog) extension = Winnium 
+'----------------------------------------------'
+'----------------------------------------------'
+// Need To Close The popout
+WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Close'))
+'----------------------------------------------'
+'----------------------------------------------'
+// Need To HIT Back Button to Return to Previous Page
+WebUI.back()
+'----------------------------------------------'
 
 ///////////////////////////////////////
 //                END                //
 ///////////////////////////////////////
-

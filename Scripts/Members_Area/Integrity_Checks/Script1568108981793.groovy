@@ -118,6 +118,35 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Da
 	'-----------------------------------------'// My Profile Page
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_Your_Business/My_Profile'), [:], FailureHandling.STOP_ON_FAILURE)
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Validation/My_Profile'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	//---------------------------------------------------
+	// Profile Page Has a Number of Navigaable Elements | starto
+	//---------------------------------------------------
+	'-----------------------------------------'// My Profile Page - Profile text
+	
+	'-----------------------------------------'// My Profile Page - Seach appearances
+	
+	'-----------------------------------------'// My Profile Page - Where you work
+	
+	'-----------------------------------------'// My Profile Page - Company logo 	
+	
+	'-----------------------------------------'// My Profile Page - Banner image
+	
+	'-----------------------------------------'// My Profile Page - Vetting information
+	
+	'-----------------------------------------'// My Profile Page - Insurance
+	
+	'-----------------------------------------'// My Profile Page - 'Maximise your profile' video
+	
+	
+	
+	//---------------------------------------------------
+	// Profile Page Has a Number of Navigaable Elements | Endo
+	//---------------------------------------------------
+
+	
+	
+	
+	
 	'-----------------------------------------'// My Photos Page
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_Your_Business/My_Photos'), [:], FailureHandling.STOP_ON_FAILURE)
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Validation/My_Photos'), [:], FailureHandling.CONTINUE_ON_FAILURE)

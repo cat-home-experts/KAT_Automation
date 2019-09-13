@@ -17,15 +17,13 @@ import internal.GlobalVariable as GlobalVariable
 // TEST HISTORY HEADER - |
 //-----------------------
 // Any changes to this script, please update the next available row below, with date, in the DATE CREATED column,
-// Your Name in the CREATED BY column, and Finaly, The actual change implemented in the NOTES column.
+// Your NAme in the CREATED BY column, and Finaly, The actual change implemented in the NOTES column.
 //
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-//  My Profile Page Initial Validation Checks|   11/09/2019    |      DH          |                             |
-//  on Start up, Default Tab = Published FBack|                 |                  |                             |
-//---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//  Navigate <Profile><Insurance>             |   13/09/2019    |      DH          |                             |
+//  from <Grow Your Business>                 |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -43,43 +41,16 @@ import internal.GlobalVariable as GlobalVariable
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 
-////////////////////////////////////////////////////////////
-//     Wait for Apply Filter Element Availability         //
-////////////////////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/i_Profile text_ace-icon fa fa-file-text-o bigger-400'), 25)
+////////////////////////////////////////////////
+//  Wait for Insurance Element Availability   //
+////////////////////////////////////////////////
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/a_Insurance'), 5)
 
-////////////////////////////////////////////////////////////
-//     Take an Initial Screenshot of Home After Login     //
-////////////////////////////////////////////////////////////
-//WebUI.takeScreenshot('Reports/Screenshots/Initial_Members_page.png')
-// Stores in Project <Screenshots> Folder
-CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Your_Customers_My_Profile.png', FailureHandling.OPTIONAL)
-
-////////////////////////////////////////////////////////////
-//         Verify Header Text on Key Portal Areas         //
-////////////////////////////////////////////////////////////
-'---------------------------------'
-'DEFAULT TAB - Published Feedback '
-'---------------------------------'
-WebUI.verifyTextPresent("Profile text", false)
-'----------------------------------------------'
-WebUI.verifyTextPresent("Search appearances", false)
-'----------------------------------------------'
-WebUI.verifyTextPresent("Where you work", false)
-'----------------------------------------------'
-WebUI.verifyTextPresent("Company logo", false)
-'----------------------------------------------'
-WebUI.verifyTextPresent("Banner image", false)
-'----------------------------------------------'
-WebUI.verifyTextPresent("Vetting information", false)
-'----------------------------------------------'
-WebUI.verifyTextPresent("Insurance", false)
-'----------------------------------------------'
-WebUI.verifyTextPresent("'Maximise your profile' video", false)
-'----------------------------------------------'
-
+////////////////////////////////////////////
+//     Click Insurance Element            //
+////////////////////////////////////////////
+WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/a_Insurance'))
 
 ///////////////////////////////////////
 //                END                //
 ///////////////////////////////////////
-

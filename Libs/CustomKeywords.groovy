@@ -12,22 +12,22 @@ import com.kms.katalon.core.testobject.TestObject
 import java.util.List
 
 
-def static "kms.turing.katalon.plugins.visualtesting.ImageComparison.areMatched"(
-    	String expectedImgPath	
-     , 	String actualImgPath	) {
-    (new kms.turing.katalon.plugins.visualtesting.ImageComparison()).areMatched(
-        	expectedImgPath
-         , 	actualImgPath)
+def static "kms.turing.katalon.plugins.visualtesting.ImageComparison.verifyMatchBaseline"(
+    	String filename	
+     , 	String baselinePath	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.visualtesting.ImageComparison()).verifyMatchBaseline(
+        	filename
+         , 	baselinePath
+         , 	flowControl)
 }
 
-def static "kms.turing.katalon.plugins.visualtesting.ImageComparison.areMatched"(
-    	String expectedImgPath	
-     , 	String actualImgPath	
-     , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.visualtesting.ImageComparison()).areMatched(
-        	expectedImgPath
-         , 	actualImgPath
-         , 	flowControl)
+def static "kms.turing.katalon.plugins.visualtesting.ImageComparison.verifyMatchBaseline"(
+    	String filename	
+     , 	String baselinePath	) {
+    (new kms.turing.katalon.plugins.visualtesting.ImageComparison()).verifyMatchBaseline(
+        	filename
+         , 	baselinePath)
 }
 
 def static "kms.turing.katalon.plugins.visualtesting.ImageComparison.getDifferenceRatio"(
@@ -48,22 +48,106 @@ def static "kms.turing.katalon.plugins.visualtesting.ImageComparison.getDifferen
          , 	actual)
 }
 
-def static "kms.turing.katalon.plugins.visualtesting.ImageComparison.verifyMatchBaseline"(
-    	String filename	
-     , 	String baselinePath	
+def static "kms.turing.katalon.plugins.visualtesting.ImageComparison.areMatched"(
+    	String expectedImgPath	
+     , 	String actualImgPath	
      , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.visualtesting.ImageComparison()).verifyMatchBaseline(
-        	filename
-         , 	baselinePath
+    (new kms.turing.katalon.plugins.visualtesting.ImageComparison()).areMatched(
+        	expectedImgPath
+         , 	actualImgPath
          , 	flowControl)
 }
 
-def static "kms.turing.katalon.plugins.visualtesting.ImageComparison.verifyMatchBaseline"(
+def static "kms.turing.katalon.plugins.visualtesting.ImageComparison.areMatched"(
+    	String expectedImgPath	
+     , 	String actualImgPath	) {
+    (new kms.turing.katalon.plugins.visualtesting.ImageComparison()).areMatched(
+        	expectedImgPath
+         , 	actualImgPath)
+}
+
+def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeScalingScreenshot"(
     	String filename	
-     , 	String baselinePath	) {
-    (new kms.turing.katalon.plugins.visualtesting.ImageComparison()).verifyMatchBaseline(
+     , 	float dpr	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeScalingScreenshot(
         	filename
-         , 	baselinePath)
+         , 	dpr
+         , 	flowControl)
+}
+
+def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeScalingScreenshot"(
+    	String filename	
+     , 	float dpr	) {
+    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeScalingScreenshot(
+        	filename
+         , 	dpr)
+}
+
+def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeWebElementScreenshot"(
+    	TestObject object	
+     , 	String filename	
+     , 	int timeout	) {
+    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeWebElementScreenshot(
+        	object
+         , 	filename
+         , 	timeout)
+}
+
+def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeWebElementScreenshot"(
+    	TestObject object	
+     , 	String filename	) {
+    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeWebElementScreenshot(
+        	object
+         , 	filename)
+}
+
+def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeWebElementScreenshot"(
+    	TestObject object	
+     , 	String filename	
+     , 	int timeout	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeWebElementScreenshot(
+        	object
+         , 	filename
+         , 	timeout
+         , 	flowControl)
+}
+
+def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot"(
+    	String filename	) {
+    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeEntirePageScreenshot(
+        	filename)
+}
+
+def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot"(
+    	String filename	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeEntirePageScreenshot(
+        	filename
+         , 	flowControl)
+}
+
+def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeCuttingScreenshot"(
+    	String filename	
+     , 	int headerToCut	
+     , 	int footerToCut	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeCuttingScreenshot(
+        	filename
+         , 	headerToCut
+         , 	footerToCut
+         , 	flowControl)
+}
+
+def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeCuttingScreenshot"(
+    	String filename	
+     , 	int headerToCut	
+     , 	int footerToCut	) {
+    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeCuttingScreenshot(
+        	filename
+         , 	headerToCut
+         , 	footerToCut)
 }
 
 def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeScreenshot"(
@@ -77,6 +161,20 @@ def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeScreensho
      , 	FailureHandling flowControl	) {
     (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeScreenshot(
         	filename
+         , 	flowControl)
+}
+
+def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeElementScreenshotIgnoringAreas"(
+    	TestObject object	
+     , 	String filename	
+     , 	java.util.List<TestObject> ignoreObjs	
+     , 	int timeout	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeElementScreenshotIgnoringAreas(
+        	object
+         , 	filename
+         , 	ignoreObjs
+         , 	timeout
          , 	flowControl)
 }
 
@@ -102,26 +200,34 @@ def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeElementSc
          , 	timeout)
 }
 
-def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeElementScreenshotIgnoringAreas"(
-    	TestObject object	
+def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeWebElementsScreenshot"(
+    	java.util.List<TestObject> objects	
      , 	String filename	
-     , 	java.util.List<TestObject> ignoreObjs	
      , 	int timeout	
      , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeElementScreenshotIgnoringAreas(
-        	object
+    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeWebElementsScreenshot(
+        	objects
          , 	filename
-         , 	ignoreObjs
          , 	timeout
          , 	flowControl)
 }
 
-def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.baselineImage"(
-    	String filename	
-     , 	String baselineDir	) {
-    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).baselineImage(
-        	filename
-         , 	baselineDir)
+def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeWebElementsScreenshot"(
+    	java.util.List<TestObject> objects	
+     , 	String filename	) {
+    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeWebElementsScreenshot(
+        	objects
+         , 	filename)
+}
+
+def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeWebElementsScreenshot"(
+    	java.util.List<TestObject> objects	
+     , 	String filename	
+     , 	int timeout	) {
+    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeWebElementsScreenshot(
+        	objects
+         , 	filename
+         , 	timeout)
 }
 
 def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.baselineImage"(
@@ -134,116 +240,10 @@ def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.baselineImage
          , 	flowControl)
 }
 
-def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeWebElementsScreenshot"(
-    	java.util.List<TestObject> objects	
-     , 	String filename	
-     , 	int timeout	
-     , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeWebElementsScreenshot(
-        	objects
-         , 	filename
-         , 	timeout
-         , 	flowControl)
-}
-
-def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeWebElementsScreenshot"(
-    	java.util.List<TestObject> objects	
-     , 	String filename	
-     , 	int timeout	) {
-    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeWebElementsScreenshot(
-        	objects
-         , 	filename
-         , 	timeout)
-}
-
-def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeWebElementsScreenshot"(
-    	java.util.List<TestObject> objects	
-     , 	String filename	) {
-    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeWebElementsScreenshot(
-        	objects
-         , 	filename)
-}
-
-def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeScalingScreenshot"(
+def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.baselineImage"(
     	String filename	
-     , 	float dpr	
-     , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeScalingScreenshot(
+     , 	String baselineDir	) {
+    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).baselineImage(
         	filename
-         , 	dpr
-         , 	flowControl)
-}
-
-def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeScalingScreenshot"(
-    	String filename	
-     , 	float dpr	) {
-    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeScalingScreenshot(
-        	filename
-         , 	dpr)
-}
-
-def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot"(
-    	String filename	) {
-    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeEntirePageScreenshot(
-        	filename)
-}
-
-def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot"(
-    	String filename	
-     , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeEntirePageScreenshot(
-        	filename
-         , 	flowControl)
-}
-
-def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeWebElementScreenshot"(
-    	TestObject object	
-     , 	String filename	
-     , 	int timeout	
-     , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeWebElementScreenshot(
-        	object
-         , 	filename
-         , 	timeout
-         , 	flowControl)
-}
-
-def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeWebElementScreenshot"(
-    	TestObject object	
-     , 	String filename	) {
-    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeWebElementScreenshot(
-        	object
-         , 	filename)
-}
-
-def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeWebElementScreenshot"(
-    	TestObject object	
-     , 	String filename	
-     , 	int timeout	) {
-    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeWebElementScreenshot(
-        	object
-         , 	filename
-         , 	timeout)
-}
-
-def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeCuttingScreenshot"(
-    	String filename	
-     , 	int headerToCut	
-     , 	int footerToCut	
-     , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeCuttingScreenshot(
-        	filename
-         , 	headerToCut
-         , 	footerToCut
-         , 	flowControl)
-}
-
-def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeCuttingScreenshot"(
-    	String filename	
-     , 	int headerToCut	
-     , 	int footerToCut	) {
-    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeCuttingScreenshot(
-        	filename
-         , 	headerToCut
-         , 	footerToCut)
+         , 	baselineDir)
 }
