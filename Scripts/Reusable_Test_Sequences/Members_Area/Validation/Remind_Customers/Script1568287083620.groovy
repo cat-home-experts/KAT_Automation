@@ -67,10 +67,13 @@ WebUI.verifyTextPresent("CUSTOMER NAME IS REQUIRED", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Description of work", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Customer's email, false", false)
+WebUI.verifyTextPresent("Customer's email", false)
+
+WebUI.verifyTextPresent("Submit", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Mobile number (for SMS reminder)", false)
 '----------------------------------------------'
+WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/input_concat(Customer  s name)_customerName'), 10)
 
 ///////////////////////////////////////
 //                END                //

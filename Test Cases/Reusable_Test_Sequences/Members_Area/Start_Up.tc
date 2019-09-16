@@ -3,6 +3,10 @@
    <description>Open the Browser (No Standard Link From CAT)</description>
    <name>Start_Up</name>
    <tag>Members</tag>
-   <comment></comment>
+   <comment>URL - Set from the ENVIRONMENT PROFILE 
+Verify Header Text
+Verify Forgotten Password Text - Link
+Verify Forgotten Username Text - Link
+Verify Trouble Logging In Text - Link</comment>
    <testCaseGuid>b1b47427-5db3-4e95-bd89-5ecca68fa4ad</testCaseGuid>
 </TestCaseEntity>

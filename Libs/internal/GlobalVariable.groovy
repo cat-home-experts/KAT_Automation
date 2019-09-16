@@ -135,6 +135,11 @@ Profile Trades_Sign_In_Dashboard : Password</p>
      */
     public static Object Password
      
+    /**
+     * <p>Profile Preview_Members_Area : Specific area within the Members Portal</p>
+     */
+    public static Object PAGE
+     
 
     static {
         try {
@@ -163,6 +168,7 @@ Profile Trades_Sign_In_Dashboard : Password</p>
             Invalid_EMail = selectedVariables['Invalid_EMail']
             Username = selectedVariables['Username']
             Password = selectedVariables['Password']
+            PAGE = selectedVariables['PAGE']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

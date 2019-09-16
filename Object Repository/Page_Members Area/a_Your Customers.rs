@@ -4,7 +4,17 @@
    <name>a_Your Customers</name>
    <tag></tag>
    <elementGuidId>9b15b5a3-24c1-471c-acce-aebcacab5ed6</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//a[(text() = 'Your Customers' or . = 'Your Customers')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='Top']/div/ul/li[2]/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

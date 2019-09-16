@@ -1,4 +1,4 @@
- import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -14,18 +14,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 //-----------------------
-// TEST HISTORY HEADER - |                                                                                                               |
+// TEST HISTORY HEADER - |
 //-----------------------
 // Any changes to this script, please update the next available row below, with date, in the DATE CREATED column,
-// Your NAme in the CREATED BY column, and Finaly, The actual change implemented in the NOTES column.
+// Your Name in the CREATED BY column, and Finaly, The actual change implemented in the NOTES column.
 //
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-//  Startup for Members Area                  |   10/09/2019    |      DH          |                             |
+// Prove the function Under Members Area      |                 |                  |  Numorous issues correcting |
+// URL Not as expected, preview-ma.ch*.com    |    10/09/2019   |     Dave Horne   |  SUNNY DAY ONLY             |
+// areas is intact and available  (PREVIEW)   |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//  Extended to Access Specific Pages within  |                 |                  |                             |
-//  The Members Areas                         |   16/09/2019    |      DH          | GlobalVariable.PAGE Added   |
+// Stand Alone Test Created For My Profile    |                 |                  |             URL             |
+// Functionality - From members Area          |    16/09/2019   |        DH        | checkatrade.com/my-profile  |
+// Integrity Checks                           |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -33,57 +36,44 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
+'WARNING - Be AWARE that, for example, That the Members Area Link on Preview doesnt take you to Preview, but takes you to LIVE Members Area'
 //---------------------------------------------------------------------------------------------------------------
 //                                                                                                               |
-//	GIVEN -                                                                                                      |
+//	GIVEN - TODO                      |
 //                                                                                                               |
-//	WHEN -                                                                                                       |
+//	WHEN -  TODO  				      |
 //                                                                                                               |
-//  THEN -                                                                                                       |
+//  THEN -  TODO                      |
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
+// Specific Page Withing members That You Want To Visit
+GlobalVariable.PAGE = "/my-profile-page"
 
-def data = findTestData('Members_Test_Data')
-def Header_Text = ""
-def Forgotten_Password = ""
-def Forgotten_Username = ""
-def Trouble_Logging_In = ""
+'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test\r\n'
+for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Data').getRowNumbers(); (GlobalVariable.row)++) {
+	
+	//-----------------------------------------
+	// Call Startup Process - Browser Startup |
+	//-----------------------------------------
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Start_Up'), [:], FailureHandling.STOP_ON_FAILURE)
+	//-----------------------------------------
+	
+	//-----------------------------------------
+	// Log In to the Members Area             |
+	//-----------------------------------------
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/log_On'), [:], FailureHandling.STOP_ON_FAILURE)
+	//-----------------------------------------
 
-'URL - Set from the ENVIRONMENT PROFILE - Specific Page Address Provided By +GlobalVariable.PAGE  '
-'OPEN BROWSER'
-WebUI.openBrowser(GlobalVariable.URL+GlobalVariable.PAGE)// 10/09/2019 - 16/09/2-19
-// WebUI.openBrowser(GlobalVariable.URL+"/my-profile-page") // Options for breaking up the Members Test into Reasonable Size Chunks // 13/09/2019
-//-----------------------------------------
-'MAXIMIZE BROWSER '
-WebUI.maximizeWindow()
-
-//-----------------------------------------
-'WAIT for browser to load - waits up to 60 seconds before timeout occurs '
-WebUI.waitForPageLoad(60)
-
-//WebUI.setText(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF'),
-//	findTestData('searchTestData').getValue('tradeClassification', GlobalVariable.row))
-
-//------------------------
-// Verify Header Text   //
-//------------------------
-'Verify Header Text'
-//WebUI.verifyTextPresent(findTestData(data).getValue(Header_Text, GlobalVariable.row), false)
-//------------------------
-// Verify Forgotten Text//
-//------------------------
-'Verify Forgotten Password Text - Link'
-//WebUI.verifyTextPresent(findTestData(data).getValue(Forgotten_Password, GlobalVariable.row), false)
-//------------------------
-// Verify Forgotten Text//
-//------------------------
-'Verify Forgotten Username Text - Link'
-//WebUI.verifyTextPresent(findTestData(data).getValue(Forgotten_Username, GlobalVariable.row), false)
-//------------------------
-// Verify Forgotten Text//
-//------------------------
-'Verify Trouble Logging In Text - Link'
-//WebUI.verifyTextPresent(findTestData(data).getValue(Trouble_Logging_In, GlobalVariable.row), false)
+	
+	WebUI.delay(5)
+	
+	
+	
+	//-----------------------------------------
+	// Log OFF the Members Area               |
+	//-----------------------------------------
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Banner_Menu/log_Off'), [:], FailureHandling.STOP_ON_FAILURE)
+}
 
 ///////////////////////////////////////
 //                END                //

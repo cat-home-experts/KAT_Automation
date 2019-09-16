@@ -19,4 +19,9 @@
       <initValue>'testing123'</initValue>
       <name>Password</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Specific area within the Members Portal</description>
+      <initValue>'/my-profile-page'</initValue>
+      <name>PAGE</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

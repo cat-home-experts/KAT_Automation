@@ -46,6 +46,8 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////////////////////
 //     Wait for Apply Filter Element Availability         //
 ////////////////////////////////////////////////////////////
+//WebUI.delay(5)
+//WebUI.waitForPageLoad(10) 'Historic Data Loads, so can take a while'
 WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/input_Customer Town_btn btn-primary filter'), 25) 
 
 ////////////////////////////////////////////////////////////
@@ -53,7 +55,7 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/
 ////////////////////////////////////////////////////////////
 //WebUI.takeScreenshot('Reports/Screenshots/Initial_Members_page.png')
 // Stores in Project <Screenshots> Folder
-CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Your_Customers_My_Feedback.png', FailureHandling.OPTIONAL)
+CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('My_Feedback.png', FailureHandling.OPTIONAL)
 
 ////////////////////////////////////////////////////////////
 //         Verify Header Text on Key Portal Areas         //
