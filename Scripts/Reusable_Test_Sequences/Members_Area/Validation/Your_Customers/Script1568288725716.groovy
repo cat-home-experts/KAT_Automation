@@ -25,7 +25,7 @@ import internal.GlobalVariable as GlobalVariable
 //  My Feedback Page Initial Validation Checks|   12/09/2019    |      DH          |                             |
 //  on Start up, Sub Tab = Your Customers     |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//  Extra Synch Added - Wiat For Page Load    |   18/09/2019    |      DH          |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -46,8 +46,11 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////////////////////
 //     Wait for Customers Name Element Availability       //
 ////////////////////////////////////////////////////////////
+WebUI.waitForPageLoad(25)
 WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/p_These are your customers who have left feedback'), 25)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/first_Row_Customers'), 25)
 
+// first_Row_Customers
 ////////////////////////////////////////////////////////////
 //     Take an Initial Screenshot of Home After Login     //
 ////////////////////////////////////////////////////////////
@@ -63,7 +66,13 @@ CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntir
 '---------------------------------'
 WebUI.verifyTextPresent("These are your customers who have left feedback", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Customer	Address	Jobs	Work Date", false)
+WebUI.verifyTextPresent("Test", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Address", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Jobs", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Work Date", false)
 '----------------------------------------------'
 
 

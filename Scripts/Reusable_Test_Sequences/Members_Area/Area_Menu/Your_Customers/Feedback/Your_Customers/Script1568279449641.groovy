@@ -51,7 +51,7 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/
 //////////////////////////////////////////////////
 //   Click Your Customers Element               //
 //////////////////////////////////////////////////
-WebUI.click(findTestObject('Object Repository/Page_Members Area/a_Your Customers'))
+WebUI.click(findTestObject('Object Repository/Page_Members Area/a_Your Customers_1'))
 
 ///////////////////////////////////////
 //                END                //

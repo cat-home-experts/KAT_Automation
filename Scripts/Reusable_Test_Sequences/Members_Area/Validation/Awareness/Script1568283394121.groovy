@@ -25,7 +25,7 @@ import internal.GlobalVariable as GlobalVariable
 //  My Feedback Page Initial Validation Checks|   12/09/2019    |      DH          |                             |
 //  on Start up, Sub Tab = Awareness          |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//  Extra Synch Added - Wait For Page Load    |   18/09/2019    |      DH          |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -46,7 +46,10 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////////////////////
 //     Wait for Awareness Element Availability            //
 ////////////////////////////////////////////////////////////
+WebUI.waitForPageLoad(25)
 WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/h2_Customer Feedback Awareness'), 25)
+//WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/the_Speedometer'), 25)
+WebUI.delay(3)
 
 ////////////////////////////////////////////////////////////
 //     Take an Initial Screenshot of Awareness After Login//

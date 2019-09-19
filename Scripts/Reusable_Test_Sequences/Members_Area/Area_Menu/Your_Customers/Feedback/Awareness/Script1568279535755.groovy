@@ -25,7 +25,7 @@ import internal.GlobalVariable as GlobalVariable
 //  Navigate <My Feedback><Awareness> sub tab |   12/09/2019    |      DH          |                             |
 //  from <Your Customers><Awareness>          |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//  Extra Synch Added - Wiat For Page Load    |   18/09/2019    |      DH          |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -46,6 +46,7 @@ import internal.GlobalVariable as GlobalVariable
 //////////////////////////////////////////////////
 //   Wait for a_Awareness Element Availability  //
 //////////////////////////////////////////////////
+WebUI.waitForPageLoad(25)
 WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/a_Awareness'), 5)
 
 //////////////////////////////////////////////////

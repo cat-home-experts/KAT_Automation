@@ -78,6 +78,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Da
 	// Verify Content on Remind Customers Page|
 	//-----------------------------------------
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Remind_Customers'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
 	//-----------------------------------------
 	// Navigate to Your Customers - Sub Tab   |
 	//-----------------------------------------
@@ -92,21 +93,37 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Da
 	// Navigate to Awareness - Sub Tab        |
 	//-----------------------------------------
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Customers/Feedback/Awareness'), [:], FailureHandling.STOP_ON_FAILURE)
-	
+	                                 
 	//-----------------------------------------
 	// Verify Content on Awareness Page       |
 	//-----------------------------------------	
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Awareness'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 	//-----------------------------------------
+	// Navigate to Remind Cutomers - Sub Tab  |
+	//-----------------------------------------
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Customers/Feedback/Remind_Customer'), [:], FailureHandling.STOP_ON_FAILURE)
+	
+	//-----------------------------------------
+	// Send Reminder From Remind Customers Pag|
+	//-----------------------------------------
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Customers/Feedback/Remind_Customer_Sent'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
+	//-------------------------------------------------
+	// Navigate back to Published Feedback - Sub Tab  | // Back to Default tab
+	//-------------------------------------------------
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Customers/Feedback/Published_Feedback'), [:], FailureHandling.STOP_ON_FAILURE)
+
+	//-------------------------------------------------
+	// Search and Verify Returned Feedback Search Data| 
+	//-------------------------------------------------
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Customers/Feedback/Published_Feedback_Search'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
+	//-----------------------------------------
 	// Log OFF the Members Area               |
 	//-----------------------------------------
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Banner_Menu/log_Off'), [:], FailureHandling.STOP_ON_FAILURE)
 }
-
-
-
-
 ///////////////////////////////////////
 //                END                //
 ///////////////////////////////////////

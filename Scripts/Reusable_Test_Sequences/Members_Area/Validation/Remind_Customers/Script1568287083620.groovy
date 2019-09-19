@@ -73,7 +73,7 @@ WebUI.verifyTextPresent("Submit", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Mobile number (for SMS reminder)", false)
 '----------------------------------------------'
-WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/input_concat(Customer  s name)_customerName'), 10)
+WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/a_Dashboard'), 10)
 
 ///////////////////////////////////////
 //                END                //
