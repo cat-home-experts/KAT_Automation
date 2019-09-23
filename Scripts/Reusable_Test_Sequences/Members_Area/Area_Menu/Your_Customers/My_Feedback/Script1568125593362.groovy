@@ -46,7 +46,7 @@ import internal.GlobalVariable as GlobalVariable
 //////////////////////////////////////////////////
 //   Wait for My Feedback Element Availability  //
 //////////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/div_My Feedback'), 5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/div_My Feedback'), 25)
 
 //////////////////////////////////////////////////
 //   Click Log My Feedback Request Element      //

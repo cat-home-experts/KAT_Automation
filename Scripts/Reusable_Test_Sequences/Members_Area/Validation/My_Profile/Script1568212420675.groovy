@@ -14,7 +14,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 //-----------------------
-// TEST HISTORY HEADER - |
+// TEST HISTORY HEADER -|
 //-----------------------
 // Any changes to this script, please update the next available row below, with date, in the DATE CREATED column,
 // Your Name in the CREATED BY column, and Finaly, The actual change implemented in the NOTES column.
@@ -22,7 +22,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-//  My Profile Page Initial Validation Checks|   11/09/2019    |      DH          |                             |
+//  My Profile Page Initial Validation Checks |   11/09/2019    |      DH          |                             |
 //  on Start up, Default Tab = Published FBack|                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |

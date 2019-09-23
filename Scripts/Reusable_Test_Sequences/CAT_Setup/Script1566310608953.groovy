@@ -24,21 +24,21 @@ import internal.GlobalVariable as GlobalVariable
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
 // Fires up the website (CAT), Dispels Cookie |                 |                  |                             |
-// Nagging the Maximizes Browser              |    18/07/2019   |     Dave Horne   |                             |
+// Nagging the Maximizes Browser              |    18/07/2019   |         DH       |                             |
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-// Changed OpenBrowser/Navigate URL method    |    20/08/2019   |     Dave Horne   | OpenBrowser with preset URL |
+// Changed OpenBrowser/Navigate URL method    |    20/08/2019   |         DH       | OpenBrowser with preset URL |
 //---------------------------------------------------------------------------------------------------------------
-// Added Privacy Policy Check and close also  |    20/08/2019   |     Dave Horne   |                             |
+// Added Privacy Policy Check and close also  |    20/08/2019   |         DH       |                             |
 //---------------------------------------------------------------------------------------------------------------
-// Also, Closed Cookie and Privacy Nags with IF    20/08/2019   |     Dave Horne   |                             |
+// Also, Closed Cookie and Privacy Nags with IF    20/08/2019   |         DH       |                             |
 //---------------------------------------------------------------------------------------------------------------
 // If Either Cookie or Privacy Elements are   |                 |                  |                             |
-// Not Presented, Then a WARNING Is Flagged,  |    27/08/2019   |     Dave Horne   |                             |
+// Not Presented, Then a WARNING Is Flagged,  |    27/08/2019   |         DH       |                             |
 // But the Test Step Will Still Pass if all OK|                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 // Try/Catches Re-Applied to Cookie/Privacy   |                 |                  |                             |
-// Detection, and dispel                      |    20/08/2019   |     Dave Horne   |                             |
+// Detection, and dispel                      |    20/08/2019   |         DH       |                             |
 //---------------------------------------------------------------------------------------------------------------
 //
 //---------------------------------------------------------------------------------------------------------------
@@ -51,6 +51,10 @@ import internal.GlobalVariable as GlobalVariable
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 //-----------------------------------------
+//-----------------------------------------
+// Startup Process -                      | NOTE: Members Area Function has it's OWN Startup Process
+//-----------------------------------------
+
 'URL - Set from the ENVIRONMENT PROFILE '
 'OPEN BROWSER'
 WebUI.openBrowser(GlobalVariable.URL)// 20/08/2019

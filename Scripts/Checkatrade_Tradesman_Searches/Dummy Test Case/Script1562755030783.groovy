@@ -12,20 +12,17 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-
+import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://www.preview.checkatrade.com/')
 
-WebUI.delay(2)
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Checkatrade Find a tradesperson you can trust/a_Trade Membership'))
 
-WebUI.setText(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search Button'), 
-    'Tree Surgeon')
-WebUI.delay(2)
-WebUI.setText(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Not here_location'), 
-    'gosport')
-WebUI.delay(2)
-WebUI.doubleClick(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search'))
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Checkatrade Find a tradesperson you can trust/a_Login to your member area'))
 
-WebUI.delay(15)
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Checkatrade Find a tradesperson you can trust/a_Advice'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Home - Checkatrade Blog/a_Homeowner Login'))
+

@@ -4,7 +4,17 @@
    <name>a_Dashboard</name>
    <tag></tag>
    <elementGuidId>79f34b12-d266-4d11-a78a-32e1b69fbaa4</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='Top']/div/ul/li/a</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//a[@href = '/dashboard' and (text() = ' Dashboard ' or . = ' Dashboard ')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

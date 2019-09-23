@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>There are some irregularities in the URL specification/standardisation
+Preview
+eg - Members Area is on - https://preview-ma.checkatrade.com
+                   Dev Test is on - http://members.dev.checkatrade.com
+This script handles thes URL Discrepencies (Hopefully)</description>
+   <name>URL_Handler</name>
+   <tag>URL Startup</tag>
+   <comment></comment>
+   <testCaseGuid>f4fb515d-012e-417b-a3f3-b1beacf3c570</testCaseGuid>
+</TestCaseEntity>

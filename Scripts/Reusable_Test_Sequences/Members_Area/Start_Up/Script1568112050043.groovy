@@ -27,7 +27,8 @@ import internal.GlobalVariable as GlobalVariable
 //  Extended to Access Specific Pages within  |                 |                  |                             |
 //  The Members Areas                         |   16/09/2019    |      DH          | GlobalVariable.PAGE Added   |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Added the call to URL_Handler - Refer below|   23/09/2019    |      DH          |                             |
+//---------------------------------------------------------------------------------------------------------------
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -49,14 +50,17 @@ def Forgotten_Password = ""
 def Forgotten_Username = ""
 def Trouble_Logging_In = ""
 
+//-----------------------------------------
+'Do Some Magic with URL(s) See the comments within URL Handler '
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/URL_Handler'), [:], FailureHandling.STOP_ON_FAILURE)
+//-----------------------------------------
 'URL - Set from the ENVIRONMENT PROFILE - Specific Page Address Provided By +GlobalVariable.PAGE  '
 'OPEN BROWSER'
-WebUI.openBrowser(GlobalVariable.URL+GlobalVariable.PAGE)// 10/09/2019 - 16/09/2-19
+WebUI.openBrowser(GlobalVariable.URL)// 10/09/2019 - 16/09/2-19 - 23/09/2019
 // WebUI.openBrowser(GlobalVariable.URL+"/my-profile-page") // Options for breaking up the Members Test into Reasonable Size Chunks // 13/09/2019
 //-----------------------------------------
 'MAXIMIZE BROWSER '
 WebUI.maximizeWindow()
-
 //-----------------------------------------
 'WAIT for browser to load - waits up to 60 seconds before timeout occurs '
 WebUI.waitForPageLoad(60)

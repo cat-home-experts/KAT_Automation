@@ -64,8 +64,26 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Da
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/log_On'), [:], FailureHandling.STOP_ON_FAILURE)
 	//-----------------------------------------
 
-	
-	WebUI.delay(5)
+	//-----------------------------------------
+	// Confirm Data on Top - My_profile Page  |
+	//-----------------------------------------
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/My_Profile'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+	//-----------------------------------------
+	// Navigate to Profile Text - Sub section |
+	//-----------------------------------------
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_You_Business/My_Profile'), [:], FailureHandling.STOP_ON_FAILURE)
+
+	//-----------------------------------------
+	// Verify Profile Text - Sub section      |
+	//-----------------------------------------
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Profiles/Profile_Text'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+	//-----------------------------------------
+	// Update Profile Text - Sub section      |
+	//-----------------------------------------
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Profiles/Profile_Text'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
 	
 	
 	

@@ -91,7 +91,7 @@ WebUI.click(findTestObject('Object Repository/Page_Members Area/remind_Submit_Bu
 
 WebUI.delay(1)
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/remind_Message_Dispel'), 20)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/remind_Message_Dispel'), 25)
 '----------------------------------------------'
 WebUI.verifyTextPresent('Thank you', false)
 '----------------------------------------------'

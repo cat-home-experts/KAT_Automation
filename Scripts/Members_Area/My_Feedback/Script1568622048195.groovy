@@ -30,13 +30,15 @@ import internal.GlobalVariable as GlobalVariable
 // Functionality - From members Area          |    16/09/2019   |        DH        | checkatrade.com/my-feedback |
 // Integrity Checks                           |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//                                            |    23/09/2019   |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 'WARNING - Be AWARE that, for example, That the Members Area Link on Preview doesnt take you to Preview, but takes you to LIVE Members Area'
+
+'THIS CURRENTLY ONLY RUNS FROM - - -  * * *  PREVIEW_MEMBERS_AREA Profile  * * * '
 //---------------------------------------------------------------------------------------------------------------
 //                                                                                                               |
 //	GIVEN - TODO                      |
@@ -46,8 +48,11 @@ import internal.GlobalVariable as GlobalVariable
 //  THEN -  TODO                      |
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
-// Specific Page Withing members That You Want To Visit
+// Specific Page Withing Members That You Want To Visit
 GlobalVariable.PAGE = "/my-feedback"
+// Members Area - Notification to the Startup Process and URL_Handler
+GlobalVariable.Portal_Subfunction = "members"
+//---------------------------------------------------------------------------------------------------------------
 
 'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test\r\n'
 for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Data').getRowNumbers(); (GlobalVariable.row)++) {
@@ -64,6 +69,11 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Da
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/log_On'), [:], FailureHandling.STOP_ON_FAILURE)
 	//-----------------------------------------
 
+	//-----------------------------------------
+	// Navigate My_Feedback Page              |
+	//-----------------------------------------
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Customers/My_Feedback'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
 	//-----------------------------------------
 	// Confirm Data on Top - My_Feedback Page |
 	//-----------------------------------------

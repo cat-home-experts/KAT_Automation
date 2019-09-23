@@ -104,6 +104,31 @@ Profile Preview : Datasheet location (needs to change to shared repo local)</p>
     public static Object Returns_Verification
      
     /**
+     * <p>Profile default : URL_Handler Global</p>
+     */
+    public static Object Portal_Subfunction
+     
+    /**
+     * <p>Profile default : User credentials for Members Area
+Profile Preview_Members_Area : Member Login Username
+Profile Trades_Sign_In_Dashboard : User Name</p>
+     */
+    public static Object Username
+     
+    /**
+     * <p>Profile default : Password credentials for Members Area
+Profile Preview_Members_Area : Member Login Password
+Profile Trades_Sign_In_Dashboard : Password</p>
+     */
+    public static Object Password
+     
+    /**
+     * <p>Profile default : Specific area within the Members Portal
+Profile Preview_Members_Area : Specific area within the Members Portal</p>
+     */
+    public static Object PAGE
+     
+    /**
      * <p>Profile Checkatrade_Live : Row count on spread sheet iterator</p>
      */
     public static Object row
@@ -122,23 +147,6 @@ Profile Preview : Datasheet location (needs to change to shared repo local)</p>
      * <p>Profile Preview : Invalid emil address with space and format issue</p>
      */
     public static Object Invalid_EMail
-     
-    /**
-     * <p>Profile Preview_Members_Area : Member Login Username
-Profile Trades_Sign_In_Dashboard : User Name</p>
-     */
-    public static Object Username
-     
-    /**
-     * <p>Profile Preview_Members_Area : Member Login Password
-Profile Trades_Sign_In_Dashboard : Password</p>
-     */
-    public static Object Password
-     
-    /**
-     * <p>Profile Preview_Members_Area : Specific area within the Members Portal</p>
-     */
-    public static Object PAGE
      
 
     static {
@@ -162,13 +170,14 @@ Profile Trades_Sign_In_Dashboard : Password</p>
             YE_Recommendations = selectedVariables['YE_Recommendations']
             DataSheet_Location = selectedVariables['DataSheet_Location']
             Returns_Verification = selectedVariables['Returns_Verification']
+            Portal_Subfunction = selectedVariables['Portal_Subfunction']
+            Username = selectedVariables['Username']
+            Password = selectedVariables['Password']
+            PAGE = selectedVariables['PAGE']
             row = selectedVariables['row']
             Standalone_TC_Execution = selectedVariables['Standalone_TC_Execution']
             Postcode = selectedVariables['Postcode']
             Invalid_EMail = selectedVariables['Invalid_EMail']
-            Username = selectedVariables['Username']
-            Password = selectedVariables['Password']
-            PAGE = selectedVariables['PAGE']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)
