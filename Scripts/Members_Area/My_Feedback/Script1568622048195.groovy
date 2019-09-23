@@ -30,7 +30,8 @@ import internal.GlobalVariable as GlobalVariable
 // Functionality - From members Area          |    16/09/2019   |        DH        | checkatrade.com/my-feedback |
 // Integrity Checks                           |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |    23/09/2019   |                  |                             |
+// Created URL_Handler to Enable Members Tests|    23/09/2019   |        DH        | Details are in URL_Handler  |
+// To Run Across All Environments             |                 |                  | (Located in Reusables)      |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -48,10 +49,16 @@ import internal.GlobalVariable as GlobalVariable
 //  THEN -  TODO                      |
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
+
+'######################################################################################################################################################'
+'#  OF COURSE, FOR THIS TO WORK THE TEST CREDENTIALS SHOULD BE AVAILABLE ACROSS ALL ENVIRONMENTS - Username = check1234 - & - Password = testing123   #'
+'######################################################################################################################################################'
+
+// Superceeded by work on 23/09/2019 *
 // Specific Page Withing Members That You Want To Visit
-GlobalVariable.PAGE = "/my-feedback"
+// GlobalVariable.PAGE = "/my-feedback"
 // Members Area - Notification to the Startup Process and URL_Handler
-GlobalVariable.Portal_Subfunction = "members"
+// GlobalVariable.Portal_Subfunction = "members"
 //---------------------------------------------------------------------------------------------------------------
 
 'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test\r\n'

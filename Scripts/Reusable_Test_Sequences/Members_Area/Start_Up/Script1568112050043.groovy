@@ -52,7 +52,7 @@ def Trouble_Logging_In = ""
 
 //-----------------------------------------
 'Do Some Magic with URL(s) See the comments within URL Handler '
-WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/URL_Handler'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/URL_Handler'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 //-----------------------------------------
 'URL - Set from the ENVIRONMENT PROFILE - Specific Page Address Provided By +GlobalVariable.PAGE  '
 'OPEN BROWSER'
@@ -72,22 +72,23 @@ WebUI.waitForPageLoad(60)
 // Verify Header Text   //
 //------------------------
 'Verify Header Text'
-//WebUI.verifyTextPresent(findTestData(data).getValue(Header_Text, GlobalVariable.row), false)
+WebUI.verifyTextPresent(data.getValue("Header_Text", GlobalVariable.row), false)
+//WebUI.verifyTextPresent("", false)
 //------------------------
 // Verify Forgotten Text//
 //------------------------
 'Verify Forgotten Password Text - Link'
-//WebUI.verifyTextPresent(findTestData(data).getValue(Forgotten_Password, GlobalVariable.row), false)
+WebUI.verifyTextPresent(data.getValue("Forgotten_Password", GlobalVariable.row), false)
 //------------------------
 // Verify Forgotten Text//
 //------------------------
 'Verify Forgotten Username Text - Link'
-//WebUI.verifyTextPresent(findTestData(data).getValue(Forgotten_Username, GlobalVariable.row), false)
+WebUI.verifyTextPresent(data.getValue("Forgotten_Username", GlobalVariable.row), false)
 //------------------------
 // Verify Forgotten Text//
 //------------------------
 'Verify Trouble Logging In Text - Link'
-//WebUI.verifyTextPresent(findTestData(data).getValue(Trouble_Logging_In, GlobalVariable.row), false)
+WebUI.verifyTextPresent(data.getValue("Trouble_Logging_In", GlobalVariable.row), false)
 
 ///////////////////////////////////////
 //                END                //

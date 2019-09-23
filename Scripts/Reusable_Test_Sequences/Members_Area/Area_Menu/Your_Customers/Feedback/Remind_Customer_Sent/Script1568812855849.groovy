@@ -83,13 +83,15 @@ WebUI.setText(findTestObject('Object Repository/Page_Members Area/remind_Phone')
 //   Hit <Submit>                               //
 //////////////////////////////////////////////////
 WebUI.scrollToPosition(250, 250)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/remind_Submit_Button'), 25)
 WebUI.click(findTestObject('Object Repository/Page_Members Area/remind_Submit_Button'))
 
 //////////////////////////////////////////////////
 // Confirm Thank You Message and other Messaging//
 //////////////////////////////////////////////////
 
-WebUI.delay(1)
+WebUI.delay(2) // will look at puttting aa waitforelement here - Not sure if the remind_Submit_Button is still visible and enabled after hitting once
+WebUI.waitForPageLoad(10)
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/remind_Message_Dispel'), 25)
 '----------------------------------------------'
@@ -101,7 +103,7 @@ WebUI.verifyTextPresent('Your data has been submitted', false)
 //////////////////////////////////////////////////
 //   Dispel Thank You Message                   //
 //////////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/remind_Message_Dispel'), 10)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/remind_Message_Dispel'), 25)
 WebUI.click(findTestObject('Object Repository/Page_Members Area/remind_Message_Dispel'))
 WebUI.scrollToPosition(250, 250)
 

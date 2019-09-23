@@ -53,7 +53,7 @@ import internal.GlobalVariable as GlobalVariable
 '      CURRENT DEV (MASTER) Environment'
 //     1) https://www.current.dev.checkatrade.com/
 //     2) https://admin.current.dev.checkatrade.com/
-//     3) https://members.current.dev.checkatrade.com/
+//     3) https://www.members.current.dev.checkatrade.com/
 '      Dev Test Environment'
 //     1) http://www.dev.checkatrade.com/
 //     2) http://admin.dev.checkatrade.com/
@@ -72,21 +72,43 @@ import internal.GlobalVariable as GlobalVariable
 //-----------------------------------------
 // if (GlobalVariable.Portal_Subfunction == "members"  // GlobalVariable.PAGE == "/my-feedback"
 
-if (GlobalVariable.Portal_Subfunction == "members" && GlobalVariable.URL == "https://www.preview.checkatrade.com/"){
-	GlobalVariable.URL = "https://preview-ma.checkatrade.com/"
-}
+//if (GlobalVariable.Portal_Subfunction == "members" && GlobalVariable.URL == "https://www.preview.checkatrade.com/"){
+//	GlobalVariable.URL = "https://preview-ma.checkatrade.com/"
+//}
+//
+//else {
+//	GlobalVariable.URL = "https://preview-ma.checkatrade.com/"
+//}
 
-else {
-	GlobalVariable.URL = "https://preview-ma.checkatrade.com/"
-}
-
-
-
-
-
+'######################################################################################################################################################'
+'#  OF COURSE, FOR THIS TO WORK THE TEST CREDENTIALS SHOULD BE AVAILABLE ACROSS ALL ENVIRONMENTS - Username = check1234 - & - Password = testing123   #'
+'######################################################################################################################################################'
 
 //----------------------------------------------
+	switch (GlobalVariable.URL) {
+		case ~/.*www.current.dev.checkatrade.*/: 	// Current Dev MASTER
+			GlobalVariable.URL = "https://members.current.dev.checkatrade.com/login?return=%2Fdashboard"
+			break
+		case ~/.*www.dev.checkatrade.*/: 			// Dev
+			GlobalVariable.URL = "http://members.dev.checkatrade.com/login?return=%2Fdashboard"
+			break
+		case ~/.*www.next.dev.checkatrade.*/: 		// Next Dev
+			GlobalVariable.URL = "http://members.next.dev.checkatrade.com/login?return=%2Fdashboard"
+			break
+		case ~/.*www.preview.checkatrade.*/: 		// Preview
+			GlobalVariable.URL = "https://preview-ma.checkatrade.com/login?return=%2Fdashboard"
+			break
+		case ~/.*www.checkatrade.*/: 				// Live
+			GlobalVariable.URL = "https://members.checkatrade.com/login?return=%2Fdashboard"
+			break
+		default:									// DEFAULT
+			GlobalVariable.URL = "https://members.current.dev.checkatrade.com/login?return=%2Fdashboard" // Going to set DEFAULT to CURRENT
+			break
+	}
+	GlobalVariable.URL
 
+//----------------------------------------------
+WebUI.delay(10)
 ////-----------------------------
 //// E N D                      |
 ////-----------------------------
