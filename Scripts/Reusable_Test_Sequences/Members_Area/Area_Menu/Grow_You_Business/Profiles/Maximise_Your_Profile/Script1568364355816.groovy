@@ -44,7 +44,7 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////////////////////
 //  Wait for Maximise Your Profile Element Availability   //
 ////////////////////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/a_Maximise your profile video'), 5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/a_Maximise your profile video'), 25)
 
 ////////////////////////////////////////////////////////////
 //         Click Maximise Your Profile Element            //

@@ -44,7 +44,7 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////////
 // Wait for Company Logo Element Availability //
 ////////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/a_Company logo'), 5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/a_Company logo'), 25)
 
 ////////////////////////////////////////////
 //  Click Company Logo Element            //

@@ -30,7 +30,7 @@ import internal.GlobalVariable as GlobalVariable
 // Functionality - From members Area          |    16/09/2019   |        DH        | checkatrade.com/my-profile  |
 // Integrity Checks                           |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Added Test Coverage, extended extensively  |    24/09/2019   |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -65,28 +65,95 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Da
 	//-----------------------------------------
 
 	//-----------------------------------------
-	// Confirm Data on Top - My_profile Page  |
-	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/My_Profile'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-
-	//-----------------------------------------
 	// Navigate to Profile Text - Sub section |
 	//-----------------------------------------
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_You_Business/My_Profile'), [:], FailureHandling.STOP_ON_FAILURE)
 
+	//-----------------------------------------
+	// Verify Data on Top - My_profile Page   |
+	//-----------------------------------------
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/My_Profile'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+	//-----------------------------------------
+	// Navigate - To profile text Page        |
+	//-----------------------------------------// My Profile Page - Profile text
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_You_Business/Profiles/Profile_Text'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
 	//-----------------------------------------
 	// Verify Profile Text - Sub section      |
 	//-----------------------------------------
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Profiles/Profile_Text'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 	//-----------------------------------------
-	// Update Profile Text - Sub section      |
+	// Navigate - To Search appearances Page  |
+	//-----------------------------------------// My Profile Page - Search appearances
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_You_Business/Profiles/Search_Appearances'), [:], FailureHandling.STOP_ON_FAILURE)
+	
 	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Profiles/Profile_Text'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-
+	// Verify Search appearances - Sub section|
+	//-----------------------------------------
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Profiles/Search_Appearances'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+		
+	//-----------------------------------------
+	// Navigate - To Where you work Page      |
+	//-----------------------------------------// My Profile Page - Where you work
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_You_Business/Profiles/Where_You_Work'), [:], FailureHandling.STOP_ON_FAILURE)
 	
+	//-----------------------------------------
+	//Verify Where you work Page - Sub section|
+	//-----------------------------------------
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Profiles/Where_You_Work'), [:], FailureHandling.CONTINUE_ON_FAILURE) 
+		
+	//-----------------------------------------
+	// Navigate - To the Company logo Page    |
+	//-----------------------------------------// My Profile Page - Company logo 	
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_You_Business/Profiles/Company_Logo'), [:], FailureHandling.STOP_ON_FAILURE)
 	
+	//-----------------------------------------
+	// Verify Company logo - Sub section      |
+	//-----------------------------------------
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Profiles/Company_Logo'), [:], FailureHandling.CONTINUE_ON_FAILURE) 
+		
+	//-----------------------------------------
+	// Navigate - To the Banner Iname Page    |
+	//-----------------------------------------// My Profile Page - Banner image
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_You_Business/Profiles/BAnner_Image'), [:], FailureHandling.STOP_ON_FAILURE)
 	
+	//-----------------------------------------
+	// Verify Banner image - Sub section      |
+	//-----------------------------------------
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Profiles/Banner_Image'), [:], FailureHandling.CONTINUE_ON_FAILURE) 
+		
+	//-----------------------------------------
+	// Navigate - To Vetting Information Page |
+	//-----------------------------------------// My Profile Page - Vetting information
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_You_Business/Profiles/Vetting_Information'), [:], FailureHandling.STOP_ON_FAILURE)
+	
+	//-----------------------------------------
+	// Verify Vetting info - Sub section      |
+	//-----------------------------------------
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Profiles/Vetting_Information'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
+	//-----------------------------------------
+	// Navigate - To the Insurance Page       |
+	//-----------------------------------------// My Profile Page - Insurance
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_You_Business/Profiles/Insurance'), [:], FailureHandling.STOP_ON_FAILURE)
+	
+	//-----------------------------------------
+	// Verify Insurance - Sub section         |
+	//-----------------------------------------
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Profiles/Insurance'), [:], FailureHandling.CONTINUE_ON_FAILURE)  
+		
+	//-----------------------------------------
+	// Navigate - To Maximise your Profile Pge|
+	//-----------------------------------------// My Profile Page - 'Maximise your profile' video
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_You_Business/Profiles/Maximise_Your_Profile'), [:], FailureHandling.STOP_ON_FAILURE)
+	
+	//-----------------------------------------
+	// Verify Maximise your profile - Sub Sec |
+	//-----------------------------------------
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Profiles/Maximise_You_Profile'), [:], FailureHandling.CONTINUE_ON_FAILURE) 
+		
 	//-----------------------------------------
 	// Log OFF the Members Area               |
 	//-----------------------------------------

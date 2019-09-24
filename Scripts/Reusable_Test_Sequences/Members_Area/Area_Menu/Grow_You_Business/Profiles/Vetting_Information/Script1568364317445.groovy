@@ -44,7 +44,7 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////////////////////
 //    Wait for Vetting Information Element Availability   //
 ////////////////////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/a_Vetting information'), 5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/a_Vetting information'), 25)
 
 ////////////////////////////////////////////////////////////
 //           Click Vetting Information Element            //

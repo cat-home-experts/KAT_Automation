@@ -22,7 +22,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-//  Navigate <MY PROFIVE> from <Grow Your Bus>|   11/09/2019    |      DH          |                             |
+//  Navigate <MY PROFILE> from <Grow Your Bus>|   11/09/2019    |      DH          |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -45,12 +45,17 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////
 //Wait for My Profile Element Availability//
 ////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/div_My Profile Page'), 5)
+WebUI.waitForElementPresent(findTestObject('Page_Members Area/My_Profile_Page_img'), 5)
+
+////////////////////////////////////////////
+//           Scroll To Element            //
+////////////////////////////////////////////
+WebUI.scrollToElement(findTestObject('Page_Members Area/My_Profile_Page_img'), 5)
 
 ////////////////////////////////////////////
 //  Click Log My Profile Element          //
 ////////////////////////////////////////////
-WebUI.click(findTestObject('Object Repository/Page_Members Area/div_My Profile Page'))
+WebUI.click(findTestObject('Page_Members Area/My_Profile_Page_img'))
 
 ///////////////////////////////////////
 //                END                //

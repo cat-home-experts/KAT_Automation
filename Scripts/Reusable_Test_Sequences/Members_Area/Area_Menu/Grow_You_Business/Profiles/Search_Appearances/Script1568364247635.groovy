@@ -44,7 +44,7 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////////////////////
 //     Wait for Search Appearance Element Availability    //
 ////////////////////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/a_Search appearances'), 5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/a_Search appearances'), 25)
 
 ////////////////////////////////////////////////////////////
 //             Click Search Appearance Element            //

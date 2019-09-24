@@ -41,7 +41,7 @@ import internal.GlobalVariable as GlobalVariable
 //                                                                                                               |
 // There are some irregularities in the URL specification/standardisation.....                                   |
 //                                                                                                               |
-//      Preview                                                                                                  | 
+//      Preview    (the page link takes you to the Live Members Area)                                            | 
 // eg - Members Area is on - https://preview-ma.checkatrade.com                                                  |   
 //      Dev Test                                                                                                 |
 //          Dev Test is on - http://members.dev.checkatrade.com                                                  |
@@ -108,7 +108,7 @@ import internal.GlobalVariable as GlobalVariable
 	GlobalVariable.URL
 
 //----------------------------------------------
-WebUI.delay(10)
+//WebUI.delay(10)
 ////-----------------------------
 //// E N D                      |
 ////-----------------------------

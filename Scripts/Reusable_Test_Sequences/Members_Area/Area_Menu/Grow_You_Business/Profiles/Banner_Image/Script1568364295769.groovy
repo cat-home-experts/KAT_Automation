@@ -44,7 +44,7 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////////
 // Wait for Banner Image Element Availability //
 ////////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/a_Banner image'), 5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/a_Banner image'), 25)
 
 ////////////////////////////////////////////
 //  Click Banner_Image Element            //

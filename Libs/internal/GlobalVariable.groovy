@@ -104,7 +104,7 @@ Profile Preview : Datasheet location (needs to change to shared repo local)</p>
     public static Object Returns_Verification
      
     /**
-     * <p>Profile default : URL_Handler Global</p>
+     * <p>Profile default : URL_Handler Global, some of the links do go to the expected places, hence the handler</p>
      */
     public static Object Portal_Subfunction
      

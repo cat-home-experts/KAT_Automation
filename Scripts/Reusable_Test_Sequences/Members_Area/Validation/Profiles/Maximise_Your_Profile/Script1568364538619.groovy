@@ -100,6 +100,13 @@ WebUI.verifyTextPresent("Checkatrade - Maximise your profile", false)
 WebUI.closeWindowUrl('https://www.youtube.com/watch?v=ujuJlrazzGc&t=3s')
 '----------------------------------------------'
 
+//-----------------------------
+// Back to PROFILE Block menu |
+WebUI.back()
+///////////////////////////////////////
+//                END                //
+///////////////////////////////////////
+
 ///////////////////////////////////////
 //                END                //
 ///////////////////////////////////////

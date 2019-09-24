@@ -4,6 +4,16 @@
    <name>a_Profile text</name>
    <tag></tag>
    <elementGuidId>2212e045-97cd-42da-bd69-cbce7ef8680b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//a[@href = '/profile-text' and (text() = ' Profile text ' or . = ' Profile text ')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/app-root/app-my-profile-page/div[2]/div/a[1]/text()</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>

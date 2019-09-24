@@ -78,8 +78,9 @@ WebUI.verifyTextPresent("Your profile should be short - customers will only read
 '----------------------------------------------'
 WebUI.verifyTextPresent("Please note that only the first 650 characters", false)
 '----------------------------------------------'
-
-
+//-----------------------------
+// Back to PROFILE Block menu |
+WebUI.back()
 ///////////////////////////////////////
 //                END                //
 ///////////////////////////////////////
