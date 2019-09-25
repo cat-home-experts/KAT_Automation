@@ -74,6 +74,10 @@ WebUI.verifyTextPresent("Dashboard", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("MEMBER ID:", false)
 '----------------------------------------------'
+// MEMBER ID CHECK
+WebUI.verifyTextPresent(findTestData('Members_Test_Data').getValue('MEMBER_ID', 1), false)
+'----------------------------------------------'
+
 ///////////////////////////////////////
 //                END                //
 ///////////////////////////////////////

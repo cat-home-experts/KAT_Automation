@@ -103,6 +103,7 @@ import internal.GlobalVariable as GlobalVariable
 			break
 		default:									// DEFAULT
 			GlobalVariable.URL = "https://members.current.dev.checkatrade.com/login?return=%2Fdashboard" // Going to set DEFAULT to CURRENT
+			System.out.println("*  *  *  There is Currently No Configuration for this URL, We have defaulted URL to CURRENT (URL_Handler) *  *  * ")
 			break
 	}
 	GlobalVariable.URL

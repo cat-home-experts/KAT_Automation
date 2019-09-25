@@ -44,14 +44,14 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////////////////////
 //   Wait for Update Company Logo Element Availability    //
 ////////////////////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/h2_Update your company banner image here'), 25)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Upload Company Logo'), 25)
 
 ////////////////////////////////////////////////////////////
 // Take an Initial Screenshot of Company Logo Image Page  //
 ////////////////////////////////////////////////////////////
 
 // Stores in Project <Screenshots> Folder
-CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Your_Customers_Company_Logo_Image.png', FailureHandling.OPTIONAL)
+//CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Your_Customers_Company_Logo_Image.png', FailureHandling.OPTIONAL)
 
 ////////////////////////////////////////////////////////////
 //         Verify Header Text on Key Portal Areas         //
@@ -69,16 +69,20 @@ WebUI.verifyTextPresent("The image has to be 8MB or smaller", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("All changes are monitored by Checkatrade staff", false)
 '----------------------------------------------'
+WebUI.verifyTextPresent("Upload Company Logo", false)
+'----------------------------------------------'
 WebUI.verifyTextPresent("By uploading a logo you are confirming", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("House rules: All changes will be moderated", false)
 '----------------------------------------------'
 '----------------------------------------------'
 // CHECKBOX IMAGE UPLOAD - CheckBox to enable Upload Button
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/input_image file_chkHouseRules'), 25)
 WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/input_image file_chkHouseRules'),5)
 '----------------------------------------------'
 '----------------------------------------------'
 // Click UPLOAD Button - CheckBox to enable Upload Button
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Upload Company Logo'), 25)
 WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Upload Company Logo'),5)
 '----------------------------------------------'
 '----------------------------------------------'
@@ -88,6 +92,16 @@ WebUI.verifyTextPresent("Your New logo", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Select Logo", false)
 '----------------------------------------------'
+WebUI.verifyTextPresent("The new photo needs to be a JPEG", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("For best results, the image should be", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("The image has to be 8MB or smaller", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("We recommend these browsers", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Close", false)
+'----------------------------------------------'
 // NEED TO EXTEND THE TOOL IF WE ARE TO INTERACT WITH WINDOWS COMPONENTS (Explorer)
 // Clicking Select Brings Up Explorer Search Dialog) extension = Winnium
 '----------------------------------------------'
@@ -95,6 +109,7 @@ WebUI.verifyTextPresent("Select Logo", false)
 // Need To Close The popout
 WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Close'))
 '----------------------------------------------'
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Upload Company Logo'), 25)
 '----------------------------------------------'
 // Need To HIT Back Button to Return to Previous Page
 WebUI.back()

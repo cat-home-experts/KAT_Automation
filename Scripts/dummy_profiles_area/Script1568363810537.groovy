@@ -30,7 +30,7 @@ WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/h2
 
 WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/i_Search appearances_ace-icon fa fa-list-alt bigger-400'))
 
-WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Save Search Appearance Info'))
+//WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Save Search Appearance Info'))
 
 //WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/a_Where you work'))
 
@@ -48,7 +48,7 @@ WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/h2
 
 WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/h2_Update your accreditations and services here'))
 
-WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Add Accreditation'))
+//WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Add Accreditation'))
 
 WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/h5_Add New Accreditation'))
 

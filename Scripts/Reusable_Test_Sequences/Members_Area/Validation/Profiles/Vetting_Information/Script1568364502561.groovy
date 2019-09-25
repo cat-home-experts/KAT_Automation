@@ -13,12 +13,91 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-//TODO
+//-----------------------
+// TEST HISTORY HEADER - |
+//-----------------------
+// Any changes to this script, please update the next available row below, with date, in the DATE CREATED column,
+// Your NAme in the CREATED BY column, and Finaly, The actual change implemented in the NOTES column.
+//
+//---------------------------------------------------------------------------------------------------------------
+//       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
+//---------------------------------------------------------------------------------------------------------------
+//  Verify <Profile><Vetting Information> Page|   25/09/2019    |      DH          |                             |
+//  from <Grow Your Business>                 |                 |                  |                             |
+//---------------------------------------------------------------------------------------------------------------
+//                                            |                 |                  |                             |
+//---------------------------------------------------------------------------------------------------------------
+//                                            |                 |                  |                             |
+//---------------------------------------------------------------------------------------------------------------
+//                                            |                 |                  |                             |
+//---------------------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------
+//                                                                                                               |
+//	GIVEN -                                                                                                      |
+//                                                                                                               |
+//	WHEN -                                                                                                       |
+//                                                                                                               |
+//  THEN -                                                                                                       |
+//                                                                                                               |
+//---------------------------------------------------------------------------------------------------------------
 
+////////////////////////////////////////////////////////////
+//     Wait for Add Acreditation Button Availability      //
+////////////////////////////////////////////////////////////
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Add Accreditation'), 25)
 
-//-----------------------------
-// Back to PROFILE Block menu |
+////////////////////////////////////////////////////////////
+//     Take an Initial Screenshot of Banner Image Page    //
+////////////////////////////////////////////////////////////
+
+// Stores in Project <Screenshots> Folder
+//CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Your_Customers_Vetting_Info.png', FailureHandling.OPTIONAL)
+
+////////////////////////////////////////////////////////////
+//         Verify Header Text on Key Portal Areas         //
+////////////////////////////////////////////////////////////
+'---------------------------------'
+'THIS TAB - Vetting Information   |'
+'----------------------------------------------'
+// MEMBER ID CHECK
+WebUI.verifyTextPresent(findTestData('Members_Test_Data').getValue('MEMBER_ID', 1), false)
+'----------------------------------------------'
+
+WebUI.verifyTextPresent("Update your accreditations and services here", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Accreditations & Memberships", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Below are the accreditations and memberships displayed on your profile page. You can add more by clicking on the link below", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Approved", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Type", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Description", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Expires", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Add Accreditation", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("All changes are monitored by Checkatrade staff", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Services", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("You may update the services that you offer to customers", false)
+'----------------------------------------------'
+'----------------------------------------------'
+// Hit <Add Accreditation>
+WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Add Accreditation'),5)
+//----------------------------------------------
+// Seperate Container For Add Accreditation
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Profiles/Vetting_Information_Sub/Add_Accreditation'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+//----------------------------------------------
+// Seperate Container For Service Section of Screem
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Profiles/Vetting_Information_Sub/Service_Section'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+//----------------------------------------------
+// Need To HIT Back Button to Return to Previous Page
 WebUI.back()
+'----------------------------------------------'
 ///////////////////////////////////////
 //                END                //
 ///////////////////////////////////////

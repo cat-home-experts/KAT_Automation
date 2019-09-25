@@ -12,11 +12,11 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-
+import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://preview-ma.checkatrade.com/login?return=%2Fmy-profile-page')
+WebUI.navigateToUrl('https://preview-ma.checkatrade.com/work-area')
 
 WebUI.maximizeWindow()
 
@@ -26,46 +26,26 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Profiles_Page/Page_Memb
 
 WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Log in'))
 
-WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/a_Profile text')) // //*[@id="profilePage"]/a/div[1]/img
+WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/a_Profile text') // //*[@id="profilePage"]/a/div[1]/img
+    )
 
-WebUI.delay(10)
+WebUI.openBrowser('')
 
-//WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/a_Search appearances'))
-//
-//WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/a_Where you work'))
-//
-//WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/a_Company logo'))
-//
-//WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/a_Banner image'))
-//
-//WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/a_Vetting information'))
-//
-//WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/a_Insurance'))
-//'-----------------------------------------------------------------------------------------'
-//// Select from main COMPANY
-//WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/a_Company logo'))
-//// checkbox
-//WebUI.click(findTestObject('Profiles_Page/Page_Members Area/input_image file_chkHouseRules'))
-////  upload button
-//WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Upload Company Logo'))
-//// popout window header
-//WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/div_Add Company Logo'))
-//// Hit Select on popout - windows explorer appears
-//WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Select Logo'))
-//// close popout
-//WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Close'))
-//'---------------------------------------------------------------------------------------'
-//// Select from main BANNER
-//WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/a_Banner image'))
-//// checkbox
-//WebUI.click(findTestObject('Profiles_Page/Page_Members Area/input_image file_chkHouseRules'))
-////  upload button
-//WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Upload Banner Image'))
-//// popout window header
-//WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/div_Add Banner Image'))
-//// Hit Select on popout - windows explorer appears
-//WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Select Banner Image'))
-//// close popout
-//WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Close'))
-//'------------------------------------------'
-//
+WebUI.navigateToUrl('https://preview-ma.checkatrade.com/work-area')
+
+WebUI.maximizeWindow()
+
+WebUI.setText(findTestObject('Object Repository/Profiles_Page/Page_Members Area/input_Username_username'), 'check1234')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Profiles_Page/Page_Members Area/input_Password_password'), 'fzqqY0qJjYTuJiVJRZh4ag==')
+
+WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Log in'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/a_Profile text') // //*[@id="profilePage"]/a/div[1]/img
+    )
+
+WebUI.setText(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/textarea_All BN postcode areas_w-100 ng-untouched ng-valid ng-dirty'), 
+    '  This profile has been set up by Checkatrade.com for training/testing purposes. Please do not use the details on this page for contacting US!!')
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/button_Save Work Location'))
+

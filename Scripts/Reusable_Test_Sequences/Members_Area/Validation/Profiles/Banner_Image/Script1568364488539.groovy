@@ -44,14 +44,14 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////////////////////
 //     Wait for Update Banner Element Availability        //
 ////////////////////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/h2_Update your company banner image here'), 25)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Upload Banner Image'), 25)
 
 ////////////////////////////////////////////////////////////
 //     Take an Initial Screenshot of Banner Image Page    //
 ////////////////////////////////////////////////////////////
 
 // Stores in Project <Screenshots> Folder
-CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Your_Customers_Banner_Image.png', FailureHandling.OPTIONAL)
+//CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Your_Customers_Banner_Image.png', FailureHandling.OPTIONAL)
 
 ////////////////////////////////////////////////////////////
 //         Verify Header Text on Key Portal Areas         //
@@ -59,6 +59,8 @@ CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntir
 '---------------------------------'
 'THIS TAB - Banner Image          |'
 '---------------------------------'
+WebUI.verifyTextPresent("Update your company banner image here", false)
+'----------------------------------------------'
 WebUI.verifyTextPresent("Choose a new image", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("The new banner image needs to be a JPEG", false)
@@ -75,10 +77,12 @@ WebUI.verifyTextPresent("House rules: All changes will be moderated", false)
 '----------------------------------------------'
 '----------------------------------------------'
 // CHECKBOX IMAGE UPLOAD - CheckBox to enable Upload Button
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/input_image file_chkHouseRules'), 25)
 WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/input_image file_chkHouseRules'),5)
 '----------------------------------------------'
 '----------------------------------------------'
 // Click UPLOAD Button - CheckBox to enable Upload Button
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Upload Banner Image'), 25)
 WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Upload Banner Image'),5)
 '----------------------------------------------'
 '----------------------------------------------'
@@ -95,6 +99,7 @@ WebUI.verifyTextPresent("Select Banner Image", false)
 // Need To Close The popout
 WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Close'))
 '----------------------------------------------'
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Upload Banner Image'), 25)
 '----------------------------------------------'
 // Need To HIT Back Button to Return to Previous Page
 WebUI.back()

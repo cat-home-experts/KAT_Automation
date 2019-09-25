@@ -66,7 +66,7 @@ WebUI.waitForElementPresent(findTestObject('Checkatrade - Maximise your profile 
 ////////////////////////////////////////////////////////////
 
 // Stores in Project <Screenshots> Folder
-CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Your_Customers_Maximise_Profile.png', FailureHandling.OPTIONAL)
+// CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Your_Customers_Maximise_Profile.png', FailureHandling.OPTIONAL)
 
 ////////////////////////////////////////////////////////////
 //         Verify Header Text on Key Portal Areas         //
@@ -76,24 +76,7 @@ CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntir
 '---------------------------------'
 WebUI.verifyTextPresent("Checkatrade - Maximise your profile", false)
 '----------------------------------------------'
-'----------------------------------------------'
-'----------------------------------------------'
-// Select Document Button
-//WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Select Document'))
-'----------------------------------------------'
-'----------------------------------------------'
-//WebUI.verifyTextPresent("Add Company Logo", false)
-'----------------------------------------------'
-//WebUI.verifyTextPresent("Your New logo", false)
-'----------------------------------------------'
-//WebUI.verifyTextPresent("Select Logo", false)
-'----------------------------------------------'
-// // NEED TO EXTEND THE TOOL IF WE ARE TO INTERACT WITH WINDOWS COMPONENTS (Explorer)
-// Clicking Select Brings Up Explorer Search Dialog) extension = Winnium
-'----------------------------------------------'
-'----------------------------------------------'
-// // Need To Close The popout
-// WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Close'))
+WebUI.verifyTextPresent("Your online tradesperson profile is crucial for attracting potential customers", false)
 '----------------------------------------------'
 '----------------------------------------------'
 // Close th YOUTUBE Checkatrade Page
@@ -107,6 +90,3 @@ WebUI.back()
 //                END                //
 ///////////////////////////////////////
 
-///////////////////////////////////////
-//                END                //
-///////////////////////////////////////

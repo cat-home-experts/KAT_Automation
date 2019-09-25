@@ -53,7 +53,7 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/
 ////////////////////////////////////////////////////////////
 //WebUI.takeScreenshot('Reports/Screenshots/Initial_Members_page.png')
 // Stores in Project <Screenshots> Folder
-CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Your_Customers_My_Profile.png', FailureHandling.OPTIONAL)
+//CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Your_Customers_My_Profile.png', FailureHandling.OPTIONAL)
 
 ////////////////////////////////////////////////////////////
 //         Verify Header Text on Key Portal Areas         //
@@ -77,6 +77,9 @@ WebUI.verifyTextPresent("Insurance", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("'Maximise your profile' video", false)
 '----------------------------------------------'
+// MEMBER ID CHECK
+WebUI.verifyTextPresent(findTestData('Members_Test_Data').getValue('MEMBER_ID', 1), false)
+//----------------------------------------------
 
 
 ///////////////////////////////////////

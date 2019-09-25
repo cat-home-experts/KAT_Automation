@@ -16,7 +16,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://preview-ma.checkatrade.com/login?return=%2Fdashboard')
+WebUI.navigateToUrl('https://preview-ma.checkatrade.com/vetting-information')
 
 WebUI.setText(findTestObject('Page_Members Area/input_Username_username'), 'check1234')
 
@@ -24,5 +24,45 @@ WebUI.setEncryptedText(findTestObject('Page_Members Area/input_Password_password
 
 WebUI.click(findTestObject('Page_Members Area/button_Log in'))
 
-WebUI.click(findTestObject('Page_Members Area/My_Profile_Page_img'))
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/button_Save Vetting Information'))
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://preview-ma.checkatrade.com/vetting-information')
+
+WebUI.setText(findTestObject('Object Repository/Page_Members Area/input_Username_username'), 'check1234')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Members Area/input_Password_password'), 'fzqqY0qJjYTuJiVJRZh4ag==')
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/button_Log in'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/button_Save Vetting Information'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Domestic Work_workDomestic'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Commercial Work_workCommercial'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Commercial Work_work24Hours'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Free Estimates_workFreeEstimates'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Insurance Work Undertaken_workInsurance'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Cards accepted_cardsAccepted'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Free Estimates (excl Insurance)_workFreeEstimatesExclIns'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Domestic Work_workDomestic'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Commercial Work_workCommercial'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Commercial Work_work24Hours'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Free Estimates_workFreeEstimates'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Insurance Work Undertaken_workInsurance'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Cards accepted_cardsAccepted'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Free Estimates (excl Insurance)_workFreeEstimatesExclIns'))
 

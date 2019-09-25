@@ -12,11 +12,34 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-
+import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://preview-ma.checkatrade.com/login?return=%2Fdashboard')
+WebUI.navigateToUrl('https://preview-ma.checkatrade.com/login?return=%2Fvetting-information')
+
+WebUI.setText(findTestObject('Page_Members Area/input_Username_username'), 'check1234')
+
+WebUI.setEncryptedText(findTestObject('Page_Members Area/input_Password_password'), 'fzqqY0qJjYTuJiVJRZh4ag==')
+
+WebUI.click(findTestObject('Page_Members Area/button_Log in'))
+
+WebUI.click(findTestObject('Page_Members Area/button_Add Accreditation'))
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/select_Select accreditation type'), 
+    '128', true)
+
+WebUI.setText(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/textarea_Notes_txtNotes'), 
+    'test')
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/button_Select Document'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/button_Close'))
+
+WebUI.openBrowser('' // https://preview-ma.checkatrade.com/insurance
+    )
+
+WebUI.navigateToUrl('https://preview-ma.checkatrade.com/login?return=%2Finsurance')
 
 WebUI.setText(findTestObject('Object Repository/Page_Members Area/input_Username_username'), 'check1234')
 
@@ -24,19 +47,9 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Page_Members Area/input
 
 WebUI.click(findTestObject('Object Repository/Page_Members Area/button_Log in'))
 
-WebUI.click(findTestObject('Object Repository/Page_Members Area/div_My Feedback'))
+WebUI.click(findTestObject('Page_Members Area/button_Add Accreditation'))
 
-WebUI.click(findTestObject('Object Repository/Page_Members Area/input_Customer Town_btn btn-primary filter'))
+WebUI.click(findTestObject('Object Repository/Page_Members Area/button_Select Document'))
 
-WebUI.click(findTestObject('Object Repository/Page_Members Area/a_Remind customer'))
-
-WebUI.setText(findTestObject('Object Repository/Page_Members Area/input_concat(Customer  s name)_customerName'), 'Fred')
-
-WebUI.click(findTestObject('Object Repository/Page_Members Area/a_Your Customers'))
-
-WebUI.click(findTestObject('Object Repository/Page_Members Area/p_These are your customers who have left feedback'))
-
-WebUI.click(findTestObject('Object Repository/Page_Members Area/a_Awareness'))
-
-WebUI.click(findTestObject('Object Repository/Page_Members Area/h2_Customer Feedback Awareness'))
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/button_Save PLI Details'))
 

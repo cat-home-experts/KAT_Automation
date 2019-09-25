@@ -23,8 +23,9 @@ import org.openqa.selenium.Keys as Keys
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-//  Verify <Profile><Insurance> Page          |   13/09/2019    |      DH          |                             |
-//  from <Grow Your Business>                 |                 |                  |                             |
+//  Verify <Profile><Vetting Information><Add |   25/09/2019    |      DH          |                             |
+//  Accreditation> Page from <Grow Your       |                 |                  |                             |
+//  Business>                                 |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -42,72 +43,65 @@ import org.openqa.selenium.Keys as Keys
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 ////////////////////////////////////////////////////////////
-//         Wait for Insurance Element Availability        //
+//     Wait for Select Document Button Availability       //
 ////////////////////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/button_Select Document'), 25)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/button_Select Document'), 
+    25)
 
 ////////////////////////////////////////////////////////////
-//      Take an Initial Screenshot of Insurance Page      //
+//     Take an Initial Screenshot of Banner Image Page    //
 ////////////////////////////////////////////////////////////
 // Stores in Project <Screenshots> Folder
-//CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Your_Customers_Insurance.png', FailureHandling.OPTIONAL)
+//CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Your_Customers_Add_New_Accreditation.png', FailureHandling.OPTIONAL)
 ////////////////////////////////////////////////////////////
 //         Verify Header Text on Key Portal Areas         //
 ////////////////////////////////////////////////////////////
-'---------------------------------'
-'THIS TAB - Insurance             |'
-'---------------------------------'
-WebUI.verifyTextPresent('Update your Public Liability Insurance Details', false)
+'---------------------------------------------------'
+'THIS TAB - Vetting Information-> New Accreditation |'
+'---------------------------------------------------'
+WebUI.verifyTextPresent('Add New Accreditation', false)
 '----------------------------------------------'
-WebUI.verifyTextPresent('Failure to update your Public Liability Documents may result in', false)
-'----------------------------------------------'
-WebUI.verifyTextPresent('Policy No', false)
-'----------------------------------------------'
-WebUI.verifyTextPresent('Insured By', false)
-'----------------------------------------------'
-WebUI.verifyTextPresent('Insured amount (£ GBP)', false)
-'----------------------------------------------'
-WebUI.verifyTextPresent('(not employers liability cover)', false)
-'----------------------------------------------'
-WebUI.verifyTextPresent('Cost of insurance (£ GBP)', false)
-'----------------------------------------------'
-WebUI.verifyTextPresent('Expiry Data', false)
+WebUI.verifyTextPresent('Proof of accreditation is required before it can be listed on your web page', false)
 '----------------------------------------------'
 WebUI.verifyTextPresent('Supporting Documents', false)
 '----------------------------------------------'
-// Scroll to Sve PLI Button
+WebUI.verifyTextPresent('Select Document', false)
 '----------------------------------------------'
-WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/button_Select Document'))
+WebUI.verifyTextPresent('Add Accreditation', false)
 '----------------------------------------------'
-WebUI.verifyTextPresent('Save PLI Details', false)
+WebUI.verifyTextPresent('Type', false)
 '----------------------------------------------'
-WebUI.verifyTextPresent('You can also provide proof of insurance by the following method', false)
+WebUI.verifyTextPresent('Notes', false)
 '----------------------------------------------'
-WebUI.verifyTextPresent('Email memberservices@checkatrade.com', false)
+WebUI.verifyTextPresent('The file size must be smaller than 9MB', false)
 '----------------------------------------------'
-WebUI.verifyTextPresent('Post a copy of your Policy', false)
+WebUI.verifyTextPresent('Services', false)
 '----------------------------------------------'
-WebUI.verifyTextPresent('Fax a copy to 01243 601246', false)
+WebUI.verifyTextPresent('Close', false)
+//--------------------------------------------------------
+// Select a Accreditation TYPE and Type Some Notes Text  |
+//--------------------------------------------------------
+WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/select_Select accreditation type'),
+	'128', true)
 '----------------------------------------------'
-WebUI.verifyTextPresent('House rules: All changes will be moderated by Checkatrade staff', false)
+WebUI.setText(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/textarea_Notes_txtNotes'),
+	'test')
 '----------------------------------------------'
-// Select Document Button
+// Hit <Select Document>
 '----------------------------------------------'
-WebUI.click(findTestObject('Object Repository/Page_Members Area/button_Select Document'))
-
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/button_Select Document'), 5)
+'----------------------------------------------'
+// Windows Explorer Diplayed
 WebUI.delay(2)
-// Dispell the ExplorerDialog
-WebUI.sendKeys(null, Keys.chord(Keys.ESCAPE))
-//------------
-// Save Form
 '----------------------------------------------'
-WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/button_Save PLI Details'))
-
-// Need To HIT Back Button to Return to Previous Page
+// Dispel Explorer
+WebUI.sendKeys(findTestObject(null), Keys.chord(Keys.ESCAPE))
 '----------------------------------------------'
-WebUI.back()
-'----------------------------------------------'
-
+// Scroll to CLOSE Button
+WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/button_Close'), 5)
+// Close Dialog
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/button_Close'))
+//
 ///////////////////////////////////////
 //                END                //
 ///////////////////////////////////////

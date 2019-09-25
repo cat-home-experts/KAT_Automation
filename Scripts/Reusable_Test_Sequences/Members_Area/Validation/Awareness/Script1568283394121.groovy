@@ -80,6 +80,10 @@ WebUI.verifyTextPresent("of customers were charged more but kept informed", fals
 '----------------------------------------------'
 WebUI.verifyTextPresent("of customers were charged more and were not kept informed", false)
 '----------------------------------------------'
+'----------------------------------------------'
+// MEMBER ID CHECK
+WebUI.verifyTextPresent(findTestData('Members_Test_Data').getValue('MEMBER_ID', 1), false)
+'----------------------------------------------'
 
 
 ///////////////////////////////////////
