@@ -13,6 +13,8 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.awt.Robot as Robot
+import java.awt.event.KeyEvent as KeyEvent
 
 //-----------------------
 // TEST HISTORY HEADER - |
@@ -85,17 +87,18 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Members Area/Pr
 	'128', true)
 '----------------------------------------------'
 WebUI.setText(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/textarea_Notes_txtNotes'),
-	'test')
+	'testing, testing, 123')
 '----------------------------------------------'
 // Hit <Select Document>
 '----------------------------------------------'
-WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/button_Select Document'), 5)
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/button_Select Document'))
 '----------------------------------------------'
-// Windows Explorer Diplayed
-WebUI.delay(2)
-'----------------------------------------------'
+WebUI.delay(1)
 // Dispel Explorer
-WebUI.sendKeys(findTestObject(null), Keys.chord(Keys.ESCAPE))
+//WebUI.sendKeys(findTestObject(null), Keys.chord(Keys.ESCAPE))
+Robot robot = new Robot()
+robot.keyPress(KeyEvent.VK_ESCAPE)
+robot.keyRelease(KeyEvent.VK_ESCAPE)
 '----------------------------------------------'
 // Scroll to CLOSE Button
 WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/button_Close'), 5)

@@ -4,7 +4,17 @@
    <name>input_image file_chkHouseRules</name>
    <tag></tag>
    <elementGuidId>c91463b6-7125-4bd9-b133-63a808cde745</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//input[@id = 'chkHouseRules' and @name = 'chkHouseRules' and @type = 'checkbox']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/app-root/app-banner-image/div/div/div[1]/form/div/div[2]/div[1]/label</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

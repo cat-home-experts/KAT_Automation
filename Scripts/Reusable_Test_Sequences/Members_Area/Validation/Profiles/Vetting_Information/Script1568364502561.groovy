@@ -62,7 +62,8 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page
 // MEMBER ID CHECK
 WebUI.verifyTextPresent(findTestData('Members_Test_Data').getValue('MEMBER_ID', 1), false)
 '----------------------------------------------'
-
+WebUI.verifyTextPresent("MEMBER ID", false)
+'----------------------------------------------'
 WebUI.verifyTextPresent("Update your accreditations and services here", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Accreditations & Memberships", false)
@@ -79,7 +80,7 @@ WebUI.verifyTextPresent("Expires", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Add Accreditation", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("All changes are monitored by Checkatrade staff", false)
+// WebUI.verifyTextPresent("All changes are monitored by Checkatrade staff", false) // covered under sub folder
 '----------------------------------------------'
 WebUI.verifyTextPresent("Services", false)
 '----------------------------------------------'
@@ -87,13 +88,14 @@ WebUI.verifyTextPresent("You may update the services that you offer to customers
 '----------------------------------------------'
 '----------------------------------------------'
 // Hit <Add Accreditation>
-WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Add Accreditation'),5)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Add Accreditation'), 25)
+WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Add Accreditation'))
 //----------------------------------------------
 // Seperate Container For Add Accreditation
 WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Profiles/Vetting_Information_Sub/Add_Accreditation'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 //----------------------------------------------
 // Seperate Container For Service Section of Screem
-WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Profiles/Vetting_Information_Sub/Service_Section'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Profiles/Vetting_Information_Sub/Services_Section'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 //----------------------------------------------
 // Need To HIT Back Button to Return to Previous Page
 WebUI.back()

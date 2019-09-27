@@ -4,6 +4,16 @@
    <name>button_Add Accreditation</name>
    <tag></tag>
    <elementGuidId>9cd85654-1666-4619-9707-cb8a87d3dafd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@type='button']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'button' and (text() = ' Add Accreditation ' or . = ' Add Accreditation ')]</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>

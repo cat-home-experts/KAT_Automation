@@ -45,17 +45,17 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////
 //Wait for My Profile Element Availability//
 ////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Page_Members Area/My_Profile_Page_img'), 5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/My_Profile_Page_img'), 25)
 
 ////////////////////////////////////////////
 //           Scroll To Element            //
 ////////////////////////////////////////////
-WebUI.scrollToElement(findTestObject('Page_Members Area/My_Profile_Page_img'), 5)
+WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/My_Profile_Page_img'), 5)
 
 ////////////////////////////////////////////
 //  Click Log My Profile Element          //
 ////////////////////////////////////////////
-WebUI.click(findTestObject('Page_Members Area/My_Profile_Page_img'))
+WebUI.click(findTestObject('Object Repository/Page_Members Area/My_Profile_Page_img'))
 
 ///////////////////////////////////////
 //                END                //

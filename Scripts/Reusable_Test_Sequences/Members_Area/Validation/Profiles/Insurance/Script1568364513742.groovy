@@ -13,6 +13,8 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.awt.Robot as Robot
+import java.awt.event.KeyEvent as KeyEvent
 
 //-----------------------
 // TEST HISTORY HEADER - |
@@ -44,7 +46,7 @@ import org.openqa.selenium.Keys as Keys
 ////////////////////////////////////////////////////////////
 //         Wait for Insurance Element Availability        //
 ////////////////////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/button_Select Document'), 25)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Profiles_Page/Page_Members Area/Page_Members Area/button_Select Document'), 25)
 
 ////////////////////////////////////////////////////////////
 //      Take an Initial Screenshot of Insurance Page      //
@@ -56,7 +58,12 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/
 ////////////////////////////////////////////////////////////
 '---------------------------------'
 'THIS TAB - Insurance             |'
-'---------------------------------'
+'----------------------------------------------'
+// MEMBER ID CHECK
+WebUI.verifyTextPresent(findTestData('Members_Test_Data').getValue('MEMBER_ID', 1), false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("MEMBER ID", false)
+'----------------------------------------------'
 WebUI.verifyTextPresent('Update your Public Liability Insurance Details', false)
 '----------------------------------------------'
 WebUI.verifyTextPresent('Failure to update your Public Liability Documents may result in', false)
@@ -71,13 +78,13 @@ WebUI.verifyTextPresent('(not employers liability cover)', false)
 '----------------------------------------------'
 WebUI.verifyTextPresent('Cost of insurance (£ GBP)', false)
 '----------------------------------------------'
-WebUI.verifyTextPresent('Expiry Data', false)
+WebUI.verifyTextPresent('Expiry Date', false)
 '----------------------------------------------'
 WebUI.verifyTextPresent('Supporting Documents', false)
 '----------------------------------------------'
-// Scroll to Sve PLI Button
+// Scroll to Save PLI Details Button
 '----------------------------------------------'
-WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/button_Select Document'))
+WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/button_Save PLI Details'), 5)
 '----------------------------------------------'
 WebUI.verifyTextPresent('Save PLI Details', false)
 '----------------------------------------------'
@@ -91,14 +98,20 @@ WebUI.verifyTextPresent('Fax a copy to 01243 601246', false)
 '----------------------------------------------'
 WebUI.verifyTextPresent('House rules: All changes will be moderated by Checkatrade staff', false)
 '----------------------------------------------'
+// Need To scroll To Select Document Button
+WebUI.scrollToElement(findTestObject('Object Repository/Profiles_Page/Page_Members Area/Page_Members Area/button_Select Document'), 5)
+'----------------------------------------------'
 // Select Document Button
 '----------------------------------------------'
-WebUI.click(findTestObject('Object Repository/Page_Members Area/button_Select Document'))
-
-WebUI.delay(2)
-// Dispell the ExplorerDialog
-WebUI.sendKeys(null, Keys.chord(Keys.ESCAPE))
-//------------
+WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/Page_Members Area/button_Select Document'))
+'----------------------------------------------'
+WebUI.delay(1)
+// Dispel Explorer
+//WebUI.sendKeys(findTestObject(null), Keys.chord(Keys.ESCAPE))
+Robot robot = new Robot()
+robot.keyPress(KeyEvent.VK_ESCAPE)
+robot.keyRelease(KeyEvent.VK_ESCAPE)
+'----------------------------------------------'
 // Save Form
 '----------------------------------------------'
 WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/button_Save PLI Details'))

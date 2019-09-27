@@ -48,6 +48,24 @@
             <profileName>default</profileName>
             <runConfigurationId>Firefox</runConfigurationId>
          </configuration>
+         <runEnabled>false</runEnabled>
+         <testSuiteEntity>Test Suites/Members_My_Profile</testSuiteEntity>
+      </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Web Desktop</groupName>
+            <profileName>default</profileName>
+            <runConfigurationId>Chrome</runConfigurationId>
+         </configuration>
+         <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/Members_My_Profile</testSuiteEntity>
+      </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Web Desktop</groupName>
+            <profileName>default</profileName>
+            <runConfigurationId>Firefox</runConfigurationId>
+         </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Give_Feedback</testSuiteEntity>
       </TestSuiteRunConfiguration>

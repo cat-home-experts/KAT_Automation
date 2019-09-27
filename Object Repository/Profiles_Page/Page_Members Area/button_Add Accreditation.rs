@@ -4,10 +4,16 @@
    <name>button_Add Accreditation</name>
    <tag></tag>
    <elementGuidId>f48a6da3-6e32-4c31-a9bc-aedee6e33fb0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'button' and (text() = ' Add Accreditation ' or . = ' Add Accreditation ')]</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>

@@ -4,6 +4,16 @@
    <name>My_Profile_Page_img</name>
    <tag></tag>
    <elementGuidId>d42e96b2-7f7a-414b-a422-0a675160d86c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@src = 'assets/Resources/Images/DashboardIcons/CAT_My Profile Page.png']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='profilePage']/a/div/img</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>

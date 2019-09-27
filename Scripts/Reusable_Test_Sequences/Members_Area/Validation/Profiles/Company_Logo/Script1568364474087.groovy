@@ -12,6 +12,9 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+import java.awt.Robot as Robot
+import java.awt.event.KeyEvent as KeyEvent
 
 //-----------------------
 // TEST HISTORY HEADER - |
@@ -58,7 +61,12 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page
 ////////////////////////////////////////////////////////////
 '---------------------------------'
 'THIS TAB - Company Logo Image    |'
-'---------------------------------'
+'----------------------------------------------'
+// MEMBER ID CHECK
+WebUI.verifyTextPresent(findTestData('Members_Test_Data').getValue('MEMBER_ID', 1), false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("MEMBER ID", false)
+'----------------------------------------------'
 WebUI.verifyTextPresent("Choose a new image", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("The new logo needs to be a JPEG", false)
@@ -77,18 +85,22 @@ WebUI.verifyTextPresent("House rules: All changes will be moderated", false)
 '----------------------------------------------'
 '----------------------------------------------'
 // CHECKBOX IMAGE UPLOAD - CheckBox to enable Upload Button
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/input_image file_chkHouseRules'), 25)
-WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/input_image file_chkHouseRules'),5)
-'----------------------------------------------'
+WebUI.waitForElementClickable(findTestObject('Page_Members Area/Profiles/Page_Members Area/label_By uploading a logo'), 25)
+WebUI.click(findTestObject('Page_Members Area/Profiles/Page_Members Area/label_By uploading a logo'))
 '----------------------------------------------'
 // Click UPLOAD Button - CheckBox to enable Upload Button
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Upload Company Logo'), 25)
-WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Upload Company Logo'),5)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Upload Company Logo'), 25)
+WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Upload Company Logo'))
 '----------------------------------------------'
+// POPUP INPORT DIALOG/WINDOW
 '----------------------------------------------'
-WebUI.verifyTextPresent("Add Company Logo", false)
+// Sync on Dialog CLOSE Button Appearance
+WebUI.delay(1)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Close'), 25)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Your New logo", false)
+WebUI.verifyTextPresent("Add Company Logo", false) // TODO
+'----------------------------------------------'
+WebUI.verifyTextPresent("Your New Logo", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Select Logo", false)
 '----------------------------------------------'
@@ -105,8 +117,19 @@ WebUI.verifyTextPresent("Close", false)
 // NEED TO EXTEND THE TOOL IF WE ARE TO INTERACT WITH WINDOWS COMPONENTS (Explorer)
 // Clicking Select Brings Up Explorer Search Dialog) extension = Winnium
 '----------------------------------------------'
+// Open Windows Explorer to SEARCH
+WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Select Logo'))
+// SELECT BANNER IMAGE FILE IN THE FUTURE // TODO
+'----------------------------------------------'
+WebUI.delay(1)
+// Dispel Explorer
+//WebUI.sendKeys(findTestObject(null), Keys.chord(Keys.ESCAPE))
+Robot robot = new Robot()
+robot.keyPress(KeyEvent.VK_ESCAPE)
+robot.keyRelease(KeyEvent.VK_ESCAPE)
 '----------------------------------------------'
 // Need To Close The popout
+WebUI.waitForElementClickable(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Close'), 25)
 WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Close'))
 '----------------------------------------------'
 WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Upload Company Logo'), 25)

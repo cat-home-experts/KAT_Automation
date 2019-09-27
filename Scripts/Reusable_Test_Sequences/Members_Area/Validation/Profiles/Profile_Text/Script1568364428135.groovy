@@ -54,14 +54,19 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/
 ////////////////////////////////////////////////////////////
 
 // Stores in Project <Screenshots> Folder
-CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Grow_Your_Business_Profile_Text.png', FailureHandling.OPTIONAL)
+//CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Grow_Your_Business_Profile_Text.png', FailureHandling.OPTIONAL)
 
 ////////////////////////////////////////////////////////////
 //         Verify Header Text on Key Portal Areas         //
 ////////////////////////////////////////////////////////////
 '---------------------------------'
 'THIS TAB - Profile Text          |'
-'---------------------------------'
+'----------------------------------------------'
+// MEMBER ID CHECK
+WebUI.verifyTextPresent(findTestData('Members_Test_Data').getValue('MEMBER_ID', 1), false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("MEMBER ID", false)
+'----------------------------------------------'
 WebUI.verifyTextPresent("Update your profile text here", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("your own personel web page available on", false)

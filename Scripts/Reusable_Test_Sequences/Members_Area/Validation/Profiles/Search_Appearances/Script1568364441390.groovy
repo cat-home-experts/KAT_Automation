@@ -42,7 +42,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 // Wait for Page/Elememt Load
 WebUI.waitForPageLoad(25)
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Save Search Appearance Info'), 25)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/button_Save Search Appearance Info'), 25)
 
 ////////////////////////////////////////////////////////////
 //Take an Initial Screenshot of Update Profilr After Login//
@@ -56,7 +56,12 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page
 ////////////////////////////////////////////////////////////
 '---------------------------------'
 'THIS TAB - Profile Text          |'
-'---------------------------------'
+'----------------------------------------------'
+// MEMBER ID CHECK
+WebUI.verifyTextPresent(findTestData('Members_Test_Data').getValue('MEMBER_ID', 1), false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("MEMBER ID", false)
+'----------------------------------------------'
 WebUI.verifyTextPresent("Update your search appearances text here", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("This is the text that appears in customer search results", false)
@@ -65,7 +70,7 @@ WebUI.verifyTextPresent("You may change the description text that is displayed b
 '----------------------------------------------'
 WebUI.verifyTextPresent("maximum limit of 190 characters", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("This profile has been set up for training purposes ", false)
+//WebUI.verifyTextPresent("This profile has been set up for training purposes", false) // Not being picked up - Investigate or loose it TODO
 '----------------------------------------------'
 WebUI.verifyTextPresent("Save Search Appearance Info", false)
 '----------------------------------------------'

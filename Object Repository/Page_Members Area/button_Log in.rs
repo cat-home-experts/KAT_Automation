@@ -7,7 +7,7 @@
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
@@ -46,7 +46,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[1]/body[1]/app-root[1]/app-login[1]/div[@class=&quot;container main well white-bg bs-component mt-5&quot;]/div[@class=&quot;row&quot;]/form[@class=&quot;form-horizontal col-12 ng-dirty ng-touched ng-valid&quot;]/fieldset[@class=&quot;login&quot;]/div[@class=&quot;form-group row&quot;]/div[@class=&quot;col-12 col-md-5&quot;]/button[@class=&quot;btn btn-primary btn-no-border&quot;]</value>
+      <value>/html[1]/body[1]/app-root[1]/app-login[@class=&quot;ng-star-inserted&quot;]/div[@class=&quot;container main well white-bg bs-component mt-5&quot;]/div[@class=&quot;row&quot;]/form[@class=&quot;form-horizontal col-12 ng-dirty ng-touched ng-valid&quot;]/fieldset[@class=&quot;login&quot;]/div[@class=&quot;form-group row&quot;]/div[@class=&quot;col-12 col-md-5&quot;]/button[@class=&quot;btn btn-primary btn-no-border&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

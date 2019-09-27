@@ -78,6 +78,7 @@ WebUI.verifyTextPresent("Insurance", false)
 WebUI.verifyTextPresent("'Maximise your profile' video", false)
 '----------------------------------------------'
 // MEMBER ID CHECK
+WebUI.verifyTextPresent('MEMBER ID', false)
 WebUI.verifyTextPresent(findTestData('Members_Test_Data').getValue('MEMBER_ID', 1), false)
 //----------------------------------------------
 

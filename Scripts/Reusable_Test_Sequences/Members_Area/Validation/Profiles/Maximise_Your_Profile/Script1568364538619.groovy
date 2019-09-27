@@ -55,11 +55,15 @@ import internal.GlobalVariable as GlobalVariable
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 
+'######################################################################################################################################################################'
+// Probaly not worth doing anything with YOUTUBE, apart from confirming Youtube/Checkatrade launches, clearly, any issues are 3rd Party, not 'in house' development   #'
+'######################################################################################################################################################################'
+
 ////////////////////////////////////////////////////////////
 //  Wait for Maximise Your Profile Element Availability   //
 ////////////////////////////////////////////////////////////
-WebUI.switchToWindowTitle('Checkatrade - Maximise your profile - YouTube')
-WebUI.waitForElementPresent(findTestObject('Checkatrade - Maximise your profile - YouTube'), 25)
+WebUI.switchToWindowUrl('https://www.youtube.com/watch?v=ujuJlrazzGc&t=3s')
+//WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Checkatrade - Maximise your profile - YouTube/h1_Checkatrade -  Maximise your profile'), 25)
 
 ////////////////////////////////////////////////////////////
 //Take an Initial Screenshot of Maximise Your Profile Page//
@@ -74,18 +78,24 @@ WebUI.waitForElementPresent(findTestObject('Checkatrade - Maximise your profile 
 '---------------------------------'
 'THIS TAB - Maximise Your Profile |'
 '---------------------------------'
-WebUI.verifyTextPresent("Checkatrade - Maximise your profile", false)
+// Verify Heading Container Displayed Below Youtube Video window
+//WebUI.verifyElementVisible(findTestObject("Object Repository/Profiles_Page/Page_Checkatrade - Maximise your profile - YouTube/h1_Checkatrade -  Maximise your profile"))
 '----------------------------------------------'
-WebUI.verifyTextPresent("Your online tradesperson profile is crucial for attracting potential customers", false)
+// Verify Profile  Container Displayed Below Youtube Video window
+//WebUI.verifyElementVisible(findTestObject("Object Repository/Profiles_Page/Page_Checkatrade - Maximise your profile - YouTube/ytd-expander_Your online tradesperson profile"))
+'----------------------------------------------'
+// WebUI.verifyElementVisible("Object Repository/Profiles_Page/h1_Checkatrade -  Maximise your profile")
 '----------------------------------------------'
 '----------------------------------------------'
-// Close th YOUTUBE Checkatrade Page
+// Close the YOUTUBE Checkatrade Page
 WebUI.closeWindowUrl('https://www.youtube.com/watch?v=ujuJlrazzGc&t=3s')
 '----------------------------------------------'
-
-//-----------------------------
-// Back to PROFILE Block menu |
-WebUI.back()
+// Wait for residual Youtube Death
+WebUI.delay(1)
+'----------------------------------------------'
+// Switch Back To My Profile - Dashboard
+WebUI.switchToWindowUrl('https://preview-ma.checkatrade.com/my-profile-page')
+'----------------------------------------------'
 ///////////////////////////////////////
 //                END                //
 ///////////////////////////////////////

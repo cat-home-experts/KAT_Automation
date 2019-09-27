@@ -59,6 +59,11 @@ import internal.GlobalVariable as GlobalVariable
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'--------------------------'
+	' Set - Full Name          |'
+	'--------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Set_Full_Name'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+	'--------------------------'
 	' Set - Email Address      |'
 	'--------------------------'
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Set_Email_Address'), [:], FailureHandling.CONTINUE_ON_FAILURE)
@@ -67,12 +72,7 @@ import internal.GlobalVariable as GlobalVariable
 	' Set - Company Name       |'
 	'--------------------------'
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Set_Company_Name'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-	
-	'--------------------------'
-	' Set - Full Name          |'
-	'--------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Set_Full_Name'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-	
+		
 	'--------------------------'
 	' Set - Trade Category     |'
 	'--------------------------'
@@ -94,14 +94,14 @@ import internal.GlobalVariable as GlobalVariable
 	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Set_Postcode'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'--------------------------'
-	' Set - Postcode NEW       |'
-	'--------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Set_Postcode'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-	
-	'--------------------------'
 	' Set - Contact Number     |'
 	'--------------------------'
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
+	'--------------------------'
+	' Set - Postcode NEW       |'
+	'--------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Set_Postcode'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'--------------------------'
 	' Hit the <SUBMIT> Button  |'

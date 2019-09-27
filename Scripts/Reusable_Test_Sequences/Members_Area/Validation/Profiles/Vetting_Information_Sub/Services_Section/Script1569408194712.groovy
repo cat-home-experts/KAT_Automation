@@ -80,7 +80,9 @@ WebUI.verifyTextPresent("VAT Registration", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Are you VAT registered", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("123 4567 89", false)
+WebUI.verifyTextPresent("update your registration number here", false)
+'----------------------------------------------'
+// WebUI.verifyTextPresent("123 4567 89", false) //TODO or Bin
 '----------------------------------------------'
 WebUI.verifyTextPresent("House rules: All changes will be moderated by Checkatrade staff", false)
 '----------------------------------------------'
@@ -88,77 +90,77 @@ WebUI.verifyTextPresent("House rules: All changes will be moderated by Checkatra
 '----------------------------------------------'
 'DOMESTIC WORK'
 '----------------------------------------------'
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Domestic Work_workDomestic'), 2)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Domestic Work_workDomestic'), 2)
 WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Domestic Work_workDomestic'))
 '----------------------------------------------'
 'COMMERCIAL WORK'
 '----------------------------------------------'
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Commercial Work_workCommercial'), 2)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Commercial Work_workCommercial'), 2)
 WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Commercial Work_workCommercial'))
 '----------------------------------------------'
 '24 HOUR CALLOUT'
 '----------------------------------------------'
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Commercial Work_work24Hours'), 2)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Commercial Work_work24Hours'), 2)
 WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Commercial Work_work24Hours'))
 '----------------------------------------------'
 'FREE ESTIMATES'
 '----------------------------------------------'
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Free Estimates_workFreeEstimates'), 2)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Free Estimates_workFreeEstimates'), 2)
 WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Free Estimates_workFreeEstimates'))
 '----------------------------------------------'
 'INSURANCE WORK UNDERTAKEN'
 '----------------------------------------------'
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Insurance Work Undertaken_workInsurance'), 2)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Insurance Work Undertaken_workInsurance'), 2)
 WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Insurance Work Undertaken_workInsurance'))
 '----------------------------------------------'
 'CARDS ACCEPTED'
 '----------------------------------------------'
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Cards accepted_cardsAccepted'), 2)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Cards accepted_cardsAccepted'), 2)
 WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Cards accepted_cardsAccepted'))
 '----------------------------------------------'
 'FREE ESTIMATES'
 '----------------------------------------------'
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Free Estimates (excl Insurance)_workFreeEstimatesExclIns'), 2)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Free Estimates (excl Insurance)_workFreeEstimatesExclIns'), 2)
 WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Free Estimates (excl Insurance)_workFreeEstimatesExclIns'))
 '----------------------------------------------'
 'DOMESTIC WORK'
 '----------------------------------------------'
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Domestic Work_workDomestic'), 2)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Domestic Work_workDomestic'), 2)
 WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Domestic Work_workDomestic'))
 '----------------------------------------------'
 'COMMERCIAL WORK'
 '----------------------------------------------'
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Commercial Work_workCommercial'), 2)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Commercial Work_workCommercial'), 2)
 WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Commercial Work_workCommercial'))
 '----------------------------------------------'
 '24 HOUR CALLOUT'
 '----------------------------------------------'
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Commercial Work_work24Hours'), 2)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Commercial Work_work24Hours'), 2)
 WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Commercial Work_work24Hours'))
 '----------------------------------------------'
 'FREE ESTIMATES'
 '----------------------------------------------'
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Free Estimates_workFreeEstimates'), 2)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Free Estimates_workFreeEstimates'), 2)
 WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Free Estimates_workFreeEstimates'))
 '----------------------------------------------'
 'INSURANCE WORK UNDERTAKEN'
 '----------------------------------------------'
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Insurance Work Undertaken_workInsurance'), 2)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Insurance Work Undertaken_workInsurance'), 2)
 WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Insurance Work Undertaken_workInsurance'))
 '----------------------------------------------'
 'CARDS ACCEPTED'
 '----------------------------------------------'
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Cards accepted_cardsAccepted'), 2)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Cards accepted_cardsAccepted'), 2)
 WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Cards accepted_cardsAccepted'))
 '----------------------------------------------'
 'FREE ESTIMATES'
 '----------------------------------------------'
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Free Estimates (excl Insurance)_workFreeEstimatesExclIns'), 2)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Free Estimates (excl Insurance)_workFreeEstimatesExclIns'), 2)
 WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/input_Free Estimates (excl Insurance)_workFreeEstimatesExclIns'))
 '----------------------------------------------'
 // SAVE VETTING INFORMATION
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/button_Save Vetting Information'), 2)
-WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/button_Save Vetting Information'), 5)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/button_Save Vetting Information'), 2)
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/button_Save Vetting Information'))
 
 ///////////////////////////////////////
 //                END                //

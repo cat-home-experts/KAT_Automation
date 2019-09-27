@@ -41,7 +41,7 @@ import internal.GlobalVariable as GlobalVariable
 //                                                                                                               |
 //	GIVEN - TODO                      |
 //                                                                                                               |
-//	WHEN -  TODO  				      |
+//	WHEN -  TODO  				      |34
 //                                                                                                               |
 //  THEN -  TODO                      |
 //                                                                                                               |
@@ -65,6 +65,12 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Da
 	//-----------------------------------------
 
 	//-----------------------------------------
+	// Confirm DASHBOARD Content as Expected  |
+	//-----------------------------------------
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Dashboard'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	//-----------------------------------------
+	
+	//-----------------------------------------
 	// Navigate to Profile Text - Sub section |
 	//-----------------------------------------
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_You_Business/My_Profile'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -77,7 +83,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Da
 	//-----------------------------------------
 	// Navigate - To profile text Page        |
 	//-----------------------------------------// My Profile Page - Profile text
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_You_Business/Profiles/Profile_Text'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_You_Business/Profiles/Profile_Text'), [:], FailureHandling.STOP_ON_FAILURE)
 	
 	//-----------------------------------------
 	// Verify Profile Text - Sub section      |
@@ -152,7 +158,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Da
 	//-----------------------------------------
 	// Verify Maximise your profile - Sub Sec |
 	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Profiles/Maximise_You_Profile'), [:], FailureHandling.CONTINUE_ON_FAILURE) 
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Profiles/Maximise_Your_Profile'), [:], FailureHandling.CONTINUE_ON_FAILURE) 
 		
 	//-----------------------------------------
 	// Log OFF the Members Area               |
