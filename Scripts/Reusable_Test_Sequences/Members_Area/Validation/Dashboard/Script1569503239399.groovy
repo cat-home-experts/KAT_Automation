@@ -25,7 +25,8 @@ import internal.GlobalVariable as GlobalVariable
 //  Verify Members <Dashboard> Content        |   26/09/2019    |      DH          |                             |
 //  from The Homepage Header Menus            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//  Commented Ashot screen capture, evaluation|   30/09/2019    |      DH          |                             |
+//  Extended Element Wait Times to 60         |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -46,7 +47,7 @@ import internal.GlobalVariable as GlobalVariable
 /////////////////////////////////////////////////////
 //     Wait for Dashboard Element Availability     //
 /////////////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/a_Dashboard'), 25)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/a_Dashboard'), 60)
 
 // Page Refresh - Suddenly page not fully loading on PREVIEW - 26/09/2019
 WebUI.refresh()

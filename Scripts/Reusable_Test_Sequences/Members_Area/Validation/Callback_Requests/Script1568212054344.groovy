@@ -25,7 +25,8 @@ import internal.GlobalVariable as GlobalVariable
 //  My Feedback Page Initial Validation Checks|   12/09/2019    |      DH          |                             |
 //  on Start up, Sub Tab = Callback Requests  |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//  Commented Ashot screen capture, evaluation|   30/09/2019    |      DH          |                             |
+//  Extended Element Wait Times to 60         |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -46,14 +47,14 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////////////////////
 //     Wait for Settings Element Availability             //
 ////////////////////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/a_Settings'), 25)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/a_Settings'), 50)
 
 ////////////////////////////////////////////////////////////
 //     Take an Initial Screenshot of Home After Login     //
 ////////////////////////////////////////////////////////////
 //WebUI.takeScreenshot('Reports/Screenshots/Initial_Members_page.png')
 // Stores in Project <Screenshots> Folder
-CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Your_Customers_Callback_Request.png', FailureHandling.OPTIONAL)
+// CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Your_Customers_Callback_Request.png', FailureHandling.OPTIONAL)
 
 ////////////////////////////////////////////////////////////
 //         Verify Header Text on Key Portal Areas         //

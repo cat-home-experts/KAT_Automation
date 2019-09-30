@@ -27,7 +27,8 @@ import internal.GlobalVariable as GlobalVariable
 //  Home Page Initial Validation Checks on    |   11/09/2019    |      DH          |                             |
 //  Start up                                  |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//  Commented Ashot screen capture, evaluation|   30/09/2019    |      DH          |                             |
+//  Extended Element Wait Times to 60         |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -48,14 +49,14 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////////////////////
 //     Wait for Recommend a Friend Element Availability   //
 ////////////////////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/div_Recommend a Friend'), 25)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/div_Recommend a Friend'), 50)
 
 ////////////////////////////////////////////////////////////
 //     Take an Initial Screenshot of Home After Login     //
 ////////////////////////////////////////////////////////////
 //WebUI.takeScreenshot('Reports/Screenshots/Initial_Members_page.png')
 // Stores in Project <Screenshots> Folder
-CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Members_Home.png', FailureHandling.OPTIONAL)
+//CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Members_Home.png', FailureHandling.OPTIONAL)
 
 ////////////////////////////////////////////////////////////
 //         Verify Header Text on Key Portal Areas         //

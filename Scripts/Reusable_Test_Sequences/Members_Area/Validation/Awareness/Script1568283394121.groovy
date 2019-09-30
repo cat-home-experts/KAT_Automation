@@ -27,7 +27,8 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //  Extra Synch Added - Wait For Page Load    |   18/09/2019    |      DH          |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//  Commented Ashot screen capture, evaluation|   30/09/2019    |      DH          |                             |
+//  Extended Element Wait Times to 60         |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -47,7 +48,7 @@ import internal.GlobalVariable as GlobalVariable
 //     Wait for Awareness Element Availability            //
 ////////////////////////////////////////////////////////////
 WebUI.waitForPageLoad(25)
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/h2_Customer Feedback Awareness'), 25)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/h2_Customer Feedback Awareness'), 60)
 //WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/the_Speedometer'), 25)
 WebUI.delay(3)
 
@@ -56,7 +57,7 @@ WebUI.delay(3)
 ////////////////////////////////////////////////////////////
 
 // Stores in Project <Screenshots> Folder
-CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Your_Customers_Awareness.png', FailureHandling.OPTIONAL)
+//CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Your_Customers_Awareness.png', FailureHandling.OPTIONAL)
 
 ////////////////////////////////////////////////////////////
 //         Verify Header Text on Key Portal Areas         //

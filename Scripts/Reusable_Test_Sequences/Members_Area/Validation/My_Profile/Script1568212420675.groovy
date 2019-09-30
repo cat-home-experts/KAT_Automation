@@ -25,7 +25,8 @@ import internal.GlobalVariable as GlobalVariable
 //  My Profile Page Initial Validation Checks |   11/09/2019    |      DH          |                             |
 //  on Start up, Default Tab = Published FBack|                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//  Commented Ashot screen capture, evaluation|   30/09/2019    |      DH          |                             |
+//  Extended Element Wait Times to 60         |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -46,7 +47,7 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////////////////////
 //     Wait for Apply Filter Element Availability         //
 ////////////////////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/i_Profile text_ace-icon fa fa-file-text-o bigger-400'), 25)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/i_Profile text_ace-icon fa fa-file-text-o bigger-400'), 60)
 
 ////////////////////////////////////////////////////////////
 //     Take an Initial Screenshot of Home After Login     //

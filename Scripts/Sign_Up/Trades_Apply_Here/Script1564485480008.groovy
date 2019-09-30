@@ -31,7 +31,7 @@ import internal.GlobalVariable as GlobalVariable
 // Postcode Entry Type Also Changed, Commented|                 |                  |                             |
 // Renewed - added new with extension 04092019|    04/09/2019   |    Dave Horne    |  SUNNY DAY Scenario         |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Full Name Field XPATH change, Dev UI Rework|    30/09/2019   |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -74,22 +74,22 @@ import internal.GlobalVariable as GlobalVariable
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Set_Company_Name'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 		
 	'--------------------------'
-	' Set - Trade Category     |'
+	' Set - Trade Category     |' // Field removed from View 31/07/2019
 	'--------------------------'
 	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Set_Trade_Category'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'--------------------------'
-	' lookup - Trade Category  |'
+	' lookup - Trade Category  |' // Field removed from View 31/07/2019
 	'--------------------------'
 	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Lookup_Trade_Category'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'--------------------------'
-	' Postcode Prompt          |'
+	' Postcode Prompt          |'  // Field removed from View 31/07/2019
 	'--------------------------'
 	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Postcode_Prompt'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'--------------------------'
-	' Set - Postcode           |'
+	' Set - Postcode           |' // See Below
 	'--------------------------'
 	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Set_Postcode'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	

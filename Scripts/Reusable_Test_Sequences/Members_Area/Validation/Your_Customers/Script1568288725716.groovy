@@ -27,7 +27,8 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //  Extra Synch Added - Wiat For Page Load    |   18/09/2019    |      DH          |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//  Commented Ashot screen capture, evaluation|   30/09/2019    |      DH          |                             |
+//  Extended Element Wait Times to 60         |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -47,16 +48,16 @@ import internal.GlobalVariable as GlobalVariable
 //     Wait for Customers Name Element Availability       //
 ////////////////////////////////////////////////////////////
 WebUI.waitForPageLoad(25)
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/p_These are your customers who have left feedback'), 25)
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/first_Row_Customers'), 25)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/p_These are your customers who have left feedback'), 60)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/first_Row_Customers'), 60)
 
 // first_Row_Customers
 ////////////////////////////////////////////////////////////
 //     Take an Initial Screenshot of Home After Login     //
 ////////////////////////////////////////////////////////////
-//WebUI.takeScreenshot('Reports/Screenshots/Initial_Members_page.png')
+// WebUI.takeScreenshot('Reports/Screenshots/Initial_Members_page.png')
 // Stores in Project <Screenshots> Folder
-CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Your_Customers_Your_Customer.png', FailureHandling.OPTIONAL)
+// CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Your_Customers_Your_Customer.png', FailureHandling.OPTIONAL)
 
 ////////////////////////////////////////////////////////////
 //         Verify Header Text on Key Portal Areas         //

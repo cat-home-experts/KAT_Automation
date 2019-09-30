@@ -51,9 +51,9 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////////////////////
 //     Take an Initial Screenshot of Home After Login     //
 ////////////////////////////////////////////////////////////
-//WebUI.takeScreenshot('Reports/Screenshots/Initial_Members_page.png')
+// WebUI.takeScreenshot('Reports/Screenshots/Initial_Members_page.png')
 // Stores in Project <Screenshots> Folder
-CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Your_Customers_Membership_Support_Pack.png', FailureHandling.OPTIONAL)
+// CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Your_Customers_Membership_Support_Pack.png', FailureHandling.OPTIONAL)
 
 '------------------------------'
 'CLOSE Newly Opend PDF Window  |'
