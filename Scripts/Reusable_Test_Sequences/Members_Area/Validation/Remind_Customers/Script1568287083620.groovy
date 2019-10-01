@@ -60,8 +60,13 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/
 //         Verify Header Text on Key Portal Areas         //
 ////////////////////////////////////////////////////////////
 '---------------------------------'
-'DEFAULT TAB - Published Feedback '
-'---------------------------------'
+'DEFAULT TAB - Remind Customers   '
+'----------------------------------------------'
+// MEMBER ID CHECK
+WebUI.verifyTextPresent(findTestData('Members_Test_Data').getValue('MEMBER_ID', 1), false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("MEMBER ID", false)
+'----------------------------------------------'
 WebUI.verifyTextPresent("Remind your customers", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("CUSTOMER NAME IS REQUIRED", false)

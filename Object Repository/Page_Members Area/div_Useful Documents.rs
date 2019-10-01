@@ -4,7 +4,17 @@
    <name>div_Useful Documents</name>
    <tag></tag>
    <elementGuidId>3501d2bc-8bce-402c-9034-66a3bc05aa85</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[(text() = 'Useful Documents' or . = 'Useful Documents')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;usefulDocuments&quot;]/a/div[1]/img</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

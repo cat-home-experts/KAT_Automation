@@ -63,8 +63,15 @@ WebUI.delay(3)
 //         Verify Header Text on Key Portal Areas         //
 ////////////////////////////////////////////////////////////
 '---------------------------------'
-'THIS TAB - Awareness             '
 '---------------------------------'
+'DEFAULT TAB - Awareness          '
+'----------------------------------------------'
+// MEMBER ID CHECK
+WebUI.verifyTextPresent(findTestData('Members_Test_Data').getValue('MEMBER_ID', 1), false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("MEMBER ID", false)
+'----------------------------------------------'
+
 WebUI.verifyTextPresent("Feedback Statistics", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("The average awareness level across all Checkatrade members is", false)
@@ -81,9 +88,6 @@ WebUI.verifyTextPresent("of customers were charged more but kept informed", fals
 '----------------------------------------------'
 WebUI.verifyTextPresent("of customers were charged more and were not kept informed", false)
 '----------------------------------------------'
-'----------------------------------------------'
-// MEMBER ID CHECK
-WebUI.verifyTextPresent(findTestData('Members_Test_Data').getValue('MEMBER_ID', 1), false)
 '----------------------------------------------'
 
 

@@ -61,6 +61,11 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/
 ////////////////////////////////////////////////////////////
 //         Verify Header Text on Key Portal Areas         //
 ////////////////////////////////////////////////////////////
+// MEMBER ID CHECK
+WebUI.verifyTextPresent(findTestData('Members_Test_Data').getValue('MEMBER_ID', 1), false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("MEMBER ID", false)
+'----------------------------------------------'
 WebUI.verifyTextPresent("Your Visitors", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Your Customers", false)
@@ -74,9 +79,6 @@ WebUI.verifyTextPresent("Feedback Score", false)
 WebUI.verifyTextPresent("Dashboard", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("MEMBER ID:", false)
-'----------------------------------------------'
-// MEMBER ID CHECK
-WebUI.verifyTextPresent(findTestData('Members_Test_Data').getValue('MEMBER_ID', 1), false)
 '----------------------------------------------'
 
 ///////////////////////////////////////

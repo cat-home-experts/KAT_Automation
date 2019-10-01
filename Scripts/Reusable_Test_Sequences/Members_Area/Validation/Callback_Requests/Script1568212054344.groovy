@@ -61,7 +61,11 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/
 ////////////////////////////////////////////////////////////
 '---------------------------------'
 'DEFAULT TAB - Published Feedback '
-'---------------------------------'
+// MEMBER ID CHECK
+WebUI.verifyTextPresent(findTestData('Members_Test_Data').getValue('MEMBER_ID', 1), false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("MEMBER ID", false)
+'----------------------------------------------'
 WebUI.verifyTextPresent("Your Callback Requests", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Member Notes", false)

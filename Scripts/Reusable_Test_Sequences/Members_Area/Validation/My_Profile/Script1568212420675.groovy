@@ -59,8 +59,12 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/
 ////////////////////////////////////////////////////////////
 //         Verify Header Text on Key Portal Areas         //
 ////////////////////////////////////////////////////////////
-'---------------------------------'
-'DEFAULT TAB - Published Feedback '
+// MEMBER ID CHECK
+WebUI.verifyTextPresent(findTestData('Members_Test_Data').getValue('MEMBER_ID', 1), false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("MEMBER ID", false)
+'----------------------------------------------'
+'DEFAULT TAB - My Profile         '
 '---------------------------------'
 WebUI.verifyTextPresent("Profile text", false)
 '----------------------------------------------'

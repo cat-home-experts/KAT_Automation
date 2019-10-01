@@ -54,7 +54,7 @@ import internal.GlobalVariable as GlobalVariable
 '#  OF COURSE, FOR THIS TO WORK THE TEST CREDENTIALS SHOULD BE AVAILABLE ACROSS ALL ENVIRONMENTS - Username = check1234 - & - Password = testing123   #'
 '######################################################################################################################################################'
 
-// Superceeded by work on 23/09/2019 *
+// POTENTIALLY :-) NOW WORKS ON ANY ENVIRONMENT
 // Specific Page Withing Members That You Want To Visit
 // GlobalVariable.PAGE = "/my-feedback"
 // Members Area - Notification to the Startup Process and URL_Handler

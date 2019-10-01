@@ -63,11 +63,16 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Da
 	//-----------------------------------------
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/log_On'), [:], FailureHandling.STOP_ON_FAILURE)
 	//-----------------------------------------
-
 	
-	WebUI.delay(5)
+	//-----------------------------------------
+	// Navigate Membership Page               |
+	//-----------------------------------------
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/Membership'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
-	
+	//-----------------------------------------
+	// Confirm Data on Top - Membership Page  |
+	//-----------------------------------------
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Membership'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	//-----------------------------------------
 	// Log OFF the Members Area               |

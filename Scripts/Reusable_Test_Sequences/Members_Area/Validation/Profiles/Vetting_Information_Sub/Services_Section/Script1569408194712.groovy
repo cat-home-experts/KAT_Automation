@@ -57,6 +57,10 @@ WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/Profil
 //         Verify Header Text on Key Portal Areas         //
 ////////////////////////////////////////////////////////////
 
+// MEMBER ID CHECK
+WebUI.verifyTextPresent(findTestData('Members_Test_Data').getValue('MEMBER_ID', 1), false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("MEMBER ID", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Services", false)
 '----------------------------------------------'

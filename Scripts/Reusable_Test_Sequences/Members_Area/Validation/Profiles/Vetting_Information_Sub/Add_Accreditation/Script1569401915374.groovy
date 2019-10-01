@@ -60,7 +60,11 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/
 ////////////////////////////////////////////////////////////
 '---------------------------------------------------'
 'THIS TAB - Vetting Information-> New Accreditation |'
-'---------------------------------------------------'
+// MEMBER ID CHECK
+WebUI.verifyTextPresent(findTestData('Members_Test_Data').getValue('MEMBER_ID', 1), false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("MEMBER ID", false)
+'----------------------------------------------'
 WebUI.verifyTextPresent('Add New Accreditation', false)
 '----------------------------------------------'
 WebUI.verifyTextPresent('Proof of accreditation is required before it can be listed on your web page', false)

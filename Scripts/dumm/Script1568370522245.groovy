@@ -14,13 +14,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.navigateToUrl('https://preview-ma.checkatrade.com/membership')
 
-WebUI.navigateToUrl('https://www.youtube.com/watch?v=ujuJlrazzGc&t=3s')
+WebUI.setText(findTestObject('Object Repository/Membership/Page_Members Area/input_Username_username'), 'check1234')
 
-WebUI.click(findTestObject('Page_Checkatrade - Maximise your profile - YouTube/paper-button_Ok'))
+WebUI.setEncryptedText(findTestObject('Object Repository/Membership/Page_Members Area/input_Password_password'), 'fzqqY0qJjYTuJiVJRZh4ag==')
 
-WebUI.click(findTestObject('Page_Checkatrade - Maximise your profile - YouTube/h1_Checkatrade -  Maximise your profile'))
-
-WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Checkatrade - Maximise your profile - YouTube/ytd-expander_Your online tradesperson profile'))
+WebUI.click(findTestObject('Object Repository/Membership/Page_Members Area/i_Log in_ace-icon fa fa-arrow-right'))
 
