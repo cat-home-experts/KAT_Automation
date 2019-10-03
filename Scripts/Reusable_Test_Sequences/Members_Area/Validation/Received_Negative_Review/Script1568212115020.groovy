@@ -12,6 +12,9 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+import java.awt.Robot as Robot
+import java.awt.event.KeyEvent as KeyEvent
 
 //-----------------------
 // TEST HISTORY HEADER - |
@@ -25,7 +28,9 @@ import internal.GlobalVariable as GlobalVariable
 //  My Feedback Page Initial Validation Checks|   12/09/2019    |      DH          |                             |
 //  Sub Tab = Received Negative Feedback      |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//  Currently unable to resolve PDF Textual   |                 |                  |  needs a method added to    |
+//  COntent, so currently the test only opens |                 |      DH          |  verify selective PDF       |
+//  The PDF and scrolls to bottome of doc     |                 |                  |  content        TODO        |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -55,29 +60,62 @@ import internal.GlobalVariable as GlobalVariable
 // Stores in Project <Screenshots> Folder
 // CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Your_Customers_Membership_Support_Pack.png', FailureHandling.OPTIONAL)
 
-'------------------------------'
-'CLOSE Newly Opend PDF Window  |'
-'------------------------------'
-
-WebUI.closeWindowUrl(URL+'/assets/Resources/Documents/Membership%20Support%20Pack.pdf')
-
 ////////////////////////////////////////////////////////////
 //         Verify Header Text on Key Portal Areas         //
 ////////////////////////////////////////////////////////////
 //'---------------------------------'
-//'DEFAULT TAB - Published Feedback '
+//'DEFAULT TAB - Membership Support ' PDF Download File Presented in VIEW (new window)
 //'---------------------------------'
-//WebUI.verifyTextPresent("Remind your customers", false)
+// No Members ID Reported on this Page
+'------------------------------------------------'
+
+//Switch Context to NEW PDF Windo
+//WebUI.delay(5)
+//WebUI.switchToWindowUrl(URL+'/assets/Resources/Documents/Membership%20Support%20Pack.pdf')
+//WebUI.switchToWindowIndex(1)
+// WebUI.switchToWindowTitle(URL+'/assets/Resources/Documents/Membership%20Support%20Pack.pdf')
+'------------------------------------------------'
+WebUI.verifyTextPresent("Membership", false)
 //'----------------------------------------------'
-//WebUI.verifyTextPresent("CUSTOMER NAME IS REQUIRED", false)
+//WebUI.verifyTextPresent("Support Pack", false)
 //'----------------------------------------------'
-//WebUI.verifyTextPresent("Description of work", false)
+//WebUI.verifyTextPresent("Check check check", false)
+'------------------------------------------------'
+// Scroll to PAGE End
+'------------------------------------------------'
+WebUI.delay(1)
+// Dispel Explorer
+//WebUI.sendKeys(findTestObject(null), Keys.chord(Keys.ESCAPE))
+Robot robot = new Robot()
+robot.keyPress(KeyEvent.VK_END)
+robot.keyRelease(KeyEvent.VK_END)
+'----------------------------------------------'
+
 //'----------------------------------------------'
-//WebUI.verifyTextPresent("Customer's email, false", false)
+//WebUI.scrollToPosition(2000, 2000)
+//WebUI.waitForPageLoad(60)
+//WebUI.delay(5)
 //'----------------------------------------------'
-//WebUI.verifyTextPresent("Mobile number (for SMS reminder)", false)
+// Checks on last page test to ensure dicument is intact
+//'----------------------------------------------'
+//WebUI.verifyTextPresent("The correct procedure", false)
+//'----------------------------------------------'
+//WebUI.verifyTextPresent("Checkatrade DO NOT:", false)
+//'----------------------------------------------'
+//WebUI.verifyTextPresent("Must do", false)
+//'----------------------------------------------'
+//WebUI.verifyTextPresent("Can do", false)
+//'----------------------------------------------'
+//WebUI.verifyTextPresent("Why", false)
 //'----------------------------------------------'
 
+'------------------------------'
+'CLOSE Newly Opend PDF Window  |'
+'------------------------------'
+
+//WebUI.closeWindowUrl(URL+'/assets/Resources/Documents/Membership%20Support%20Pack.pdf')
+
+//WebUI.closeWindowTitle(URL+'/assets/Resources/Documents/Membership%20Support%20Pack.pdf')
 ///////////////////////////////////////
 //                END                //
 ///////////////////////////////////////

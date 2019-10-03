@@ -22,3 +22,37 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Membership/Page_Members
 
 WebUI.click(findTestObject('Object Repository/Membership/Page_Members Area/i_Log in_ace-icon fa fa-arrow-right'))
 
+WebUI.navigateToUrl('https://preview-ma.checkatrade.com/membership')
+
+WebUI.setText(findTestObject('Object Repository/Membership/Page_Members Area/input_Username_username'), 'check1234')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Membership/Page_Members Area/input_Password_password'), 'fzqqY0qJjYTuJiVJRZh4ag==')
+
+WebUI.click(findTestObject('Object Repository/Membership/Page_Members Area/i_Log in_ace-icon fa fa-arrow-right'))
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Membership/Page_Members Area/input_Password_password'), 'fzqqY0qJjYTuJiVJRZh4ag==')
+
+WebUI.click(findTestObject('Object Repository/Membership/Page_Members Area/i_Log in_ace-icon fa fa-arrow-right'))
+
+WebUI.click(findTestObject('Object Repository/Membership/Page_Members Area/a_Dashboard'))
+
+WebUI.click(findTestObject('Object Repository/Membership/Page_Members Area/img'))
+
+WebUI.click(findTestObject('Object Repository/Members/Page_Members Area/i_Settings'))
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/Membership/Page_Members Area/select_Do not sendOtherCompany email address jonwoodcheckatradecomMr Daniel Davis danieldavisedaxiscoukMr Testing Team supportcheckatradecomMr Testing Team supportcheckatradecomMr Alexander Nunn alexandernunncheckatradec'), 
+    '1: Object', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/Membership/Page_Members Area/select_Do not sendOtherCompany email address jonwoodcheckatradecomMr Daniel Davis danieldavisedaxiscoukMr Testing Team supportcheckatradecomMr Testing Team supportcheckatradecomMr Alexander Nunn alexandernunncheckatradec'), 
+    '14: Object', true)
+
+WebUI.click(findTestObject('Object Repository/Membership/Page_Members Area/input_Send your customers initial information about your rates and services_chkAutoResponder'))
+
+WebUI.click(findTestObject('Object Repository/Membership/Page_Members Area/input_Send your customers initial information about your rates and services_chkAutoResponder'))
+
+WebUI.click(findTestObject('Object Repository/Membership/Page_Members Area/button_Submit'))
+
+WebUI.click(findTestObject('Object Repository/Membership/Page_Members Area/button_Close'))
+
+WebUI.click(findTestObject('Object Repository/Members/Page_Members Area/i_Settings'))
+

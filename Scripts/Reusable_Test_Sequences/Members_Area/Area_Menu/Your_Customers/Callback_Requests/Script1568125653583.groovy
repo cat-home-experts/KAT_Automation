@@ -46,7 +46,7 @@ import internal.GlobalVariable as GlobalVariable
 //////////////////////////////////////////////////
 //Wait for Callback Request Element Availability//
 //////////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/div_Callback Requests'), 5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/div_Callback Requests'), 60)
 
 //////////////////////////////////////////////////
 //  Click Log My Callback Request Element       //

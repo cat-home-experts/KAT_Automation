@@ -12,6 +12,9 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+import java.awt.Robot as Robot
+import java.awt.event.KeyEvent as KeyEvent
 
 //-----------------------
 // TEST HISTORY HEADER - |
@@ -28,7 +31,8 @@ import internal.GlobalVariable as GlobalVariable
 //  Commented Ashot screen capture, evaluation|   30/09/2019    |      DH          |                             |
 //  Extended Element Wait Times to 60         |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//  Thise test now broken into 2 chunks       |   03/10/2019    |                  |                             |
+//  This test <Settings> and <Notes>          |                 |      DH          |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -61,6 +65,9 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/
 ////////////////////////////////////////////////////////////
 '---------------------------------'
 'DEFAULT TAB - Published Feedback '
+'----------------------------------------------'
+// Verify Key Textual Information
+'----------------------------------------------'
 // MEMBER ID CHECK
 WebUI.verifyTextPresent(findTestData('Members_Test_Data').getValue('MEMBER_ID', 1), false)
 '----------------------------------------------'
@@ -72,7 +79,89 @@ WebUI.verifyTextPresent("Member Notes", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Add/Edit note", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("As soon as a customer sends you a callback request, it will be sent to your chosen destination which can be SMS, e-mail or both", false)
+WebUI.verifyTextPresent("Customer requests for a Callback appear here and you can also be alerted by text and email", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("These customers are waiting for your call, so even if it’s to let them know", false)
+'----------------------------------------------'
+///////////////////////////////////////////////
+// Settings Dialog Tweeks
+// Click <Settings? Control
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Area/a_Settings'))
+'----------------------------------------------'
+// Verify Key Textual Information
+'----------------------------------------------'
+WebUI.verifyTextPresent("Your Callback Requests", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Where would you like us to send your work alerts", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Automatic replies", false)
+'----------------------------------------------'
+// Checkbox set Alerts - Uncheck
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Area/input_Settings_chkDisableWorkAlerts'))
+'----------------------------------------------'
+// Checkbox set Alerts - Check 
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Area/input_Settings_chkDisableWorkAlerts'))
+'----------------------------------------------'
+// Set <Send Emails To> listbox To <None>
+WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Members Area/Page_Members Area/select_Do not send_1'),
+	'3: Object', true)
+'----------------------------------------------'
+// Revert <Send Emails To> listbox To Previous Setting
+WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Members Area/Page_Members Area/select_Do not send_1'),
+	'14: Object', true)
+'----------------------------------------------'
+// Set <Send SMS To> listbox To <None>
+WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Members Area/Page_Members Area/select_Do not send_2'),
+	'3: Object', true)
+'----------------------------------------------'
+// Revert <Send SMS To> listbox To Previous Setting
+WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Members Area/Page_Members Area/select_Do not send_2'),
+	'1: Object', true)
+'----------------------------------------------'
+// Scroll <Submit> Button Into View
+WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/Page_Members Area/button_Submit_1'), 2)
+'----------------------------------------------'
+// Check <Automatic Replies> Checkbox
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Area/input_Send your customers initial info'))
+'----------------------------------------------'
+// Uncheck <Automatic Replies> Checkbox
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Area/input_Send your customers initial info'))
+'----------------------------------------------'
+// Hit <SUBMIT> Button
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Area/button_Submit_1'))
+'----------------------------------------------'
+// WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Area/button_Close')) // Close problem - disconnected Dialog - Overcome with Robot, Below
+'----------------------------------------------'
+// Switch Context to Dialog
+//WebUI.switchToWindowIndex(1)
+'----------------------------------------------'
+// Grab Dialog Text
+'----------------------------------------------'
+// Settings <SAVED> Reported
+'----------------------------------------------'
+//WebUI.verifyTextPresent("Your Settings have been saved", false)
+'----------------------------------------------'
+WebUI.delay(1)
+// Dispel Popout Dialog
+// // WebUI.sendKeys(findTestObject(null), Keys.chord(Keys.ESCAPE)) // nnative not working
+Robot robot = new Robot()
+robot.keyPress(KeyEvent.VK_ESCAPE)
+robot.keyRelease(KeyEvent.VK_ESCAPE)
+'----------------------------------------------'
+// Verify Dialog Text (Your Settings have been saved) is Displayed
+// WebUI.verifyElementVisible(findTestObject('Object Repository/Page_Members Area/div_Your Settings have been savedClose'), 2)
+'----------------------------------------------'
+// Click on <Your Settings Have Been Saved><Close> Button (Dialog)
+// WebUI.click(findTestObject('Object Repository/Page_Members Area/div_Your Settings have been savedClose'))
+'----------------------------------------------'
+// Wait For Settings Element
+//WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Members Area/a_Settings'), 2)
+'----------------------------------------------'
+// Scroll Back (up) To <Settings> Element
+WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/a_Settings'), 2)
+'----------------------------------------------'
+// Click <Settings> Control - Doesn't Close Automatically After <Close> is Actioned
+//WebUI.click(findTestObject('Object Repository/Page_Members Area/a_Settings'))
 '----------------------------------------------'
 
 ///////////////////////////////////////

@@ -108,7 +108,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Da
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Banner_Menu/Your_Customers'), [:], FailureHandling.STOP_ON_FAILURE)	
 	'-----------------------------------------'// My Callback Requests Page
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Customers/Callback_Requests'), [:], FailureHandling.STOP_ON_FAILURE)
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Callback_Requests'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Callback_Requests_Sub/Callback_Request_Settings'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	'-----------------------------------------'
 	//////////////////////////////////////////////////////////
 	//  RETURN TO DASHBOARD - Then Resume <Your Customers>  //

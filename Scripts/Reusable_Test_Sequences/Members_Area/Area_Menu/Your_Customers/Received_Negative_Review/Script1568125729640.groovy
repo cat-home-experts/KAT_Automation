@@ -25,7 +25,8 @@ import internal.GlobalVariable as GlobalVariable
 //  Navigate <Negative Review> Received       |   11/09/2019    |      DH          |                             |
 //  from <Your Customers>                     |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//                                            |   01/10/2019    |      DH          |  Increased Element Present  |
+//                                            |                 |                  |  Timeout                    |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -46,7 +47,7 @@ import internal.GlobalVariable as GlobalVariable
 //////////////////////////////////////////////////
 //Wait for Negative Review Element Availability //
 //////////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/div_Received a Negative Review'), 5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/div_Received a Negative Review'), 60)
 
 //////////////////////////////////////////////////
 //  Click Log My Negative Review Element        //
