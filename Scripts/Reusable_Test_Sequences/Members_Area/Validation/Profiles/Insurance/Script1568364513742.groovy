@@ -105,12 +105,14 @@ WebUI.scrollToElement(findTestObject('Object Repository/Profiles_Page/Page_Membe
 '----------------------------------------------'
 WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/Page_Members Area/button_Select Document'))
 '----------------------------------------------'
-WebUI.delay(1)
-// Dispel Explorer
-//WebUI.sendKeys(findTestObject(null), Keys.chord(Keys.ESCAPE))
-Robot robot = new Robot()
-robot.keyPress(KeyEvent.VK_ESCAPE)
-robot.keyRelease(KeyEvent.VK_ESCAPE)
+///////////////////////////////////////
+// Dispel The Windows Dialog         //
+///////////////////////////////////////
+'----------------------------------------------'
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Dispel_Windows_Dialog'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+'----------------------------------------------'
+
+'----------------------------------------------'
 '----------------------------------------------'
 // Save Form
 '----------------------------------------------'

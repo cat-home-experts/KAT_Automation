@@ -46,6 +46,7 @@ import internal.GlobalVariable as GlobalVariable
 //////////////////////////////////////////////////////
 //   Wait for Your Customers Element Availability   //
 //////////////////////////////////////////////////////
+WebUI.waitForPageLoad(25)
 WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/a_Your Customers'), 5)
 
 //////////////////////////////////////////////////

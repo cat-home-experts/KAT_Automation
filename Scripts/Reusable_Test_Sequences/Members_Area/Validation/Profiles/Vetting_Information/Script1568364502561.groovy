@@ -70,7 +70,10 @@ WebUI.verifyTextPresent("Accreditations & Memberships", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Below are the accreditations and memberships displayed on your profile page. You can add more by clicking on the link below", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Approved", false)
+// Table takes a time to update
+WebUI.waitForPageLoad(10)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Approved", false) //2 Instances???
 '----------------------------------------------'
 WebUI.verifyTextPresent("Type", false)
 '----------------------------------------------'

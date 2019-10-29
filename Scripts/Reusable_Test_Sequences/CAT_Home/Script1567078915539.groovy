@@ -61,7 +61,10 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/Checkatrade_Trade_
 WebUI.verifyTextPresent('Helping you find the right trade or service', false)
 '------------------------------------'
 // Homepage Service Informaation is Displayed
-WebUI.verifyTextPresent('Search through over 30,000 recommended, vetted and monitored trades and service providers for free.', false)
+WebUI.verifyTextPresent('Search through over', false) //over 30,000 recommended
+'------------------------------------'
+// Second part of string, Excluding Number
+WebUI.verifyTextPresent('recommended, vetted and monitored trades and service providers for free.', false)
 '------------------------------------'
 // Search by Member Trade Name is Displayed
 WebUI.verifyTextPresent('or look up a member by name', false)

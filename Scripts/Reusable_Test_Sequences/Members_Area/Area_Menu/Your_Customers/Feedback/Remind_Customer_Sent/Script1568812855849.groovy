@@ -91,7 +91,7 @@ WebUI.click(findTestObject('Object Repository/Page_Members Area/remind_Submit_Bu
 //////////////////////////////////////////////////
 
 WebUI.delay(2) // will look at puttting aa waitforelement here - Not sure if the remind_Submit_Button is still visible and enabled after hitting once
-WebUI.waitForPageLoad(10)
+WebUI.waitForPageLoad(25)
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/remind_Message_Dispel'), 25)
 '----------------------------------------------'

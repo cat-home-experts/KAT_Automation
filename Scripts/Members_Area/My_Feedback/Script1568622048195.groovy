@@ -33,13 +33,14 @@ import internal.GlobalVariable as GlobalVariable
 // Created URL_Handler to Enable Members Tests|    23/09/2019   |        DH        | Details are in URL_Handler  |
 // To Run Across All Environments             |                 |                  | (Located in Reusables)      |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Added Extra Synchronisation, Hardening Test|    29/10/2019   |        DH        | waitPageLoads added, scroll |
+//                                            |                 |                  | Value update from 250 to 500|
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 'WARNING - Be AWARE that, for example, That the Members Area Link on Preview doesnt take you to Preview, but takes you to LIVE Members Area'
 
-'THIS CURRENTLY ONLY RUNS FROM - - -  * * *  PREVIEW_MEMBERS_AREA Profile  * * * '
+'THIS CURRENTLY ONLY RUNS FROM - - -  * * *  PREVIEW_MEMBERS_AREA Profile  * * *  CORRECTION THIS IS NOW CATERED FOR - AND REDIRECTED  '
 //---------------------------------------------------------------------------------------------------------------
 //                                                                                                               |
 //	GIVEN - TODO                      |

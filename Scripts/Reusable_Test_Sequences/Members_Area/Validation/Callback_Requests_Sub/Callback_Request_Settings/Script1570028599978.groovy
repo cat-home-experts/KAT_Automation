@@ -140,15 +140,16 @@ WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Are
 // Settings <SAVED> Reported
 '----------------------------------------------'
 //WebUI.verifyTextPresent("Your Settings have been saved", false)
+
+
+///////////////////////////////////////
+// Dispel The Windows Dialog         //
+///////////////////////////////////////
 '----------------------------------------------'
-WebUI.delay(1)
-// Dispel Popout Dialog
-// // WebUI.sendKeys(findTestObject(null), Keys.chord(Keys.ESCAPE)) // nnative not working
-Robot robot = new Robot()
-robot.keyPress(KeyEvent.VK_ESCAPE)
-robot.keyRelease(KeyEvent.VK_ESCAPE)
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Dispel_Windows_Dialog'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 '----------------------------------------------'
-// Verify Dialog Text (Your Settings have been saved) is Displayed
+
+'----------------------------------------------'// Verify Dialog Text (Your Settings have been saved) is Displayed
 // WebUI.verifyElementVisible(findTestObject('Object Repository/Page_Members Area/div_Your Settings have been savedClose'), 2)
 '----------------------------------------------'
 // Click on <Your Settings Have Been Saved><Close> Button (Dialog)

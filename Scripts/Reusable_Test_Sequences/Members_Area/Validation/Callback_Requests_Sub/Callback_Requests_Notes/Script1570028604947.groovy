@@ -47,23 +47,23 @@ import java.awt.event.KeyEvent as KeyEvent
 //  THEN -                                                                                                       |
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
-
 ////////////////////////////////////////////////////////////
 //     Wait for Settings Element Availability             //
 ////////////////////////////////////////////////////////////
 WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/a_Settings'), 50)
 
 '----------------------------------------------'
+
 // Scroll Back (Down) To <Settings> Element
 //WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/Page_Members Area/a_AddEdit note'))
 '----------------------------------------------'
+
 ////////////////////////////////////////////////////////////
 //     Take an Initial Screenshot of Home After Login     //
 ////////////////////////////////////////////////////////////
 //WebUI.takeScreenshot('Reports/Screenshots/Initial_Members_page.png')
 // Stores in Project <Screenshots> Folder
 // CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Your_Customers_Callback_Request.png', FailureHandling.OPTIONAL)
-
 ////////////////////////////////////////////////////////////
 //         Verify Header Text on Key Portal Areas         //
 ////////////////////////////////////////////////////////////
@@ -71,10 +71,13 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/
 
 '----------------------------------------------'
 WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Page_Members Area/a_AddEdit note'), 2)
-'----------------------------------------------'
+
 // Prove be Infrance, Button Clicks OK of Fails
-WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Area/a_AddEdit note'))
 '----------------------------------------------'
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Area/a_AddEdit note'))
+
+'----------------------------------------------'
+
 ///////////////////////////////////////////////
 // Add/Edit Note
 // WebUI.delay(10)
@@ -95,14 +98,13 @@ WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Are
 //WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Area/button_Submit'))
 //'----------------------------------------------'
 
-
+///////////////////////////////////////
+// Dispel The Windows Dialog         //
+///////////////////////////////////////
 '----------------------------------------------'
-WebUI.delay(1)
-// Dispel Popout Dialog
-// // WebUI.sendKeys(findTestObject(null), Keys.chord(Keys.ESCAPE)) // nnative not working
-Robot robot = new Robot()
-robot.keyPress(KeyEvent.VK_ESCAPE)
-robot.keyRelease(KeyEvent.VK_ESCAPE)
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Dispel_Windows_Dialog'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+'----------------------------------------------'
+
 '----------------------------------------------'
 
 ///////////////////////////////////////

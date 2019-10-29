@@ -122,17 +122,36 @@ WebUI.verifyTextPresent("Close", false)
 WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Select Banner Image'))
 // SELECT BANNER IMAGE FILE IN THE FUTURE // TODO
 '----------------------------------------------'
-WebUI.delay(1)
-// Dispel Explorer
-//WebUI.sendKeys(findTestObject(null), Keys.chord(Keys.ESCAPE))
-Robot robot = new Robot()
-robot.keyPress(KeyEvent.VK_ESCAPE)
-robot.keyRelease(KeyEvent.VK_ESCAPE)
+//WebUI.delay(2)
+//// Dispel Explorer
+////WebUI.sendKeys(findTestObject(null), Keys.chord(Keys.ESCAPE))
+//Robot robot = new Robot()
+//// Alt+F - Explorer File Menu
+//// C     - Select C (Close
+////robot.keyPress(KeyEvent.VK_ALT)
+////robot.keyPress(KeyEvent.VK_F)
+////robot.keyRelease(KeyEvent.VK_ALT)
+////robot.keyRelease(KeyEvent.VK_F)
+////robot.keyPress(KeyEvent.VK_C)
+////robot.keyRelease(KeyEvent.VK_C)
+//robot.keyPress(KeyEvent.VK_ESCAPE)
+//robot.keyRelease(KeyEvent.VK_ESCAPE)
+//robot.keyPress(KeyEvent.VK_ESCAPE)
+//robot.keyRelease(KeyEvent.VK_ESCAPE)
+
+///////////////////////////////////////
+// Dispel The Windows Dialog         //
+///////////////////////////////////////
+'----------------------------------------------'
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Dispel_Windows_Dialog'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+'----------------------------------------------'
+
 '----------------------------------------------'
 '----------------------------------------------'
 // Need To Close The popout
-WebUI.waitForElementClickable(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Close'), 25)
-WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Close'))
+//WebUI.switchToWindowTitle("Add Banner Image", FailureHandling.CONTINUE_ON_FAILURE)
+//WebUI.waitForElementClickable(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Close'), 25)
+//WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Close'))
 '----------------------------------------------'
 WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Upload Banner Image'), 25)
 '----------------------------------------------'

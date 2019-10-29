@@ -108,21 +108,23 @@ else if (YE_FeedbackPublished == ("Yes")) { // Yes Reveals another set of Select
 	// Index Changes of Option Buttons Due To These Selections  |
 	//----------------------------------------------------------
 	if (YE_WorkCarriedOut == ("Yes")) {
+		WebUI.delay(1)
 		WebUI.waitForElementVisible(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_Yes'), 5)
 		WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_Yes'))
 	}
 	//----------------------------------------------------------
 	if (YE_WorkCarriedOut == ("No")) {
+		WebUI.delay(1)
 		WebUI.waitForElementVisible(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_Yes - Alt'), 5)
 		WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_Yes - Alt'))
 	}
 	//----------------------------------------------------------
-	WebUI.waitForPageLoad(5)
+	WebUI.waitForPageLoad(60)
 	//---------------------------------------
 	// When YES Feedback Published Selected |
 	//---------------------------------------
 	' Sometimes Fails To Capture text - Timing of Text Instantiation'
-	WebUI.delay(1)
+	WebUI.delay(2)
 	WebUI.verifyTextPresent('By ticking ‘Yes’ you are giving us permission to contact the trade to discuss the issue', false)
 	//--------------------------------------
 	if (YE_Resolve == ("Yes")) {

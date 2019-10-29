@@ -73,13 +73,14 @@ WebUI.click(findTestObject('Object Repository/Page_Members Area/apply_Filter'))
 //   Synchronise                                //
 //////////////////////////////////////////////////
 WebUI.delay(10) // desperation :-) other 2 syncs don't seem to work on this page
-WebUI.waitForPageLoad(10)
+WebUI.waitForPageLoad(25)
 WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/apply_Filter'), 10)
-WebUI.scrollToPosition(250, 250)
+WebUI.scrollToPosition(500, 500)
 //////////////////////////////////////////////////
 //   Verify Returned data from Search           //
 //////////////////////////////////////////////////
 
+WebUI.waitForPageLoad(25)
 '---------------------------------' //---------------------------------------------------
 'THIS TAB - Published Feedback    ' // Default, navigation back here to complete test   |
 '---------------------------------' //---------------------------------------------------
