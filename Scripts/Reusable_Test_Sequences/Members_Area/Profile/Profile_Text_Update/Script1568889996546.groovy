@@ -46,19 +46,21 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////////////////////
 //     Wait for Awareness Element Availability            //
 ////////////////////////////////////////////////////////////
-WebUI.waitForPageLoad(25)
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/Profiles/update_Your_Profile_Text_Here'), 25)
+WebUI.waitForPageLoad(50)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/Profiles/update_Your_Profile_Text_Here'), 50)
 
 ////////////////////////////////////////////////////////////
 //Take an Initial Screenshot of Update Profilr After Login//
 ////////////////////////////////////////////////////////////
 
 // Stores in Project <Screenshots> Folder
-CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Grow_Your_Business_Profile_Text.png', FailureHandling.OPTIONAL)
+// CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Grow_Your_Business_Profile_Text.png', FailureHandling.OPTIONAL)
 
 ////////////////////////////////////////////////////////////
 //         Verify Header Text on Key Portal Areas         //
 ////////////////////////////////////////////////////////////
+WebUI.delay(5)
+
 '---------------------------------'
 'THIS TAB - Profile Text          |'
 '---------------------------------'

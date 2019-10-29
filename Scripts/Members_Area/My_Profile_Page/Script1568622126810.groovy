@@ -35,7 +35,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 // Adding External Files - Behavioural Change |    28/10/2019   |        DH        | Removed close sequence on   |
 //                                            |                 |                  | upload dialogs              |
-// Extra Sync Added on Vetting page           |                 |                  | Page Laod Sync              |
+// Extra Sync Added on Vetting page           |                 |                  | Page Load Sync              |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------

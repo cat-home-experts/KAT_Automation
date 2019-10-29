@@ -41,8 +41,8 @@ import internal.GlobalVariable as GlobalVariable
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 // Wait for Page/Elememt Load
-WebUI.waitForPageLoad(25)
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/h2_Update your work area here'), 25)
+WebUI.waitForPageLoad(50)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/h2_Update your work area here'), 50)
 
 ////////////////////////////////////////////////////////////
 //Take an Initial Screenshot of Update Profilr After Login//
@@ -57,6 +57,7 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page
 '---------------------------------'
 'THIS TAB - Where You Work        |'
 '----------------------------------------------'
+WebUI.delay(5)
 // MEMBER ID CHECK
 WebUI.verifyTextPresent(findTestData('Members_Test_Data').getValue('MEMBER_ID', 1), false)
 '----------------------------------------------'

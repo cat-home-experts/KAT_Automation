@@ -44,6 +44,7 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////////////////////
 //       Wait for Profile Text Element Availability       //
 ////////////////////////////////////////////////////////////
+WebUI.waitForPageLoad(25)
 WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/a_Profile text'), 25)
 
 ////////////////////////////////////////////////////////////
