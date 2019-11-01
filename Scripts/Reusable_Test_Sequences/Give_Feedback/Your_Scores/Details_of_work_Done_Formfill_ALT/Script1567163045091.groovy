@@ -70,21 +70,23 @@ if (YS_Work_Covered == ("Yes")) {
 else if (YS_Work_Covered == ("No")) {
 	WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Warranty_Cover_span_No'))
 }
-WebUI.waitForPageLoad(5)
+WebUI.waitForPageLoad(25)
 '---------------------------------------'
 ' Complaint Discussed      - Yes or No  |'
 '---------------------------------------'
 
 if (YS_Discussed_Complaint == ("Yes")) {
-	WebUI.waitForElementVisible(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Discussed_Complaint_span_Yes'), 5)
+	WebUI.waitForElementVisible(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Discussed_Complaint_span_Yes'), 25)
 	WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Discussed_Complaint_span_Yes'))
 	WebUI.delay(1)
+	WebUI.waitForPageLoad(25)
 	WebUI.setText(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Complaint_Response'), YS_Complaint_Response)
 }
 else if (YS_Discussed_Complaint == ("No")) {
-	WebUI.waitForElementVisible(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Discussed_Complaint_span_No'), 5)
+	WebUI.waitForElementVisible(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Discussed_Complaint_span_No'), 25)
 	WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Discussed_Complaint_span_No'))
 	WebUI.delay(1)
+	WebUI.waitForPageLoad(25)
 	WebUI. verifyTextPresent('discuss your concerns directly with the business', false)
 }
 

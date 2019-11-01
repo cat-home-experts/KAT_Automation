@@ -50,6 +50,7 @@ import java.awt.event.KeyEvent as KeyEvent
 ////////////////////////////////////////////////////////////
 //     Wait for Settings Element Availability             //
 ////////////////////////////////////////////////////////////
+WebUI.waitForPageLoad(25)
 WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/a_Settings'), 50)
 
 '----------------------------------------------'
@@ -70,8 +71,10 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/
 '---------------------------------'
 
 '----------------------------------------------'
-WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Page_Members Area/a_AddEdit note'), 2)
-
+WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Page_Members Area/a_AddEdit note'), 25)
+// Scroll to Element (Error Unable to Click Object
+'----------------------------------------------'
+// WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/Page_Members Area/a_AddEdit note'))
 // Prove be Infrance, Button Clicks OK of Fails
 '----------------------------------------------'
 WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Area/a_AddEdit note'))
@@ -83,7 +86,7 @@ WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Are
 // WebUI.delay(10)
 //WebUI.switchToWindowTitle('Add/Edit Notes')
 //'----------------------------------------------'
-// WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/Page_Members Area/a_AddEdit note'))
+//WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/Page_Members Area/a_AddEdit note'))
 //'----------------------------------------------'
 //WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Area/a_AddEdit note'))
 //'----------------------------------------------'
@@ -91,9 +94,11 @@ WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Are
 //'----------------------------------------------'
 //WebUI.setText(findTestObject('Object Repository/Page_Members Area/Page_Members Area/textarea_AddEdit Notes'), 'this is still a cool note')
 //'----------------------------------------------'
-//WebUI.verifyTextPresent("Close", false)
+WebUI.verifyTextPresent("this is still a cool note", false)
 //'----------------------------------------------'
-//WebUI.verifyTextPresent("Submit", false)
+WebUI.verifyTextPresent("Close", false)
+//'----------------------------------------------'
+WebUI.verifyTextPresent("Submit", false)
 //'----------------------------------------------'
 //WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Area/button_Submit'))
 //'----------------------------------------------'
@@ -104,7 +109,8 @@ WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Are
 '----------------------------------------------'
 WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Dispel_Windows_Dialog'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 '----------------------------------------------'
-
+//WebUI.waitForElementClickable('Object Repository/Page_Members Area/button_Close', 10)
+//WebUI.click(findTestObject('Object Repository/Page_Members Area/button_Close'))
 '----------------------------------------------'
 
 ///////////////////////////////////////

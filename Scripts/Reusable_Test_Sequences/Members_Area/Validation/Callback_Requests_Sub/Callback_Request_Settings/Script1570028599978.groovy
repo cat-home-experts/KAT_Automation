@@ -51,6 +51,7 @@ import java.awt.event.KeyEvent as KeyEvent
 ////////////////////////////////////////////////////////////
 //     Wait for Settings Element Availability             //
 ////////////////////////////////////////////////////////////
+WebUI.waitForPageLoad(25)
 WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/a_Settings'), 50)
 
 ////////////////////////////////////////////////////////////
@@ -88,6 +89,8 @@ WebUI.verifyTextPresent("These customers are waiting for your call, so even if i
 // Click <Settings? Control
 WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Area/a_Settings'))
 '----------------------------------------------'
+// Synch - Page Data takes a time
+WebUI.waitForElementVisible(findTestObject('Object Repository/Callback/work_Alerts_Text'), 10)
 // Verify Key Textual Information
 '----------------------------------------------'
 WebUI.verifyTextPresent("Your Callback Requests", false)
@@ -119,7 +122,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Members Area/Pa
 	'1: Object', true)
 '----------------------------------------------'
 // Scroll <Submit> Button Into View
-WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/Page_Members Area/button_Submit_1'), 2)
+WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/Page_Members Area/button_Submit_1'), 25)
 '----------------------------------------------'
 // Check <Automatic Replies> Checkbox
 WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Area/input_Send your customers initial info'))
@@ -142,13 +145,29 @@ WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Are
 //WebUI.verifyTextPresent("Your Settings have been saved", false)
 
 
-///////////////////////////////////////
-// Dispel The Windows Dialog         //
-///////////////////////////////////////
+///////////////////////////////////////////////
+// Dispel The Windows Changes saved Dialog   //   
+/////////////////////////////////////////////
 '----------------------------------------------'
-WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Dispel_Windows_Dialog'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Dispel_Windows_Dialog'), [:], FailureHandling.OPTIONAL)
 '----------------------------------------------'
+//WebUI.delay(2)
 
+//WebUI.switchToWindowIndex(1)
+// Button Disabled (dialog with focus) But Dialog is Dispelled When Clicked Submit manually
+//WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Area/button_Submit_1')) 
+
+//WebUI.sendKeys(findTestObject(null), Keys.chord(Keys.ESCAPE))
+//Robot robot = new Robot()
+//robot.keyPress(KeyEvent.VK_ESCAPE)
+//robot.keyRelease(KeyEvent.VK_ESCAPE)
+WebUI.delay(2)
+
+WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/button_Close'), 10)
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/button_Close'))
+
+WebUI.click(findTestObject('Object Repository/Callback/work_Alerts_Text'))
 '----------------------------------------------'// Verify Dialog Text (Your Settings have been saved) is Displayed
 // WebUI.verifyElementVisible(findTestObject('Object Repository/Page_Members Area/div_Your Settings have been savedClose'), 2)
 '----------------------------------------------'

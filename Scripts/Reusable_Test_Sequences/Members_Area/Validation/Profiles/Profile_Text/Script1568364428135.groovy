@@ -25,7 +25,7 @@ import internal.GlobalVariable as GlobalVariable
 //  My Profile Text Update Page Initial       |   19/09/2019    |      DH          |                             |
 //  Validation Checks  = My Profile Page      |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//  Added Synchronisation on Text Alert Header|   30/10/2019    |      DH          |  Script Hardening           |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -66,6 +66,9 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/
 WebUI.verifyTextPresent(findTestData('Members_Test_Data').getValue('MEMBER_ID', 1), false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("MEMBER ID", false)
+'----------------------------------------------'
+// Syncronisation on <Alert Text> - Highlighted BLUE text Just Below Update Header
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/text_Alert'), 60)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Update your profile text here", false)
 '----------------------------------------------'

@@ -48,8 +48,8 @@ import internal.GlobalVariable as GlobalVariable
 //////////////////////////////////////////////////
 //   Wait for customer_Name Element Availability//
 //////////////////////////////////////////////////
-WebUI.waitForPageLoad(25)
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/remind_Name'), 5)
+WebUI.waitForPageLoad(60)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/remind_Name'), 60)
 
 //////////////////////////////////////////////////
 //   Enter Criteria Customer SURNAME            // // Customer name and Customer Surname are treated equally in this test  (1 and the same)
@@ -83,7 +83,9 @@ WebUI.setText(findTestObject('Object Repository/Page_Members Area/remind_Phone')
 //   Hit <Submit>                               //
 //////////////////////////////////////////////////
 WebUI.scrollToPosition(250, 250)
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/remind_Submit_Button'), 25)
+WebUI.delay(2)
+WebUI.waitForPageLoad(25)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/remind_Submit_Button'), 60)
 WebUI.click(findTestObject('Object Repository/Page_Members Area/remind_Submit_Button'))
 
 //////////////////////////////////////////////////
@@ -91,9 +93,9 @@ WebUI.click(findTestObject('Object Repository/Page_Members Area/remind_Submit_Bu
 //////////////////////////////////////////////////
 
 WebUI.delay(2) // will look at puttting aa waitforelement here - Not sure if the remind_Submit_Button is still visible and enabled after hitting once
-WebUI.waitForPageLoad(25)
+WebUI.waitForPageLoad(60)
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/remind_Message_Dispel'), 25)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/remind_Message_Dispel'), 60)
 '----------------------------------------------'
 WebUI.verifyTextPresent('Thank you', false)
 '----------------------------------------------'
@@ -103,10 +105,10 @@ WebUI.verifyTextPresent('Your data has been submitted', false)
 //////////////////////////////////////////////////
 //   Dispel Thank You Message                   //
 //////////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/remind_Message_Dispel'), 25)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/remind_Message_Dispel'), 60)
 WebUI.click(findTestObject('Object Repository/Page_Members Area/remind_Message_Dispel'))
 WebUI.scrollToPosition(250, 250)
-
+WebUI.waitForPageLoad(25)
 ///////////////////////////////////////
 //                END                //
 ///////////////////////////////////////

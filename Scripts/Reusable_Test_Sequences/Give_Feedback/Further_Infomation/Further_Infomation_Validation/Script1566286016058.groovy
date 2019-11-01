@@ -21,6 +21,7 @@ import org.openqa.selenium.Keys as Keys
 '--------------------------------'
 ' Set the Value of Work Textbox  |'  // Warning! The previous page fill auto commits, even though there is a commit button on the form (watch for behaviour change)
 '--------------------------------'
+WebUI.waitForElementPresent(findTestObject('Object Repository/New Folder1/Page_Checkatrade Give your feedback/input_Value Of Work_ctl00contenttbValueOfWork'), 25)
 WebUI.setText(findTestObject('Object Repository/New Folder1/Page_Checkatrade Give your feedback/input_Value Of Work_ctl00contenttbValueOfWork'), "0") // Set 0 
 
 '--------------------------------'

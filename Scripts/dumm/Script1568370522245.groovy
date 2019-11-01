@@ -13,46 +13,36 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
-WebUI.navigateToUrl('https://preview-ma.checkatrade.com/membership')
+WebUI.openBrowser('')
 
-WebUI.setText(findTestObject('Object Repository/Membership/Page_Members Area/input_Username_username'), 'check1234')
+WebUI.navigateToUrl('https://preview-ma.checkatrade.com/login?return=%2Fwork-alert')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Membership/Page_Members Area/input_Password_password'), 'fzqqY0qJjYTuJiVJRZh4ag==')
+WebUI.setText(findTestObject('Page_Members Area/input_Username_username'), 'checka1234')
 
-WebUI.click(findTestObject('Object Repository/Membership/Page_Members Area/i_Log in_ace-icon fa fa-arrow-right'))
+WebUI.setEncryptedText(findTestObject('Page_Members Area/input_Password_password'), 'fzqqY0qJjYTuJiVJRZh4ag==')
 
-WebUI.navigateToUrl('https://preview-ma.checkatrade.com/membership')
+WebUI.click(findTestObject('Page_Members Area/button_Log in'))
 
-WebUI.setText(findTestObject('Object Repository/Membership/Page_Members Area/input_Username_username'), 'check1234')
+WebUI.setText(findTestObject('Page_Members Area/input_Username_username'), 'check1234')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Membership/Page_Members Area/input_Password_password'), 'fzqqY0qJjYTuJiVJRZh4ag==')
+WebUI.click(findTestObject('Page_Members Area/button_Log in'))
 
-WebUI.click(findTestObject('Object Repository/Membership/Page_Members Area/i_Log in_ace-icon fa fa-arrow-right'))
+WebUI.click(findTestObject('Page_Members Area/i_Settings'))
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Membership/Page_Members Area/input_Password_password'), 'fzqqY0qJjYTuJiVJRZh4ag==')
+WebUI.selectOptionByValue(findTestObject('Page_Members Area/select_Do not sendOtherCompany email addres_6018fa'), '15: Object', 
+    true)
 
-WebUI.click(findTestObject('Object Repository/Membership/Page_Members Area/i_Log in_ace-icon fa fa-arrow-right'))
+WebUI.selectOptionByValue(findTestObject('Page_Members Area/select_Do not sendOtherCompany email addres_6018fa'), '14: Object', 
+    true)
 
-WebUI.click(findTestObject('Object Repository/Membership/Page_Members Area/a_Dashboard'))
+WebUI.click(findTestObject('Page_Members Area/input_Send your customers initial informati_997224'))
 
-WebUI.click(findTestObject('Object Repository/Membership/Page_Members Area/img'))
+WebUI.click(findTestObject('Page_Members Area/button_Submit'))
 
-WebUI.click(findTestObject('Object Repository/Members/Page_Members Area/i_Settings'))
+WebUI.click(findTestObject('Object Repository/Page_Members Area/button_Close'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Membership/Page_Members Area/select_Do not sendOtherCompany email address jonwoodcheckatradecomMr Daniel Davis danieldavisedaxiscoukMr Testing Team supportcheckatradecomMr Testing Team supportcheckatradecomMr Alexander Nunn alexandernunncheckatradec'), 
-    '1: Object', true)
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Membership/Page_Members Area/select_Do not sendOtherCompany email address jonwoodcheckatradecomMr Daniel Davis danieldavisedaxiscoukMr Testing Team supportcheckatradecomMr Testing Team supportcheckatradecomMr Alexander Nunn alexandernunncheckatradec'), 
-    '14: Object', true)
-
-WebUI.click(findTestObject('Object Repository/Membership/Page_Members Area/input_Send your customers initial information about your rates and services_chkAutoResponder'))
-
-WebUI.click(findTestObject('Object Repository/Membership/Page_Members Area/input_Send your customers initial information about your rates and services_chkAutoResponder'))
-
-WebUI.click(findTestObject('Object Repository/Membership/Page_Members Area/button_Submit'))
-
-WebUI.click(findTestObject('Object Repository/Membership/Page_Members Area/button_Close'))
-
-WebUI.click(findTestObject('Object Repository/Members/Page_Members Area/i_Settings'))
+WebUI.closeBrowser()
 

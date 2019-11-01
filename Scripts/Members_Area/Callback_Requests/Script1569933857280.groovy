@@ -25,7 +25,9 @@ import internal.GlobalVariable as GlobalVariable
 // Prove the function Under Members Area      |                 |                  |  Need to Extend in the      |
 // <Your Customers><Callback Requests>        |    01/10/2019   |     DH           |  Future (Modal Dialog)      |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Unable to Click Object Reported, When      |                 |                  |  Callback Request Notes     |
+// Attempting to Click on 'a_AddEdit note'    |    31/10/2019   |     DH           |  Element Wait Extended + Scl|
+// Sync Issues - Changes Saved Dialog         |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -52,13 +54,13 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Da
 	//-----------------------------------------
 	// Call Startup Process - Browser Startup |
 	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Start_Up'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Start_Up'), [:], FailureHandling.OPTIONAL)
 	//-----------------------------------------
 	
 	//-----------------------------------------
 	// Log In to the Members Area             |
 	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/log_On'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/log_On'), [:], FailureHandling.OPTIONAL)
 	//-----------------------------------------
 
 	//-----------------------------------------

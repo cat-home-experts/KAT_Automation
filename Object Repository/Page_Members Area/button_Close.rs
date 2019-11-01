@@ -3,8 +3,18 @@
    <description></description>
    <name>button_Close</name>
    <tag></tag>
-   <elementGuidId>1a9efa31-43fc-45ca-b33c-b7a25a40b6df</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <elementGuidId>9ad0df09-4371-4305-ba72-5fb1f21c65a5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;cdk-accordion-child-0&quot;]/div/mat-panel-description/app-work-alert-settings/app-modal/div/div/div/div[3]/button</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'button' and (text() = 'Close' or . = 'Close')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +63,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//button[@type='button'])[3]</value>
+      <value>(//button[@type='button'])[5]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

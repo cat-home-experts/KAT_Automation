@@ -50,13 +50,13 @@ import internal.GlobalVariable as GlobalVariable
     //-----------------------------------------
 	// Call Startup Process - Browser Startup, Navigate, Maximize and Close Cookie Nagging Element
 	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.OPTIONAL)
 	//-----------------------------------------
 	'--------------------------------------'
 	' Hit the <TRADES, APPLY HERE> Button  |'
 	'--------------------------------------'
 	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Hit_Signup'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here'), [:], FailureHandling.OPTIONAL)
 	
 	'--------------------------'
 	' Set - Full Name          |'

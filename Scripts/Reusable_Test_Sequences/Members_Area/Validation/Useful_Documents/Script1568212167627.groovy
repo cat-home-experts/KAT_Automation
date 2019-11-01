@@ -51,7 +51,7 @@ import internal.GlobalVariable as GlobalVariable
 //Wait for Useful Docs Element Availability//
 /////////////////////////////////////////////
 //WebUI.waitForPageLoad(60)
-WebUI.waitForElementPresent(findTestObject('Object Repository/Membership/Sync_Footer'), 5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Membership/Sync_Footer'), 25)
 
 ////////////////////////////////////////////////////////////
 //     Take an Initial Screenshot of Home After Login     //
@@ -70,6 +70,8 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Membership/Sync_Fo
 WebUI.verifyTextPresent(findTestData('Members_Test_Data').getValue('MEMBER_ID', 1), false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("MEMBER ID", false)
+'----------------------------------------------'
+WebUI.waitForPageLoad(25)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Your Checkatrade Useful Documents", false)
 '----------------------------------------------'

@@ -55,7 +55,7 @@ import java.lang.Integer as Integer
 'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test\r\n'
 for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Mobile_Test_Data').getRowNumbers(); (GlobalVariable.row)++) {
     //def removed for globalisation
-    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.OPTIONAL)
 	//----------------------------------------------------------
 	' ALTERNATIVE SCREEN RESOLUTION SELECTION METHOD'        // |
     //----------------------------------------------------------

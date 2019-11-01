@@ -61,13 +61,13 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Da
 	//-----------------------------------------
 	// Call Startup Process - Browser Startup |
 	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Start_Up'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Start_Up'), [:], FailureHandling.OPTIONAL)
 	//-----------------------------------------
 	
 	//-----------------------------------------
 	// Log In to the Members Area             |
 	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/log_On'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/log_On'), [:], FailureHandling.OPTIONAL)
 	//-----------------------------------------
 
 	//-----------------------------------------

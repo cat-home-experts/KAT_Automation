@@ -29,8 +29,8 @@ FD_Value_of_Work = data.getValue('FD_Value_of_Work', GlobalVariable.row)
 '-----------'
 '  Synch    |'
 '-----------'
-WebUI.waitForElementVisible(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_Value Of Work_ctl00contentButton1'), 5)
-
+//WebUI.waitForElementVisible(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_Value Of Work_ctl00contentButton1'), 25)
+WebUI.waitForElementPresent(findTestObject('Object Repository/New Folder1/Page_Checkatrade Give your feedback/input_Value Of Work_ctl00contenttbValueOfWork'), 25)
 '--------------------------------'
 '  Set the Value of Work Textbox |'  // Warning! The previous page fill auto commits, even though there is a commit button on the form (watch for behaviour change)
 '--------------------------------'
