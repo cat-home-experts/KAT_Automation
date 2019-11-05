@@ -50,8 +50,8 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/a_Dashboard'), 60)
 
 // Page Refresh - Suddenly page not fully loading on PREVIEW - 26/09/2019
-WebUI.refresh()
-
+//WebUI.refresh()
+WebUI.delay(2)
 '---------------------------------'
 'THIS TAB - DASHBOARD - PRIMARY   |' // DOC HEAD
 '----------------------------------------------'

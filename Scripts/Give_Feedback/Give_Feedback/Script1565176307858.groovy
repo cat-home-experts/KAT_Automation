@@ -36,7 +36,7 @@ import internal.GlobalVariable as GlobalVariable
 // Hardening of all assets relating to these  |    03/09/2019   |     Dave Horne   |                             |
 // Tests, after extending the dataset         |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Banner Image Test Flaky, Temp Removal      |    04/11/2019   |        DH        |    TODO                     |
 //---------------------------------------------------------------------------------------------------------------
 //
 //---------------------------------------------------------------------------------------------------------------
@@ -59,7 +59,7 @@ def YE_WorkCarriedOut
 'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test\r\n'
 for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (1)').getRowNumbers(); (GlobalVariable.row)++) {
     //def removed for globalisation
-    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.OPTIONAL)
 
     //-----------------------------------------
     '-----------------------------------------------------'
@@ -70,7 +70,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (
     '-----------------------------------------------------'
     ' Enter Member Trade Name OR Checkatrade ID To Review |'
     '-----------------------------------------------------'
-    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Which_Member_to_Review'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Which_Member_to_Review'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
     '--------------------------------------'
     ' Your Experience (page 1) Processing  |'
@@ -127,7 +127,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (
     ' Teardown - CLose Browser |'
     '--------------------------'
 
-    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.OPTIONAL)
     '--------------------------'
     ' END                      |'
     '--------------------------'

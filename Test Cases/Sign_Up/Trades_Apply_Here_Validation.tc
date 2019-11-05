@@ -3,59 +3,6 @@
    <description></description>
    <name>Trades_Apply_Here_Validation</name>
    <tag></tag>
-   <comment>--------------------------------------
- Hit the &lt;TRADES, APPLY HERE> Button  |
----------------------------------------------------------------------------
- Hit the &lt;SUBMIT> Button  | Attempt a COMMITAL of form with no data filled |
---------------------------------------------------
- Check initial Validation Message(s) are Produced |
---------------------------------------
- Set - Email Address Incorrect Form   |
---------------------------------------
- Check Email Validation Message       |
---------------------------
- Set - Email Address      |
----------------------------------------------------------------------------------
- FIll Remaining Empty Fields With Random Data - To Elicit Validation Message(s)  |
----------------------------------------------
- Check Trade Category Validation Message     |
----------------------------------------------
----------------------------------------------------------
- Check specify a valid phone number Validation Message   |
----------------------------------------------------------
- Check Remaining Fields with NULL Data Validation Message|
---------------------------------------------------
- Check initial Validation Message(s) are Produced |
---------------------------
- Set - Company Name       |
---------------------------
- Set - Full Name          |
---------------------------
- Set - Trade Category     |
---------------------------
---------------------------
- lookup - Trade Category  |
---------------------------
---------------------------
- Postcode Prompt          |
---------------------------
---------------------------
- Set - Postcode           |
---------------------------
- Set - Contact Number     |
---------------------------
- Hit the &lt;SUBMIT> Button  |
----------------------------------------------------
-Verify CONGRATULATIONS is reported after form fill 
---------------------------
- Teardown - CLose Browser |
--------------------------------------------
- Web Office Call to Ensure NEW CASE Opened |
--------------------------------------------
-------
-TODO  |
---------------------------
- END                      |
---------------------------</comment>
+   <comment></comment>
    <testCaseGuid>4143bdae-df5e-4cf8-84c5-6b92b01d6df8</testCaseGuid>
 </TestCaseEntity>

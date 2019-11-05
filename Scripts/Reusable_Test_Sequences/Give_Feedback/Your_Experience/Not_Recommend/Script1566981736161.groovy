@@ -34,9 +34,10 @@ def YE_Recommend = data.getValue("YE_Recommendations", GlobalVariable.row)
 
 //--------------------------
 // Synch Added - 09/09/2019
-WebUI.waitForElementVisible(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/work_Carried_Out_span_No'), 5)
+//WebUI.waitForElementVisible(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/work_Carried_Out_span_No'), 25)
 
 if (YE_WorkCarriedOut == ("No")) {
+	WebUI.waitForElementClickable(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/work_Carried_Out_span_No'), 25)
 	WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/work_Carried_Out_span_No'))
 	WebUI.waitForPageLoad(2)
 	// Enter Comment in Revealed Field	
@@ -45,12 +46,13 @@ if (YE_WorkCarriedOut == ("No")) {
 	WebUI.waitForPageLoad(2)
 }
 else if (YE_WorkCarriedOut == ("Yes")) {
+	WebUI.waitForElementClickable(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/work_Carried_Out_span_Yes'), 25)
 	WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/work_Carried_Out_span_Yes'))
 	WebUI.waitForPageLoad(2)
 }
 //--------------------------
 // Synch Added - 09/09/2019
-WebUI.waitForElementVisible(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/work_Carried_Out_span_No'), 5)
+//WebUI.waitForElementVisible(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/work_Carried_Out_span_No'), 25)
 
 '--------------------------------------'
 ' Nature of Issue - Selection Box      |' 
@@ -67,7 +69,7 @@ WebUI.selectOptionByLabel(findTestObject('Feedback_Non_Recommend/Page_Checkatrad
 WebUI.scrollToElement(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_No_ctl00contentButton4'), 2)
 
 WebUI.waitForPageLoad(5)
-WebUI.waitForElementVisible(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select ShortForm'), 5)
+WebUI.waitForElementVisible(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select ShortForm'), 25)
 
 '--------------------------------------'	//--------------------------------------------------------------------------------------------------
 ' Would you like to Publish Feedback?  |'  	// No reveals extra comment text field (Reason), Yes Reveals Message Text - BOTH CHANGES VERIFIED  |
@@ -78,12 +80,12 @@ if (YE_FeedbackPublished == ("No")) {
 	// Index Changes of Option Buttons Due To These Selections  |
 	//----------------------------------------------------------
 	if (YE_WorkCarriedOut == ("Yes")) {
-		WebUI.waitForElementVisible(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_No'), 5)
+		WebUI.waitForElementClickable(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_No'), 25)
 		WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_No'))
 	}
 	//----------------------------------------------------------
 	if (YE_WorkCarriedOut == ("No")) {
-		WebUI.waitForElementVisible(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_No - Alt'), 5)
+		WebUI.waitForElementClickable(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_No - Alt'), 25)
 		WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_No - Alt'))
 	}
 	//----------------------------------------------------------
@@ -109,13 +111,13 @@ else if (YE_FeedbackPublished == ("Yes")) { // Yes Reveals another set of Select
 	//----------------------------------------------------------
 	if (YE_WorkCarriedOut == ("Yes")) {
 		WebUI.delay(1)
-		WebUI.waitForElementVisible(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_Yes'), 5)
+		WebUI.waitForElementClickable(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_Yes'), 25)
 		WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_Yes'))
 	}
 	//----------------------------------------------------------
 	if (YE_WorkCarriedOut == ("No")) {
 		WebUI.delay(1)
-		WebUI.waitForElementVisible(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_Yes - Alt'), 5)
+		WebUI.waitForElementClickable(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_Yes - Alt'), 25)
 		WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/feedback_Published_span_Yes - Alt'))
 	}
 	//----------------------------------------------------------
@@ -128,10 +130,12 @@ else if (YE_FeedbackPublished == ("Yes")) { // Yes Reveals another set of Select
 	WebUI.verifyTextPresent('By ticking ‘Yes’ you are giving us permission to contact the trade to discuss the issue', false)
 	//--------------------------------------
 	if (YE_Resolve == ("Yes")) {
+		WebUI.waitForElementClickable(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/attempt_Resolution_span_Yes'), 25)
 		WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/attempt_Resolution_span_Yes'))
 		WebUI.waitForPageLoad(2)
 	}
 	else if (YE_Resolve == ("No")) {
+		WebUI.waitForElementClickable(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/attempt_Resolution_span_No'), 25)
 		WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/attempt_Resolution_span_No'))
 		WebUI.waitForPageLoad(2)
 	}

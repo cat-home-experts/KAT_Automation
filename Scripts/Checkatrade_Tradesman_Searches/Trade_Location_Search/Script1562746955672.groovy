@@ -53,7 +53,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('searchTestData'
 	//-----------------------------------------
 	// Call Startup Process - Browser Startup, Navigate, Maximize and Close Cookie Nagging Element
 	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.OPTIONAL)
 	//-----------------------------------------
 
 	'---------------------------------------'
@@ -84,7 +84,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('searchTestData'
 	'--------------------------'
 	' Teardown - CLose Browser |'
 	'--------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.OPTIONAL)
 	
 	'--------------------------'
 	' END                      |'

@@ -163,10 +163,11 @@ WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Are
 //robot.keyRelease(KeyEvent.VK_ESCAPE)
 WebUI.delay(2)
 
-WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/button_Close'), 10)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/button_Close'), 2)
 
 WebUI.click(findTestObject('Object Repository/Page_Members Area/button_Close'))
 
+WebUI.scrollToElement(findTestObject('Object Repository/Callback/work_Alerts_Text'), 2)
 WebUI.click(findTestObject('Object Repository/Callback/work_Alerts_Text'))
 '----------------------------------------------'// Verify Dialog Text (Your Settings have been saved) is Displayed
 // WebUI.verifyElementVisible(findTestObject('Object Repository/Page_Members Area/div_Your Settings have been savedClose'), 2)

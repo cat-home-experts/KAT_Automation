@@ -97,7 +97,7 @@ WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/bu
 '----------------------------------------------'
 // Sync on Dialog CLOSE Button Appearance
 WebUI.delay(1)
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Close'), 25)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Close'), 25)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Add Banner Image", false)
 '----------------------------------------------'
@@ -119,21 +119,22 @@ WebUI.verifyTextPresent("Close", false)
 // Clicking Select Brings Up Explorer Search Dialog) extension = Winnium 
 '----------------------------------------------'
 // Open Windows Explorer to SEARCH
-WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Select Banner Image'))
+WebUI.waitForElementClickable(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Select Banner Image'), 25)
+//WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Select Banner Image'))
 // SELECT BANNER IMAGE FILE IN THE FUTURE // TODO
 '----------------------------------------------'
 //WebUI.delay(2)
 //// Dispel Explorer
-////WebUI.sendKeys(findTestObject(null), Keys.chord(Keys.ESCAPE))
+//WebUI.sendKeys(findTestObject("Reusable_Test_Sequences/Utils/Dispel_Windows_Dialog"), Keys.chord(Keys.ESCAPE))
 //Robot robot = new Robot()
 //// Alt+F - Explorer File Menu
 //// C     - Select C (Close
-////robot.keyPress(KeyEvent.VK_ALT)
-////robot.keyPress(KeyEvent.VK_F)
-////robot.keyRelease(KeyEvent.VK_ALT)
-////robot.keyRelease(KeyEvent.VK_F)
-////robot.keyPress(KeyEvent.VK_C)
-////robot.keyRelease(KeyEvent.VK_C)
+//robot.keyPress(KeyEvent.VK_ALT)
+//robot.keyPress(KeyEvent.VK_F)
+//robot.keyRelease(KeyEvent.VK_ALT)
+//robot.keyRelease(KeyEvent.VK_F)
+//robot.keyPress(KeyEvent.VK_C)
+//robot.keyRelease(KeyEvent.VK_C)
 //robot.keyPress(KeyEvent.VK_ESCAPE)
 //robot.keyRelease(KeyEvent.VK_ESCAPE)
 //robot.keyPress(KeyEvent.VK_ESCAPE)
@@ -143,7 +144,7 @@ WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/bu
 // Dispel The Windows Dialog         //
 ///////////////////////////////////////
 '----------------------------------------------'
-WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Dispel_Windows_Dialog'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Dispel_Windows_Dialog'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 '----------------------------------------------'
 
 '----------------------------------------------'

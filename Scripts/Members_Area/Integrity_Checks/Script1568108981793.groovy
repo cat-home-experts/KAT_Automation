@@ -85,7 +85,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Da
 	//-----------------------------------------
 	// Hit <Your Customers> on the Banner menu|
 	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Banner_Menu/Your_Customers'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Banner_Menu/Your_Customers'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	'-----------------------------------------'// My Feedback Page (<Published Feedback> - Default Tab)
 	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Customers/My_Feedback'), [:], FailureHandling.STOP_ON_FAILURE)
 	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/My_Feedback'), [:], FailureHandling.CONTINUE_ON_FAILURE)
@@ -103,56 +103,56 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Da
 	//  RETURN TO DASHBOARD - Then Resume <Your Customers>  //
 	//////////////////////////////////////////////////////////
 	'-----------------------------------------'// Dashboard
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Banner_Menu/Dashboard'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Banner_Menu/Dashboard'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	'-----------------------------------------'// Your Customers Page
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Banner_Menu/Your_Customers'), [:], FailureHandling.STOP_ON_FAILURE)	
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Banner_Menu/Your_Customers'), [:], FailureHandling.CONTINUE_ON_FAILURE)	
 	'-----------------------------------------'// My Callback Requests Page
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Customers/Callback_Requests'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Customers/Callback_Requests'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Callback_Requests_Sub/Callback_Request_Settings'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	'-----------------------------------------'
 	//////////////////////////////////////////////////////////
 	//  RETURN TO DASHBOARD - Then Resume <Your Customers>  //
 	//////////////////////////////////////////////////////////
 	'-----------------------------------------'// Dashboard
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Banner_Menu/Dashboard'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Banner_Menu/Dashboard'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	'-----------------------------------------'// Your Customers Page
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Banner_Menu/Your_Customers'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Banner_Menu/Your_Customers'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	'-----------------------------------------'// My Received Negative Review Page
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Customers/Received_Negative_Review'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Customers/Received_Negative_Review'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Received_Negative_Review'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	//-----------------------------------------
 	// Hit <Grow Your Business> on Banner menu|
 	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Banner_Menu/Grow_Your_Business'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Banner_Menu/Grow_Your_Business'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	'-----------------------------------------'// My Profile Page
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_Your_Business/My_Profile'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_Your_Business/My_Profile'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/My_Profile'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	//---------------------------------------------------
 	// Profile Page Has a Number of Navigable Elements  | starto
 	//---------------------------------------------------
 	'-----------------------------------------'// My Profile Page - Profile text
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_Your_Business/Profiles/Profile_Text'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_Your_Business/Profiles/Profile_Text'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	'-----------------------------------------'// My Profile Page - Seach appearances
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_Your_Business/Profiles/Search_Appearances'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_Your_Business/Profiles/Search_Appearances'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'-----------------------------------------'// My Profile Page - Where you work
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_Your_Business/Profiles/Where_You_Work'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_Your_Business/Profiles/Where_You_Work'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'-----------------------------------------'// My Profile Page - Company logo 	
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_Your_Business/Company_Logo'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_Your_Business/Company_Logo'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'-----------------------------------------'// My Profile Page - Banner image
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_Your_Business/Profiles/BAnner_Image'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_Your_Business/Profiles/BAnner_Image'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'-----------------------------------------'// My Profile Page - Vetting information
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_Your_Business/Profiles/Vetting_Information'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_Your_Business/Profiles/Vetting_Information'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'-----------------------------------------'// My Profile Page - Insurance
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_Your_Business/Profiles/Insurance'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_Your_Business/Profiles/Insurance'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'-----------------------------------------'// My Profile Page - 'Maximise your profile' video
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_Your_Business/Profiles/Maximise_Your_Profile'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_Your_Business/Profiles/Maximise_Your_Profile'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	
 	
@@ -165,38 +165,38 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Da
 	
 	
 	'-----------------------------------------'// My Photos Page
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_Your_Business/My_Photos'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_Your_Business/My_Photos'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/My_Photos'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	'-----------------------------------------'// My Stats Page
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_Your_Business/My_Stats'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_Your_Business/My_Stats'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/My_Stats'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	'-----------------------------------------'// My Advertise Page
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_Your_Business/Advertise'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_Your_Business/Advertise'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Advertise'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	'-----------------------------------------'
 	
 	//-----------------------------------------
 	// Hit <Your Account> on the Banner menu  |
 	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Banner_Menu/Your_Account'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Banner_Menu/Your_Account'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	'-----------------------------------------'// My Membership Page
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/Membership'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/Membership'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Membership'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	'-----------------------------------------'// My Useful Documents Page
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/Useful_Documents'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/Useful_Documents'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Useful_Documents'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	'-----------------------------------------'// My Payments Page
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/Payments'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/Payments'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Payments'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	'-----------------------------------------'// My Offers Page
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/Offers'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/Offers'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Offers'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	'-----------------------------------------'
 	
 	//-----------------------------------------
 	// Hit <Dashboard> on the Banner menu     |
 	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Banner_Menu/dashboard'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Banner_Menu/dashboard'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	'-----------------------------------------'
 	
 	
@@ -205,7 +205,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Da
 	//-----------------------------------------
 	// Hit <Contact Us> above the Banner menu |
 	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Banner_Menu/Contact_Us'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Banner_Menu/Contact_Us'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	
 	
@@ -213,7 +213,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Da
 	//-----------------------------------------
 	// Hit <Recommend a friend> above the menu|
 	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Banner_Menu/Recommend_a_Friend'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Banner_Menu/Recommend_a_Friend'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	
 	
@@ -221,7 +221,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Da
 	//-----------------------------------------
 	// Log OFF the Members Area               |
 	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Banner_Menu/log_Off'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Banner_Menu/log_Off'), [:], FailureHandling.OPTIONAL)
 	//-----------------------------------------
 
 	

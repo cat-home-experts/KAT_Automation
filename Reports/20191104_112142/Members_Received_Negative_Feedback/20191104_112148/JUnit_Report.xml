@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Members_Received_Negative_Feedback" time="42.064" tests="1" failures="0" errors="0">
+   <testsuite name="Members_Received_Negative_Feedback" tests="1" failures="0" errors="0" time="42.064" timestamp="2019-11-04 11:24:26" hostname="DavidHo - VETTEDSP36RF.check.local" id="Test Suites/Members_Received_Negative_Feedback">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\davidho\\Katalon Studio\\Start\\Reports\\20191104_112142\\Members_Received_Negative_Feedback\\20191104_112148"/>
+         <property name="logFiles" value="C:\\Users\\davidho\\Katalon Studio\\Start\\Reports\\20191104_112142\\Members_Received_Negative_Feedback\\20191104_112148\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="DavidHo - VETTEDSP36RF.check.local"/>
+         <property name="os" value="Windows 10 32bit"/>
+         <property name="katalonVersion" value="7.0.5.1"/>
+         <property name="browser" value="Chrome 78.0.3904.70"/>
+         <property name="hostAddress" value="10.0.11.243"/>
+         <property name="sessionId" value="e790b7d90b02b85560c10f7cbc5bbfd8"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Members_Area/Received_Negative_Review" time="40.578" classname="Test Cases/Members_Area/Received_Negative_Review" status="PASSED">
+         <system-out><![CDATA[2019-11-04 11:24:27 - [TEST_CASE][PASSED] - Test Cases/Members_Area/Received_Negative_Review: Test Cases/Members_Area/Received_Negative_Review
+
+2019-11-04 11:24:27 - [TEST_STEP][PASSED] - PAGE = "/assets/Resources/Documents/Membership%20Support%20Pack.pdf": null
+
+2019-11-04 11:24:28 - [TEST_STEP][PASSED] - for ([row = 1, row <= findTestData("Members_Test_Data").getRowNumbers(), (internal.GlobalVariable.row++)]): Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/Banner_Menu/log_Off' successfully
+
+2019-11-04 11:24:29 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Members_Area/Start_Up"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/Start_Up' successfully
+
+2019-11-04 11:24:29 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Members_Area/Start_Up: Test Cases/Reusable_Test_Sequences/Members_Area/Start_Up
+
+2019-11-04 11:24:29 - [TEST_STEP][PASSED] - data = findTestData("Members_Test_Data"): null
+
+2019-11-04 11:24:29 - [TEST_STEP][PASSED] - Header_Text = "": null
+
+2019-11-04 11:24:29 - [TEST_STEP][PASSED] - Forgotten_Password = "": null
+
+2019-11-04 11:24:29 - [TEST_STEP][PASSED] - Forgotten_Username = "": null
+
+2019-11-04 11:24:29 - [TEST_STEP][PASSED] - Trouble_Logging_In = "": null
+
+2019-11-04 11:24:29 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/URL_Handler"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/URL_Handler' successfully
+
+2019-11-04 11:24:29 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/URL_Handler: Test Cases/Reusable_Test_Sequences/URL_Handler
+
+2019-11-04 11:24:30 - [TEST_STEP][PASSED] - "      CURRENT DEV (MASTER) Environment": null
+
+2019-11-04 11:24:30 - [TEST_STEP][PASSED] - "      Dev Test Environment": null
+
+2019-11-04 11:24:30 - [TEST_STEP][PASSED] - "      Next Dev Environment": null
+
+2019-11-04 11:24:30 - [TEST_STEP][PASSED] - "      Preview Environment": null
+
+2019-11-04 11:24:30 - [TEST_STEP][PASSED] - "      Live": null
+
+2019-11-04 11:24:30 - [TEST_STEP][PASSED] - "######################################################################################################################################################": null
+
+2019-11-04 11:24:30 - [TEST_STEP][PASSED] - "#  OF COURSE, FOR THIS TO WORK THE TEST CREDENTIALS SHOULD BE AVAILABLE ACROSS ALL ENVIRONMENTS - Username = check1234 - & - Password = testing123   #": null
+
+2019-11-04 11:24:30 - [TEST_STEP][PASSED] - switch (URL): null
+
+2019-11-04 11:24:30 - [TEST_STEP][PASSED] - case .*www.preview.checkatrade.*:: null
+
+2019-11-04 11:24:30 - [TEST_STEP][PASSED] - URL = "https://preview-ma.checkatrade.com/login?return=%2Fdashboard": null
+
+2019-11-04 11:24:30 - [TEST_STEP][PASSED] - break: null
+
+2019-11-04 11:24:30 - [TEST_STEP][PASSED] - URL: null
+
+2019-11-04 11:24:30 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/URL_Handler' successfully
+
+2019-11-04 11:24:30 - [TEST_STEP][PASSED] - "URL - Set from the ENVIRONMENT PROFILE - Specific Page Address Provided By +GlobalVariable.PAGE  ": null
+
+2019-11-04 11:24:30 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://preview-ma.checkatrade.com/login?return=%2Fdashboard'
+
+2019-11-04 11:24:30 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-11-04 11:24:30 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-11-04 11:24:47 - [MESSAGE][PASSED] - Browser is opened with url: 'https://preview-ma.checkatrade.com/login?return=%2Fdashboard'
+
+2019-11-04 11:24:47 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-11-04 11:24:52 - [MESSAGE][PASSED] - Current window maximized
+
+2019-11-04 11:24:52 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-04 11:24:52 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-04 11:24:52 - [TEST_STEP][PASSED] - verifyTextPresent(data.getValue("Header_Text", row), false): Text 'EXCLUSIVE ACCESS FOR CHECKATRADE MEMBERS ONLY' is present on page 
+
+2019-11-04 11:24:52 - [MESSAGE][PASSED] - Text 'EXCLUSIVE ACCESS FOR CHECKATRADE MEMBERS ONLY' is present on page 
+
+2019-11-04 11:24:52 - [TEST_STEP][PASSED] - verifyTextPresent(data.getValue("Forgotten_Password", row), false): Text 'Forgotten password?' is present on page 
+
+2019-11-04 11:24:52 - [MESSAGE][PASSED] - Text 'Forgotten password?' is present on page 
+
+2019-11-04 11:24:52 - [TEST_STEP][PASSED] - verifyTextPresent(data.getValue("Forgotten_Username", row), false): Text 'Forgotten username?' is present on page 
+
+2019-11-04 11:24:52 - [MESSAGE][PASSED] - Text 'Forgotten username?' is present on page 
+
+2019-11-04 11:24:52 - [TEST_STEP][PASSED] - verifyTextPresent(data.getValue("Trouble_Logging_In", row), false): Text 'Trouble logging in?' is present on page 
+
+2019-11-04 11:24:52 - [MESSAGE][PASSED] - Text 'Trouble logging in?' is present on page 
+
+2019-11-04 11:24:52 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/Start_Up' successfully
+
+2019-11-04 11:24:52 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Members_Area/log_On"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/log_On' successfully
+
+2019-11-04 11:24:52 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Members_Area/log_On: Test Cases/Reusable_Test_Sequences/Members_Area/log_On
+
+2019-11-04 11:24:53 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Members/Page_Members Area/button_Log in"), 10): Object 'Object Repository/Members/Page_Members Area/button_Log in' is present
+
+2019-11-04 11:24:53 - [MESSAGE][PASSED] - Object 'Object Repository/Members/Page_Members Area/button_Log in' is present
+
+2019-11-04 11:24:53 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Members/Page_Members Area/input_Username_username")): Object: 'Object Repository/Members/Page_Members Area/input_Username_username' is clicked on
+
+2019-11-04 11:24:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Members/Page_Members Area/input_Username_username' is clicked on
+
+2019-11-04 11:24:54 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Members/Page_Members Area/input_Username_username"), Username): Text 'check1234' is set on object 'Object Repository/Members/Page_Members Area/input_Username_username'
+
+2019-11-04 11:24:55 - [MESSAGE][PASSED] - Text 'check1234' is set on object 'Object Repository/Members/Page_Members Area/input_Username_username'
+
+2019-11-04 11:24:55 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Members/Page_Members Area/input_Password_password")): Object: 'Object Repository/Members/Page_Members Area/input_Password_password' is clicked on
+
+2019-11-04 11:24:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Members/Page_Members Area/input_Password_password' is clicked on
+
+2019-11-04 11:24:55 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Members/Page_Members Area/input_Password_password"), Password): Text 'testing123' is set on object 'Object Repository/Members/Page_Members Area/input_Password_password'
+
+2019-11-04 11:24:55 - [MESSAGE][PASSED] - Text 'testing123' is set on object 'Object Repository/Members/Page_Members Area/input_Password_password'
+
+2019-11-04 11:24:56 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Members/Page_Members Area/button_Log in")): Object: 'Object Repository/Members/Page_Members Area/button_Log in' is clicked on
+
+2019-11-04 11:24:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Members/Page_Members Area/button_Log in' is clicked on
+
+2019-11-04 11:24:56 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/log_On' successfully
+
+2019-11-04 11:24:56 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Customers/Received_Negative_Review"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Customers/Received_Negative_Review' successfully
+
+2019-11-04 11:24:56 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Customers/Received_Negative_Review: Test Cases/Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Customers/Received_Negative_Review
+
+2019-11-04 11:24:56 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Page_Members Area/div_Received a Negative Review"), 60): Object 'Object Repository/Page_Members Area/div_Received a Negative Review' is present
+
+2019-11-04 11:24:57 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Members Area/div_Received a Negative Review' is present
+
+2019-11-04 11:24:57 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Members Area/div_Received a Negative Review")): Object: 'Object Repository/Page_Members Area/div_Received a Negative Review' is clicked on
+
+2019-11-04 11:24:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Members Area/div_Received a Negative Review' is clicked on
+
+2019-11-04 11:24:58 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Customers/Received_Negative_Review' successfully
+
+2019-11-04 11:24:58 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Members_Area/Validation/Received_Negative_Review"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/Validation/Received_Negative_Review' successfully
+
+2019-11-04 11:24:58 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Members_Area/Validation/Received_Negative_Review: Test Cases/Reusable_Test_Sequences/Members_Area/Validation/Received_Negative_Review
+
+2019-11-04 11:24:59 - [TEST_STEP][PASSED] - "New PAGE Opened - Displaying the front page of the membershipt Support Pack": null
+
+2019-11-04 11:24:59 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2019-11-04 11:24:59 - [TEST_STEP][PASSED] - verifyTextPresent("Membership", false): Text 'Membership' is present on page 
+
+2019-11-04 11:25:00 - [MESSAGE][PASSED] - Text 'Membership' is present on page 
+
+2019-11-04 11:25:00 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2019-11-04 11:25:00 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-04 11:25:01 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-04 11:25:01 - [TEST_STEP][PASSED] - robot = new java.awt.Robot(): null
+
+2019-11-04 11:25:01 - [TEST_STEP][PASSED] - robot.keyPress(VK_END): null
+
+2019-11-04 11:25:01 - [TEST_STEP][PASSED] - robot.keyRelease(VK_END): null
+
+2019-11-04 11:25:01 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/Validation/Received_Negative_Review' successfully
+
+2019-11-04 11:25:01 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Members_Area/Banner_Menu/log_Off"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/Banner_Menu/log_Off' successfully
+
+2019-11-04 11:25:01 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Members_Area/Banner_Menu/log_Off: Test Cases/Reusable_Test_Sequences/Members_Area/Banner_Menu/log_Off
+
+2019-11-04 11:25:02 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Page_Members Area/a_Log off"), 25): Object 'Object Repository/Page_Members Area/a_Log off' is present
+
+2019-11-04 11:25:02 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Members Area/a_Log off' is present
+
+2019-11-04 11:25:02 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Members Area/a_Log off")): Object: 'Object Repository/Page_Members Area/a_Log off' is clicked on
+
+2019-11-04 11:25:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Members Area/a_Log off' is clicked on
+
+2019-11-04 11:25:07 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/Banner_Menu/log_Off' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-11-04 11:24:26 - [TEST_SUITE][PASSED] - Members_Received_Negative_Feedback: Test Cases/Members_Area/Received_Negative_Review]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

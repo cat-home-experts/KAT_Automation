@@ -150,7 +150,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Mobile_Test_Dat
 	'--------------------------'
     ' Teardown - CLose Browser |'
     '--------------------------'
-    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.OPTIONAL)
     '--------------------------'
     ' END  Of ITERATION        |'
     '--------------------------'

@@ -55,7 +55,7 @@ import internal.GlobalVariable as GlobalVariable
 	//-----------------------------------------
 	// Call Startup Process - Browser Startup, Navigate, Maximize and Close Cookie Nagging Element
 	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup_Old'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup_Old'), [:], FailureHandling.OPTIONAL)
 	//-----------------------------------------
 	
 	'---------------------------------------'
@@ -86,7 +86,7 @@ import internal.GlobalVariable as GlobalVariable
 	'--------------------------'
 	' Teardown - CLose Browser |'
 	'--------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.OPTIONAL)
 		
 	'--------------------------'
 	' END                      |'

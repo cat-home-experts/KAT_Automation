@@ -30,7 +30,7 @@ def YE_Work_Carried_Out = data.getValue("YE_Work_Carried_Out", GlobalVariable.ro
 //-------------------------------------------------------------------------------
 // Ensure Page is HERE Before Testing (Firefox was slow - hence this check)     |
 //-------------------------------------------------------------------------------
-WebUI.waitForElementVisible(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/a_Finish'), 25)  
+WebUI.waitForElementVisible(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/a_Finish'), 60)  
 
 '------------------------------------'
 '  Verify Page Detail                |'
@@ -65,6 +65,7 @@ WebUI.verifyTextPresent('Thank you', true)
 '------------------------------------'
 '  Hit Finish                        |'
 '------------------------------------'
+WebUI.waitForElementClickable(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/a_Finish'), 60)
 WebUI.click(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/a_Finish')) // or 4 tabs
 //WebUI.sendKeys(findTestObject(URL), Keys.chord(Keys.ENTER))
 

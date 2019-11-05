@@ -164,7 +164,7 @@ import org.openqa.selenium.WebElement;*/
 	'--------------------------'
 	' Teardown - CLose Browser |'
 	'--------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.OPTIONAL)
 	
 	'-------------------------------------------'
 	' Web Office Call to Ensure NEW CASE Opened |'
