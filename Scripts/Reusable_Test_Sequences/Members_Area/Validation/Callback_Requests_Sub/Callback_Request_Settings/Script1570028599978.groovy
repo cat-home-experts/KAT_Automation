@@ -131,6 +131,7 @@ WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Are
 WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Area/input_Send your customers initial info'))
 '----------------------------------------------'
 // Hit <SUBMIT> Button
+WebUI.verifyElementClickable(findTestObject('Object Repository/Page_Members Area/Page_Members Area/button_Submit_1'))
 WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Area/button_Submit_1'))
 '----------------------------------------------'
 // WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Area/button_Close')) // Close problem - disconnected Dialog - Overcome with Robot, Below

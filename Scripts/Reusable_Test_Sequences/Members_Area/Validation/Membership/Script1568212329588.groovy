@@ -116,6 +116,7 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Membership/Page_Members
 WebUI.setEncryptedText(findTestObject('Object Repository/Membership/Page_Members Area/input_Save Username_confirmPassword'),
 	'fzqqY0qJjYTuJiVJRZh4ag==')
 '----------------------------------------------'
+WebUI.verifyElementClickable(findTestObject('Object Repository/Membership/Page_Members Area/button_Save Password'))
 WebUI.click(findTestObject('Object Repository/Membership/Page_Members Area/button_Save Password'))
 '----------------------------------------------'
 // Passwords Must Match is NOT Displayed

@@ -94,23 +94,29 @@ WebUI.setText(findTestObject('Object Repository/Page_Members Area/Profiles/Page_
 	'testing, testing, 123')
 '----------------------------------------------'
 // Hit <Select Document>
-'----------------------------------------------'
-WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/button_Select Document'))
+'----------------------------------------------' 
+
+// Don't open windows dialogue due to inconsistencies
+
+//WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/button_Select Document'))
+WebUI.verifyElementClickable(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/button_Select Document'))
 
 '----------------------------------------------'
 ///////////////////////////////////////
 // Dispel The Windows Dialog         //
 ///////////////////////////////////////
 '----------------------------------------------'
-WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Dispel_Windows_Dialog'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Dispel_Windows_Dialog'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 '----------------------------------------------'
 
 '----------------------------------------------'
 '----------------------------------------------'
 // Scroll to CLOSE Button
-//WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/button_Close'), 5)
+WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/button_Close'), 5)
+WebUI.verifyElementClickable(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/button_Close'))
+
 // Close Dialog
-//WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/button_Close'))
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/button_Close'))
 //
 ///////////////////////////////////////
 //                END                //

@@ -87,6 +87,7 @@ WebUI.verifyTextPresent("Below is a list of downloadable forms that may be usefu
 '----------------------------------------------'
 WebUI.verifyTextPresent("please click on the relevant form to preview", false)
 '----------------------------------------------'
+WebUI.delay(2)
 
 ///////////////////////////////////////
 //                END                // TODO  TODO Blind Import To Update

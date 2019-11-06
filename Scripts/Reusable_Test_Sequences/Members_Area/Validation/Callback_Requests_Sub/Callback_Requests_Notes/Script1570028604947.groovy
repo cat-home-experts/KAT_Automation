@@ -107,7 +107,7 @@ WebUI.verifyTextPresent("Submit", false)
 // Dispel The Windows Dialog         //
 ///////////////////////////////////////
 '----------------------------------------------'
-WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Dispel_Windows_Dialog'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Dispel_Windows_Dialog'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 '----------------------------------------------'
 //WebUI.waitForElementClickable('Object Repository/Page_Members Area/button_Close', 10)
 //WebUI.click(findTestObject('Object Repository/Page_Members Area/button_Close'))

@@ -151,8 +151,8 @@ WebUI.waitForElementClickable(findTestObject('Object Repository/Profiles_Page/Pa
 '----------------------------------------------'
 // Need To Close The popout
 //WebUI.switchToWindowTitle("Add Banner Image", FailureHandling.CONTINUE_ON_FAILURE)
-//WebUI.waitForElementClickable(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Close'), 25)
-//WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Close'))
+WebUI.waitForElementClickable(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Close'), 25)
+WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Close'))
 '----------------------------------------------'
 WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Upload Banner Image'), 25)
 '----------------------------------------------'

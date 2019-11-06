@@ -117,8 +117,8 @@ WebUI.verifyTextPresent("Close", false)
 // NEED TO EXTEND THE TOOL IF WE ARE TO INTERACT WITH WINDOWS COMPONENTS (Explorer)
 // Clicking Select Brings Up Explorer Search Dialog) extension = Winnium
 '----------------------------------------------'
-// Open Windows Explorer to SEARCH
-WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Select Logo'))
+// Open Windows Explorer to SEARCH - Disable Open Dialog Consistency Issues
+// WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Select Logo'))
 // SELECT BANNER IMAGE FILE IN THE FUTURE // TODO
 '----------------------------------------------'
 WebUI.delay(2)
@@ -142,19 +142,19 @@ WebUI.delay(2)
 // Dispel The Windows Dialog         //
 ///////////////////////////////////////
 '----------------------------------------------'
-WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Dispel_Windows_Dialog'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Dispel_Windows_Dialog'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 '----------------------------------------------'
 
 '----------------------------------------------'
 '----------------------------------------------'
 // Need To Close The popout
-//WebUI.switchToWindowIndex(1)
-//WebUI.waitForElementClickable(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Close'), 25)
-//WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Close'))
+// WebUI.switchToWindowTitle("Add Company Logo")
+WebUI.waitForElementClickable(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Close'), 25)
+WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Close'))
 '----------------------------------------------'
 //WebUI.switchToWindowIndex(0)
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Upload Company Logo'), 25)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Profiles_Page/Page_Members Area/button_Upload Company Logo'), 25)
 '----------------------------------------------'
 // Need To HIT Back Button to Return to Previous Page
 WebUI.back()

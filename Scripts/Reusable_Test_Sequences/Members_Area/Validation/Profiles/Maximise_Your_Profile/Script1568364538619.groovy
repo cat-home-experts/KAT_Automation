@@ -62,6 +62,7 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////////////////////
 //  Wait for Maximise Your Profile Element Availability   //
 ////////////////////////////////////////////////////////////
+WebUI.delay(2)
 WebUI.switchToWindowUrl('https://www.youtube.com/watch?v=ujuJlrazzGc&t=3s')
 //WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Checkatrade - Maximise your profile - YouTube/h1_Checkatrade -  Maximise your profile'), 25)
 
@@ -86,12 +87,14 @@ WebUI.switchToWindowUrl('https://www.youtube.com/watch?v=ujuJlrazzGc&t=3s')
 '----------------------------------------------'
 // WebUI.verifyElementVisible("Object Repository/Profiles_Page/h1_Checkatrade -  Maximise your profile")
 '----------------------------------------------'
+WebUI.delay(2)
 '----------------------------------------------'
 // Close the YOUTUBE Checkatrade Page
 WebUI.closeWindowUrl('https://www.youtube.com/watch?v=ujuJlrazzGc&t=3s')
 '----------------------------------------------'
 // Wait for residual Youtube Death
 WebUI.delay(1)
+//WebUI.waitForPageLoad(60)
 '----------------------------------------------'
 // Switch Back To My Profile - Dashboard
 WebUI.switchToWindowUrl('https://preview-ma.checkatrade.com/my-profile-page')

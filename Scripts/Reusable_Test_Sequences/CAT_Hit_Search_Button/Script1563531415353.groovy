@@ -39,6 +39,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 //WebUI.doubleClick(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search'))
 
 // recorded with FF
+WebUI.waitForElementClickable(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search'), 25)
 WebUI.click(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search'))
 
 '---------------------------------------------------------------------'

@@ -103,13 +103,16 @@ WebUI.scrollToElement(findTestObject('Object Repository/Profiles_Page/Page_Membe
 '----------------------------------------------'
 // Select Document Button
 '----------------------------------------------'
-WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/Page_Members Area/button_Select Document'))
+
+// Don't open windows dialog, just verify button can click
+// WebUI.click(findTestObject('Object Repository/Profiles_Page/Page_Members Area/Page_Members Area/button_Select Document'))
+WebUI.verifyElementClickable(findTestObject('Object Repository/Profiles_Page/Page_Members Area/Page_Members Area/button_Select Document'))
 '----------------------------------------------'
 ///////////////////////////////////////
 // Dispel The Windows Dialog         //
 ///////////////////////////////////////
 '----------------------------------------------'
-WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Dispel_Windows_Dialog'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Dispel_Windows_Dialog'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 '----------------------------------------------'
 
 '----------------------------------------------'

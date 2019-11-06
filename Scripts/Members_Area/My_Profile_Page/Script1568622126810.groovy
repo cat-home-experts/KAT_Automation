@@ -126,12 +126,12 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Da
 	//-----------------------------------------
 	// Navigate - To the Banner Iname Page    | TODO // Revisit - Just Uncomment this
 	//-----------------------------------------// My Profile Page - Banner image
-	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_You_Business/Profiles/BAnner_Image'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_You_Business/Profiles/BAnner_Image'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	//-----------------------------------------
 	// Verify Banner image - Sub section      | TODO // Revisit - Fix This
 	//-----------------------------------------
-	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Profiles/Banner_Image'), [:], FailureHandling.CONTINUE_ON_FAILURE) 
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Profiles/Banner_Image'), [:], FailureHandling.CONTINUE_ON_FAILURE) 
 		
 	//-----------------------------------------
 	// Navigate - To Vetting Information Page |
