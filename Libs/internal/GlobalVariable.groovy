@@ -18,7 +18,8 @@ Profile Preview : Preview Environment
 Profile Preview_Members_Area : Preview Members Area, URL not as expected, and not where the link from the home page directs you
 Profile Trades_Sign_In_Dashboard : Direct link to Preview Dashboard
 Profile Web_Office_Current : Current Environment Web Office URL
-Profile Web_Office_Live : Web Office Live - Requires Login</p>
+Profile Web_Office_Live : Web Office Live - Requires Login
+Profile Web_Office_Preview : WebOffice Preview URL</p>
      */
     public static Object URL
      
@@ -129,6 +130,11 @@ Profile Preview_Members_Area : Specific area within the Members Portal</p>
     public static Object PAGE
      
     /**
+     * <p>Profile default : Used by the URL Handler from Starup Process, Correctio  of URL&#47;Discrepencies</p>
+     */
+    public static Object FUNCTION_AREA
+     
+    /**
      * <p>Profile Checkatrade_Live : Row count on spread sheet iterator</p>
      */
     public static Object row
@@ -174,6 +180,7 @@ Profile Preview_Members_Area : Specific area within the Members Portal</p>
             Username = selectedVariables['Username']
             Password = selectedVariables['Password']
             PAGE = selectedVariables['PAGE']
+            FUNCTION_AREA = selectedVariables['FUNCTION_AREA']
             row = selectedVariables['row']
             Standalone_TC_Execution = selectedVariables['Standalone_TC_Execution']
             Postcode = selectedVariables['Postcode']

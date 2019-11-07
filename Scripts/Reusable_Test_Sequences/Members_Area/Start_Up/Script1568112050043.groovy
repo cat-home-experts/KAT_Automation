@@ -29,6 +29,8 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 // Added the call to URL_Handler - Refer below|   23/09/2019    |      DH          |                             |
 //---------------------------------------------------------------------------------------------------------------
+// URL_Handler changes to cope with other     |   07/11/2019    |      DH          |                             |
+// Functional Areas of the Web Site(s)        |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -49,7 +51,9 @@ def Header_Text = ""
 def Forgotten_Password = ""
 def Forgotten_Username = ""
 def Trouble_Logging_In = ""
-
+'----------------------------------------------------'
+'Set Function Area for "URL_Handler", URL Resolution'
+GlobalVariable.FUNCTION_AREA = "Members_Area"
 //-----------------------------------------
 'Do Some Magic with URL(s) See the comments within URL Handler '
 WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/URL_Handler'), [:], FailureHandling.CONTINUE_ON_FAILURE)

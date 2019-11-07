@@ -99,4 +99,9 @@
       <initValue>'/my-profile-page'</initValue>
       <name>PAGE</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Used by the URL Handler from Starup Process, Correctio  of URL/Discrepencies</description>
+      <initValue>'Members_Area'</initValue>
+      <name>FUNCTION_AREA</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

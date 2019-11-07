@@ -22,11 +22,11 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-// URL Discrepency Handler                    |                 |                  |                             |
-//                                            |    23/09/2019   |        DH        |                             |
-//                                            |                 |                  |                             |
+// URL Discrepency Handler                    |                 |                  |  URL Discrepencies, Adjusted|
+//                                            |    23/09/2019   |        DH        |  Here                       |
+//                                            |                 |                  | eg. Preview MA Opens Live MA|
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Extended for Web Office Discrepencies      |    07/11/2019   |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -83,9 +83,10 @@ import internal.GlobalVariable as GlobalVariable
 '######################################################################################################################################################'
 '#  OF COURSE, FOR THIS TO WORK THE TEST CREDENTIALS SHOULD BE AVAILABLE ACROSS ALL ENVIRONMENTS - Username = check1234 - & - Password = testing123   #'
 '######################################################################################################################################################'
-
+//if (GlobalVariable.FUNCTION_AREA) equals ('Members_Area'){
 //----------------------------------------------
 	switch (GlobalVariable.URL) {
+		// Members Area
 		case ~/.*www.current.dev.checkatrade.*/: 	// Current Dev MASTER
 			GlobalVariable.URL = "https://members.current.dev.checkatrade.com/login?return=%2Fdashboard"
 			break
@@ -104,11 +105,25 @@ import internal.GlobalVariable as GlobalVariable
 		default:									// DEFAULT
 			System.out.println("*  *  *  "+GlobalVariable.URL+" *  *  * ")
 			System.out.println("*  *  *  There is Currently No Configuration for this URL, We have defaulted URL to CURRENT (URL_Handler) *  *  * ")
-			GlobalVariable.URL = "https://members.current.dev.checkatrade.com/login?return=%2Fdashboard" // Going to set DEFAULT to CURRENT
-						
+			GlobalVariable.URL = "https://members.current.dev.checkatrade.com/login?return=%2Fdashboard" // Going to set DEFAULT to CURRENT			
 			break
 	}
+	'------------------------------------'
 	GlobalVariable.URL
+	'------------------------------------'
+//}
+		
+//if (GlobalVariable.FUNCTION_AREA) equals ("Web_Office"){
+////----------------------------------------------
+//	switch (GlobalVariable.URL) {
+//		// Web Office
+//		case ~/.*www.preview.checkatrade.*/: 		// Preview
+//			GlobalVariable.URL = "https://admin.preview.checkatrade.com/"
+//			break
+//
+//	}
+//}	
+
 
 //----------------------------------------------
 //WebUI.delay(10)

@@ -100,7 +100,7 @@ WebUI.verifyTextPresent("Close", false)
 //'----------------------------------------------'
 WebUI.verifyTextPresent("Submit", false)
 //'----------------------------------------------'
-//WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Area/button_Submit'))
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Area/button_Submit'))
 //'----------------------------------------------'
 
 ///////////////////////////////////////

@@ -16,33 +16,14 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
-WebUI.openBrowser('')
+GlobalVariable.URL = 'https://admin.preview.checkatrade.com/Login.aspx?ReturnUrl=%2f'
 
-WebUI.navigateToUrl('https://preview-ma.checkatrade.com/login?return=%2Fwork-alert')
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp'), [:], FailureHandling.OPTIONAL)
 
-WebUI.setText(findTestObject('Page_Members Area/input_Username_username'), 'checka1234')
+WebUI.navigateToUrl('https://admin.preview.checkatrade.com/')
 
-WebUI.setEncryptedText(findTestObject('Page_Members Area/input_Password_password'), 'fzqqY0qJjYTuJiVJRZh4ag==')
+WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Web Office (preview)/input_preview_companyAutocomplete_autocompl_f8dd82'), 
+    'Foster Tree')
 
-WebUI.click(findTestObject('Page_Members Area/button_Log in'))
-
-WebUI.setText(findTestObject('Page_Members Area/input_Username_username'), 'check1234')
-
-WebUI.click(findTestObject('Page_Members Area/button_Log in'))
-
-WebUI.click(findTestObject('Page_Members Area/i_Settings'))
-
-WebUI.selectOptionByValue(findTestObject('Page_Members Area/select_Do not sendOtherCompany email addres_6018fa'), '15: Object', 
-    true)
-
-WebUI.selectOptionByValue(findTestObject('Page_Members Area/select_Do not sendOtherCompany email addres_6018fa'), '14: Object', 
-    true)
-
-WebUI.click(findTestObject('Page_Members Area/input_Send your customers initial informati_997224'))
-
-WebUI.click(findTestObject('Page_Members Area/button_Submit'))
-
-WebUI.click(findTestObject('Object Repository/Page_Members Area/button_Close'))
-
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Object Repository/Page_Checkatrade Web Office (preview)/strong_Foster Tree Care'))
 

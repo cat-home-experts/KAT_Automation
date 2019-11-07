@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>Web_Office_Preview</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description>WebOffice Preview URL</description>
+      <initValue>'https://admin.preview.checkatrade.com/'</initValue>
+      <name>URL</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>
