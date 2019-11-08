@@ -44,17 +44,22 @@ import internal.GlobalVariable as GlobalVariable
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 
+//---------------------------------------------------------------------
+// Enter the Search Criteria on the Web Office Header Search Box    |
+//---------------------------------------------------------------------
+WebUI.setText(findTestObject('Object Repository/WebOffice_Home_page/input_Search_Criteria'),
+	findTestData('searchTestData').getValue('Search_Selector', GlobalVariable.row))
 
 //---------------------------------------------------------------------
-// Set Search Criteria on the Web Office Header Search Box            |
+// Synchronise on the Search Criteria on the Web Office Header Search |
 //---------------------------------------------------------------------
-WebUI.setText(findTestObject('WebOffice_Home_page/input_Search_Criteria'),
-	findTestData('searchTestData').getValue('tradeLocation', GlobalVariable.row))
+//WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/popout_Search_Item'), 25)
 
+WebUI.delay(1)
 //---------------------------------------------------------------------
 // Trigger the Search Criteria on the Web Office Header Search Box    |
 //---------------------------------------------------------------------
-WebUI.click(findTestObject('WebOffice_Home_page/popout_Search_Item'))
+WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/popout_Search_Item'))
 
 //---------------------------------------------------------------------
 // Page Loading after Triggering the Search                           |

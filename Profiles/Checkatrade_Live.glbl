@@ -19,4 +19,9 @@
       <initValue>true</initValue>
       <name>Standalone_TC_Execution</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Web Office URL</description>
+      <initValue>'https://admin.checkatrade.com/'</initValue>
+      <name>WebOffice_URL</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

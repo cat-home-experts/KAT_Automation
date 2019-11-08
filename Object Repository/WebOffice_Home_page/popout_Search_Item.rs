@@ -4,7 +4,17 @@
    <name>popout_Search_Item</name>
    <tag></tag>
    <elementGuidId>1ae9ce2b-4e81-410b-90ad-f09aa6dc5379</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Foster Tree Care' or . = 'Foster Tree Care')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;companyAutocomplete_autocomplete_popup&quot;]/ul/li[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

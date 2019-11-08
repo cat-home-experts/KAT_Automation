@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>td_Good Morning DavidHo</name>
+   <name>td_Welcome_Comment</name>
    <tag></tag>
    <elementGuidId>7ba114b9-e96b-480b-a856-0694c5e59f0c</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>

@@ -83,8 +83,8 @@ WebUI.verifyTextPresent(findTestData('searchTestData').getValue('email', GlobalV
 //////////////////////////////////////////////////
 // Confirm Join Date is Present on WO Page      //
 //////////////////////////////////////////////////
-WebUI.verifyTextPresent(findTestData('searchTestData').getValue('join_Date', GlobalVariable.row), false,
-	FailureHandling.CONTINUE_ON_FAILURE)
+//WebUI.verifyTextPresent(findTestData('searchTestData').getValue('join_Date', GlobalVariable.row), false,
+//	FailureHandling.CONTINUE_ON_FAILURE)
 
 //////////////////////////////////////////////////
 // Confirm Date of Birth is Present on WO Page  //
@@ -95,7 +95,13 @@ WebUI.verifyTextPresent(findTestData('searchTestData').getValue('dob', GlobalVar
 //////////////////////////////////////////////////
 // Confirm Trader Web URL is Present on WO Page //
 //////////////////////////////////////////////////
-WebUI.verifyTextPresent(findTestData('searchTestData').getValue('website', GlobalVariable.row), false,
+//WebUI.verifyTextPresent(findTestData('searchTestData').getValue('website', GlobalVariable.row), false,
+//	FailureHandling.CONTINUE_ON_FAILURE)
+
+//////////////////////////////////////////////////
+// Confirm CAT ID is Present on WO Page         //
+//////////////////////////////////////////////////
+WebUI.verifyTextPresent(findTestData('searchTestData').getValue('catID', GlobalVariable.row), false,
 	FailureHandling.CONTINUE_ON_FAILURE)
 
 '--------------------------'
