@@ -5,34 +5,9 @@
    <tag></tag>
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
-      <description>Live CAT Site/preview/dev test</description>
-      <initValue>'https://www.preview.checkatrade.com/'</initValue>
-      <name>URL</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>Email Address</description>
-      <initValue>'ron_mctavish@xtc_0z0.com'</initValue>
-      <name>EmailAddress</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
       <description>Trading Name</description>
       <initValue>'Gutter Snipes'</initValue>
       <name>CompanyName</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>Full Name</description>
-      <initValue>'Ron MacTavish'</initValue>
-      <name>FullName</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>Category</description>
-      <initValue>'Roofer'</initValue>
-      <name>TradeCategory</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>Postcode</description>
-      <initValue>'PO12 4SD'</initValue>
-      <name>postcode</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Phone Number</description>
@@ -40,9 +15,74 @@
       <name>ContactNumber</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
+      <description>URL to compare with the starting URL before navigation, test that complete, and CAT link is clicked (for example) need to ensure dev is returned back to dev etc.</description>
+      <initValue>''</initValue>
+      <name>CurrentUrl</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Datasheet location (needs to change to shared repo local) C:\\Users\\davidho\\Katalon Studio C:\\Users\\davidho\\Katalon Studio (THIS SEEMS RESOLVED NOW) 22/08/2019</description>
+      <initValue>'\\\\Start\\\\Data Files\\\\Give_Feedback.xlsx'</initValue>
+      <name>DataSheet_Location</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Email Address</description>
+      <initValue>'ron_mctavish@xtc_0z0.com'</initValue>
+      <name>EmailAddress</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Full Name</description>
+      <initValue>'Ron MacTavish'</initValue>
+      <name>FullName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Used by the URL Handler from Starup Process, Correctio  of URL/Discrepencies</description>
+      <initValue>'Members_Area'</initValue>
+      <name>FUNCTION_AREA</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
       <description>Invalid format email</description>
       <initValue>'Billy Bob'</initValue>
       <name>Invalid_Email</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Specific area within the Members Portal</description>
+      <initValue>'/my-profile-page'</initValue>
+      <name>PAGE</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Password credentials for Members Area</description>
+      <initValue>'testing123'</initValue>
+      <name>Password</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>URL_Handler Global, some of the links do go to the expected places, hence the handler</description>
+      <initValue>''</initValue>
+      <name>Portal_Subfunction</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Postcode</description>
+      <initValue>'PO12 4SD'</initValue>
+      <name>postcode</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Returned data after mobile simulation search</description>
+      <initValue>'Crown Thinning in Gosport'</initValue>
+      <name>Returns_Verification</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Category</description>
+      <initValue>'Roofer'</initValue>
+      <name>TradeCategory</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Live CAT Site/preview/dev test</description>
+      <initValue>'https://www.preview.checkatrade.com/'</initValue>
+      <name>URL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>User credentials for Members Area</description>
+      <initValue>'check1234'</initValue>
+      <name>Username</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Alph Validation test data</description>
@@ -60,48 +100,13 @@
       <name>Validation_Data_Special_Chars</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>URL to compare with the starting URL before navigation, test that complete, and CAT link is clicked (for example) need to ensure dev is returned back to dev etc.</description>
-      <initValue>''</initValue>
-      <name>CurrentUrl</name>
+      <description>Web Office URL</description>
+      <initValue>'https://admin.preview.checkatrade.com/Login.aspx?ReturnUrl=%2f'</initValue>
+      <name>WebOffice_URL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Fix the format error here Give Feedback - Recommend? true OR false</description>
       <initValue>true</initValue>
       <name>YE_Recommendations</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>Datasheet location (needs to change to shared repo local) C:\\Users\\davidho\\Katalon Studio C:\\Users\\davidho\\Katalon Studio (THIS SEEMS RESOLVED NOW) 22/08/2019</description>
-      <initValue>'\\\\Start\\\\Data Files\\\\Give_Feedback.xlsx'</initValue>
-      <name>DataSheet_Location</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>Returned data after mobile simulation search</description>
-      <initValue>'Crown Thinning in Gosport'</initValue>
-      <name>Returns_Verification</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>URL_Handler Global, some of the links do go to the expected places, hence the handler</description>
-      <initValue>''</initValue>
-      <name>Portal_Subfunction</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>User credentials for Members Area</description>
-      <initValue>'check1234'</initValue>
-      <name>Username</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>Password credentials for Members Area</description>
-      <initValue>'testing123'</initValue>
-      <name>Password</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>Specific area within the Members Portal</description>
-      <initValue>'/my-profile-page'</initValue>
-      <name>PAGE</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>Used by the URL Handler from Starup Process, Correctio  of URL/Discrepencies</description>
-      <initValue>'Members_Area'</initValue>
-      <name>FUNCTION_AREA</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -24,7 +24,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-// Search Items - Company/Person From WO Head |   06/11/2019    |        DH        |                             |
+// Search Items - Verify The Returned Record  |   09/11/2019    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -44,35 +44,60 @@ import internal.GlobalVariable as GlobalVariable
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 
-//-----------------------------------------
-// Call Setup Process - Browser Startup, Navigate, Maximize and Close Cookie Nagging Element
-//-----------------------------------------
-'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test\r\n'
-for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Mobile_Test_Data').getRowNumbers(); (GlobalVariable.row)++) {
-		'--------------------------------------'
-		' Web Office StartUp                  |'
-		'--------------------------------------'
-		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp'), [:], FailureHandling.OPTIONAL)
-		
-		'--------------------------------------'
-		' Home Page - Search                   |'
-		'--------------------------------------'
-		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Home_Page_Search'), [:], FailureHandling.OPTIONAL)
-		
-		'--------------------------------------'
-		' Web Office - Verify Returned Record  |'
-		'--------------------------------------'
-		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Verification/Trader_Record'), [:], FailureHandling.OPTIONAL)
-		
-		'--------------------------'
-		' Teardown - CLose Browser |'
-		'--------------------------'
-		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.OPTIONAL)
-		
-		'--------------------------'
-		' END  Of ITERATION        |'
-		'--------------------------'
-}
+//////////////////////////////////////////////////
+// Confirm Traders Name is Present on WO Page   //
+//////////////////////////////////////////////////
+WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeName', GlobalVariable.row), false,
+	FailureHandling.CONTINUE_ON_FAILURE)
+
+//////////////////////////////////////////////////
+// Confirm Contact Name is Present on WO Page   //
+//////////////////////////////////////////////////
+WebUI.verifyTextPresent(findTestData('searchTestData').getValue('primeContact', GlobalVariable.row), false,
+	FailureHandling.CONTINUE_ON_FAILURE)
+
+//////////////////////////////////////////////////
+// Confirm Address is Present on WO Page        //
+//////////////////////////////////////////////////
+WebUI.verifyTextPresent(findTestData('searchTestData').getValue('address', GlobalVariable.row), false,
+	FailureHandling.CONTINUE_ON_FAILURE)
+
+//////////////////////////////////////////////////
+// Confirm Mobile Number is Present on WO Page  //
+//////////////////////////////////////////////////
+WebUI.verifyTextPresent(findTestData('searchTestData').getValue('mobile', GlobalVariable.row), false,
+	FailureHandling.CONTINUE_ON_FAILURE)
+
+//////////////////////////////////////////////////
+// Confirm Contact Number is Present on WO Page //
+//////////////////////////////////////////////////
+WebUI.verifyTextPresent(findTestData('searchTestData').getValue('contact', GlobalVariable.row), false,
+	FailureHandling.CONTINUE_ON_FAILURE)
+
+//////////////////////////////////////////////////
+// Confirm Email is Present on WO Page          //
+//////////////////////////////////////////////////
+WebUI.verifyTextPresent(findTestData('searchTestData').getValue('email', GlobalVariable.row), false,
+	FailureHandling.CONTINUE_ON_FAILURE)
+
+//////////////////////////////////////////////////
+// Confirm Join Date is Present on WO Page      //
+//////////////////////////////////////////////////
+WebUI.verifyTextPresent(findTestData('searchTestData').getValue('join_Date', GlobalVariable.row), false,
+	FailureHandling.CONTINUE_ON_FAILURE)
+
+//////////////////////////////////////////////////
+// Confirm Date of Birth is Present on WO Page  //
+//////////////////////////////////////////////////
+WebUI.verifyTextPresent(findTestData('searchTestData').getValue('dob', GlobalVariable.row), false,
+	FailureHandling.CONTINUE_ON_FAILURE)
+
+//////////////////////////////////////////////////
+// Confirm Trader Web URL is Present on WO Page //
+//////////////////////////////////////////////////
+WebUI.verifyTextPresent(findTestData('searchTestData').getValue('website', GlobalVariable.row), false,
+	FailureHandling.CONTINUE_ON_FAILURE)
+
 '--------------------------'
 ' END                      |'
 '--------------------------'

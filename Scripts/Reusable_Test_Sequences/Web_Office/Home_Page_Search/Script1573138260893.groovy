@@ -24,7 +24,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-// Search Items - Company/Person From WO Head |   06/11/2019    |        DH        |                             |
+// Search Items - Company/Person From WO Head |   07/11/2019    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -44,35 +44,25 @@ import internal.GlobalVariable as GlobalVariable
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 
-//-----------------------------------------
-// Call Setup Process - Browser Startup, Navigate, Maximize and Close Cookie Nagging Element
-//-----------------------------------------
-'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test\r\n'
-for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Mobile_Test_Data').getRowNumbers(); (GlobalVariable.row)++) {
-		'--------------------------------------'
-		' Web Office StartUp                  |'
-		'--------------------------------------'
-		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp'), [:], FailureHandling.OPTIONAL)
-		
-		'--------------------------------------'
-		' Home Page - Search                   |'
-		'--------------------------------------'
-		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Home_Page_Search'), [:], FailureHandling.OPTIONAL)
-		
-		'--------------------------------------'
-		' Web Office - Verify Returned Record  |'
-		'--------------------------------------'
-		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Verification/Trader_Record'), [:], FailureHandling.OPTIONAL)
-		
-		'--------------------------'
-		' Teardown - CLose Browser |'
-		'--------------------------'
-		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.OPTIONAL)
-		
-		'--------------------------'
-		' END  Of ITERATION        |'
-		'--------------------------'
-}
-'--------------------------'
-' END                      |'
-'--------------------------'
+
+//---------------------------------------------------------------------
+// Set Search Criteria on the Web Office Header Search Box            |
+//---------------------------------------------------------------------
+WebUI.setText(findTestObject('WebOffice_Home_page/input_Search_Criteria'),
+	findTestData('searchTestData').getValue('tradeLocation', GlobalVariable.row))
+
+//---------------------------------------------------------------------
+// Trigger the Search Criteria on the Web Office Header Search Box    |
+//---------------------------------------------------------------------
+WebUI.click(findTestObject('WebOffice_Home_page/popout_Search_Item'))
+
+//---------------------------------------------------------------------
+// Page Loading after Triggering the Search                           |
+//---------------------------------------------------------------------
+'Page Loading'
+WebUI.waitForPageLoad(60)
+
+
+///////////////////////////////////////
+//                END                //
+///////////////////////////////////////

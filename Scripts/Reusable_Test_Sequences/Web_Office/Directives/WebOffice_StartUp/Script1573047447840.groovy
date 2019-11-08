@@ -61,14 +61,14 @@ import org.openqa.selenium.Keys as Keys
 GlobalVariable.Username = "DavidHo"
 GlobalVariable.Password = "Check123"
 '------------------------------------------------'
-'URL - Set from the ENVIRONMENT PROFILE '
+'WebOffice_URL - Set from the ENVIRONMENT PROFILE '
 'OPEN BROWSER'
 //////////////////////////////////////////////////
 // Browser Open                                 //
 //////////////////////////////////////////////////
 'eg - https://admin.preview.checkatrade.com/  '
 'Set in Profile Utilised During Test Execution'
-WebUI.openBrowser(GlobalVariable.URL) // 
+WebUI.openBrowser(GlobalVariable.WebOffice_URL) // 
 
 //////////////////////////////////////////////////
 // Synchronise on Login Button Being Available  //

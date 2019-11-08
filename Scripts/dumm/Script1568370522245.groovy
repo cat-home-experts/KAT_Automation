@@ -22,8 +22,8 @@ WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Directives/W
 
 WebUI.navigateToUrl('https://admin.preview.checkatrade.com/')
 
-WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Web Office (preview)/input_preview_companyAutocomplete_autocompl_f8dd82'), 
+WebUI.setText(findTestObject('WebOffice_Home_page/input_Search_Criteria'), 
     'Foster Tree')
 
-WebUI.click(findTestObject('Object Repository/Page_Checkatrade Web Office (preview)/strong_Foster Tree Care'))
+WebUI.click(findTestObject('WebOffice_Home_page/popout_Search_Item'))
 
