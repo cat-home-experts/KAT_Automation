@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportCollectionEntity>
+   <description></description>
+   <name>20191111_135915</name>
+   <tag></tag>
+   <displayName>20191111_135915</displayName>
+   <reportItemDescriptions>
+      <ReportItemDescription>
+         <reportLocation>Reports/20191111_135915/Mobile_Devices/20191111_135915</reportLocation>
+         <runConfigDescription>
+            <groupName>Web Desktop</groupName>
+            <profileName>default</profileName>
+            <runConfigurationId>Chrome</runConfigurationId>
+         </runConfigDescription>
+      </ReportItemDescription>
+      <ReportItemDescription>
+         <reportLocation>Reports/20191111_135915/Members_My_Feedback/20191111_135916</reportLocation>
+         <runConfigDescription>
+            <groupName>Web Desktop</groupName>
+            <profileName>default</profileName>
+            <runConfigurationId>Firefox</runConfigurationId>
+         </runConfigDescription>
+      </ReportItemDescription>
+      <ReportItemDescription>
+         <reportLocation>Reports/20191111_135915/Members_Callback/20191111_135917</reportLocation>
+         <runConfigDescription>
+            <groupName>Web Desktop</groupName>
+            <profileName>default</profileName>
+            <runConfigurationId>Chrome</runConfigurationId>
+         </runConfigDescription>
+      </ReportItemDescription>
+      <ReportItemDescription>
+         <reportLocation>Reports/20191111_135915/Members_My_Profile/20191111_135918</reportLocation>
+         <runConfigDescription>
+            <groupName>Web Desktop</groupName>
+            <profileName>default</profileName>
+            <runConfigurationId>Firefox</runConfigurationId>
+         </runConfigDescription>
+      </ReportItemDescription>
+      <ReportItemDescription>
+         <reportLocation>Reports/20191111_135915/Members_Useful_Documents/20191111_135919</reportLocation>
+         <runConfigDescription>
+            <groupName>Web Desktop</groupName>
+            <profileName>default</profileName>
+            <runConfigurationId>Chrome</runConfigurationId>
+         </runConfigDescription>
+      </ReportItemDescription>
+      <ReportItemDescription>
+         <reportLocation>Reports/20191111_135915/Members_My_Membership/20191111_135920</reportLocation>
+         <runConfigDescription>
+            <groupName>Web Desktop</groupName>
+            <profileName>default</profileName>
+            <runConfigurationId>Firefox</runConfigurationId>
+         </runConfigDescription>
+      </ReportItemDescription>
+      <ReportItemDescription>
+         <reportLocation>Reports/20191111_135915/Members_Received_Negative_Feedback/20191111_135921</reportLocation>
+         <runConfigDescription>
+            <groupName>Web Desktop</groupName>
+            <profileName>default</profileName>
+            <runConfigurationId>Chrome</runConfigurationId>
+         </runConfigDescription>
+      </ReportItemDescription>
+      <ReportItemDescription>
+         <reportLocation>Reports/20191111_135915/Give_Feedback/20191111_135922</reportLocation>
+         <runConfigDescription>
+            <groupName>Web Desktop</groupName>
+            <profileName>default</profileName>
+            <runConfigurationId>Firefox</runConfigurationId>
+         </runConfigDescription>
+      </ReportItemDescription>
+      <ReportItemDescription>
+         <reportLocation>Reports/20191111_135915/Trades_Apply_Here/20191111_135923</reportLocation>
+         <runConfigDescription>
+            <groupName>Web Desktop</groupName>
+            <profileName>default</profileName>
+            <runConfigurationId>Chrome</runConfigurationId>
+         </runConfigDescription>
+      </ReportItemDescription>
+      <ReportItemDescription>
+         <reportLocation>Reports/20191111_135915/Trade_Name_Multiple_Search/20191111_135924</reportLocation>
+         <runConfigDescription>
+            <groupName>Web Desktop</groupName>
+            <profileName>default</profileName>
+            <runConfigurationId>Firefox</runConfigurationId>
+         </runConfigDescription>
+      </ReportItemDescription>
+      <ReportItemDescription>
+         <reportLocation>Reports/20191111_135915/Trade_Location_Multiple_Search/20191111_135925</reportLocation>
+         <runConfigDescription>
+            <groupName>Web Desktop</groupName>
+            <profileName>default</profileName>
+            <runConfigurationId>Chrome</runConfigurationId>
+         </runConfigDescription>
+      </ReportItemDescription>
+      <ReportItemDescription>
+         <reportLocation>Reports/20191111_135915/WebOffice_Header_Search/20191111_135926</reportLocation>
+         <runConfigDescription>
+            <groupName>Web Desktop</groupName>
+            <profileName>default</profileName>
+            <runConfigurationId>Chrome</runConfigurationId>
+         </runConfigDescription>
+      </ReportItemDescription>
+   </reportItemDescriptions>
+   <testSuiteCollectionId>Test Suites/Test Suite Collection 200819</testSuiteCollectionId>
+</ReportCollectionEntity>

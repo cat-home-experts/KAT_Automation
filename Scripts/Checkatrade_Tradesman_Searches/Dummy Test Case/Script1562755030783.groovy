@@ -13,16 +13,30 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://www.preview.checkatrade.com/')
+WebUI.navigateToUrl('https://preview-ma.checkatrade.com/login?return=%2Fwork-alert')
 
-WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Checkatrade Find a tradesperson you can trust/a_Trade Membership'))
+WebUI.setText(findTestObject('Page_Members Area/input_Username_username'), 'check1234')
 
-WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Checkatrade Find a tradesperson you can trust/a_Login to your member area'))
+WebUI.setEncryptedText(findTestObject('Page_Members Area/input_Password_password'), 'fzqqY0qJjYTuJiVJRZh4ag==')
 
-WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Checkatrade Find a tradesperson you can trust/a_Advice'))
+WebUI.click(findTestObject('Page_Members Area/button_Log in'))
 
-WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Home - Checkatrade Blog/a_Homeowner Login'))
+
+
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/button_Add Accreditation'))
+
+WebUI.selectOptionByValue(findTestObject('Page_Members Area/Profiles/Page_Members Area/select_Select accreditation type_a'), 
+    '128', true)
+
+WebUI.setText(findTestObject('Object Repository/Page_Members Area/textarea_Notes_txtNotes'), 'random note for tesing purposes')
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/button_Select Document'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/button_Close'))
 

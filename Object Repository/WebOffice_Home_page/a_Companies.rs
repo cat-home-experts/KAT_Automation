@@ -4,6 +4,16 @@
    <name>a_Companies</name>
    <tag></tag>
    <elementGuidId>1788be64-4997-4e4a-b864-c48a64b60a50</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='main-navigation']/nav/ul/li/a</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@href = '/Companies/Members/All.aspx' and (text() = 'Companies' or . = 'Companies')]</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>

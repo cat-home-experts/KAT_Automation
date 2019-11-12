@@ -92,8 +92,8 @@ WebUI.click(findTestObject('Object Repository/Page_Members Area/remind_Submit_Bu
 // Confirm Thank You Message and other Messaging//
 //////////////////////////////////////////////////
 
-WebUI.delay(2) // will look at puttting aa waitforelement here - Not sure if the remind_Submit_Button is still visible and enabled after hitting once
 WebUI.waitForPageLoad(60)
+WebUI.delay(2) // will look at puttting aa waitforelement here - Not sure if the remind_Submit_Button is still visible and enabled after hitting once
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/remind_Message_Dispel'), 60)
 '----------------------------------------------'

@@ -12,7 +12,7 @@
             <profileName>default</profileName>
             <runConfigurationId>Firefox</runConfigurationId>
          </configuration>
-         <runEnabled>true</runEnabled>
+         <runEnabled>false</runEnabled>
          <testSuiteEntity>Test Suites/Members_Callback</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
@@ -21,7 +21,7 @@
             <profileName>default</profileName>
             <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
-         <runEnabled>true</runEnabled>
+         <runEnabled>false</runEnabled>
          <testSuiteEntity>Test Suites/Members_Callback</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
@@ -30,7 +30,7 @@
             <profileName>default</profileName>
             <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
-         <runEnabled>true</runEnabled>
+         <runEnabled>false</runEnabled>
          <testSuiteEntity>Test Suites/Members_My_Profile</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
@@ -39,7 +39,7 @@
             <profileName>default</profileName>
             <runConfigurationId>Firefox</runConfigurationId>
          </configuration>
-         <runEnabled>true</runEnabled>
+         <runEnabled>false</runEnabled>
          <testSuiteEntity>Test Suites/Members_My_Profile</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
@@ -48,7 +48,7 @@
             <profileName>default</profileName>
             <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
-         <runEnabled>true</runEnabled>
+         <runEnabled>false</runEnabled>
          <testSuiteEntity>Test Suites/Trades_Apply_Here</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
@@ -57,7 +57,7 @@
             <profileName>default</profileName>
             <runConfigurationId>Firefox</runConfigurationId>
          </configuration>
-         <runEnabled>true</runEnabled>
+         <runEnabled>false</runEnabled>
          <testSuiteEntity>Test Suites/Trades_Apply_Here</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
@@ -66,7 +66,7 @@
             <profileName>default</profileName>
             <runConfigurationId>Firefox</runConfigurationId>
          </configuration>
-         <runEnabled>true</runEnabled>
+         <runEnabled>false</runEnabled>
          <testSuiteEntity>Test Suites/Give_Feedback</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
@@ -75,7 +75,7 @@
             <profileName>default</profileName>
             <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
-         <runEnabled>true</runEnabled>
+         <runEnabled>false</runEnabled>
          <testSuiteEntity>Test Suites/Give_Feedback</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
@@ -84,7 +84,7 @@
             <profileName>default</profileName>
             <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
-         <runEnabled>true</runEnabled>
+         <runEnabled>false</runEnabled>
          <testSuiteEntity>Test Suites/Members_Callback</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
@@ -93,7 +93,7 @@
             <profileName>default</profileName>
             <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
-         <runEnabled>true</runEnabled>
+         <runEnabled>false</runEnabled>
          <testSuiteEntity>Test Suites/Give_Feedback</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
@@ -102,7 +102,7 @@
             <profileName>default</profileName>
             <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
-         <runEnabled>true</runEnabled>
+         <runEnabled>false</runEnabled>
          <testSuiteEntity>Test Suites/Members_My_Profile</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
@@ -111,7 +111,7 @@
             <profileName>default</profileName>
             <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
-         <runEnabled>true</runEnabled>
+         <runEnabled>false</runEnabled>
          <testSuiteEntity>Test Suites/Trades_Apply_Here</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
@@ -120,7 +120,7 @@
             <profileName>default</profileName>
             <runConfigurationId>Firefox</runConfigurationId>
          </configuration>
-         <runEnabled>true</runEnabled>
+         <runEnabled>false</runEnabled>
          <testSuiteEntity>Test Suites/Give_Feedback</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
@@ -129,7 +129,7 @@
             <profileName>default</profileName>
             <runConfigurationId>Firefox</runConfigurationId>
          </configuration>
-         <runEnabled>true</runEnabled>
+         <runEnabled>false</runEnabled>
          <testSuiteEntity>Test Suites/Members_Callback</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
@@ -138,7 +138,7 @@
             <profileName>default</profileName>
             <runConfigurationId>Firefox</runConfigurationId>
          </configuration>
-         <runEnabled>true</runEnabled>
+         <runEnabled>false</runEnabled>
          <testSuiteEntity>Test Suites/Trades_Apply_Here</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
@@ -147,8 +147,17 @@
             <profileName>default</profileName>
             <runConfigurationId>Firefox</runConfigurationId>
          </configuration>
-         <runEnabled>true</runEnabled>
+         <runEnabled>false</runEnabled>
          <testSuiteEntity>Test Suites/Members_My_Profile</testSuiteEntity>
+      </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Web Desktop</groupName>
+            <profileName>default</profileName>
+            <runConfigurationId>Chrome</runConfigurationId>
+         </configuration>
+         <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/WebOffice_Header_Search</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
 </TestSuiteCollectionEntity>

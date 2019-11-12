@@ -36,7 +36,8 @@ import internal.GlobalVariable as GlobalVariable
 // Added Extra Synchronisation, Hardening Test|    29/10/2019   |        DH        | waitPageLoads added, scroll |
 // Published Feedback Search Test Area Harden |    30/10/2019   |                  | Value update from 250 to 500|
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Watch Flakiness Around 'Remind_Customer_   |                 |                  |                             |
+// Sent - Line 100 (Thank You Message Missing |    11/11/2019   |        DH        |     TODO - Watch Area       |
 //---------------------------------------------------------------------------------------------------------------
 'WARNING - Be AWARE that, for example, That the Members Area Link on Preview doesnt take you to Preview, but takes you to LIVE Members Area'
 

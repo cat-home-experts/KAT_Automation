@@ -61,14 +61,14 @@ import org.openqa.selenium.Keys as Keys
 GlobalVariable.Username = "DavidHo"
 GlobalVariable.Password = "Check123"
 '------------------------------------------------'
-'WebOffice_URL - Set from the ENVIRONMENT PROFILE '
+'WebOfficeURL - Set from the ENVIRONMENT PROFILE '
 'OPEN BROWSER'
 //////////////////////////////////////////////////
 // Browser Open                                 //
 //////////////////////////////////////////////////
 'eg - https://admin.preview.checkatrade.com/  '
 'Set in Profile Utilised During Test Execution'
-WebUI.openBrowser(GlobalVariable.WebOffice_URL) // 
+WebUI.openBrowser(GlobalVariable.WebOfficeURL) // 
 
 //////////////////////////////////////////////////
 // Synchronise on Login Button Being Available  //
@@ -134,6 +134,11 @@ WebUI.maximizeWindow()
 //////////////////////////////////////////////////
 'WAIT for browser to load - waits up to 60 seconds before timeout occurs '
 WebUI.waitForPageLoad(60)
+
+//////////////////////////////////////////////////
+// Welcome Username                             //
+//////////////////////////////////////////////////
+WebUI.verifyTextPresent("Welcome "+GlobalVariable.Username, false)
 
 ///////////////////////////////////////
 //                END                //

@@ -129,10 +129,9 @@ Profile Preview : Validation Data Special Characters</p>
     public static Object Validation_Data_Special_Chars
      
     /**
-     * <p>Profile default : Web Office URL
-Profile Checkatrade_Live : Web Office URL</p>
+     * <p>Profile default : Web Office URL</p>
      */
-    public static Object WebOffice_URL
+    public static Object WebOfficeURL
      
     /**
      * <p>Profile default : Fix the format error here Give Feedback - Recommend? true OR false
@@ -149,6 +148,11 @@ Profile Preview : Fix the format error here Give Feedback - Recommend? true OR f
      * <p>Profile Checkatrade_Live : Flag to run configured test, designed for 1 iteration, to run multiple iterations.</p>
      */
     public static Object Standalone_TC_Execution
+     
+    /**
+     * <p>Profile Checkatrade_Live : Web Office URL</p>
+     */
+    public static Object WebOffice_URL
      
     /**
      * <p>Profile Preview : Postcode</p>
@@ -186,10 +190,11 @@ Profile Preview : Fix the format error here Give Feedback - Recommend? true OR f
             Validation_Data_Alpha = selectedVariables['Validation_Data_Alpha']
             Validation_Data_Numeric = selectedVariables['Validation_Data_Numeric']
             Validation_Data_Special_Chars = selectedVariables['Validation_Data_Special_Chars']
-            WebOffice_URL = selectedVariables['WebOffice_URL']
+            WebOfficeURL = selectedVariables['WebOfficeURL']
             YE_Recommendations = selectedVariables['YE_Recommendations']
             row = selectedVariables['row']
             Standalone_TC_Execution = selectedVariables['Standalone_TC_Execution']
+            WebOffice_URL = selectedVariables['WebOffice_URL']
             Postcode = selectedVariables['Postcode']
             Invalid_EMail = selectedVariables['Invalid_EMail']
             

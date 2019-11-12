@@ -101,8 +101,8 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Web Office URL</description>
-      <initValue>'https://admin.preview.checkatrade.com/Login.aspx?ReturnUrl=%2f'</initValue>
-      <name>WebOffice_URL</name>
+      <initValue>'https://admin.preview.checkatrade.com/'</initValue>
+      <name>WebOfficeURL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Fix the format error here Give Feedback - Recommend? true OR false</description>

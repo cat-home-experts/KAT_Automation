@@ -76,7 +76,7 @@ WebUI.verifyTextPresent("Save Search Appearance Info", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("House rules: All changes will be moderated by Checkatrade staff", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Undo", false)
+// WebUI.verifyTextPresent("Undo", false)
 '----------------------------------------------'
 //-----------------------------
 // Back to PROFILE Block menu |

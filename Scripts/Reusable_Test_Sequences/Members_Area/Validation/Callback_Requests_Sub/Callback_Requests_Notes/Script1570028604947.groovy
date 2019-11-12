@@ -83,7 +83,7 @@ WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Are
 
 ///////////////////////////////////////////////
 // Add/Edit Note
-// WebUI.delay(10)
+WebUI.delay(2)
 //WebUI.switchToWindowTitle('Add/Edit Notes')
 //'----------------------------------------------'
 //WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/Page_Members Area/a_AddEdit note'))
@@ -94,7 +94,10 @@ WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Are
 //'----------------------------------------------'
 //WebUI.setText(findTestObject('Object Repository/Page_Members Area/Page_Members Area/textarea_AddEdit Notes'), 'this is still a cool note')
 //'----------------------------------------------'
-WebUI.verifyTextPresent("this is still a cool note", false)
+//WebUI.verifyTextPresent("this is still a cool note", false)
+' Changes 11/11-201'
+//'----------------------------------------------'
+WebUI.verifyTextPresent("Edit Notes", false) // Add/Edit - Slash Breaks
 //'----------------------------------------------'
 WebUI.verifyTextPresent("Close", false)
 //'----------------------------------------------'

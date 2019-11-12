@@ -105,21 +105,29 @@ WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Are
 // Checkbox set Alerts - Check 
 WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Area/input_Settings_chkDisableWorkAlerts'))
 '----------------------------------------------'
+// Values Changed <Send Emails To> listbox from 3 to 0 
+//-----------------------
 // Set <Send Emails To> listbox To <None>
-WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Members Area/Page_Members Area/select_Do not send_1'),
-	'3: Object', true)
+//WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Members Area/Page_Members Area/select_Do not send_1'),
+//	'0: Object', true)
+WebUI.selectOptionByValue(findTestObject('Page_Members Area/select_Do not send_email address'),
+	'0: Object', true)
 '----------------------------------------------'
 // Revert <Send Emails To> listbox To Previous Setting
-WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Members Area/Page_Members Area/select_Do not send_1'),
-	'14: Object', true)
+//WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Members Area/Page_Members Area/select_Do not send_1'),
+//	'14: Object', true)
+WebUI.selectOptionByValue(findTestObject('Page_Members Area/select_Do not send_email address'),
+	'15: Object', true)
 '----------------------------------------------'
-// Set <Send SMS To> listbox To <None>
-WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Members Area/Page_Members Area/select_Do not send_2'),
-	'3: Object', true)
+// Set <Send SMS To> listbox To <Do Not Send>
+//WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Members Area/Page_Members Area/select_Do not send_2'),
+//	'3: Object', true)
+WebUI.selectOptionByValue(findTestObject('Page_Members Area/select_Do not sendOther'),
+	'0: Object', true)
 '----------------------------------------------'
 // Revert <Send SMS To> listbox To Previous Setting
-WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Members Area/Page_Members Area/select_Do not send_2'),
-	'1: Object', true)
+//WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Members Area/Page_Members Area/select_Do not send_2'),
+//	'1: Object', true)
 '----------------------------------------------'
 // Scroll <Submit> Button Into View
 WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/Page_Members Area/button_Submit_1'), 25)
