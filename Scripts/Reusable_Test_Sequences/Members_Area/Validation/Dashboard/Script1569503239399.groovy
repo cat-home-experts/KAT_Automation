@@ -47,6 +47,7 @@ import internal.GlobalVariable as GlobalVariable
 /////////////////////////////////////////////////////
 //     Wait for Dashboard Element Availability     //
 /////////////////////////////////////////////////////
+WebUI.waitForPageLoad(60)
 WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/a_Dashboard'), 60)
 
 // Page Refresh - Suddenly page not fully loading on PREVIEW - 26/09/2019

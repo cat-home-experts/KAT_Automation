@@ -38,7 +38,7 @@ import internal.GlobalVariable as GlobalVariable
 //                                                                                                               |
 //	GIVEN -  With Web Office Open                                                                                |
 //                                                                                                               |
-//	WHEN - We CLICK on the <COMPANIES> menu Item (Top Level)                                                         |
+//	WHEN - We CLICK on the <TOOLS> menu Item (Top Level)                                                         |
 //                                                                                                               |
 //  THEN - Verify Details of the RETURNED Page are As Expected                                                      |
 //                                                                                                               |
@@ -56,8 +56,8 @@ WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Directives/W
 ' Navigate Top level menu Item         |'
 '--------------------------------------'
 WebUI.waitForPageLoad(60)
-WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Companies'), 60)
-WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/a_Companies'))
+WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Tools'), 60)
+WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/a_Tools'))
 
 '--------------------------------------'
 ' Verify Returned Page Content         |'

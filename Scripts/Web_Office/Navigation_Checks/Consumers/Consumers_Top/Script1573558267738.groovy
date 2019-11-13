@@ -55,6 +55,7 @@ WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Directives/W
 '--------------------------------------'
 ' Navigate Top level menu Item         |'
 '--------------------------------------'
+WebUI.waitForPageLoad(60)
 WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Consumers'), 60)
 WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/a_Consumers'), 1)
 
