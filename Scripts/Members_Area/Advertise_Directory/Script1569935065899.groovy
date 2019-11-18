@@ -27,10 +27,10 @@ import internal.GlobalVariable as GlobalVariable
 // areas is intact and available  (PREVIEW)   |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 // Stand Alone Test Created For Useful Docs   |                 |                  |             URL             |
-// Functionality - From members Area          |    16/09/2019   |        DH        | checkatrade.com/other-useful|  TODO
+// Functionality - From members Area          |    16/09/2019   |        DH        | checkatrade.com/other-useful|  
 // Integrity Checks                           |                 |                  |         -documents          |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Implemented 18/11/2019                     |    18/11/2019   |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -67,12 +67,12 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Da
 	//-----------------------------------------
 	// Navigate Useful Documents Page         |
 	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/Useful_Documents'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_You_Business/Advertise'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	//-----------------------------------------
 	// Confirm Data on Top - Documents Page   |
 	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Useful_Documents'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Advertise'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	//-----------------------------------------
 	// Log OFF the Members Area               |

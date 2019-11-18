@@ -50,6 +50,7 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/
 ////////////////////////////////////////////
 //  Click Log My Photos Element           //
 ////////////////////////////////////////////
+WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/div_My Photos'), 10)
 WebUI.click(findTestObject('Object Repository/Page_Members Area/div_My Photos'))
 
 ///////////////////////////////////////

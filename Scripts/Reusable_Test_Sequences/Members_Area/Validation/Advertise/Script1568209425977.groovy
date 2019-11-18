@@ -47,7 +47,7 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////////////////////
 //     Wait for Customers Name Element Availability       //
 ////////////////////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/input_concat(Customer  s name)_customerName'), 60)
+//WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/input_concat(Customer  s name)_customerName'), 60)
 
 ////////////////////////////////////////////////////////////
 //     Take an Initial Screenshot of Home After Login     //
@@ -67,19 +67,19 @@ WebUI.verifyTextPresent(findTestData('Members_Test_Data').getValue('MEMBER_ID', 
 '----------------------------------------------'
 WebUI.verifyTextPresent("MEMBER ID", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Remind your customers", false)
+WebUI.verifyTextPresent("Directory Information", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("CUSTOMER NAME IS REQUIRED", false)
+WebUI.verifyTextPresent("You can opt to upgrade your membership to be included in one of the printed directories", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Description of work", false)
+WebUI.verifyTextPresent("households within your working area", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Customer's email", false)
+WebUI.verifyTextPresent("We allow several allocations for each trade and these vary depending on consumer demand", false)
 
-WebUI.verifyTextPresent("Submit", false)
+WebUI.verifyTextPresent("so if you would like to see if there is space available in an area which suits you", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Mobile number (for SMS reminder)", false)
+WebUI.verifyTextPresent("best to speak with us directly so that we can give you further information and run through pricing and payment options", false)
 '----------------------------------------------'
-WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/a_Dashboard'), 10)
+//WebUI.scrollToElement(findTestObject('Please contact us on 01243 952303'), 10)
 
 ///////////////////////////////////////
 //                END                // TODO  TODO Blind Import To Update

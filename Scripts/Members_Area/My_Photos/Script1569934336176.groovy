@@ -30,7 +30,7 @@ import internal.GlobalVariable as GlobalVariable
 // Functionality - From members Area          |    16/09/2019   |        DH        | checkatrade.com/other-useful|  TODO
 // Integrity Checks                           |                 |                  |         -documents          |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Implemented 18/11/2019                     |    18/11/2019   |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -47,7 +47,7 @@ import internal.GlobalVariable as GlobalVariable
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 // Specific Page Withing members That You Want To Visit
-GlobalVariable.PAGE = "/other-useful-documents"
+GlobalVariable.PAGE = "/my_photos"
 
 'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test\r\n'
 for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Data').getRowNumbers(); (GlobalVariable.row)++) {
@@ -65,14 +65,14 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Da
 	//-----------------------------------------
 
 	//-----------------------------------------
-	// Navigate Useful Documents Page         |
+	// Navigate my photos Page                |
 	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/Useful_Documents'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_You_Business/My_Photos'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	//-----------------------------------------
 	// Confirm Data on Top - Documents Page   |
 	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Useful_Documents'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/My_Photos'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	//-----------------------------------------
 	// Log OFF the Members Area               |

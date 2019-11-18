@@ -48,8 +48,12 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////////////////////
 //     Wait for Customers Name Element Availability       //
 ////////////////////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/input_concat(Customer  s name)_customerName'), 60)
+//WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/input_concat(Customer  s name)_customerName'), 60)
+//WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/div_My Photos'), 5)
 
+WebUI.waitForPageLoad(60)
+//WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/a_Dashboard'), 10)
+//WebUI.scrollToPosition(500, 500)
 ////////////////////////////////////////////////////////////
 //     Take an Initial Screenshot of Home After Login     //
 ////////////////////////////////////////////////////////////
@@ -68,20 +72,20 @@ WebUI.verifyTextPresent(findTestData('Members_Test_Data').getValue('MEMBER_ID', 
 '----------------------------------------------'
 WebUI.verifyTextPresent("MEMBER ID", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Remind your customers", false)
+WebUI.verifyTextPresent("Manage Your Albums", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("CUSTOMER NAME IS REQUIRED", false)
+WebUI.verifyTextPresent("These albums are displayed in your public Gallery and are a great way to show the variety and quality of your work", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Description of work", false)
+WebUI.verifyTextPresent("Click/tap on an album to open it and edit its photos and videos", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Customer's email", false)
+WebUI.verifyTextPresent("Add New Album", false)
 
-WebUI.verifyTextPresent("Submit", false)
+WebUI.verifyTextPresent("Checkatrade", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Mobile number (for SMS reminder)", false)
+//WebUI.verifyTextPresent("Mobile number (for SMS reminder)", false)
 '----------------------------------------------'
-WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/a_Dashboard'), 10)
+//WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/a_Dashboard'), 10)
 
 ///////////////////////////////////////
-//                END                // TODO  TODO Blind Import To Update
+//                END                // 
 ///////////////////////////////////////
