@@ -46,6 +46,7 @@ System.out.println("Your Experience, Estimate Accuracy, Click on the "+YE_Estima
 //		//YE_Estimate = 1 // "Agreed_price"      //
 '-------------------------------------------------'
 if (YE_Estimate ==("Agreed_price")) {
+	WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_The agreed price'), 5)
 	WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_The agreed price'))
 	WebUI.waitForPageLoad(2)
 }
@@ -53,6 +54,7 @@ if (YE_Estimate ==("Agreed_price")) {
 //		//YE_Estimate = 2 // "Additional_work"   //
 '-------------------------------------------------'
 if (YE_Estimate ==("Additional_work")) {
+	WebUI.waitForElementClickable(findTestObject('Page_Checkatrade Give your feedback/span_I requested additional work and paid the agreed price'), 5)
 	WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_I requested additional work and paid the agreed price'))
 	WebUI.waitForPageLoad(2)
 }
@@ -60,6 +62,7 @@ if (YE_Estimate ==("Additional_work")) {
 //		//YE_Estimate = 3 // "More_than_agreed_price_informed"         //
 '-----------------------------------------------------------------------'
 if (YE_Estimate ==("More_than_agreed_price_informed")) {
+	WebUI.waitForElementClickable(findTestObject('Page_Checkatrade Give your feedback/span_More than the agreed price but I was kept informed'), 5)
 	WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_More than the agreed price but I was kept informed'))
 	WebUI.waitForPageLoad(2)
 }
@@ -67,6 +70,7 @@ if (YE_Estimate ==("More_than_agreed_price_informed")) {
 //		//YE_Estimate = 4 // "More_than_agreed_price_not_informed"     //
 '-----------------------------------------------------------------------'
 if (YE_Estimate ==("More_than_agreed_price_not_informed")) {
+	WebUI.waitForElementClickable(findTestObject('Page_Checkatrade Give your feedback/span_More than the agreed price but I wasnt kept informed'), 5)
 	WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_More than the agreed price but I wasnt kept informed'))
 	WebUI.waitForPageLoad(2)
 }
@@ -74,6 +78,7 @@ if (YE_Estimate ==("More_than_agreed_price_not_informed")) {
 //		//YE_Estimate = 5 // "No_estimate"                             //
 '-----------------------------------------------------------------------'
 if (YE_Estimate ==("No_estimate")) {
+	WebUI.waitForElementClickable(findTestObject('Page_Checkatrade Give your feedback/span_Not applicable - no estimate given'), 5)
 	WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Not applicable - no estimate given'))
 	WebUI.waitForPageLoad(2)
 }

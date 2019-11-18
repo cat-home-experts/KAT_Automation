@@ -19,7 +19,7 @@ import internal.GlobalVariable as GlobalVariable
 
    //-----------------------------------------
     'Hit Search Trade Person by Name (or CAT ID)'
-    //WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/Hit_Search_Trader')) // changed 26/07/19 new deployment
+    //WebUI.waitForElementClickable(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name'), 5)
 	WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name'))
 	//-----------------------------------------
 	

@@ -45,6 +45,16 @@ import org.openqa.selenium.Keys as Keys
 //  THEN -                                                                                                       |
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
+// TODO Issue with parsing this URL from the batch? INVESTIGATE FURTHER TODOD
+// This needs  rationaliising and incorporating Into the CAT Startupup URL Resolver
+if (GlobalVariable.URL == ("https://www.preview.checkatrade.com/")){
+	GlobalVariable.WebOfficeURL="https://admin.preview.checkatrade.com/" // TODO
+} 
+'-----------------------------------------------------------------------------'
+if (GlobalVariable.URL == ("https://www.checkatrade.com/")){
+	GlobalVariable.WebOfficeURL="https://admin.checkatrade.com/" // TODO
+}
+//--------------------------------------------------------------------------------
 
 //-----------------------------------------
 // Startup Process -                      | NOTE: Members Area Function has it's OWN Startup Process
@@ -69,6 +79,12 @@ GlobalVariable.Password = "Check123"
 'eg - https://admin.preview.checkatrade.com/  '
 'Set in Profile Utilised During Test Execution'
 WebUI.openBrowser(GlobalVariable.WebOfficeURL) // 
+
+//////////////////////////////////////////////////
+// Maximisde Browser                            //
+//////////////////////////////////////////////////
+'MAXIMIZE BROWSER '
+WebUI.maximizeWindow()
 
 //////////////////////////////////////////////////
 // Synchronise on Login Button Being Available  //
@@ -122,12 +138,6 @@ WebUI.setText(findTestObject('Object Repository/WebOffice/Page_Checkatrade - Adm
 //////////////////////////////////////////////////
 'LOGIN'
 WebUI.click(findTestObject('Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button'))
-
-//////////////////////////////////////////////////
-// Maximisde Browser                            //
-//////////////////////////////////////////////////
-'MAXIMIZE BROWSER '
-WebUI.maximizeWindow()
 
 //////////////////////////////////////////////////
 // Page Load Synchronisation                    //                                   

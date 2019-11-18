@@ -21,11 +21,13 @@ import internal.GlobalVariable as GlobalVariable
 	'Hit Search Trade Person by Name (or CAT ID) after parameters are entered'
     //-----------------------------------------
     'Click on the Page to Refresh Search Results'
+	WebUI.waitForElementPresent(findTestObject('Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name'), 60)
     WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name'))
 	//-----------------------------------------
 	
 	//-----------------------------------------
 	'Waits only as long as required'
+	WebUI.delay(2)
 	WebUI.waitForPageLoad(60)
 	//-----------------------------------------
 

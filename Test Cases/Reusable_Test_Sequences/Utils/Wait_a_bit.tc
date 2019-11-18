@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>During the batch executions, the first test in the sequence often fails. Seems like the tool want's to rush off and get the job done :-) This is an initial PAUSE before the tess kick off in ANGER - initial set a 5 seconds, but of course, value is not set in stone.</description>
+   <name>Wait_a_bit</name>
+   <tag>Execution Delay Initial</tag>
+   <comment></comment>
+   <testCaseGuid>b2809064-e781-4dd1-850b-308fd494b424</testCaseGuid>
+</TestCaseEntity>

@@ -22,8 +22,19 @@ WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Directives/W
 
 WebUI.navigateToUrl('https://admin.preview.checkatrade.com/')
 
-WebUI.setText(findTestObject('WebOffice_Home_page/input_Search_Criteria'), 
-    'Foster Tree')
+GlobalVariable.URL = 'https://admin.preview.checkatrade.com/Login.aspx?ReturnUrl=%2f'
 
-WebUI.click(findTestObject('WebOffice_Home_page/popout_Search_Item'))
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp'), [:], FailureHandling.OPTIONAL)
+
+WebUI.navigateToUrl('https://admin.preview.checkatrade.com/')
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://admin.preview.checkatrade.com/')
+
+WebUI.click(findTestObject('Object Repository/WebOffice/Companies_Top/Page_Checkatrade Web Office (preview)/a_Companies'))
+
+WebUI.click(findTestObject('Object Repository/WebOffice/Companies_Top/Page_/span_Advanced Search'))
+
+WebUI.closeBrowser()
 

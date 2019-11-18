@@ -4,7 +4,7 @@
    <name>Test Suite Collection 200819</name>
    <tag>Regression</tag>
    <executionMode>SEQUENTIAL</executionMode>
-   <maxConcurrentInstances>4</maxConcurrentInstances>
+   <maxConcurrentInstances>5</maxConcurrentInstances>
    <testSuiteRunConfigurations>
       <TestSuiteRunConfiguration>
          <configuration>

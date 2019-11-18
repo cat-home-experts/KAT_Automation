@@ -19,6 +19,7 @@ import internal.GlobalVariable as GlobalVariable
 
 //----------------------------------------
 'Hit Give Feedback from the Homepage Header Banner '
+WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Give feedback'), 60)
 WebUI.click(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Give feedback'))
 //----------------------------------------
 

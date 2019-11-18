@@ -3,21 +3,7 @@
    <description></description>
    <name>Quotation_Selection</name>
    <tag></tag>
-   <comment>-----------------------
-Check DEFAULT Setting  |     Default Setting - Nothing Selected
------------------------
---------------------------------
-Read data from spreadsheet      |
---------------------------------
-Read data from spreadsheet      |
----------------------------------------------------------------------------------------------------------------------------------------------------
-Set Quotation - Agreed_estimate -OR- Additional_work -OR- More_than_agreed_price_informed -OR- More_than_agreed_price_not_informed -OR- No_estimate|
----------------------------------------------------------------------------------------------------------------------------------------------------
--------------------------------------------------
--------------------------------------------------
------------------------------------------------------------------------
------------------------------------------------------------------------
------------------------------------------------------------------------</comment>
+   <comment></comment>
    <testCaseGuid>59551bb2-3dde-4ab3-9f44-e604b303d6fe</testCaseGuid>
    <variable>
       <defaultValue>'Agreed_estimate'</defaultValue>

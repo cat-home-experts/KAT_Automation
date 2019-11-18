@@ -17,6 +17,7 @@ import internal.GlobalVariable as GlobalVariable
 // Hit Trades - Signup from the Homepage                                 | - Snip - 09/08/2019
 //------------------------------------------------------------------------
 
+WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Trades                                apply here'))
 WebUI.click(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Trades                                apply here'))
 
 //-------------------------------------------------------

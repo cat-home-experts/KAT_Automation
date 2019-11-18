@@ -67,6 +67,12 @@ WebUI.setText(findTestObject('Object Repository/Members/Page_Members Area/input_
 
 WebUI.click(findTestObject('Object Repository/Members/Page_Members Area/button_Log in'))
 
+//-----------------------------------------
+// New popout Window - 15/11/2019         |
+//-----------------------------------------
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Popout_Handler'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+
 ///////////////////////////////////////
 //                END                //
 ///////////////////////////////////////

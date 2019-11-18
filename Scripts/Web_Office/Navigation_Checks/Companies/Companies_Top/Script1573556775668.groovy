@@ -55,10 +55,15 @@ WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Directives/W
 '--------------------------------------'
 ' Navigate Top level menu Item         |'
 '--------------------------------------'
+WebUI.delay(5)
 WebUI.waitForPageLoad(60)
 WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Companies'), 60)
-WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/a_Companies'))
+WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/a_Companies'),)
 
+//----------------------------------------------------
+// Sync - Wait For Advanced Search Button to Appear  |
+//----------------------------------------------------
+WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice/Companies_Top/Page_/span_Advanced Search'), 120)
 '--------------------------------------'
 ' Verify Returned Page Content         |'
 '--------------------------------------'

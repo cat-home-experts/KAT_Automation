@@ -20,8 +20,9 @@ import internal.GlobalVariable as GlobalVariable
 //-------------------------------------------
 'Scroll - To Footer on the bottom of the page (sometime off the screen) '
 'Scroll Element into VIEW, as the following text to verify can be off the screen'
-    WebUI.scrollToElement(findTestObject('Page_of_Results/div_see all_footer__van-with-trailer'), 60)
-	WebUI.delay(1)
+WebUI.waitForElementVisible(findTestObject('Page_of_Results/div_see all_footer__van-with-trailer'), 60)
+WebUI.scrollToElement(findTestObject('Page_of_Results/div_see all_footer__van-with-trailer'), 4)
+WebUI.delay(1)
 //-------------------------------------------
 
 //------------------------------------

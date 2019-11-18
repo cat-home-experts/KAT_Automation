@@ -20,6 +20,7 @@ import internal.GlobalVariable as GlobalVariable
 
 	//-------------------------------------------
     'Enter Trade Name (OR CAT ID) in Text Field'
+	//WebUI.waitForElementClickable(findTestObject('Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search'), 2)
     WebUI.setText(findTestObject('Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search'), findTestData(
             'Search_CAT_ID_Data (1)').getValue('tradeName', GlobalVariable.row))
 	//-------------------------------------------

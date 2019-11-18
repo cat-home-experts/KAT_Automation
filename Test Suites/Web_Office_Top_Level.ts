@@ -26,4 +26,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Web_Office/Navigation_Checks/Companies/Companies_Top</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>ec9eb2b4-582e-4a90-bf53-a8bfad6cc916</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Navigation_Checks/Directories/Directories_Top</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

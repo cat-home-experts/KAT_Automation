@@ -37,12 +37,14 @@ if (YE_Recommend == ("Yes")) {
 	' No need to re-select - RESOLVED                           |'
 	'-----------------------------------------------------------'
     //WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes_Recommend'), 1, FailureHandling.OPTIONAL)
+	WebUI.waitForElementClickable(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/Page_Checkatrade Give your feedback/span_Yes'), 5)
 	WebUI.click(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/Page_Checkatrade Give your feedback/span_Yes'))
 	WebUI.waitForPageLoad(2)
 } 
 else if (YE_Recommend == ("No")) {
     //WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Experience_Feedback'))
 	//WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Recommend'), 1, FailureHandling.OPTIONAL)
+	WebUI.waitForElementClickable(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/Page_Checkatrade Give your feedback/span_No'), 5)
 	WebUI.click(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/Page_Checkatrade Give your feedback/span_No'))
 	WebUI.waitForPageLoad(5)
 	//--------------------------------------------------------

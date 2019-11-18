@@ -4,7 +4,17 @@
    <name>div_Callback Requests</name>
    <tag></tag>
    <elementGuidId>ca253c17-9116-4c27-a0a2-75c94177ea09</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[(text() = 'Callback Requests' or . = 'Callback Requests')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;callbackRequest&quot;]/a/div[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

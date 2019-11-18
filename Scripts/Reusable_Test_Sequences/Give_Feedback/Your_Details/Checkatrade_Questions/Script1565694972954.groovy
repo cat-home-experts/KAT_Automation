@@ -35,10 +35,12 @@ System.out.println(('Your Experience, Your details, Set the ' + YD_Feedback_Meth
 '  Set Verify Options - SMS OR Email |'
 '------------------------------------'
 if (YD_Feedback_Method == "email"){
+	//WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_Verify by email'))
 	WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_Verify by email'))
 	WebUI.waitForPageLoad(2)
 }
 else {
+	//WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_Verify by SMS (Please provide a mobile number)'))
 	WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_Verify by SMS (Please provide a mobile number)'))
 	WebUI.waitForPageLoad(2)
 }
@@ -56,6 +58,8 @@ WebUI.scrollToPosition(200, 0)
 
 WebUI.waitForPageLoad(2)
 
+//WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Checkatrade Give your feedback/select_Please selectTVRadioOnlineDirectoryWord'),
+//	YD_How_Did_You_Hear, true)
 WebUI.selectOptionByLabel(findTestObject('Object Repository/Page_Checkatrade Give your feedback/select_Please selectTVRadioOnlineDirectoryWord'), 
      YD_How_Did_You_Hear, true)
 
@@ -64,6 +68,8 @@ WebUI.selectOptionByLabel(findTestObject('Object Repository/Page_Checkatrade Giv
 '--------------------------------------'
 
 if (YD_How_Did_You_Hear == "Other"){
+//	WebUI.waitForElementClickable(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_How did you hear about Checkatrade_ctl00contenttbOther'),
+//		'YD_Other_Response')
 	WebUI.setText(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_How did you hear about Checkatrade_ctl00contenttbOther'),
 		'YD_Other_Response')
 	WebUI.waitForPageLoad(2)
@@ -77,19 +83,20 @@ if (YD_How_Did_You_Hear == "Other"){
 //    YD_Reason_For_Tradeperson_Selection, true)
 
 // NEED TO HARDEN THIS SELECTION PROCESS
-
+WebUI.waitForElementClickable(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/select_Prefer not to sayFound the Tradesperson via CheckatradecomDirected to Checkatradecom by the Tradesperson'), 2)
 WebUI.selectOptionByIndex(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/select_Prefer not to sayFound the Tradesperson via CheckatradecomDirected to Checkatradecom by the Tradesperson'), 2)
 
 //WebUI.selectOptionByValue(findTestObject('Page_CuraAppointment/lst_Facility'), 'Hongkong CURA Healthcare Center', false)
 //WebUI.selectOptionByIndex(findTestObject('Page_CuraAppointment/lst_Facility'), 1)
 //WebUI.selectOptionByLabel(findTestObject('Page_CuraAppointment/lst_Facility'), 'Hongkong CURA Healthcare Center', false)
 
-
+WebUI.waitForPageLoad(2)
 
 '----------------------------------------------------'
 ' Select - I am happy to receive Updates - Checkatra |'
 '----------------------------------------------------'
 if (YD_Receive_Chekatrade_Updates == "Yes"){
+	//WebUI.waitForElementClickable(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_I am happy to receive updates from Checkatrade_ctl00contentchkEmailUpdates'))
 	WebUI.click(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_I am happy to receive updates from Checkatrade_ctl00contentchkEmailUpdates'))
 	WebUI.waitForPageLoad(2)
 }
@@ -98,6 +105,7 @@ if (YD_Receive_Chekatrade_Updates == "Yes"){
 ' Select - I am happy to receive Updates - 3rd party |'
 '----------------------------------------------------'
 if (YD_Receive_Third_Party_Updates == "Yes"){
+	//WebUI.waitForElementClickable(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/label_I am happy to receive updates from selected third parties'))
 	WebUI.click(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/label_I am happy to receive updates from selected third parties'))
 	WebUI.waitForPageLoad(2)
 }
@@ -105,6 +113,7 @@ if (YD_Receive_Third_Party_Updates == "Yes"){
 '--------------------------------------'
 '   SUBMIT Page                        |'
 '--------------------------------------'
+//WebUI.waitForElementClickable(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_here_ctl00contentButtonSubmit'))
 WebUI.click(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_here_ctl00contentButtonSubmit'))
 WebUI.waitForPageLoad(2)
 

@@ -87,6 +87,7 @@ WebUI.delay(1)    // Timing Issues, the above text capture fails if there is no 
 '---------------------------------'
 'Your comments about the work     |'
 '---------------------------------'
+WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_No_ctl00contentButton6'), 60)
 WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_No_ctl00contentButton6'))
 
 //--------------------------------------------------------------

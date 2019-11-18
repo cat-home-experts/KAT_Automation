@@ -3,23 +3,6 @@
    <description>Answer the required Checkatrade_Questions, on &lt;Your Details> Feedback page</description>
    <name>Checkatrade_Questions</name>
    <tag>Your Details</tag>
-   <comment>--------------------------------
-Read data from spreadsheet      |
-------------------------------------
-  Set Verify Options - SMS OR Email |
---------------------------------------
- Scroll to &lt;Next> Button              |
---------------------------------------
-  Set How You Heard About Checkatrade |
---------------------------------------
-  How did you hear about Textbox      |
---------------------------------------
-  Why Use The Selected Tradesperson   |
-----------------------------------------------------
- Select - I am happy to receive Updates - Checkatra |
-----------------------------------------------------
- Select - I am happy to receive Updates - 3rd party |
---------------------------------------
-   SUBMIT Page                        |</comment>
+   <comment></comment>
    <testCaseGuid>1e2a407b-1fbc-4002-9782-1ee1296aec04</testCaseGuid>
 </TestCaseEntity>

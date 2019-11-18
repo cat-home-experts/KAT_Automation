@@ -30,12 +30,14 @@ System.out.println(('Your Details, Consumer OR Trade Customer, Click on the ' + 
 
 try {
 	if (YD_Consumer_Customer == ("Consumer")) // Default Selection
+		WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_an individual consumer'), 5)
 		WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_an individual consumer'),1)
 } catch (Exception e) {
 	// Nothing to do - Default Value - Can't Reselect using tool
 }
 '-------------------------------------------'
 if (YD_Consumer_Customer == ("Customer")) {
+	WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_a trade customer'), 5)
     WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/span_a trade customer'),1)
 }
 '--------------------------------'

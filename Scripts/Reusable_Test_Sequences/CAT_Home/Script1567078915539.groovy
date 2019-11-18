@@ -48,11 +48,11 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 
 //------------------
-WebUI.waitForPageLoad(2)
+WebUI.waitForPageLoad(10)
 ///////////////////////////////////////////////////////////
 // Wait for the <SEARCH> Button to be Instantiated       //
 ///////////////////////////////////////////////////////////
-WebUI.waitForElementVisible(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search'), 10)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search'), 60)
 
 '------------------------------------'
 // Returned to Home Page

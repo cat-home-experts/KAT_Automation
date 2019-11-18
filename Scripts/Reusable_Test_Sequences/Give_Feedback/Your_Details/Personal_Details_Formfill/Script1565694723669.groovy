@@ -33,6 +33,9 @@ System.out.println(('Your Experience, Your details, Set the ' + YD_Salutation) +
 '--------------------'
 '  Set  Salutation   |'
 '--------------------'
+//WebUI.waitForElementClickable(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/select_MrMrsMissMsMr  MrsDrRevRevd'),
+//	YD_Salutation, true)
+WebUI.delay(1)
 WebUI.selectOptionByValue(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/select_MrMrsMissMsMr  MrsDrRevRevd'),
 	YD_Salutation, true)
 
@@ -40,6 +43,8 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/New Folder/Page_Chec
 '  Set  Name         |' // If Customer Type Previously Selected = Consumer - Then Fill The Consumer Name Details
 '--------------------'
 if (YD_Consumer_Customer == ("Consumer")) {
+	//WebUI.waitForElementClickable(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_Name_ctl00contenttbCustomerName'),
+	//	YD_Name)
 	WebUI.setText(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_Name_ctl00contenttbCustomerName'),
 	YD_Name)
 }
@@ -47,23 +52,30 @@ if (YD_Consumer_Customer == ("Consumer")) {
 ' Name of you company  |'   // If Customer Type Previously Selected = Customer - Then Fill The Customer Trading Name Details
 '----------------------'
 if (YD_Consumer_Customer == ("Customer")) {
+	//WebUI.waitForElementClickable(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_Name of your company_ctl00contenttbCustomerCompany'),
+	//	YD_Company_Name)
 	WebUI.setText(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_Name of your company_ctl00contenttbCustomerCompany'), 
     YD_Company_Name)
 }
 '--------------------'
 '  Set Postcode     |'   // LOOKUP IS Long - Need to Synch with returned data
 '--------------------'
+//WebUI.waitForElementClickable(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_Your postcode_ctl00contentctlCustomerAddresstbPostcodeSearch'),
+//	YD_Postcode)
 WebUI.setText(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_Your postcode_ctl00contentctlCustomerAddresstbPostcodeSearch'),
 	YD_Postcode)
 
 '-----------------------------'
 '  Address Lookup Selection   |'
 '-----------------------------'
+//WebUI.waitForElementClickable(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_Your postcode_ctl00contentctlCustomerAddressbtnPostcodeLookup'))
 WebUI.click(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_Your postcode_ctl00contentctlCustomerAddressbtnPostcodeLookup'))
 
 '-----------------------------'
 '  Address Lookup Set         |'
 '-----------------------------'
+//WebUI.waitForElementClickable(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/select_Please select your address'),
+//	YD_Verify_Address, true) // YD_Verify_Address // 'c1909b81-8db1-4a42-bfb8-8dbb5bbe7035'
 WebUI.selectOptionByLabel(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/select_Please select your address'),
 	YD_Verify_Address, true) // YD_Verify_Address // 'c1909b81-8db1-4a42-bfb8-8dbb5bbe7035'
 

@@ -32,6 +32,7 @@ WebUI.scrollToPosition(250, 0)
 
 WebUI.waitForPageLoad(1)
 
+WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_here_ctl00contentButtonSubmit'), 5) // input_Value Of Work_ctl00contentButton1
 WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_here_ctl00contentButtonSubmit')) // input_Value Of Work_ctl00contentButton1
 
 '---------------------------------------------------------------------------------------'
