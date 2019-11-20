@@ -24,7 +24,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //  Navigate <MY PROFILE> from <Grow Your Bus>|   11/09/2019    |      DH          |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//  Selection Method Broken, Changed          |   19/11/2019    |      DH          |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -45,17 +45,21 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////
 //Wait for My Profile Element Availability//
 ////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/My_Profile_Page_img'), 25)
 
+//WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/My_Profile_Page_img'), 25)
+//WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/div_My Profile Page'), 60)
+WebUI.waitForPageLoad(60)
 ////////////////////////////////////////////
 //           Scroll To Element            //
 ////////////////////////////////////////////
-WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/My_Profile_Page_img'), 5)
+//WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/My_Profile_Page_img'), 5)
+WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/div_My Profile Page'), 5)
 
 ////////////////////////////////////////////
 //  Click Log My Profile Element          //
 ////////////////////////////////////////////
-WebUI.click(findTestObject('Object Repository/Page_Members Area/My_Profile_Page_img'))
+//WebUI.click(findTestObject('Object Repository/Page_Members Area/My_Profile_Page_img'))
+WebUI.click(findTestObject('Object Repository/Page_Members Area/div_My Profile Page'))
 
 ///////////////////////////////////////
 //                END                //

@@ -6,18 +6,18 @@
    <elementGuidId>ca253c17-9116-4c27-a0a2-75c94177ea09</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//div[(text() = 'Callback Requests' or . = 'Callback Requests')]</value>
+         <key>XPATH</key>
+         <value>//div[@id='callbackRequest']/a/div[2]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;callbackRequest&quot;]/a/div[2]</value>
+         <key>BASIC</key>
+         <value>//div[(text() = 'Callback Requests' or . = 'Callback Requests')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>

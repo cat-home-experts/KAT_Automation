@@ -39,6 +39,10 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 // Slight Content Change - Undo removed       |    11/11/2019   |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
+// Dashboard Selection Method Broken, Changed |    19/11/2019   |        DH        |                             |
+//---------------------------------------------------------------------------------------------------------------
+
+
 'WARNING - Be AWARE that, for example, That the Members Area Link on Preview doesnt take you to Preview, but takes you to LIVE Members Area'
 //---------------------------------------------------------------------------------------------------------------
 //                                                                                                               |

@@ -47,7 +47,8 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////////////////////
 //     Wait for Customers Name Element Availability       //
 ////////////////////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/input_concat(Customer  s name)_customerName'), 60)
+//WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/input_concat(Customer  s name)_customerName'), 60)
+WebUI.waitForPageLoad(60)
 
 ////////////////////////////////////////////////////////////
 //     Take an Initial Screenshot of Home After Login     //
@@ -60,26 +61,21 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/
 //         Verify Header Text on Key Portal Areas         //
 ////////////////////////////////////////////////////////////
 '---------------------------------'
-'DEFAULT TAB - Remind Customers   '
+'DEFAULT TAB - None - 1 Page      '
 '----------------------------------------------'
 // MEMBER ID CHECK
 WebUI.verifyTextPresent(findTestData('Members_Test_Data').getValue('MEMBER_ID', 1), false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("MEMBER ID", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Remind your customers", false)
+WebUI.verifyTextPresent("Offers and Discounts", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("CUSTOMER NAME IS REQUIRED", false)
+WebUI.verifyTextPresent("We know how expensive it is to run a business so we have a great range of offers and discounts created with you in mind", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Description of work", false)
+WebUI.verifyTextPresent("Make sure you check back regularly as we are constantly adding more", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Customer's email", false)
-
-WebUI.verifyTextPresent("Submit", false)
+WebUI.verifyTextPresent("Get this offer", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Mobile number (for SMS reminder)", false)
-'----------------------------------------------'
-WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/a_Dashboard'), 10)
 
 ///////////////////////////////////////
 //                END                // TODO  TODO Blind Import To Update

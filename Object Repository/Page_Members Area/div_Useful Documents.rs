@@ -6,18 +6,18 @@
    <elementGuidId>3501d2bc-8bce-402c-9034-66a3bc05aa85</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//div[(text() = 'Useful Documents' or . = 'Useful Documents')]</value>
+         <key>XPATH</key>
+         <value>//div[@id='usefulDocuments']/a/div[2]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;usefulDocuments&quot;]/a/div[1]/img</value>
+         <key>BASIC</key>
+         <value>//div[(text() = 'Useful Documents' or . = 'Useful Documents')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>

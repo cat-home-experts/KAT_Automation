@@ -4,10 +4,16 @@
    <name>div_My Feedback</name>
    <tag></tag>
    <elementGuidId>83188d41-72e9-4065-9429-b676fdb5761f</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='myFeedback']/a/div[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
@@ -53,7 +59,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='MEMBER ID: 218630'])[1]/following::div[24]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)=concat('Your membership T&amp;C', &quot;'&quot;, 's have been updated')])[1]/following::div[10]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -75,5 +81,12 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//a/div[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='MEMBER ID: 218630'])[1]/following::div[24]</value>
    </webElementXpaths>
 </WebElementEntity>

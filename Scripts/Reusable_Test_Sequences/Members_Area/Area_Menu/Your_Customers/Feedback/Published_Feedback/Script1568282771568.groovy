@@ -61,7 +61,7 @@ import internal.GlobalVariable as GlobalVariable
 //   Wait for a_Awareness Element Availability  //
 //////////////////////////////////////////////////
 WebUI.waitForPageLoad(25)
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/a_Published Feedback'), 5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/a_Published Feedback'), 60)
 
 //////////////////////////////////////////////////
 //   Click Log a_Awareness Element              //

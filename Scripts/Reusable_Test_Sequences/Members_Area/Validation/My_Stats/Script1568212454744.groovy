@@ -47,8 +47,10 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////////////////////
 //     Wait for Customers Name Element Availability       //
 ////////////////////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/input_concat(Customer  s name)_customerName'), 60)
+//WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/input_concat(Customer  s name)_customerName'), 60)
 
+WebUI.waitForPageLoad(60)
+WebUI.delay(2)
 ////////////////////////////////////////////////////////////
 //     Take an Initial Screenshot of Home After Login     //
 ////////////////////////////////////////////////////////////
@@ -59,27 +61,68 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/
 ////////////////////////////////////////////////////////////
 //         Verify Header Text on Key Portal Areas         //
 ////////////////////////////////////////////////////////////
-'---------------------------------'
-'DEFAULT TAB - Remind Customers   '
+'----------------------------------------------'
+'DEFAULT TAB - None - 1 Page Returned          |'
 '----------------------------------------------'
 // MEMBER ID CHECK
 WebUI.verifyTextPresent(findTestData('Members_Test_Data').getValue('MEMBER_ID', 1), false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("MEMBER ID", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Remind your customers", false)
+WebUI.verifyTextPresent("Your web page statistics", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("CUSTOMER NAME IS REQUIRED", false)
+WebUI.verifyTextPresent("Your Page Hits", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Description of work", false)
+WebUI.verifyTextPresent("Get Data", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Customer's email", false)
+WebUI.verifyTextPresent("Total hits for today", false)
 
-WebUI.verifyTextPresent("Submit", false)
+WebUI.verifyTextPresent("Total hits for period", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Mobile number (for SMS reminder)", false)
+// Scroll for more detail
+WebUI.scrollToPosition(900, 900)
+//WebUI.delay(5)
 '----------------------------------------------'
-WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/a_Dashboard'), 10)
+WebUI.verifyTextPresent("Your Feedback History", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Please note: some mobile devices may need to be rotated to view the graph", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Month in which work was done", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Searches by Category", false)
+'----------------------------------------------'
+// Scroll for more detail
+WebUI.scrollToPosition(900, 900)
+//WebUI.delay(5)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Want to improve your search results", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Feedback Score Breakdown", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("All Feedback", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Last 12 Months", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Estimating", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Tidiness", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Reliability & Timekeeping", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Courtesy", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Workmanship", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Value for Money", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Last 6 Months", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Last 30 Days", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Overall", false)
+'----------------------------------------------'
+
+//WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/a_Dashboard'), 10)
 
 ///////////////////////////////////////
 //                END                // TODO  TODO Blind Import To Update

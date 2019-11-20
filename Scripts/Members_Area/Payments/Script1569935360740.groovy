@@ -50,7 +50,7 @@ import internal.GlobalVariable as GlobalVariable
 GlobalVariable.PAGE = "/other-useful-documents"
 
 'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test\r\n'
-for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Data').getRowNumbers(); (GlobalVariable.row)++) {
+for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Payments_Data').getRowNumbers(); (GlobalVariable.row)++) {
 	
 	//-----------------------------------------
 	// Call Startup Process - Browser Startup |
@@ -65,14 +65,40 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Da
 	//-----------------------------------------
 
 	//-----------------------------------------
-	// Navigate Useful Documents Page         |
+	// Navigate Payments Documents Page       |
 	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/Useful_Documents'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/Payments'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	//-----------------------------------------
 	// Confirm Data on Top - Documents Page   |
 	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Useful_Documents'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Payments'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
+	//-----------------------------------------
+	// Make Payment - Welcome Page Validation |
+	//-----------------------------------------
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/My_Payments/PayaTrader'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
+	//-----------------------------------------
+	// Make Payment - Welcome Page Populate   |
+	//-----------------------------------------
+
+	// https://www.payatrader.com/hhpt_specific_trader.php?tid=1061477&name=Checkatrade%20HQ%20-%20TRAINING/TEST%20PAGE%20&reference=218630
+	
+	//-----------------------------------------
+	// Make Payment - Details Page Populate   |
+	//-----------------------------------------
+	
+	
+	//-----------------------------------------
+	// Make Payment - Pay (Make Payment)      |
+	//-----------------------------------------
+	
+	
+	//-----------------------------------------
+	// Make Payment - Confirm (System Message |
+	//-----------------------------------------
+
 	
 	//-----------------------------------------
 	// Log OFF the Members Area               |

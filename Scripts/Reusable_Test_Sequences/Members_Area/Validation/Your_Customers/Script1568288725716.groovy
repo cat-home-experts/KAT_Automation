@@ -47,9 +47,9 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////////////////////
 //     Wait for Customers Name Element Availability       //
 ////////////////////////////////////////////////////////////
-WebUI.waitForPageLoad(25)
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/p_These are your customers who have left feedback'), 60)
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/first_Row_Customers'), 60)
+WebUI.waitForPageLoad(25) // 19/11/2019 - preview very slow??
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/p_These are your customers who have left feedback'), 500)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/first_Row_Customers'), 500)
 
 // first_Row_Customers
 ////////////////////////////////////////////////////////////

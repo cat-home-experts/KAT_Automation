@@ -45,11 +45,12 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////
 //Wait for My Offers Element Availability //
 ////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/div_Offers and Discounts'), 5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/div_Offers and Discounts'), 60)
 
 ////////////////////////////////////////////
 //  Click Log My Offers Element           //
 ////////////////////////////////////////////
+WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/div_Offers and Discounts'), 5)  // ScrollToElement not working 19/11/2019
 WebUI.click(findTestObject('Object Repository/Page_Members Area/div_Offers and Discounts'))
 
 ///////////////////////////////////////

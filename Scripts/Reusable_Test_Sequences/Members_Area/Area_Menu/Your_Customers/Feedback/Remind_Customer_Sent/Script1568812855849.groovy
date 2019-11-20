@@ -27,7 +27,8 @@ import internal.GlobalVariable as GlobalVariable
 //  Pre-Existing Test Data "Mr Feedback of    |                 |                  |                             |
 //  Chichester (From xlsheet, so extendable   |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//  Remind message Dispel removed, goes str   |                 |                  |                             |
+//  to 'DATA SUBMITTED' Dialog                |   19/11/2019    |      DH          |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -95,7 +96,7 @@ WebUI.click(findTestObject('Object Repository/Page_Members Area/remind_Submit_Bu
 WebUI.waitForPageLoad(60)
 WebUI.delay(2) // will look at puttting aa waitforelement here - Not sure if the remind_Submit_Button is still visible and enabled after hitting once
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/remind_Message_Dispel'), 60)
+//WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/remind_Message_Dispel'), 60) // 19/11/2019 change
 '----------------------------------------------'
 WebUI.verifyTextPresent('Thank you', false)
 '----------------------------------------------'
@@ -105,10 +106,10 @@ WebUI.verifyTextPresent('Your data has been submitted', false)
 //////////////////////////////////////////////////
 //   Dispel Thank You Message                   //
 //////////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/remind_Message_Dispel'), 60)
-WebUI.click(findTestObject('Object Repository/Page_Members Area/remind_Message_Dispel'))
-WebUI.scrollToPosition(250, 250)
-WebUI.waitForPageLoad(25)
+//WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/remind_Message_Dispel'), 60) // 19/11/2019 change
+//WebUI.click(findTestObject('Object Repository/Page_Members Area/remind_Message_Dispel'))
+//WebUI.scrollToPosition(250, 250)
+//WebUI.waitForPageLoad(25)
 ///////////////////////////////////////
 //                END                //
 ///////////////////////////////////////

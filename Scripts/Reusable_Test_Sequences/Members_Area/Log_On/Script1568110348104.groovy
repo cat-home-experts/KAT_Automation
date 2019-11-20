@@ -24,7 +24,9 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //  Log On for Members Area                   |   10/09/2019    |      DH          |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//  New popout - Nagging, New Website Navige  |   19/11/2019    |      DH          |Extra dymamic delay added,   |
+//                                            |                 |                  |wait 4 Logon Button to dispel|
+//                                            |                 |                  |to aid synchronisation       |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -66,10 +68,13 @@ WebUI.setText(findTestObject('Object Repository/Members/Page_Members Area/input_
 ///////////////////////////////////////
 
 WebUI.click(findTestObject('Object Repository/Members/Page_Members Area/button_Log in'))
+WebUI.waitForElementNotPresent(findTestObject('Object Repository/Members/Page_Members Area/button_Log in'), 25)
 
 //-----------------------------------------
 // New popout Window - 15/11/2019         |
 //-----------------------------------------
+WebUI.waitForPageLoad(60)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/Header_Attention_Text'), 60)
 WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Popout_Handler'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 

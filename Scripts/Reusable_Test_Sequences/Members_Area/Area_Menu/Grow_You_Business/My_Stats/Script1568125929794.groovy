@@ -45,7 +45,7 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////
 //Wait for My Stats Element Availability//
 ////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/div_My Stats'), 5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/div_My Stats'), 60)
 
 ////////////////////////////////////////////
 //  Click Log My Stats Element            //

@@ -49,8 +49,8 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////////////////////
 //WebUI.delay(5)
 //WebUI.waitForPageLoad(10) 'Historic Data Loads, so can take a while'
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/input_Customer Town_btn btn-primary filter'), 60) 
-
+//WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/input_Customer Town_btn btn-primary filter'), 60) 
+WebUI.waitForPageLoad(60)
 ////////////////////////////////////////////////////////////
 //     Take an Initial Screenshot of Home After Login     //
 ////////////////////////////////////////////////////////////

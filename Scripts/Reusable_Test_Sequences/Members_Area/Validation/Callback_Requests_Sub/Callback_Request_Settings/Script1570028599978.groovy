@@ -34,7 +34,7 @@ import java.awt.event.KeyEvent as KeyEvent
 //  Thise test now broken into 2 chunks       |   03/10/2019    |                  |                             |
 //  This test <Settings> and <Notes>          |                 |      DH          |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//  Listbox identies Subject to Change? WTS   |   19/11/2019    |      DH          | IDs changed for the 2nd time|
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -110,19 +110,25 @@ WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Are
 // Set <Send Emails To> listbox To <None>
 //WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Members Area/Page_Members Area/select_Do not send_1'),
 //	'0: Object', true)
-WebUI.selectOptionByValue(findTestObject('Page_Members Area/select_Do not send_email address'),
+//WebUI.selectOptionByValue(findTestObject('Page_Members Area/select_Do not send_email address'), // 19/11/2019 changes
+//	'0: Object', true)
+WebUI.selectOptionByValue(findTestObject('Members/Page_Members Area/select_Do not send_email address'),
 	'0: Object', true)
 '----------------------------------------------'
 // Revert <Send Emails To> listbox To Previous Setting
 //WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Members Area/Page_Members Area/select_Do not send_1'),
 //	'14: Object', true)
-WebUI.selectOptionByValue(findTestObject('Page_Members Area/select_Do not send_email address'),
+//WebUI.selectOptionByValue(findTestObject('Page_Members Area/select_Do not send_email address'),  // 19/11/2019 changes
+//	'15: Object', true)
+WebUI.selectOptionByValue(findTestObject('Members/Page_Members Area/select_Do not send_email address'),
 	'15: Object', true)
 '----------------------------------------------'
 // Set <Send SMS To> listbox To <Do Not Send>
 //WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Members Area/Page_Members Area/select_Do not send_2'),
 //	'3: Object', true)
-WebUI.selectOptionByValue(findTestObject('Page_Members Area/select_Do not sendOther'),
+//WebUI.selectOptionByValue(findTestObject('Page_Members Area/select_Do not sendOther'),  // 19/11/2019 changes
+//	'0: Object', true)
+WebUI.selectOptionByValue(findTestObject('Members/Page_Members Area/select_Do not send_sms'),
 	'0: Object', true)
 '----------------------------------------------'
 // Revert <Send SMS To> listbox To Previous Setting

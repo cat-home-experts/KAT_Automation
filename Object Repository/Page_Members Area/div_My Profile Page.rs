@@ -4,7 +4,17 @@
    <name>div_My Profile Page</name>
    <tag></tag>
    <elementGuidId>3782c59c-ef28-4d36-a2fa-fd082efd6b3e</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='profilePage']/a/div[2]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[(text() = 'My Profile Page' or . = 'My Profile Page')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

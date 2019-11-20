@@ -45,14 +45,15 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////
 // Wait for My Photos Element Availability//
 ////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/div_My Photos'), 5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/div_My Photos'), 10)
 
 ////////////////////////////////////////////
 //  Click Log My Photos Element           //
 ////////////////////////////////////////////
-WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/div_My Photos'), 10)
+//WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/div_My Photos'), 10)
+//WebUI.scrollToPosition(500, 500)
+WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/div_My Photos'), 5)
 WebUI.click(findTestObject('Object Repository/Page_Members Area/div_My Photos'))
-
 ///////////////////////////////////////
 //                END                //
 ///////////////////////////////////////

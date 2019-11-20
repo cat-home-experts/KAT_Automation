@@ -47,7 +47,10 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////////////////////
 //     Wait for Customers Name Element Availability       //
 ////////////////////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/input_concat(Customer  s name)_customerName'), 60)
+
+//WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/input_concat(Customer  s name)_customerName'), 60)
+
+WebUI.waitForPageLoad(60)
 
 ////////////////////////////////////////////////////////////
 //     Take an Initial Screenshot of Home After Login     //
@@ -60,25 +63,32 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/
 //         Verify Header Text on Key Portal Areas         //
 ////////////////////////////////////////////////////////////
 '---------------------------------'
-'DEFAULT TAB - Remind Customers   '
+'DEFAULT TAB - Pay Checkatrade    '
 '----------------------------------------------'
 // MEMBER ID CHECK
 WebUI.verifyTextPresent(findTestData('Members_Test_Data').getValue('MEMBER_ID', 1), false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("MEMBER ID", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Remind your customers", false)
+WebUI.verifyTextPresent("Pay Checkatrade", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("CUSTOMER NAME IS REQUIRED", false)
+WebUI.verifyTextPresent("Welcome to the Checkatrade payment platform", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Description of work", false)
+WebUI.verifyTextPresent("This is a secure platform where you may pay for any membership, product or service provided by Checkatrade", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Customer's email", false)
+WebUI.verifyTextPresent("There will be no charge for debit card or credit card payments", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("We are unable to accept payment by American Express", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Receipts can be emailed to you should you enter your email address", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Thank you for using this service. Click below to proceed", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Pay by Card", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Should you experience any difficulties in processing your payment please contact Checkatrade", false)
+'----------------------------------------------'
 
-WebUI.verifyTextPresent("Submit", false)
-'----------------------------------------------'
-WebUI.verifyTextPresent("Mobile number (for SMS reminder)", false)
-'----------------------------------------------'
 WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/a_Dashboard'), 10)
 
 ///////////////////////////////////////

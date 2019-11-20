@@ -30,7 +30,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //  New Website Popup presented on start up   |   15/11/2019    |      DH          |   Now detects and closes    |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//  Aligned sync between this page an log_On  |   20/11/2019    |      DH          |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -47,14 +47,15 @@ import internal.GlobalVariable as GlobalVariable
 /////////////////////////////////////////////////////
 //     Wait for Dashboard Element Availability     //
 /////////////////////////////////////////////////////
-WebUI.delay(5)
-WebUI.waitForPageLoad(60)
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/Header_Attention_Text'), 60)
+
+//WebUI.delay(5)
+//WebUI.waitForPageLoad(60)
+//WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/Header_Attention_Text'), 60)
 
 //------------------------
 // Popout Detectino   //
 //------------------------
-WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Popout_Handler'), [:], FailureHandling.CONTINUE_ON_FAILURE) // TODO
+//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Popout_Handler'), [:], FailureHandling.CONTINUE_ON_FAILURE) // TODO
 
 // Page Refresh - Suddenly page not fully loading on PREVIEW - 26/09/2019
 //WebUI.refresh()

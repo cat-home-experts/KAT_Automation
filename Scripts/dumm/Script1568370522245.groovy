@@ -16,25 +16,76 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
-GlobalVariable.URL = 'https://admin.preview.checkatrade.com/Login.aspx?ReturnUrl=%2f'
-
-WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp'), [:], FailureHandling.OPTIONAL)
-
-WebUI.navigateToUrl('https://admin.preview.checkatrade.com/')
-
-GlobalVariable.URL = 'https://admin.preview.checkatrade.com/Login.aspx?ReturnUrl=%2f'
-
-WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp'), [:], FailureHandling.OPTIONAL)
-
-WebUI.navigateToUrl('https://admin.preview.checkatrade.com/')
-
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://admin.preview.checkatrade.com/')
+WebUI.navigateToUrl('https://www.payatrader.com/hhpt_specific_trader.php?tid=1061477&name=Checkatrade%20HQ%20-%20TRAINING/TEST%20PAGE%20&reference=218630')
 
-WebUI.click(findTestObject('Object Repository/WebOffice/Companies_Top/Page_Checkatrade Web Office (preview)/a_Companies'))
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader - card payments made easy/div_Welcome'))
 
-WebUI.click(findTestObject('Object Repository/WebOffice/Companies_Top/Page_/span_Advanced Search'))
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader - card payments made easy/div_Details'))
 
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader - card payments made easy/div_Pay'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader - card payments made easy/div_Confirm'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader - card payments made easy/label_Please complete all details'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader - card payments made easy/h1_Organisation Details'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader - card payments made easy/label_Account ID'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader - card payments made easy/input_Account ID_public_trader_id'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader - card payments made easy/label_The Organisation you are going to pay is'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader - card payments made easy/input_The Organisation you are going to pay_88e5ac'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader - card payments made easy/label_Description of Goods or Service  Reas_d0dc7f'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader - card payments made easy/textarea_Description of Goods or Service  R_1e6ad8'), 
+    'Test Activity, Not a real transaction')
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader - card payments made easy/div_010203040506070809101112131415161718192_392b5d'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader - card payments made easy/div_010203040506070809101112'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader - card payments made easy/label_Invoice Reference (if supplied)'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader - card payments made easy/input_Invoice Reference (if supplied)_trade_c0991f'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader - card payments made easy/label_Payment Amount'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader - card payments made easy/input_Payment Amount_transaction_amount_pounds'), 
+    '500.0')
+
+WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader - card payments made easy/input_Payment Amount_transaction_amount_pence'), 
+    '50')
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader - card payments made easy/h3_Customer Details'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader - card payments made easy/input_Name_customer_name'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader - card payments made easy/label_First Line of Address'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader - card payments made easy/label_Postcode'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader - card payments made easy/input_First Line of Address_householder_bui_104364'), 
+    'Test Address')
+
+WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader - card payments made easy/input_Postcode_householder_postcode'), 
+    'SO4 9SD')
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader - card payments made easy/div_leave blank if not UK'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader - card payments made easy/label_Contact Telephone Number'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader - card payments made easy/label_Email Address for Receipt'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader - card payments made easy/input_Contact Telephone Number_householder__a6db33'), 
+    '07788461994')
+
+WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader - card payments made easy/input_Email Address for Receipt_customer_email'), 
+    'testautomation.com')
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader - card payments made easy/input_Email Address for Receipt_next'))
 

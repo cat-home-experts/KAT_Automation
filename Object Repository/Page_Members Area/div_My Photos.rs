@@ -4,10 +4,20 @@
    <name>div_My Photos</name>
    <tag></tag>
    <elementGuidId>e6829ddb-dbc5-4449-af7c-37bb16f19160</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[(text() = 'My Photos' or . = 'My Photos')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='myPhotos']/a/div[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>

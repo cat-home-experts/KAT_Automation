@@ -12,6 +12,9 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+import java.awt.Robot as Robot
+import java.awt.event.KeyEvent as KeyEvent
 
 //-----------------------
 // TEST HISTORY HEADER - |
@@ -46,7 +49,24 @@ import internal.GlobalVariable as GlobalVariable
 //////////////////////////////////////////////////
 //   Wait for My Feedback Element Availability  //
 //////////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/div_My Feedback'), 25)
+//WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/div_My Feedback'), 25)
+
+WebUI.waitForPageLoad(60)
+WebUI.delay(1)
+WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/h_Dashboard_Header'), 25)
+//WebUI.waitForPageLoad(60)
+//WebUI.delay(5)
+//WebUI.scrollToPosition(0, 0)
+
+// Page Up
+//WebUI.delay(1)
+// Scroll Up a page
+//WebUI.sendKeys(findTestObject(null), Keys.chord(Keys.ESCAPE))
+//WebUI.sendKeys(findTestObject('Object Repository/Page_Members Area/p_Dashboard_Page'), Keys.chord(Keys.PAGE_UP))
+//Robot robot = new Robot()
+//robot.keyPress(KeyEvent.VK_PAGE_UP)
+//robot.keyRelease(KeyEvent.VK_PAGE_UP)
+//WebUI.waitForPageLoad(60)
 
 //////////////////////////////////////////////////
 //   Click Log My Feedback Request Element      //
