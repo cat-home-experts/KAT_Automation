@@ -76,13 +76,30 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Payments_Data')
 	
 	//-----------------------------------------
 	// Make Payment - Welcome Page Validation |
+	//            and Settings                |
 	//-----------------------------------------
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/My_Payments/PayaTrader'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	//-----------------------------------------
-	// Make Payment - Welcome Page Populate   |
+	// Make Payment - Card Details page       |
 	//-----------------------------------------
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/My_Payments/PayaTrader_Card'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
+	//-----------------------------------------
+	// Payment Confirm page                   |
+	//-----------------------------------------
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/My_Payments/PayaTrader_Confirm'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
+	//-----------------------------------------
+	// Payment Portal resopns                 |
+	//-----------------------------------------
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/My_Payments/PayaTrader_Response'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+	
+	
+	
+	
+	
 	// https://www.payatrader.com/hhpt_specific_trader.php?tid=1061477&name=Checkatrade%20HQ%20-%20TRAINING/TEST%20PAGE%20&reference=218630
 	
 	//-----------------------------------------

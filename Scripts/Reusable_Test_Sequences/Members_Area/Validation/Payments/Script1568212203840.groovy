@@ -92,6 +92,6 @@ WebUI.verifyTextPresent("Should you experience any difficulties in processing yo
 WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/a_Dashboard'), 10)
 
 ///////////////////////////////////////
-//                END                // TODO  TODO Blind Import To Update
+//                END                //  
 ///////////////////////////////////////
 
