@@ -22,13 +22,11 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-// Prove the function Under Members Area      |                 |                  |  Numorous issues correcting |
-// URL Not as expected, preview-ma.ch*.com    |    10/09/2019   |     Dave Horne   |  SUNNY DAY ONLY             |
-// areas is intact and available  (PREVIEW)   |                 |                  |                             |
+// Prove the function Under Members Area      |                 |                  |                             |
+// Your Account - payments                    |    22/11/2019   |     Dave Horne   |                             |
+// New Implementation                         |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-// Stand Alone Test Created For Useful Docs   |                 |                  |             URL             |
-// Functionality - From members Area          |    16/09/2019   |        DH        | checkatrade.com/other-useful|  TODO
-// Integrity Checks                           |                 |                  |         -documents          |
+//                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -83,7 +81,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Payments_Data')
 	//-----------------------------------------
 	// Make Payment - Card Details page       |
 	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/My_Payments/PayaTrader_Card'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/My_Payments/PayTrader_Card'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	//-----------------------------------------
 	// Payment Confirm page                   |
@@ -93,34 +91,20 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Payments_Data')
 	//-----------------------------------------
 	// Payment Portal resopns                 |
 	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/My_Payments/PayaTrader_Response'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/My_Payments/PayaTrader_Decline'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 	
-	
+	// Will Terminate the Test at this POINT :-)
 	
 	
 	
 	// https://www.payatrader.com/hhpt_specific_trader.php?tid=1061477&name=Checkatrade%20HQ%20-%20TRAINING/TEST%20PAGE%20&reference=218630
 	
-	//-----------------------------------------
-	// Make Payment - Details Page Populate   |
-	//-----------------------------------------
-	
-	
-	//-----------------------------------------
-	// Make Payment - Pay (Make Payment)      |
-	//-----------------------------------------
-	
-	
-	//-----------------------------------------
-	// Make Payment - Confirm (System Message |
-	//-----------------------------------------
-
-	
-	//-----------------------------------------
-	// Log OFF the Members Area               |
-	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Banner_Menu/log_Off'), [:], FailureHandling.OPTIONAL)
+	'--------------------------'
+	' Teardown - CLose Browser |'
+	'--------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.OPTIONAL)
+	 
 }
 ///////////////////////////////////////
 //                END                //   TODO

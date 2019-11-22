@@ -51,7 +51,7 @@ import internal.GlobalVariable as GlobalVariable
 
 '--------------------------------------------'
 'Test Creditcard Numbers Sourced from SAGEPAY'
-.// https://www.sagepay.co.uk/support/12/36/test-card-details-for-your-test-transactions
+// https://www.sagepay.co.uk/support/12/36/test-card-details-for-your-test-transactions
 '////////////////////////////////////////////'
 '--------------------------------------------'
 'Previous Screen COMMIT Button'
@@ -117,19 +117,21 @@ WebUI.verifyTextPresent("Amount Payable", false)
 '----------------------------------------------'
 // PAYMENT AMOUNT - <POUNDS><PENCE>
 'Pounds'
-WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Paytrader_Payment/input_Amount pounds'),
-	findTestData('Payments_Data').getValue('Payment_Pounds', GlobalVariable.row))
+//WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Paytrader_Payment/input_Amount pounds'),
+//	findTestData('Payments_Data').getValue('Payment_Pounds', GlobalVariable.row))
+//WebUI.verifyTextPresent("567", false)
 'Pence'
+//WebUI.verifyTextPresent("89", false)
 '----------------------------------------------'
-WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Paytrader/input_Amount pence'),
-	findTestData('Payments_Data').getValue('Payment_Pounds', GlobalVariable.row))
+//WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Paytrader/input_Amount pence'),
+//	findTestData('Payments_Data').getValue('Payment_Pounds', GlobalVariable.row))
 '----------------------------------------------'
 // Scroll To Footer
 WebUI.scrollToPosition(500, 500)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Previous Page", false)
+//WebUI.verifyTextPresent("Previous Page", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Next Page", false)
+//WebUI.verifyTextPresent("Next Page", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Any MasterCard, Visa or American Express card can be used with Paya Card Services including Maestro and Visa Electron card", false)
 '----------------------------------------------'
@@ -137,10 +139,12 @@ WebUI.verifyTextPresent("Any MasterCard, Visa or American Express card can be us
 '----------------------------------------------'
 'NAVIGATE TO CARD ENTRY SCREEN'
 'Hit <NEXT> Button'
-WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Payments/Page_Paytrader_Payment/page_Next'), 10)
+//WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Payments/Page_Paytrader_Payment/page_Next'), 10)
 
-WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Paytrader_Payment/page_Next'))
+//WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Paytrader_Payment/page_Next'))
 
+
+// CALL IT A DAY HERE< PEOPLE WILL GET ANNOYED WITH LOTS OF REFUSED TRANSACTION WITH THE SAME ID/Transaction Refreence NUMBER :-)
 
 ///////////////////////////////////////
 //                END                //

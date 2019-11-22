@@ -6,11 +6,15 @@
    <elementGuidId>771fd44f-572d-422a-9b54-d9e97b7d1d28</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value>#hhpt_details > div:nth-child(5) > div > div > input[type=text]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>//input[@name='public_trader_id']</value>
+         <value>//form[@id='hhpt_details']/div/div/div/input</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

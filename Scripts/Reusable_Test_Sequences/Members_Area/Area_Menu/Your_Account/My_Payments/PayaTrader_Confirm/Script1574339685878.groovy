@@ -45,6 +45,19 @@ import internal.GlobalVariable as GlobalVariable
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 
+'--------------------------------'
+'Read data from spreadsheet      |'
+'--------------------------------'
+def data = findTestData('Payments_Data') // put this into a method
+def Account_ID = data.getValue('Account_ID', GlobalVariable.row)
+def Payment_Description = data.getValue("Payment_Description", GlobalVariable.row) //
+def Card_Mask = data.getValue("Card_Mask", GlobalVariable.row)
+def Payment_Pounds = data.getValue('Payment_Pounds', GlobalVariable.row)
+def Payment_Pence = data.getValue('Payment_Pence', GlobalVariable.row)
+
+
+
+
 /////////////////////////////////////////////
 //Wait for My Payments Element Availability//
 /////////////////////////////////////////////
@@ -83,7 +96,7 @@ WebUI.verifyTextPresent("Organisation Details", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Account ID", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent(findTestData('Payments_Data').getValue('Account_ID', GlobalVariable.row))
+WebUI.verifyTextPresent(Account_ID, false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Organisation Name", false)
 '----------------------------------------------'
@@ -92,7 +105,7 @@ WebUI.verifyTextPresent("Checkatrade.com", false)
 WebUI.verifyTextPresent("Description of Goods or Service", false)
 '----------------------------------------------'
 'Payment Description'
-WebUI.verifyTextPresent(findTestData('Payments_Data').getValue('Payment_Description', GlobalVariable.row))
+WebUI.verifyTextPresent(Payment_Description, false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Payment Details", false)
 '----------------------------------------------'
@@ -101,7 +114,7 @@ WebUI.verifyTextPresent("Payment Card", false)
 'Last 4 digits of Card'
 '----------------------------------------------'
 'Masked Card Number'
-WebUI.verifyTextPresent(findTestData('Payments_Data').getValue('Card_Mask', GlobalVariable.row))
+WebUI.verifyTextPresent(Card_Mask, false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Payment Amount", false)
 '----------------------------------------------'
@@ -109,10 +122,10 @@ WebUI.verifyTextPresent("Payment Amount", false)
 WebUI.scrollToPosition(500, 500)
 '----------------------------------------------'
 'Payment Pounds Amount'
-WebUI.verifyTextPresent(findTestData('Payments_Data').getValue('Payment_Pounds', GlobalVariable.row))
+WebUI.verifyTextPresent(Payment_Pounds, false)
 '----------------------------------------------'
 'payment Pence Amount'
-WebUI.verifyTextPresent(findTestData('Payments_Data').getValue('Payment_Pence', GlobalVariable.row))
+WebUI.verifyTextPresent(Payment_Pence, false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Terms and Conditions", false)
 '----------------------------------------------'

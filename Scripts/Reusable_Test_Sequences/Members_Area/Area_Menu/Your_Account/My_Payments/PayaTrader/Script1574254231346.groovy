@@ -45,6 +45,23 @@ import internal.GlobalVariable as GlobalVariable
 //  THEN -                                                                                                       |
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
+'-----------------------------------------------------------------------------------------------------------'
+// Intermediat stage - issues Verify Preset Values - Will Attemp Verification After This Form is Processed '|'
+'-----------------------------------------------------------------------------------------------------------'
+'--------------------------------'
+'Read data from spreadsheet      |'
+'--------------------------------'
+def data = findTestData('Payments_Data') // put this into a method
+def Account_ID = data.getValue('Account_ID', GlobalVariable.row)
+def Address = data.getValue('Address', GlobalVariable.row)
+def Email = data.getValue('Email', GlobalVariable.row)
+def Invoice_Reference = data.getValue("Invoice_Reference", GlobalVariable.row)
+def Name_Payee = data.getValue('Name_Payee', GlobalVariable.row)
+def Payment_Description = data.getValue("Payment_Description", GlobalVariable.row) //
+def Payment_Pence = data.getValue('Payment_Pence', GlobalVariable.row)
+def Payment_Pounds = data.getValue('Payment_Pounds', GlobalVariable.row)
+def Postcode = data.getValue('Postcode', GlobalVariable.row)
+def Telephone = data.getValue('Telephone', GlobalVariable.row)
 
 /////////////////////////////////////////////
 //Wait for My Payments Element Availability//
@@ -58,7 +75,17 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/
 /////////////////////////////////////////////
 WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Pay_By_Card'))
 
-WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/button_Next'), 25)
+/////////////////////////////////////////////
+// Swith to NEW URL - Payments Portal      //
+/////////////////////////////////////////////
+WebUI.waitForPageLoad(20)
+
+WebUI.switchToWindowUrl('https://www.payatrader.com/hhpt_specific_trader.php?tid=1061477&name=Checkatrade%20HQ%20-%20TRAINING/TEST%20PAGE%20&reference=218630')
+
+WebUI.waitForPageLoad(20)
+//WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/textarea_Description'), 25)
+WebUI.waitForElementVisible(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/input_Account ID_public_trader_id'), 25)
+
 /////////////////////////////////////////////
 // Verification of Initial WELCOME Page    //
 /////////////////////////////////////////////
@@ -82,16 +109,28 @@ WebUI.verifyTextPresent("Account ID", false)
 '----------------------------------------------'
 'Account ID'
 //WebUI.verifyTextPresent(EXCEL VALUE, false) // 106147701 - account ID
-WebUI.verifyTextPresent(findTestData('Payments_Data').getValue('Account_ID', GlobalVariable.row))
+
+//WebUI.verifyElementText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/input_Account ID_public_trader_id'), Account_ID)
+
+//WebUI.verifyElementText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/input_Account ID_public_trader_id'), Account_ID)
+//WebUI.verifyTextPresent(Account_ID, false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("The Organisation you are going to pay is", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Checkatrade.com", false)
+//WebUI.verifyTextPresent("Checkatrade.com", false)
+//WebUI.verifyTextPresent(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/h_Organisation Details'), "Checkatrade.com")
+
 '----------------------------------------------'
 WebUI.verifyTextPresent("Description of Goods or Service / Reason for Payment", false)
 '----------------------------------------------'
+//WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Paytrader/textarea_description'),
+	//findTestData('Payments_Data').getValue('Payment_Description', GlobalVariable.row))
+'PAYMENT DESCRIPTION'
+WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/textarea_Description of Goods or Service  R_1e6ad8'),
+	Payment_Description)
+'----------------------------------------------'
 'Payment Description'
-WebUI.verifyTextPresent(findTestData('Payments_Data').getValue('Payment_Description', GlobalVariable.row))
+//WebUI.verifyTextPresent(Payment_Description, false)
 '----------------------------------------------'
 // Date Provided - Defaults to TODAY        // Date goods or service provided
 '----------------------------------------------'
@@ -100,7 +139,7 @@ WebUI.verifyTextPresent("Date goods or service provided", false)
 WebUI.verifyTextPresent("Invoice Reference (if supplied)", false)
 '----------------------------------------------'
 'Invoice Reference'
-WebUI.verifyTextPresent(findTestData('Payments_Data').getValue('Invoice_Reference', GlobalVariable.row))
+//WebUI.verifyTextPresent(Invoice_Reference, false)
 '----------------------------------------------'
 // Scroll To Footer
 WebUI.scrollToPosition(500, 500)
@@ -109,58 +148,68 @@ WebUI.verifyTextPresent("Payment Amount", false)
 '----------------------------------------------'
 // PAYMENT AMOUNT - <POUNDS><PENCE>
 'Pounds'
-WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Paytrader/input_amount_pounds'),
-	findTestData('Payments_Data').getValue('Payment_Pounds', GlobalVariable.row))
+WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/input_Payment Amount_transaction_amount_pounds'), Payment_Pounds)
+//WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Paytrader/input_amount_pounds'),
+//	findTestData('Payments_Data').getValue('Payment_Pounds', GlobalVariable.row))
 'Pence'
 '----------------------------------------------'
-WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Paytrader/input_amount_pence'),
-	findTestData('Payments_Data').getValue('Payment_Pounds', GlobalVariable.row))
+WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/input_Payment Amount_transaction_amount_pence'), Payment_Pence)
+//WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Paytrader/input_amount_pence'),
+//	findTestData('Payments_Data').getValue('Payment_Pounds', GlobalVariable.row))
 '----------------------------------------------'
 WebUI.verifyTextPresent("Customer Details", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Name", false)
 '----------------------------------------------'
+'PAYEE'
+//WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/input_The Organisation to pay'), Payment_Pence)
+
 //WebUI.verifyTextPresent(EXCEL VALUE, false) // Checkatrade HQ - TRAINING/TEST PAGE  - Name Field
 'Payee'
-WebUI.verifyTextPresent(findTestData('Payments_Data').getValue('Name_Payee', GlobalVariable.row))
+//WebUI.verifyTextPresent(Name_Payee, false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("First Line of Address", false)
 '----------------------------------------------'
 //WebUI.verifyTextPresent(EXCEL VALUE, false) // First Line of Address
 'Address'
-WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Paytrader/input_Address'),
-	findTestData('Payments_Data').getValue('Address', GlobalVariable.row))
+WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/input_First Line of Address_householder_bui_104364'), Address)
+//WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Paytrader/input_Address'),
+//	findTestData('Payments_Data').getValue('Address', GlobalVariable.row))
 '----------------------------------------------'
 WebUI.verifyTextPresent("Postcode", false)
 '----------------------------------------------'
 //WebUI.verifyTextPresent(EXCEL VALUE, false) // Postcode
 'Postcode'
-WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Paytrader/input_Postcode'),
-	findTestData('Payments_Data').getValue('Postcode', GlobalVariable.row))
+WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/input_Postcode_householder_postcode'), Postcode)
+//WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Paytrader/input_Postcode'),
+//	findTestData('Payments_Data').getValue('Postcode', GlobalVariable.row))
 '----------------------------------------------'
 WebUI.verifyTextPresent("Contact Telephone Number", false)
 '----------------------------------------------'
 //WebUI.verifyTextPresent(EXCEL VALUE, false) // Contact Telephone Number
 'Telephone'
-WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Paytrader/input_Telephone'),
-	findTestData('Payments_Data').getValue('Telephone', GlobalVariable.row))
+WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/input_Contact Telephone Number_householder__a6db33'), Telephone)
+//WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Paytrader/input_Telephone'),
+//	findTestData('Payments_Data').getValue('Telephone', GlobalVariable.row))
 '----------------------------------------------'
 WebUI.verifyTextPresent("Email Address for Receipt", false)
 '----------------------------------------------'
 //WebUI.verifyTextPresent(EXCEL VALUE, false) // Email Address for Receipt
 'Email'
-WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Paytrader/input_Email'),
-	findTestData('Payments_Data').getValue('Email', GlobalVariable.row))
+WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/input_Email Address for Receipt_customer_email'), Email)
+
+//WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Paytrader/input_Email'),
+//	findTestData('Payments_Data').getValue('Email', GlobalVariable.row))
 '----------------------------------------------'
 WebUI.verifyTextPresent("leave blank if not UK", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Next Page", false)
+// WebUI.verifyTextPresent("Next Page", false)
 '----------------------------------------------'
 'NAVIGATE TO CARD ENTRY SCREEN'
 'Hit <NEXT> Button'
-WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/button_Next'), 10)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/Page_Payatrader - card payments made easy/input_Email Address for Receipt_next'), 10)
 
-WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/button_Next'))
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/Page_Payatrader - card payments made easy/input_Email Address for Receipt_next'))
 //WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/a_Dashboard'), 10)
 
 

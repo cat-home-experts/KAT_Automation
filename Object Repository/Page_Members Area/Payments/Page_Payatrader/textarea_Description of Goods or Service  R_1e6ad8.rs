@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>textarea_Description</name>
+   <name>textarea_Description of Goods or Service  R_1e6ad8</name>
    <tag></tag>
-   <elementGuidId>e0cb075a-8d6b-4dab-8add-3f493f6ceb7e</elementGuidId>
+   <elementGuidId>eda94725-b307-4ce4-88cd-b1e486bf9b14</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;hhpt_details&quot;]/div[3]/div/textarea</value>
+         <value>//textarea[@name='job_description']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
