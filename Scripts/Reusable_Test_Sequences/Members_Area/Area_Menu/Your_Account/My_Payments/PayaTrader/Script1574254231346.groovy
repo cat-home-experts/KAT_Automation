@@ -213,6 +213,9 @@ WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Pa
 //WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/a_Dashboard'), 10)
 
 
+'NEED TO REVERT TO PREVIOUS URL - to satisfy logoff process'
+//WebUI.switchToWindowUrl(GlobalVariable.MembersURL)
+
 ///////////////////////////////////////
 //                END                //
 ///////////////////////////////////////

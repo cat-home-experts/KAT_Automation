@@ -18,43 +18,25 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://www.payatrader.com/hhpt_specific_trader.php?tid=1061477&name=Checkatrade%20HQ%20-%20TRAINING/TEST%20PAGE%20&reference=218630')
+WebUI.navigateToUrl('https://preview-ma.checkatrade.com/login?return=%2Fmy-feedback')
 
-WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/textarea_Description of Goods or Service  R_1e6ad8'), 
-    'this is a test')
+WebUI.setText(findTestObject('Page_Members Area/input_Username_username'), 'check1234')
 
-WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/Page_Payatrader/input_Payment Amount_transaction_amount_pounds'), 
-    '500')
+WebUI.setEncryptedText(findTestObject('Page_Members Area/input_Password_password'), 'fzqqY0qJjYTuJiVJRZh4ag==')
 
-WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/Page_Payatrader/input_Payment Amount_transaction_amount_pence'), 
-    '50')
+WebUI.click(findTestObject('Page_Members Area/button_Log in'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/Page_Payatrader/input_First Line of Address_householder_bui_104364'), 
-    'Bilding 200, Lakesdie')
+WebUI.click(findTestObject('Page_Members Area/button_Go Away Maybe Later'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/Page_Payatrader/input_Postcode_householder_postcode'), 
-    'PO3 6NH')
+WebUI.click(findTestObject('Page_Members Area/a_Remind customer'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/Page_Payatrader/input_Contact Telephone Number_householder__a6db33'), 
-    '02392 123456')
+WebUI.click(findTestObject('Page_Members Area/a_Your Customers'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/Page_Payatrader - card payments made easy/input_Email Address for Receipt_customer_email'), 
-    'automation_tesr@chewckatrade.com')
+WebUI.click(findTestObject('Page_Members Area/a_Awareness'))
 
-WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/Page_Payatrader/input_Email Address for Receipt_next'))
+WebUI.click(findTestObject('Page_Members Area/a_Your Customers'))
 
-WebUI.navigateToUrl('https://www.payatrader.com/hhpt_details.php?do=details')
+WebUI.click(findTestObject('Page_Members Area/a_Remind customer'))
 
-WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/Page_Payatrader/input_Email Address for Receipt_next'))
-
-WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/Page_Payatrader - card payments made easy/div_Email Address for Receipt'))
-
-WebUI.setText(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/Page_Payatrader - card payments made easy/input_Email Address for Receipt_customer_email'), 
-    'megga@megga.com')
-
-WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/Page_Payatrader/input_Email Address for Receipt_next'))
-
-WebUI.navigateToUrl('https://www.payatrader.com/hhpt_details.php?do=details')
-
-WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/Page_Payatrader - card payments made easy/input_Email Address for Receipt_next'))
+WebUI.click(findTestObject('Page_Members Area/Page_Members Area/a_Published Feedback'))
 

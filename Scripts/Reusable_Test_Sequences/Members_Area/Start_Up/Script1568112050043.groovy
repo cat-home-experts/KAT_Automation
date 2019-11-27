@@ -46,54 +46,67 @@ import internal.GlobalVariable as GlobalVariable
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 
-def data = findTestData('Members_Test_Data')
-def Header_Text = ""
-def Forgotten_Password = ""
-def Forgotten_Username = ""
-def Trouble_Logging_In = ""
+//def data = findTestData('Members_Test_Data')
+//def Header_Text = ""
+//def Forgotten_Password = ""
+//def Forgotten_Username = ""
+//def Trouble_Logging_In = ""
 '----------------------------------------------------'
 'Set Function Area for "URL_Handler", URL Resolution'
 GlobalVariable.FUNCTION_AREA = "Members_Area"
 //-----------------------------------------
 'Do Some Magic with URL(s) See the comments within URL Handler '
-WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/URL_Handler'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/URL_Handler'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 //-----------------------------------------
-'URL - Set from the ENVIRONMENT PROFILE - Specific Page Address Provided By +GlobalVariable.PAGE  '
+'URL - Set from the ENVIRONMENT PROFILE - Specific Page Address Provided By +GlobalVariable.MembersURL  '
 'OPEN BROWSER'
-WebUI.openBrowser(GlobalVariable.URL)// 10/09/2019 - 16/09/2-19 - 23/09/2019
+WebUI.openBrowser(GlobalVariable.MembersURL)// 10/09/2019 - 16/09/2-19 - 23/09/2019
 // WebUI.openBrowser(GlobalVariable.URL+"/my-profile-page") // Options for breaking up the Members Test into Reasonable Size Chunks // 13/09/2019
-//-----------------------------------------
-'MAXIMIZE BROWSER '
-WebUI.maximizeWindow()
 //-----------------------------------------
 'WAIT for browser to load - waits up to 60 seconds before timeout occurs '
 WebUI.waitForPageLoad(60)
 
+//-----------------------------------------
+'MAXIMIZE BROWSER '
+WebUI.maximizeWindow()
+
 //WebUI.setText(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF'),
 //	findTestData('searchTestData').getValue('tradeClassification', GlobalVariable.row))
 //-----------------------------------------
-
+//delay(1)
 //------------------------
 // Verify Header Text   //
 //------------------------
 'Verify Header Text'
-WebUI.verifyTextPresent(data.getValue("Header_Text", GlobalVariable.row), false)
-//WebUI.verifyTextPresent("", false)
+// WebUI.verifyTextPresent(data.getValue("Header_Text", GlobalVariable.row), false)
+WebUI.verifyTextPresent("EXCLUSIVE ACCESS FOR CHECKATRADE MEMBERS ONLY", false)
 //------------------------
 // Verify Forgotten Text//
 //------------------------
 'Verify Forgotten Password Text - Link'
-WebUI.verifyTextPresent(data.getValue("Forgotten_Password", GlobalVariable.row), false)
+//WebUI.verifyTextPresent(data.getValue("Forgotten_Password", GlobalVariable.row), false)
+WebUI.verifyTextPresent("Forgotten password?", false)
 //------------------------
 // Verify Forgotten Text//
 //------------------------
 'Verify Forgotten Username Text - Link'
-WebUI.verifyTextPresent(data.getValue("Forgotten_Username", GlobalVariable.row), false)
+//WebUI.verifyTextPresent(data.getValue("Forgotten_Username", GlobalVariable.row), false)
+WebUI.verifyTextPresent("Forgotten username?", false)
+
 //------------------------
-// Verify Forgotten Text//
+// Trouble Logging In    //
 //------------------------
 'Verify Trouble Logging In Text - Link'
-WebUI.verifyTextPresent(data.getValue("Trouble_Logging_In", GlobalVariable.row), false)
+WebUI.verifyTextPresent("Trouble logging in? No username and password? Contact Checkatrade Member Services by", false)
+//WebUI.verifyTextPresent(data.getValue("Trouble_Logging_In", GlobalVariable.row), false)
+
+//------------------------
+// Member Services Link  //
+//------------------------
+'Member Services - Link'
+WebUI.verifyTextPresent("memberservices@checkatrade.com", false)
+
+
 
 ///////////////////////////////////////
 //                END                //

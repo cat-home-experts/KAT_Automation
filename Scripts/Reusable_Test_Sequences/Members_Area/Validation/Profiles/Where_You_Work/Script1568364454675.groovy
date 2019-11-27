@@ -25,7 +25,7 @@ import internal.GlobalVariable as GlobalVariable
 // Verify Content on <Profile><Where you work>|   25/09/2019    |      DH          |                             |
 // from <Grow Your Business>                  |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Textual content change in the EDIT Box     |   25/11/2019    |      DH          |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -91,9 +91,12 @@ WebUI.verifyTextPresent("40 miles of Reading", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("All BN postcode areas", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Keep the locations quite general to fit inside the 200 character limit", false)
+// Test Messagee
+//WebUI.verifyTextPresent("Keep the locations quite general to fit inside the 200 character limit", false)  // This profile has been set up by Checkatrade.com for training/testing purposes. Please do not use the details on this page for contacting US !!
+//WebUI.verifyTextPresent("This profile has been set up by Checkatrade.com for training/testing purposes. Please do not use the details on this page for contacting US !!", false)  // This profile has been set up by Checkatrade.com for training/testing purposes", false)  // This profile has been set up by Checkatrade.com for training/testing purposes", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("To increase your work radius to more than 100 miles, please contact members service", false)
+WebUI.verifyTextPresent("To increase your work radius to more than ", false)
+WebUI.verifyTextPresent(" please contact members service", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("House rules: All changes will be moderated by Checkatrade staff", false)
 '----------------------------------------------'

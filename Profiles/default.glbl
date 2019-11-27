@@ -109,4 +109,9 @@
       <initValue>true</initValue>
       <name>YE_Recommendations</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Preview Members Area URL</description>
+      <initValue>'https://preview-ma.checkatrade.com/'</initValue>
+      <name>MembersURL</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

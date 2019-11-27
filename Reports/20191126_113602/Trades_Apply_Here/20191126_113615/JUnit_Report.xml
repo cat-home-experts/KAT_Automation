@@ -1,0 +1,1592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Trades_Apply_Here" time="240.475" tests="2" failures="0" errors="0">
+   <testsuite name="Trades_Apply_Here" tests="2" failures="0" errors="0" time="240.475" timestamp="2019-11-26 11:39:42" hostname="DavidHo - VETTEDSP36RF.check.local" id="Test Suites/Trades_Apply_Here">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\davidho\\Katalon Studio\\Start\\Reports\\20191126_113602\\Trades_Apply_Here\\20191126_113615"/>
+         <property name="logFiles" value="C:\\Users\\davidho\\Katalon Studio\\Start\\Reports\\20191126_113602\\Trades_Apply_Here\\20191126_113615\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="DavidHo - VETTEDSP36RF.check.local"/>
+         <property name="os" value="Windows 10 32bit"/>
+         <property name="katalonVersion" value="7.1.0.1"/>
+         <property name="browser" value="Firefox 70.0"/>
+         <property name="hostAddress" value="10.0.11.243"/>
+         <property name="sessionId" value="31b45a64-8598-4924-a043-d50400bfdac0"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Sign_Up/Trades_Apply_Here_Validation" time="136.474" classname="Test Cases/Sign_Up/Trades_Apply_Here_Validation" status="PASSED">
+         <system-out><![CDATA[2019-11-26 11:39:43 - [TEST_CASE][PASSED] - Test Cases/Sign_Up/Trades_Apply_Here_Validation: Test Cases/Sign_Up/Trades_Apply_Here_Validation
+
+2019-11-26 11:39:44 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Setup"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' successfully
+
+2019-11-26 11:39:44 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Setup: Test Cases/Reusable_Test_Sequences/CAT_Setup
+
+2019-11-26 11:39:45 - [TEST_STEP][PASSED] - "URL - Set from the ENVIRONMENT PROFILE ": null
+
+2019-11-26 11:39:45 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://www.preview.checkatrade.com/'
+
+2019-11-26 11:39:47 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2019-11-26 11:39:47 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-11-26 11:40:32 - [MESSAGE][PASSED] - Browser is opened with url: 'https://www.preview.checkatrade.com/'
+
+2019-11-26 11:40:32 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-11-26 11:40:32 - [MESSAGE][PASSED] - Current window maximized
+
+2019-11-26 11:40:33 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-26 11:40:33 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-26 11:40:33 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Page_Checkatrade Find a tradesperson you can trust/a_Search"), 25): Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Search' is visible
+
+2019-11-26 11:40:33 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Search' is visible
+
+2019-11-26 11:40:33 - [TEST_STEP][PASSED] - try: null
+
+2019-11-26 11:40:33 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("Page_Checkatrade Find a tradesperson you can trust/div_close"), 1, OPTIONAL)): null
+
+2019-11-26 11:40:33 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close' is present
+
+2019-11-26 11:40:33 - [TEST_STEP][PASSED] - click(findTestObject("Page_Checkatrade Find a tradesperson you can trust/div_close")): Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close' is clicked on
+
+2019-11-26 11:40:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close' is clicked on
+
+2019-11-26 11:40:34 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2019-11-26 11:40:34 - [TEST_STEP][PASSED] - "COOKIE POPOUT REMOVED - Confirmed": null
+
+2019-11-26 11:40:34 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-26 11:40:35 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-26 11:40:35 - [TEST_STEP][PASSED] - verifyTextNotPresent("Checkatrade.com uses cookies to make sure you get the best browsing experience", false): Text 'Checkatrade.com uses cookies to make sure you get the best browsing experience' is not present on page
+
+2019-11-26 11:40:36 - [MESSAGE][PASSED] - Text 'Checkatrade.com uses cookies to make sure you get the best browsing experience' is not present on page
+
+2019-11-26 11:40:36 - [TEST_STEP][PASSED] - try: null
+
+2019-11-26 11:40:36 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("Page_Checkatrade Find a tradesperson you can trust/div_close_1"), 1, OPTIONAL)): null
+
+2019-11-26 11:40:36 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close_1' is present
+
+2019-11-26 11:40:36 - [TEST_STEP][PASSED] - click(findTestObject("Page_Checkatrade Find a tradesperson you can trust/div_close_1")): Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close_1' is clicked on
+
+2019-11-26 11:40:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close_1' is clicked on
+
+2019-11-26 11:40:37 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2019-11-26 11:40:37 - [TEST_STEP][PASSED] - "PRIVACY POPOUT REMOVED - Confirmed": null
+
+2019-11-26 11:40:37 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-26 11:40:38 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-26 11:40:38 - [TEST_STEP][PASSED] - verifyTextNotPresent("We have updated our Privacy Policy, please review this", false): Text 'We have updated our Privacy Policy, please review this' is not present on page
+
+2019-11-26 11:40:38 - [MESSAGE][PASSED] - Text 'We have updated our Privacy Policy, please review this' is not present on page
+
+2019-11-26 11:40:38 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-26 11:40:38 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-26 11:40:38 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-26 11:40:38 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-26 11:40:38 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' successfully
+
+2019-11-26 11:40:38 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2019-11-26 11:40:38 - [TEST_STEP][PASSED] - " Hit the <TRADES, APPLY HERE> Button  |": null
+
+2019-11-26 11:40:38 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Hit_Signup"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Signup' successfully
+
+2019-11-26 11:40:39 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Signup: Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Signup
+
+2019-11-26 11:40:39 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Trades                                apply here")): Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Trades                                apply here' is clicked on
+
+2019-11-26 11:40:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Trades                                apply here' is clicked on
+
+2019-11-26 11:40:43 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-26 11:40:43 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-26 11:40:43 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-26 11:40:43 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-26 11:40:43 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Signup' successfully
+
+2019-11-26 11:40:43 - [TEST_STEP][PASSED] - "---------------------------------------------------------------------------": null
+
+2019-11-26 11:40:43 - [TEST_STEP][PASSED] - " Hit the <SUBMIT> Button  | Attempt a COMMITAL of form with no data filled |": null
+
+2019-11-26 11:40:43 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Hit_Submit"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit' successfully
+
+2019-11-26 11:40:43 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit: Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit
+
+2019-11-26 11:40:43 - [TEST_STEP][PASSED] - "----------------------------------------------------------------------------------": null
+
+2019-11-26 11:40:43 - [TEST_STEP][PASSED] - "SUBMIT BUTTON IS OFF THE BOTTOM OF THE PAGE - SO NEED TO SCROLL TO BOTTOM OF PAGE  |": null
+
+2019-11-26 11:40:43 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Object Repository/Page_Checkatrade Want to build your business/input_membership terms and conditions_ctl00contentbtnSubmit"), 5): Scroll to object 'Object Repository/Page_Checkatrade Want to build your business/input_membership terms and conditions_ctl00contentbtnSubmit' successfully
+
+2019-11-26 11:40:44 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Page_Checkatrade Want to build your business/input_membership terms and conditions_ctl00contentbtnSubmit' successfully
+
+2019-11-26 11:40:44 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-26 11:40:45 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-26 11:40:45 - [TEST_STEP][PASSED] - "-------------": null
+
+2019-11-26 11:40:45 - [TEST_STEP][PASSED] - "Click Submit |": null
+
+2019-11-26 11:40:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Checkatrade Want to build your business/input_membership terms and conditions_ctl00contentbtnSubmit")): Object: 'Object Repository/Page_Checkatrade Want to build your business/input_membership terms and conditions_ctl00contentbtnSubmit' is clicked on
+
+2019-11-26 11:40:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Checkatrade Want to build your business/input_membership terms and conditions_ctl00contentbtnSubmit' is clicked on
+
+2019-11-26 11:40:45 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-26 11:40:45 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-26 11:40:45 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-26 11:40:45 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-26 11:40:45 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit' successfully
+
+2019-11-26 11:40:45 - [TEST_STEP][PASSED] - "--------------------------------------------------": null
+
+2019-11-26 11:40:45 - [TEST_STEP][PASSED] - " Check initial Validation Message(s) are Produced |": null
+
+2019-11-26 11:40:45 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required' successfully
+
+2019-11-26 11:40:45 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required: Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required
+
+2019-11-26 11:40:47 - [TEST_STEP][PASSED] - verifyTextPresent("This field is required", false): Text 'This field is required' is present on page 
+
+2019-11-26 11:40:48 - [MESSAGE][PASSED] - Text 'This field is required' is present on page 
+
+2019-11-26 11:40:48 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-26 11:40:48 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-26 11:40:48 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-26 11:40:48 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-26 11:40:48 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required' successfully
+
+2019-11-26 11:40:48 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2019-11-26 11:40:48 - [TEST_STEP][PASSED] - " Set - Email Address Incorrect Form   |": null
+
+2019-11-26 11:40:48 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_INVALID_Email_Address"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_INVALID_Email_Address' successfully
+
+2019-11-26 11:40:48 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_INVALID_Email_Address: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_INVALID_Email_Address
+
+2019-11-26 11:40:49 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail"), Invalid_Email): Text 'Billy Bob' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail'
+
+2019-11-26 11:40:49 - [MESSAGE][PASSED] - Text 'Billy Bob' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail'
+
+2019-11-26 11:40:49 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-26 11:40:49 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-26 11:40:49 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-26 11:40:49 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-26 11:40:49 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_INVALID_Email_Address' successfully
+
+2019-11-26 11:40:49 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2019-11-26 11:40:49 - [TEST_STEP][PASSED] - " Check Email Validation Message       |": null
+
+2019-11-26 11:40:49 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Validation/Please_Enter_Valid_Email"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Enter_Valid_Email' successfully
+
+2019-11-26 11:40:49 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Enter_Valid_Email: Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Enter_Valid_Email
+
+2019-11-26 11:40:50 - [TEST_STEP][PASSED] - verifyTextPresent("Please enter a valid email address", false): Text 'Please enter a valid email address' is present on page 
+
+2019-11-26 11:40:51 - [MESSAGE][PASSED] - Text 'Please enter a valid email address' is present on page 
+
+2019-11-26 11:40:51 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-26 11:40:51 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-26 11:40:51 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-26 11:40:51 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-26 11:40:51 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Enter_Valid_Email' successfully
+
+2019-11-26 11:40:51 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-11-26 11:40:56 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-11-26 11:40:56 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-26 11:40:56 - [TEST_STEP][PASSED] - " Set - Email Address      |": null
+
+2019-11-26 11:40:56 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Email_Address"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address' successfully
+
+2019-11-26 11:40:56 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address
+
+2019-11-26 11:40:56 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail"), EmailAddress): Text 'ron_mctavish@xtc_0z0.com' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail'
+
+2019-11-26 11:40:56 - [MESSAGE][PASSED] - Text 'ron_mctavish@xtc_0z0.com' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail'
+
+2019-11-26 11:40:56 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-26 11:40:56 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-26 11:40:56 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-26 11:40:56 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-26 11:40:56 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address' successfully
+
+2019-11-26 11:40:56 - [TEST_STEP][PASSED] - "---------------------------------------------------------------------------------": null
+
+2019-11-26 11:40:56 - [TEST_STEP][PASSED] - " FIll Remaining Empty Fields With Random Data - To Elicit Validation Message(s)  |": null
+
+2019-11-26 11:40:56 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Random_Data_In_Empty_Fields"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Random_Data_In_Empty_Fields' successfully
+
+2019-11-26 11:40:57 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Random_Data_In_Empty_Fields: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Random_Data_In_Empty_Fields
+
+2019-11-26 11:40:57 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName"), Validation_Data_Special_Chars): Text '#£|' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName'
+
+2019-11-26 11:40:57 - [MESSAGE][PASSED] - Text '#£|' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName'
+
+2019-11-26 11:40:57 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Your Full Name_ctl00contenttbContactName"), Validation_Data_Special_Chars): Text '#£|' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Your Full Name_ctl00contenttbContactName'
+
+2019-11-26 11:40:57 - [MESSAGE][PASSED] - Text '#£|' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Your Full Name_ctl00contenttbContactName'
+
+2019-11-26 11:40:57 - [TEST_STEP][PASSED] - "TRADE CATEGORY": null
+
+2019-11-26 11:40:57 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode"), Validation_Data_Special_Chars): Text '#£|' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode'
+
+2019-11-26 11:40:57 - [MESSAGE][PASSED] - Text '#£|' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode'
+
+2019-11-26 11:40:57 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob"), Validation_Data_Special_Chars): Text '#£|' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob'
+
+2019-11-26 11:40:58 - [MESSAGE][PASSED] - Text '#£|' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob'
+
+2019-11-26 11:40:58 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-26 11:40:58 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-26 11:40:58 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-26 11:40:58 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-26 11:40:58 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Random_Data_In_Empty_Fields' successfully
+
+2019-11-26 11:40:58 - [TEST_STEP][PASSED] - "---------------------------------------------": null
+
+2019-11-26 11:40:58 - [TEST_STEP][PASSED] - " Check Trade Category Validation Message     |": null
+
+2019-11-26 11:40:58 - [TEST_STEP][PASSED] - "---------------------------------------------": null
+
+2019-11-26 11:40:58 - [TEST_STEP][PASSED] - "---------------------------------------------------------": null
+
+2019-11-26 11:40:58 - [TEST_STEP][PASSED] - " Check specify a valid phone number Validation Message   |": null
+
+2019-11-26 11:40:58 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Validation/Please_Specify_Valid_Phone_Number"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Specify_Valid_Phone_Number' successfully
+
+2019-11-26 11:40:58 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Specify_Valid_Phone_Number: Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Specify_Valid_Phone_Number
+
+2019-11-26 11:40:58 - [TEST_STEP][PASSED] - verifyTextPresent("Please specify a valid phone number", false): Text 'Please specify a valid phone number' is present on page 
+
+2019-11-26 11:40:59 - [MESSAGE][PASSED] - Text 'Please specify a valid phone number' is present on page 
+
+2019-11-26 11:40:59 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-26 11:40:59 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-26 11:40:59 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-26 11:40:59 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-26 11:40:59 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Specify_Valid_Phone_Number' successfully
+
+2019-11-26 11:40:59 - [TEST_STEP][PASSED] - "---------------------------------------------------------": null
+
+2019-11-26 11:40:59 - [TEST_STEP][PASSED] - " Check Remaining Fields with NULL Data Validation Message|": null
+
+2019-11-26 11:40:59 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_NULL_Data_In_Fields_Containing_Invalid_Data"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_NULL_Data_In_Fields_Containing_Invalid_Data' successfully
+
+2019-11-26 11:40:59 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_NULL_Data_In_Fields_Containing_Invalid_Data: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_NULL_Data_In_Fields_Containing_Invalid_Data
+
+2019-11-26 11:41:00 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName"), ""): Text '' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName'
+
+2019-11-26 11:41:00 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName'
+
+2019-11-26 11:41:00 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Your Full Name_ctl00contenttbContactName"), ""): Text '' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Your Full Name_ctl00contenttbContactName'
+
+2019-11-26 11:41:00 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Your Full Name_ctl00contenttbContactName'
+
+2019-11-26 11:41:00 - [TEST_STEP][PASSED] - "TRADE CATEGORY": null
+
+2019-11-26 11:41:00 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode"), ""): Text '' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode'
+
+2019-11-26 11:41:00 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode'
+
+2019-11-26 11:41:00 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob"), ""): Text '' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob'
+
+2019-11-26 11:41:01 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob'
+
+2019-11-26 11:41:01 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-26 11:41:01 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-26 11:41:01 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-26 11:41:01 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-26 11:41:01 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_NULL_Data_In_Fields_Containing_Invalid_Data' successfully
+
+2019-11-26 11:41:01 - [TEST_STEP][PASSED] - "--------------------------------------------------": null
+
+2019-11-26 11:41:01 - [TEST_STEP][PASSED] - " Check initial Validation Message(s) are Produced |": null
+
+2019-11-26 11:41:01 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required' successfully
+
+2019-11-26 11:41:01 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required: Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required
+
+2019-11-26 11:41:01 - [TEST_STEP][PASSED] - verifyTextPresent("This field is required", false): Text 'This field is required' is present on page 
+
+2019-11-26 11:41:02 - [MESSAGE][PASSED] - Text 'This field is required' is present on page 
+
+2019-11-26 11:41:02 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-26 11:41:02 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-26 11:41:02 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-26 11:41:02 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-26 11:41:02 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required' successfully
+
+2019-11-26 11:41:02 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-26 11:41:02 - [TEST_STEP][PASSED] - " Set - Company Name       |": null
+
+2019-11-26 11:41:02 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Company_Name"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name' successfully
+
+2019-11-26 11:41:02 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name
+
+2019-11-26 11:41:03 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName"), CompanyName): Text 'Gutter Snipes' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName'
+
+2019-11-26 11:41:03 - [MESSAGE][PASSED] - Text 'Gutter Snipes' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName'
+
+2019-11-26 11:41:03 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-26 11:41:03 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-26 11:41:03 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-26 11:41:03 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-26 11:41:03 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name' successfully
+
+2019-11-26 11:41:03 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-26 11:41:03 - [TEST_STEP][PASSED] - " Set - Full Name          |": null
+
+2019-11-26 11:41:03 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Full_Name"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name' successfully
+
+2019-11-26 11:41:04 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name
+
+2019-11-26 11:41:04 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Your Full Name_ctl00contenttbContactName"), FullName): Text 'Ron MacTavish' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Your Full Name_ctl00contenttbContactName'
+
+2019-11-26 11:41:05 - [MESSAGE][PASSED] - Text 'Ron MacTavish' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Your Full Name_ctl00contenttbContactName'
+
+2019-11-26 11:41:05 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-26 11:41:05 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-26 11:41:05 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-26 11:41:05 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-26 11:41:05 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name' successfully
+
+2019-11-26 11:41:05 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-26 11:41:05 - [TEST_STEP][PASSED] - " Set - Trade Category     |": null
+
+2019-11-26 11:41:05 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-26 11:41:05 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-26 11:41:05 - [TEST_STEP][PASSED] - " lookup - Trade Category  |": null
+
+2019-11-26 11:41:05 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-26 11:41:05 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-26 11:41:05 - [TEST_STEP][PASSED] - " Postcode Prompt          |": null
+
+2019-11-26 11:41:05 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-26 11:41:05 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-26 11:41:05 - [TEST_STEP][PASSED] - " Set - Postcode           |": null
+
+2019-11-26 11:41:05 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Postcode"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode' successfully
+
+2019-11-26 11:41:05 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode
+
+2019-11-26 11:41:06 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Checkatrade Want to build your business/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode"), postcode): Text 'PO12 4SD' is set on object 'Object Repository/Page_Checkatrade Want to build your business/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode'
+
+2019-11-26 11:41:06 - [MESSAGE][PASSED] - Text 'PO12 4SD' is set on object 'Object Repository/Page_Checkatrade Want to build your business/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode'
+
+2019-11-26 11:41:06 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-26 11:41:06 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-26 11:41:06 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-26 11:41:06 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-26 11:41:06 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode' successfully
+
+2019-11-26 11:41:06 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-26 11:41:06 - [TEST_STEP][PASSED] - " Set - Contact Number     |": null
+
+2019-11-26 11:41:06 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number' successfully
+
+2019-11-26 11:41:06 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number
+
+2019-11-26 11:41:07 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob"), ContactNumber): Text '02380123456' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob'
+
+2019-11-26 11:41:08 - [MESSAGE][PASSED] - Text '02380123456' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob'
+
+2019-11-26 11:41:08 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-26 11:41:08 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-26 11:41:08 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-26 11:41:08 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-26 11:41:08 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number' successfully
+
+2019-11-26 11:41:08 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-26 11:41:08 - [TEST_STEP][PASSED] - " Hit the <SUBMIT> Button  |": null
+
+2019-11-26 11:41:08 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Hit_Submit"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit' successfully
+
+2019-11-26 11:41:08 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit: Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit
+
+2019-11-26 11:41:08 - [TEST_STEP][PASSED] - "----------------------------------------------------------------------------------": null
+
+2019-11-26 11:41:08 - [TEST_STEP][PASSED] - "SUBMIT BUTTON IS OFF THE BOTTOM OF THE PAGE - SO NEED TO SCROLL TO BOTTOM OF PAGE  |": null
+
+2019-11-26 11:41:08 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Object Repository/Page_Checkatrade Want to build your business/input_membership terms and conditions_ctl00contentbtnSubmit"), 5): Scroll to object 'Object Repository/Page_Checkatrade Want to build your business/input_membership terms and conditions_ctl00contentbtnSubmit' successfully
+
+2019-11-26 11:41:08 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Page_Checkatrade Want to build your business/input_membership terms and conditions_ctl00contentbtnSubmit' successfully
+
+2019-11-26 11:41:08 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-26 11:41:09 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-26 11:41:09 - [TEST_STEP][PASSED] - "-------------": null
+
+2019-11-26 11:41:09 - [TEST_STEP][PASSED] - "Click Submit |": null
+
+2019-11-26 11:41:09 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Checkatrade Want to build your business/input_membership terms and conditions_ctl00contentbtnSubmit")): Object: 'Object Repository/Page_Checkatrade Want to build your business/input_membership terms and conditions_ctl00contentbtnSubmit' is clicked on
+
+2019-11-26 11:41:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Checkatrade Want to build your business/input_membership terms and conditions_ctl00contentbtnSubmit' is clicked on
+
+2019-11-26 11:41:16 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-26 11:41:16 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-26 11:41:16 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-26 11:41:16 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-26 11:41:16 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit' successfully
+
+2019-11-26 11:41:16 - [TEST_STEP][PASSED] - "---------------------------------------------------": null
+
+2019-11-26 11:41:16 - [TEST_STEP][PASSED] - "Verify CONGRATULATIONS is reported after form fill ": null
+
+2019-11-26 11:41:16 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported' successfully
+
+2019-11-26 11:41:16 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported: Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported
+
+2019-11-26 11:41:17 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2019-11-26 11:41:17 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-26 11:41:17 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-26 11:41:18 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-26 11:41:18 - [TEST_STEP][PASSED] - verifyTextPresent("Congratulations, you're one step closer to becoming a Checkatrade Member!", false): Text 'Congratulations, you're one step closer to becoming a Checkatrade Member!' is present on page 
+
+2019-11-26 11:41:19 - [MESSAGE][PASSED] - Text 'Congratulations, you're one step closer to becoming a Checkatrade Member!' is present on page 
+
+2019-11-26 11:41:19 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-26 11:41:19 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-26 11:41:19 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-26 11:41:19 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-26 11:41:19 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported' successfully
+
+2019-11-26 11:41:19 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-26 11:41:19 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2019-11-26 11:41:19 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Unable to call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' (Root cause: com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Trades_Apply_Here_Validation.run(Trades_Apply_Here_Validation:167)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1574768175180.run(TempTestSuite1574768175180.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to close browser (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to close browser
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword.closeBrowser(CloseBrowserKeyword.groovy:71)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword.execute(CloseBrowserKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.closeBrowser(WebUiBuiltInKeywords.groovy:81)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$closeBrowser$9.call(Unknown Source)
+	at CAT_Teardown.run(CAT_Teardown:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Trades_Apply_Here_Validation.run(Trades_Apply_Here_Validation:167)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1574768175180.run(TempTestSuite1574768175180.groovy:36)
+Caused by: org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'VETTEDSP36RF', ip: '10.0.11.243', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 70.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191030021342, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 5932, moz:profile: C:\Users\davidho\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9ad2237f-571a-4b5d-b18b-e9fa70f8084e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CFirefoxDriver.execute(CFirefoxDriver.java:27)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.quit(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.quit(EventFiringWebDriver.java:211)
+	at com.kms.katalon.core.webui.driver.DriverFactory.closeWebDriver(DriverFactory.java:1261)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword$_closeBrowser_closure1.doCall(CloseBrowserKeyword.groovy:73)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword$_closeBrowser_closure1.call(CloseBrowserKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword.closeBrowser(CloseBrowserKeyword.groovy:71)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword.execute(CloseBrowserKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.closeBrowser(WebUiBuiltInKeywords.groovy:81)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$closeBrowser$9.call(Unknown Source)
+	at Script1563434445496.run(Script1563434445496.groovy:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Script1564663869372.run(Script1564663869372.groovy:167)
+	... 13 more
+)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword.closeBrowser(CloseBrowserKeyword.groovy:71)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword.execute(CloseBrowserKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.closeBrowser(WebUiBuiltInKeywords.groovy:81)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$closeBrowser$9.call(Unknown Source)
+	at CAT_Teardown.run(CAT_Teardown:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to close browser
+	... 37 more
+Caused by: org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'VETTEDSP36RF', ip: '10.0.11.243', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 70.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191030021342, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 5932, moz:profile: C:\Users\davidho\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9ad2237f-571a-4b5d-b18b-e9fa70f8084e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CFirefoxDriver.execute(CFirefoxDriver.java:27)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.quit(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.quit(EventFiringWebDriver.java:211)
+	at com.kms.katalon.core.webui.driver.DriverFactory.closeWebDriver(DriverFactory.java:1261)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword$_closeBrowser_closure1.doCall(CloseBrowserKeyword.groovy:73)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword$_closeBrowser_closure1.call(CloseBrowserKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+)
+
+2019-11-26 11:41:19 - [TEST_CASE][FAILED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to close browser (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to close browser
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword.closeBrowser(CloseBrowserKeyword.groovy:71)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword.execute(CloseBrowserKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.closeBrowser(WebUiBuiltInKeywords.groovy:81)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$closeBrowser$9.call(Unknown Source)
+	at CAT_Teardown.run(CAT_Teardown:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Trades_Apply_Here_Validation.run(Trades_Apply_Here_Validation:167)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1574768175180.run(TempTestSuite1574768175180.groovy:36)
+Caused by: org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'VETTEDSP36RF', ip: '10.0.11.243', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 70.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191030021342, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 5932, moz:profile: C:\Users\davidho\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9ad2237f-571a-4b5d-b18b-e9fa70f8084e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CFirefoxDriver.execute(CFirefoxDriver.java:27)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.quit(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.quit(EventFiringWebDriver.java:211)
+	at com.kms.katalon.core.webui.driver.DriverFactory.closeWebDriver(DriverFactory.java:1261)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword$_closeBrowser_closure1.doCall(CloseBrowserKeyword.groovy:73)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword$_closeBrowser_closure1.call(CloseBrowserKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword.closeBrowser(CloseBrowserKeyword.groovy:71)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword.execute(CloseBrowserKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.closeBrowser(WebUiBuiltInKeywords.groovy:81)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$closeBrowser$9.call(Unknown Source)
+	at Script1563434445496.run(Script1563434445496.groovy:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Script1564663869372.run(Script1564663869372.groovy:167)
+	... 13 more
+)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword.closeBrowser(CloseBrowserKeyword.groovy:71)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword.execute(CloseBrowserKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.closeBrowser(WebUiBuiltInKeywords.groovy:81)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$closeBrowser$9.call(Unknown Source)
+	at CAT_Teardown.run(CAT_Teardown:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Trades_Apply_Here_Validation.run(Trades_Apply_Here_Validation:167)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1574768175180.run(TempTestSuite1574768175180.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to close browser
+	... 37 more
+Caused by: org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'VETTEDSP36RF', ip: '10.0.11.243', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 70.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191030021342, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 5932, moz:profile: C:\Users\davidho\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9ad2237f-571a-4b5d-b18b-e9fa70f8084e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CFirefoxDriver.execute(CFirefoxDriver.java:27)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.quit(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.quit(EventFiringWebDriver.java:211)
+	at com.kms.katalon.core.webui.driver.DriverFactory.closeWebDriver(DriverFactory.java:1261)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword$_closeBrowser_closure1.doCall(CloseBrowserKeyword.groovy:73)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword$_closeBrowser_closure1.call(CloseBrowserKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+
+
+2019-11-26 11:41:20 - [TEST_STEP][FAILED] - closeBrowser(): Unable to close browser (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to close browser
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword.closeBrowser(CloseBrowserKeyword.groovy:71)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword.execute(CloseBrowserKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.closeBrowser(WebUiBuiltInKeywords.groovy:81)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$closeBrowser$9.call(Unknown Source)
+	at CAT_Teardown.run(CAT_Teardown:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Trades_Apply_Here_Validation.run(Trades_Apply_Here_Validation:167)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1574768175180.run(TempTestSuite1574768175180.groovy:36)
+Caused by: org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'VETTEDSP36RF', ip: '10.0.11.243', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 70.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191030021342, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 5932, moz:profile: C:\Users\davidho\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9ad2237f-571a-4b5d-b18b-e9fa70f8084e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CFirefoxDriver.execute(CFirefoxDriver.java:27)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.quit(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.quit(EventFiringWebDriver.java:211)
+	at com.kms.katalon.core.webui.driver.DriverFactory.closeWebDriver(DriverFactory.java:1261)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword$_closeBrowser_closure1.doCall(CloseBrowserKeyword.groovy:73)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword$_closeBrowser_closure1.call(CloseBrowserKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword.closeBrowser(CloseBrowserKeyword.groovy:71)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword.execute(CloseBrowserKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.closeBrowser(WebUiBuiltInKeywords.groovy:81)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$closeBrowser$9.call(Unknown Source)
+	at Script1563434445496.run(Script1563434445496.groovy:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Script1564663869372.run(Script1564663869372.groovy:167)
+	... 13 more
+)
+
+2019-11-26 11:41:59 - [MESSAGE][WARNING] - Cannot take screenshot
+
+2019-11-26 11:41:59 - [MESSAGE][FAILED] - Unable to close browser (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to close browser
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword.closeBrowser(CloseBrowserKeyword.groovy:71)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword.execute(CloseBrowserKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.closeBrowser(WebUiBuiltInKeywords.groovy:81)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$closeBrowser$9.call(Unknown Source)
+	at CAT_Teardown.run(CAT_Teardown:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Trades_Apply_Here_Validation.run(Trades_Apply_Here_Validation:167)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1574768175180.run(TempTestSuite1574768175180.groovy:36)
+Caused by: org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'VETTEDSP36RF', ip: '10.0.11.243', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 70.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191030021342, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 5932, moz:profile: C:\Users\davidho\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9ad2237f-571a-4b5d-b18b-e9fa70f8084e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CFirefoxDriver.execute(CFirefoxDriver.java:27)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.quit(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.quit(EventFiringWebDriver.java:211)
+	at com.kms.katalon.core.webui.driver.DriverFactory.closeWebDriver(DriverFactory.java:1261)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword$_closeBrowser_closure1.doCall(CloseBrowserKeyword.groovy:73)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword$_closeBrowser_closure1.call(CloseBrowserKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword.closeBrowser(CloseBrowserKeyword.groovy:71)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword.execute(CloseBrowserKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.closeBrowser(WebUiBuiltInKeywords.groovy:81)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$closeBrowser$9.call(Unknown Source)
+	at Script1563434445496.run(Script1563434445496.groovy:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Script1564663869372.run(Script1564663869372.groovy:167)
+	... 13 more
+)
+
+2019-11-26 11:41:59 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-26 11:41:59 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-26 11:41:59 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-26 11:41:59 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-26 11:41:59 - [MESSAGE][WARNING] - Unable to call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' (Root cause: com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Trades_Apply_Here_Validation.run(Trades_Apply_Here_Validation:167)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1574768175180.run(TempTestSuite1574768175180.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to close browser (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to close browser
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword.closeBrowser(CloseBrowserKeyword.groovy:71)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword.execute(CloseBrowserKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.closeBrowser(WebUiBuiltInKeywords.groovy:81)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$closeBrowser$9.call(Unknown Source)
+	at CAT_Teardown.run(CAT_Teardown:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Trades_Apply_Here_Validation.run(Trades_Apply_Here_Validation:167)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1574768175180.run(TempTestSuite1574768175180.groovy:36)
+Caused by: org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'VETTEDSP36RF', ip: '10.0.11.243', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 70.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191030021342, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 5932, moz:profile: C:\Users\davidho\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9ad2237f-571a-4b5d-b18b-e9fa70f8084e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CFirefoxDriver.execute(CFirefoxDriver.java:27)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.quit(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.quit(EventFiringWebDriver.java:211)
+	at com.kms.katalon.core.webui.driver.DriverFactory.closeWebDriver(DriverFactory.java:1261)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword$_closeBrowser_closure1.doCall(CloseBrowserKeyword.groovy:73)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword$_closeBrowser_closure1.call(CloseBrowserKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword.closeBrowser(CloseBrowserKeyword.groovy:71)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword.execute(CloseBrowserKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.closeBrowser(WebUiBuiltInKeywords.groovy:81)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$closeBrowser$9.call(Unknown Source)
+	at Script1563434445496.run(Script1563434445496.groovy:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Script1564663869372.run(Script1564663869372.groovy:167)
+	... 13 more
+)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword.closeBrowser(CloseBrowserKeyword.groovy:71)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword.execute(CloseBrowserKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.closeBrowser(WebUiBuiltInKeywords.groovy:81)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$closeBrowser$9.call(Unknown Source)
+	at CAT_Teardown.run(CAT_Teardown:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to close browser
+	... 37 more
+Caused by: org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'VETTEDSP36RF', ip: '10.0.11.243', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 70.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191030021342, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 5932, moz:profile: C:\Users\davidho\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9ad2237f-571a-4b5d-b18b-e9fa70f8084e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CFirefoxDriver.execute(CFirefoxDriver.java:27)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.quit(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.quit(EventFiringWebDriver.java:211)
+	at com.kms.katalon.core.webui.driver.DriverFactory.closeWebDriver(DriverFactory.java:1261)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword$_closeBrowser_closure1.doCall(CloseBrowserKeyword.groovy:73)
+	at com.kms.katalon.core.webui.keyword.builtin.CloseBrowserKeyword$_closeBrowser_closure1.call(CloseBrowserKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+)
+
+2019-11-26 11:41:59 - [TEST_STEP][PASSED] - "-------------------------------------------": null
+
+2019-11-26 11:41:59 - [TEST_STEP][PASSED] - " Web Office Call to Ensure NEW CASE Opened |": null
+
+2019-11-26 11:41:59 - [TEST_STEP][PASSED] - "-------------------------------------------": null
+
+2019-11-26 11:41:59 - [TEST_STEP][PASSED] - "------": null
+
+2019-11-26 11:41:59 - [TEST_STEP][PASSED] - "TODO  |": null
+
+2019-11-26 11:41:59 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Web_Office/Case_Opened"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Web_Office/Case_Opened' successfully
+
+2019-11-26 11:41:59 - [TEST_CASE][PASSED] - Test Cases/Web_Office/Case_Opened: Test Cases/Web_Office/Case_Opened
+
+2019-11-26 11:42:00 - [TEST_STEP][PASSED] - return null: null
+
+2019-11-26 11:42:00 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-26 11:42:00 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-26 11:42:00 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-26 11:42:00 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-26 11:42:00 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Web_Office/Case_Opened' successfully
+
+2019-11-26 11:42:00 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-26 11:42:00 - [TEST_STEP][PASSED] - " END                      |": null
+
+2019-11-26 11:42:00 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-26 11:42:00 - [TEST_STEP][PASSED] - markWarning("No Validation of POSTCODE apart from NULL Entry Check! * FOR INRORMATION ONLY *"): No Validation of POSTCODE apart from NULL Entry Check! * FOR INRORMATION ONLY *
+
+2019-11-26 11:42:00 - [MESSAGE][WARNING] - No Validation of POSTCODE apart from NULL Entry Check! * FOR INRORMATION ONLY *
+
+2019-11-26 11:42:00 - [TEST_STEP][PASSED] - markWarning("No Validation of COMPANY NAME apart from NULL Entry Check! * FOR INRORMATION ONLY *"): No Validation of COMPANY NAME apart from NULL Entry Check! * FOR INRORMATION ONLY *
+
+2019-11-26 11:42:00 - [MESSAGE][WARNING] - No Validation of COMPANY NAME apart from NULL Entry Check! * FOR INRORMATION ONLY *
+
+2019-11-26 11:42:00 - [TEST_STEP][PASSED] - markWarning("No Validation of YOUR FULL NAME apart from NULL Entry Check! * FOR INRORMATION ONLY *"): No Validation of YOUR FULL NAME apart from NULL Entry Check! * FOR INRORMATION ONLY *
+
+2019-11-26 11:42:00 - [MESSAGE][WARNING] - No Validation of YOUR FULL NAME apart from NULL Entry Check! * FOR INRORMATION ONLY *]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Sign_Up/Trades_Apply_Here" time="103.21" classname="Test Cases/Sign_Up/Trades_Apply_Here" status="PASSED">
+         <system-out><![CDATA[2019-11-26 11:42:00 - [TEST_CASE][PASSED] - Test Cases/Sign_Up/Trades_Apply_Here: Test Cases/Sign_Up/Trades_Apply_Here
+
+2019-11-26 11:42:00 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Setup"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' successfully
+
+2019-11-26 11:42:00 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Setup: Test Cases/Reusable_Test_Sequences/CAT_Setup
+
+2019-11-26 11:42:00 - [TEST_STEP][PASSED] - "URL - Set from the ENVIRONMENT PROFILE ": null
+
+2019-11-26 11:42:00 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://www.preview.checkatrade.com/'
+
+2019-11-26 11:42:00 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2019-11-26 11:42:44 - [MESSAGE][PASSED] - Browser is opened with url: 'https://www.preview.checkatrade.com/'
+
+2019-11-26 11:42:44 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-11-26 11:42:45 - [MESSAGE][PASSED] - Current window maximized
+
+2019-11-26 11:42:45 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-26 11:42:45 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-26 11:42:45 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Page_Checkatrade Find a tradesperson you can trust/a_Search"), 25): Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Search' is visible
+
+2019-11-26 11:42:46 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Search' is visible
+
+2019-11-26 11:42:46 - [TEST_STEP][PASSED] - try: null
+
+2019-11-26 11:42:46 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("Page_Checkatrade Find a tradesperson you can trust/div_close"), 1, OPTIONAL)): null
+
+2019-11-26 11:42:47 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close' is present
+
+2019-11-26 11:42:47 - [TEST_STEP][PASSED] - click(findTestObject("Page_Checkatrade Find a tradesperson you can trust/div_close")): Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close' is clicked on
+
+2019-11-26 11:42:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close' is clicked on
+
+2019-11-26 11:42:47 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2019-11-26 11:42:47 - [TEST_STEP][PASSED] - "COOKIE POPOUT REMOVED - Confirmed": null
+
+2019-11-26 11:42:47 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-26 11:42:48 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-26 11:42:48 - [TEST_STEP][PASSED] - verifyTextNotPresent("Checkatrade.com uses cookies to make sure you get the best browsing experience", false): Text 'Checkatrade.com uses cookies to make sure you get the best browsing experience' is not present on page
+
+2019-11-26 11:42:50 - [MESSAGE][PASSED] - Text 'Checkatrade.com uses cookies to make sure you get the best browsing experience' is not present on page
+
+2019-11-26 11:42:50 - [TEST_STEP][PASSED] - try: null
+
+2019-11-26 11:42:50 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("Page_Checkatrade Find a tradesperson you can trust/div_close_1"), 1, OPTIONAL)): null
+
+2019-11-26 11:42:50 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close_1' is present
+
+2019-11-26 11:42:50 - [TEST_STEP][PASSED] - click(findTestObject("Page_Checkatrade Find a tradesperson you can trust/div_close_1")): Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close_1' is clicked on
+
+2019-11-26 11:42:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close_1' is clicked on
+
+2019-11-26 11:42:50 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2019-11-26 11:42:50 - [TEST_STEP][PASSED] - "PRIVACY POPOUT REMOVED - Confirmed": null
+
+2019-11-26 11:42:50 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-26 11:42:51 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-26 11:42:51 - [TEST_STEP][PASSED] - verifyTextNotPresent("We have updated our Privacy Policy, please review this", false): Text 'We have updated our Privacy Policy, please review this' is not present on page
+
+2019-11-26 11:42:53 - [MESSAGE][PASSED] - Text 'We have updated our Privacy Policy, please review this' is not present on page
+
+2019-11-26 11:42:53 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-26 11:42:53 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-26 11:42:53 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-26 11:42:53 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-26 11:42:53 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' successfully
+
+2019-11-26 11:42:53 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2019-11-26 11:42:53 - [TEST_STEP][PASSED] - " Hit the <TRADES, APPLY HERE> Button  |": null
+
+2019-11-26 11:42:53 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here' successfully
+
+2019-11-26 11:42:53 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here: Test Cases/Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here
+
+2019-11-26 11:42:55 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Trades                                apply here")): Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Trades                                apply here' is clicked on
+
+2019-11-26 11:43:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Trades                                apply here' is clicked on
+
+2019-11-26 11:43:00 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-26 11:43:00 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-26 11:43:00 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-26 11:43:00 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-26 11:43:00 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here' successfully
+
+2019-11-26 11:43:00 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-26 11:43:00 - [TEST_STEP][PASSED] - " Set - Full Name          |": null
+
+2019-11-26 11:43:00 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Full_Name"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name' successfully
+
+2019-11-26 11:43:00 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name
+
+2019-11-26 11:43:00 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Your Full Name_ctl00contenttbContactName"), FullName): Text 'Ron MacTavish' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Your Full Name_ctl00contenttbContactName'
+
+2019-11-26 11:43:01 - [MESSAGE][PASSED] - Text 'Ron MacTavish' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Your Full Name_ctl00contenttbContactName'
+
+2019-11-26 11:43:01 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-26 11:43:01 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-26 11:43:01 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-26 11:43:01 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-26 11:43:01 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name' successfully
+
+2019-11-26 11:43:01 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-26 11:43:01 - [TEST_STEP][PASSED] - " Set - Email Address      |": null
+
+2019-11-26 11:43:01 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Email_Address"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address' successfully
+
+2019-11-26 11:43:01 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address
+
+2019-11-26 11:43:01 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail"), EmailAddress): Text 'ron_mctavish@xtc_0z0.com' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail'
+
+2019-11-26 11:43:01 - [MESSAGE][PASSED] - Text 'ron_mctavish@xtc_0z0.com' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail'
+
+2019-11-26 11:43:01 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-26 11:43:01 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-26 11:43:01 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-26 11:43:01 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-26 11:43:01 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address' successfully
+
+2019-11-26 11:43:01 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-26 11:43:01 - [TEST_STEP][PASSED] - " Set - Company Name       |": null
+
+2019-11-26 11:43:01 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Company_Name"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name' successfully
+
+2019-11-26 11:43:01 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name
+
+2019-11-26 11:43:01 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName"), CompanyName): Text 'Gutter Snipes' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName'
+
+2019-11-26 11:43:02 - [MESSAGE][PASSED] - Text 'Gutter Snipes' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName'
+
+2019-11-26 11:43:02 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-26 11:43:02 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-26 11:43:02 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-26 11:43:02 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-26 11:43:02 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name' successfully
+
+2019-11-26 11:43:02 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-26 11:43:02 - [TEST_STEP][PASSED] - " Set - Trade Category     |": null
+
+2019-11-26 11:43:02 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-26 11:43:02 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-26 11:43:02 - [TEST_STEP][PASSED] - " lookup - Trade Category  |": null
+
+2019-11-26 11:43:02 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-26 11:43:02 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-26 11:43:02 - [TEST_STEP][PASSED] - " Postcode Prompt          |": null
+
+2019-11-26 11:43:02 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-26 11:43:02 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-26 11:43:02 - [TEST_STEP][PASSED] - " Set - Postcode           |": null
+
+2019-11-26 11:43:02 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-26 11:43:02 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-26 11:43:02 - [TEST_STEP][PASSED] - " Set - Contact Number     |": null
+
+2019-11-26 11:43:02 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number' successfully
+
+2019-11-26 11:43:02 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number
+
+2019-11-26 11:43:02 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob"), ContactNumber): Text '02380123456' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob'
+
+2019-11-26 11:43:02 - [MESSAGE][PASSED] - Text '02380123456' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob'
+
+2019-11-26 11:43:02 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-26 11:43:02 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-26 11:43:02 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-26 11:43:02 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-26 11:43:02 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number' successfully
+
+2019-11-26 11:43:02 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-26 11:43:02 - [TEST_STEP][PASSED] - " Set - Postcode NEW       |": null
+
+2019-11-26 11:43:02 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Postcode"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode' successfully
+
+2019-11-26 11:43:02 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode
+
+2019-11-26 11:43:02 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Checkatrade Want to build your business/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode"), postcode): Text 'PO12 4SD' is set on object 'Object Repository/Page_Checkatrade Want to build your business/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode'
+
+2019-11-26 11:43:03 - [MESSAGE][PASSED] - Text 'PO12 4SD' is set on object 'Object Repository/Page_Checkatrade Want to build your business/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode'
+
+2019-11-26 11:43:03 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-26 11:43:03 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-26 11:43:03 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-26 11:43:03 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-26 11:43:03 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode' successfully
+
+2019-11-26 11:43:03 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-26 11:43:03 - [TEST_STEP][PASSED] - " Hit the <SUBMIT> Button  |": null
+
+2019-11-26 11:43:03 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Hit_Submit"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit' successfully
+
+2019-11-26 11:43:03 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit: Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit
+
+2019-11-26 11:43:03 - [TEST_STEP][PASSED] - "----------------------------------------------------------------------------------": null
+
+2019-11-26 11:43:03 - [TEST_STEP][PASSED] - "SUBMIT BUTTON IS OFF THE BOTTOM OF THE PAGE - SO NEED TO SCROLL TO BOTTOM OF PAGE  |": null
+
+2019-11-26 11:43:03 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Object Repository/Page_Checkatrade Want to build your business/input_membership terms and conditions_ctl00contentbtnSubmit"), 5): Scroll to object 'Object Repository/Page_Checkatrade Want to build your business/input_membership terms and conditions_ctl00contentbtnSubmit' successfully
+
+2019-11-26 11:43:03 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Page_Checkatrade Want to build your business/input_membership terms and conditions_ctl00contentbtnSubmit' successfully
+
+2019-11-26 11:43:03 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-26 11:43:04 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-26 11:43:04 - [TEST_STEP][PASSED] - "-------------": null
+
+2019-11-26 11:43:04 - [TEST_STEP][PASSED] - "Click Submit |": null
+
+2019-11-26 11:43:04 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Checkatrade Want to build your business/input_membership terms and conditions_ctl00contentbtnSubmit")): Object: 'Object Repository/Page_Checkatrade Want to build your business/input_membership terms and conditions_ctl00contentbtnSubmit' is clicked on
+
+2019-11-26 11:43:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Checkatrade Want to build your business/input_membership terms and conditions_ctl00contentbtnSubmit' is clicked on
+
+2019-11-26 11:43:09 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-26 11:43:09 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-26 11:43:09 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-26 11:43:09 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-26 11:43:09 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit' successfully
+
+2019-11-26 11:43:09 - [TEST_STEP][PASSED] - "---------------------------------------------------": null
+
+2019-11-26 11:43:09 - [TEST_STEP][PASSED] - "Verify CONGRATULATIONS is reported after form fill ": null
+
+2019-11-26 11:43:09 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported' successfully
+
+2019-11-26 11:43:09 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported: Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported
+
+2019-11-26 11:43:09 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2019-11-26 11:43:09 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-26 11:43:09 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-26 11:43:10 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-26 11:43:10 - [TEST_STEP][PASSED] - verifyTextPresent("Congratulations, you're one step closer to becoming a Checkatrade Member!", false): Text 'Congratulations, you're one step closer to becoming a Checkatrade Member!' is present on page 
+
+2019-11-26 11:43:11 - [MESSAGE][PASSED] - Text 'Congratulations, you're one step closer to becoming a Checkatrade Member!' is present on page 
+
+2019-11-26 11:43:11 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-26 11:43:11 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-26 11:43:11 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-26 11:43:11 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-26 11:43:11 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported' successfully
+
+2019-11-26 11:43:11 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-26 11:43:11 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2019-11-26 11:43:11 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2019-11-26 11:43:11 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2019-11-26 11:43:11 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-11-26 11:43:43 - [MESSAGE][PASSED] - Browser is closed
+
+2019-11-26 11:43:43 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-26 11:43:43 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-26 11:43:43 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-26 11:43:43 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-26 11:43:43 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2019-11-26 11:43:43 - [TEST_STEP][PASSED] - "-------------------------------------------": null
+
+2019-11-26 11:43:43 - [TEST_STEP][PASSED] - " Web Office Call to Ensure NEW CASE Opened |": null
+
+2019-11-26 11:43:43 - [TEST_STEP][PASSED] - "-------------------------------------------": null
+
+2019-11-26 11:43:43 - [TEST_STEP][PASSED] - "------": null
+
+2019-11-26 11:43:43 - [TEST_STEP][PASSED] - "TODO  |": null
+
+2019-11-26 11:43:43 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Web_Office/Case_Opened"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Web_Office/Case_Opened' successfully
+
+2019-11-26 11:43:43 - [TEST_CASE][PASSED] - Test Cases/Web_Office/Case_Opened: Test Cases/Web_Office/Case_Opened
+
+2019-11-26 11:43:43 - [TEST_STEP][PASSED] - return null: null
+
+2019-11-26 11:43:43 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-26 11:43:43 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-26 11:43:43 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-26 11:43:43 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-26 11:43:43 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Web_Office/Case_Opened' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-11-26 11:39:42 - [TEST_SUITE][PASSED] - Trades_Apply_Here: Test Cases/Sign_Up/Trades_Apply_Here]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

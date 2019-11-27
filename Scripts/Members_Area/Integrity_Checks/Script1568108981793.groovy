@@ -187,7 +187,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Da
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Useful_Documents'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	'-----------------------------------------'// My Payments Page
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/Payments'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Payments'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Payments/Payments_Page'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	'-----------------------------------------'// My Offers Page
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/Offers'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Offers'), [:], FailureHandling.CONTINUE_ON_FAILURE)

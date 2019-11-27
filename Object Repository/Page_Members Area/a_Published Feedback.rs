@@ -4,7 +4,17 @@
    <name>a_Published Feedback</name>
    <tag></tag>
    <elementGuidId>9e1c029b-6e16-4396-8b83-3bfdd97c20c8</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//a[@href = '#feedback-tab' and (text() = 'Published Feedback' or . = 'Published Feedback')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[contains(text(),'Published Feedback')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

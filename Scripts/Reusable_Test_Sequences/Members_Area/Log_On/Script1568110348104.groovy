@@ -74,9 +74,10 @@ WebUI.waitForElementNotPresent(findTestObject('Object Repository/Members/Page_Me
 // New popout Window - 15/11/2019         |
 //-----------------------------------------
 WebUI.waitForPageLoad(60)
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/Header_Attention_Text'), 60)
-WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Popout_Handler'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-
+if ('Object Repository/Page_Members Area/Header_Attention_Text'){
+	WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/Header_Attention_Text'), 60)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Popout_Handler'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+}
 
 ///////////////////////////////////////
 //                END                //

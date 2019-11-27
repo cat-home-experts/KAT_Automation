@@ -22,6 +22,11 @@
    <GlobalVariableEntity>
       <description>Web Office URL</description>
       <initValue>'https://admin.checkatrade.com/'</initValue>
-      <name>WebOffice_URL</name>
+      <name>WebOfficeURL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Live Members Area URL</description>
+      <initValue>'https://members.checkatrade.com/'</initValue>
+      <name>MembersURL</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

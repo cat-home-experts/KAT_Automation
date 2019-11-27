@@ -23,7 +23,7 @@ import internal.GlobalVariable as GlobalVariable
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
 // Prove the function Under Members Area      |                 |                  |                             |
-// Your Account - payments                    |    22/11/2019   |     Dave Horne   |                             |
+// Your Account - Payments                    |    22/11/2019   |     Dave Horne   |                             |
 // New Implementation                         |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
@@ -53,7 +53,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Payments_Data')
 	//-----------------------------------------
 	// Call Startup Process - Browser Startup |
 	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Start_Up'), [:], FailureHandling.OPTIONAL)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Start_Up'), [:], FailureHandling.STOP_ON_FAILURE)
 	//-----------------------------------------
 	
 	//-----------------------------------------
@@ -70,7 +70,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Payments_Data')
 	//-----------------------------------------
 	// Confirm Data on Top - Documents Page   |
 	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Payments'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Payments/Payments_Page'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	//-----------------------------------------
 	// Make Payment - Welcome Page Validation |
@@ -78,15 +78,19 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Payments_Data')
 	//-----------------------------------------
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/My_Payments/PayaTrader'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
+	'---------------------------------------------------------------------------------------------------------------------------'
+	' External Website for Payments - So Stop at this point - We have connfirmed payments infrastructure is available to CAT    |'
+	'---------------------------------------------------------------------------------------------------------------------------'
+	
 	//-----------------------------------------
 	// Make Payment - Card Details page       |
 	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/My_Payments/PayTrader_Card'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	// WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/My_Payments/PayTrader_Card'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	//-----------------------------------------
 	// Payment Confirm page                   |
 	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/My_Payments/PayaTrader_Confirm'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/My_Payments/PayaTrader_Confirm'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 	//-----------------------------------------
 	// Payment Portal resopns                 |
@@ -103,6 +107,14 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Payments_Data')
 	'--------------------------'
 	' Teardown - CLose Browser |'
 	'--------------------------'
+	
+	' THIS MEMBERS TEST IS UNIQUE REGARDS SHUTDOWN - ALL THE OTHER MEMBERS TESTS LOG-OFF, THIS TEST USES CAT TEARDOWN TO CLOSE (there are 2 Browser Instances Present, CAT + Payment)'
+	'So The Easy Option is to call CAT'
+	//-----------------------------------------
+	// Log OFF the Members Area               |
+	//-----------------------------------------
+	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Banner_Menu/log_Off'), [:], FailureHandling.OPTIONAL)
+
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.OPTIONAL)
 	 
 }
