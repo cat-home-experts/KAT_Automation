@@ -26,7 +26,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 // Navigate and Verify Returned Content       |   12/11/2019    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Implemented                                |   28/11/2019    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -55,14 +55,39 @@ WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Directives/W
 '--------------------------------------'
 ' Navigate Top level menu Item         |'
 '--------------------------------------'
-WebUI.waitForPageLoad(60)
-WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Consumers'), 60)
-WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/a_Consumers'), 1)
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Navigation/Navigate_Consumers'), [:], FailureHandling.OPTIONAL)
 
 '--------------------------------------'
 ' Verify Returned Page Content         |'
 '--------------------------------------'
-//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Verification/Trader_Record'), [:], FailureHandling.OPTIONAL)
+// Central pane
+'Central pane'
+//WebUI.verifyTextPresent("Consumer Search", false)
+//WebUI.verifyTextPresent("Use the filter on the left to perform a search of Consumers", false)
+'-------------------------------'
+'Left Hand Consumer Management  |'
+'-------------------------------'
+"Add Consumers"
+//WebUI.verifyTextPresent("Add Consumer", false)
+'Filter'
+//Filter
+WebUI.verifyTextPresent("Filter", false)
+WebUI.verifyTextPresent("Forename", false)
+WebUI.verifyTextPresent("Surname", false)
+WebUI.verifyTextPresent("Mobile", false)
+WebUI.verifyTextPresent("Email", false)
+WebUI.verifyTextPresent("House", false)
+WebUI.verifyTextPresent("Street", false)
+WebUI.verifyTextPresent("Town", false)
+WebUI.verifyTextPresent("City", false)
+WebUI.verifyTextPresent("County", false)
+WebUI.verifyTextPresent("Postcode", false)
+WebUI.verifyTextPresent("Phone", false)
+WebUI.verifyTextPresent("Status", false)
+WebUI.verifyTextPresent("Type", false)
+'Buttons'
+//WebUI.verifyTextPresent("Apply", false)
+WebUI.verifyTextPresent("Clear", false)
 
 '--------------------------'
 ' Teardown - CLose Browser |'

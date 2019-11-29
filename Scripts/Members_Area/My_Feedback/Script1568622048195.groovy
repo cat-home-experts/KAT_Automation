@@ -40,7 +40,10 @@ import internal.GlobalVariable as GlobalVariable
 // Sent - Line 100 (Thank You Message Missing |    11/11/2019   |        DH        |     TODO - Watch Area       |
 //---------------------------------------------------------------------------------------------------------------
 // Your_Customers - CUrrently Preview Slugged |                 |                  |                             |
-// on this perspective, so TEMP DISABLED TEST |    25/11/2019   |        DH        |     TODO - Watch Area       | TODO - REVERT WHEN FUNCTION IS FIXED
+// on this perspective, so TEMP DISABLED TEST |    25/11/2019   |        DH        |     TODO - Watch Area       | TODO - DONE
+//---------------------------------------------------------------------------------------------------------------
+// Your_Customers - CUrrently Preview Slugged |                 |                  |                             |
+// on this perspective, so TEMP DISABLED TEST |    28/11/2019   |        DH        | REVERSION - Test Reinstated |  
 //---------------------------------------------------------------------------------------------------------------
 
 'WARNING - Be AWARE that, for example, That the Members Area Link on Preview doesnt take you to Preview, but takes you to LIVE Members Area'
@@ -113,12 +116,12 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Da
 	//-----------------------------------------
 	// Navigate to Your Customers - Sub Tab   | TODO - Re-Implement when issues are resolved
 	//-----------------------------------------
-	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Customers/Feedback/Your_Customers'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Customers/Feedback/Your_Customers'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	//----------------------------------------- TODO - Re-Implement when issues are resolved
 	// Verify Content on Your Customers Page  |
 	//-----------------------------------------
-	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Your_Customers'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Your_Customers'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 	//-----------------------------------------
 	// Navigate to Awareness - Sub Tab        |

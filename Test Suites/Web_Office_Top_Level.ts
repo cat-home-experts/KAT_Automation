@@ -32,4 +32,16 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Web_Office/Navigation_Checks/Directories/Directories_Top</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>823b1360-6660-4eec-9dda-d91639ab2719</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Navigation_Checks/Feedback/Feedback_Top</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>dff35ecd-515e-4f5a-abc0-df0ac3e440b3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Navigation_Checks/Consumers/Consumers_Top</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

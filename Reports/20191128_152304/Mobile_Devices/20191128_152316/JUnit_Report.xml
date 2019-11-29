@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mobile_Devices" time="165.357" tests="1" failures="0" errors="0">
+   <testsuite name="Mobile_Devices" tests="1" failures="0" errors="0" time="165.357" timestamp="2019-11-28 15:29:58" hostname="DavidHo - VETTEDSP36RF.check.local" id="Test Suites/Mobile_Devices">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\davidho\\Katalon Studio\\Start\\Reports\\20191128_152304\\Mobile_Devices\\20191128_152316"/>
+         <property name="logFiles" value="C:\\Users\\davidho\\Katalon Studio\\Start\\Reports\\20191128_152304\\Mobile_Devices\\20191128_152316\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="DavidHo - VETTEDSP36RF.check.local"/>
+         <property name="os" value="Windows 10 32bit"/>
+         <property name="katalonVersion" value="7.1.0.1"/>
+         <property name="browser" value="Chrome 78.0.3904.108"/>
+         <property name="hostAddress" value="10.0.11.243"/>
+         <property name="sessionId" value="9ff06e58ba2bc34aafafc81afaf29bd2"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Mobile_Devices/Default_Device_Dev" time="165.047" classname="Test Cases/Mobile_Devices/Default_Device_Dev" status="PASSED">
+         <system-out><![CDATA[2019-11-28 15:29:58 - [TEST_CASE][PASSED] - Test Cases/Mobile_Devices/Default_Device_Dev: Test Cases/Mobile_Devices/Default_Device_Dev
+
+2019-11-28 15:29:58 - [TEST_STEP][PASSED] - for ([row = 1, row <= findTestData("Mobile_Test_Data").getRowNumbers(), (internal.GlobalVariable.row++)]): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2019-11-28 15:29:59 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Setup"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' successfully
+
+2019-11-28 15:29:59 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Setup: Test Cases/Reusable_Test_Sequences/CAT_Setup
+
+2019-11-28 15:30:00 - [TEST_STEP][PASSED] - "URL - Set from the ENVIRONMENT PROFILE ": null
+
+2019-11-28 15:30:00 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://www.preview.checkatrade.com/'
+
+2019-11-28 15:30:00 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-11-28 15:30:00 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-11-28 15:30:10 - [MESSAGE][PASSED] - Browser is opened with url: 'https://www.preview.checkatrade.com/'
+
+2019-11-28 15:30:10 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-11-28 15:30:14 - [MESSAGE][PASSED] - Current window maximized
+
+2019-11-28 15:30:14 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-28 15:30:15 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-28 15:30:15 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Page_Checkatrade Find a tradesperson you can trust/a_Search"), 25): Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Search' is visible
+
+2019-11-28 15:30:15 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Search' is visible
+
+2019-11-28 15:30:15 - [TEST_STEP][PASSED] - try: null
+
+2019-11-28 15:30:15 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("Page_Checkatrade Find a tradesperson you can trust/div_close"), 1, OPTIONAL)): null
+
+2019-11-28 15:30:15 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close' is present
+
+2019-11-28 15:30:15 - [TEST_STEP][PASSED] - click(findTestObject("Page_Checkatrade Find a tradesperson you can trust/div_close")): Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close' is clicked on
+
+2019-11-28 15:30:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close' is clicked on
+
+2019-11-28 15:30:15 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2019-11-28 15:30:15 - [TEST_STEP][PASSED] - "COOKIE POPOUT REMOVED - Confirmed": null
+
+2019-11-28 15:30:15 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-28 15:30:16 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-28 15:30:16 - [TEST_STEP][PASSED] - verifyTextNotPresent("Checkatrade.com uses cookies to make sure you get the best browsing experience", false): Text 'Checkatrade.com uses cookies to make sure you get the best browsing experience' is not present on page
+
+2019-11-28 15:30:17 - [MESSAGE][PASSED] - Text 'Checkatrade.com uses cookies to make sure you get the best browsing experience' is not present on page
+
+2019-11-28 15:30:17 - [TEST_STEP][PASSED] - try: null
+
+2019-11-28 15:30:17 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("Page_Checkatrade Find a tradesperson you can trust/div_close_1"), 1, OPTIONAL)): null
+
+2019-11-28 15:30:17 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close_1' is present
+
+2019-11-28 15:30:17 - [TEST_STEP][PASSED] - click(findTestObject("Page_Checkatrade Find a tradesperson you can trust/div_close_1")): Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close_1' is clicked on
+
+2019-11-28 15:30:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close_1' is clicked on
+
+2019-11-28 15:30:17 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2019-11-28 15:30:17 - [TEST_STEP][PASSED] - "PRIVACY POPOUT REMOVED - Confirmed": null
+
+2019-11-28 15:30:17 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-28 15:30:18 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-28 15:30:18 - [TEST_STEP][PASSED] - verifyTextNotPresent("We have updated our Privacy Policy, please review this", false): Text 'We have updated our Privacy Policy, please review this' is not present on page
+
+2019-11-28 15:30:18 - [MESSAGE][PASSED] - Text 'We have updated our Privacy Policy, please review this' is not present on page
+
+2019-11-28 15:30:18 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-28 15:30:18 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-28 15:30:18 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-28 15:30:18 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-28 15:30:18 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' successfully
+
+2019-11-28 15:30:18 - [TEST_STEP][PASSED] - " ALTERNATIVE SCREEN RESOLUTION SELECTION METHOD": null
+
+2019-11-28 15:30:18 - [TEST_STEP][PASSED] - " ACTUAL SCREEN RESOLUTION SELECTION METHOD USED": null
+
+2019-11-28 15:30:18 - [TEST_STEP][PASSED] - XCOORD = Integer.parseInt(findTestData("searchTestData").getValue("X_COORD", row)): null
+
+2019-11-28 15:30:18 - [TEST_STEP][PASSED] - YCOORD = Integer.parseInt(findTestData("searchTestData").getValue("Y_COORD", row)): null
+
+2019-11-28 15:30:18 - [TEST_STEP][PASSED] - setViewPortSize(XCOORD, YCOORD): Viewport is set to new size with width = 800 and height = 1000
+
+2019-11-28 15:30:19 - [MESSAGE][PASSED] - Viewport is set to new size with width = 800 and height = 1000
+
+2019-11-28 15:30:19 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-28 15:30:19 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-28 15:30:19 - [TEST_STEP][PASSED] - out.println("Set View Port Size is currently SET to X AXIS " + XCOORD + " Y AXIS " + YCOORD): null
+
+2019-11-28 15:30:19 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Find a tradesperson you can trust/input_Search through"), findTestData("searchTestData").getValue("tradeClassification", row)): Text 'Tree Surgeon' is set on object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/input_Search through'
+
+2019-11-28 15:30:19 - [MESSAGE][PASSED] - Text 'Tree Surgeon' is set on object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/input_Search through'
+
+2019-11-28 15:30:19 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-28 15:30:19 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-28 15:30:19 - [TEST_STEP][PASSED] - "Set and SEARCH SELECTED LOCATION": null
+
+2019-11-28 15:30:19 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_location"), findTestData("searchTestData").getValue("tradeLocation", row)): Text 'Gosport' is set on object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_location'
+
+2019-11-28 15:30:20 - [MESSAGE][PASSED] - Text 'Gosport' is set on object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_location'
+
+2019-11-28 15:30:20 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-28 15:30:20 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-28 15:30:20 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search"), 5): Scroll to object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search' successfully
+
+2019-11-28 15:30:20 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search' successfully
+
+2019-11-28 15:30:20 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-28 15:30:20 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-28 15:30:20 - [TEST_STEP][PASSED] - "-------------": null
+
+2019-11-28 15:30:20 - [TEST_STEP][PASSED] - doubleClick(findTestObject("Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search")): Object: 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search' is double clicked on
+
+2019-11-28 15:30:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search' is double clicked on
+
+2019-11-28 15:30:25 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-28 15:30:25 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-28 15:30:25 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result"), 5): Scroll to object 'Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result' successfully
+
+2019-11-28 15:30:25 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result' successfully
+
+2019-11-28 15:30:25 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result"), 5): Object 'Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result' is visible
+
+2019-11-28 15:30:25 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result' is visible
+
+2019-11-28 15:30:25 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-28 15:30:26 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-28 15:30:26 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("tradeLocationVerification", row), false, CONTINUE_ON_FAILURE): Text 'Crown Thinning in Gosport' is present on page 
+
+2019-11-28 15:30:27 - [MESSAGE][PASSED] - Text 'Crown Thinning in Gosport' is present on page 
+
+2019-11-28 15:30:27 - [TEST_STEP][PASSED] - "Expected cantantenated text is Returned": null
+
+2019-11-28 15:30:27 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-28 15:30:27 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2019-11-28 15:30:27 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2019-11-28 15:30:27 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2019-11-28 15:30:27 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-11-28 15:30:28 - [MESSAGE][PASSED] - Browser is closed
+
+2019-11-28 15:30:28 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-28 15:30:28 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-28 15:30:28 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-28 15:30:28 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-28 15:30:28 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2019-11-28 15:30:28 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Setup"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' successfully
+
+2019-11-28 15:30:28 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Setup: Test Cases/Reusable_Test_Sequences/CAT_Setup
+
+2019-11-28 15:30:28 - [TEST_STEP][PASSED] - "URL - Set from the ENVIRONMENT PROFILE ": null
+
+2019-11-28 15:30:28 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://www.preview.checkatrade.com/'
+
+2019-11-28 15:30:28 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-11-28 15:30:41 - [MESSAGE][PASSED] - Browser is opened with url: 'https://www.preview.checkatrade.com/'
+
+2019-11-28 15:30:41 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-11-28 15:30:45 - [MESSAGE][PASSED] - Current window maximized
+
+2019-11-28 15:30:45 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-28 15:30:45 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-28 15:30:45 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Page_Checkatrade Find a tradesperson you can trust/a_Search"), 25): Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Search' is visible
+
+2019-11-28 15:30:45 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Search' is visible
+
+2019-11-28 15:30:45 - [TEST_STEP][PASSED] - try: null
+
+2019-11-28 15:30:45 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("Page_Checkatrade Find a tradesperson you can trust/div_close"), 1, OPTIONAL)): null
+
+2019-11-28 15:30:46 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close' is present
+
+2019-11-28 15:30:46 - [TEST_STEP][PASSED] - click(findTestObject("Page_Checkatrade Find a tradesperson you can trust/div_close")): Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close' is clicked on
+
+2019-11-28 15:30:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close' is clicked on
+
+2019-11-28 15:30:47 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2019-11-28 15:30:47 - [TEST_STEP][PASSED] - "COOKIE POPOUT REMOVED - Confirmed": null
+
+2019-11-28 15:30:47 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-28 15:30:48 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-28 15:30:48 - [TEST_STEP][PASSED] - verifyTextNotPresent("Checkatrade.com uses cookies to make sure you get the best browsing experience", false): Text 'Checkatrade.com uses cookies to make sure you get the best browsing experience' is not present on page
+
+2019-11-28 15:30:48 - [MESSAGE][PASSED] - Text 'Checkatrade.com uses cookies to make sure you get the best browsing experience' is not present on page
+
+2019-11-28 15:30:48 - [TEST_STEP][PASSED] - try: null
+
+2019-11-28 15:30:48 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("Page_Checkatrade Find a tradesperson you can trust/div_close_1"), 1, OPTIONAL)): null
+
+2019-11-28 15:30:48 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close_1' is present
+
+2019-11-28 15:30:48 - [TEST_STEP][PASSED] - click(findTestObject("Page_Checkatrade Find a tradesperson you can trust/div_close_1")): Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close_1' is clicked on
+
+2019-11-28 15:30:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close_1' is clicked on
+
+2019-11-28 15:30:48 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2019-11-28 15:30:48 - [TEST_STEP][PASSED] - "PRIVACY POPOUT REMOVED - Confirmed": null
+
+2019-11-28 15:30:48 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-28 15:30:49 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-28 15:30:49 - [TEST_STEP][PASSED] - verifyTextNotPresent("We have updated our Privacy Policy, please review this", false): Text 'We have updated our Privacy Policy, please review this' is not present on page
+
+2019-11-28 15:30:50 - [MESSAGE][PASSED] - Text 'We have updated our Privacy Policy, please review this' is not present on page
+
+2019-11-28 15:30:50 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-28 15:30:50 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-28 15:30:50 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-28 15:30:50 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-28 15:30:50 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' successfully
+
+2019-11-28 15:30:50 - [TEST_STEP][PASSED] - " ALTERNATIVE SCREEN RESOLUTION SELECTION METHOD": null
+
+2019-11-28 15:30:50 - [TEST_STEP][PASSED] - " ACTUAL SCREEN RESOLUTION SELECTION METHOD USED": null
+
+2019-11-28 15:30:50 - [TEST_STEP][PASSED] - XCOORD = Integer.parseInt(findTestData("searchTestData").getValue("X_COORD", row)): null
+
+2019-11-28 15:30:50 - [TEST_STEP][PASSED] - YCOORD = Integer.parseInt(findTestData("searchTestData").getValue("Y_COORD", row)): null
+
+2019-11-28 15:30:50 - [TEST_STEP][PASSED] - setViewPortSize(XCOORD, YCOORD): Viewport is set to new size with width = 400 and height = 600
+
+2019-11-28 15:30:50 - [MESSAGE][PASSED] - Viewport is set to new size with width = 400 and height = 600
+
+2019-11-28 15:30:50 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-28 15:30:50 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-28 15:30:50 - [TEST_STEP][PASSED] - out.println("Set View Port Size is currently SET to X AXIS " + XCOORD + " Y AXIS " + YCOORD): null
+
+2019-11-28 15:30:50 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Find a tradesperson you can trust/input_Search through"), findTestData("searchTestData").getValue("tradeClassification", row)): Text 'Tree Surgeon' is set on object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/input_Search through'
+
+2019-11-28 15:30:54 - [MESSAGE][PASSED] - Text 'Tree Surgeon' is set on object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/input_Search through'
+
+2019-11-28 15:30:54 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-28 15:30:54 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-28 15:30:54 - [TEST_STEP][PASSED] - "Set and SEARCH SELECTED LOCATION": null
+
+2019-11-28 15:30:54 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_location"), findTestData("searchTestData").getValue("tradeLocation", row)): Text 'PO12 2HE' is set on object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_location'
+
+2019-11-28 15:30:55 - [MESSAGE][PASSED] - Text 'PO12 2HE' is set on object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_location'
+
+2019-11-28 15:30:55 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-28 15:30:55 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-28 15:30:55 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search"), 5): Scroll to object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search' successfully
+
+2019-11-28 15:30:55 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search' successfully
+
+2019-11-28 15:30:55 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-28 15:30:56 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-28 15:30:56 - [TEST_STEP][PASSED] - "-------------": null
+
+2019-11-28 15:30:56 - [TEST_STEP][PASSED] - doubleClick(findTestObject("Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search")): Object: 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search' is double clicked on
+
+2019-11-28 15:30:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search' is double clicked on
+
+2019-11-28 15:30:58 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-28 15:30:58 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-28 15:30:58 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result"), 5): Scroll to object 'Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result' successfully
+
+2019-11-28 15:30:58 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result' successfully
+
+2019-11-28 15:30:58 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result"), 5): Object 'Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result' is visible
+
+2019-11-28 15:30:58 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result' is visible
+
+2019-11-28 15:30:58 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-28 15:30:59 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-28 15:30:59 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("tradeLocationVerification", row), false, CONTINUE_ON_FAILURE): Text 'Crown Thinning in PO12 2HE' is present on page 
+
+2019-11-28 15:31:00 - [MESSAGE][PASSED] - Text 'Crown Thinning in PO12 2HE' is present on page 
+
+2019-11-28 15:31:00 - [TEST_STEP][PASSED] - "Expected cantantenated text is Returned": null
+
+2019-11-28 15:31:00 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-28 15:31:00 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2019-11-28 15:31:00 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2019-11-28 15:31:00 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2019-11-28 15:31:00 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-11-28 15:31:01 - [MESSAGE][PASSED] - Browser is closed
+
+2019-11-28 15:31:01 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-28 15:31:01 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-28 15:31:01 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-28 15:31:01 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-28 15:31:01 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2019-11-28 15:31:01 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Setup"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' successfully
+
+2019-11-28 15:31:01 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Setup: Test Cases/Reusable_Test_Sequences/CAT_Setup
+
+2019-11-28 15:31:01 - [TEST_STEP][PASSED] - "URL - Set from the ENVIRONMENT PROFILE ": null
+
+2019-11-28 15:31:01 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://www.preview.checkatrade.com/'
+
+2019-11-28 15:31:01 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-11-28 15:31:12 - [MESSAGE][PASSED] - Browser is opened with url: 'https://www.preview.checkatrade.com/'
+
+2019-11-28 15:31:12 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-11-28 15:31:17 - [MESSAGE][PASSED] - Current window maximized
+
+2019-11-28 15:31:17 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-28 15:31:17 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-28 15:31:17 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Page_Checkatrade Find a tradesperson you can trust/a_Search"), 25): Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Search' is visible
+
+2019-11-28 15:31:17 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Search' is visible
+
+2019-11-28 15:31:17 - [TEST_STEP][PASSED] - try: null
+
+2019-11-28 15:31:17 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("Page_Checkatrade Find a tradesperson you can trust/div_close"), 1, OPTIONAL)): null
+
+2019-11-28 15:31:18 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close' is present
+
+2019-11-28 15:31:18 - [TEST_STEP][PASSED] - click(findTestObject("Page_Checkatrade Find a tradesperson you can trust/div_close")): Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close' is clicked on
+
+2019-11-28 15:31:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close' is clicked on
+
+2019-11-28 15:31:18 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2019-11-28 15:31:18 - [TEST_STEP][PASSED] - "COOKIE POPOUT REMOVED - Confirmed": null
+
+2019-11-28 15:31:18 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-28 15:31:19 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-28 15:31:19 - [TEST_STEP][PASSED] - verifyTextNotPresent("Checkatrade.com uses cookies to make sure you get the best browsing experience", false): Text 'Checkatrade.com uses cookies to make sure you get the best browsing experience' is not present on page
+
+2019-11-28 15:31:19 - [MESSAGE][PASSED] - Text 'Checkatrade.com uses cookies to make sure you get the best browsing experience' is not present on page
+
+2019-11-28 15:31:19 - [TEST_STEP][PASSED] - try: null
+
+2019-11-28 15:31:19 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("Page_Checkatrade Find a tradesperson you can trust/div_close_1"), 1, OPTIONAL)): null
+
+2019-11-28 15:31:19 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close_1' is present
+
+2019-11-28 15:31:19 - [TEST_STEP][PASSED] - click(findTestObject("Page_Checkatrade Find a tradesperson you can trust/div_close_1")): Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close_1' is clicked on
+
+2019-11-28 15:31:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close_1' is clicked on
+
+2019-11-28 15:31:19 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2019-11-28 15:31:19 - [TEST_STEP][PASSED] - "PRIVACY POPOUT REMOVED - Confirmed": null
+
+2019-11-28 15:31:19 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-28 15:31:20 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-28 15:31:20 - [TEST_STEP][PASSED] - verifyTextNotPresent("We have updated our Privacy Policy, please review this", false): Text 'We have updated our Privacy Policy, please review this' is not present on page
+
+2019-11-28 15:31:21 - [MESSAGE][PASSED] - Text 'We have updated our Privacy Policy, please review this' is not present on page
+
+2019-11-28 15:31:21 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-28 15:31:21 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-28 15:31:21 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-28 15:31:21 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-28 15:31:21 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' successfully
+
+2019-11-28 15:31:21 - [TEST_STEP][PASSED] - " ALTERNATIVE SCREEN RESOLUTION SELECTION METHOD": null
+
+2019-11-28 15:31:21 - [TEST_STEP][PASSED] - " ACTUAL SCREEN RESOLUTION SELECTION METHOD USED": null
+
+2019-11-28 15:31:21 - [TEST_STEP][PASSED] - XCOORD = Integer.parseInt(findTestData("searchTestData").getValue("X_COORD", row)): null
+
+2019-11-28 15:31:21 - [TEST_STEP][PASSED] - YCOORD = Integer.parseInt(findTestData("searchTestData").getValue("Y_COORD", row)): null
+
+2019-11-28 15:31:21 - [TEST_STEP][PASSED] - setViewPortSize(XCOORD, YCOORD): Viewport is set to new size with width = 500 and height = 700
+
+2019-11-28 15:31:21 - [MESSAGE][PASSED] - Viewport is set to new size with width = 500 and height = 700
+
+2019-11-28 15:31:21 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-28 15:31:21 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-28 15:31:21 - [TEST_STEP][PASSED] - out.println("Set View Port Size is currently SET to X AXIS " + XCOORD + " Y AXIS " + YCOORD): null
+
+2019-11-28 15:31:21 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Find a tradesperson you can trust/input_Search through"), findTestData("searchTestData").getValue("tradeClassification", row)): Text 'Electrician' is set on object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/input_Search through'
+
+2019-11-28 15:31:22 - [MESSAGE][PASSED] - Text 'Electrician' is set on object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/input_Search through'
+
+2019-11-28 15:31:22 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-28 15:31:22 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-28 15:31:22 - [TEST_STEP][PASSED] - "Set and SEARCH SELECTED LOCATION": null
+
+2019-11-28 15:31:22 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_location"), findTestData("searchTestData").getValue("tradeLocation", row)): Text 'Orkney' is set on object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_location'
+
+2019-11-28 15:31:23 - [MESSAGE][PASSED] - Text 'Orkney' is set on object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_location'
+
+2019-11-28 15:31:23 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-28 15:31:23 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-28 15:31:23 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search"), 5): Scroll to object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search' successfully
+
+2019-11-28 15:31:24 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search' successfully
+
+2019-11-28 15:31:24 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-28 15:31:24 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-28 15:31:24 - [TEST_STEP][PASSED] - "-------------": null
+
+2019-11-28 15:31:24 - [TEST_STEP][PASSED] - doubleClick(findTestObject("Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search")): Object: 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search' is double clicked on
+
+2019-11-28 15:31:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search' is double clicked on
+
+2019-11-28 15:31:36 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-28 15:31:36 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-28 15:31:36 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result"), 5): Scroll to object 'Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result' successfully
+
+2019-11-28 15:31:36 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result' successfully
+
+2019-11-28 15:31:36 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result"), 5): Object 'Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result' is visible
+
+2019-11-28 15:31:37 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result' is visible
+
+2019-11-28 15:31:37 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-28 15:31:38 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-28 15:31:38 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("tradeLocationVerification", row), false, CONTINUE_ON_FAILURE): Text 'Electric Boiler Repairs in Orkney' is present on page 
+
+2019-11-28 15:31:38 - [MESSAGE][PASSED] - Text 'Electric Boiler Repairs in Orkney' is present on page 
+
+2019-11-28 15:31:38 - [TEST_STEP][PASSED] - "Expected cantantenated text is Returned": null
+
+2019-11-28 15:31:38 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-28 15:31:38 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2019-11-28 15:31:38 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2019-11-28 15:31:38 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2019-11-28 15:31:38 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-11-28 15:31:39 - [MESSAGE][PASSED] - Browser is closed
+
+2019-11-28 15:31:39 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-28 15:31:39 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-28 15:31:39 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-28 15:31:39 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-28 15:31:39 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2019-11-28 15:31:39 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Setup"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' successfully
+
+2019-11-28 15:31:39 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Setup: Test Cases/Reusable_Test_Sequences/CAT_Setup
+
+2019-11-28 15:31:39 - [TEST_STEP][PASSED] - "URL - Set from the ENVIRONMENT PROFILE ": null
+
+2019-11-28 15:31:39 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://www.preview.checkatrade.com/'
+
+2019-11-28 15:31:39 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-11-28 15:31:52 - [MESSAGE][PASSED] - Browser is opened with url: 'https://www.preview.checkatrade.com/'
+
+2019-11-28 15:31:52 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-11-28 15:31:56 - [MESSAGE][PASSED] - Current window maximized
+
+2019-11-28 15:31:56 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-28 15:31:56 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-28 15:31:56 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Page_Checkatrade Find a tradesperson you can trust/a_Search"), 25): Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Search' is visible
+
+2019-11-28 15:31:57 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Search' is visible
+
+2019-11-28 15:31:57 - [TEST_STEP][PASSED] - try: null
+
+2019-11-28 15:31:57 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("Page_Checkatrade Find a tradesperson you can trust/div_close"), 1, OPTIONAL)): null
+
+2019-11-28 15:31:57 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close' is present
+
+2019-11-28 15:31:57 - [TEST_STEP][PASSED] - click(findTestObject("Page_Checkatrade Find a tradesperson you can trust/div_close")): Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close' is clicked on
+
+2019-11-28 15:31:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close' is clicked on
+
+2019-11-28 15:31:57 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2019-11-28 15:31:57 - [TEST_STEP][PASSED] - "COOKIE POPOUT REMOVED - Confirmed": null
+
+2019-11-28 15:31:57 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-28 15:31:58 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-28 15:31:58 - [TEST_STEP][PASSED] - verifyTextNotPresent("Checkatrade.com uses cookies to make sure you get the best browsing experience", false): Text 'Checkatrade.com uses cookies to make sure you get the best browsing experience' is not present on page
+
+2019-11-28 15:31:58 - [MESSAGE][PASSED] - Text 'Checkatrade.com uses cookies to make sure you get the best browsing experience' is not present on page
+
+2019-11-28 15:31:58 - [TEST_STEP][PASSED] - try: null
+
+2019-11-28 15:31:58 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("Page_Checkatrade Find a tradesperson you can trust/div_close_1"), 1, OPTIONAL)): null
+
+2019-11-28 15:31:58 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close_1' is present
+
+2019-11-28 15:31:58 - [TEST_STEP][PASSED] - click(findTestObject("Page_Checkatrade Find a tradesperson you can trust/div_close_1")): Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close_1' is clicked on
+
+2019-11-28 15:31:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close_1' is clicked on
+
+2019-11-28 15:31:58 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2019-11-28 15:31:58 - [TEST_STEP][PASSED] - "PRIVACY POPOUT REMOVED - Confirmed": null
+
+2019-11-28 15:31:58 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-28 15:31:59 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-28 15:31:59 - [TEST_STEP][PASSED] - verifyTextNotPresent("We have updated our Privacy Policy, please review this", false): Text 'We have updated our Privacy Policy, please review this' is not present on page
+
+2019-11-28 15:32:00 - [MESSAGE][PASSED] - Text 'We have updated our Privacy Policy, please review this' is not present on page
+
+2019-11-28 15:32:00 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-28 15:32:00 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-28 15:32:00 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-28 15:32:00 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-28 15:32:00 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' successfully
+
+2019-11-28 15:32:00 - [TEST_STEP][PASSED] - " ALTERNATIVE SCREEN RESOLUTION SELECTION METHOD": null
+
+2019-11-28 15:32:00 - [TEST_STEP][PASSED] - " ACTUAL SCREEN RESOLUTION SELECTION METHOD USED": null
+
+2019-11-28 15:32:00 - [TEST_STEP][PASSED] - XCOORD = Integer.parseInt(findTestData("searchTestData").getValue("X_COORD", row)): null
+
+2019-11-28 15:32:00 - [TEST_STEP][PASSED] - YCOORD = Integer.parseInt(findTestData("searchTestData").getValue("Y_COORD", row)): null
+
+2019-11-28 15:32:00 - [TEST_STEP][PASSED] - setViewPortSize(XCOORD, YCOORD): Viewport is set to new size with width = 700 and height = 900
+
+2019-11-28 15:32:01 - [MESSAGE][PASSED] - Viewport is set to new size with width = 700 and height = 900
+
+2019-11-28 15:32:01 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-28 15:32:01 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-28 15:32:01 - [TEST_STEP][PASSED] - out.println("Set View Port Size is currently SET to X AXIS " + XCOORD + " Y AXIS " + YCOORD): null
+
+2019-11-28 15:32:01 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Find a tradesperson you can trust/input_Search through"), findTestData("searchTestData").getValue("tradeClassification", row)): Text 'Diagnostic Testing' is set on object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/input_Search through'
+
+2019-11-28 15:32:02 - [MESSAGE][PASSED] - Text 'Diagnostic Testing' is set on object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/input_Search through'
+
+2019-11-28 15:32:02 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-28 15:32:02 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-28 15:32:02 - [TEST_STEP][PASSED] - "Set and SEARCH SELECTED LOCATION": null
+
+2019-11-28 15:32:02 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_location"), findTestData("searchTestData").getValue("tradeLocation", row)): Text 'Angmering' is set on object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_location'
+
+2019-11-28 15:32:02 - [MESSAGE][PASSED] - Text 'Angmering' is set on object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_location'
+
+2019-11-28 15:32:02 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-28 15:32:02 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-28 15:32:02 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search"), 5): Scroll to object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search' successfully
+
+2019-11-28 15:32:03 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search' successfully
+
+2019-11-28 15:32:03 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-28 15:32:03 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-28 15:32:03 - [TEST_STEP][PASSED] - "-------------": null
+
+2019-11-28 15:32:03 - [TEST_STEP][PASSED] - doubleClick(findTestObject("Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search")): Object: 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search' is double clicked on
+
+2019-11-28 15:32:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search' is double clicked on
+
+2019-11-28 15:32:09 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-28 15:32:09 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-28 15:32:09 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result"), 5): Scroll to object 'Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result' successfully
+
+2019-11-28 15:32:09 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result' successfully
+
+2019-11-28 15:32:09 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result"), 5): Object 'Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result' is visible
+
+2019-11-28 15:32:09 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result' is visible
+
+2019-11-28 15:32:09 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-28 15:32:10 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-28 15:32:10 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("tradeLocationVerification", row), false, CONTINUE_ON_FAILURE): Text 'Diagnostic Testing in Angmering' is present on page 
+
+2019-11-28 15:32:11 - [MESSAGE][PASSED] - Text 'Diagnostic Testing in Angmering' is present on page 
+
+2019-11-28 15:32:11 - [TEST_STEP][PASSED] - "Expected cantantenated text is Returned": null
+
+2019-11-28 15:32:11 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-28 15:32:11 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2019-11-28 15:32:11 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2019-11-28 15:32:11 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2019-11-28 15:32:11 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-11-28 15:32:12 - [MESSAGE][PASSED] - Browser is closed
+
+2019-11-28 15:32:12 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-28 15:32:12 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-28 15:32:12 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-28 15:32:12 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-28 15:32:12 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2019-11-28 15:32:12 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Setup"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' successfully
+
+2019-11-28 15:32:12 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Setup: Test Cases/Reusable_Test_Sequences/CAT_Setup
+
+2019-11-28 15:32:12 - [TEST_STEP][PASSED] - "URL - Set from the ENVIRONMENT PROFILE ": null
+
+2019-11-28 15:32:12 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://www.preview.checkatrade.com/'
+
+2019-11-28 15:32:12 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-11-28 15:32:26 - [MESSAGE][PASSED] - Browser is opened with url: 'https://www.preview.checkatrade.com/'
+
+2019-11-28 15:32:26 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-11-28 15:32:31 - [MESSAGE][PASSED] - Current window maximized
+
+2019-11-28 15:32:31 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-28 15:32:31 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-28 15:32:31 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Page_Checkatrade Find a tradesperson you can trust/a_Search"), 25): Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Search' is visible
+
+2019-11-28 15:32:31 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Search' is visible
+
+2019-11-28 15:32:31 - [TEST_STEP][PASSED] - try: null
+
+2019-11-28 15:32:31 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("Page_Checkatrade Find a tradesperson you can trust/div_close"), 1, OPTIONAL)): null
+
+2019-11-28 15:32:31 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close' is present
+
+2019-11-28 15:32:31 - [TEST_STEP][PASSED] - click(findTestObject("Page_Checkatrade Find a tradesperson you can trust/div_close")): Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close' is clicked on
+
+2019-11-28 15:32:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close' is clicked on
+
+2019-11-28 15:32:32 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2019-11-28 15:32:32 - [TEST_STEP][PASSED] - "COOKIE POPOUT REMOVED - Confirmed": null
+
+2019-11-28 15:32:32 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-28 15:32:33 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-28 15:32:33 - [TEST_STEP][PASSED] - verifyTextNotPresent("Checkatrade.com uses cookies to make sure you get the best browsing experience", false): Text 'Checkatrade.com uses cookies to make sure you get the best browsing experience' is not present on page
+
+2019-11-28 15:32:33 - [MESSAGE][PASSED] - Text 'Checkatrade.com uses cookies to make sure you get the best browsing experience' is not present on page
+
+2019-11-28 15:32:33 - [TEST_STEP][PASSED] - try: null
+
+2019-11-28 15:32:33 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("Page_Checkatrade Find a tradesperson you can trust/div_close_1"), 1, OPTIONAL)): null
+
+2019-11-28 15:32:33 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close_1' is present
+
+2019-11-28 15:32:33 - [TEST_STEP][PASSED] - click(findTestObject("Page_Checkatrade Find a tradesperson you can trust/div_close_1")): Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close_1' is clicked on
+
+2019-11-28 15:32:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_close_1' is clicked on
+
+2019-11-28 15:32:33 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2019-11-28 15:32:33 - [TEST_STEP][PASSED] - "PRIVACY POPOUT REMOVED - Confirmed": null
+
+2019-11-28 15:32:33 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-28 15:32:34 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-28 15:32:34 - [TEST_STEP][PASSED] - verifyTextNotPresent("We have updated our Privacy Policy, please review this", false): Text 'We have updated our Privacy Policy, please review this' is not present on page
+
+2019-11-28 15:32:35 - [MESSAGE][PASSED] - Text 'We have updated our Privacy Policy, please review this' is not present on page
+
+2019-11-28 15:32:35 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-28 15:32:35 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-28 15:32:35 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-28 15:32:35 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-28 15:32:35 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' successfully
+
+2019-11-28 15:32:35 - [TEST_STEP][PASSED] - " ALTERNATIVE SCREEN RESOLUTION SELECTION METHOD": null
+
+2019-11-28 15:32:35 - [TEST_STEP][PASSED] - " ACTUAL SCREEN RESOLUTION SELECTION METHOD USED": null
+
+2019-11-28 15:32:35 - [TEST_STEP][PASSED] - XCOORD = Integer.parseInt(findTestData("searchTestData").getValue("X_COORD", row)): null
+
+2019-11-28 15:32:35 - [TEST_STEP][PASSED] - YCOORD = Integer.parseInt(findTestData("searchTestData").getValue("Y_COORD", row)): null
+
+2019-11-28 15:32:35 - [TEST_STEP][PASSED] - setViewPortSize(XCOORD, YCOORD): Viewport is set to new size with width = 600 and height = 800
+
+2019-11-28 15:32:36 - [MESSAGE][PASSED] - Viewport is set to new size with width = 600 and height = 800
+
+2019-11-28 15:32:36 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-28 15:32:36 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-28 15:32:36 - [TEST_STEP][PASSED] - out.println("Set View Port Size is currently SET to X AXIS " + XCOORD + " Y AXIS " + YCOORD): null
+
+2019-11-28 15:32:36 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Find a tradesperson you can trust/input_Search through"), findTestData("searchTestData").getValue("tradeClassification", row)): Text 'Garage/Vehicle Services' is set on object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/input_Search through'
+
+2019-11-28 15:32:36 - [MESSAGE][PASSED] - Text 'Garage/Vehicle Services' is set on object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/input_Search through'
+
+2019-11-28 15:32:36 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-28 15:32:36 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-28 15:32:36 - [TEST_STEP][PASSED] - "Set and SEARCH SELECTED LOCATION": null
+
+2019-11-28 15:32:36 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_location"), findTestData("searchTestData").getValue("tradeLocation", row)): Text 'Rugby' is set on object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_location'
+
+2019-11-28 15:32:37 - [MESSAGE][PASSED] - Text 'Rugby' is set on object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_location'
+
+2019-11-28 15:32:37 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-28 15:32:37 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-28 15:32:37 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search"), 5): Scroll to object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search' successfully
+
+2019-11-28 15:32:37 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search' successfully
+
+2019-11-28 15:32:37 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-28 15:32:37 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-28 15:32:37 - [TEST_STEP][PASSED] - "-------------": null
+
+2019-11-28 15:32:37 - [TEST_STEP][PASSED] - doubleClick(findTestObject("Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search")): Object: 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search' is double clicked on
+
+2019-11-28 15:32:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search' is double clicked on
+
+2019-11-28 15:32:39 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-11-28 15:32:39 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-11-28 15:32:39 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result"), 5): Scroll to object 'Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result' successfully
+
+2019-11-28 15:32:39 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result' successfully
+
+2019-11-28 15:32:39 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result"), 5): Object 'Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result' is visible
+
+2019-11-28 15:32:39 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result' is visible
+
+2019-11-28 15:32:39 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-28 15:32:40 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-28 15:32:40 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("tradeLocationVerification", row), false, CONTINUE_ON_FAILURE): Text 'Air Conditioning Servicing/Repair in Rugby' is present on page 
+
+2019-11-28 15:32:41 - [MESSAGE][PASSED] - Text 'Air Conditioning Servicing/Repair in Rugby' is present on page 
+
+2019-11-28 15:32:41 - [TEST_STEP][PASSED] - "Expected cantantenated text is Returned": null
+
+2019-11-28 15:32:41 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-11-28 15:32:41 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2019-11-28 15:32:41 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2019-11-28 15:32:41 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2019-11-28 15:32:41 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-11-28 15:32:43 - [MESSAGE][PASSED] - Browser is closed
+
+2019-11-28 15:32:43 - [MESSAGE][INFO] - =================== Smart XPath Report =======================
+
+2019-11-28 15:32:43 - [MESSAGE][INFO] - Refer to the link below to preview and approve auto healing on broken test objects.
+
+2019-11-28 15:32:43 - [MESSAGE][INFO] - https://docs.katalon.com/katalon-studio/docs/auto-healing-smart-xpath.html
+
+2019-11-28 15:32:43 - [MESSAGE][INFO] - ===============================================================
+
+2019-11-28 15:32:43 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-11-28 15:29:58 - [TEST_SUITE][PASSED] - Mobile_Devices: Test Cases/Mobile_Devices/Default_Device_Dev]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

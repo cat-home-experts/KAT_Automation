@@ -26,7 +26,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 // Navigate and Verify Returned Content       |   12/11/2019    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Implemented                                |   28/11/2019    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -59,41 +59,54 @@ WebUI.waitForPageLoad(60)
 WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Feedback'), 60)
 WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/a_Feedback'))
 
+//----------------------------------------------------
+// Sync - Wait For Advanced Search Button to Appear  |
+//----------------------------------------------------
+WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice/Feedback_Top/Feedback_Graphic'), 20) // iframe actuallly :-)
+// Graphic XPATH = //*[@id="form1"]/div[3]/div/div/table/tbody/tr[2]/td[1] // iframe - //*[@id="ctl00_CP1_content"]
+WebUI.delay(2)
+WebUI.waitForPageLoad(60)
 '--------------------------------------'
 ' Verify Returned Page Content         |'
 '--------------------------------------'
-// Header
-WebUI.verifyTextPresent("Members  >  All Members", false)
-WebUI.verifyTextPresent("Next", false)
-WebUI.verifyTextPresent("Show", false)
-WebUI.verifyTextPresent("per page", false)
-WebUI.verifyTextPresent("Displaying 1 to 25 from", false)
-// Table Sample Row
-WebUI.verifyTextPresent("Astra Clean", false)
-WebUI.verifyTextPresent("124", false)
-WebUI.verifyTextPresent("Chichester", false)
-WebUI.verifyTextPresent("West Sussex", false)
-WebUI.verifyTextPresent("CARPET & UPHOLSTERY CLEANING", false)
-WebUI.verifyTextPresent("MA Department", false)
-// Footer
-WebUI.verifyTextPresent("Mailmerge", false)
-WebUI.verifyTextPresent("Export Email Addresses", false)
-WebUI.verifyTextPresent("Bulk Export Email Addresses", false)
-WebUI.verifyTextPresent("Export Mobile Numbers", false)
-WebUI.verifyTextPresent("Show results on map", false)
-WebUI.verifyTextPresent("Open Map in new Window (with All Results)", false)
-// RH Navigator View
-WebUI.verifyTextPresent("All Companies", false)
-WebUI.verifyTextPresent("Members", false)
-WebUI.verifyTextPresent("Non-Members", false)
-WebUI.verifyTextPresent("Search By", false)
-WebUI.verifyTextPresent("Mobile", false)
+// Central pane
+// WebUI.switchToFrame(findTestObject('Object Repository/WebOffice/Feedback_Top/Feedback_Graphic'))
+'Central pane - Iframe - Data Grabbed from Backend - Tool Doesnt Resolve Off The Shelf, Wil Need Tweeking at some point'
+//WebUI.verifyTextPresent("Feedback Management", false)
+//WebUI.verifyTextPresent("Feedback Quick Statistics", false)
+//WebUI.verifyTextPresent("Feedback published last month", false)
+//WebUI.verifyTextPresent("Feedback published so far this month", false)
+//WebUI.verifyTextPresent("Feedback cards entered today", false)
+//WebUI.verifyTextPresent("Web Submissions for review", false)
+//WebUI.verifyTextPresent("Feedback selected for spot checking yesterday", false)
+//WebUI.verifyTextPresent("Feedback spot checking done today", false)
+//WebUI.verifyTextPresent("Feedback Submissions (by week)", false)
+//WebUI.verifyTextPresent("Feedback - Last modified by you", false)
+//WebUI.verifyTextPresent("Data Entry Statistics (last 7 days)", false)
+// Left Hand Tree View (Top) Detail (Sample of Available)
+WebUI.verifyTextPresent("Reference Requests", false)
+WebUI.verifyTextPresent("References To Call", false)
+WebUI.verifyTextPresent("Online Reference Review", false)
+WebUI.verifyTextPresent("Free Of Charge Members", false)
+WebUI.verifyTextPresent("Non Member", false)
+WebUI.verifyTextPresent("Unused", false)
+WebUI.verifyTextPresent("Scanned Cards", false)
+WebUI.verifyTextPresent("Unvalidated Emails", false)
+WebUI.verifyTextPresent("Unvalidated Text", false)
+WebUI.verifyTextPresent("For Review", false)
+WebUI.verifyTextPresent("IP warnings", false)
+WebUI.verifyTextPresent("Invalid Details", false)
+WebUI.verifyTextPresent("Investigations", false)
+WebUI.verifyTextPresent("Published", false)
+// Left Hand Tree View (Filter) Detail (Sample of Available)
 WebUI.verifyTextPresent("Filter", false)
-WebUI.verifyTextPresent("Trader ID", false)
-WebUI.verifyTextPresent("More Options", false)
-WebUI.verifyTextPresent("Apply", false)
-WebUI.verifyTextPresent("Clear", false)
-WebUI.verifyTextPresent("Advanced Search", false)
+WebUI.verifyTextPresent("Feedback about Member", false)
+WebUI.verifyTextPresent("Submitted by", false)
+WebUI.verifyTextPresent("Work date between", false)
+WebUI.verifyTextPresent("Description contains", false)
+'Buttons'
+//WebUI.verifyTextPresent("Apply", false)
+//WebUI.verifyTextPresent("Clear", false)
 
 '--------------------------'
 ' Teardown - CLose Browser |'
