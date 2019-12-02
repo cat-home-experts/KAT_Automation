@@ -60,6 +60,7 @@ def YE_WorkCarriedOut
 // This is the first test of the suite (currently), included this (delay) to give the tool to catch it's breath TODO |        WATCH THIS SNIPPIT
 // WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Wait_a_bit'), [:], FailureHandling.OPTIONAL)     //   |
 //--------------------------------------------------------------------------------------------------------------------
+GlobalVariable.PAGE = "GiveFeedback"
 
 'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test\r\n'
 for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (1)').getRowNumbers(); (GlobalVariable.row)++) {

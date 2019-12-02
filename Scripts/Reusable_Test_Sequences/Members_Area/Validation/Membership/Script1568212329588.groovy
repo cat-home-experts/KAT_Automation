@@ -54,6 +54,8 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Membership/Page_Me
 // Stores in Project <Screenshots> Folder
 //CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Membership.png', FailureHandling.OPTIONAL)
 
+'Check URL Is The Correct One :-)'
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Check_URL'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 ////////////////////////////////////////////////////////////
 //         Verify Header Text on Key Portal Areas         //
 ////////////////////////////////////////////////////////////

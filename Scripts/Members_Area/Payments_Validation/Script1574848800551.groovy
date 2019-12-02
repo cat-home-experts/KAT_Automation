@@ -45,7 +45,7 @@ import internal.GlobalVariable as GlobalVariable
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 // Specific Page Withing members That You Want To Visit
-GlobalVariable.PAGE = "/other-useful-documents"
+//GlobalVariable.PAGE = "N/A" //Live - https://www.payatrader.com/hhpt_specific_trader.php?tid=1061477&name=Checkatrade%20HQ%20-%20TRAINING/TEST%20PAGE%20&reference=218630
 
 'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test\r\n'
 for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Payments_Data').getRowNumbers(); (GlobalVariable.row)++) {

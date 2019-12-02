@@ -77,13 +77,13 @@ WebUI.verifyTextPresent("Welcome to the Checkatrade community where you can get 
 '----------------------------------------------'
 WebUI.verifyTextPresent("You can search below to find out if there is already a discussion on something you are looking for", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("WELCOME & NEWS", false)
+//WebUI.verifyTextPresent("WELCOME & NEWS", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Community", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("NEW POST", false) // Could be flakey
 '----------------------------------------------'
-WebUI.verifyTextPresent("GET INVOLVED", false)
+//WebUI.verifyTextPresent("GET INVOLVED", false)
 '----------------------------------------------'
 
 // No LogOff on this Page - Navigaate Back

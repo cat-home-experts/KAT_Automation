@@ -65,7 +65,7 @@ import internal.GlobalVariable as GlobalVariable
 
 // POTENTIALLY :-) NOW WORKS ON ANY ENVIRONMENT
 // Specific Page Withing Members That You Want To Visit
-// GlobalVariable.PAGE = "/my-feedback"
+GlobalVariable.PAGE = "my-feedback"
 // Members Area - Notification to the Startup Process and URL_Handler
 // GlobalVariable.Portal_Subfunction = "members"
 //---------------------------------------------------------------------------------------------------------------

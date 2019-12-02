@@ -3,15 +3,6 @@
    <description>Manages all of the prosessing and validation on the &lt;Your_Experience> page</description>
    <name>Your_Experience</name>
    <tag>Feedback Your Experience</tag>
-   <comment>---------------------------------------------------------------------------------------
- Your Experience (page 1) Returned with Recommendation Selection Set to Yes (Default)  |
----------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------
- Your Experience (page 1) Recommend this trader?                                       |
----------------------------------------------------------------------------------------
- SELECTING _ NOT Recommend Restructures this PAGE, So need to exclude the below tests  
----------------------------------------------------------------------------------------------------------
- Your Experience (page 1) Hit &lt;Next> Button to Continue to &lt;Your Scores>- (page 2) If Recommend = YES    |
-                                                        OR &lt;Your Details>-(page 3) If Recommend = NO     |</comment>
+   <comment></comment>
    <testCaseGuid>e2d04bb6-7bad-4718-ba2b-f0d9c3faae94</testCaseGuid>
 </TestCaseEntity>

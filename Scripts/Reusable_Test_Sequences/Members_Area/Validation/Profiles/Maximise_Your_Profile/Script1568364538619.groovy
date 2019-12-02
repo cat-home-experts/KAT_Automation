@@ -26,6 +26,7 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 //-----------------------
 // TEST HISTORY HEADER - |
@@ -65,6 +66,10 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.delay(2)
 WebUI.switchToWindowUrl('https://www.youtube.com/watch?v=ujuJlrazzGc&t=3s')
 //WebUI.waitForElementPresent(findTestObject('Object Repository/Profiles_Page/Page_Checkatrade - Maximise your profile - YouTube/h1_Checkatrade -  Maximise your profile'), 25)
+
+KeywordUtil.markWarning("Navigating to ->Members->Grow Your Business->My Profile Page->maximise your profile video From the Dashboard takes you to LIVE ... ")
+KeywordUtil.markWarning("(from whatever environment you are currently on) - https://www.youtube.com/watch?v=ujuJlrazzGc&t=3s")
+
 
 ////////////////////////////////////////////////////////////
 //Take an Initial Screenshot of Maximise Your Profile Page//

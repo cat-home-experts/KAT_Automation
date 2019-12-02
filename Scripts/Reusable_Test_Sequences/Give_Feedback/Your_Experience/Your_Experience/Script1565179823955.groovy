@@ -23,6 +23,9 @@ def YE_Recommend = data.getValue("YE_Recommendations", GlobalVariable.row)
 ' Your Experience (page 1) Returned with Recommendation Selection Set to Yes (Default)  |'
 '---------------------------------------------------------------------------------------'
 
+'Check URL Is The Correct One :-)'
+//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Check_URL'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
 //WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Validation/Your_Experience_Initial_Page_State'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 '---------------------------------------------------------------------------------------'
 ' Your Experience (page 1) Recommend this trader?                                       |'

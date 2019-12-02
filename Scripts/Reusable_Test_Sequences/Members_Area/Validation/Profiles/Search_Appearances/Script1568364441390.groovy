@@ -51,6 +51,14 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/
 // Stores in Project <Screenshots> Folder
 //CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Grow_Your_Business_Search_Appearances.png', FailureHandling.OPTIONAL)
 
+'Expected Page'
+GlobalVariable.PAGE = "search-appearance"
+
+'Extra check - tabbing on area, just confirm stable URL'
+
+'Check URL Is The Correct One :-)'
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Check_URL'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
 ////////////////////////////////////////////////////////////
 //         Verify Header Text on Key Portal Areas         //
 ////////////////////////////////////////////////////////////

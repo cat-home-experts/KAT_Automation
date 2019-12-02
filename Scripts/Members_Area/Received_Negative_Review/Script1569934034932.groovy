@@ -53,7 +53,7 @@ import internal.GlobalVariable as GlobalVariable
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 // Specific Page Withing members That You Want To Visit
-GlobalVariable.PAGE = "/assets/Resources/Documents/Membership%20Support%20Pack.pdf"
+GlobalVariable.PAGE = "assets/Resources/Documents/Membership%20Support%20Pack.pdf"
 
 'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test\r\n'
 for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Data').getRowNumbers(); (GlobalVariable.row)++) {

@@ -73,6 +73,7 @@ WebUI.maximizeWindow()
 //WebUI.setText(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF'),
 //	findTestData('searchTestData').getValue('tradeClassification', GlobalVariable.row))
 //-----------------------------------------
+
 //delay(1)
 //------------------------
 // Verify Header Text   //

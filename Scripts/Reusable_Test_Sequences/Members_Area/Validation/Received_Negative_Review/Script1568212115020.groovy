@@ -60,6 +60,12 @@ import java.awt.event.KeyEvent as KeyEvent
 // Stores in Project <Screenshots> Folder
 // CustomKeywords.'kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot'('Your_Customers_Membership_Support_Pack.png', FailureHandling.OPTIONAL)
 
+'Not verifying this URL - '
+
+
+'Check URL Is The Correct One :-)'
+//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Check_URL'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
 ////////////////////////////////////////////////////////////
 //         Verify Header Text on Key Portal Areas         //
 ////////////////////////////////////////////////////////////
