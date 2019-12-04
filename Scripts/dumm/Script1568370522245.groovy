@@ -16,27 +16,50 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
+
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://preview-ma.checkatrade.com/login?return=%2Fmy-feedback')
 
-WebUI.setText(findTestObject('Page_Members Area/input_Username_username'), 'check1234')
+WebUI.setText(findTestObject('Object Repository/Page_Members Area/input_Username_username'), 'check1234')
 
-WebUI.setEncryptedText(findTestObject('Page_Members Area/input_Password_password'), 'fzqqY0qJjYTuJiVJRZh4ag==')
+WebUI.setText(findTestObject('Object Repository/Page_Members Area/input_Password_password'), 'testing123')
 
-WebUI.click(findTestObject('Page_Members Area/button_Log in'))
+WebUI.click(findTestObject('Object Repository/Page_Members Area/button_Log in'))
 
-WebUI.click(findTestObject('Page_Members Area/button_Go Away Maybe Later'))
+WebUI.click(findTestObject('Object Repository/Page_Members Area/button_Go Away Maybe Later'))
 
-WebUI.click(findTestObject('Page_Members Area/a_Remind customer'))
+WebUI.click(findTestObject('Object Repository/Page_Members Area/button_Go Away Maybe Later'))
 
-WebUI.click(findTestObject('Page_Members Area/a_Your Customers'))
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Header_Menus/Page_Members Area/a_Member Achievements'))
 
-WebUI.click(findTestObject('Page_Members Area/a_Awareness'))
+WebUI.click(findTestObject('Page_Members Area/Header_Menus/Page_Members Area/a_Policy TCs'))
 
-WebUI.click(findTestObject('Page_Members Area/a_Your Customers'))
+WebUI.navigateToUrl('https://www.checkatrade.com/blog/terms-and-conditions/')
 
-WebUI.click(findTestObject('Page_Members Area/a_Remind customer'))
+WebUI.click(findTestObject('Object Repository/Page_Members Area/button_Go Away Maybe Later'))
 
-WebUI.click(findTestObject('Page_Members Area/Page_Members Area/a_Published Feedback'))
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Header_Menus/Page_Members Area/a_Whistle Blower'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Header_Menus/Page_Members Area/a_Acceptacard'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Header_Menus/Page_Members Area/a_Featured Items'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Header_Menus/Page_Members Area/a_Team Photos'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Header_Menus/Page_Members Area/a_Manage Albums'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Header_Menus/Page_Members Area/a_Contact Preferences'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Header_Menus/Page_Members Area/a_Marketing Materials'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Header_Menus/Page_Members Area/a_Scams'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Header_Menus/Page_Members Area/a_Trading Standards Documents'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Header_Menus/Page_Members Area/a_Your Account'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Header_Menus/Page_Members Area/a_Grow Your Business'))
+
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Header_Menus/Page_Members Area/a_Your Customers'))
 

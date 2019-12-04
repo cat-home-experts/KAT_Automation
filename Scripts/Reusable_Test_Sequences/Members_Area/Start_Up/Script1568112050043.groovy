@@ -56,7 +56,7 @@ import internal.GlobalVariable as GlobalVariable
 GlobalVariable.FUNCTION_AREA = "Members_Area"
 //-----------------------------------------
 'Do Some Magic with URL(s) See the comments within URL Handler '
-//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/URL_Handler'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/URL_Handler'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 //-----------------------------------------
 'URL - Set from the ENVIRONMENT PROFILE - Specific Page Address Provided By +GlobalVariable.MembersURL  '
 'OPEN BROWSER'

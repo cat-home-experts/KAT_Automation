@@ -14,6 +14,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 //Snippit that was produced to handle the sudden appearance of a POPUP Screen - New Website Nagger
 WebUI.delay(2)
@@ -22,11 +23,11 @@ try {
 
 	if ('Object Repository/Popout/go_Away'){
 		WebUI.click(findTestObject('Object Repository/Popout/go_Away'))
-		System.out.println("View are NEW Website - popup presented");   
+		KeywordUtil.markPassed(" View Our New Website POPOUT Displayed")
 	}	
 } catch (Exception e) {
    // Nothing to do, as popout wasn't presented
-	System.out.println("View are NEW Website - popup NOT presented");
+		KeywordUtil.markPassed(" View Our New Website POPOUT NOT Displayed")
 }
 
 // End

@@ -18,8 +18,11 @@ import internal.GlobalVariable as GlobalVariable
 'GLOBALS'
 
 
+// GIVE FEEDBACK START
+def YE_Recommend
+def YE_WorkCarriedOut
 
-
+// GIVE FEEDBACK END
 
 
 

@@ -47,8 +47,7 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 //  Wait for Log Off Element is Available //
 ////////////////////////////////////////////
 
-
-
+WebUI.delay(1)
 WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/a_Log off'), 60)
 WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/a_Log off'), 2)
 

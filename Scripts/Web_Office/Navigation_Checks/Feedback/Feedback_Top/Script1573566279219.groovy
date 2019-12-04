@@ -71,7 +71,7 @@ WebUI.waitForPageLoad(60)
 '--------------------------------------'
 // Central pane
 // WebUI.switchToFrame(findTestObject('Object Repository/WebOffice/Feedback_Top/Feedback_Graphic'))
-'Central pane - Iframe - Data Grabbed from Backend - Tool Doesnt Resolve Off The Shelf, Wil Need Tweeking at some point'
+'Central pane - Iframe - Data Grabbed from Backend - Tool Doesnt Resolve Off The Shelf, Will Need Tweeking at some point'
 //WebUI.verifyTextPresent("Feedback Management", false)
 //WebUI.verifyTextPresent("Feedback Quick Statistics", false)
 //WebUI.verifyTextPresent("Feedback published last month", false)

@@ -63,7 +63,7 @@ if (GlobalVariable.URL == ("https://www.checkatrade.com/")){
 //GlobalVariable.FUNCTION_AREA = "Web_Office"
 //-----------------------------------------
 'Do Some Magic with URL(s) See the comments within URL Handler '
-//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/URL_Handler'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/URL_Handler'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 //-----------------------------------------
 // Vars for possible inclusion in DataSheet
 // Switch to Generic/Test Creds at some point
