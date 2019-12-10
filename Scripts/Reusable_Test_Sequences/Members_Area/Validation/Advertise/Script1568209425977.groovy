@@ -28,7 +28,7 @@ import internal.GlobalVariable as GlobalVariable
 //  Commented Ashot screen capture, evaluation|   30/09/2019    |      DH          |                             |
 //  Extended Element Wait Times to 60         |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Major Content Chnange, Page Updated (old l |    04/12/2019   |      DH          | Old Commented, NEW Added    |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -72,17 +72,56 @@ WebUI.verifyTextPresent("MEMBER ID", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Directory Information", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("You can opt to upgrade your membership to be included in one of the printed directories", false)
+' Page Content Change (Preview, Below) 04/12/2019'
 '----------------------------------------------'
-WebUI.verifyTextPresent("households within your working area", false)
-'----------------------------------------------'
-WebUI.verifyTextPresent("We allow several allocations for each trade and these vary depending on consumer demand", false)
-
-WebUI.verifyTextPresent("so if you would like to see if there is space available in an area which suits you", false)
-'----------------------------------------------'
-WebUI.verifyTextPresent("best to speak with us directly so that we can give you further information and run through pricing and payment options", false)
-'----------------------------------------------'
+//WebUI.verifyTextPresent("You can opt to upgrade your membership to be included in one of the printed directories", false)
+//'----------------------------------------------'
+//WebUI.verifyTextPresent("households within your working area", false)
+//'----------------------------------------------'
+//WebUI.verifyTextPresent("We allow several allocations for each trade and these vary depending on consumer demand", false)
+//
+//WebUI.verifyTextPresent("so if you would like to see if there is space available in an area which suits you", false)
+//'----------------------------------------------'
+//WebUI.verifyTextPresent("best to speak with us directly so that we can give you further information and run through pricing and payment options", false)
+//'----------------------------------------------'
 //WebUI.scrollToElement(findTestObject('Please contact us on 01243 952303'), 10)
+'----------------------------------------------'
+' NEW Page Content, Added Below'
+'----------------------------------------------'
+WebUI.verifyTextPresent("Did you know that there are two types of shoppers... online and offline?", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Why? Well, as there’s a limited selection of trades per area, customers perceive this to be our chosen short list", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Appealing to your offline customers will help you reach new customers, boost your business", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Benefits of featuring in a directory", false)
+
+WebUI.verifyTextPresent("50+ calls, per year, per member", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Our directories generate over half a million calls for our featured member", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Delivered to 50,000 households", false)
+'----------------------------------------------'//'----------------------------------------------'
+WebUI.verifyTextPresent("directories were delivered with volumes increasing year by year", false)
+'----------------------------------------------'//'----------------------------------------------'
+WebUI.verifyTextPresent("households with deliveries up to four times a year", false)
+'----------------------------------------------'//'----------------------------------------------'
+WebUI.verifyTextPresent("Expands your brand presence", false)
+'----------------------------------------------'//'----------------------------------------------'
+WebUI.verifyTextPresent("You can market different trade categories, in different directory areas, or have multiple trade categories in a single directory", false)
+'----------------------------------------------'//'----------------------------------------------'
+' Scroll To Footer'
+WebUI.scrollToPosition(999, 999)
+'----------------------------------------------'
+WebUI.verifyTextPresent("directories can help you expand your business footprint", false)
+'----------------------------------------------'//'----------------------------------------------'
+WebUI.verifyTextPresent("Increases your online profile page traffic", false)
+'----------------------------------------------'//'----------------------------------------------'
+WebUI.verifyTextPresent("Ready to feature in a directory?", false)
+'----------------------------------------------'//'----------------------------------------------'
+WebUI.verifyTextPresent("Drop us a call on 01243 952303 or Request a call back", false)
+'----------------------------------------------'
+
 
 ///////////////////////////////////////
 //                END                // TODO  TODO Blind Import To Update

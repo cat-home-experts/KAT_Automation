@@ -56,6 +56,9 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('searchTestData'
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.OPTIONAL)
 	//-----------------------------------------
 
+	' Home Page validation Checks after COOKIE Dispelled'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Home'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
 	'---------------------------------------'
 	' Set and SEARCH TRADE CLASSIFICATION   |'
 	'---------------------------------------'

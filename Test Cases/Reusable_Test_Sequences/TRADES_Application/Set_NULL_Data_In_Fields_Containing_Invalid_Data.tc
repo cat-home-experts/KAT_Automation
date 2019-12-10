@@ -3,6 +3,11 @@
    <description>Set null data into field(s) containing invalid data, where the validation constraint don't detect special characters, so try same check with null values</description>
    <name>Set_NULL_Data_In_Fields_Containing_Invalid_Data</name>
    <tag>Validation</tag>
-   <comment></comment>
+   <comment>YOUR FULL NAME
+---------------------------------
+ Set First Name Field on App Sc  |
+---------------------------------
+ Set First Surname Field on App S|
+TRADE CATEGORY</comment>
    <testCaseGuid>151a6f14-3f9d-4bcb-941a-6d53c3b9911a</testCaseGuid>
 </TestCaseEntity>

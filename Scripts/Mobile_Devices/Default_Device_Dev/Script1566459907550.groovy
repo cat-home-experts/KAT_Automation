@@ -13,6 +13,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import java.lang.Integer as Integer
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 //-----------------------
 // TEST HISTORY HEADER - |                   FUNCTIONAL DEMO - REFACTOR TODO                                                                                            |
@@ -30,12 +31,15 @@ import java.lang.Integer as Integer
 // Extended to data Driven with var. X,Y      |    27/08/2019   |     Dave Horne   | Currently 5 different screen|
 // Resolutions set, 1 rox of data driven XL   |                 |                  | resolutions tested          |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Extensive Changes to HMI Caused Refactor   |    06/12/2019   |     Dave Horne   | TODO script need to be Restr| 
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
+'------------------------------------------------------------------------------------------------------'
+'TODO script need to be Restructure - Using browser Capabilities rather than setViewPortSize           |'
+'------------------------------------------------------------------------------------------------------'
 //---------------------------------------------------------------------------------------------------------------
 //                                                                                                               |
 //	GIVEN - The Chekatrade Website 'SEARCHPAGE' is Presented on a Client Device with Various Resolutions Set     |
@@ -49,11 +53,13 @@ import java.lang.Integer as Integer
 //-----------------------------------------
 //Test Listener Manages Startup Processes
 //-----------------------------------------
+//GlobalVariable.PAGE = "GiveFeedback"
+//GlobalVariable.URL = GlobalVariable.URL+GlobalVariable.PAGE
 //-----------------------------------------
 // Call Setup Process - Browser Startup, Navigate, Maximize and Close Cookie Nagging Element
 //-----------------------------------------
 'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test\r\n'
-for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Mobile_Test_Data').getRowNumbers(); (GlobalVariable.row)++) {
+for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Mobile_Test_Data').getRowNumbers(); (GlobalVariable.row)++) { // Mobile_Test_Data
     //def removed for globalisation
     WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.OPTIONAL)
 	//----------------------------------------------------------
@@ -107,45 +113,93 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Mobile_Test_Dat
 	//---------------------------------------------------------
 	'Report on  the Current Set View Port Settings'        // |
 	//---------------------------------------------------------
-	System.out.println((('Set View Port Size is currently SET to X AXIS ' + XCOORD) + ' Y AXIS ') + YCOORD)
+	KeywordUtil.markPassed((('Set View Port Size is currently SET to X AXIS ' + XCOORD) + ' Y AXIS ') + YCOORD)
+	KeywordUtil.markPassed((('Set View Port Size is currently SET to X AXIS ' + XCOORD) + ' Y AXIS ') + YCOORD)
 	//---------------------------------------------------------------------
 	// Set The Trade Classification to Select on the Trade Search Screen  |
-	//---------------------------------------------------------------------
-    WebUI.setText(findTestObject('Page_Checkatrade Find a tradesperson you can trust/input_Search through'), 
-        findTestData('searchTestData').getValue('tradeClassification', GlobalVariable.row))
-	//---------------------------------------------------------------------
-	'Page Loading'
-    WebUI.waitForPageLoad(60)
     //------------------------------------------------------------------------------------------------------------------------------------------------
-    'Set and SEARCH SELECTED LOCATION'
-	'---------------------------------'
-    WebUI.setText(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_location'), 
-        findTestData('searchTestData').getValue('tradeLocation', GlobalVariable.row))
-	'Page Loading'
-    WebUI.waitForPageLoad(60)
+//    'Set and SEARCH SELECTED TRADE'
+//	'---------------------------------'    WebUI.setText(findTestObject('Page_Checkatrade Find a tradesperson you can trust/input_Search through'), 
+//        findTestData('searchTestData').getValue('tradeClassification', GlobalVariable.row))
+//	
+//	WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/input_Search through'))
+//	//---------------------------------------------------------------------
+//	'Page Loading'
+//    WebUI.waitForPageLoad(60)
+//    //------------------------------------------------------------------------------------------------------------------------------------------------
+//    'Set and SEARCH SELECTED LOCATION'
+//	'---------------------------------'
+//    WebUI.setText(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_location'), 
+//        findTestData('searchTestData').getValue('tradeLocation', GlobalVariable.row))
+//	
+//	WebUI.click(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_location'))
+//
+//	
+
+//	'Page Loading'
+//    WebUI.waitForPageLoad(60)
+//	
+//	'---------------------------------------'
+//	' Hit Search Button                     |'
+//	'---------------------------------------'
+//	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Hit_Search_Button'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+//    //------------------------------------------------------------------------------------------------------------------------------------------------
+//	
+//    'Scroll to Element (off screen)'
+//    //WebUI.scrollToElement(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search'), 
+//    //    5)
+//	
+//	'Page Loading'
+//    //WebUI.waitForPageLoad(60)
+//    '-------------'
+//    'HIT SEARCH'
+//   // WebUI.doubleClick(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search'))
+//	WebUI.click(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/Page_Checkatrade Find a tradesperson you can trust/a_Search'))
+//	
+//	'Page Loading'
+//    WebUI.waitForPageLoad(60)
+//    //------------------------------------------------------------------------------------------------------------------------------------------------
+//    'Scroll to Element Containing The Concantanated Test data (off screen)'
+//    WebUI.scrollToElement(findTestObject('Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result'), 
+//        5)
+//	WebUI.waitForElementVisible(findTestObject('Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result'),
+//		5)
+//	'Page Loading'
+//    WebUI.delay(1)
     //------------------------------------------------------------------------------------------------------------------------------------------------
-    'Scroll to Element (off screen)'
-    WebUI.scrollToElement(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search'), 
-        5)
-	'Page Loading'
-    WebUI.waitForPageLoad(60)
-    '-------------'
-    'HIT SEARCH'
-    WebUI.doubleClick(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search'))
-	'Page Loading'
-    WebUI.waitForPageLoad(60)
-    //------------------------------------------------------------------------------------------------------------------------------------------------
-    'Scroll to Element Containing The Concantanated Test data (off screen)'
-    WebUI.scrollToElement(findTestObject('Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result'), 
-        5)
-	WebUI.waitForElementVisible(findTestObject('Object Repository/Page_Returned_Concantanated_Text/h1_Concantanated_Returned_Result'),
-		5)
-	'Page Loading'
-    WebUI.delay(1)
-    //------------------------------------------------------------------------------------------------------------------------------------------------
-    WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeLocationVerification', GlobalVariable.row), false, 
-        FailureHandling.CONTINUE_ON_FAILURE)
-    'Expected cantantenated text is Returned'
+	'---------------------------------------'
+	' Set and SEARCH TRADE CLASSIFICATION   |'
+	'---------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Enter_Trade_Classification'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+	'---------------------------------------'
+	' Set and SEARCH TRADE LOCATION         |'
+	'---------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Enter_Trade_Location'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+	'---------------------------------------'
+	' Scroll Search Button into View        |' // SUperceeded
+	'---------------------------------------'
+	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Scroll_To_Search_Button'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+	'---------------------------------------'
+	' Dispel New trades Header              |'  // TODO WTS
+	'---------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Dispel_Trade_Header'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+	'---------------------------------------'
+	' Hit Search Button                     |'
+	'---------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Hit_Search_Button'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+	
+	'---------------------------------------'
+	' Verify Returned Page is as Expected   |'
+	'---------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Verification'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+//    WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeLocationVerification', GlobalVariable.row), false, 
+//        FailureHandling.CONTINUE_ON_FAILURE)
+//    'Expected cantantenated text is Returned'
 	    // WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeLocationVerification', GlobalVariable.row), FailureHandling.CONTINUE_ON_FAILURE)
 	'--------------------------'
     ' Teardown - CLose Browser |'

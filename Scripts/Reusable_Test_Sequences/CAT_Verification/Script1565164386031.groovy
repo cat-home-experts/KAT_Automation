@@ -16,15 +16,19 @@ import internal.GlobalVariable as GlobalVariable
 //-------------------------------------------------------
 // Verification - Required Search Returned as Expected  | - Snip - 07/08/2019
 //-------------------------------------------------------
+'Updated 05/12/2019 due to wholesale Home page changes'
 
 // verifies the returns of Classification against Location
 //-------------------------------------------
 'Expected cantantenated text is Returned'
 ' DYNAMIC DELAY - Wait for <SEARCH> Button to Re-Appear after Search is completed'
-WebUI.delay(3)
-WebUI.waitForElementVisible(findTestObject('Checkatrade_Trade_Search_page/Page_Checkatrade Find a tradesperson you can trust/a_Search'), 120)
+
+//WebUI.delay(3)
+WebUI.waitForPageLoad(60)
+//WebUI.waitForElementVisible(findTestObject('Checkatrade_Trade_Search_page/Page_Checkatrade Find a tradesperson you can trust/a_Search'), 120)
 // COncantanation unrelaible - watch this space
 //WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeLocationVerification', GlobalVariable.row), false)
+'Verify Returned Trade classification and Locaion is Returned'
 WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeClassification', GlobalVariable.row), false)
 WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeLocation', GlobalVariable.row), false)
 

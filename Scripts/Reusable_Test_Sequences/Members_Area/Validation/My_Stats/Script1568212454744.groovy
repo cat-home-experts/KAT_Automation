@@ -49,8 +49,9 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////////////////////
 //WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/input_concat(Customer  s name)_customerName'), 60)
 
-WebUI.waitForPageLoad(60)
 WebUI.delay(2)
+WebUI.waitForPageLoad(60)
+
 ////////////////////////////////////////////////////////////
 //     Take an Initial Screenshot of Home After Login     //
 ////////////////////////////////////////////////////////////

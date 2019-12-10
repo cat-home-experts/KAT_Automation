@@ -17,11 +17,27 @@ import internal.GlobalVariable as GlobalVariable
 // Set REMAINING Empty Fields with Special Chars to Elicit Validation    | - Snip - 02/08/2019
 //------------------------------------------------------------------------
 
+'----------------------------------------------------------------------------------------------'
+' Major Changes 05/12/2019 Factored in - As highlighted In The TOP (Driver) Script Header      |'
+'----------------------------------------------------------------------------------------------'
+
 'COMPANY NAME'    // No Validation on Company Name Currently (Apart from NULL Detection)
 WebUI.setText(findTestObject('Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName'), GlobalVariable.Validation_Data_Special_Chars)
 
 'YOUR FULL NAME'  // No Validation on FUll Name Currently (Apart from NULL Detection)
-WebUI.setText(findTestObject('Page_Checkatrade Want to build your business/input_Your Full Name_ctl00contenttbContactName'), GlobalVariable.Validation_Data_Special_Chars)
+//WebUI.setText(findTestObject('Page_Checkatrade Want to build your business/input_Your Full Name_ctl00contenttbContactName'), GlobalVariable.Validation_Data_Special_Chars)
+
+'---------------------------------'
+' Set First Name Field on App Sc  |'
+'---------------------------------'
+WebUI.waitForElementClickable(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName'), 10)
+WebUI.setText(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName'), GlobalVariable.Validation_Data_Special_Chars)
+
+'---------------------------------'
+' Set First Surname Field on App S|'
+'---------------------------------'
+WebUI.waitForElementClickable(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName'), 10)
+WebUI.setText(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName'), GlobalVariable.Validation_Data_Special_Chars)
 
 'TRADE CATEGORY' // Changes 04/09/2019 - removed this field
 //WebUI.setText(findTestObject('Page_Checkatrade Want to build your business/input_Trade Category_join-now__category_autocomplete_input'), GlobalVariable.Validation_Data_Special_Chars)

@@ -39,6 +39,9 @@ import org.openqa.selenium.WebElement;*/
 // Renewed - added new with extension 04092019|    04/09/2019   |    Dave Horne    |  SUNNY DAY Scenario         |
 //---------------------------------------------------------------------------------------------------------------
 // Full Name Field XPATH change, Dev UI Rework|    30/09/2019   |        DH        |                             |
+///---------------------------------------------------------------------------------------------------------------
+// Major Home Page Changes Modify This Script |    05/12/2019   |        DH        |                             |
+//---------------------------------------------------------------------------------------------------------------
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -60,9 +63,10 @@ import org.openqa.selenium.WebElement;*/
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.OPTIONAL)
 	//-----------------------------------------
 	'--------------------------------------'
-	' Hit the <TRADES, APPLY HERE> Button  |'
+	' Hit the <TRADES, APPLY HERE> Button  |' // 05/12/2019
 	'--------------------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Hit_Signup'), [:], FailureHandling.OPTIONAL)
+	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Hit_Signup'), [:], FailureHandling.OPTIONAL)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here'), [:], FailureHandling.OPTIONAL)
 	
 	'---------------------------------------------------------------------------'
 	' Hit the <SUBMIT> Button  | Attempt a COMMITAL of form with no data filled |'

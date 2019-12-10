@@ -17,15 +17,19 @@ import internal.GlobalVariable as GlobalVariable
 // Hit SUBMIT Button on Trades Application form  | - Snip - 30/07/2019
 //-----------------------------------------------
 '----------------------------------------------------------------------------------'
-'SUBMIT BUTTON IS OFF THE BOTTOM OF THE PAGE - SO NEED TO SCROLL TO BOTTOM OF PAGE  |'
+'SUBMIT BUTTON IS OFF THE BOTTOM OF THE PAGE - SO NEED TO SCROLL TO BOTTOM OF PAGE |'
 '----------------------------------------------------------------------------------'
-WebUI.scrollToElement(findTestObject('Object Repository/Page_Checkatrade Want to build your business/input_membership terms and conditions_ctl00contentbtnSubmit'), 5)
+
+'Wholesale cahnges on 05/12/2019 Cause refactor - Old left Commented'
+
+// WebUI.scrollToElement(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_Privacy Notice_ctl00contentbtnSubmit'), 5)
+//WebUI.scrollToElement(findTestObject('Object Repository/Page_Checkatrade Want to build your business/input_membership terms and conditions_ctl00contentbtnSubmit'), 5)
 '-------------'
 WebUI.delay(1)
 '-------------'
 'Click Submit |'
 '-------------'
-WebUI.click(findTestObject('Object Repository/Page_Checkatrade Want to build your business/input_membership terms and conditions_ctl00contentbtnSubmit'))
+WebUI.click(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_Privacy Notice_ctl00contentbtnSubmit'))
 //WebUI.click(findTestObject('contentbtnSubmit')) old object reference left for debug purposes
 
 //-------------------------------------------------------

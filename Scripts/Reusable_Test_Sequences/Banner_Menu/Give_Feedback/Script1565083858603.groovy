@@ -17,13 +17,19 @@ import internal.GlobalVariable as GlobalVariable
 // Hit Give Feedback from the Homepage Header Banner                     | - Snip - 06/08/2019 - 09/09/2019 - need to tidy repo to remove the space in the string
 //------------------------------------------------------------------------
 
+'--------------------------------------------------------'
+' Major Changes Factored Into Function - 05/12/2019      |'
+'--------------------------------------------------------'
+
+' Now Drills Directl Into the Target URL'
+
 //----------------------------------------
 'Hit Give Feedback from the Homepage Header Banner '
-WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Give feedback'), 60)
-WebUI.click(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Give feedback'))
+//WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Give feedback'), 60)
+//WebUI.click(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Give feedback'))
 //----------------------------------------
 
-WebUI.waitForElementVisible(findTestObject('Page_Give_Feedback_Enhanced_OBJ_Repo/Page_Checkatrade Give your feedback/input_Which member do you want to review_feedback-form__company_autocomplete_input'), 25)
+WebUI.waitForElementVisible(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review'), 25)
 //WebUI.waitForPageLoad(60)
 
 //----------------------------------------

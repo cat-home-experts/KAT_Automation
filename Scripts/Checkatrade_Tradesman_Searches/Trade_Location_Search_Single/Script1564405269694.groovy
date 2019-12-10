@@ -26,7 +26,8 @@ import internal.GlobalVariable as GlobalVariable
 // returned for given 'Trade' and 'Location'  |    13/07/2019   |     Dave Horne   | Using External Test Data    |
 // search criteria.                           |                 |                  | Provided on an Excel SSheet |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Search Mechanism Modified Due To Home Page |    05/12/2019   |        DH        |                             |
+// Changes                                    |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -55,7 +56,7 @@ import internal.GlobalVariable as GlobalVariable
 	//-----------------------------------------
 	// Call Startup Process - Browser Startup, Navigate, Maximize and Close Cookie Nagging Element
 	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup_Old'), [:], FailureHandling.OPTIONAL)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.OPTIONAL) // _Old
 	//-----------------------------------------
 	
 	'---------------------------------------'
@@ -71,7 +72,7 @@ import internal.GlobalVariable as GlobalVariable
 	'---------------------------------------'
 	' Scroll Search Button into View        |'
 	'---------------------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Scroll_To_Search_Button'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Scroll_To_Search_Button'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 	'---------------------------------------'
 	' Hit Search Button                     |'

@@ -26,7 +26,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //  XPath statement changed/updated           |   30/09/2019    |        DH        |  //*[@id="tbContactName"]   |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//  Major Changes With Function, Implemented  |   06/12/2019    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -42,14 +42,24 @@ import internal.GlobalVariable as GlobalVariable
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 
-
-
 //------------------------------------------------------------------------
 // Set Full Name during membership application form fill form fill       | - Snip - 31/07/2019
 //------------------------------------------------------------------------
+// old Function Left Intact
+//WebUI.setText(findTestObject('Page_Checkatrade Want to build your business/input_Your Full Name_ctl00contenttbContactName'), GlobalVariable.FullName)
 
-WebUI.setText(findTestObject('Page_Checkatrade Want to build your business/input_Your Full Name_ctl00contenttbContactName'), GlobalVariable.FullName)
+'---------------------------------'
+' Set First Name Field on App Sc  |'
+'---------------------------------'
+WebUI.waitForElementClickable(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName'), 10)
+WebUI.setText(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName'), GlobalVariable.aFirstName)
+
+'---------------------------------'
+' Set First Surname Field on App S|'
+'---------------------------------'
+WebUI.waitForElementClickable(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName'), 10)
+WebUI.setText(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName'), GlobalVariable.aSurName)
 
 //-------------------------------------------------------
-// END                                                  | - Snip - 31/07/2019
+// END                                                  | 
 //-------------------------------------------------------

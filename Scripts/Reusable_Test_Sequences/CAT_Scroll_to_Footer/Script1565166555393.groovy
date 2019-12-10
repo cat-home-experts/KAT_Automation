@@ -17,11 +17,21 @@ import internal.GlobalVariable as GlobalVariable
 // Scroll - To Footer                | - Snip - 07/08/2019
 //------------------------------------
 
+'-----------------------------------------------------'
+' Major changes factored into function 05/12/2019     |'
+'-----------------------------------------------------'
+
+'Animation Removed '
 //-------------------------------------------
 'Scroll - To Footer on the bottom of the page (sometime off the screen) '
 'Scroll Element into VIEW, as the following text to verify can be off the screen'
-WebUI.waitForElementVisible(findTestObject('Page_of_Results/div_see all_footer__van-with-trailer'), 60)
-WebUI.scrollToElement(findTestObject('Page_of_Results/div_see all_footer__van-with-trailer'), 4)
+//WebUI.waitForElementVisible(findTestObject('Page_of_Results/div_see all_footer__van-with-trailer'), 60)
+//WebUI.scrollToElement(findTestObject('Page_of_Results/div_see all_footer__van-with-trailer'), 4)
+WebUI.waitForPageLoad(60)
+//WebUI.waitForElementVisible(findTestObject('Page_of_Results/Printable_Reports-Link'), 60)
+//WebUI.scrollToElement(findTestObject('Page_of_Results/Printable_Reports-Link'), 4)
+WebUI.scrollToPosition(999, 999)
+
 WebUI.delay(1)
 //-------------------------------------------
 

@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 //------------------------------------
 
 //-------------------------------------------
-'Scroll - To Search Button on the bottom of the page (sometime off the screen '
+'Scroll - To Search Button on the bottom of the page (sometimes off the screen '
 WebUI.waitForElementClickable(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search'), 25)
 WebUI.scrollToElement(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search'), 5)
 

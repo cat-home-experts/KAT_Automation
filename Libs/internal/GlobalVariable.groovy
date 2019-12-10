@@ -10,6 +10,16 @@ import com.kms.katalon.core.main.TestCaseMain
 public class GlobalVariable {
      
     /**
+     * <p>Profile default : SE</p>
+     */
+    public static Object aFirstName
+     
+    /**
+     * <p>Profile default : SA</p>
+     */
+    public static Object aSurName
+     
+    /**
      * <p>Profile default : Trading Name
 Profile Preview : Trading Name</p>
      */
@@ -54,6 +64,12 @@ Profile Preview : Name</p>
      * <p>Profile default : Invalid format email</p>
      */
     public static Object Invalid_Email
+     
+    /**
+     * <p>Profile default : Preview Members Area URL
+Profile Checkatrade_Live : Live Members Area URL</p>
+     */
+    public static Object MembersURL
      
     /**
      * <p>Profile default : Specific area within the Members Portal
@@ -141,12 +157,6 @@ Profile Preview : Fix the format error here Give Feedback - Recommend? true OR f
     public static Object YE_Recommendations
      
     /**
-     * <p>Profile default : Preview Members Area URL
-Profile Checkatrade_Live : Live Members Area URL</p>
-     */
-    public static Object MembersURL
-     
-    /**
      * <p>Profile Checkatrade_Live : Row count on spread sheet iterator</p>
      */
     public static Object row
@@ -173,6 +183,8 @@ Profile Checkatrade_Live : Live Members Area URL</p>
 			selectedVariables += TestCaseMain.getGlobalVariables(RunConfiguration.getExecutionProfile())
             selectedVariables += RunConfiguration.getOverridingParameters()
     
+            aFirstName = selectedVariables['aFirstName']
+            aSurName = selectedVariables['aSurName']
             CompanyName = selectedVariables['CompanyName']
             ContactNumber = selectedVariables['ContactNumber']
             CurrentUrl = selectedVariables['CurrentUrl']
@@ -181,6 +193,7 @@ Profile Checkatrade_Live : Live Members Area URL</p>
             FullName = selectedVariables['FullName']
             FUNCTION_AREA = selectedVariables['FUNCTION_AREA']
             Invalid_Email = selectedVariables['Invalid_Email']
+            MembersURL = selectedVariables['MembersURL']
             PAGE = selectedVariables['PAGE']
             Password = selectedVariables['Password']
             Portal_Subfunction = selectedVariables['Portal_Subfunction']
@@ -194,7 +207,6 @@ Profile Checkatrade_Live : Live Members Area URL</p>
             Validation_Data_Special_Chars = selectedVariables['Validation_Data_Special_Chars']
             WebOfficeURL = selectedVariables['WebOfficeURL']
             YE_Recommendations = selectedVariables['YE_Recommendations']
-            MembersURL = selectedVariables['MembersURL']
             row = selectedVariables['row']
             Standalone_TC_Execution = selectedVariables['Standalone_TC_Execution']
             Postcode = selectedVariables['Postcode']

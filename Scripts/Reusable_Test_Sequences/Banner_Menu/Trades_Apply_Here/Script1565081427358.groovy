@@ -12,15 +12,85 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import org.openqa.selenium.Keys as Keys
 
+//-----------------------
+// TEST HISTORY HEADER - |
+//-----------------------
+// Any changes to this script, please update the next available row below, with date, in the DATE CREATED column,
+// Your NAme in the CREATED BY column, and Finaly, The actual change implemented in the NOTES column.
+//
+//---------------------------------------------------------------------------------------------------------------
+//       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
+//---------------------------------------------------------------------------------------------------------------
+//  Major Home Page Changes Extend This Script|   05/12/2019    |        DH        | Now several navigation Steps|
+//---------------------------------------------------------------------------------------------------------------
+//                                            |                 |                  |                             |
+//---------------------------------------------------------------------------------------------------------------
+//                                            |                 |                  |                             |
+//---------------------------------------------------------------------------------------------------------------
+//                                            |                 |                  |                             |
+//---------------------------------------------------------------------------------------------------------------
+//                                            |                 |                  |                             |
+//---------------------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------
+//                                                                                                               |
+//	GIVEN -                                                                                                      |
+//                                                                                                               |
+//	WHEN -                                                                                                       |
+//                                                                                                               |
+//  THEN -                                                                                                       |
+//                                                                                                               |
+//---------------------------------------------------------------------------------------------------------------
 //------------------------------------------------------------------------
 // Hit Trades Apply Here - Signup from the Homepage Header Banner        | - Snip - 30/07/2019 - need to tidy repo to remove the space in the string
 //------------------------------------------------------------------------
+//' Major Changes Around The Selection Function and Entry Details'
+//WebUI.click(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Trades                                apply here'))
+//
+//' Major Changes Around The Selection Function and Entry Details 05/12/2019'
 
-WebUI.click(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Trades                                apply here'))
+'---------------------------------'
+' Click on <Trades> Header Button |'
+'---------------------------------'
+WebUI.waitForElementClickable(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades'), 10)
+WebUI.click(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades'))
 
-//-------------------------------------------------------
-// END                                                  | - Snip - 06/08/2019
-//-------------------------------------------------------
+'---------------------------------'
+' Click on <Find Out More> Banner |'
+'---------------------------------'
+WebUI.waitForElementClickable(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more'), 10)
+WebUI.click(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more'))
 
+'---------------------------------'
+' Click on <Trade Application> B  |'
+'---------------------------------'
+WebUI.waitForElementClickable(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application'), 10)
+WebUI.click(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application'))
+
+//
+//WebUI.setText(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactEmail'), 
+//    'fred@ggg.com')
+//
+//WebUI.click(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactEmail'))
+//
+//WebUI.setText(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactEmail'), 
+//    'fred@ggg.com')
+//
+//WebUI.setText(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbCompanyName'), 
+//    'bristols limited')
+//
+//WebUI.setText(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactMob'), 
+//    '02393123456')
+//
+//WebUI.setText(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbPostCode'), 
+//    'po12 4sd')
+//
+//WebUI.click(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_Privacy Notice_ctl00contentbtnSubmit'))
+
+///////////////////////////////////////
+//                END                //
+///////////////////////////////////////
 

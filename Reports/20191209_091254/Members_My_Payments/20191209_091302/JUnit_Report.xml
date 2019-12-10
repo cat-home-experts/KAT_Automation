@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Members_My_Payments" time="54.345" tests="1" failures="0" errors="0">
+   <testsuite name="Members_My_Payments" tests="1" failures="0" errors="0" time="54.345" timestamp="2019-12-09 09:17:35" hostname="DavidHo - VETTEDSP36RF.check.local" id="Test Suites/Members_My_Payments">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\davidho\\Katalon Studio\\Start\\Reports\\20191209_091254\\Members_My_Payments\\20191209_091302"/>
+         <property name="logFiles" value="C:\\Users\\davidho\\Katalon Studio\\Start\\Reports\\20191209_091254\\Members_My_Payments\\20191209_091302\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="DavidHo - VETTEDSP36RF.check.local"/>
+         <property name="os" value="Windows 10 32bit"/>
+         <property name="katalonVersion" value="7.1.0.1"/>
+         <property name="browser" value="Chrome 78.0.3904.108"/>
+         <property name="hostAddress" value="10.0.11.243"/>
+         <property name="sessionId" value="010d94f9c12067d2810bef128965754c"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Members_Area/Payments" time="53.768" classname="Test Cases/Members_Area/Payments" status="PASSED">
+         <system-out><![CDATA[2019-12-09 09:17:36 - [TEST_CASE][PASSED] - Test Cases/Members_Area/Payments: Test Cases/Members_Area/Payments
+
+2019-12-09 09:17:36 - [TEST_STEP][PASSED] - PAGE = "/pay-checkatrade": null
+
+2019-12-09 09:17:37 - [TEST_STEP][PASSED] - for ([row = 1, row <= findTestData("Payments_Data").getRowNumbers(), (internal.GlobalVariable.row++)]): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2019-12-09 09:17:37 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Members_Area/Start_Up"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/Start_Up' successfully
+
+2019-12-09 09:17:37 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Members_Area/Start_Up: Test Cases/Reusable_Test_Sequences/Members_Area/Start_Up
+
+2019-12-09 09:17:38 - [TEST_STEP][PASSED] - "----------------------------------------------------": null
+
+2019-12-09 09:17:38 - [TEST_STEP][PASSED] - FUNCTION_AREA = "Members_Area": null
+
+2019-12-09 09:17:38 - [TEST_STEP][PASSED] - "Do Some Magic with URL(s) See the comments within URL Handler ": null
+
+2019-12-09 09:17:38 - [TEST_STEP][PASSED] - "URL - Set from the ENVIRONMENT PROFILE - Specific Page Address Provided By +GlobalVariable.MembersURL  ": null
+
+2019-12-09 09:17:38 - [TEST_STEP][PASSED] - openBrowser(MembersURL): Browser is opened with url: 'https://preview-ma.checkatrade.com/'
+
+2019-12-09 09:17:38 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-12-09 09:17:38 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-12-09 09:18:04 - [MESSAGE][PASSED] - Browser is opened with url: 'https://preview-ma.checkatrade.com/'
+
+2019-12-09 09:18:04 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-12-09 09:18:04 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-12-09 09:18:04 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-12-09 09:18:08 - [MESSAGE][PASSED] - Current window maximized
+
+2019-12-09 09:18:08 - [TEST_STEP][PASSED] - verifyTextPresent("EXCLUSIVE ACCESS FOR CHECKATRADE MEMBERS ONLY", false): Text 'EXCLUSIVE ACCESS FOR CHECKATRADE MEMBERS ONLY' is present on page 
+
+2019-12-09 09:18:09 - [MESSAGE][PASSED] - Text 'EXCLUSIVE ACCESS FOR CHECKATRADE MEMBERS ONLY' is present on page 
+
+2019-12-09 09:18:09 - [TEST_STEP][PASSED] - verifyTextPresent("Forgotten password?", false): Text 'Forgotten password?' is present on page 
+
+2019-12-09 09:18:09 - [MESSAGE][PASSED] - Text 'Forgotten password?' is present on page 
+
+2019-12-09 09:18:09 - [TEST_STEP][PASSED] - verifyTextPresent("Forgotten username?", false): Text 'Forgotten username?' is present on page 
+
+2019-12-09 09:18:09 - [MESSAGE][PASSED] - Text 'Forgotten username?' is present on page 
+
+2019-12-09 09:18:09 - [TEST_STEP][PASSED] - verifyTextPresent("Trouble logging in? No username and password? Contact Checkatrade Member Services by", false): Text 'Trouble logging in? No username and password? Contact Checkatrade Member Services by' is present on page 
+
+2019-12-09 09:18:09 - [MESSAGE][PASSED] - Text 'Trouble logging in? No username and password? Contact Checkatrade Member Services by' is present on page 
+
+2019-12-09 09:18:09 - [TEST_STEP][PASSED] - verifyTextPresent("memberservices@checkatrade.com", false): Text 'memberservices@checkatrade.com' is present on page 
+
+2019-12-09 09:18:09 - [MESSAGE][PASSED] - Text 'memberservices@checkatrade.com' is present on page 
+
+2019-12-09 09:18:09 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/Start_Up' successfully
+
+2019-12-09 09:18:09 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Members_Area/log_On"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/log_On' successfully
+
+2019-12-09 09:18:09 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Members_Area/log_On: Test Cases/Reusable_Test_Sequences/Members_Area/log_On
+
+2019-12-09 09:18:09 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Members/Page_Members Area/button_Log in"), 10): Object 'Object Repository/Members/Page_Members Area/button_Log in' is present
+
+2019-12-09 09:18:10 - [MESSAGE][PASSED] - Object 'Object Repository/Members/Page_Members Area/button_Log in' is present
+
+2019-12-09 09:18:10 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Members/Page_Members Area/input_Username_username")): Object: 'Object Repository/Members/Page_Members Area/input_Username_username' is clicked on
+
+2019-12-09 09:18:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Members/Page_Members Area/input_Username_username' is clicked on
+
+2019-12-09 09:18:10 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Members/Page_Members Area/input_Username_username"), Username): Text 'check1234' is set on object 'Object Repository/Members/Page_Members Area/input_Username_username'
+
+2019-12-09 09:18:10 - [MESSAGE][PASSED] - Text 'check1234' is set on object 'Object Repository/Members/Page_Members Area/input_Username_username'
+
+2019-12-09 09:18:10 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Members/Page_Members Area/input_Password_password")): Object: 'Object Repository/Members/Page_Members Area/input_Password_password' is clicked on
+
+2019-12-09 09:18:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Members/Page_Members Area/input_Password_password' is clicked on
+
+2019-12-09 09:18:10 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Members/Page_Members Area/input_Password_password"), Password): Text 'testing123' is set on object 'Object Repository/Members/Page_Members Area/input_Password_password'
+
+2019-12-09 09:18:10 - [MESSAGE][PASSED] - Text 'testing123' is set on object 'Object Repository/Members/Page_Members Area/input_Password_password'
+
+2019-12-09 09:18:10 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Members/Page_Members Area/button_Log in")): Object: 'Object Repository/Members/Page_Members Area/button_Log in' is clicked on
+
+2019-12-09 09:18:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Members/Page_Members Area/button_Log in' is clicked on
+
+2019-12-09 09:18:11 - [TEST_STEP][PASSED] - waitForElementNotPresent(findTestObject("Object Repository/Members/Page_Members Area/button_Log in"), 25): Web element with id: 'Object Repository/Members/Page_Members Area/button_Log in' located by 'By.xpath: //button[@type = 'submit' and (text() = ' Log in ' or . = ' Log in ')]' is not present after '25' second(s)
+
+2019-12-09 09:18:12 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/Members/Page_Members Area/button_Log in' located by 'By.xpath: //button[@type = 'submit' and (text() = ' Log in ' or . = ' Log in ')]' is not present after '25' second(s)
+
+2019-12-09 09:18:12 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-12-09 09:18:12 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-12-09 09:18:12 - [TEST_STEP][PASSED] - if ("Object Repository/Page_Members Area/Header_Attention_Text"): Call Test Case 'Test Cases/Reusable_Test_Sequences/Utils/Popout_Handler' successfully
+
+2019-12-09 09:18:12 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Page_Members Area/Header_Attention_Text"), 60): Object 'Object Repository/Page_Members Area/Header_Attention_Text' is present
+
+2019-12-09 09:18:12 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Members Area/Header_Attention_Text' is present
+
+2019-12-09 09:18:12 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Utils/Popout_Handler"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Utils/Popout_Handler' successfully
+
+2019-12-09 09:18:12 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Utils/Popout_Handler: Test Cases/Reusable_Test_Sequences/Utils/Popout_Handler
+
+2019-12-09 09:18:13 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-12-09 09:18:15 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-12-09 09:18:15 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-12-09 09:18:15 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-12-09 09:18:15 - [TEST_STEP][PASSED] - try:  View Our New Website POPOUT Displayed
+
+2019-12-09 09:18:15 - [TEST_STEP][PASSED] - if ("Object Repository/Popout/go_Away"):  View Our New Website POPOUT Displayed
+
+2019-12-09 09:18:15 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Popout/go_Away")): Object: 'Object Repository/Popout/go_Away' is clicked on
+
+2019-12-09 09:18:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Popout/go_Away' is clicked on
+
+2019-12-09 09:18:15 - [TEST_STEP][PASSED] - markPassed(" View Our New Website POPOUT Displayed"):  View Our New Website POPOUT Displayed
+
+2019-12-09 09:18:15 - [MESSAGE][PASSED] -  View Our New Website POPOUT Displayed
+
+2019-12-09 09:18:15 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Utils/Popout_Handler' successfully
+
+2019-12-09 09:18:15 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/log_On' successfully
+
+2019-12-09 09:18:15 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/Payments"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/Payments' successfully
+
+2019-12-09 09:18:15 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/Payments: Test Cases/Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/Payments
+
+2019-12-09 09:18:15 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Page_Members Area/div_Payments"), 5): Object 'Object Repository/Page_Members Area/div_Payments' is present
+
+2019-12-09 09:18:16 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Members Area/div_Payments' is present
+
+2019-12-09 09:18:16 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Members Area/div_Payments")): Object: 'Object Repository/Page_Members Area/div_Payments' is clicked on
+
+2019-12-09 09:18:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Members Area/div_Payments' is clicked on
+
+2019-12-09 09:18:16 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/Payments' successfully
+
+2019-12-09 09:18:16 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Members_Area/Validation/Payments/Payments_Page"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/Validation/Payments/Payments_Page' successfully
+
+2019-12-09 09:18:16 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Members_Area/Validation/Payments/Payments_Page: Test Cases/Reusable_Test_Sequences/Members_Area/Validation/Payments/Payments_Page
+
+2019-12-09 09:18:17 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-12-09 09:18:17 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-12-09 09:18:17 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2019-12-09 09:18:17 - [TEST_STEP][PASSED] - "DEFAULT TAB - Pay Checkatrade    ": null
+
+2019-12-09 09:18:17 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("Members_Test_Data").getValue("MEMBER_ID", 1), false): Text '218630' is present on page 
+
+2019-12-09 09:18:17 - [MESSAGE][PASSED] - Text '218630' is present on page 
+
+2019-12-09 09:18:17 - [TEST_STEP][PASSED] - verifyTextPresent("MEMBER ID", false): Text 'MEMBER ID' is present on page 
+
+2019-12-09 09:18:17 - [MESSAGE][PASSED] - Text 'MEMBER ID' is present on page 
+
+2019-12-09 09:18:17 - [TEST_STEP][PASSED] - verifyTextPresent("Pay Checkatrade", false): Text 'Pay Checkatrade' is present on page 
+
+2019-12-09 09:18:17 - [MESSAGE][PASSED] - Text 'Pay Checkatrade' is present on page 
+
+2019-12-09 09:18:17 - [TEST_STEP][PASSED] - verifyTextPresent("Welcome to the Checkatrade payment platform", false): Text 'Welcome to the Checkatrade payment platform' is present on page 
+
+2019-12-09 09:18:17 - [MESSAGE][PASSED] - Text 'Welcome to the Checkatrade payment platform' is present on page 
+
+2019-12-09 09:18:17 - [TEST_STEP][PASSED] - verifyTextPresent("This is a secure platform where you may pay for any membership, product or service provided by Checkatrade", false): Text 'This is a secure platform where you may pay for any membership, product or service provided by Checkatrade' is present on page 
+
+2019-12-09 09:18:17 - [MESSAGE][PASSED] - Text 'This is a secure platform where you may pay for any membership, product or service provided by Checkatrade' is present on page 
+
+2019-12-09 09:18:17 - [TEST_STEP][PASSED] - verifyTextPresent("There will be no charge for debit card or credit card payments", false): Text 'There will be no charge for debit card or credit card payments' is present on page 
+
+2019-12-09 09:18:17 - [MESSAGE][PASSED] - Text 'There will be no charge for debit card or credit card payments' is present on page 
+
+2019-12-09 09:18:17 - [TEST_STEP][PASSED] - verifyTextPresent("We are unable to accept payment by American Express", false): Text 'We are unable to accept payment by American Express' is present on page 
+
+2019-12-09 09:18:17 - [MESSAGE][PASSED] - Text 'We are unable to accept payment by American Express' is present on page 
+
+2019-12-09 09:18:17 - [TEST_STEP][PASSED] - verifyTextPresent("Receipts can be emailed to you should you enter your email address", false): Text 'Receipts can be emailed to you should you enter your email address' is present on page 
+
+2019-12-09 09:18:17 - [MESSAGE][PASSED] - Text 'Receipts can be emailed to you should you enter your email address' is present on page 
+
+2019-12-09 09:18:17 - [TEST_STEP][PASSED] - verifyTextPresent("Thank you for using this service. Click below to proceed", false): Text 'Thank you for using this service. Click below to proceed' is present on page 
+
+2019-12-09 09:18:18 - [MESSAGE][PASSED] - Text 'Thank you for using this service. Click below to proceed' is present on page 
+
+2019-12-09 09:18:18 - [TEST_STEP][PASSED] - verifyTextPresent("Pay by Card", false): Text 'Pay by Card' is present on page 
+
+2019-12-09 09:18:18 - [MESSAGE][PASSED] - Text 'Pay by Card' is present on page 
+
+2019-12-09 09:18:18 - [TEST_STEP][PASSED] - verifyTextPresent("Should you experience any difficulties in processing your payment please contact Checkatrade", false): Text 'Should you experience any difficulties in processing your payment please contact Checkatrade' is present on page 
+
+2019-12-09 09:18:18 - [MESSAGE][PASSED] - Text 'Should you experience any difficulties in processing your payment please contact Checkatrade' is present on page 
+
+2019-12-09 09:18:18 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/Validation/Payments/Payments_Page' successfully
+
+2019-12-09 09:18:18 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/My_Payments/PayaTrader"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/My_Payments/PayaTrader' successfully
+
+2019-12-09 09:18:18 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/My_Payments/PayaTrader: Test Cases/Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/My_Payments/PayaTrader
+
+2019-12-09 09:18:18 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------------------------------------": null
+
+2019-12-09 09:18:18 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------------------------------------": null
+
+2019-12-09 09:18:18 - [TEST_STEP][PASSED] - "--------------------------------": null
+
+2019-12-09 09:18:18 - [TEST_STEP][PASSED] - "Read data from spreadsheet      |": null
+
+2019-12-09 09:18:18 - [TEST_STEP][PASSED] - data = findTestData("Payments_Data"): null
+
+2019-12-09 09:18:18 - [TEST_STEP][PASSED] - Account_ID = data.getValue("Account_ID", row): null
+
+2019-12-09 09:18:18 - [TEST_STEP][PASSED] - Address = data.getValue("Address", row): null
+
+2019-12-09 09:18:18 - [TEST_STEP][PASSED] - Email = data.getValue("Email", row): null
+
+2019-12-09 09:18:18 - [TEST_STEP][PASSED] - Invoice_Reference = data.getValue("Invoice_Reference", row): null
+
+2019-12-09 09:18:18 - [TEST_STEP][PASSED] - Name_Payee = data.getValue("Name_Payee", row): null
+
+2019-12-09 09:18:18 - [TEST_STEP][PASSED] - Payment_Description = data.getValue("Payment_Description", row): null
+
+2019-12-09 09:18:18 - [TEST_STEP][PASSED] - Payment_Pence = data.getValue("Payment_Pence", row): null
+
+2019-12-09 09:18:18 - [TEST_STEP][PASSED] - Payment_Pounds = data.getValue("Payment_Pounds", row): null
+
+2019-12-09 09:18:18 - [TEST_STEP][PASSED] - Postcode = data.getValue("Postcode", row): null
+
+2019-12-09 09:18:18 - [TEST_STEP][PASSED] - Telephone = data.getValue("Telephone", row): null
+
+2019-12-09 09:18:18 - [TEST_STEP][PASSED] - "--------------------------------------------": null
+
+2019-12-09 09:18:18 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Page_Members Area/Payments/Pay_By_Card"), 25): Object 'Object Repository/Page_Members Area/Payments/Pay_By_Card' is present
+
+2019-12-09 09:18:18 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Members Area/Payments/Pay_By_Card' is present
+
+2019-12-09 09:18:18 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Members Area/Payments/Pay_By_Card")): Object: 'Object Repository/Page_Members Area/Payments/Pay_By_Card' is clicked on
+
+2019-12-09 09:18:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Members Area/Payments/Pay_By_Card' is clicked on
+
+2019-12-09 09:18:19 - [TEST_STEP][PASSED] - waitForPageLoad(20): Wait for page load successfully
+
+2019-12-09 09:18:19 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-12-09 09:18:19 - [TEST_STEP][PASSED] - switchToWindowUrl("https://www.payatrader.com/hhpt_specific_trader.php?tid=1061477&name=Checkatrade%20HQ%20-%20TRAINING/TEST%20PAGE%20&reference=218630"): Switched to window with url: 'https://www.payatrader.com/hhpt_specific_trader.php?tid=1061477&name=Checkatrade%20HQ%20-%20TRAINING/TEST%20PAGE%20&reference=218630'
+
+2019-12-09 09:18:23 - [MESSAGE][PASSED] - Switched to window with url: 'https://www.payatrader.com/hhpt_specific_trader.php?tid=1061477&name=Checkatrade%20HQ%20-%20TRAINING/TEST%20PAGE%20&reference=218630'
+
+2019-12-09 09:18:23 - [TEST_STEP][PASSED] - waitForPageLoad(20): Wait for page load successfully
+
+2019-12-09 09:18:23 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-12-09 09:18:23 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Object Repository/Page_Members Area/Payments/Page_Payatrader/input_Account ID_public_trader_id"), 25): Object 'Object Repository/Page_Members Area/Payments/Page_Payatrader/input_Account ID_public_trader_id' is visible
+
+2019-12-09 09:18:23 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Members Area/Payments/Page_Payatrader/input_Account ID_public_trader_id' is visible
+
+2019-12-09 09:18:23 - [TEST_STEP][PASSED] - verifyTextPresent("Call us on 0333 123 1243", false): Text 'Call us on 0333 123 1243' is present on page 
+
+2019-12-09 09:18:23 - [MESSAGE][PASSED] - Text 'Call us on 0333 123 1243' is present on page 
+
+2019-12-09 09:18:23 - [TEST_STEP][PASSED] - verifyTextPresent("Welcome", false): Text 'Welcome' is present on page 
+
+2019-12-09 09:18:23 - [MESSAGE][PASSED] - Text 'Welcome' is present on page 
+
+2019-12-09 09:18:23 - [TEST_STEP][PASSED] - verifyTextPresent("Details", false): Text 'Details' is present on page 
+
+2019-12-09 09:18:23 - [MESSAGE][PASSED] - Text 'Details' is present on page 
+
+2019-12-09 09:18:23 - [TEST_STEP][PASSED] - verifyTextPresent("Pay", false): Text 'Pay' is present on page 
+
+2019-12-09 09:18:24 - [MESSAGE][PASSED] - Text 'Pay' is present on page 
+
+2019-12-09 09:18:24 - [TEST_STEP][PASSED] - verifyTextPresent("Confirm", false): Text 'Confirm' is present on page 
+
+2019-12-09 09:18:24 - [MESSAGE][PASSED] - Text 'Confirm' is present on page 
+
+2019-12-09 09:18:24 - [TEST_STEP][PASSED] - verifyTextPresent("Please complete all details", false): Text 'Please complete all details' is present on page 
+
+2019-12-09 09:18:24 - [MESSAGE][PASSED] - Text 'Please complete all details' is present on page 
+
+2019-12-09 09:18:24 - [TEST_STEP][PASSED] - verifyTextPresent("Organisation Details", false): Text 'Organisation Details' is present on page 
+
+2019-12-09 09:18:24 - [MESSAGE][PASSED] - Text 'Organisation Details' is present on page 
+
+2019-12-09 09:18:24 - [TEST_STEP][PASSED] - verifyTextPresent("Account ID", false): Text 'Account ID' is present on page 
+
+2019-12-09 09:18:24 - [MESSAGE][PASSED] - Text 'Account ID' is present on page 
+
+2019-12-09 09:18:24 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2019-12-09 09:18:24 - [TEST_STEP][PASSED] - "Account ID": null
+
+2019-12-09 09:18:24 - [TEST_STEP][PASSED] - verifyTextPresent("The Organisation you are going to pay is", false): Text 'The Organisation you are going to pay is' is present on page 
+
+2019-12-09 09:18:24 - [MESSAGE][PASSED] - Text 'The Organisation you are going to pay is' is present on page 
+
+2019-12-09 09:18:24 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2019-12-09 09:18:24 - [TEST_STEP][PASSED] - verifyTextPresent("Description of Goods or Service / Reason for Payment", false): Text 'Description of Goods or Service / Reason for Payment' is present on page 
+
+2019-12-09 09:18:24 - [MESSAGE][PASSED] - Text 'Description of Goods or Service / Reason for Payment' is present on page 
+
+2019-12-09 09:18:24 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2019-12-09 09:18:24 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Members Area/Payments/Page_Payatrader/textarea_Description of Goods or Service  R_1e6ad8"), Payment_Description): Text 'Automation Testing Activity' is set on object 'Object Repository/Page_Members Area/Payments/Page_Payatrader/textarea_Description of Goods or Service  R_1e6ad8'
+
+2019-12-09 09:18:24 - [MESSAGE][PASSED] - Text 'Automation Testing Activity' is set on object 'Object Repository/Page_Members Area/Payments/Page_Payatrader/textarea_Description of Goods or Service  R_1e6ad8'
+
+2019-12-09 09:18:24 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2019-12-09 09:18:24 - [TEST_STEP][PASSED] - "Payment Description": null
+
+2019-12-09 09:18:24 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2019-12-09 09:18:24 - [TEST_STEP][PASSED] - verifyTextPresent("Date goods or service provided", false): Text 'Date goods or service provided' is present on page 
+
+2019-12-09 09:18:24 - [MESSAGE][PASSED] - Text 'Date goods or service provided' is present on page 
+
+2019-12-09 09:18:24 - [TEST_STEP][PASSED] - verifyTextPresent("Invoice Reference (if supplied)", false): Text 'Invoice Reference (if supplied)' is present on page 
+
+2019-12-09 09:18:24 - [MESSAGE][PASSED] - Text 'Invoice Reference (if supplied)' is present on page 
+
+2019-12-09 09:18:24 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2019-12-09 09:18:24 - [TEST_STEP][PASSED] - "Invoice Reference": null
+
+2019-12-09 09:18:24 - [TEST_STEP][PASSED] - scrollToPosition(500, 500): Browser is scrolled to position x = 500, y = 500
+
+2019-12-09 09:18:24 - [MESSAGE][PASSED] - Browser is scrolled to position x = 500, y = 500
+
+2019-12-09 09:18:24 - [TEST_STEP][PASSED] - verifyTextPresent("Payment Amount", false): Text 'Payment Amount' is present on page 
+
+2019-12-09 09:18:24 - [MESSAGE][PASSED] - Text 'Payment Amount' is present on page 
+
+2019-12-09 09:18:24 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2019-12-09 09:18:24 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Members Area/Payments/Page_Payatrader/input_Payment Amount_transaction_amount_pounds"), Payment_Pounds): Text '567' is set on object 'Object Repository/Page_Members Area/Payments/Page_Payatrader/input_Payment Amount_transaction_amount_pounds'
+
+2019-12-09 09:18:24 - [MESSAGE][PASSED] - Text '567' is set on object 'Object Repository/Page_Members Area/Payments/Page_Payatrader/input_Payment Amount_transaction_amount_pounds'
+
+2019-12-09 09:18:24 - [TEST_STEP][PASSED] - "Pence": null
+
+2019-12-09 09:18:24 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Members Area/Payments/Page_Payatrader/input_Payment Amount_transaction_amount_pence"), Payment_Pence): Text '89' is set on object 'Object Repository/Page_Members Area/Payments/Page_Payatrader/input_Payment Amount_transaction_amount_pence'
+
+2019-12-09 09:18:25 - [MESSAGE][PASSED] - Text '89' is set on object 'Object Repository/Page_Members Area/Payments/Page_Payatrader/input_Payment Amount_transaction_amount_pence'
+
+2019-12-09 09:18:25 - [TEST_STEP][PASSED] - verifyTextPresent("Customer Details", false): Text 'Customer Details' is present on page 
+
+2019-12-09 09:18:25 - [MESSAGE][PASSED] - Text 'Customer Details' is present on page 
+
+2019-12-09 09:18:25 - [TEST_STEP][PASSED] - verifyTextPresent("Name", false): Text 'Name' is present on page 
+
+2019-12-09 09:18:25 - [MESSAGE][PASSED] - Text 'Name' is present on page 
+
+2019-12-09 09:18:25 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2019-12-09 09:18:25 - [TEST_STEP][PASSED] - "PAYEE": null
+
+2019-12-09 09:18:25 - [TEST_STEP][PASSED] - "Payee": null
+
+2019-12-09 09:18:25 - [TEST_STEP][PASSED] - verifyTextPresent("First Line of Address", false): Text 'First Line of Address' is present on page 
+
+2019-12-09 09:18:25 - [MESSAGE][PASSED] - Text 'First Line of Address' is present on page 
+
+2019-12-09 09:18:25 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2019-12-09 09:18:25 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Members Area/Payments/Page_Payatrader/input_First Line of Address_householder_bui_104364"), Address): Text 'Building 2000, Lakeside, North Harbour' is set on object 'Object Repository/Page_Members Area/Payments/Page_Payatrader/input_First Line of Address_householder_bui_104364'
+
+2019-12-09 09:18:25 - [MESSAGE][PASSED] - Text 'Building 2000, Lakeside, North Harbour' is set on object 'Object Repository/Page_Members Area/Payments/Page_Payatrader/input_First Line of Address_householder_bui_104364'
+
+2019-12-09 09:18:25 - [TEST_STEP][PASSED] - verifyTextPresent("Postcode", false): Text 'Postcode' is present on page 
+
+2019-12-09 09:18:25 - [MESSAGE][PASSED] - Text 'Postcode' is present on page 
+
+2019-12-09 09:18:25 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2019-12-09 09:18:25 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Members Area/Payments/Page_Payatrader/input_Postcode_householder_postcode"), Postcode): Text 'PO6 3EN' is set on object 'Object Repository/Page_Members Area/Payments/Page_Payatrader/input_Postcode_householder_postcode'
+
+2019-12-09 09:18:25 - [MESSAGE][PASSED] - Text 'PO6 3EN' is set on object 'Object Repository/Page_Members Area/Payments/Page_Payatrader/input_Postcode_householder_postcode'
+
+2019-12-09 09:18:25 - [TEST_STEP][PASSED] - verifyTextPresent("Contact Telephone Number", false): Text 'Contact Telephone Number' is present on page 
+
+2019-12-09 09:18:25 - [MESSAGE][PASSED] - Text 'Contact Telephone Number' is present on page 
+
+2019-12-09 09:18:25 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2019-12-09 09:18:25 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Members Area/Payments/Page_Payatrader/input_Contact Telephone Number_householder__a6db33"), Telephone): Text '01243 601246' is set on object 'Object Repository/Page_Members Area/Payments/Page_Payatrader/input_Contact Telephone Number_householder__a6db33'
+
+2019-12-09 09:18:26 - [MESSAGE][PASSED] - Text '01243 601246' is set on object 'Object Repository/Page_Members Area/Payments/Page_Payatrader/input_Contact Telephone Number_householder__a6db33'
+
+2019-12-09 09:18:26 - [TEST_STEP][PASSED] - verifyTextPresent("Email Address for Receipt", false): Text 'Email Address for Receipt' is present on page 
+
+2019-12-09 09:18:26 - [MESSAGE][PASSED] - Text 'Email Address for Receipt' is present on page 
+
+2019-12-09 09:18:26 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2019-12-09 09:18:26 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Members Area/Payments/Page_Payatrader/input_Email Address for Receipt_customer_email"), Email): Text 'Software-Auto-Testing@checkatrade.com' is set on object 'Object Repository/Page_Members Area/Payments/Page_Payatrader/input_Email Address for Receipt_customer_email'
+
+2019-12-09 09:18:26 - [MESSAGE][PASSED] - Text 'Software-Auto-Testing@checkatrade.com' is set on object 'Object Repository/Page_Members Area/Payments/Page_Payatrader/input_Email Address for Receipt_customer_email'
+
+2019-12-09 09:18:26 - [TEST_STEP][PASSED] - verifyTextPresent("leave blank if not UK", false): Text 'leave blank if not UK' is present on page 
+
+2019-12-09 09:18:26 - [MESSAGE][PASSED] - Text 'leave blank if not UK' is present on page 
+
+2019-12-09 09:18:26 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2019-12-09 09:18:26 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2019-12-09 09:18:26 - [TEST_STEP][PASSED] - "NAVIGATE TO CARD ENTRY SCREEN": null
+
+2019-12-09 09:18:26 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Page_Members Area/Payments/Page_Payatrader/Page_Payatrader - card payments made easy/input_Email Address for Receipt_next"), 10): Object 'Object Repository/Page_Members Area/Payments/Page_Payatrader/Page_Payatrader - card payments made easy/input_Email Address for Receipt_next' is clickable
+
+2019-12-09 09:18:26 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Members Area/Payments/Page_Payatrader/Page_Payatrader - card payments made easy/input_Email Address for Receipt_next' is clickable
+
+2019-12-09 09:18:26 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Members Area/Payments/Page_Payatrader/Page_Payatrader - card payments made easy/input_Email Address for Receipt_next")): Object: 'Object Repository/Page_Members Area/Payments/Page_Payatrader/Page_Payatrader - card payments made easy/input_Email Address for Receipt_next' is clicked on
+
+2019-12-09 09:18:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Members Area/Payments/Page_Payatrader/Page_Payatrader - card payments made easy/input_Email Address for Receipt_next' is clicked on
+
+2019-12-09 09:18:28 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/My_Payments/PayaTrader' successfully
+
+2019-12-09 09:18:28 - [TEST_STEP][PASSED] - "---------------------------------------------------------------------------------------------------------------------------": null
+
+2019-12-09 09:18:28 - [TEST_STEP][PASSED] - " External Website for Payments - So Stop at this point - We have connfirmed payments infrastructure is available to CAT    |": null
+
+2019-12-09 09:18:28 - [TEST_STEP][PASSED] - "---------------------------------------------------------------------------------------------------------------------------": null
+
+2019-12-09 09:18:28 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-12-09 09:18:28 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2019-12-09 09:18:28 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2019-12-09 09:18:28 - [TEST_STEP][PASSED] - " THIS MEMBERS TEST IS UNIQUE REGARDS SHUTDOWN - ALL THE OTHER MEMBERS TESTS LOG-OFF, THIS TEST USES CAT TEARDOWN TO CLOSE (there are 2 Browser Instances Present, CAT + Payment)": null
+
+2019-12-09 09:18:28 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2019-12-09 09:18:28 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2019-12-09 09:18:28 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-12-09 09:18:29 - [MESSAGE][PASSED] - Browser is closed
+
+2019-12-09 09:18:29 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-12-09 09:17:35 - [TEST_SUITE][PASSED] - Members_My_Payments: Test Cases/Members_Area/Payments]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

@@ -104,7 +104,8 @@ WebUI.verifyTextPresent("All BN postcode areas", false)
 //WebUI.verifyTextPresent("This profile has been set up by Checkatrade.com for training/testing purposes. Please do not use the details on this page for contacting US !!", false)  // This profile has been set up by Checkatrade.com for training/testing purposes", false)  // This profile has been set up by Checkatrade.com for training/testing purposes", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("To increase your work radius to more than ", false)
-WebUI.verifyTextPresent(" please contact members service", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("membership call our team on", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("House rules: All changes will be moderated by Checkatrade staff", false)
 '----------------------------------------------'

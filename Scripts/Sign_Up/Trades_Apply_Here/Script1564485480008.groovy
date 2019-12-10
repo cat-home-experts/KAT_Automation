@@ -33,6 +33,8 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 // Full Name Field XPATH change, Dev UI Rework|    30/09/2019   |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
+// Major Home Page Changes Modify This Script |    05/12/2019   |        DH        |                             |
+//---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //---------------------------------------------------------------------------------------------------------------
@@ -126,7 +128,7 @@ import internal.GlobalVariable as GlobalVariable
 	'TODO  |'
 	'------'
 	
-	WebUI.callTestCase(findTestCase('Web_Office/Case_Opened'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	//WebUI.callTestCase(findTestCase('Web_Office/Case_Opened'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'--------------------------'
 	' END                      |'

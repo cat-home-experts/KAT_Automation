@@ -16,17 +16,21 @@ import internal.GlobalVariable as GlobalVariable
 //-------------------------------------------------------
 // Verify CONGRATULATIONS' is reported after form fill  | - Snip - 30/07/2019
 //-------------------------------------------------------
-
+'-----------------------------'
 'Wait for SUCCESS page to load'
- WebUI.waitForPageLoad(5) // dynamic, waits only for page load, not the full, alloted time (unless slow or broken url)
+ WebUI.waitForPageLoad(60) // dynamic, waits only for page load, not the full, alloted time (unless slow or broken url)
  WebUI.delay(1)
  //--------------------------
  // Synch Added - 09/09/2019
 // WebUI.waitForElementVisible(findTestObject('Page_Checkatrade Thank you/hi_Congratulations Header'), 10)
-  
+ '-----------------------------'
 'Congratulation screen appears'
- WebUI.verifyTextPresent('Congratulations, you\'re one step closer to becoming a Checkatrade Member!', false)
-
+ WebUI.verifyTextPresent("Congratulations, you're one step closer to becoming a Checkatrade Member!", false)
+'-----------------------------'
+ WebUI.verifyTextPresent("One of the team will call you within 1 working day to discuss how a Checkatrade membership can work for you", false)
+ '-----------------------------'
+ WebUI.verifyTextPresent("Thank you for your interest, we look forward to speaking to you", false)
+ '-----------------------------'
 //-------------------------------------------------------
 // END                                                  | - Snip - 30/07/2019 - 09/09/2019 hardening
 //-------------------------------------------------------

@@ -22,12 +22,16 @@ import internal.GlobalVariable as GlobalVariable
 //' Set the Trade Name or CAT ID in the Review Field |'
 //'--------------------------------------------------'
 
+'--------------------------------------------------------'
+' Major Changes Factored Into Function - 05/12/2019      |'
+'--------------------------------------------------------'
+
 // First hit from cold sometimes takes and age to render member lookup values
 WebUI.waitForPageLoad(60)
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_Which member do you want to review'), 25)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review'), 25)
 
 //----------------------------------------------------------
-WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_Which member do you want to review'), 
+WebUI.setText(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review'), 
     findTestData('Give_Feedback (1)').getValue('Account_Verification_Name', GlobalVariable.row))
 
 //----------------------------------------------------------------------------------
@@ -37,7 +41,11 @@ WebUI.delay(1) // page load 29/08/2019 - Delay reapplied 14/08/19, integral with
 'Submit the search criteria using click     |'
 '-------------------------------------------'
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Checkatrade Give your feedback/div_Which member do you want to review'), 25)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/span_Search_Member'), 25)
+
+// New Nagger
+//WebUI.waitForElementPresent(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/div_Close'), 10)
+//WebUI.click(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/div_Close'))
 
 '----------------------------------------------------------------------'
 try {
@@ -45,12 +53,14 @@ try {
     '----------------------------------------------------------------------'
 
 	//----------------------------------------------------------------------------------
-    WebUI.click(findTestObject('Page_Checkatrade Give your feedback/div_Which member do you want to review')) 
+    WebUI.click(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/span_Search_Member')) 
+	KeywordUtil.markPassed(" * * * Trader OR CAT ID Selected, and Returned as Expected!")
+	
 }
 catch (Exception e) {
     System.out.println.(' * * * Trader OR CAT ID <Detail reported in log>') 
 
-    KeywordUtil.markFailed(' * * * Trader OR CAT ID ') 
+    KeywordUtil.markFailed(" * * * Trader OR CAT ID Not Returned - Service Isn't Running OR Slow to Start Up!") 
 } 
 '----------------------------------------------------------------------'
 //////////////////////////////

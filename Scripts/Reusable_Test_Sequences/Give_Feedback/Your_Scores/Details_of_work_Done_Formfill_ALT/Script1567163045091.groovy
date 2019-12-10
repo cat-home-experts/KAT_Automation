@@ -59,15 +59,17 @@ WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Give your feedb
 '---------------------------------------'
 ' Scroll Bottom of Page Into View <Next>|'
 '---------------------------------------'
-WebUI.scrollToElement(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_No_ctl00contentButton6'), 2)
-
+//WebUI.scrollToElement(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_No_ctl00contentButton6'), 2)
+WebUI.scrollToPosition(500, 500)
 '---------------------------------------'
 ' Work is Guaranteed       - Yes or No  |'
 '---------------------------------------'
 if (YS_Work_Covered == ("Yes")) {
+	WebUI.waitForElementClickable(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Warranty_Cover_span_Yes'), 2)
 	WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Warranty_Cover_span_Yes'))
 }
 else if (YS_Work_Covered == ("No")) {
+	WebUI.waitForElementClickable(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Warranty_Cover_span_No'), 2)
 	WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Warranty_Cover_span_No'))
 }
 WebUI.waitForPageLoad(25)
@@ -76,14 +78,14 @@ WebUI.waitForPageLoad(25)
 '---------------------------------------'
 
 if (YS_Discussed_Complaint == ("Yes")) {
-	WebUI.waitForElementVisible(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Discussed_Complaint_span_Yes'), 25)
+	WebUI.waitForElementClickable(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Discussed_Complaint_span_Yes'), 25)
 	WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Discussed_Complaint_span_Yes'))
 	WebUI.delay(1)
 	WebUI.waitForPageLoad(25)
 	WebUI.setText(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Complaint_Response'), YS_Complaint_Response)
 }
 else if (YS_Discussed_Complaint == ("No")) {
-	WebUI.waitForElementVisible(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Discussed_Complaint_span_No'), 25)
+	WebUI.waitForElementClickable(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Discussed_Complaint_span_No'), 25)
 	WebUI.click(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/Discussed_Complaint_span_No'))
 	WebUI.delay(1)
 	WebUI.waitForPageLoad(25)

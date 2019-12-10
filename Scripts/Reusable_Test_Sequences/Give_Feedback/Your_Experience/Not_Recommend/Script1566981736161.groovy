@@ -66,7 +66,7 @@ WebUI.selectOptionByLabel(findTestObject('Feedback_Non_Recommend/Page_Checkatrad
 '------------------------------------------------'
 ' Scroll to <NEXT> Button to reveal Text Below   |'
 '------------------------------------------------'
-WebUI.scrollToElement(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_No_ctl00contentButton4'), 2)
+// WebUI.scrollToElement(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_No_ctl00contentButton4'), 2)
 
 WebUI.waitForPageLoad(5)
 WebUI.waitForElementVisible(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select ShortForm'), 25)

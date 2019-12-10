@@ -5,6 +5,16 @@
    <tag></tag>
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
+      <description>SE</description>
+      <initValue>'Ronald'</initValue>
+      <name>aFirstName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>SA</description>
+      <initValue>'MacGinty'</initValue>
+      <name>aSurName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
       <description>Trading Name</description>
       <initValue>'Gutter Snipes'</initValue>
       <name>CompanyName</name>
@@ -43,6 +53,11 @@
       <description>Invalid format email</description>
       <initValue>'Billy Bob'</initValue>
       <name>Invalid_Email</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Preview Members Area URL</description>
+      <initValue>'https://preview-ma.checkatrade.com/'</initValue>
+      <name>MembersURL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Specific area within the Members Portal</description>
@@ -108,10 +123,5 @@
       <description>Fix the format error here Give Feedback - Recommend? true OR false</description>
       <initValue>true</initValue>
       <name>YE_Recommendations</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>Preview Members Area URL</description>
-      <initValue>'https://preview-ma.checkatrade.com/'</initValue>
-      <name>MembersURL</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

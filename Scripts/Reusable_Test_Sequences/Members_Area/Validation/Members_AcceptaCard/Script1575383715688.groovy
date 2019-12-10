@@ -75,6 +75,8 @@ WebUI.verifyTextPresent("MEMBER ID", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Payatrader Account Reference Number", false)
 '----------------------------------------------'
+WebUI.delay(1)
+'----------------------------------------------'
 WebUI.verifyTextPresent("1074343", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Thank you for applying for our online card acceptance service", false)

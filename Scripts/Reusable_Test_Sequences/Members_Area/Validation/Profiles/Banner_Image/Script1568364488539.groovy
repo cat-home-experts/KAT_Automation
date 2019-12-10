@@ -79,7 +79,7 @@ WebUI.verifyTextPresent("Update your company banner image here", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Choose a new image", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("The new banner image needs to be a JPEG", false)
+WebUI.verifyTextPresent("The new photo needs to be a JPEG", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("For best results, the image should be", false)
 '----------------------------------------------'

@@ -61,12 +61,12 @@ WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Give your feedb
 '-----------------------------------------------------'
 //try {
 if (YS_Feedback_Published == ("Yes")) {
-	WebUI.waitForElementPresent(findTestObject('Feedback/Page_Checkatrade Give your feedback/span_Publish_Feedback_Yes'), 10)
+	WebUI.waitForElementClickable(findTestObject('Feedback/Page_Checkatrade Give your feedback/span_Publish_Feedback_Yes'), 10)
 	WebUI.click(findTestObject('Feedback/Page_Checkatrade Give your feedback/span_Publish_Feedback_Yes'))
 	WebUI.waitForPageLoad(60)
 }
 else if (YS_Feedback_Published == ("No")) {
-	WebUI.waitForElementPresent(findTestObject('Feedback/Page_Checkatrade Give your feedback/span_Publish_Feedback_No'), 10)
+	WebUI.waitForElementClickable(findTestObject('Feedback/Page_Checkatrade Give your feedback/span_Publish_Feedback_No'), 10)
 	WebUI.click(findTestObject('Feedback/Page_Checkatrade Give your feedback/span_Publish_Feedback_No'))
 	//WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Feedback'))
 	//WebUI.scrollToElement(findTestObject('Object Repository/Page_Checkatrade Give your feedback/input_No_ctl00contentButton6'), 2)

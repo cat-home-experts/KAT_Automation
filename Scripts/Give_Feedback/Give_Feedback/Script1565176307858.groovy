@@ -37,7 +37,9 @@ import internal.GlobalVariable as GlobalVariable
 // Hardening of all assets relating to these  |    03/09/2019   |     Dave Horne   |                             |
 // Tests, after extending the dataset         |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-// Banner Image Test Flaky, Temp Removal      |    04/11/2019   |        DH        |    TODO                     |
+// Banner Image Test Flaky, Temp Removal      |    04/11/2019   |        DH        |    TODO REINSTATE           |
+//---------------------------------------------------------------------------------------------------------------
+// Major Page Changes Factored into Regression|    05/12/2019   |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //
 //---------------------------------------------------------------------------------------------------------------
@@ -62,6 +64,7 @@ def YE_WorkCarriedOut
 // WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Wait_a_bit'), [:], FailureHandling.OPTIONAL)     //   |
 //--------------------------------------------------------------------------------------------------------------------
 GlobalVariable.PAGE = "GiveFeedback"
+GlobalVariable.URL = GlobalVariable.URL+GlobalVariable.PAGE
 
 'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test\r\n'
 for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (1)').getRowNumbers(); (GlobalVariable.row)++) {

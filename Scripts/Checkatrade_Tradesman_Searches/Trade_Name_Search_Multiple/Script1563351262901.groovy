@@ -56,6 +56,9 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Search_CAT_ID_D
     //-----------------------------------------
     WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 	
+	' Home Page validation Checks after COOKIE Dispelled'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Home'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
 	'---------------------------------------------------------------------'
 	' Select Search on Trader Name (or ID) From Home page/Search Screen   |'
 	'---------------------------------------------------------------------'

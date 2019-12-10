@@ -51,6 +51,9 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////////////////////
 //WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/input_concat(Customer  s name)_customerName'), 60)
 
+'----------------------------------------------'
+WebUI.delay(1)
+'----------------------------------------------'
 WebUI.waitForPageLoad(60)
 
 ////////////////////////////////////////////////////////////
