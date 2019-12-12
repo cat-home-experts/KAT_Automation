@@ -28,6 +28,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 // Implemented                                |   28/11/2019    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
+// IFrame Checks Added                        |   11/12/2019    |        DH        |Minimal- need to expand Test |
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
@@ -62,14 +63,25 @@ WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Navigation/N
 '--------------------------------------'
 // Central pane
 'Central pane'
+//WebUI.verifyElementVisible(findTestObject('Object Repository/WebOffice/Feedback_Top/Page_/a_Feedback'))
 //WebUI.verifyTextPresent("Consumer Search", false)
-//WebUI.verifyTextPresent("Use the filter on the left to perform a search of Consumers", false)
+WebUI.verifyElementVisible(findTestObject('Object Repository/WebOffice/Consumers/Page_/a_Consumers'))
+
+WebUI.verifyElementVisible(findTestObject('Object Repository/WebOffice/Consumers/Page_/h4_Consumers'))
+
+//WebUI.verifyElementVisible(findTestObject('Object Repository/WebOffice/Consumers/Page_/input_Consumers_btn'))
 '-------------------------------'
 'Left Hand Consumer Management  |'
 '-------------------------------'
 "Add Consumers"
 //WebUI.verifyTextPresent("Add Consumer", false)
 'Filter'
+
+//WebUI.verifyElementVisible(findTestObject('Object Repository/Page_/h1_Consumer Search'))
+
+//WebUI.verifyElementVisible(findTestObject('Object Repository/Page_/p_Use the filter on the left to perform a s_1828ae'))
+
+//WebUI.verifyTextPresent("Use the filter on the left to perform a search of Consumers", false)
 //Filter
 WebUI.verifyTextPresent("Filter", false)
 WebUI.verifyTextPresent("Forename", false)

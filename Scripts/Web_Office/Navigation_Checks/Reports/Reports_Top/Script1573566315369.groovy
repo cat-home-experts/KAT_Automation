@@ -58,42 +58,41 @@ WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Directives/W
 WebUI.waitForPageLoad(60)
 WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Reports'), 60)
 WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/a_Reports'))
-
+WebUI.delay(2)
+WebUI.waitForPageLoad(60)
+WebUI.waitForElementVisible(findTestObject("Object Repository/WebOffice/Cases_Top/Reports_Top/Page_/img_See more _ctl00_CP1_WebChart1"), 60)
 '--------------------------------------'
 ' Verify Returned Page Content         |'
 '--------------------------------------'
-// Header
-WebUI.verifyTextPresent("Members  >  All Members", false)
-WebUI.verifyTextPresent("Next", false)
-WebUI.verifyTextPresent("Show", false)
-WebUI.verifyTextPresent("per page", false)
-WebUI.verifyTextPresent("Displaying 1 to 25 from", false)
-// Table Sample Row
-WebUI.verifyTextPresent("Astra Clean", false)
-WebUI.verifyTextPresent("124", false)
-WebUI.verifyTextPresent("Chichester", false)
-WebUI.verifyTextPresent("West Sussex", false)
-WebUI.verifyTextPresent("CARPET & UPHOLSTERY CLEANING", false)
-WebUI.verifyTextPresent("MA Department", false)
-// Footer
-WebUI.verifyTextPresent("Mailmerge", false)
-WebUI.verifyTextPresent("Export Email Addresses", false)
-WebUI.verifyTextPresent("Bulk Export Email Addresses", false)
-WebUI.verifyTextPresent("Export Mobile Numbers", false)
-WebUI.verifyTextPresent("Show results on map", false)
-WebUI.verifyTextPresent("Open Map in new Window (with All Results)", false)
-// RH Navigator View
-WebUI.verifyTextPresent("All Companies", false)
-WebUI.verifyTextPresent("Members", false)
-WebUI.verifyTextPresent("Non-Members", false)
-WebUI.verifyTextPresent("Search By", false)
-WebUI.verifyTextPresent("Mobile", false)
-WebUI.verifyTextPresent("Filter", false)
-WebUI.verifyTextPresent("Trader ID", false)
-WebUI.verifyTextPresent("More Options", false)
-WebUI.verifyTextPresent("Apply", false)
-WebUI.verifyTextPresent("Clear", false)
-WebUI.verifyTextPresent("Advanced Search", false)
+// All One Page
+'Recent Searches Table'
+WebUI.verifyTextPresent("Web Activity", false)
+WebUI.verifyTextPresent("Recent Searches", false)
+WebUI.verifyTextPresent("Search on", false)
+WebUI.verifyTextPresent("Search for", false)
+WebUI.verifyTextPresent("In", false)
+WebUI.verifyTextPresent("No. Results", false)
+WebUI.verifyTextPresent("See more …", false)
+
+'Most Viewed Companies Table'
+WebUI.verifyTextPresent("Most Viewed Companies (in past 7 days)", false)
+WebUI.verifyTextPresent("Company", false)
+WebUI.verifyTextPresent("From Search", false)
+WebUI.verifyTextPresent("Checkatrade", false)
+WebUI.verifyTextPresent("External Link", false)
+WebUI.verifyTextPresent("Other", false)
+WebUI.verifyTextPresent("Total", false)
+
+' Daily Activity Graphic'
+WebUI.verifyElementVisible(findTestObject("Object Repository/WebOffice/Cases_Top/Reports_Top/Page_/img_See more _ctl00_CP1_WebChart1"))
+//WebUI.verifyTextPresent("Date	", false)
+WebUI.verifyElementVisible(findTestObject('Object Repository/WebOffice/Cases_Top/Reports_Top/Page_/th_Date'))
+//WebUI.verifyTextPresent("Unique Visitors	", false)
+WebUI.verifyElementVisible(findTestObject('Object Repository/WebOffice/Cases_Top/Reports_Top/Page_/th_Unique Visitors'))
+
+WebUI.verifyElementVisible(findTestObject('Object Repository/WebOffice/Cases_Top/Reports_Top/Page_/th_Searches'))
+//WebUI.verifyTextPresent("Company Views", false)
+WebUI.verifyElementVisible(findTestObject('Object Repository/WebOffice/Cases_Top/Reports_Top/Page_/th_Company Views'))
 
 '--------------------------'
 ' Teardown - CLose Browser |'

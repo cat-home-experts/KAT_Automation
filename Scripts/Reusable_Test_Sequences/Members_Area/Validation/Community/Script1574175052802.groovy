@@ -14,6 +14,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 //-----------------------
 // TEST HISTORY HEADER - | TODO Blind Import To Update
@@ -45,6 +46,10 @@ import internal.GlobalVariable as GlobalVariable
 //  THEN -                                                                                                       |
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
+'WARNING - Be AWARE that, for example, That the Members Area Community Link on Preview doesnt take you to Preview, but takes you to LIVE Members Area'
+
+KeywordUtil.markWarning("Navigating to ->Members->Your Account->Community-> From the Dashboard takes you to LIVE ... ")
+KeywordUtil.markWarning("(from whatever environment you are currently on) - https://community.checkatrade.com/index.php")
 
 ////////////////////////////////////////////////////////////
 //     Wait for Customers Name Element Availability       //
@@ -66,6 +71,8 @@ WebUI.waitForPageLoad(60)
 ////////////////////////////////////////////////////////////
 //         Verify Header Text on Key Portal Areas         //
 ////////////////////////////////////////////////////////////
+
+WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Community/Page_Checkatrade Community/img'), 60)
 '----------------------------------------------'
 'DEFAULT TAB - None - 1 Page Returned          |'
 '----------------------------------------------'
@@ -84,11 +91,14 @@ WebUI.verifyTextPresent("You can search below to find out if there is already a 
 '----------------------------------------------'
 WebUI.verifyTextPresent("Community", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("NEW POST", false) // Could be flakey
+//WebUI.verifyTextPresent("NEW POST", false) // Could be flakey
 '----------------------------------------------'
 //WebUI.verifyTextPresent("GET INVOLVED", false)
 '----------------------------------------------'
-
+'Graphics Present'
+WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Members Area/Community/Page_Checkatrade Community/img'), 1)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Members Area/Community/Page_Checkatrade Community/img_1'), 1)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Members Area/Community/Page_Checkatrade Community/img_1_2'), 1)
 // No LogOff on this Page - Navigaate Back
 WebUI.back()
 //WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/a_Dashboard'), 10)

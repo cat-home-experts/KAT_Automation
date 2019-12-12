@@ -26,7 +26,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 // Navigate and Verify Returned Content       |   12/11/2019    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// IFrame Checks Added                        |   11/12/2019    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -71,31 +71,22 @@ WebUI.verifyTextPresent("Include Non Members", false)
 WebUI.verifyTextPresent("Welcome", false)
 WebUI.verifyTextPresent("Not you?", false)
 // Retention Letter Navigation
-//WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice/Directories_Top/Retention_Letters_Button'), 60)
-//WebUI.click(findTestObject('Object Repository/WebOffice/Directories_Top/Retention_Letters_Button'))
-// Select Edition
-//WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice/Directories_Top/Select_Editions_Button'), 60)
-//WebUI.click(findTestObject('Object Repository/WebOffice/Directories_Top/Select_Editions_Button'))
-// popout
-//WebUI.verifyTextPresent("Retention Letters for", false)
-//WebUI.verifyTextPresent("Include companies who have already been sent a retention letter", false)
-//WebUI.verifyTextPresent("Include companies who have their website switched Blind", false)
-//WebUI.verifyTextPresent("Download documents:", false)
-//WebUI.verifyTextPresent("Note: Letters will list all editions for this quarter. Downloading a document will automatically create a case for each company titled", false)
-// Cancel
-//WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice/Directories_Top/Cancel_Button'), 60)
-//WebUI.click(findTestObject('Object Repository/WebOffice/Directories_Top/Cancel_Button'))
+WebUI.verifyElementVisible(findTestObject("Object Repository/WebOffice/Directories_Top/Page_/a_Retention Letters"))
+'-------------------------------'         
 // Table Header Row
 //WebUI.verifyTextPresent("CHURN +", false)
+WebUI.verifyElementVisible(findTestObject("Object Repository/WebOffice/Directories_Top/Page_/th_Net Churn ()"))
 //WebUI.verifyTextPresent("CHURN + (%)", false)
+WebUI.verifyElementVisible(findTestObject("Object Repository/WebOffice/Directories_Top/Page_/th_Churn - ()"))
 //WebUI.verifyTextPresent("CHURN -", false)
+WebUI.verifyElementVisible(findTestObject("Object Repository/WebOffice/Directories_Top/Page_/th_Churn -"))
 //WebUI.verifyTextPresent("CHURN - (%)", false)
+WebUI.verifyElementVisible(findTestObject("Object Repository/WebOffice/Directories_Top/Page_/th_Churn  ()"))
 //WebUI.verifyTextPresent("NET CHURN (%)", false)
+WebUI.verifyElementVisible(findTestObject("Object Repository/WebOffice/Directories_Top/Page_/th_Churn"))
 //WebUI.verifyTextPresent("P.E.", false)
-//// Table Sample Row (highest score for consistency?
-//WebUI.verifyTextPresent("Kingston + Surbiton", false)
-//// Table Footer Navigation
-//WebUI.verifyTextPresent("Retention Letters", false)
+WebUI.verifyElementVisible(findTestObject("Object Repository/WebOffice/Directories_Top/Page_/th_PE"))
+'--------------------------------'
 // Left Hand Navigation Tree
 WebUI.verifyTextPresent("Directories", false)
 WebUI.verifyTextPresent("Current", false)

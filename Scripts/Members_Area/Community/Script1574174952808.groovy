@@ -52,9 +52,6 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 // Specific Page Withing members That You Want To Visit
 GlobalVariable.PAGE = "community" // Expected, But NOT, as the following 2 lines explain
 
-KeywordUtil.markWarning("Navigating to ->Members->Your Account->Community-> From the Dashboard takes you to LIVE ... ")
-KeywordUtil.markWarning("(from whatever environment you are currently on) - https://community.checkatrade.com/index.php")
-
 'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test\r\n'
 for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Data').getRowNumbers(); (GlobalVariable.row)++) {
 	

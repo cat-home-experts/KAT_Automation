@@ -58,7 +58,7 @@ WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Directives/W
 WebUI.waitForPageLoad(60)
 WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Tools'), 60)
 WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/a_Tools'))
-
+WebUI.waitForPageLoad(60)
 '--------------------------------------'
 ' Verify Returned Page Content         |'
 '--------------------------------------'

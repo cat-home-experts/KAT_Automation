@@ -39,6 +39,7 @@ WebUI.setText(findTestObject('Object Repository/New Folder1/Page_Checkatrade Giv
 '--------------------------------'
 '  Hit <Submit> button to Commit |'
 '--------------------------------'
+WebUI.waitForElementPresent(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_Value Of Work_ctl00contentButton1'), 25)
 WebUI.click(findTestObject('Object Repository/New Folder/Page_Checkatrade Give your feedback/input_Value Of Work_ctl00contentButton1'))
 
 '--------------------------------'

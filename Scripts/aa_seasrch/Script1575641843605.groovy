@@ -18,18 +18,11 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://www.preview.checkatrade.com/')
+WebUI.navigateToUrl('https://community.checkatrade.com/index.php')
 
-WebUI.setText(findTestObject('Page_Checkatrade Find a tradesperson you can trust/input_Search through overrecommended vetted_c74dba'), 
-    'diagnos')
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Community/Page_Checkatrade Community/img'))
 
-WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_GarageVehicle Services  Diagnostic Testing'))
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Community/Page_Checkatrade Community/img_1'))
 
-WebUI.setText(findTestObject('Page_Checkatrade Find a tradesperson you can trust/input_Not here_location'), 'angmering')
-
-WebUI.click(findTestObject('Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/nav_Homeowner'))
-
-WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/div_Trades'))
-
-WebUI.click(findTestObject('Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/nav_Homeowner'))
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Community/Page_Checkatrade Community/img_1_2'))
 

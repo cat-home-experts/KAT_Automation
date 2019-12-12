@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Members_Callback" time="89.977" tests="1" failures="0" errors="0">
+   <testsuite name="Members_Callback" tests="1" failures="0" errors="0" time="89.977" timestamp="2019-12-11 12:46:07" hostname="DavidHo - VETTEDSP36RF.check.local" id="Test Suites/Members_Callback">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\davidho\\Katalon Studio\\Start\\Reports\\20191211_124431\\Members_Callback\\20191211_124434"/>
+         <property name="logFiles" value="C:\\Users\\davidho\\Katalon Studio\\Start\\Reports\\20191211_124431\\Members_Callback\\20191211_124434\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="DavidHo - VETTEDSP36RF.check.local"/>
+         <property name="os" value="Windows 10 32bit"/>
+         <property name="katalonVersion" value="7.1.2.1"/>
+         <property name="browser" value="Firefox 70.0"/>
+         <property name="hostAddress" value="10.0.11.243"/>
+         <property name="sessionId" value="ea9860d9-2f4d-438c-8c19-1a888017d268"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Members_Area/Callback_Requests" time="88.004" classname="Test Cases/Members_Area/Callback_Requests" status="PASSED">
+         <system-out><![CDATA[2019-12-11 12:46:08 - [TEST_CASE][PASSED] - Test Cases/Members_Area/Callback_Requests: Test Cases/Members_Area/Callback_Requests
+
+2019-12-11 12:46:09 - [TEST_STEP][PASSED] - PAGE = "work-alert": null
+
+2019-12-11 12:46:09 - [TEST_STEP][PASSED] - for ([row = 1, row <= findTestData("Members_Test_Data").getRowNumbers(), (internal.GlobalVariable.row++)]): Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/Banner_Menu/log_Off' successfully
+
+2019-12-11 12:46:11 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Members_Area/Start_Up"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/Start_Up' successfully
+
+2019-12-11 12:46:11 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Members_Area/Start_Up: Test Cases/Reusable_Test_Sequences/Members_Area/Start_Up
+
+2019-12-11 12:46:11 - [TEST_STEP][PASSED] - "----------------------------------------------------": null
+
+2019-12-11 12:46:11 - [TEST_STEP][PASSED] - FUNCTION_AREA = "Members_Area": null
+
+2019-12-11 12:46:11 - [TEST_STEP][PASSED] - "Do Some Magic with URL(s) See the comments within URL Handler ": null
+
+2019-12-11 12:46:11 - [TEST_STEP][PASSED] - "URL - Set from the ENVIRONMENT PROFILE - Specific Page Address Provided By +GlobalVariable.MembersURL  ": null
+
+2019-12-11 12:46:11 - [TEST_STEP][PASSED] - openBrowser(MembersURL): Browser is opened with url: 'https://preview-ma.checkatrade.com/'
+
+2019-12-11 12:46:11 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2019-12-11 12:46:12 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-12-11 12:46:43 - [MESSAGE][PASSED] - Browser is opened with url: 'https://preview-ma.checkatrade.com/'
+
+2019-12-11 12:46:43 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-12-11 12:46:43 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-12-11 12:46:43 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-12-11 12:46:43 - [MESSAGE][PASSED] - Current window maximized
+
+2019-12-11 12:46:43 - [TEST_STEP][PASSED] - verifyTextPresent("EXCLUSIVE ACCESS FOR CHECKATRADE MEMBERS ONLY", false): Text 'EXCLUSIVE ACCESS FOR CHECKATRADE MEMBERS ONLY' is present on page 
+
+2019-12-11 12:46:43 - [MESSAGE][PASSED] - Text 'EXCLUSIVE ACCESS FOR CHECKATRADE MEMBERS ONLY' is present on page 
+
+2019-12-11 12:46:43 - [TEST_STEP][PASSED] - verifyTextPresent("Forgotten password?", false): Text 'Forgotten password?' is present on page 
+
+2019-12-11 12:46:43 - [MESSAGE][PASSED] - Text 'Forgotten password?' is present on page 
+
+2019-12-11 12:46:43 - [TEST_STEP][PASSED] - verifyTextPresent("Forgotten username?", false): Text 'Forgotten username?' is present on page 
+
+2019-12-11 12:46:43 - [MESSAGE][PASSED] - Text 'Forgotten username?' is present on page 
+
+2019-12-11 12:46:43 - [TEST_STEP][PASSED] - verifyTextPresent("Trouble logging in? No username and password? Contact Checkatrade Member Services by", false): Text 'Trouble logging in? No username and password? Contact Checkatrade Member Services by' is present on page 
+
+2019-12-11 12:46:44 - [MESSAGE][PASSED] - Text 'Trouble logging in? No username and password? Contact Checkatrade Member Services by' is present on page 
+
+2019-12-11 12:46:44 - [TEST_STEP][PASSED] - verifyTextPresent("memberservices@checkatrade.com", false): Text 'memberservices@checkatrade.com' is present on page 
+
+2019-12-11 12:46:44 - [MESSAGE][PASSED] - Text 'memberservices@checkatrade.com' is present on page 
+
+2019-12-11 12:46:44 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/Start_Up' successfully
+
+2019-12-11 12:46:44 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Members_Area/log_On"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/log_On' successfully
+
+2019-12-11 12:46:44 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Members_Area/log_On: Test Cases/Reusable_Test_Sequences/Members_Area/log_On
+
+2019-12-11 12:46:44 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Members/Page_Members Area/button_Log in"), 10): Object 'Object Repository/Members/Page_Members Area/button_Log in' is present
+
+2019-12-11 12:46:44 - [MESSAGE][PASSED] - Object 'Object Repository/Members/Page_Members Area/button_Log in' is present
+
+2019-12-11 12:46:44 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Members/Page_Members Area/input_Username_username")): Object: 'Object Repository/Members/Page_Members Area/input_Username_username' is clicked on
+
+2019-12-11 12:46:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Members/Page_Members Area/input_Username_username' is clicked on
+
+2019-12-11 12:46:44 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Members/Page_Members Area/input_Username_username"), Username): Text 'check1234' is set on object 'Object Repository/Members/Page_Members Area/input_Username_username'
+
+2019-12-11 12:46:45 - [MESSAGE][PASSED] - Text 'check1234' is set on object 'Object Repository/Members/Page_Members Area/input_Username_username'
+
+2019-12-11 12:46:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Members/Page_Members Area/input_Password_password")): Object: 'Object Repository/Members/Page_Members Area/input_Password_password' is clicked on
+
+2019-12-11 12:46:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Members/Page_Members Area/input_Password_password' is clicked on
+
+2019-12-11 12:46:45 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Members/Page_Members Area/input_Password_password"), Password): Text 'testing123' is set on object 'Object Repository/Members/Page_Members Area/input_Password_password'
+
+2019-12-11 12:46:45 - [MESSAGE][PASSED] - Text 'testing123' is set on object 'Object Repository/Members/Page_Members Area/input_Password_password'
+
+2019-12-11 12:46:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Members/Page_Members Area/button_Log in")): Object: 'Object Repository/Members/Page_Members Area/button_Log in' is clicked on
+
+2019-12-11 12:46:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Members/Page_Members Area/button_Log in' is clicked on
+
+2019-12-11 12:46:45 - [TEST_STEP][PASSED] - waitForElementNotPresent(findTestObject("Object Repository/Members/Page_Members Area/button_Log in"), 25): Web element with id: 'Object Repository/Members/Page_Members Area/button_Log in' located by 'By.xpath: //button[@type = 'submit' and (text() = ' Log in ' or . = ' Log in ')]' is not present after '25' second(s)
+
+2019-12-11 12:46:46 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/Members/Page_Members Area/button_Log in' located by 'By.xpath: //button[@type = 'submit' and (text() = ' Log in ' or . = ' Log in ')]' is not present after '25' second(s)
+
+2019-12-11 12:46:46 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-12-11 12:46:46 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-12-11 12:46:46 - [TEST_STEP][PASSED] - if ("Object Repository/Page_Members Area/Header_Attention_Text"): Call Test Case 'Test Cases/Reusable_Test_Sequences/Utils/Popout_Handler' successfully
+
+2019-12-11 12:46:46 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Page_Members Area/Header_Attention_Text"), 60): Object 'Object Repository/Page_Members Area/Header_Attention_Text' is present
+
+2019-12-11 12:46:46 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Members Area/Header_Attention_Text' is present
+
+2019-12-11 12:46:46 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Utils/Popout_Handler"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Utils/Popout_Handler' successfully
+
+2019-12-11 12:46:46 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Utils/Popout_Handler: Test Cases/Reusable_Test_Sequences/Utils/Popout_Handler
+
+2019-12-11 12:46:47 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-12-11 12:46:49 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-12-11 12:46:49 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2019-12-11 12:46:49 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-12-11 12:46:49 - [TEST_STEP][PASSED] - try:  View Our New Website POPOUT Displayed
+
+2019-12-11 12:46:49 - [TEST_STEP][PASSED] - if ("Object Repository/Popout/go_Away"):  View Our New Website POPOUT Displayed
+
+2019-12-11 12:46:49 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Popout/go_Away")): Object: 'Object Repository/Popout/go_Away' is clicked on
+
+2019-12-11 12:46:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Popout/go_Away' is clicked on
+
+2019-12-11 12:46:49 - [TEST_STEP][PASSED] - markPassed(" View Our New Website POPOUT Displayed"):  View Our New Website POPOUT Displayed
+
+2019-12-11 12:46:49 - [MESSAGE][PASSED] -  View Our New Website POPOUT Displayed
+
+2019-12-11 12:46:49 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Utils/Popout_Handler' successfully
+
+2019-12-11 12:46:49 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/log_On' successfully
+
+2019-12-11 12:46:49 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Customers/Callback_Requests"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Customers/Callback_Requests' successfully
+
+2019-12-11 12:46:49 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Customers/Callback_Requests: Test Cases/Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Customers/Callback_Requests
+
+2019-12-11 12:46:50 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Page_Members Area/div_Callback Requests"), 60): Object 'Object Repository/Page_Members Area/div_Callback Requests' is present
+
+2019-12-11 12:46:50 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Members Area/div_Callback Requests' is present
+
+2019-12-11 12:46:50 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Members Area/div_Callback Requests")): Object: 'Object Repository/Page_Members Area/div_Callback Requests' is clicked on
+
+2019-12-11 12:46:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Members Area/div_Callback Requests' is clicked on
+
+2019-12-11 12:46:50 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Customers/Callback_Requests' successfully
+
+2019-12-11 12:46:50 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Members_Area/Validation/Callback_Requests_Sub/Callback_Request_Settings"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/Validation/Callback_Requests_Sub/Callback_Request_Settings' successfully
+
+2019-12-11 12:46:50 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Members_Area/Validation/Callback_Requests_Sub/Callback_Request_Settings: Test Cases/Reusable_Test_Sequences/Members_Area/Validation/Callback_Requests_Sub/Callback_Request_Settings
+
+2019-12-11 12:46:51 - [TEST_STEP][PASSED] - waitForPageLoad(25): Wait for page load successfully
+
+2019-12-11 12:46:51 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-12-11 12:46:51 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Page_Members Area/a_Settings"), 50): Object 'Object Repository/Page_Members Area/a_Settings' is present
+
+2019-12-11 12:46:51 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Members Area/a_Settings' is present
+
+2019-12-11 12:46:51 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Utils/Check_URL"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Utils/Check_URL' successfully
+
+2019-12-11 12:46:51 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Utils/Check_URL: Test Cases/Reusable_Test_Sequences/Utils/Check_URL
+
+2019-12-11 12:46:51 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+2019-12-11 12:46:52 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-12-11 12:46:52 - [TEST_STEP][PASSED] - CurrentUrl = getUrl(): Current window's url is: 'https://preview-ma.checkatrade.com/work-alert'
+
+2019-12-11 12:46:52 - [MESSAGE][PASSED] - Current window's url is: 'https://preview-ma.checkatrade.com/work-alert'
+
+2019-12-11 12:46:52 - [TEST_STEP][PASSED] - step_Passed = "We have been redirected, correctly to the EXPECTED <MEMBERS> URL Page"+GlobalVariable.CurrentUrl": null
+
+2019-12-11 12:46:52 - [TEST_STEP][PASSED] - step_Failed = "We have been redirected, incorrectly to this page "+GlobalVariable.CurrentUrl+" We should be on "+GlobalVariable.MembersURL+GlobalVariable.PAGE": null
+
+2019-12-11 12:46:52 - [TEST_STEP][PASSED] - if (CurrentUrl == MembersURL + PAGE): We have been redirected, correctly to the EXPECTED <MEMBERS> URL Page"+GlobalVariable.CurrentUrl
+
+2019-12-11 12:46:52 - [TEST_STEP][PASSED] - out.println(step_Passed): null
+
+2019-12-11 12:46:52 - [TEST_STEP][PASSED] - markPassed(step_Passed): We have been redirected, correctly to the EXPECTED <MEMBERS> URL Page"+GlobalVariable.CurrentUrl
+
+2019-12-11 12:46:52 - [MESSAGE][PASSED] - We have been redirected, correctly to the EXPECTED <MEMBERS> URL Page"+GlobalVariable.CurrentUrl
+
+2019-12-11 12:46:52 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Utils/Check_URL' successfully
+
+2019-12-11 12:46:52 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2019-12-11 12:46:52 - [TEST_STEP][PASSED] - "DEFAULT TAB - Published Feedback ": null
+
+2019-12-11 12:46:52 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2019-12-11 12:46:52 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("Members_Test_Data").getValue("MEMBER_ID", 1), false): Text '218630' is present on page 
+
+2019-12-11 12:46:53 - [MESSAGE][PASSED] - Text '218630' is present on page 
+
+2019-12-11 12:46:53 - [TEST_STEP][PASSED] - verifyTextPresent("MEMBER ID", false): Text 'MEMBER ID' is present on page 
+
+2019-12-11 12:46:55 - [MESSAGE][PASSED] - Text 'MEMBER ID' is present on page 
+
+2019-12-11 12:46:55 - [TEST_STEP][PASSED] - verifyTextPresent("Your Callback Requests", false): Text 'Your Callback Requests' is present on page 
+
+2019-12-11 12:46:57 - [MESSAGE][PASSED] - Text 'Your Callback Requests' is present on page 
+
+2019-12-11 12:46:57 - [TEST_STEP][PASSED] - verifyTextPresent("Member Notes", false): Text 'Member Notes' is present on page 
+
+2019-12-11 12:46:58 - [MESSAGE][PASSED] - Text 'Member Notes' is present on page 
+
+2019-12-11 12:46:58 - [TEST_STEP][PASSED] - verifyTextPresent("Add/Edit note", false): Text 'Add/Edit note' is present on page 
+
+2019-12-11 12:46:59 - [MESSAGE][PASSED] - Text 'Add/Edit note' is present on page 
+
+2019-12-11 12:46:59 - [TEST_STEP][PASSED] - verifyTextPresent("Customer requests for a Callback appear here and you can also be alerted by text and email", false): Text 'Customer requests for a Callback appear here and you can also be alerted by text and email' is present on page 
+
+2019-12-11 12:47:01 - [MESSAGE][PASSED] - Text 'Customer requests for a Callback appear here and you can also be alerted by text and email' is present on page 
+
+2019-12-11 12:47:01 - [TEST_STEP][PASSED] - verifyTextPresent("These customers are waiting for your call, so even if it’s to let them know", false): Text 'These customers are waiting for your call, so even if it’s to let them know' is present on page 
+
+2019-12-11 12:47:03 - [MESSAGE][PASSED] - Text 'These customers are waiting for your call, so even if it’s to let them know' is present on page 
+
+2019-12-11 12:47:03 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Members Area/Page_Members Area/a_Settings")): Object: 'Object Repository/Page_Members Area/Page_Members Area/a_Settings' is clicked on
+
+2019-12-11 12:47:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Members Area/Page_Members Area/a_Settings' is clicked on
+
+2019-12-11 12:47:04 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Object Repository/Callback/work_Alerts_Text"), 10): Object 'Object Repository/Callback/work_Alerts_Text' is visible
+
+2019-12-11 12:47:04 - [MESSAGE][PASSED] - Object 'Object Repository/Callback/work_Alerts_Text' is visible
+
+2019-12-11 12:47:04 - [TEST_STEP][PASSED] - verifyTextPresent("Your Callback Requests", false): Text 'Your Callback Requests' is present on page 
+
+2019-12-11 12:47:05 - [MESSAGE][PASSED] - Text 'Your Callback Requests' is present on page 
+
+2019-12-11 12:47:05 - [TEST_STEP][PASSED] - verifyTextPresent("Where would you like us to send your work alerts", false): Text 'Where would you like us to send your work alerts' is present on page 
+
+2019-12-11 12:47:08 - [MESSAGE][PASSED] - Text 'Where would you like us to send your work alerts' is present on page 
+
+2019-12-11 12:47:08 - [TEST_STEP][PASSED] - verifyTextPresent("Automatic replies", false): Text 'Automatic replies' is present on page 
+
+2019-12-11 12:47:09 - [MESSAGE][PASSED] - Text 'Automatic replies' is present on page 
+
+2019-12-11 12:47:09 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Members Area/Page_Members Area/input_Settings_chkDisableWorkAlerts")): Object: 'Object Repository/Page_Members Area/Page_Members Area/input_Settings_chkDisableWorkAlerts' is clicked on
+
+2019-12-11 12:47:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Members Area/Page_Members Area/input_Settings_chkDisableWorkAlerts' is clicked on
+
+2019-12-11 12:47:09 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Members Area/Page_Members Area/input_Settings_chkDisableWorkAlerts")): Object: 'Object Repository/Page_Members Area/Page_Members Area/input_Settings_chkDisableWorkAlerts' is clicked on
+
+2019-12-11 12:47:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Members Area/Page_Members Area/input_Settings_chkDisableWorkAlerts' is clicked on
+
+2019-12-11 12:47:10 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Members/Page_Members Area/select_Do not send_email address"), "0: Object", true): All options with value '0: Object' are selected in object 'Object Repository/Members/Page_Members Area/select_Do not send_email address'  using regular expression
+
+2019-12-11 12:47:11 - [MESSAGE][PASSED] - All options with value '0: Object' are selected in object 'Object Repository/Members/Page_Members Area/select_Do not send_email address'  using regular expression
+
+2019-12-11 12:47:11 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Members/Page_Members Area/select_Do not send_email address"), "15: Object", true): All options with value '15: Object' are selected in object 'Object Repository/Members/Page_Members Area/select_Do not send_email address'  using regular expression
+
+2019-12-11 12:47:12 - [MESSAGE][PASSED] - All options with value '15: Object' are selected in object 'Object Repository/Members/Page_Members Area/select_Do not send_email address'  using regular expression
+
+2019-12-11 12:47:12 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Members/Page_Members Area/select_Do not send_sms"), "0: Object", true): All options with value '0: Object' are selected in object 'Object Repository/Members/Page_Members Area/select_Do not send_sms'  using regular expression
+
+2019-12-11 12:47:12 - [MESSAGE][PASSED] - All options with value '0: Object' are selected in object 'Object Repository/Members/Page_Members Area/select_Do not send_sms'  using regular expression
+
+2019-12-11 12:47:12 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2019-12-11 12:47:12 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Object Repository/Page_Members Area/Page_Members Area/button_Submit_1"), 25): Scroll to object 'Object Repository/Page_Members Area/Page_Members Area/button_Submit_1' successfully
+
+2019-12-11 12:47:12 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Page_Members Area/Page_Members Area/button_Submit_1' successfully
+
+2019-12-11 12:47:12 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Members Area/Page_Members Area/input_Send your customers initial info")): Object: 'Object Repository/Page_Members Area/Page_Members Area/input_Send your customers initial info' is clicked on
+
+2019-12-11 12:47:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Members Area/Page_Members Area/input_Send your customers initial info' is clicked on
+
+2019-12-11 12:47:13 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Members Area/Page_Members Area/input_Send your customers initial info")): Object: 'Object Repository/Page_Members Area/Page_Members Area/input_Send your customers initial info' is clicked on
+
+2019-12-11 12:47:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Members Area/Page_Members Area/input_Send your customers initial info' is clicked on
+
+2019-12-11 12:47:13 - [TEST_STEP][PASSED] - verifyElementClickable(findTestObject("Object Repository/Page_Members Area/Page_Members Area/button_Submit_1")): Object 'Object Repository/Page_Members Area/Page_Members Area/button_Submit_1' is clickable
+
+2019-12-11 12:47:13 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Members Area/Page_Members Area/button_Submit_1' is clickable
+
+2019-12-11 12:47:13 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Members Area/Page_Members Area/button_Submit_1")): Object: 'Object Repository/Page_Members Area/Page_Members Area/button_Submit_1' is clicked on
+
+2019-12-11 12:47:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Members Area/Page_Members Area/button_Submit_1' is clicked on
+
+2019-12-11 12:47:14 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2019-12-11 12:47:14 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2019-12-11 12:47:14 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2019-12-11 12:47:14 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2019-12-11 12:47:14 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2019-12-11 12:47:14 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2019-12-11 12:47:14 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-12-11 12:47:16 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-12-11 12:47:16 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Page_Members Area/button_Close"), 2): Object 'Object Repository/Page_Members Area/button_Close' is clickable
+
+2019-12-11 12:47:16 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Members Area/button_Close' is clickable
+
+2019-12-11 12:47:16 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Members Area/button_Close")): Object: 'Object Repository/Page_Members Area/button_Close' is clicked on
+
+2019-12-11 12:47:16 - [MESSAGE][ERROR] - TypeError: rect is undefined
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'VETTEDSP36RF', ip: '10.0.11.243', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 70.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191030021342, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 4256, moz:profile: C:\Users\davidho\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ea9860d9-2f4d-438c-8c19-1a888017d268
+
+2019-12-11 12:47:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Members Area/button_Close' is clicked on
+
+2019-12-11 12:47:17 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Object Repository/Callback/work_Alerts_Text"), 2): Scroll to object 'Object Repository/Callback/work_Alerts_Text' successfully
+
+2019-12-11 12:47:17 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Callback/work_Alerts_Text' successfully
+
+2019-12-11 12:47:17 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Callback/work_Alerts_Text")): Object: 'Object Repository/Callback/work_Alerts_Text' is clicked on
+
+2019-12-11 12:47:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Callback/work_Alerts_Text' is clicked on
+
+2019-12-11 12:47:18 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2019-12-11 12:47:18 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2019-12-11 12:47:18 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2019-12-11 12:47:18 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Object Repository/Page_Members Area/a_Settings"), 2): Scroll to object 'Object Repository/Page_Members Area/a_Settings' successfully
+
+2019-12-11 12:47:18 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Page_Members Area/a_Settings' successfully
+
+2019-12-11 12:47:18 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/Validation/Callback_Requests_Sub/Callback_Request_Settings' successfully
+
+2019-12-11 12:47:18 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Members_Area/Validation/Callback_Requests_Sub/Callback_Requests_Notes"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/Validation/Callback_Requests_Sub/Callback_Requests_Notes' successfully
+
+2019-12-11 12:47:18 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Members_Area/Validation/Callback_Requests_Sub/Callback_Requests_Notes: Test Cases/Reusable_Test_Sequences/Members_Area/Validation/Callback_Requests_Sub/Callback_Requests_Notes
+
+2019-12-11 12:47:18 - [TEST_STEP][PASSED] - waitForPageLoad(25): Wait for page load successfully
+
+2019-12-11 12:47:18 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-12-11 12:47:18 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Page_Members Area/a_Settings"), 50): Object 'Object Repository/Page_Members Area/a_Settings' is present
+
+2019-12-11 12:47:18 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Members Area/a_Settings' is present
+
+2019-12-11 12:47:18 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2019-12-11 12:47:18 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2019-12-11 12:47:18 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Utils/Check_URL"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Utils/Check_URL' successfully
+
+2019-12-11 12:47:18 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Utils/Check_URL: Test Cases/Reusable_Test_Sequences/Utils/Check_URL
+
+2019-12-11 12:47:18 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+2019-12-11 12:47:18 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-12-11 12:47:18 - [TEST_STEP][PASSED] - CurrentUrl = getUrl(): Current window's url is: 'https://preview-ma.checkatrade.com/work-alert'
+
+2019-12-11 12:47:18 - [MESSAGE][PASSED] - Current window's url is: 'https://preview-ma.checkatrade.com/work-alert'
+
+2019-12-11 12:47:18 - [TEST_STEP][PASSED] - step_Passed = "We have been redirected, correctly to the EXPECTED <MEMBERS> URL Page"+GlobalVariable.CurrentUrl": null
+
+2019-12-11 12:47:18 - [TEST_STEP][PASSED] - step_Failed = "We have been redirected, incorrectly to this page "+GlobalVariable.CurrentUrl+" We should be on "+GlobalVariable.MembersURL+GlobalVariable.PAGE": null
+
+2019-12-11 12:47:18 - [TEST_STEP][PASSED] - if (CurrentUrl == MembersURL + PAGE): We have been redirected, correctly to the EXPECTED <MEMBERS> URL Page"+GlobalVariable.CurrentUrl
+
+2019-12-11 12:47:19 - [TEST_STEP][PASSED] - out.println(step_Passed): null
+
+2019-12-11 12:47:19 - [TEST_STEP][PASSED] - markPassed(step_Passed): We have been redirected, correctly to the EXPECTED <MEMBERS> URL Page"+GlobalVariable.CurrentUrl
+
+2019-12-11 12:47:19 - [MESSAGE][PASSED] - We have been redirected, correctly to the EXPECTED <MEMBERS> URL Page"+GlobalVariable.CurrentUrl
+
+2019-12-11 12:47:19 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Utils/Check_URL' successfully
+
+2019-12-11 12:47:19 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2019-12-11 12:47:19 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Page_Members Area/Page_Members Area/a_AddEdit note"), 25): Object 'Object Repository/Page_Members Area/Page_Members Area/a_AddEdit note' is clickable
+
+2019-12-11 12:47:19 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Members Area/Page_Members Area/a_AddEdit note' is clickable
+
+2019-12-11 12:47:19 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2019-12-11 12:47:19 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Members Area/Page_Members Area/a_AddEdit note")): Object: 'Object Repository/Page_Members Area/Page_Members Area/a_AddEdit note' is clicked on
+
+2019-12-11 12:47:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Members Area/Page_Members Area/a_AddEdit note' is clicked on
+
+2019-12-11 12:47:19 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-12-11 12:47:21 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-12-11 12:47:21 - [TEST_STEP][PASSED] - verifyTextPresent("Edit Notes", false): Text 'Edit Notes' is present on page 
+
+2019-12-11 12:47:25 - [MESSAGE][PASSED] - Text 'Edit Notes' is present on page 
+
+2019-12-11 12:47:25 - [TEST_STEP][PASSED] - verifyTextPresent("Close", false): Text 'Close' is present on page 
+
+2019-12-11 12:47:28 - [MESSAGE][PASSED] - Text 'Close' is present on page 
+
+2019-12-11 12:47:28 - [TEST_STEP][PASSED] - verifyTextPresent("Submit", false): Text 'Submit' is present on page 
+
+2019-12-11 12:47:33 - [MESSAGE][PASSED] - Text 'Submit' is present on page 
+
+2019-12-11 12:47:33 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Members Area/Page_Members Area/button_Submit")): Object: 'Object Repository/Page_Members Area/Page_Members Area/button_Submit' is clicked on
+
+2019-12-11 12:47:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Members Area/Page_Members Area/button_Submit' is clicked on
+
+2019-12-11 12:47:34 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/Validation/Callback_Requests_Sub/Callback_Requests_Notes' successfully
+
+2019-12-11 12:47:34 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Members_Area/Banner_Menu/log_Off"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/Banner_Menu/log_Off' successfully
+
+2019-12-11 12:47:34 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Members_Area/Banner_Menu/log_Off: Test Cases/Reusable_Test_Sequences/Members_Area/Banner_Menu/log_Off
+
+2019-12-11 12:47:34 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-12-11 12:47:35 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-12-11 12:47:35 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Page_Members Area/a_Log off"), 60): Object 'Object Repository/Page_Members Area/a_Log off' is clickable
+
+2019-12-11 12:47:35 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Members Area/a_Log off' is clickable
+
+2019-12-11 12:47:35 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Object Repository/Page_Members Area/a_Log off"), 2): Scroll to object 'Object Repository/Page_Members Area/a_Log off' successfully
+
+2019-12-11 12:47:35 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Page_Members Area/a_Log off' successfully
+
+2019-12-11 12:47:35 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Members Area/a_Log off")): Object: 'Object Repository/Page_Members Area/a_Log off' is clicked on
+
+2019-12-11 12:47:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Members Area/a_Log off' is clicked on
+
+2019-12-11 12:47:36 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Members_Area/Banner_Menu/log_Off' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-12-11 12:46:07 - [TEST_SUITE][PASSED] - Members_Callback: Test Cases/Members_Area/Callback_Requests]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

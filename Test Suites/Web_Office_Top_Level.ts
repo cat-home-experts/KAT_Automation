@@ -44,4 +44,16 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Web_Office/Navigation_Checks/Consumers/Consumers_Top</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>6c07e883-7ef7-4f3a-942b-472aeac0f279</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Navigation_Checks/Cases/Cases_Top</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e7e2295d-43b1-48d5-ade7-cc1f1810fa65</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Navigation_Checks/Reports/Reports_Top</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

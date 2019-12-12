@@ -68,6 +68,8 @@ WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Check_URL'), [:],
 '----------------------------------------------'
 'DEFAULT TAB - None - 1 Page Returned          |'
 '----------------------------------------------'
+WebUI.delay(2)
+WebUI.waitForPageLoad(60)
 // MEMBER ID CHECK
 WebUI.verifyTextPresent(findTestData('Members_Test_Data').getValue('MEMBER_ID', 1), false)
 '----------------------------------------------'

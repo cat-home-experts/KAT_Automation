@@ -28,7 +28,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 // Implemented                                |   28/11/2019    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// IFrame Checks Added                        |   11/12/2019    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -62,7 +62,7 @@ WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/a_Feedback'))
 //----------------------------------------------------
 // Sync - Wait For Advanced Search Button to Appear  |
 //----------------------------------------------------
-WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice/Feedback_Top/Feedback_Graphic'), 20) // iframe actuallly :-)
+WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice/Feedback_Top/Feedback_Graphic'), 60) // iframe actuallly :-)
 // Graphic XPATH = //*[@id="form1"]/div[3]/div/div/table/tbody/tr[2]/td[1] // iframe - //*[@id="ctl00_CP1_content"]
 WebUI.delay(2)
 WebUI.waitForPageLoad(60)
@@ -73,16 +73,32 @@ WebUI.waitForPageLoad(60)
 // WebUI.switchToFrame(findTestObject('Object Repository/WebOffice/Feedback_Top/Feedback_Graphic'))
 'Central pane - Iframe - Data Grabbed from Backend - Tool Doesnt Resolve Off The Shelf, Will Need Tweeking at some point'
 //WebUI.verifyTextPresent("Feedback Management", false)
+WebUI.verifyElementVisible(findTestObject('Object Repository/WebOffice/Feedback_Top/Page_/a_Feedback'))
 //WebUI.verifyTextPresent("Feedback Quick Statistics", false)
+WebUI.verifyElementVisible(findTestObject('Object Repository/WebOffice/Feedback_Top/Page_/h1_Feedback Management'))
 //WebUI.verifyTextPresent("Feedback published last month", false)
+WebUI.verifyElementVisible(findTestObject('Object Repository/WebOffice/Feedback_Top/Page_/h3_Feedback Quick Statistics'))
 //WebUI.verifyTextPresent("Feedback published so far this month", false)
+WebUI.verifyElementVisible(findTestObject('Object Repository/WebOffice/Feedback_Top/Page_/td_Feedback published last month'))
 //WebUI.verifyTextPresent("Feedback cards entered today", false)
+WebUI.verifyElementVisible(findTestObject('Object Repository/WebOffice/Feedback_Top/Page_/td_Feedback published so far this month'))
 //WebUI.verifyTextPresent("Web Submissions for review", false)
+WebUI.verifyElementVisible(findTestObject('Object Repository/WebOffice/Feedback_Top/Page_/td_Feedback cards entered today'))
 //WebUI.verifyTextPresent("Feedback selected for spot checking yesterday", false)
+WebUI.verifyElementVisible(findTestObject('Object Repository/WebOffice/Feedback_Top/Page_/td_Web Submissions for review'))
 //WebUI.verifyTextPresent("Feedback spot checking done today", false)
+WebUI.verifyElementVisible(findTestObject('Object Repository/WebOffice/Feedback_Top/Page_/td_Feedback selected for spot checking yesterday'))
 //WebUI.verifyTextPresent("Feedback Submissions (by week)", false)
+WebUI.verifyElementVisible(findTestObject('Object Repository/WebOffice/Feedback_Top/Page_/td_Feedback spot checking done today'))
 //WebUI.verifyTextPresent("Feedback - Last modified by you", false)
+WebUI.verifyElementVisible(findTestObject('Object Repository/WebOffice/Feedback_Top/Page_/a_Add Feedback'))
+
+WebUI.verifyElementVisible(findTestObject('Object Repository/WebOffice/Feedback_Top/Page_/h3_Feedback - Last modified by you'))
 //WebUI.verifyTextPresent("Data Entry Statistics (last 7 days)", false)
+WebUI.verifyElementVisible(findTestObject('Object Repository/WebOffice/Feedback_Top/Page_/h3_Data Entry Statistics (last 7 days)'))
+
+'--------------------------------------------------------------'
+WebUI.verifyElementVisible(findTestObject('Object Repository/WebOffice/Feedback_Top/Page_/h3_Feedback Submissions (by week)'))
 // Left Hand Tree View (Top) Detail (Sample of Available)
 WebUI.verifyTextPresent("Reference Requests", false)
 WebUI.verifyTextPresent("References To Call", false)

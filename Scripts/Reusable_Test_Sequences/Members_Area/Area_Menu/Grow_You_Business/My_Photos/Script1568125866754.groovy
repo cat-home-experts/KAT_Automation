@@ -45,7 +45,7 @@ import internal.GlobalVariable as GlobalVariable
 ////////////////////////////////////////////
 // Wait for My Photos Element Availability//
 ////////////////////////////////////////////
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/div_My Photos'), 10)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/div_My Photos'), 60)
 
 ////////////////////////////////////////////
 //  Click Log My Photos Element           //
