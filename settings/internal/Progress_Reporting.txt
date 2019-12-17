@@ -1,0 +1,11 @@
+Hi Folks,
+
+Please find attached, the current set of tests available to test automation.
+Also, find below high level test results from the last text execution(s).
+
+Breakdown..
+1)	Validation brackages highlighted on <Give feedback> and <Trades Apply Here> pages      
+2)	Changes to homepage (cookey messaging) factored into startup process        
+3)	There are now 50 “E2E” Test cases distributed across 21 functional areas, as defined in the attached ‘Current Test List’ document.
+4)	Parallel executions (3 thread) takes 14 minutes with no issues reported
+5)	Test(s) executed on the <PREVIEW> environment, using 50% Chrome and 50% Firefox Browser based testing

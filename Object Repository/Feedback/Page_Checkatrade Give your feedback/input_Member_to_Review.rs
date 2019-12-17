@@ -9,6 +9,10 @@
          <key>XPATH</key>
          <value>//input[@id='feedback-form__company_autocomplete_input']</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'text' and @placeholder = 'Company name or Checkatrade ID' and @id = 'feedback-form__company_autocomplete_input']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>

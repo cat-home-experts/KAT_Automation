@@ -41,11 +41,12 @@ import internal.GlobalVariable as GlobalVariable
 //                                                                                                               |
 //	WHEN -  We Click on 'GIVE FEEDBACK' from the header banner on the homepage                                   |
 //                                                                                                               |
-//  THEN -  The GIVE FEEDBACK PORTAL is presented to the user, an entry fied is presented for entering           |
+//  THEN -  The GIVE FEEDBACK PORTAL is presented to the user, an entry field is presented for entering          |
 //          Traders name or CAT ID.                                                                              |
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
-
+GlobalVariable.PAGE = "GiveFeedback"
+GlobalVariable.URL = GlobalVariable.URL+GlobalVariable.PAGE
 //-----------------------------------------
 // Call Setup Process - Browser Startup, Navigate, Maximize and Close Cookie Nagging Element
 //-----------------------------------------

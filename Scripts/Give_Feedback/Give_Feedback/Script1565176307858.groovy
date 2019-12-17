@@ -60,8 +60,8 @@ def YE_Recommend
 def YE_WorkCarriedOut
 
 //--------------------------------------------------------------------------------------------------------------------
-// This is the first test of the suite (currently), included this (delay) to give the tool to catch it's breath TODO |        WATCH THIS SNIPPIT
-// WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Wait_a_bit'), [:], FailureHandling.OPTIONAL)     //   |
+// This is the first test of the suite (currently), included this (delay) to give the tool to catch it's breath      |         
+// WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Wait_a_bit'), [:], FailureHandling.OPTIONAL)       |
 //--------------------------------------------------------------------------------------------------------------------
 GlobalVariable.PAGE = "GiveFeedback"
 GlobalVariable.URL = GlobalVariable.URL+GlobalVariable.PAGE

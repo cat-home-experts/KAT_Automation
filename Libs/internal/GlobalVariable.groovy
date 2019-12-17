@@ -72,6 +72,11 @@ Profile Checkatrade_Live : Live Members Area URL</p>
     public static Object MembersURL
      
     /**
+     * <p>Profile default : For Mobile Tetsing, Set this flat to true. Flag is set within CAT_Setup</p>
+     */
+    public static Object Mobile_Flag
+     
+    /**
      * <p>Profile default : Specific area within the Members Portal
 Profile Preview_Members_Area : Specific area within the Members Portal</p>
      */
@@ -194,6 +199,7 @@ Profile Preview : Fix the format error here Give Feedback - Recommend? true OR f
             FUNCTION_AREA = selectedVariables['FUNCTION_AREA']
             Invalid_Email = selectedVariables['Invalid_Email']
             MembersURL = selectedVariables['MembersURL']
+            Mobile_Flag = selectedVariables['Mobile_Flag']
             PAGE = selectedVariables['PAGE']
             Password = selectedVariables['Password']
             Portal_Subfunction = selectedVariables['Portal_Subfunction']

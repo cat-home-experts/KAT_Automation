@@ -60,6 +60,11 @@
       <name>MembersURL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
+      <description>For Mobile Tetsing, Set this flat to true. Flag is set within CAT_Setup</description>
+      <initValue>false</initValue>
+      <name>Mobile_Flag</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
       <description>Specific area within the Members Portal</description>
       <initValue>'/my-profile-page'</initValue>
       <name>PAGE</name>

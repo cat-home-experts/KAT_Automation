@@ -83,5 +83,5 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Da
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Banner_Menu/log_Off'), [:], FailureHandling.OPTIONAL)
 }
 ///////////////////////////////////////
-//                END                //   TODO
+//                END                //    
 ///////////////////////////////////////

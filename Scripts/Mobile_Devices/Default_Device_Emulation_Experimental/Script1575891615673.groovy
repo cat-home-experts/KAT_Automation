@@ -67,7 +67,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 //capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 
 
-static String deviceName;
+	static String deviceName;
 //public static void main(String[] args) {
  //some Sample Devices. Complete list can be found here: https://code.google.com/p/chromium/codesearch#chromium/src/chrome/test/chromedriver/chrome/mobile_device_list.cc
  //pick any of the device
@@ -76,8 +76,9 @@ static String deviceName;
 //  deviceName = "Samsung Galaxy S4";
 //  deviceName = "Samsung Galaxy Note 3";
 //  deviceName = "Samsung Galaxy Note II";
-//  deviceName = "Apple iPhone 4";
-	 deviceName = "Apple iPhone 5";
+//  deviceName = "Apple iPhone 4";           
+	' default vakues Apple iPhone 5 is incorrect, should be iPhone 5/SE'
+	 deviceName = "Apple iPhone 5"; // Galaxy S5, Pixel 2, Pixel 2 XL, iPhone 5/SE, iPhone 6/7/8, iPhone 6/7/8 Plus, iPhone X, iPad, iPad pro
 //  deviceName = "Apple iPad 3 / 4";
  
 	 System.setProperty("webdriver.chrome.driver", "C:\\Users\\davidho\\Katalon Studio\\Start\\Reports\\Project_Docs\\Updates\\chromedriver.exe");

@@ -18,11 +18,9 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://community.checkatrade.com/index.php')
+WebUI.navigateToUrl('https://www.preview.checkatrade.com/')
 
-WebUI.click(findTestObject('Object Repository/Page_Members Area/Community/Page_Checkatrade Community/img'))
+WebUI.click(findTestObject('Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/div_Accept All'))
 
-WebUI.click(findTestObject('Object Repository/Page_Members Area/Community/Page_Checkatrade Community/img_1'))
-
-WebUI.click(findTestObject('Object Repository/Page_Members Area/Community/Page_Checkatrade Community/img_1_2'))
+WebUI.click(findTestObject('Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All'))
 

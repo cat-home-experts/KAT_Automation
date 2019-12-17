@@ -15,6 +15,10 @@ import internal.GlobalVariable as GlobalVariable
 import java.lang.Integer as Integer
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
+'-----------------------------------------'
+' CONFIGURED TO RUN ON CHROME ONLY!       |'
+'-----------------------------------------'
+
 //-----------------------
 // TEST HISTORY HEADER - |                   FUNCTIONAL DEMO - REFACTOR TODO                                                                                            |
 //-----------------------
@@ -31,9 +35,9 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 // Extended to data Driven with var. X,Y      |    27/08/2019   |     Dave Horne   | Currently 5 different screen|
 // Resolutions set, 1 rox of data driven XL   |                 |                  | resolutions tested          |
 //---------------------------------------------------------------------------------------------------------------
-// Extensive Changes to HMI Caused Refactor   |    06/12/2019   |     Dave Horne   | TODO script need to be Restr| 
+// Extensive Changes to HMI Caused Refactor   |    06/12/2019   |     Dave Horne   | Done                        | 
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Mobile Tetsing flag included - Line 70     |    13/12/2019   |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -58,10 +62,20 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 //-----------------------------------------
 // Call Setup Process - Browser Startup, Navigate, Maximize and Close Cookie Nagging Element
 //-----------------------------------------
+
 'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test\r\n'
 for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Mobile_Test_Data').getRowNumbers(); (GlobalVariable.row)++) { // Mobile_Test_Data
     //def removed for globalisation
-    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.OPTIONAL)
+'------------------------------'
+' Set Mobile Device Testing    |'
+'------------------------------'
+	GlobalVariable.Mobile_Flag = "false"  // Set Emulation in the calling script - TRUE Do It, FALSE Don't Do It :-)
+'------------------------------'
+' Set Mobile Device Testing    |'
+'------------------------------'
+	
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.OPTIONAL)
+	
 	//----------------------------------------------------------
 	' ALTERNATIVE SCREEN RESOLUTION SELECTION METHOD'        // |
     //----------------------------------------------------------
@@ -96,7 +110,8 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Mobile_Test_Dat
     //----------------------------------------------------------
     // Set View Port Size
     //----------------------------------------------------------
-	//----------------------------------------------------------
+	' Block Comment Start'
+/*	//----------------------------------------------------------
 	' ACTUAL SCREEN RESOLUTION SELECTION METHOD USED'       // |
 	//----------------------------------------------------------
     // Pul X and Y from the spreadsheet (parse Integer from data sheet string value)
@@ -116,7 +131,8 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Mobile_Test_Dat
 	KeywordUtil.markPassed((('Set View Port Size is currently SET to X AXIS ' + XCOORD) + ' Y AXIS ') + YCOORD)
 	KeywordUtil.markPassed((('Set View Port Size is currently SET to X AXIS ' + XCOORD) + ' Y AXIS ') + YCOORD)
 	//---------------------------------------------------------------------
-	// Set The Trade Classification to Select on the Trade Search Screen  |
+*/	// Set The Trade Classification to Select on the Trade Search Screen  |
+	' Block Commen End'
     //------------------------------------------------------------------------------------------------------------------------------------------------
 //    'Set and SEARCH SELECTED TRADE'
 //	'---------------------------------'    WebUI.setText(findTestObject('Page_Checkatrade Find a tradesperson you can trust/input_Search through'), 
