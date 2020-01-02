@@ -74,9 +74,9 @@ WebUI.verifyTextPresent("We know how expensive it is to run a business so we hav
 '----------------------------------------------'
 WebUI.verifyTextPresent("Make sure you check back regularly as we are constantly adding more", false)
 '----------------------------------------------'
-WebUI.delay(2)
+//WebUI.delay(2)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Get this offer", false)
+//WebUI.verifyTextPresent("Get this offer", false)
 '----------------------------------------------'
 
 ///////////////////////////////////////

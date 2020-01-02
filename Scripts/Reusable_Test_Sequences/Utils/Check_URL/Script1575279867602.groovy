@@ -56,8 +56,8 @@ WebUI.waitForPageLoad(10)
 
 // Verify We Are Returning to the CORRECT Home Page
 GlobalVariable.CurrentUrl = WebUI.getUrl()
-def step_Passed = 'We have been redirected, correctly to the EXPECTED <MEMBERS> URL Page"+GlobalVariable.CurrentUrl'
-def step_Failed = 'We have been redirected, incorrectly to this page "+GlobalVariable.CurrentUrl+" We should be on "+GlobalVariable.MembersURL+GlobalVariable.PAGE'
+def step_Passed = "We have been redirected, correctly to the EXPECTED <MEMBERS> URL Page "+GlobalVariable.CurrentUrl
+def step_Failed = "We have been redirected, incorrectly to this page "+GlobalVariable.CurrentUrl+" We should be on "+GlobalVariable.MembersURL+GlobalVariable.PAGE
 
 
 if (GlobalVariable.CurrentUrl == GlobalVariable.MembersURL+GlobalVariable.PAGE){

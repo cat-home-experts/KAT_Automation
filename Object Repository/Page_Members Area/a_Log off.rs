@@ -4,7 +4,17 @@
    <name>a_Log off</name>
    <tag></tag>
    <elementGuidId>c71f8cea-d150-4e05-82af-2c44c120f9f5</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//a[@href = '/login' and (text() = 'Log off' or . = 'Log off')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id='Top']/nav/div[2]/div/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

@@ -11,9 +11,21 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <testSuiteGuid>b2bd1396-21df-4ca7-a792-8d88ae9f5029</testSuiteGuid>
    <testCaseLink>
-      <guid>aec61a78-5f27-4418-aa95-6838cf47e251</guid>
+      <guid>ae9ac5c8-0a0f-443e-bbe7-7d894e73987c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
+      <testCaseId>Test Cases/Members_Area/Payments</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f765c398-22fb-4e4d-b383-a59ae893e46e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Members_Area/Members_Team_Photos</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>aec61a78-5f27-4418-aa95-6838cf47e251</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Members_Area/Advertise_Directory</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -31,7 +43,7 @@
    <testCaseLink>
       <guid>f0aa6b43-e21c-43ac-ac8f-bb06a3d74669</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Members_Area/Integrity_Checks</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -73,19 +85,13 @@
    <testCaseLink>
       <guid>efa5837e-ee4b-4406-8161-a61c4b988d20</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Members_Area/Members_Scams</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>f765c398-22fb-4e4d-b383-a59ae893e46e</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Members_Area/Members_Team_Photos</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>b22aa3e5-f57a-4f50-9f4c-632a5710782f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Members_Area/Members_Trading_Standards</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -131,15 +137,9 @@
       <testCaseId>Test Cases/Members_Area/Offers_Discounts</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>ae9ac5c8-0a0f-443e-bbe7-7d894e73987c</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Members_Area/Payments</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>2c0b750a-6551-4a89-973f-9eb8d6af9d29</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Members_Area/Payments_Validation</testCaseId>
    </testCaseLink>
    <testCaseLink>

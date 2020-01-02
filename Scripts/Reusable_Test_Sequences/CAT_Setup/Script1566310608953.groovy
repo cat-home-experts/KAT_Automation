@@ -95,7 +95,7 @@ WebUI.maximizeWindow()
 WebUI.waitForPageLoad(60)
 //WebUI.delay(1)
 //WebUI.waitForElementPresent(null, 10)
-
+'Previous Functionalilty Left Commented For Ease Of reversion'
 //try {
 //	//----------------------------------------------
 //	//'Closes COOKIE nagging element, If it Exists  |'

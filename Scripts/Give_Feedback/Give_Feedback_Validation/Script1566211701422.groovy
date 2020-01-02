@@ -45,8 +45,14 @@ import internal.GlobalVariable as GlobalVariable
 //          Traders name or CAT ID.                                                                              |
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
-GlobalVariable.PAGE = "GiveFeedback"
-GlobalVariable.URL = GlobalVariable.URL+GlobalVariable.PAGE
+'-----------------------------------------------------------------'
+'Run as a Suite, this is ignored, stand alone, then this applies  |'
+'-----------------------------------------------------------------'
+if (!GlobalVariable.PAGE == "GiveFeedback"){
+	GlobalVariable.PAGE = "GiveFeedback" // inherited from last test
+	GlobalVariable.URL = GlobalVariable.URL+GlobalVariable.PAGE
+}
+'------------------------------------------------------------'
 //-----------------------------------------
 // Call Setup Process - Browser Startup, Navigate, Maximize and Close Cookie Nagging Element
 //-----------------------------------------

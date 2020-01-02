@@ -48,5 +48,9 @@ import internal.GlobalVariable as GlobalVariable
 //------------------
 'Teardown Browser'
 WebUI.closeBrowser()
+
+// GlobalVariable.URL = ""
+// GlobalVariable.PAGE = ""
+
 //------------------
 // END

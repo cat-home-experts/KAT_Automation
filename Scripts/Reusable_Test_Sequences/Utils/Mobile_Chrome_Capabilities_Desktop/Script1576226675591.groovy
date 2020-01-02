@@ -20,6 +20,10 @@ import org.openqa.selenium.chrome.ChromeOptions
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.chrome.ChromeDriver
 import com.kms.katalon.core.webui.driver.DriverFactory
+import java.io.FileWriter
+import java.io.PrintWriter
+import java.io.IOException
+
 //import org.openqa.selenium.chrome //
 //-----------------------
 // TEST HISTORY HEADER - |
@@ -57,7 +61,10 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 // file ownership issues prevent (partially worked setting mobile devicese discernable in kS propery settings after run
 //def emulator // Device to use
 def data = findTestData('Data Files/Mobile_Test_Data')
-def filePath = "C:\\Users\\davidho\\Katalon Studio\\Start\\settings\\internal\\com.kms.katalon.core.webui.chrome.properties"
+def file = "com.kms.katalon.core.webui.chrome.properties"
+def filePath = "C:\\Users\\davidho\\Katalon Studio\\Start\\settings\\internal\\"+file
+//def file
+
             // "C:\\Users\\davidho\\Katalon Studio\\Start\\settings\\internal\\com.kms.katalon.core.webui.chrome.properties"
 '---------------------------------------------------------------------------------------------------------------------------'
 // Examples of expected changes to 'com.kms.katalon.core.webui.chrome.properties' Located in
@@ -79,11 +86,11 @@ def filePath = "C:\\Users\\davidho\\Katalon Studio\\Start\\settings\\internal\\c
 // brittle in the long term? I Will continuially review and adapt the best, and most compact and robust approach I can find
 '--------------------------------------------------------------------------------------------------------------------------'
 //use external chromedriver
-ChromeOptions options = new ChromeOptions();
-DesiredCapabilities capabilities = new DesiredCapabilities();
-capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-System.setProperty("webdriver.chrome.driver", "C:\\Users\\davidho\\Katalon Studio\\Start\\Reports\\Project Docs\\Updates\\chromedriver.exe");
-ChromeDriver driver = new ChromeDriver(capabilities);
+//ChromeOptions options = new ChromeOptions();
+//DesiredCapabilities capabilities = new DesiredCapabilities();
+//capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+//System.setProperty("webdriver.chrome.driver", "C:\\Users\\davidho\\Katalon Studio\\Start\\Reports\\Project Docs\\Updates\\chromedriver.exe");
+//ChromeDriver driver = new ChromeDriver(capabilities);
 ////DriverFactory.changeWebDriver(driver)
 //DriverFactory.changeWebDriver(driver)
 '--------------------------------------------------------------------------------------------------------------------------'
@@ -108,22 +115,24 @@ try{
 	
 	// Open (existing) file to modify/Overwrite
 	'------------------------------------------'
-	//File file = new File(filePath);
+	// File file = new File(filePath);
 	'------------------------------------------'
 	' Set Capabilities'
 	'------------------------------------------'
-	Map<String, String> mobileEmulation = new HashMap<>();
-	
-	mobileEmulation.put("deviceName", mobileDevice);
-	
-	
-	ChromeOptions chromeOptions = new ChromeOptions();
-	chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
-	
-	DriverFactory.changeWebDriver(driver)
+	//file.setReadable(true)
+	//file.setWritable(true)
+	//	Map<String, String> mobileEmulation = new HashMap<>();
+	//	
+	//	mobileEmulation.put("deviceName", mobileDevice);
+	//	
+	//	
+	//	ChromeOptions chromeOptions = new ChromeOptions();
+	//	chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
+	//	
+	//	DriverFactory.changeWebDriver(driver)
 //	WebDriver driver = new ChromeDriver(chromeOptions);
-	
-//		ChromeOptions options = new ChromeOptions()
+//	
+ 	ChromeOptions options = new ChromeOptions()
 //		Map<String, Object> prefs = new HashMap<String, Object>()
 //		prefs.put("profile.default_content_settings.popups", 0)
 //		options.setExperimentalOption("prefs", prefs)
@@ -131,18 +140,18 @@ try{
 	//options.
 	
 	//options.BinaryLocation = "\path\to\chrome";
-	//ChromeDriver driver = new ChromeDriver(options);
+	ChromeDriver driver = new ChromeDriver(options);
 	'------------------------------------------'
 	
     // Write Emulator Configuration to File
 	'------------------------------------------'
-	//FileWriter fw = new FileWriter(file.getAbsoluteFile());
-	//BufferedWriter bw = new BufferedWriter(fw);
-	//bw.write(mobileDevice);
+	FileWriter fw = new FileWriter(file.getAbsoluteFile());
+	BufferedWriter bw = new BufferedWriter(fw);
+	bw.write(mobileDevice);
 	'------------------------------------------'
-	// Close and Report
+	//Close and Report
 	'------------------------------------------'
-	//bw.close();
+	bw.close();
 	KeywordUtil.markPassed("The Mobile Device Emulated, is the "+mobileDevice+" on test iteration "+GlobalVariable.row)
 	'------------------------------------------'
 	//mobileDevice = ""
