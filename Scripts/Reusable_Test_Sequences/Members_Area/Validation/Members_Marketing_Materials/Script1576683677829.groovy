@@ -66,6 +66,7 @@ WebUI.mouseOver(findTestObject('Object Repository/Page_Members Area/a_Log off'))
 'EXPAND'
 WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Area/mat-panel-title_Download your Checkatrade report'))
 WebUI.waitForPageLoad(60)
+WebUI.delay(1)
 //WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/Page_Members Area/mat-panel-title_Download your Checkatrade report'), 2)
 '-----------------------------------------------------------'
 'CHECK'

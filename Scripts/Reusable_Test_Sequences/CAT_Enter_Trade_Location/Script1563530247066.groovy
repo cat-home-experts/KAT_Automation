@@ -28,10 +28,21 @@ import internal.GlobalVariable as GlobalVariable
 // ORIGINAL  |
 //------------
 
-WebUI.click(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Not here_location'))
+try {
+	// New Website
+	WebUI.waitForElementPresent(findTestObject('Object Repository/New_CAT_Search/Postcode_Search_Field'), 60)
+	WebUI.click(findTestObject('Object Repository/New_CAT_Search/Postcode_Search_Field'))
+	WebUI.setText(findTestObject('Object Repository/New_CAT_Search/Postcode_Search_Field'),	findTestData('searchTestData').getValue('tradeLocation', GlobalVariable.row))
+	//-----------------------------------------
+} catch (Exception e) { // ObjectNotFound
+	// Old website
+	WebUI.click(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Not here_location'))
+	WebUI.setText(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Not here_location'),
+		findTestData('searchTestData').getValue('tradeLocation', GlobalVariable.row))
+	//-----------------------------------------
+}
 
-WebUI.setText(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Not here_location'),
-	findTestData('searchTestData').getValue('tradeLocation', GlobalVariable.row))
+
 
 
 //------------------------------------

@@ -35,7 +35,7 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 //---------------------------------------------------------------------------------------------------------------
 // New footer details verified                |    10/12/2019   |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// New Website, Initial Verification Changes  |    02/01/2020   |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //
 //---------------------------------------------------------------------------------------------------------------
@@ -49,49 +49,87 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 //---------------------------------------------------------------------------------------------------------------
 
 //------------------
-WebUI.waitForPageLoad(10)
+WebUI.waitForPageLoad(60)
+WebUI.delay(2)
 ///////////////////////////////////////////////////////////
 // Wait for the <SEARCH> Button to be Instantiated       //
 ///////////////////////////////////////////////////////////
-WebUI.waitForElementClickable(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/Page_Checkatrade Find a tradesperson you can trust/a_Search'), 60)
+//WebUI.waitForElementClickable(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/Page_Checkatrade Find a tradesperson you can trust/a_Search'), 60)
 
 '------------------------------------'
 // Returned to Home Page
 '------------------------------------'
 // Homepage Header Displyed
-WebUI.verifyTextPresent('Helping you find the right trade or service', false)
+'Old Site'
+// WebUI.verifyTextPresent('Helping you find the right trade or service', false)
+'New Site'
+WebUI.verifyTextPresent('Looking for a Tradesperson?', false)
 '------------------------------------'
+'Old'
 // Homepage Service Informaation is Displayed
-WebUI.verifyTextPresent('Search through over', false) //over 30,000 recommended
+//WebUI.verifyTextPresent('Search through over', false) //over 30,000 recommended
+'New'
+WebUI.verifyTextPresent('Pick from one of more then ', false) //over 30,000 recommended
 '------------------------------------'
+'Old'
 // Second part of string, Excluding Number
-WebUI.verifyTextPresent('recommended, vetted and monitored trades and service providers for free.', false)
+//WebUI.verifyTextPresent('recommended, vetted and monitored trades and service providers for free.', false)
+'New'
+WebUI.verifyTextPresent('vetted and monitored Trades', false)
 '------------------------------------'
 // Search by Member Trade Name is Displayed
 WebUI.verifyTextPresent('or look up a member by name', false)
 '------------------------------------'
 // Number of Reviews Published so far is Displayed
-WebUI.verifyTextPresent('reviews published so far – thank you!', false)
+'Old'
+// WebUI.verifyTextPresent('reviews published so far – thank you!', false)
+'New'
+WebUI.verifyTextPresent('Reference & Reviews', false)
+WebUI.verifyTextPresent('Background', false)
+WebUI.verifyTextPresent('Insurance', false)
+
 '------------------------------------'
-' NEW FOOTER Details - 10/12/2019'
+' NEW FOOTER Details - 10/12/2019 - Old Site'
+' NEW FOOTER Details - 02/01/2019 - New Site'
 '------------------------------------'
+'Old'
 // I need a trade or service LH Lower Section
-WebUI.verifyTextPresent('I need a trade or service', false)
+//' NEW FOOTER Details - 10/12/2019'
 '------------------------------------'
 // Body Text
-WebUI.verifyTextPresent('Every trader thoroughly checked and vetted', false)
+//' NEW FOOTER Details - 10/12/2019'
 '------------------------------------'
 // Button Label
-WebUI.verifyTextPresent('Find out more', false)
+//WebUI.verifyTextPresent('Find out more', false)
 '------------------------------------'
 // I am trade or service RH Lower Section
-WebUI.verifyTextPresent('I am a tradesman', false)
+//WebUI.verifyTextPresent('I am a tradesman', false)
 '------------------------------------'
 // Body Text
-WebUI.verifyTextPresent('Over a million visits to Checkatrade each month', false)
+//WebUI.verifyTextPresent('Over a million visits to Checkatrade each month', false)
 '------------------------------------'
 // Button Label
-WebUI.verifyTextPresent('Find out more', false) // 2 of these buttons, so check will pass but could be missing a button and would still pass :-)
+//WebUI.verifyTextPresent('Find out more', false) // 2 of these buttons, so check will pass but could be missing a button and would still pass :-)
+'New'
+WebUI.verifyTextPresent('Checkatrade Articles: Cost Guides', false)
+WebUI.verifyTextPresent('See All Articles', false)
+WebUI.verifyTextPresent('How Checkatrade works', false)
+
+WebUI.scrollToPosition(500, 500)
+WebUI.delay(1)
+
+WebUI.verifyTextPresent('Millions of reviews', false)
+WebUI.verifyTextPresent('Our members give out a feedback card with each and every job', false)
+WebUI.verifyTextPresent('Free to use', false)
+WebUI.verifyTextPresent('Checkatrade is a completely free service', false)
+WebUI.verifyTextPresent('Nationwide', false)
+WebUI.verifyTextPresent('Search for tradespeople who work near you from anywhere in the UK', false)
+WebUI.verifyTextPresent('About our members', false)
+WebUI.verifyTextPresent('Checkatrade runs strict background checks on tradespeople before they can become members', false)
+WebUI.verifyTextPresent('The Checkatrade Standard', false)
+WebUI.verifyTextPresent('Resolving Issues', false)
+WebUI.verifyTextPresent('FAQ', false)
+
 '------------------------------------'
 'FOOTER'
 '------------------------------------'
@@ -107,10 +145,16 @@ WebUI.verifyTextPresent('Company', false)
 'Social Media'
 '------------------------------------'
 // Follow Us on
-WebUI.verifyTextPresent('Follow Us On', false)
+WebUI.verifyTextPresent('Follow us on', false) // old - Follow Us On
 '------------------------------------'
 
+WebUI.scrollToElement(findTestObject('Object Repository/New_CAT_Search/Search_by_Name'), 3)
+WebUI.waitForElementClickable(findTestObject('Object Repository/New_CAT_Search/Search_by_Name'), 10)
+WebUI.waitForPageLoad(60)
 '------------------------------------'
+
+WebUI.scrollToPosition(0, 0)
+WebUI.delay(1)
 // Verify We Are Returning to the CORRECT Home Page * * * OUT OF CONTEXT * * * 
 //GlobalVariable.CurrentUrl = WebUI.getUrl()
 //if (GlobalVariable.CurrentUrl == GlobalVariable.URL){

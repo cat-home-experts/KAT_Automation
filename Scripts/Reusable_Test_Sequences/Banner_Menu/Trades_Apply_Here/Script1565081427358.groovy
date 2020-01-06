@@ -52,23 +52,51 @@ import org.openqa.selenium.Keys as Keys
 //
 //' Major Changes Around The Selection Function and Entry Details 05/12/2019'
 
-'---------------------------------'
-' Click on <Trades> Header Button |'
-'---------------------------------'
-WebUI.waitForElementClickable(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades'), 10)
-WebUI.click(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades'))
+try {
+	// New Website
+	'---------------------------------'
+	' Click on <Trades> Header Button |'
+	'---------------------------------'
+	WebUI.waitForElementClickable(findTestObject('Object Repository/New_Home_Page/Trades_Button'), 10)
+	WebUI.click(findTestObject('Object Repository/New_Home_Page/Trades_Button'))
+	
+	'---------------------------------'
+	' Click on <Find Out More> Banner |'
+	'---------------------------------'
+	WebUI.waitForElementClickable(findTestObject('Object Repository/New_Home_Page/Find_Out_More_Button'), 10)
+	WebUI.click(findTestObject('Object Repository/New_Home_Page/Find_Out_More_Button'))
+	
+	'---------------------------------'
+	' Click on <Trade Application> B  |' // Default Selection = Trade Member Application
+	'---------------------------------'
+	//WebUI.waitForElementClickable(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application'), 10)
+	//WebUI.click(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application'))
 
-'---------------------------------'
-' Click on <Find Out More> Banner |'
-'---------------------------------'
-WebUI.waitForElementClickable(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more'), 10)
-WebUI.click(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more'))
+	//-----------------------------------------
+} catch (Exception e) { // ObjectNotFound
+	// Old website
+	'---------------------------------'
+	' Click on <Trades> Header Button |'
+	'---------------------------------'
+	WebUI.waitForElementClickable(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades'), 10)
+	WebUI.click(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades'))
+	
+	'---------------------------------'
+	' Click on <Find Out More> Banner |'
+	'---------------------------------'
+	WebUI.waitForElementClickable(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more'), 10)
+	WebUI.click(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more'))
+	
+	'---------------------------------'
+	' Click on <Trade Application> B  |'
+	'---------------------------------'
+	WebUI.waitForElementClickable(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application'), 10)
+	WebUI.click(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application'))
 
-'---------------------------------'
-' Click on <Trade Application> B  |'
-'---------------------------------'
-WebUI.waitForElementClickable(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application'), 10)
-WebUI.click(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application'))
+	//-----------------------------------------
+}
+
+
 
 //
 //WebUI.setText(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactEmail'), 

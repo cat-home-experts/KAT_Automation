@@ -16,3 +16,31 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://www.preview.checkatrade.com/')
+
+WebUI.maximizeWindow()
+
+//WebUI.click(findTestObject('Object Repository/New_CAT_Search/Page_Checkatrade Find a tradesperson you can trust/button_Accept All'))
+WebUI.waitForElementClickable(findTestObject('Object Repository/New_CAT_Search/Page_Checkatrade Find a tradesperson you can trust/button_or look up a member by name'), 
+    10)
+
+WebUI.click(findTestObject('Object Repository/New_CAT_Search/Page_Checkatrade Find a tradesperson you can trust/button_or look up a member by name'))
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Object Repository/New_CAT_Search/Page_Checkatrade Find a tradesperson you can trust/button_or look up a member by name'))
+
+WebUI.click(findTestObject('Object Repository/New_CAT_Search/Page_Checkatrade Find a tradesperson you can trust/button_or search for a tradesperson near you'))
+
+WebUI.click(findTestObject('Object Repository/New_CAT_Search/Page_Checkatrade Find a tradesperson you can trust/button_or look up a member by name'))
+
+WebUI.click(findTestObject('Object Repository/New_CAT_Search/Page_Checkatrade Find a tradesperson you can trust/button_or search for a tradesperson near you'))
+
+WebUI.click(findTestObject('Object Repository/New_CAT_Search/Page_Checkatrade Find a tradesperson you can trust/button_or look up a member by name'))
+
+WebUI.click(findTestObject('Object Repository/New_CAT_Search/Page_Checkatrade Find a tradesperson you can trust/button_or search for a tradesperson near you'))
+
+WebUI.click(findTestObject('Object Repository/New_CAT_Search/Page_Checkatrade Find a tradesperson you can trust/button_or look up a member by name'))
+

@@ -18,9 +18,28 @@ import internal.GlobalVariable as GlobalVariable
 //------------------------------------
 
 //-------------------------------------------
-'Scroll - To Search Button on the bottom of the page (sometimes off the screen '
-WebUI.waitForElementClickable(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search'), 25)
-WebUI.scrollToElement(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search'), 5)
+
+
+
+
+try {
+	// New Website
+	WebUI.waitForElementClickable(findTestObject('Object Repository/New_CAT_Search/Company_Search_Field'), 25)
+	WebUI.scrollToElement(findTestObject('Object Repository/New_CAT_Search/Company_Search_Field'), 5)
+
+	//-----------------------------------------
+} catch (Exception e) { // ObjectNotFound
+	// Old website
+	'Scroll - To Search Button on the bottom of the page (sometimes off the screen '
+	WebUI.waitForElementClickable(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search'), 25)
+	WebUI.scrollToElement(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search'), 5)
+	//-----------------------------------------
+}
+
+
+
+
+
 
 //-------------------------------------------
 

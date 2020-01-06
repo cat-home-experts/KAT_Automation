@@ -30,7 +30,17 @@ import org.openqa.selenium.Keys as Keys
 // returned for given 'Trade' and 'Location'  |    13/07/2019   |     Dave Horne   | Using External Test Data    |
 // search criteria.                           |                 |                  | Provided on an Excel SSheet |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Reusable_Test_Sequences/CAT_Click_         |                 |                  |                             |
+//              Search_Trade_Location Updated |    06/01/2020   |        DH        | Changes for NEW Web Site    |
+//---------------------------------------------------------------------------------------------------------------
+// Reusable_Test_Sequences/New_CAT_Search     |                 |                  |                             |
+//                 Trade_Location Updated     |    06/01/2020   |        DH        | Changes for NEW Web Site    |
+//---------------------------------------------------------------------------------------------------------------
+// Reusable_Test_Sequences/New_CAT_Search     |                 |                  |                             |
+//                 _Button Updated            |    06/01/2020   |        DH        | Changes for NEW Web Site    |
+//---------------------------------------------------------------------------------------------------------------
+// Reusable_Test_Sequences/New_CAT_Search     |                 |                  |                             |
+//                 /Scroll to Search Button   |    06/01/2020   |        DH        | Changes for NEW Web Site    |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -70,7 +80,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('searchTestData'
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Enter_Trade_Location'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 	'---------------------------------------'
-	' Scroll Search Button into View        |'
+	' Scroll Search Button into View        |' // Reinstated for NEW Site
 	'---------------------------------------'
 	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Scroll_To_Search_Button'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 

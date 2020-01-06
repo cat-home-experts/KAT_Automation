@@ -26,7 +26,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 // Navigate and Verify Returned Content       |   12/11/2019    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Slight changes in content factored in      |   02/01/2020    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -77,11 +77,11 @@ WebUI.verifyTextPresent("See more …", false)
 'Most Viewed Companies Table'
 WebUI.verifyTextPresent("Most Viewed Companies (in past 7 days)", false)
 WebUI.verifyTextPresent("Company", false)
-WebUI.verifyTextPresent("From Search", false)
-WebUI.verifyTextPresent("Checkatrade", false)
-WebUI.verifyTextPresent("External Link", false)
-WebUI.verifyTextPresent("Other", false)
-WebUI.verifyTextPresent("Total", false)
+//WebUI.verifyTextPresent("From Search", false)
+//WebUI.verifyTextPresent("Checkatrade", false)
+//WebUI.verifyTextPresent("External Link", false)
+//WebUI.verifyTextPresent("Other", false)
+//WebUI.verifyTextPresent("Total", false)
 
 ' Daily Activity Graphic'
 WebUI.verifyElementVisible(findTestObject("Object Repository/WebOffice/Cases_Top/Reports_Top/Page_/img_See more _ctl00_CP1_WebChart1"))

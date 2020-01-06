@@ -17,12 +17,30 @@ import internal.GlobalVariable as GlobalVariable
 // Click Link to Search on Trade Name (and ID) From the Home Page search Screen  | - Snip - 07/08/2019
 //--------------------------------------------------------------------------------
 
+//---------------------------------------------------------------------------------------------------------------
+//   extended to cater for OLD and NEW Site  |    02/01/2020    |       DH        |                             |
+//---------------------------------------------------------------------------------------------------------------
+	WebUI.waitForPageLoad(60)
+
    //-----------------------------------------
     'Hit Search Trade Person by Name (or CAT ID)'
-    //WebUI.waitForElementClickable(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name'), 5)
-	WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name'))
-	//-----------------------------------------
 	
+		
+	try {
+		//WebUI.scrollToElement(findTestObject('Object Repository/New_CAT_Search/Page_Checkatrade Find a tradesperson you can trust/button_or look up a member by name'), 10)
+		
+		WebUI.scrollToPosition(0, 0)
+		WebUI.click(findTestObject('Object Repository/New_CAT_Search/Page_Checkatrade Find a tradesperson you can trust/button_or look up a member by name'))
+		
+		//-----------------------------------------
+	} catch (Exception e) { // ObjectNotFound 
+		// Old website
+		// WebUI.waitForElementClickable(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name'), 5)
+		WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name'))
+		//-----------------------------------------
+	}
+	
+		
 	//-----------------------------------------
 	'Waits only as long as required'
     WebUI.waitForPageLoad(60)

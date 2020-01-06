@@ -38,10 +38,23 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 '-------------------------'
 //WebUI.doubleClick(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search'))
 
-// recorded with FF
-WebUI.waitForElementClickable(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/Page_Checkatrade Find a tradesperson you can trust/a_Search'), 25)
-//WebUI.scrollToElement(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/Page_Checkatrade Find a tradesperson you can trust/a_Search'))
-WebUI.click(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/Page_Checkatrade Find a tradesperson you can trust/a_Search'))
+
+try {
+	// New Website
+	WebUI.waitForElementClickable(findTestObject('Object Repository/New_CAT_Search/Search_Button'), 25)
+	WebUI.click(findTestObject('Object Repository/New_CAT_Search/Search_Button'))
+
+	//-----------------------------------------
+} catch (Exception e) { // ObjectNotFound
+	// Old website
+	WebUI.waitForElementClickable(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/Page_Checkatrade Find a tradesperson you can trust/a_Search'), 25)
+	WebUI.click(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/Page_Checkatrade Find a tradesperson you can trust/a_Search'))
+
+	//-----------------------------------------
+}
+
+
+
 
 '---------------------------------------------------------------------'
 ' Investigation into detecting specic browser currently active Below  |'
