@@ -28,23 +28,23 @@ import internal.GlobalVariable as GlobalVariable
 // ORIGINAL  |
 //------------
 
-try {
+if (GlobalVariable.Website_Version == "new"){
 	// New Website
 	WebUI.waitForElementPresent(findTestObject('Object Repository/New_CAT_Search/Postcode_Search_Field'), 60)
 	WebUI.click(findTestObject('Object Repository/New_CAT_Search/Postcode_Search_Field'))
 	WebUI.setText(findTestObject('Object Repository/New_CAT_Search/Postcode_Search_Field'),	findTestData('searchTestData').getValue('tradeLocation', GlobalVariable.row))
-	//-----------------------------------------
-} catch (Exception e) { // ObjectNotFound
+
+}
+
+else {
 	// Old website
 	WebUI.click(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Not here_location'))
 	WebUI.setText(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Not here_location'),
 		findTestData('searchTestData').getValue('tradeLocation', GlobalVariable.row))
-	//-----------------------------------------
+
 }
 
 
-
-
 //------------------------------------
-// END                               | - Snip - 07/08/2019 - Update - 06/09/2019
+// END                               | - Snip - 07/08/2019 - Update - 06/09/2019 - 07/01/2020
 //------------------------------------

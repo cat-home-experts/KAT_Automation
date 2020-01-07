@@ -26,21 +26,20 @@ import internal.GlobalVariable as GlobalVariable
     //-----------------------------------------
     'Click on the Page to Refresh Search Results'
 	
-	try {
+	if (GlobalVariable.Website_Version == "new"){
 		// New Website
 		WebUI.waitForElementPresent(findTestObject('Object Repository/New_CAT_Search/Lookup_Return_Element'), 60)
-	    WebUI.click(findTestObject('Object Repository/New_CAT_Search/Lookup_Return_Element'))
+		WebUI.click(findTestObject('Object Repository/New_CAT_Search/Lookup_Return_Element'))
+
+	}
 	
-		//-----------------------------------------
-	} catch (Exception e) { // ObjectNotFound
+	else {
 		// Old website
 		// WebUI.waitForElementClickable(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name'), 5)
 		WebUI.waitForElementPresent(findTestObject('Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name'), 60)
-	    WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name'))
+		WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name'))
 
-		//-----------------------------------------
 	}
-
 	//-----------------------------------------
 	
 	//-----------------------------------------

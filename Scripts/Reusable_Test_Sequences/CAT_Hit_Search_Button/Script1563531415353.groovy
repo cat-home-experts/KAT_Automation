@@ -38,21 +38,19 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 '-------------------------'
 //WebUI.doubleClick(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search'))
 
-
-try {
+if (GlobalVariable.Website_Version == "new"){
 	// New Website
 	WebUI.waitForElementClickable(findTestObject('Object Repository/New_CAT_Search/Search_Button'), 25)
 	WebUI.click(findTestObject('Object Repository/New_CAT_Search/Search_Button'))
 
-	//-----------------------------------------
-} catch (Exception e) { // ObjectNotFound
+}
+
+else {
 	// Old website
 	WebUI.waitForElementClickable(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/Page_Checkatrade Find a tradesperson you can trust/a_Search'), 25)
 	WebUI.click(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/Page_Checkatrade Find a tradesperson you can trust/a_Search'))
 
-	//-----------------------------------------
 }
-
 
 
 

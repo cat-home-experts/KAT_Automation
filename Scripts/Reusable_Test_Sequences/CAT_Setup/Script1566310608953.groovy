@@ -10,10 +10,12 @@ import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.exception.WebElementNotFoundException
+import com.kms.katalon.core.webui.exception.WebElementNotFoundException as WebElementNotFoundException
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 //-----------------------
 // TEST HISTORY HEADER - |                                                                                                               |
@@ -50,7 +52,7 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 // Sync on Text Box removed, and replaced     |                 |                  |                             |
 // With pag load Wait                         |    16/12/2019   |         DH       |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Old RO new Website Detection Added         |    07/01/2019   |         DH       |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -68,34 +70,42 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 //-----------------------------------------
 // Startup Process -                      | NOTE: Members Area Function has it's OWN Startup Process
 //-----------------------------------------
+'------------------------------'
+
+' Set Mobile Device Testing    |'
 
 '------------------------------'
-' Set Mobile Device Testing    |'
-'------------------------------'
-if (GlobalVariable.Mobile_Flag == "true"){
-	// Set Emulation in the calling script (eg - "default_device_dev" - TRUE Do It, FALSE Don't Do It :-)
-	' Write required Mobile Device Emulator to the "com.kms.katalon.core.webui.chrome.properties" file'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Mobile_Chrome_Capabilities_desktop'), [:], FailureHandling.OPTIONAL)
+if (GlobalVariable.Mobile_Flag == 'true') {
+    // Set Emulation in the calling script (eg - "default_device_dev" - TRUE Do It, FALSE Don't Do It :-)
+    ' Write required Mobile Device Emulator to the "com.kms.katalon.core.webui.chrome.properties" file'
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Mobile_Chrome_Capabilities_desktop'), [:], FailureHandling.OPTIONAL)
 }
+
 '------------------------------'
+
 ' Set Mobile Device Testing    |'
+
 '------------------------------'
 
 'URL - Set from the ENVIRONMENT PROFILE '
+
 'OPEN BROWSER'
-WebUI.openBrowser(GlobalVariable.URL)// 20/08/2019
+WebUI.openBrowser(GlobalVariable.URL // 20/08/2019
+    )
 
 //-----------------------------------------
 'MAXIMIZE BROWSER '
 WebUI.maximizeWindow()
 
 //-----------------------------------------
-'WAIT for browser to load - waits up to 60 seconds before timeout occurs '
 //WebUI.delay(2)
+'WAIT for browser to load - waits up to 60 seconds before timeout occurs '
 WebUI.waitForPageLoad(60)
+
 //WebUI.delay(1)
 //WebUI.waitForElementPresent(null, 10)
 'Previous Functionalilty Left Commented For Ease Of reversion'
+
 //try {
 //	//----------------------------------------------
 //	//'Closes COOKIE nagging element, If it Exists  |'
@@ -135,37 +145,72 @@ WebUI.waitForPageLoad(60)
 //----------------------------------------------
 'COOKIE - NEW - 04/12/2019, Modified 13/12/2019'
 try {
-	//----------------------------------------------
-	//'Closes COOKIE nagging element, If it Exists  |'
-	//----------------------------------------------
-	WebUI.verifyElementPresent(findTestObject('Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All'), 5)
-	//WebUI.verifyElementPresent(findTestObject('Object Repository/New_Home/Page_Checkatrade Find a tradesperson you can trust/div_Close'), 1, FailureHandling.OPTIONAL)
-	'---------------------------------' // // Default locator was hide_button - stopped working, use close button locator now - 27/08/2019
-	WebUI.click(findTestObject('Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All'))
-	//WebUI.click(findTestObject('Object Repository/New_Home/Page_Checkatrade Find a tradesperson you can trust/div_Close'))
-	'---------------------------------'
-	'COOKIE POPOUT REMOVED - Confirmed'
-	'---------------------------------'
-	//WebUI.verifyElementNotPresent(findTestObject('Page_Checkatrade Find a tradesperson you can trust/div_close'), 5)
-	WebUI.delay(1)
-	WebUI.verifyTextNotPresent('We use cookies to personalise content and ads, to provide social media features and to analyse our traffic', false)
-	WebUI.verifyTextNotPresent(' We also share information about your use of our site with our social media, advertising and analytics partners', false)
-	WebUI.verifyTextNotPresent("Cookie Policy", false)
+    //----------------------------------------------
+    //'Closes COOKIE nagging element, If it Exists  |'
+    //----------------------------------------------
+    WebUI.verifyElementPresent(findTestObject('Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All'), 
+        5)
 
-//	WebUI.verifyTextNotPresent('Checkatrade.com uses cookies to make sure you get the best browsing experience', false)
-//	WebUI.verifyTextNotPresent('By continuing to use this website you are consenting to our use of cookies', false)
-//	WebUI.verifyTextNotPresent("For further information and to manage your cookie preferences, view Checkatrade's cookie policy", false)
-		
-} catch (Exception e_cookie_popup) { //WebElementNotFoundException
-	KeywordUtil.markWarning("The Cookie Nagging POPUP Was not presented on the '+GlobalVariable.URL+' Web Page")
+    //WebUI.verifyElementPresent(findTestObject('Object Repository/New_Home/Page_Checkatrade Find a tradesperson you can trust/div_Close'), 1, FailureHandling.OPTIONAL)
+    // // Default locator was hide_button - stopped working, use close button locator now - 27/08/2019
+    '---------------------------------'
+    WebUI.click(findTestObject('Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All'))
+
+    //WebUI.click(findTestObject('Object Repository/New_Home/Page_Checkatrade Find a tradesperson you can trust/div_Close'))
+    '---------------------------------'
+
+    'COOKIE POPOUT REMOVED - Confirmed'
+
+    //WebUI.verifyElementNotPresent(findTestObject('Page_Checkatrade Find a tradesperson you can trust/div_close'), 5)
+    '---------------------------------'
+    WebUI.delay(1)
+
+    WebUI.verifyTextNotPresent('We use cookies to personalise content and ads, to provide social media features and to analyse our traffic', 
+        false)
+
+    WebUI.verifyTextNotPresent(' We also share information about your use of our site with our social media, advertising and analytics partners', 
+        false)
+
+    WebUI.verifyTextNotPresent('Cookie Policy', false) //	WebUI.verifyTextNotPresent('Checkatrade.com uses cookies to make sure you get the best browsing experience', false)
+    //	WebUI.verifyTextNotPresent('By continuing to use this website you are consenting to our use of cookies', false)
+    //	WebUI.verifyTextNotPresent("For further information and to manage your cookie preferences, view Checkatrade's cookie policy", false)
 }
+catch (Exception e_cookie_popup) {
+    //WebElementNotFoundException
+    KeywordUtil.markWarning('The Cookie Nagging POPUP Was not presented on the \'+GlobalVariable.URL+\' Web Page')
+} 
+
 //-----------------------------------------------------------------------------------------------------------------------------------------------------
-' Home Page validation Checks after COOKIE Dispelled'
 //WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Home'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+' Home Page validation Checks after COOKIE Dispelled'
 WebUI.waitForPageLoad(60)
+
 //WebUI.waitForElementVisible(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_Search'), 60)
 // WebUI.waitForElementVisible(findTestObject('Checkatrade_Trade_Search_page/Page_Checkatrade Find a tradesperson you can trust/a_Search'), 25)
 'COOKIE - ORIGINAL'
-////-----------------------------
-//// E N D                      |
-////-----------------------------
+
+// WebUI.click(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF'))
+'WEBSITE VERSION DETECTION'
+
+if (WebUI.waitForElementVisible(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review'), 25)){
+	KeywordUtil.logInfo("Give Feedback STARTUP Process")
+}
+
+else {
+	if (!WebUI.verifyElementVisible(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF'))){
+		
+		GlobalVariable.Website_Version = 'new'
+		KeywordUtil.logInfo("The <<<NEW>>> Website was detected by the STARTUP Process")
+		}
+	
+	else {
+		
+		GlobalVariable.Website_Version = 'old'
+		KeywordUtil.logInfo("The <<<OLD>>> Website was detected by the STARTUP Process")
+	}
+	
+}
+
+
+
+

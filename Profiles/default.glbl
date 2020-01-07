@@ -125,6 +125,11 @@
       <name>WebOfficeURL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
+      <description>Websit = old OR new</description>
+      <initValue>'old'</initValue>
+      <name>Website_Version</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
       <description>Fix the format error here Give Feedback - Recommend? true OR false</description>
       <initValue>true</initValue>
       <name>YE_Recommendations</name>

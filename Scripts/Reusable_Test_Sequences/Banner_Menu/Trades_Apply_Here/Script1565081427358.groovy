@@ -27,7 +27,7 @@ import org.openqa.selenium.Keys as Keys
 //---------------------------------------------------------------------------------------------------------------
 //  Major Home Page Changes Extend This Script|   05/12/2019    |        DH        | Now several navigation Steps|
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//  Website version dewtection added          |   07/01/2020    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -52,7 +52,7 @@ import org.openqa.selenium.Keys as Keys
 //
 //' Major Changes Around The Selection Function and Entry Details 05/12/2019'
 
-try {
+if (GlobalVariable.Website_Version == "new"){
 	// New Website
 	'---------------------------------'
 	' Click on <Trades> Header Button |'
@@ -73,7 +73,10 @@ try {
 	//WebUI.click(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application'))
 
 	//-----------------------------------------
-} catch (Exception e) { // ObjectNotFound
+}
+
+else {
+	
 	// Old website
 	'---------------------------------'
 	' Click on <Trades> Header Button |'
@@ -94,9 +97,8 @@ try {
 	WebUI.click(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application'))
 
 	//-----------------------------------------
+	
 }
-
-
 
 //
 //WebUI.setText(findTestObject('Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactEmail'), 

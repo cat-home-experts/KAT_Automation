@@ -25,7 +25,7 @@
    <testCaseLink>
       <guid>aec61a78-5f27-4418-aa95-6838cf47e251</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Members_Area/Advertise_Directory</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -85,13 +85,13 @@
    <testCaseLink>
       <guid>efa5837e-ee4b-4406-8161-a61c4b988d20</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Members_Area/Members_Scams</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>b22aa3e5-f57a-4f50-9f4c-632a5710782f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Members_Area/Members_Trading_Standards</testCaseId>
    </testCaseLink>
    <testCaseLink>

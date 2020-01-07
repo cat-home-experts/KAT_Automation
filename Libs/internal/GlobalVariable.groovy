@@ -156,6 +156,11 @@ Profile Checkatrade_Live : Web Office URL</p>
     public static Object WebOfficeURL
      
     /**
+     * <p>Profile default : Websit = old OR new</p>
+     */
+    public static Object Website_Version
+     
+    /**
      * <p>Profile default : Fix the format error here Give Feedback - Recommend? true OR false
 Profile Preview : Fix the format error here Give Feedback - Recommend? true OR false</p>
      */
@@ -212,6 +217,7 @@ Profile Preview : Fix the format error here Give Feedback - Recommend? true OR f
             Validation_Data_Numeric = selectedVariables['Validation_Data_Numeric']
             Validation_Data_Special_Chars = selectedVariables['Validation_Data_Special_Chars']
             WebOfficeURL = selectedVariables['WebOfficeURL']
+            Website_Version = selectedVariables['Website_Version']
             YE_Recommendations = selectedVariables['YE_Recommendations']
             row = selectedVariables['row']
             Standalone_TC_Execution = selectedVariables['Standalone_TC_Execution']

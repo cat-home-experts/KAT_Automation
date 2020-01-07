@@ -27,22 +27,20 @@ import internal.GlobalVariable as GlobalVariable
 	//WebUI.waitForElementClickable(findTestObject('Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search'), 2)
 	//-------------------------------------------
 
-	try {
+	if (GlobalVariable.Website_Version == "new"){
 		// New Website
 		WebUI.setText(findTestObject('Object Repository/New_CAT_Search/Company_Search_Field'), findTestData(
 			'Search_CAT_ID_Data (1)').getValue('tradeName', GlobalVariable.row))
+
+	}
 	
-		//-----------------------------------------
-	} catch (Exception e) { // ObjectNotFound
+	else {
 		// Old website
 		// WebUI.waitForElementClickable(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name'), 5)
-	    WebUI.setText(findTestObject('Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search'), findTestData(
+		WebUI.setText(findTestObject('Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search'), findTestData(
 			'Search_CAT_ID_Data (1)').getValue('tradeName', GlobalVariable.row))
 
-		//-----------------------------------------
-	}
-
-	
+	}	
 //------------------------------------
-// END                               | - Snip - 07/08/2019
+// END                               | - Snip - 07/08/2019 - 07/01/2020
 //------------------------------------

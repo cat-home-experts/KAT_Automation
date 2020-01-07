@@ -25,22 +25,20 @@ import internal.GlobalVariable as GlobalVariable
    //-----------------------------------------
     'Hit Search Trade Person by Name (or CAT ID)'
 	
-		
-	try {
+	if (GlobalVariable.Website_Version == "new"){
 		//WebUI.scrollToElement(findTestObject('Object Repository/New_CAT_Search/Page_Checkatrade Find a tradesperson you can trust/button_or look up a member by name'), 10)
-		
+		// New Website
 		WebUI.scrollToPosition(0, 0)
 		WebUI.click(findTestObject('Object Repository/New_CAT_Search/Page_Checkatrade Find a tradesperson you can trust/button_or look up a member by name'))
-		
-		//-----------------------------------------
-	} catch (Exception e) { // ObjectNotFound 
+
+	}
+	else {
 		// Old website
 		// WebUI.waitForElementClickable(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name'), 5)
 		WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name'))
-		//-----------------------------------------
+
 	}
 	
-		
 	//-----------------------------------------
 	'Waits only as long as required'
     WebUI.waitForPageLoad(60)

@@ -19,30 +19,24 @@ import internal.GlobalVariable as GlobalVariable
 
 //-------------------------------------------
 
-
-
-
-try {
+if (GlobalVariable.Website_Version == "new"){
 	// New Website
 	WebUI.waitForElementClickable(findTestObject('Object Repository/New_CAT_Search/Company_Search_Field'), 25)
 	WebUI.scrollToElement(findTestObject('Object Repository/New_CAT_Search/Company_Search_Field'), 5)
 
-	//-----------------------------------------
-} catch (Exception e) { // ObjectNotFound
+}
+
+else {
 	// Old website
 	'Scroll - To Search Button on the bottom of the page (sometimes off the screen '
 	WebUI.waitForElementClickable(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search'), 25)
 	WebUI.scrollToElement(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Search'), 5)
-	//-----------------------------------------
+
 }
-
-
-
-
 
 
 //-------------------------------------------
 
 //------------------------------------
-// END                               | - Snip - 07/08/2019
+// END                               | - Snip - 07/08/2019 - 07/01/2020
 //------------------------------------
