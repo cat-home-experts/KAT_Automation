@@ -194,11 +194,12 @@ WebUI.waitForPageLoad(60)
 
 if (WebUI.waitForElementVisible(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review'), 25)){
 	KeywordUtil.logInfo("Give Feedback STARTUP Process")
+	// Currently Give Feedback is the old Journey, when this upgrades then remove this <top> if statement and content
 }
 
 else {
 	if (!WebUI.verifyElementVisible(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF'))){
-		
+		' Object above is for the old website, non existing assumes new website :-)'
 		GlobalVariable.Website_Version = 'new'
 		KeywordUtil.logInfo("The <<<NEW>>> Website was detected by the STARTUP Process")
 		}
@@ -211,6 +212,8 @@ else {
 	
 }
 
-
+//////////////////////////////////////////////////////
+//                        END                       //
+//////////////////////////////////////////////////////
 
 

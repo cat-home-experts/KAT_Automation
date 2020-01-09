@@ -111,7 +111,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Mobile_Test_Dat
     // Set View Port Size
     //----------------------------------------------------------
 	' Block Comment Start'
-/*	//----------------------------------------------------------
+	//----------------------------------------------------------
 	' ACTUAL SCREEN RESOLUTION SELECTION METHOD USED'       // |
 	//----------------------------------------------------------
     // Pul X and Y from the spreadsheet (parse Integer from data sheet string value)
@@ -131,7 +131,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Mobile_Test_Dat
 	KeywordUtil.markPassed((('Set View Port Size is currently SET to X AXIS ' + XCOORD) + ' Y AXIS ') + YCOORD)
 	KeywordUtil.markPassed((('Set View Port Size is currently SET to X AXIS ' + XCOORD) + ' Y AXIS ') + YCOORD)
 	//---------------------------------------------------------------------
-*/	// Set The Trade Classification to Select on the Trade Search Screen  |
+	// Set The Trade Classification to Select on the Trade Search Screen  |
 	' Block Commen End'
     //------------------------------------------------------------------------------------------------------------------------------------------------
 //    'Set and SEARCH SELECTED TRADE'

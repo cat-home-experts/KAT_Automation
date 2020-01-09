@@ -35,6 +35,11 @@
       <name>DataSheet_Location</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
+      <description>Mobile device type/name</description>
+      <initValue>'iPad'</initValue>
+      <name>deviceName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
       <description>Email Address</description>
       <initValue>'ron_mctavish@xtc_0z0.com'</initValue>
       <name>EmailAddress</name>

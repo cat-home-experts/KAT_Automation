@@ -44,6 +44,11 @@ Profile Preview : Datasheet location (needs to change to shared repo local)</p>
     public static Object DataSheet_Location
      
     /**
+     * <p>Profile default : Mobile device type&#47;name</p>
+     */
+    public static Object deviceName
+     
+    /**
      * <p>Profile default : Email Address
 Profile Preview : Email</p>
      */
@@ -199,6 +204,7 @@ Profile Preview : Fix the format error here Give Feedback - Recommend? true OR f
             ContactNumber = selectedVariables['ContactNumber']
             CurrentUrl = selectedVariables['CurrentUrl']
             DataSheet_Location = selectedVariables['DataSheet_Location']
+            deviceName = selectedVariables['deviceName']
             EmailAddress = selectedVariables['EmailAddress']
             FullName = selectedVariables['FullName']
             FUNCTION_AREA = selectedVariables['FUNCTION_AREA']

@@ -57,6 +57,9 @@ import java.io.IOException
 //---------------------------------------------------------------------------------------------------------------
 
 
+
+
+
 // TODO Revisit, 3 methodes withing, write a new properties file, set capabilities and set chrome options, 1st option was the closest to success, 
 // file ownership issues prevent (partially worked setting mobile devicese discernable in kS propery settings after run
 //def emulator // Device to use
@@ -64,6 +67,13 @@ def data = findTestData('Data Files/Mobile_Test_Data')
 def file = "com.kms.katalon.core.webui.chrome.properties"
 def filePath = "C:\\Users\\davidho\\Katalon Studio\\Start\\settings\\internal\\"+file
 //def file
+
+'NOTES'
+
+'Keystrokes'
+
+'F12'
+'Ctrl+Shift+M'
 
             // "C:\\Users\\davidho\\Katalon Studio\\Start\\settings\\internal\\com.kms.katalon.core.webui.chrome.properties"
 '---------------------------------------------------------------------------------------------------------------------------'

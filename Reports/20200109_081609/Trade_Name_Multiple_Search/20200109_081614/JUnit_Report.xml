@@ -1,0 +1,1592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Trade_Name_Multiple_Search" time="262.442" tests="1" failures="0" errors="0">
+   <testsuite name="Trade_Name_Multiple_Search" tests="1" failures="0" errors="0" time="262.442" timestamp="2020-01-09 08:26:58" hostname="DavidHo - VETTEDSP36RF.check.local" id="Test Suites/Trade_Name_Multiple_Search">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\davidho\\Katalon Studio\\Start\\Reports\\20200109_081609\\Trade_Name_Multiple_Search\\20200109_081614"/>
+         <property name="logFiles" value="C:\\Users\\davidho\\Katalon Studio\\Start\\Reports\\20200109_081609\\Trade_Name_Multiple_Search\\20200109_081614\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="DavidHo - VETTEDSP36RF.check.local"/>
+         <property name="os" value="Windows 10 32bit"/>
+         <property name="katalonVersion" value="7.1.2.1"/>
+         <property name="browser" value="Firefox 71.0"/>
+         <property name="hostAddress" value="10.0.13.186"/>
+         <property name="sessionId" value="916bc47e-c182-4bd9-b6d0-068197e8dd74"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Checkatrade_Tradesman_Searches/Trade_Name_Search_Multiple" time="262.13" classname="Test Cases/Checkatrade_Tradesman_Searches/Trade_Name_Search_Multiple" status="PASSED">
+         <system-out><![CDATA[2020-01-09 08:26:58 - [TEST_CASE][PASSED] - Test Cases/Checkatrade_Tradesman_Searches/Trade_Name_Search_Multiple: Test Cases/Checkatrade_Tradesman_Searches/Trade_Name_Search_Multiple
+
+2020-01-09 08:26:59 - [TEST_STEP][PASSED] - for ([row = 1, row <= findTestData("Search_CAT_ID_Data (1)").getRowNumbers(), (internal.GlobalVariable.row++)]): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-01-09 08:27:00 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Setup"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' successfully
+
+2020-01-09 08:27:00 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Setup: Test Cases/Reusable_Test_Sequences/CAT_Setup
+
+2020-01-09 08:27:00 - [TEST_STEP][PASSED] - "------------------------------": null
+
+2020-01-09 08:27:00 - [TEST_STEP][PASSED] - " Set Mobile Device Testing    |": null
+
+2020-01-09 08:27:00 - [TEST_STEP][PASSED] - if (Mobile_Flag == "true"): null
+
+2020-01-09 08:27:00 - [TEST_STEP][PASSED] - "------------------------------": null
+
+2020-01-09 08:27:00 - [TEST_STEP][PASSED] - " Set Mobile Device Testing    |": null
+
+2020-01-09 08:27:00 - [TEST_STEP][PASSED] - "------------------------------": null
+
+2020-01-09 08:27:00 - [TEST_STEP][PASSED] - "URL - Set from the ENVIRONMENT PROFILE ": null
+
+2020-01-09 08:27:00 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://www.preview.checkatrade.com/'
+
+2020-01-09 08:27:00 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-01-09 08:27:00 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2020-01-09 08:27:06 - [MESSAGE][PASSED] - Browser is opened with url: 'https://www.preview.checkatrade.com/'
+
+2020-01-09 08:27:06 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-01-09 08:27:07 - [MESSAGE][PASSED] - Current window maximized
+
+2020-01-09 08:27:07 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:27:07 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:27:07 - [TEST_STEP][PASSED] - "Previous Functionalilty Left Commented For Ease Of reversion": null
+
+2020-01-09 08:27:07 - [TEST_STEP][PASSED] - try: Text 'Cookie Policy' is not present on page
+
+2020-01-09 08:27:07 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All"), 5): Object 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is present
+
+2020-01-09 08:27:07 - [MESSAGE][PASSED] - Object 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is present
+
+2020-01-09 08:27:07 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All")): Object: 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is clicked on
+
+2020-01-09 08:27:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is clicked on
+
+2020-01-09 08:27:07 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-01-09 08:27:07 - [TEST_STEP][PASSED] - "COOKIE POPOUT REMOVED - Confirmed": null
+
+2020-01-09 08:27:07 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-01-09 08:27:08 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-01-09 08:27:08 - [TEST_STEP][PASSED] - verifyTextNotPresent("We use cookies to personalise content and ads, to provide social media features and to analyse our traffic", false): Text 'We use cookies to personalise content and ads, to provide social media features and to analyse our traffic' is not present on page
+
+2020-01-09 08:27:08 - [MESSAGE][PASSED] - Text 'We use cookies to personalise content and ads, to provide social media features and to analyse our traffic' is not present on page
+
+2020-01-09 08:27:08 - [TEST_STEP][PASSED] - verifyTextNotPresent(" We also share information about your use of our site with our social media, advertising and analytics partners", false): Text ' We also share information about your use of our site with our social media, advertising and analytics partners' is not present on page
+
+2020-01-09 08:27:09 - [MESSAGE][PASSED] - Text ' We also share information about your use of our site with our social media, advertising and analytics partners' is not present on page
+
+2020-01-09 08:27:09 - [TEST_STEP][PASSED] - verifyTextNotPresent("Cookie Policy", false): Text 'Cookie Policy' is not present on page
+
+2020-01-09 08:27:09 - [MESSAGE][PASSED] - Text 'Cookie Policy' is not present on page
+
+2020-01-09 08:27:09 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:27:09 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:27:09 - [TEST_STEP][PASSED] - "COOKIE - ORIGINAL": null
+
+2020-01-09 08:27:09 - [TEST_STEP][PASSED] - if (waitForElementVisible(findTestObject("Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review"), 25)): Web element with id: 'Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review' located by 'By.xpath: //input[@id='feedback-form__company_autocomplete_input']' not found
+
+2020-01-09 08:27:35 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //input[@id='feedback-form__company_autocomplete_input']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2020-01-09 08:27:35 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review' located by 'By.xpath: //input[@id='feedback-form__company_autocomplete_input']' not found
+
+2020-01-09 08:27:35 - [TEST_STEP][PASSED] - else: The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-01-09 08:27:35 - [TEST_STEP][PASSED] - if (!(verifyElementVisible(findTestObject("Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF")))): Object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF' is visible
+
+2020-01-09 08:27:35 - [MESSAGE][PASSED] - Object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF' is visible
+
+2020-01-09 08:27:35 - [TEST_STEP][PASSED] - else: The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-01-09 08:27:35 - [TEST_STEP][PASSED] - Website_Version = "old": null
+
+2020-01-09 08:27:35 - [TEST_STEP][PASSED] - logInfo("The <<<OLD>>> Website was detected by the STARTUP Process"): The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-01-09 08:27:35 - [MESSAGE][INFO] - The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-01-09 08:27:35 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' successfully
+
+2020-01-09 08:27:35 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Home"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Home' successfully
+
+2020-01-09 08:27:35 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Home: Test Cases/Reusable_Test_Sequences/CAT_Home
+
+2020-01-09 08:27:35 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:27:35 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:27:35 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2020-01-09 08:27:37 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2020-01-09 08:27:37 - [TEST_STEP][PASSED] - "------------------------------------": null
+
+2020-01-09 08:27:37 - [TEST_STEP][PASSED] - if (Website_Version == "new"): null
+
+2020-01-09 08:27:37 - [TEST_STEP][PASSED] - else: Text 'Over a million visits to Checkatrade each month' is present on page 
+
+2020-01-09 08:27:37 - [TEST_STEP][PASSED] - verifyTextPresent("Helping you find the right trade or service", false): Text 'Helping you find the right trade or service' is present on page 
+
+2020-01-09 08:27:38 - [MESSAGE][PASSED] - Text 'Helping you find the right trade or service' is present on page 
+
+2020-01-09 08:27:38 - [TEST_STEP][PASSED] - verifyTextPresent("Search through over", false): Text 'Search through over' is present on page 
+
+2020-01-09 08:27:38 - [MESSAGE][PASSED] - Text 'Search through over' is present on page 
+
+2020-01-09 08:27:38 - [TEST_STEP][PASSED] - verifyTextPresent("recommended, vetted and monitored trades and service providers for free.", false): Text 'recommended, vetted and monitored trades and service providers for free.' is present on page 
+
+2020-01-09 08:27:38 - [MESSAGE][PASSED] - Text 'recommended, vetted and monitored trades and service providers for free.' is present on page 
+
+2020-01-09 08:27:38 - [TEST_STEP][PASSED] - verifyTextPresent("reviews published so far – thank you!", false): Text 'reviews published so far – thank you!' is present on page 
+
+2020-01-09 08:27:38 - [MESSAGE][PASSED] - Text 'reviews published so far – thank you!' is present on page 
+
+2020-01-09 08:27:38 - [TEST_STEP][PASSED] - verifyTextPresent("I need a trade or service", false): Text 'I need a trade or service' is present on page 
+
+2020-01-09 08:27:39 - [MESSAGE][PASSED] - Text 'I need a trade or service' is present on page 
+
+2020-01-09 08:27:39 - [TEST_STEP][PASSED] - verifyTextPresent("Every trader thoroughly checked and vetted", false): Text 'Every trader thoroughly checked and vetted' is present on page 
+
+2020-01-09 08:27:39 - [MESSAGE][PASSED] - Text 'Every trader thoroughly checked and vetted' is present on page 
+
+2020-01-09 08:27:39 - [TEST_STEP][PASSED] - "------------------------------------": null
+
+2020-01-09 08:27:39 - [TEST_STEP][PASSED] - verifyTextPresent("reviews published so far – thank you!", false): Text 'reviews published so far – thank you!' is present on page 
+
+2020-01-09 08:27:39 - [MESSAGE][PASSED] - Text 'reviews published so far – thank you!' is present on page 
+
+2020-01-09 08:27:39 - [TEST_STEP][PASSED] - verifyTextPresent("Find out more", false): Text 'Find out more' is present on page 
+
+2020-01-09 08:27:39 - [MESSAGE][PASSED] - Text 'Find out more' is present on page 
+
+2020-01-09 08:27:39 - [TEST_STEP][PASSED] - verifyTextPresent("I am a tradesman", false): Text 'I am a tradesman' is present on page 
+
+2020-01-09 08:27:39 - [MESSAGE][PASSED] - Text 'I am a tradesman' is present on page 
+
+2020-01-09 08:27:39 - [TEST_STEP][PASSED] - verifyTextPresent("Find out more", false): Text 'Find out more' is present on page 
+
+2020-01-09 08:27:39 - [MESSAGE][PASSED] - Text 'Find out more' is present on page 
+
+2020-01-09 08:27:39 - [TEST_STEP][PASSED] - verifyTextPresent("Over a million visits to Checkatrade each month", false): Text 'Over a million visits to Checkatrade each month' is present on page 
+
+2020-01-09 08:27:40 - [MESSAGE][PASSED] - Text 'Over a million visits to Checkatrade each month' is present on page 
+
+2020-01-09 08:27:40 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Home' successfully
+
+2020-01-09 08:27:40 - [TEST_STEP][PASSED] - "---------------------------------------------------------------------": null
+
+2020-01-09 08:27:40 - [TEST_STEP][PASSED] - " Select Search on Trader Name (or ID) From Home page/Search Screen   |": null
+
+2020-01-09 08:27:40 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Click_Search_Trade_Name"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Click_Search_Trade_Name' successfully
+
+2020-01-09 08:27:40 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Click_Search_Trade_Name: Test Cases/Reusable_Test_Sequences/CAT_Click_Search_Trade_Name
+
+2020-01-09 08:27:40 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:27:40 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:27:40 - [TEST_STEP][PASSED] - if (Website_Version == "new"): null
+
+2020-01-09 08:27:40 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name' is clicked on
+
+2020-01-09 08:27:40 - [TEST_STEP][PASSED] - click(findTestObject("Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name")): Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name' is clicked on
+
+2020-01-09 08:27:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name' is clicked on
+
+2020-01-09 08:27:41 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:27:41 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:27:41 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Click_Search_Trade_Name' successfully
+
+2020-01-09 08:27:41 - [TEST_STEP][PASSED] - "---------------------------------------": null
+
+2020-01-09 08:27:41 - [TEST_STEP][PASSED] - " Enter Trader Name (or ID) to Search   |": null
+
+2020-01-09 08:27:41 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Enter_Trade_Name"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Enter_Trade_Name' successfully
+
+2020-01-09 08:27:41 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Enter_Trade_Name: Test Cases/Reusable_Test_Sequences/CAT_Enter_Trade_Name
+
+2020-01-09 08:27:41 - [TEST_STEP][PASSED] - if (Website_Version == "new"): null
+
+2020-01-09 08:27:41 - [TEST_STEP][PASSED] - else: Text '218020' is set on object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search'
+
+2020-01-09 08:27:41 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search"), findTestData("Search_CAT_ID_Data (1)").getValue("tradeName", row)): Text '218020' is set on object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search'
+
+2020-01-09 08:27:41 - [MESSAGE][PASSED] - Text '218020' is set on object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search'
+
+2020-01-09 08:27:41 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Enter_Trade_Name' successfully
+
+2020-01-09 08:27:41 - [TEST_STEP][PASSED] - "---------------------------------------": null
+
+2020-01-09 08:27:41 - [TEST_STEP][PASSED] - " Search Trader Name (or ID)            |": null
+
+2020-01-09 08:27:41 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Search_Trade_Name"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Search_Trade_Name' successfully
+
+2020-01-09 08:27:41 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Search_Trade_Name: Test Cases/Reusable_Test_Sequences/CAT_Search_Trade_Name
+
+2020-01-09 08:27:42 - [TEST_STEP][PASSED] - "Hit Search Trade Person by Name (or CAT ID) after parameters are entered": null
+
+2020-01-09 08:27:42 - [TEST_STEP][PASSED] - if (Website_Version == "new"): null
+
+2020-01-09 08:27:42 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name' is clicked on
+
+2020-01-09 08:27:42 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name"), 60): Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name' is present
+
+2020-01-09 08:27:42 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name' is present
+
+2020-01-09 08:27:42 - [TEST_STEP][PASSED] - click(findTestObject("Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name")): Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name' is clicked on
+
+2020-01-09 08:27:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name' is clicked on
+
+2020-01-09 08:27:53 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2020-01-09 08:27:55 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2020-01-09 08:27:55 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:27:55 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:27:55 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Search_Trade_Name' successfully
+
+2020-01-09 08:27:55 - [TEST_STEP][PASSED] - "------------------------------------------": null
+
+2020-01-09 08:27:55 - [TEST_STEP][PASSED] - " Scroll to Page Footer to Reveal Results  |": null
+
+2020-01-09 08:27:55 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Scroll_to_Footer"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Scroll_to_Footer' successfully
+
+2020-01-09 08:27:55 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Scroll_to_Footer: Test Cases/Reusable_Test_Sequences/CAT_Scroll_to_Footer
+
+2020-01-09 08:27:55 - [TEST_STEP][PASSED] - "-----------------------------------------------------": null
+
+2020-01-09 08:27:55 - [TEST_STEP][PASSED] - " Major changes factored into function 05/12/2019     |": null
+
+2020-01-09 08:27:55 - [TEST_STEP][PASSED] - "-----------------------------------------------------": null
+
+2020-01-09 08:27:55 - [TEST_STEP][PASSED] - "Animation Removed ": null
+
+2020-01-09 08:27:55 - [TEST_STEP][PASSED] - "Scroll - To Footer on the bottom of the page (sometime off the screen) ": null
+
+2020-01-09 08:27:55 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:27:55 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:27:55 - [TEST_STEP][PASSED] - scrollToPosition(999, 999): Browser is scrolled to position x = 999, y = 999
+
+2020-01-09 08:27:55 - [MESSAGE][PASSED] - Browser is scrolled to position x = 999, y = 999
+
+2020-01-09 08:27:55 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-01-09 08:27:56 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-01-09 08:27:56 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Scroll_to_Footer' successfully
+
+2020-01-09 08:27:56 - [TEST_STEP][PASSED] - "------------------------------------------": null
+
+2020-01-09 08:27:56 - [TEST_STEP][PASSED] - " Verify Correct Location is Returned     |": null
+
+2020-01-09 08:27:56 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Verification_Location"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Verification_Location' successfully
+
+2020-01-09 08:27:57 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Verification_Location: Test Cases/Reusable_Test_Sequences/CAT_Verification_Location
+
+2020-01-09 08:27:57 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("Search_CAT_ID_Data (1)").getValue("tradeNameLocationVerification", row), false): Text 'Gosport, Hampshire' is present on page 
+
+2020-01-09 08:27:57 - [MESSAGE][PASSED] - Text 'Gosport, Hampshire' is present on page 
+
+2020-01-09 08:27:57 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Verification_Location' successfully
+
+2020-01-09 08:27:57 - [TEST_STEP][PASSED] - "------------------------------------------": null
+
+2020-01-09 08:27:57 - [TEST_STEP][PASSED] - " Verify Primary Contact is Returned     |": null
+
+2020-01-09 08:27:57 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Verification_Primary_Contact"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Verification_Primary_Contact' successfully
+
+2020-01-09 08:27:57 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Verification_Primary_Contact: Test Cases/Reusable_Test_Sequences/CAT_Verification_Primary_Contact
+
+2020-01-09 08:27:58 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("Search_CAT_ID_Data (1)").getValue("primeContact", row), false): Text 'Jim Foster' is present on page 
+
+2020-01-09 08:27:58 - [MESSAGE][PASSED] - Text 'Jim Foster' is present on page 
+
+2020-01-09 08:27:58 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Verification_Primary_Contact' successfully
+
+2020-01-09 08:27:58 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-01-09 08:27:58 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2020-01-09 08:27:58 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-01-09 08:27:58 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2020-01-09 08:27:58 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-01-09 08:28:00 - [MESSAGE][PASSED] - Browser is closed
+
+2020-01-09 08:28:00 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-01-09 08:28:00 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Setup"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' successfully
+
+2020-01-09 08:28:00 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Setup: Test Cases/Reusable_Test_Sequences/CAT_Setup
+
+2020-01-09 08:28:00 - [TEST_STEP][PASSED] - "------------------------------": null
+
+2020-01-09 08:28:00 - [TEST_STEP][PASSED] - " Set Mobile Device Testing    |": null
+
+2020-01-09 08:28:00 - [TEST_STEP][PASSED] - if (Mobile_Flag == "true"): null
+
+2020-01-09 08:28:00 - [TEST_STEP][PASSED] - "------------------------------": null
+
+2020-01-09 08:28:00 - [TEST_STEP][PASSED] - " Set Mobile Device Testing    |": null
+
+2020-01-09 08:28:00 - [TEST_STEP][PASSED] - "------------------------------": null
+
+2020-01-09 08:28:00 - [TEST_STEP][PASSED] - "URL - Set from the ENVIRONMENT PROFILE ": null
+
+2020-01-09 08:28:00 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://www.preview.checkatrade.com/'
+
+2020-01-09 08:28:00 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-01-09 08:28:06 - [MESSAGE][PASSED] - Browser is opened with url: 'https://www.preview.checkatrade.com/'
+
+2020-01-09 08:28:06 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-01-09 08:28:06 - [MESSAGE][PASSED] - Current window maximized
+
+2020-01-09 08:28:06 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:28:06 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:28:06 - [TEST_STEP][PASSED] - "Previous Functionalilty Left Commented For Ease Of reversion": null
+
+2020-01-09 08:28:06 - [TEST_STEP][PASSED] - try: Text 'Cookie Policy' is not present on page
+
+2020-01-09 08:28:06 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All"), 5): Object 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is present
+
+2020-01-09 08:28:06 - [MESSAGE][PASSED] - Object 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is present
+
+2020-01-09 08:28:06 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All")): Object: 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is clicked on
+
+2020-01-09 08:28:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is clicked on
+
+2020-01-09 08:28:07 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-01-09 08:28:07 - [TEST_STEP][PASSED] - "COOKIE POPOUT REMOVED - Confirmed": null
+
+2020-01-09 08:28:07 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-01-09 08:28:08 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-01-09 08:28:08 - [TEST_STEP][PASSED] - verifyTextNotPresent("We use cookies to personalise content and ads, to provide social media features and to analyse our traffic", false): Text 'We use cookies to personalise content and ads, to provide social media features and to analyse our traffic' is not present on page
+
+2020-01-09 08:28:08 - [MESSAGE][PASSED] - Text 'We use cookies to personalise content and ads, to provide social media features and to analyse our traffic' is not present on page
+
+2020-01-09 08:28:08 - [TEST_STEP][PASSED] - verifyTextNotPresent(" We also share information about your use of our site with our social media, advertising and analytics partners", false): Text ' We also share information about your use of our site with our social media, advertising and analytics partners' is not present on page
+
+2020-01-09 08:28:08 - [MESSAGE][PASSED] - Text ' We also share information about your use of our site with our social media, advertising and analytics partners' is not present on page
+
+2020-01-09 08:28:08 - [TEST_STEP][PASSED] - verifyTextNotPresent("Cookie Policy", false): Text 'Cookie Policy' is not present on page
+
+2020-01-09 08:28:08 - [MESSAGE][PASSED] - Text 'Cookie Policy' is not present on page
+
+2020-01-09 08:28:08 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:28:08 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:28:08 - [TEST_STEP][PASSED] - "COOKIE - ORIGINAL": null
+
+2020-01-09 08:28:08 - [TEST_STEP][PASSED] - if (waitForElementVisible(findTestObject("Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review"), 25)): Web element with id: 'Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review' located by 'By.xpath: //input[@id='feedback-form__company_autocomplete_input']' not found
+
+2020-01-09 08:28:34 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //input[@id='feedback-form__company_autocomplete_input']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2020-01-09 08:28:34 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review' located by 'By.xpath: //input[@id='feedback-form__company_autocomplete_input']' not found
+
+2020-01-09 08:28:34 - [TEST_STEP][PASSED] - else: The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-01-09 08:28:34 - [TEST_STEP][PASSED] - if (!(verifyElementVisible(findTestObject("Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF")))): Object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF' is visible
+
+2020-01-09 08:28:34 - [MESSAGE][PASSED] - Object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF' is visible
+
+2020-01-09 08:28:34 - [TEST_STEP][PASSED] - else: The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-01-09 08:28:34 - [TEST_STEP][PASSED] - Website_Version = "old": null
+
+2020-01-09 08:28:34 - [TEST_STEP][PASSED] - logInfo("The <<<OLD>>> Website was detected by the STARTUP Process"): The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-01-09 08:28:34 - [MESSAGE][INFO] - The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-01-09 08:28:34 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' successfully
+
+2020-01-09 08:28:34 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Home"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Home' successfully
+
+2020-01-09 08:28:34 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Home: Test Cases/Reusable_Test_Sequences/CAT_Home
+
+2020-01-09 08:28:34 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:28:34 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:28:34 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2020-01-09 08:28:36 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2020-01-09 08:28:36 - [TEST_STEP][PASSED] - "------------------------------------": null
+
+2020-01-09 08:28:36 - [TEST_STEP][PASSED] - if (Website_Version == "new"): null
+
+2020-01-09 08:28:36 - [TEST_STEP][PASSED] - else: Text 'Over a million visits to Checkatrade each month' is present on page 
+
+2020-01-09 08:28:36 - [TEST_STEP][PASSED] - verifyTextPresent("Helping you find the right trade or service", false): Text 'Helping you find the right trade or service' is present on page 
+
+2020-01-09 08:28:37 - [MESSAGE][PASSED] - Text 'Helping you find the right trade or service' is present on page 
+
+2020-01-09 08:28:37 - [TEST_STEP][PASSED] - verifyTextPresent("Search through over", false): Text 'Search through over' is present on page 
+
+2020-01-09 08:28:37 - [MESSAGE][PASSED] - Text 'Search through over' is present on page 
+
+2020-01-09 08:28:37 - [TEST_STEP][PASSED] - verifyTextPresent("recommended, vetted and monitored trades and service providers for free.", false): Text 'recommended, vetted and monitored trades and service providers for free.' is present on page 
+
+2020-01-09 08:28:37 - [MESSAGE][PASSED] - Text 'recommended, vetted and monitored trades and service providers for free.' is present on page 
+
+2020-01-09 08:28:37 - [TEST_STEP][PASSED] - verifyTextPresent("reviews published so far – thank you!", false): Text 'reviews published so far – thank you!' is present on page 
+
+2020-01-09 08:28:37 - [MESSAGE][PASSED] - Text 'reviews published so far – thank you!' is present on page 
+
+2020-01-09 08:28:37 - [TEST_STEP][PASSED] - verifyTextPresent("I need a trade or service", false): Text 'I need a trade or service' is present on page 
+
+2020-01-09 08:28:38 - [MESSAGE][PASSED] - Text 'I need a trade or service' is present on page 
+
+2020-01-09 08:28:38 - [TEST_STEP][PASSED] - verifyTextPresent("Every trader thoroughly checked and vetted", false): Text 'Every trader thoroughly checked and vetted' is present on page 
+
+2020-01-09 08:28:38 - [MESSAGE][PASSED] - Text 'Every trader thoroughly checked and vetted' is present on page 
+
+2020-01-09 08:28:38 - [TEST_STEP][PASSED] - "------------------------------------": null
+
+2020-01-09 08:28:38 - [TEST_STEP][PASSED] - verifyTextPresent("reviews published so far – thank you!", false): Text 'reviews published so far – thank you!' is present on page 
+
+2020-01-09 08:28:38 - [MESSAGE][PASSED] - Text 'reviews published so far – thank you!' is present on page 
+
+2020-01-09 08:28:38 - [TEST_STEP][PASSED] - verifyTextPresent("Find out more", false): Text 'Find out more' is present on page 
+
+2020-01-09 08:28:38 - [MESSAGE][PASSED] - Text 'Find out more' is present on page 
+
+2020-01-09 08:28:38 - [TEST_STEP][PASSED] - verifyTextPresent("I am a tradesman", false): Text 'I am a tradesman' is present on page 
+
+2020-01-09 08:28:39 - [MESSAGE][PASSED] - Text 'I am a tradesman' is present on page 
+
+2020-01-09 08:28:39 - [TEST_STEP][PASSED] - verifyTextPresent("Find out more", false): Text 'Find out more' is present on page 
+
+2020-01-09 08:28:39 - [MESSAGE][PASSED] - Text 'Find out more' is present on page 
+
+2020-01-09 08:28:39 - [TEST_STEP][PASSED] - verifyTextPresent("Over a million visits to Checkatrade each month", false): Text 'Over a million visits to Checkatrade each month' is present on page 
+
+2020-01-09 08:28:39 - [MESSAGE][PASSED] - Text 'Over a million visits to Checkatrade each month' is present on page 
+
+2020-01-09 08:28:39 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Home' successfully
+
+2020-01-09 08:28:39 - [TEST_STEP][PASSED] - "---------------------------------------------------------------------": null
+
+2020-01-09 08:28:39 - [TEST_STEP][PASSED] - " Select Search on Trader Name (or ID) From Home page/Search Screen   |": null
+
+2020-01-09 08:28:39 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Click_Search_Trade_Name"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Click_Search_Trade_Name' successfully
+
+2020-01-09 08:28:39 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Click_Search_Trade_Name: Test Cases/Reusable_Test_Sequences/CAT_Click_Search_Trade_Name
+
+2020-01-09 08:28:39 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:28:39 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:28:39 - [TEST_STEP][PASSED] - if (Website_Version == "new"): null
+
+2020-01-09 08:28:39 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name' is clicked on
+
+2020-01-09 08:28:39 - [TEST_STEP][PASSED] - click(findTestObject("Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name")): Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name' is clicked on
+
+2020-01-09 08:28:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name' is clicked on
+
+2020-01-09 08:28:39 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:28:39 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:28:39 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Click_Search_Trade_Name' successfully
+
+2020-01-09 08:28:39 - [TEST_STEP][PASSED] - "---------------------------------------": null
+
+2020-01-09 08:28:39 - [TEST_STEP][PASSED] - " Enter Trader Name (or ID) to Search   |": null
+
+2020-01-09 08:28:39 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Enter_Trade_Name"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Enter_Trade_Name' successfully
+
+2020-01-09 08:28:39 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Enter_Trade_Name: Test Cases/Reusable_Test_Sequences/CAT_Enter_Trade_Name
+
+2020-01-09 08:28:39 - [TEST_STEP][PASSED] - if (Website_Version == "new"): null
+
+2020-01-09 08:28:40 - [TEST_STEP][PASSED] - else: Text '402921' is set on object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search'
+
+2020-01-09 08:28:40 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search"), findTestData("Search_CAT_ID_Data (1)").getValue("tradeName", row)): Text '402921' is set on object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search'
+
+2020-01-09 08:28:40 - [MESSAGE][PASSED] - Text '402921' is set on object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search'
+
+2020-01-09 08:28:40 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Enter_Trade_Name' successfully
+
+2020-01-09 08:28:40 - [TEST_STEP][PASSED] - "---------------------------------------": null
+
+2020-01-09 08:28:40 - [TEST_STEP][PASSED] - " Search Trader Name (or ID)            |": null
+
+2020-01-09 08:28:40 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Search_Trade_Name"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Search_Trade_Name' successfully
+
+2020-01-09 08:28:40 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Search_Trade_Name: Test Cases/Reusable_Test_Sequences/CAT_Search_Trade_Name
+
+2020-01-09 08:28:40 - [TEST_STEP][PASSED] - "Hit Search Trade Person by Name (or CAT ID) after parameters are entered": null
+
+2020-01-09 08:28:40 - [TEST_STEP][PASSED] - if (Website_Version == "new"): null
+
+2020-01-09 08:28:40 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name' is clicked on
+
+2020-01-09 08:28:40 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name"), 60): Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name' is present
+
+2020-01-09 08:28:40 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name' is present
+
+2020-01-09 08:28:40 - [TEST_STEP][PASSED] - click(findTestObject("Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name")): Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name' is clicked on
+
+2020-01-09 08:28:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name' is clicked on
+
+2020-01-09 08:28:42 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2020-01-09 08:28:44 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2020-01-09 08:28:44 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:28:44 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:28:44 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Search_Trade_Name' successfully
+
+2020-01-09 08:28:44 - [TEST_STEP][PASSED] - "------------------------------------------": null
+
+2020-01-09 08:28:44 - [TEST_STEP][PASSED] - " Scroll to Page Footer to Reveal Results  |": null
+
+2020-01-09 08:28:44 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Scroll_to_Footer"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Scroll_to_Footer' successfully
+
+2020-01-09 08:28:44 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Scroll_to_Footer: Test Cases/Reusable_Test_Sequences/CAT_Scroll_to_Footer
+
+2020-01-09 08:28:44 - [TEST_STEP][PASSED] - "-----------------------------------------------------": null
+
+2020-01-09 08:28:44 - [TEST_STEP][PASSED] - " Major changes factored into function 05/12/2019     |": null
+
+2020-01-09 08:28:44 - [TEST_STEP][PASSED] - "-----------------------------------------------------": null
+
+2020-01-09 08:28:44 - [TEST_STEP][PASSED] - "Animation Removed ": null
+
+2020-01-09 08:28:44 - [TEST_STEP][PASSED] - "Scroll - To Footer on the bottom of the page (sometime off the screen) ": null
+
+2020-01-09 08:28:44 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:28:44 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:28:44 - [TEST_STEP][PASSED] - scrollToPosition(999, 999): Browser is scrolled to position x = 999, y = 999
+
+2020-01-09 08:28:44 - [MESSAGE][PASSED] - Browser is scrolled to position x = 999, y = 999
+
+2020-01-09 08:28:44 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-01-09 08:28:45 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-01-09 08:28:45 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Scroll_to_Footer' successfully
+
+2020-01-09 08:28:45 - [TEST_STEP][PASSED] - "------------------------------------------": null
+
+2020-01-09 08:28:45 - [TEST_STEP][PASSED] - " Verify Correct Location is Returned     |": null
+
+2020-01-09 08:28:45 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Verification_Location"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Verification_Location' successfully
+
+2020-01-09 08:28:45 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Verification_Location: Test Cases/Reusable_Test_Sequences/CAT_Verification_Location
+
+2020-01-09 08:28:45 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("Search_CAT_ID_Data (1)").getValue("tradeNameLocationVerification", row), false): Text 'Retford, Nottinghamshire' is present on page 
+
+2020-01-09 08:28:46 - [MESSAGE][PASSED] - Text 'Retford, Nottinghamshire' is present on page 
+
+2020-01-09 08:28:46 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Verification_Location' successfully
+
+2020-01-09 08:28:46 - [TEST_STEP][PASSED] - "------------------------------------------": null
+
+2020-01-09 08:28:46 - [TEST_STEP][PASSED] - " Verify Primary Contact is Returned     |": null
+
+2020-01-09 08:28:46 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Verification_Primary_Contact"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Verification_Primary_Contact' successfully
+
+2020-01-09 08:28:46 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Verification_Primary_Contact: Test Cases/Reusable_Test_Sequences/CAT_Verification_Primary_Contact
+
+2020-01-09 08:28:46 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("Search_CAT_ID_Data (1)").getValue("primeContact", row), false): Text 'James Burton' is present on page 
+
+2020-01-09 08:28:46 - [MESSAGE][PASSED] - Text 'James Burton' is present on page 
+
+2020-01-09 08:28:46 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Verification_Primary_Contact' successfully
+
+2020-01-09 08:28:46 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-01-09 08:28:46 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2020-01-09 08:28:46 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-01-09 08:28:46 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2020-01-09 08:28:46 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-01-09 08:28:48 - [MESSAGE][PASSED] - Browser is closed
+
+2020-01-09 08:28:48 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-01-09 08:28:48 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Setup"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' successfully
+
+2020-01-09 08:28:48 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Setup: Test Cases/Reusable_Test_Sequences/CAT_Setup
+
+2020-01-09 08:28:48 - [TEST_STEP][PASSED] - "------------------------------": null
+
+2020-01-09 08:28:48 - [TEST_STEP][PASSED] - " Set Mobile Device Testing    |": null
+
+2020-01-09 08:28:48 - [TEST_STEP][PASSED] - if (Mobile_Flag == "true"): null
+
+2020-01-09 08:28:48 - [TEST_STEP][PASSED] - "------------------------------": null
+
+2020-01-09 08:28:48 - [TEST_STEP][PASSED] - " Set Mobile Device Testing    |": null
+
+2020-01-09 08:28:48 - [TEST_STEP][PASSED] - "------------------------------": null
+
+2020-01-09 08:28:48 - [TEST_STEP][PASSED] - "URL - Set from the ENVIRONMENT PROFILE ": null
+
+2020-01-09 08:28:48 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://www.preview.checkatrade.com/'
+
+2020-01-09 08:28:48 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-01-09 08:28:53 - [MESSAGE][PASSED] - Browser is opened with url: 'https://www.preview.checkatrade.com/'
+
+2020-01-09 08:28:53 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-01-09 08:28:53 - [MESSAGE][PASSED] - Current window maximized
+
+2020-01-09 08:28:53 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:28:53 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:28:53 - [TEST_STEP][PASSED] - "Previous Functionalilty Left Commented For Ease Of reversion": null
+
+2020-01-09 08:28:53 - [TEST_STEP][PASSED] - try: Text 'Cookie Policy' is not present on page
+
+2020-01-09 08:28:53 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All"), 5): Object 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is present
+
+2020-01-09 08:28:53 - [MESSAGE][PASSED] - Object 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is present
+
+2020-01-09 08:28:53 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All")): Object: 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is clicked on
+
+2020-01-09 08:28:53 - [MESSAGE][ERROR] - (1785, 978) is out of bounds of viewport width (1920) and height (966)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'VETTEDSP36RF', ip: '10.0.13.186', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 71.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191202093317, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 26348, moz:profile: C:\Users\davidho\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e2df18f4-f047-4465-ac07-4347697c68b7
+
+2020-01-09 08:28:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is clicked on
+
+2020-01-09 08:28:54 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-01-09 08:28:54 - [TEST_STEP][PASSED] - "COOKIE POPOUT REMOVED - Confirmed": null
+
+2020-01-09 08:28:54 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-01-09 08:28:55 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-01-09 08:28:55 - [TEST_STEP][PASSED] - verifyTextNotPresent("We use cookies to personalise content and ads, to provide social media features and to analyse our traffic", false): Text 'We use cookies to personalise content and ads, to provide social media features and to analyse our traffic' is not present on page
+
+2020-01-09 08:28:55 - [MESSAGE][PASSED] - Text 'We use cookies to personalise content and ads, to provide social media features and to analyse our traffic' is not present on page
+
+2020-01-09 08:28:55 - [TEST_STEP][PASSED] - verifyTextNotPresent(" We also share information about your use of our site with our social media, advertising and analytics partners", false): Text ' We also share information about your use of our site with our social media, advertising and analytics partners' is not present on page
+
+2020-01-09 08:28:56 - [MESSAGE][PASSED] - Text ' We also share information about your use of our site with our social media, advertising and analytics partners' is not present on page
+
+2020-01-09 08:28:56 - [TEST_STEP][PASSED] - verifyTextNotPresent("Cookie Policy", false): Text 'Cookie Policy' is not present on page
+
+2020-01-09 08:28:56 - [MESSAGE][PASSED] - Text 'Cookie Policy' is not present on page
+
+2020-01-09 08:28:56 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:28:56 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:28:56 - [TEST_STEP][PASSED] - "COOKIE - ORIGINAL": null
+
+2020-01-09 08:28:56 - [TEST_STEP][PASSED] - if (waitForElementVisible(findTestObject("Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review"), 25)): Web element with id: 'Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review' located by 'By.xpath: //input[@id='feedback-form__company_autocomplete_input']' not found
+
+2020-01-09 08:29:22 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //input[@id='feedback-form__company_autocomplete_input']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2020-01-09 08:29:22 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review' located by 'By.xpath: //input[@id='feedback-form__company_autocomplete_input']' not found
+
+2020-01-09 08:29:22 - [TEST_STEP][PASSED] - else: The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-01-09 08:29:22 - [TEST_STEP][PASSED] - if (!(verifyElementVisible(findTestObject("Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF")))): Object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF' is visible
+
+2020-01-09 08:29:22 - [MESSAGE][PASSED] - Object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF' is visible
+
+2020-01-09 08:29:22 - [TEST_STEP][PASSED] - else: The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-01-09 08:29:22 - [TEST_STEP][PASSED] - Website_Version = "old": null
+
+2020-01-09 08:29:22 - [TEST_STEP][PASSED] - logInfo("The <<<OLD>>> Website was detected by the STARTUP Process"): The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-01-09 08:29:22 - [MESSAGE][INFO] - The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-01-09 08:29:22 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' successfully
+
+2020-01-09 08:29:22 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Home"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Home' successfully
+
+2020-01-09 08:29:22 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Home: Test Cases/Reusable_Test_Sequences/CAT_Home
+
+2020-01-09 08:29:22 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:29:22 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:29:22 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2020-01-09 08:29:24 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2020-01-09 08:29:24 - [TEST_STEP][PASSED] - "------------------------------------": null
+
+2020-01-09 08:29:24 - [TEST_STEP][PASSED] - if (Website_Version == "new"): null
+
+2020-01-09 08:29:24 - [TEST_STEP][PASSED] - else: Text 'Over a million visits to Checkatrade each month' is present on page 
+
+2020-01-09 08:29:24 - [TEST_STEP][PASSED] - verifyTextPresent("Helping you find the right trade or service", false): Text 'Helping you find the right trade or service' is present on page 
+
+2020-01-09 08:29:25 - [MESSAGE][PASSED] - Text 'Helping you find the right trade or service' is present on page 
+
+2020-01-09 08:29:25 - [TEST_STEP][PASSED] - verifyTextPresent("Search through over", false): Text 'Search through over' is present on page 
+
+2020-01-09 08:29:25 - [MESSAGE][PASSED] - Text 'Search through over' is present on page 
+
+2020-01-09 08:29:25 - [TEST_STEP][PASSED] - verifyTextPresent("recommended, vetted and monitored trades and service providers for free.", false): Text 'recommended, vetted and monitored trades and service providers for free.' is present on page 
+
+2020-01-09 08:29:25 - [MESSAGE][PASSED] - Text 'recommended, vetted and monitored trades and service providers for free.' is present on page 
+
+2020-01-09 08:29:25 - [TEST_STEP][PASSED] - verifyTextPresent("reviews published so far – thank you!", false): Text 'reviews published so far – thank you!' is present on page 
+
+2020-01-09 08:29:25 - [MESSAGE][PASSED] - Text 'reviews published so far – thank you!' is present on page 
+
+2020-01-09 08:29:25 - [TEST_STEP][PASSED] - verifyTextPresent("I need a trade or service", false): Text 'I need a trade or service' is present on page 
+
+2020-01-09 08:29:25 - [MESSAGE][PASSED] - Text 'I need a trade or service' is present on page 
+
+2020-01-09 08:29:25 - [TEST_STEP][PASSED] - verifyTextPresent("Every trader thoroughly checked and vetted", false): Text 'Every trader thoroughly checked and vetted' is present on page 
+
+2020-01-09 08:29:25 - [MESSAGE][PASSED] - Text 'Every trader thoroughly checked and vetted' is present on page 
+
+2020-01-09 08:29:25 - [TEST_STEP][PASSED] - "------------------------------------": null
+
+2020-01-09 08:29:25 - [TEST_STEP][PASSED] - verifyTextPresent("reviews published so far – thank you!", false): Text 'reviews published so far – thank you!' is present on page 
+
+2020-01-09 08:29:26 - [MESSAGE][PASSED] - Text 'reviews published so far – thank you!' is present on page 
+
+2020-01-09 08:29:26 - [TEST_STEP][PASSED] - verifyTextPresent("Find out more", false): Text 'Find out more' is present on page 
+
+2020-01-09 08:29:26 - [MESSAGE][PASSED] - Text 'Find out more' is present on page 
+
+2020-01-09 08:29:26 - [TEST_STEP][PASSED] - verifyTextPresent("I am a tradesman", false): Text 'I am a tradesman' is present on page 
+
+2020-01-09 08:29:26 - [MESSAGE][PASSED] - Text 'I am a tradesman' is present on page 
+
+2020-01-09 08:29:26 - [TEST_STEP][PASSED] - verifyTextPresent("Find out more", false): Text 'Find out more' is present on page 
+
+2020-01-09 08:29:26 - [MESSAGE][PASSED] - Text 'Find out more' is present on page 
+
+2020-01-09 08:29:26 - [TEST_STEP][PASSED] - verifyTextPresent("Over a million visits to Checkatrade each month", false): Text 'Over a million visits to Checkatrade each month' is present on page 
+
+2020-01-09 08:29:27 - [MESSAGE][PASSED] - Text 'Over a million visits to Checkatrade each month' is present on page 
+
+2020-01-09 08:29:27 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Home' successfully
+
+2020-01-09 08:29:27 - [TEST_STEP][PASSED] - "---------------------------------------------------------------------": null
+
+2020-01-09 08:29:27 - [TEST_STEP][PASSED] - " Select Search on Trader Name (or ID) From Home page/Search Screen   |": null
+
+2020-01-09 08:29:27 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Click_Search_Trade_Name"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Click_Search_Trade_Name' successfully
+
+2020-01-09 08:29:27 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Click_Search_Trade_Name: Test Cases/Reusable_Test_Sequences/CAT_Click_Search_Trade_Name
+
+2020-01-09 08:29:27 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:29:27 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:29:27 - [TEST_STEP][PASSED] - if (Website_Version == "new"): null
+
+2020-01-09 08:29:27 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name' is clicked on
+
+2020-01-09 08:29:27 - [TEST_STEP][PASSED] - click(findTestObject("Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name")): Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name' is clicked on
+
+2020-01-09 08:29:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name' is clicked on
+
+2020-01-09 08:29:27 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:29:27 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:29:27 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Click_Search_Trade_Name' successfully
+
+2020-01-09 08:29:27 - [TEST_STEP][PASSED] - "---------------------------------------": null
+
+2020-01-09 08:29:27 - [TEST_STEP][PASSED] - " Enter Trader Name (or ID) to Search   |": null
+
+2020-01-09 08:29:27 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Enter_Trade_Name"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Enter_Trade_Name' successfully
+
+2020-01-09 08:29:27 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Enter_Trade_Name: Test Cases/Reusable_Test_Sequences/CAT_Enter_Trade_Name
+
+2020-01-09 08:29:27 - [TEST_STEP][PASSED] - if (Website_Version == "new"): null
+
+2020-01-09 08:29:27 - [TEST_STEP][PASSED] - else: Text '308682' is set on object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search'
+
+2020-01-09 08:29:27 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search"), findTestData("Search_CAT_ID_Data (1)").getValue("tradeName", row)): Text '308682' is set on object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search'
+
+2020-01-09 08:29:27 - [MESSAGE][PASSED] - Text '308682' is set on object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search'
+
+2020-01-09 08:29:27 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Enter_Trade_Name' successfully
+
+2020-01-09 08:29:27 - [TEST_STEP][PASSED] - "---------------------------------------": null
+
+2020-01-09 08:29:27 - [TEST_STEP][PASSED] - " Search Trader Name (or ID)            |": null
+
+2020-01-09 08:29:27 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Search_Trade_Name"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Search_Trade_Name' successfully
+
+2020-01-09 08:29:27 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Search_Trade_Name: Test Cases/Reusable_Test_Sequences/CAT_Search_Trade_Name
+
+2020-01-09 08:29:27 - [TEST_STEP][PASSED] - "Hit Search Trade Person by Name (or CAT ID) after parameters are entered": null
+
+2020-01-09 08:29:27 - [TEST_STEP][PASSED] - if (Website_Version == "new"): null
+
+2020-01-09 08:29:27 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name' is clicked on
+
+2020-01-09 08:29:27 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name"), 60): Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name' is present
+
+2020-01-09 08:29:27 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name' is present
+
+2020-01-09 08:29:27 - [TEST_STEP][PASSED] - click(findTestObject("Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name")): Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name' is clicked on
+
+2020-01-09 08:29:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name' is clicked on
+
+2020-01-09 08:29:33 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2020-01-09 08:29:35 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2020-01-09 08:29:35 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:29:35 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:29:35 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Search_Trade_Name' successfully
+
+2020-01-09 08:29:35 - [TEST_STEP][PASSED] - "------------------------------------------": null
+
+2020-01-09 08:29:35 - [TEST_STEP][PASSED] - " Scroll to Page Footer to Reveal Results  |": null
+
+2020-01-09 08:29:35 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Scroll_to_Footer"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Scroll_to_Footer' successfully
+
+2020-01-09 08:29:35 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Scroll_to_Footer: Test Cases/Reusable_Test_Sequences/CAT_Scroll_to_Footer
+
+2020-01-09 08:29:35 - [TEST_STEP][PASSED] - "-----------------------------------------------------": null
+
+2020-01-09 08:29:35 - [TEST_STEP][PASSED] - " Major changes factored into function 05/12/2019     |": null
+
+2020-01-09 08:29:35 - [TEST_STEP][PASSED] - "-----------------------------------------------------": null
+
+2020-01-09 08:29:35 - [TEST_STEP][PASSED] - "Animation Removed ": null
+
+2020-01-09 08:29:35 - [TEST_STEP][PASSED] - "Scroll - To Footer on the bottom of the page (sometime off the screen) ": null
+
+2020-01-09 08:29:35 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:29:35 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:29:35 - [TEST_STEP][PASSED] - scrollToPosition(999, 999): Browser is scrolled to position x = 999, y = 999
+
+2020-01-09 08:29:35 - [MESSAGE][PASSED] - Browser is scrolled to position x = 999, y = 999
+
+2020-01-09 08:29:35 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-01-09 08:29:36 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-01-09 08:29:36 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Scroll_to_Footer' successfully
+
+2020-01-09 08:29:36 - [TEST_STEP][PASSED] - "------------------------------------------": null
+
+2020-01-09 08:29:36 - [TEST_STEP][PASSED] - " Verify Correct Location is Returned     |": null
+
+2020-01-09 08:29:36 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Verification_Location"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Verification_Location' successfully
+
+2020-01-09 08:29:37 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Verification_Location: Test Cases/Reusable_Test_Sequences/CAT_Verification_Location
+
+2020-01-09 08:29:37 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("Search_CAT_ID_Data (1)").getValue("tradeNameLocationVerification", row), false): Text 'Banbury, Oxfordshire' is present on page 
+
+2020-01-09 08:29:37 - [MESSAGE][PASSED] - Text 'Banbury, Oxfordshire' is present on page 
+
+2020-01-09 08:29:37 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Verification_Location' successfully
+
+2020-01-09 08:29:37 - [TEST_STEP][PASSED] - "------------------------------------------": null
+
+2020-01-09 08:29:37 - [TEST_STEP][PASSED] - " Verify Primary Contact is Returned     |": null
+
+2020-01-09 08:29:37 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Verification_Primary_Contact"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Verification_Primary_Contact' successfully
+
+2020-01-09 08:29:37 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Verification_Primary_Contact: Test Cases/Reusable_Test_Sequences/CAT_Verification_Primary_Contact
+
+2020-01-09 08:29:37 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("Search_CAT_ID_Data (1)").getValue("primeContact", row), false): Text 'Andrew Whitaker' is present on page 
+
+2020-01-09 08:29:38 - [MESSAGE][PASSED] - Text 'Andrew Whitaker' is present on page 
+
+2020-01-09 08:29:38 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Verification_Primary_Contact' successfully
+
+2020-01-09 08:29:38 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-01-09 08:29:38 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2020-01-09 08:29:38 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-01-09 08:29:38 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2020-01-09 08:29:38 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-01-09 08:29:40 - [MESSAGE][PASSED] - Browser is closed
+
+2020-01-09 08:29:40 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-01-09 08:29:40 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Setup"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' successfully
+
+2020-01-09 08:29:40 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Setup: Test Cases/Reusable_Test_Sequences/CAT_Setup
+
+2020-01-09 08:29:40 - [TEST_STEP][PASSED] - "------------------------------": null
+
+2020-01-09 08:29:40 - [TEST_STEP][PASSED] - " Set Mobile Device Testing    |": null
+
+2020-01-09 08:29:40 - [TEST_STEP][PASSED] - if (Mobile_Flag == "true"): null
+
+2020-01-09 08:29:40 - [TEST_STEP][PASSED] - "------------------------------": null
+
+2020-01-09 08:29:40 - [TEST_STEP][PASSED] - " Set Mobile Device Testing    |": null
+
+2020-01-09 08:29:40 - [TEST_STEP][PASSED] - "------------------------------": null
+
+2020-01-09 08:29:40 - [TEST_STEP][PASSED] - "URL - Set from the ENVIRONMENT PROFILE ": null
+
+2020-01-09 08:29:40 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://www.preview.checkatrade.com/'
+
+2020-01-09 08:29:40 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-01-09 08:29:45 - [MESSAGE][PASSED] - Browser is opened with url: 'https://www.preview.checkatrade.com/'
+
+2020-01-09 08:29:45 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-01-09 08:29:45 - [MESSAGE][PASSED] - Current window maximized
+
+2020-01-09 08:29:45 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:29:45 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:29:45 - [TEST_STEP][PASSED] - "Previous Functionalilty Left Commented For Ease Of reversion": null
+
+2020-01-09 08:29:45 - [TEST_STEP][PASSED] - try: Text 'Cookie Policy' is not present on page
+
+2020-01-09 08:29:45 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All"), 5): Object 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is present
+
+2020-01-09 08:29:45 - [MESSAGE][PASSED] - Object 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is present
+
+2020-01-09 08:29:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All")): Object: 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is clicked on
+
+2020-01-09 08:29:46 - [MESSAGE][ERROR] - (1785, 974) is out of bounds of viewport width (1920) and height (966)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'VETTEDSP36RF', ip: '10.0.13.186', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 71.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191202093317, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 19936, moz:profile: C:\Users\davidho\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9b3d720e-5070-42c5-9bdb-c8fce4b06d0a
+
+2020-01-09 08:29:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is clicked on
+
+2020-01-09 08:29:46 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-01-09 08:29:46 - [TEST_STEP][PASSED] - "COOKIE POPOUT REMOVED - Confirmed": null
+
+2020-01-09 08:29:46 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-01-09 08:29:47 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-01-09 08:29:47 - [TEST_STEP][PASSED] - verifyTextNotPresent("We use cookies to personalise content and ads, to provide social media features and to analyse our traffic", false): Text 'We use cookies to personalise content and ads, to provide social media features and to analyse our traffic' is not present on page
+
+2020-01-09 08:29:48 - [MESSAGE][PASSED] - Text 'We use cookies to personalise content and ads, to provide social media features and to analyse our traffic' is not present on page
+
+2020-01-09 08:29:48 - [TEST_STEP][PASSED] - verifyTextNotPresent(" We also share information about your use of our site with our social media, advertising and analytics partners", false): Text ' We also share information about your use of our site with our social media, advertising and analytics partners' is not present on page
+
+2020-01-09 08:29:48 - [MESSAGE][PASSED] - Text ' We also share information about your use of our site with our social media, advertising and analytics partners' is not present on page
+
+2020-01-09 08:29:48 - [TEST_STEP][PASSED] - verifyTextNotPresent("Cookie Policy", false): Text 'Cookie Policy' is not present on page
+
+2020-01-09 08:29:48 - [MESSAGE][PASSED] - Text 'Cookie Policy' is not present on page
+
+2020-01-09 08:29:48 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:29:48 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:29:48 - [TEST_STEP][PASSED] - "COOKIE - ORIGINAL": null
+
+2020-01-09 08:29:48 - [TEST_STEP][PASSED] - if (waitForElementVisible(findTestObject("Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review"), 25)): Web element with id: 'Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review' located by 'By.xpath: //input[@id='feedback-form__company_autocomplete_input']' not found
+
+2020-01-09 08:30:14 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //input[@id='feedback-form__company_autocomplete_input']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2020-01-09 08:30:14 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review' located by 'By.xpath: //input[@id='feedback-form__company_autocomplete_input']' not found
+
+2020-01-09 08:30:14 - [TEST_STEP][PASSED] - else: The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-01-09 08:30:14 - [TEST_STEP][PASSED] - if (!(verifyElementVisible(findTestObject("Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF")))): Object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF' is visible
+
+2020-01-09 08:30:14 - [MESSAGE][PASSED] - Object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF' is visible
+
+2020-01-09 08:30:14 - [TEST_STEP][PASSED] - else: The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-01-09 08:30:14 - [TEST_STEP][PASSED] - Website_Version = "old": null
+
+2020-01-09 08:30:14 - [TEST_STEP][PASSED] - logInfo("The <<<OLD>>> Website was detected by the STARTUP Process"): The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-01-09 08:30:14 - [MESSAGE][INFO] - The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-01-09 08:30:14 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' successfully
+
+2020-01-09 08:30:14 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Home"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Home' successfully
+
+2020-01-09 08:30:14 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Home: Test Cases/Reusable_Test_Sequences/CAT_Home
+
+2020-01-09 08:30:14 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:30:14 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:30:14 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2020-01-09 08:30:16 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2020-01-09 08:30:16 - [TEST_STEP][PASSED] - "------------------------------------": null
+
+2020-01-09 08:30:16 - [TEST_STEP][PASSED] - if (Website_Version == "new"): null
+
+2020-01-09 08:30:16 - [TEST_STEP][PASSED] - else: Text 'Over a million visits to Checkatrade each month' is present on page 
+
+2020-01-09 08:30:16 - [TEST_STEP][PASSED] - verifyTextPresent("Helping you find the right trade or service", false): Text 'Helping you find the right trade or service' is present on page 
+
+2020-01-09 08:30:17 - [MESSAGE][PASSED] - Text 'Helping you find the right trade or service' is present on page 
+
+2020-01-09 08:30:17 - [TEST_STEP][PASSED] - verifyTextPresent("Search through over", false): Text 'Search through over' is present on page 
+
+2020-01-09 08:30:17 - [MESSAGE][PASSED] - Text 'Search through over' is present on page 
+
+2020-01-09 08:30:17 - [TEST_STEP][PASSED] - verifyTextPresent("recommended, vetted and monitored trades and service providers for free.", false): Text 'recommended, vetted and monitored trades and service providers for free.' is present on page 
+
+2020-01-09 08:30:17 - [MESSAGE][PASSED] - Text 'recommended, vetted and monitored trades and service providers for free.' is present on page 
+
+2020-01-09 08:30:17 - [TEST_STEP][PASSED] - verifyTextPresent("reviews published so far – thank you!", false): Text 'reviews published so far – thank you!' is present on page 
+
+2020-01-09 08:30:17 - [MESSAGE][PASSED] - Text 'reviews published so far – thank you!' is present on page 
+
+2020-01-09 08:30:17 - [TEST_STEP][PASSED] - verifyTextPresent("I need a trade or service", false): Text 'I need a trade or service' is present on page 
+
+2020-01-09 08:30:17 - [MESSAGE][PASSED] - Text 'I need a trade or service' is present on page 
+
+2020-01-09 08:30:17 - [TEST_STEP][PASSED] - verifyTextPresent("Every trader thoroughly checked and vetted", false): Text 'Every trader thoroughly checked and vetted' is present on page 
+
+2020-01-09 08:30:18 - [MESSAGE][PASSED] - Text 'Every trader thoroughly checked and vetted' is present on page 
+
+2020-01-09 08:30:18 - [TEST_STEP][PASSED] - "------------------------------------": null
+
+2020-01-09 08:30:18 - [TEST_STEP][PASSED] - verifyTextPresent("reviews published so far – thank you!", false): Text 'reviews published so far – thank you!' is present on page 
+
+2020-01-09 08:30:18 - [MESSAGE][PASSED] - Text 'reviews published so far – thank you!' is present on page 
+
+2020-01-09 08:30:18 - [TEST_STEP][PASSED] - verifyTextPresent("Find out more", false): Text 'Find out more' is present on page 
+
+2020-01-09 08:30:18 - [MESSAGE][PASSED] - Text 'Find out more' is present on page 
+
+2020-01-09 08:30:18 - [TEST_STEP][PASSED] - verifyTextPresent("I am a tradesman", false): Text 'I am a tradesman' is present on page 
+
+2020-01-09 08:30:18 - [MESSAGE][PASSED] - Text 'I am a tradesman' is present on page 
+
+2020-01-09 08:30:18 - [TEST_STEP][PASSED] - verifyTextPresent("Find out more", false): Text 'Find out more' is present on page 
+
+2020-01-09 08:30:18 - [MESSAGE][PASSED] - Text 'Find out more' is present on page 
+
+2020-01-09 08:30:18 - [TEST_STEP][PASSED] - verifyTextPresent("Over a million visits to Checkatrade each month", false): Text 'Over a million visits to Checkatrade each month' is present on page 
+
+2020-01-09 08:30:19 - [MESSAGE][PASSED] - Text 'Over a million visits to Checkatrade each month' is present on page 
+
+2020-01-09 08:30:19 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Home' successfully
+
+2020-01-09 08:30:19 - [TEST_STEP][PASSED] - "---------------------------------------------------------------------": null
+
+2020-01-09 08:30:19 - [TEST_STEP][PASSED] - " Select Search on Trader Name (or ID) From Home page/Search Screen   |": null
+
+2020-01-09 08:30:19 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Click_Search_Trade_Name"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Click_Search_Trade_Name' successfully
+
+2020-01-09 08:30:19 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Click_Search_Trade_Name: Test Cases/Reusable_Test_Sequences/CAT_Click_Search_Trade_Name
+
+2020-01-09 08:30:19 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:30:19 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:30:19 - [TEST_STEP][PASSED] - if (Website_Version == "new"): null
+
+2020-01-09 08:30:19 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name' is clicked on
+
+2020-01-09 08:30:19 - [TEST_STEP][PASSED] - click(findTestObject("Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name")): Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name' is clicked on
+
+2020-01-09 08:30:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name' is clicked on
+
+2020-01-09 08:30:19 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:30:19 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:30:19 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Click_Search_Trade_Name' successfully
+
+2020-01-09 08:30:19 - [TEST_STEP][PASSED] - "---------------------------------------": null
+
+2020-01-09 08:30:19 - [TEST_STEP][PASSED] - " Enter Trader Name (or ID) to Search   |": null
+
+2020-01-09 08:30:19 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Enter_Trade_Name"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Enter_Trade_Name' successfully
+
+2020-01-09 08:30:19 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Enter_Trade_Name: Test Cases/Reusable_Test_Sequences/CAT_Enter_Trade_Name
+
+2020-01-09 08:30:19 - [TEST_STEP][PASSED] - if (Website_Version == "new"): null
+
+2020-01-09 08:30:19 - [TEST_STEP][PASSED] - else: Text '230761' is set on object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search'
+
+2020-01-09 08:30:19 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search"), findTestData("Search_CAT_ID_Data (1)").getValue("tradeName", row)): Text '230761' is set on object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search'
+
+2020-01-09 08:30:19 - [MESSAGE][PASSED] - Text '230761' is set on object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search'
+
+2020-01-09 08:30:19 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Enter_Trade_Name' successfully
+
+2020-01-09 08:30:19 - [TEST_STEP][PASSED] - "---------------------------------------": null
+
+2020-01-09 08:30:19 - [TEST_STEP][PASSED] - " Search Trader Name (or ID)            |": null
+
+2020-01-09 08:30:19 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Search_Trade_Name"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Search_Trade_Name' successfully
+
+2020-01-09 08:30:19 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Search_Trade_Name: Test Cases/Reusable_Test_Sequences/CAT_Search_Trade_Name
+
+2020-01-09 08:30:19 - [TEST_STEP][PASSED] - "Hit Search Trade Person by Name (or CAT ID) after parameters are entered": null
+
+2020-01-09 08:30:19 - [TEST_STEP][PASSED] - if (Website_Version == "new"): null
+
+2020-01-09 08:30:19 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name' is clicked on
+
+2020-01-09 08:30:19 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name"), 60): Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name' is present
+
+2020-01-09 08:30:19 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name' is present
+
+2020-01-09 08:30:19 - [TEST_STEP][PASSED] - click(findTestObject("Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name")): Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name' is clicked on
+
+2020-01-09 08:30:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name' is clicked on
+
+2020-01-09 08:30:25 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2020-01-09 08:30:27 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2020-01-09 08:30:27 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:30:27 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:30:27 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Search_Trade_Name' successfully
+
+2020-01-09 08:30:27 - [TEST_STEP][PASSED] - "------------------------------------------": null
+
+2020-01-09 08:30:27 - [TEST_STEP][PASSED] - " Scroll to Page Footer to Reveal Results  |": null
+
+2020-01-09 08:30:27 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Scroll_to_Footer"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Scroll_to_Footer' successfully
+
+2020-01-09 08:30:27 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Scroll_to_Footer: Test Cases/Reusable_Test_Sequences/CAT_Scroll_to_Footer
+
+2020-01-09 08:30:27 - [TEST_STEP][PASSED] - "-----------------------------------------------------": null
+
+2020-01-09 08:30:27 - [TEST_STEP][PASSED] - " Major changes factored into function 05/12/2019     |": null
+
+2020-01-09 08:30:27 - [TEST_STEP][PASSED] - "-----------------------------------------------------": null
+
+2020-01-09 08:30:27 - [TEST_STEP][PASSED] - "Animation Removed ": null
+
+2020-01-09 08:30:27 - [TEST_STEP][PASSED] - "Scroll - To Footer on the bottom of the page (sometime off the screen) ": null
+
+2020-01-09 08:30:27 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:30:27 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:30:27 - [TEST_STEP][PASSED] - scrollToPosition(999, 999): Browser is scrolled to position x = 999, y = 999
+
+2020-01-09 08:30:27 - [MESSAGE][PASSED] - Browser is scrolled to position x = 999, y = 999
+
+2020-01-09 08:30:27 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-01-09 08:30:28 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-01-09 08:30:28 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Scroll_to_Footer' successfully
+
+2020-01-09 08:30:28 - [TEST_STEP][PASSED] - "------------------------------------------": null
+
+2020-01-09 08:30:28 - [TEST_STEP][PASSED] - " Verify Correct Location is Returned     |": null
+
+2020-01-09 08:30:28 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Verification_Location"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Verification_Location' successfully
+
+2020-01-09 08:30:28 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Verification_Location: Test Cases/Reusable_Test_Sequences/CAT_Verification_Location
+
+2020-01-09 08:30:28 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("Search_CAT_ID_Data (1)").getValue("tradeNameLocationVerification", row), false): Text 'Rustington, West Sussex' is present on page 
+
+2020-01-09 08:30:29 - [MESSAGE][PASSED] - Text 'Rustington, West Sussex' is present on page 
+
+2020-01-09 08:30:29 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Verification_Location' successfully
+
+2020-01-09 08:30:29 - [TEST_STEP][PASSED] - "------------------------------------------": null
+
+2020-01-09 08:30:29 - [TEST_STEP][PASSED] - " Verify Primary Contact is Returned     |": null
+
+2020-01-09 08:30:29 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Verification_Primary_Contact"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Verification_Primary_Contact' successfully
+
+2020-01-09 08:30:29 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Verification_Primary_Contact: Test Cases/Reusable_Test_Sequences/CAT_Verification_Primary_Contact
+
+2020-01-09 08:30:29 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("Search_CAT_ID_Data (1)").getValue("primeContact", row), false): Text 'David Clarke' is present on page 
+
+2020-01-09 08:30:29 - [MESSAGE][PASSED] - Text 'David Clarke' is present on page 
+
+2020-01-09 08:30:29 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Verification_Primary_Contact' successfully
+
+2020-01-09 08:30:29 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-01-09 08:30:29 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2020-01-09 08:30:29 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-01-09 08:30:29 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2020-01-09 08:30:29 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-01-09 08:30:31 - [MESSAGE][PASSED] - Browser is closed
+
+2020-01-09 08:30:31 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-01-09 08:30:31 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Setup"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' successfully
+
+2020-01-09 08:30:31 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Setup: Test Cases/Reusable_Test_Sequences/CAT_Setup
+
+2020-01-09 08:30:31 - [TEST_STEP][PASSED] - "------------------------------": null
+
+2020-01-09 08:30:31 - [TEST_STEP][PASSED] - " Set Mobile Device Testing    |": null
+
+2020-01-09 08:30:31 - [TEST_STEP][PASSED] - if (Mobile_Flag == "true"): null
+
+2020-01-09 08:30:31 - [TEST_STEP][PASSED] - "------------------------------": null
+
+2020-01-09 08:30:31 - [TEST_STEP][PASSED] - " Set Mobile Device Testing    |": null
+
+2020-01-09 08:30:31 - [TEST_STEP][PASSED] - "------------------------------": null
+
+2020-01-09 08:30:31 - [TEST_STEP][PASSED] - "URL - Set from the ENVIRONMENT PROFILE ": null
+
+2020-01-09 08:30:31 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://www.preview.checkatrade.com/'
+
+2020-01-09 08:30:31 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-01-09 08:30:36 - [MESSAGE][PASSED] - Browser is opened with url: 'https://www.preview.checkatrade.com/'
+
+2020-01-09 08:30:36 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-01-09 08:30:36 - [MESSAGE][PASSED] - Current window maximized
+
+2020-01-09 08:30:36 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:30:36 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:30:36 - [TEST_STEP][PASSED] - "Previous Functionalilty Left Commented For Ease Of reversion": null
+
+2020-01-09 08:30:36 - [TEST_STEP][PASSED] - try: Text 'Cookie Policy' is not present on page
+
+2020-01-09 08:30:36 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All"), 5): Object 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is present
+
+2020-01-09 08:30:36 - [MESSAGE][PASSED] - Object 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is present
+
+2020-01-09 08:30:36 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All")): Object: 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is clicked on
+
+2020-01-09 08:30:37 - [MESSAGE][ERROR] - (1785, 987) is out of bounds of viewport width (1920) and height (966)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'VETTEDSP36RF', ip: '10.0.13.186', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 71.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191202093317, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 2624, moz:profile: C:\Users\davidho\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 916bc47e-c182-4bd9-b6d0-068197e8dd74
+
+2020-01-09 08:30:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is clicked on
+
+2020-01-09 08:30:37 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-01-09 08:30:37 - [TEST_STEP][PASSED] - "COOKIE POPOUT REMOVED - Confirmed": null
+
+2020-01-09 08:30:37 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-01-09 08:30:38 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-01-09 08:30:38 - [TEST_STEP][PASSED] - verifyTextNotPresent("We use cookies to personalise content and ads, to provide social media features and to analyse our traffic", false): Text 'We use cookies to personalise content and ads, to provide social media features and to analyse our traffic' is not present on page
+
+2020-01-09 08:30:39 - [MESSAGE][PASSED] - Text 'We use cookies to personalise content and ads, to provide social media features and to analyse our traffic' is not present on page
+
+2020-01-09 08:30:39 - [TEST_STEP][PASSED] - verifyTextNotPresent(" We also share information about your use of our site with our social media, advertising and analytics partners", false): Text ' We also share information about your use of our site with our social media, advertising and analytics partners' is not present on page
+
+2020-01-09 08:30:39 - [MESSAGE][PASSED] - Text ' We also share information about your use of our site with our social media, advertising and analytics partners' is not present on page
+
+2020-01-09 08:30:39 - [TEST_STEP][PASSED] - verifyTextNotPresent("Cookie Policy", false): Text 'Cookie Policy' is not present on page
+
+2020-01-09 08:30:39 - [MESSAGE][PASSED] - Text 'Cookie Policy' is not present on page
+
+2020-01-09 08:30:39 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:30:39 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:30:39 - [TEST_STEP][PASSED] - "COOKIE - ORIGINAL": null
+
+2020-01-09 08:30:39 - [TEST_STEP][PASSED] - if (waitForElementVisible(findTestObject("Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review"), 25)): Web element with id: 'Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review' located by 'By.xpath: //input[@id='feedback-form__company_autocomplete_input']' not found
+
+2020-01-09 08:31:05 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //input[@id='feedback-form__company_autocomplete_input']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2020-01-09 08:31:05 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review' located by 'By.xpath: //input[@id='feedback-form__company_autocomplete_input']' not found
+
+2020-01-09 08:31:05 - [TEST_STEP][PASSED] - else: The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-01-09 08:31:05 - [TEST_STEP][PASSED] - if (!(verifyElementVisible(findTestObject("Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF")))): Object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF' is visible
+
+2020-01-09 08:31:05 - [MESSAGE][PASSED] - Object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF' is visible
+
+2020-01-09 08:31:05 - [TEST_STEP][PASSED] - else: The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-01-09 08:31:05 - [TEST_STEP][PASSED] - Website_Version = "old": null
+
+2020-01-09 08:31:05 - [TEST_STEP][PASSED] - logInfo("The <<<OLD>>> Website was detected by the STARTUP Process"): The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-01-09 08:31:05 - [MESSAGE][INFO] - The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-01-09 08:31:05 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' successfully
+
+2020-01-09 08:31:05 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Home"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Home' successfully
+
+2020-01-09 08:31:06 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Home: Test Cases/Reusable_Test_Sequences/CAT_Home
+
+2020-01-09 08:31:06 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:31:06 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:31:06 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2020-01-09 08:31:08 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2020-01-09 08:31:08 - [TEST_STEP][PASSED] - "------------------------------------": null
+
+2020-01-09 08:31:08 - [TEST_STEP][PASSED] - if (Website_Version == "new"): null
+
+2020-01-09 08:31:08 - [TEST_STEP][PASSED] - else: Text 'Over a million visits to Checkatrade each month' is present on page 
+
+2020-01-09 08:31:08 - [TEST_STEP][PASSED] - verifyTextPresent("Helping you find the right trade or service", false): Text 'Helping you find the right trade or service' is present on page 
+
+2020-01-09 08:31:08 - [MESSAGE][PASSED] - Text 'Helping you find the right trade or service' is present on page 
+
+2020-01-09 08:31:08 - [TEST_STEP][PASSED] - verifyTextPresent("Search through over", false): Text 'Search through over' is present on page 
+
+2020-01-09 08:31:08 - [MESSAGE][PASSED] - Text 'Search through over' is present on page 
+
+2020-01-09 08:31:08 - [TEST_STEP][PASSED] - verifyTextPresent("recommended, vetted and monitored trades and service providers for free.", false): Text 'recommended, vetted and monitored trades and service providers for free.' is present on page 
+
+2020-01-09 08:31:08 - [MESSAGE][PASSED] - Text 'recommended, vetted and monitored trades and service providers for free.' is present on page 
+
+2020-01-09 08:31:08 - [TEST_STEP][PASSED] - verifyTextPresent("reviews published so far – thank you!", false): Text 'reviews published so far – thank you!' is present on page 
+
+2020-01-09 08:31:09 - [MESSAGE][PASSED] - Text 'reviews published so far – thank you!' is present on page 
+
+2020-01-09 08:31:09 - [TEST_STEP][PASSED] - verifyTextPresent("I need a trade or service", false): Text 'I need a trade or service' is present on page 
+
+2020-01-09 08:31:09 - [MESSAGE][PASSED] - Text 'I need a trade or service' is present on page 
+
+2020-01-09 08:31:09 - [TEST_STEP][PASSED] - verifyTextPresent("Every trader thoroughly checked and vetted", false): Text 'Every trader thoroughly checked and vetted' is present on page 
+
+2020-01-09 08:31:09 - [MESSAGE][PASSED] - Text 'Every trader thoroughly checked and vetted' is present on page 
+
+2020-01-09 08:31:09 - [TEST_STEP][PASSED] - "------------------------------------": null
+
+2020-01-09 08:31:09 - [TEST_STEP][PASSED] - verifyTextPresent("reviews published so far – thank you!", false): Text 'reviews published so far – thank you!' is present on page 
+
+2020-01-09 08:31:09 - [MESSAGE][PASSED] - Text 'reviews published so far – thank you!' is present on page 
+
+2020-01-09 08:31:09 - [TEST_STEP][PASSED] - verifyTextPresent("Find out more", false): Text 'Find out more' is present on page 
+
+2020-01-09 08:31:09 - [MESSAGE][PASSED] - Text 'Find out more' is present on page 
+
+2020-01-09 08:31:09 - [TEST_STEP][PASSED] - verifyTextPresent("I am a tradesman", false): Text 'I am a tradesman' is present on page 
+
+2020-01-09 08:31:10 - [MESSAGE][PASSED] - Text 'I am a tradesman' is present on page 
+
+2020-01-09 08:31:10 - [TEST_STEP][PASSED] - verifyTextPresent("Find out more", false): Text 'Find out more' is present on page 
+
+2020-01-09 08:31:10 - [MESSAGE][PASSED] - Text 'Find out more' is present on page 
+
+2020-01-09 08:31:10 - [TEST_STEP][PASSED] - verifyTextPresent("Over a million visits to Checkatrade each month", false): Text 'Over a million visits to Checkatrade each month' is present on page 
+
+2020-01-09 08:31:10 - [MESSAGE][PASSED] - Text 'Over a million visits to Checkatrade each month' is present on page 
+
+2020-01-09 08:31:10 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Home' successfully
+
+2020-01-09 08:31:10 - [TEST_STEP][PASSED] - "---------------------------------------------------------------------": null
+
+2020-01-09 08:31:10 - [TEST_STEP][PASSED] - " Select Search on Trader Name (or ID) From Home page/Search Screen   |": null
+
+2020-01-09 08:31:10 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Click_Search_Trade_Name"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Click_Search_Trade_Name' successfully
+
+2020-01-09 08:31:10 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Click_Search_Trade_Name: Test Cases/Reusable_Test_Sequences/CAT_Click_Search_Trade_Name
+
+2020-01-09 08:31:10 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:31:10 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:31:10 - [TEST_STEP][PASSED] - if (Website_Version == "new"): null
+
+2020-01-09 08:31:10 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name' is clicked on
+
+2020-01-09 08:31:10 - [TEST_STEP][PASSED] - click(findTestObject("Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name")): Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name' is clicked on
+
+2020-01-09 08:31:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name' is clicked on
+
+2020-01-09 08:31:10 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:31:10 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:31:10 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Click_Search_Trade_Name' successfully
+
+2020-01-09 08:31:10 - [TEST_STEP][PASSED] - "---------------------------------------": null
+
+2020-01-09 08:31:10 - [TEST_STEP][PASSED] - " Enter Trader Name (or ID) to Search   |": null
+
+2020-01-09 08:31:10 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Enter_Trade_Name"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Enter_Trade_Name' successfully
+
+2020-01-09 08:31:10 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Enter_Trade_Name: Test Cases/Reusable_Test_Sequences/CAT_Enter_Trade_Name
+
+2020-01-09 08:31:10 - [TEST_STEP][PASSED] - if (Website_Version == "new"): null
+
+2020-01-09 08:31:10 - [TEST_STEP][PASSED] - else: Text '381198' is set on object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search'
+
+2020-01-09 08:31:10 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search"), findTestData("Search_CAT_ID_Data (1)").getValue("tradeName", row)): Text '381198' is set on object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search'
+
+2020-01-09 08:31:11 - [MESSAGE][PASSED] - Text '381198' is set on object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search'
+
+2020-01-09 08:31:11 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Enter_Trade_Name' successfully
+
+2020-01-09 08:31:11 - [TEST_STEP][PASSED] - "---------------------------------------": null
+
+2020-01-09 08:31:11 - [TEST_STEP][PASSED] - " Search Trader Name (or ID)            |": null
+
+2020-01-09 08:31:11 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Search_Trade_Name"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Search_Trade_Name' successfully
+
+2020-01-09 08:31:11 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Search_Trade_Name: Test Cases/Reusable_Test_Sequences/CAT_Search_Trade_Name
+
+2020-01-09 08:31:11 - [TEST_STEP][PASSED] - "Hit Search Trade Person by Name (or CAT ID) after parameters are entered": null
+
+2020-01-09 08:31:11 - [TEST_STEP][PASSED] - if (Website_Version == "new"): null
+
+2020-01-09 08:31:11 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name' is clicked on
+
+2020-01-09 08:31:11 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name"), 60): Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name' is present
+
+2020-01-09 08:31:11 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name' is present
+
+2020-01-09 08:31:11 - [TEST_STEP][PASSED] - click(findTestObject("Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name")): Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name' is clicked on
+
+2020-01-09 08:31:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name' is clicked on
+
+2020-01-09 08:31:14 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2020-01-09 08:31:16 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2020-01-09 08:31:16 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:31:16 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:31:16 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Search_Trade_Name' successfully
+
+2020-01-09 08:31:16 - [TEST_STEP][PASSED] - "------------------------------------------": null
+
+2020-01-09 08:31:16 - [TEST_STEP][PASSED] - " Scroll to Page Footer to Reveal Results  |": null
+
+2020-01-09 08:31:16 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Scroll_to_Footer"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Scroll_to_Footer' successfully
+
+2020-01-09 08:31:16 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Scroll_to_Footer: Test Cases/Reusable_Test_Sequences/CAT_Scroll_to_Footer
+
+2020-01-09 08:31:16 - [TEST_STEP][PASSED] - "-----------------------------------------------------": null
+
+2020-01-09 08:31:16 - [TEST_STEP][PASSED] - " Major changes factored into function 05/12/2019     |": null
+
+2020-01-09 08:31:16 - [TEST_STEP][PASSED] - "-----------------------------------------------------": null
+
+2020-01-09 08:31:16 - [TEST_STEP][PASSED] - "Animation Removed ": null
+
+2020-01-09 08:31:16 - [TEST_STEP][PASSED] - "Scroll - To Footer on the bottom of the page (sometime off the screen) ": null
+
+2020-01-09 08:31:16 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-09 08:31:16 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-09 08:31:16 - [TEST_STEP][PASSED] - scrollToPosition(999, 999): Browser is scrolled to position x = 999, y = 999
+
+2020-01-09 08:31:16 - [MESSAGE][PASSED] - Browser is scrolled to position x = 999, y = 999
+
+2020-01-09 08:31:16 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-01-09 08:31:17 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-01-09 08:31:17 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Scroll_to_Footer' successfully
+
+2020-01-09 08:31:17 - [TEST_STEP][PASSED] - "------------------------------------------": null
+
+2020-01-09 08:31:17 - [TEST_STEP][PASSED] - " Verify Correct Location is Returned     |": null
+
+2020-01-09 08:31:17 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Verification_Location"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Verification_Location' successfully
+
+2020-01-09 08:31:18 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Verification_Location: Test Cases/Reusable_Test_Sequences/CAT_Verification_Location
+
+2020-01-09 08:31:18 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("Search_CAT_ID_Data (1)").getValue("tradeNameLocationVerification", row), false): Text 'Bognor Regis' is present on page 
+
+2020-01-09 08:31:18 - [MESSAGE][PASSED] - Text 'Bognor Regis' is present on page 
+
+2020-01-09 08:31:18 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Verification_Location' successfully
+
+2020-01-09 08:31:18 - [TEST_STEP][PASSED] - "------------------------------------------": null
+
+2020-01-09 08:31:18 - [TEST_STEP][PASSED] - " Verify Primary Contact is Returned     |": null
+
+2020-01-09 08:31:18 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Verification_Primary_Contact"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Verification_Primary_Contact' successfully
+
+2020-01-09 08:31:18 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Verification_Primary_Contact: Test Cases/Reusable_Test_Sequences/CAT_Verification_Primary_Contact
+
+2020-01-09 08:31:18 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("Search_CAT_ID_Data (1)").getValue("primeContact", row), false): Text 'Mr Scott Heyburn' is present on page 
+
+2020-01-09 08:31:19 - [MESSAGE][PASSED] - Text 'Mr Scott Heyburn' is present on page 
+
+2020-01-09 08:31:19 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Verification_Primary_Contact' successfully
+
+2020-01-09 08:31:19 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-01-09 08:31:19 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2020-01-09 08:31:19 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-01-09 08:31:19 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2020-01-09 08:31:19 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-01-09 08:31:20 - [MESSAGE][PASSED] - Browser is closed
+
+2020-01-09 08:31:20 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-01-09 08:26:58 - [TEST_SUITE][PASSED] - Trade_Name_Multiple_Search: Test Cases/Checkatrade_Tradesman_Searches/Trade_Name_Search_Multiple]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

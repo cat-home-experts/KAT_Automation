@@ -15,32 +15,39 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.awt.Robot as Robot
+import java.awt.event.KeyEvent as KeyEvent
 
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://www.preview.checkatrade.com/')
 
+WebUI.waitForPageLoad(60)
+
 WebUI.maximizeWindow()
 
-//WebUI.click(findTestObject('Object Repository/New_CAT_Search/Page_Checkatrade Find a tradesperson you can trust/button_Accept All'))
-WebUI.waitForElementClickable(findTestObject('Object Repository/New_CAT_Search/Page_Checkatrade Find a tradesperson you can trust/button_or look up a member by name'), 
-    10)
+WebUI.waitForPageLoad(60)
 
-WebUI.click(findTestObject('Object Repository/New_CAT_Search/Page_Checkatrade Find a tradesperson you can trust/button_or look up a member by name'))
+WebUI.click(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/button_Accept All'))
 
-WebUI.delay(5)
+WebUI.click(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_Helping you find the right trade or ser_6c48f1'))
 
-WebUI.click(findTestObject('Object Repository/New_CAT_Search/Page_Checkatrade Find a tradesperson you can trust/button_or look up a member by name'))
+Robot robot = new Robot();
 
-WebUI.click(findTestObject('Object Repository/New_CAT_Search/Page_Checkatrade Find a tradesperson you can trust/button_or search for a tradesperson near you'))
+robot.keyPress(KeyEvent.VK_F12)
+robot.keyRelease(KeyEvent.VK_F12)
 
-WebUI.click(findTestObject('Object Repository/New_CAT_Search/Page_Checkatrade Find a tradesperson you can trust/button_or look up a member by name'))
+WebUI.delay(1)
 
-WebUI.click(findTestObject('Object Repository/New_CAT_Search/Page_Checkatrade Find a tradesperson you can trust/button_or search for a tradesperson near you'))
+robot.keyPress(KeyEvent.VK_CONTROL)
+robot.keyPress(KeyEvent.VK_SHIFT)
+robot.keyPress(KeyEvent.VK_M)
 
-WebUI.click(findTestObject('Object Repository/New_CAT_Search/Page_Checkatrade Find a tradesperson you can trust/button_or look up a member by name'))
+WebUI.delay(1)
 
-WebUI.click(findTestObject('Object Repository/New_CAT_Search/Page_Checkatrade Find a tradesperson you can trust/button_or search for a tradesperson near you'))
+robot.keyRelease(KeyEvent.VK_M)
+robot.keyRelease(KeyEvent.VK_SHIFT)
+robot.keyRelease(KeyEvent.VK_CONTROL)
 
-WebUI.click(findTestObject('Object Repository/New_CAT_Search/Page_Checkatrade Find a tradesperson you can trust/button_or look up a member by name'))
 
+// CTRL+P is now released
