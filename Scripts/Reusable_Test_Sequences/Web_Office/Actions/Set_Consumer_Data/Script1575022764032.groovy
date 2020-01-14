@@ -27,7 +27,7 @@ import org.openqa.selenium.Keys as Keys
 //---------------------------------------------------------------------------------------------------------------
 // Set Search Items - WO Consumer Search      |   29/11/2019    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Implementation after debug                 |   13/01/2020    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -48,7 +48,7 @@ import org.openqa.selenium.Keys as Keys
 '--------------------------------'
 'Read data from spreadsheet      |'
 '--------------------------------'
-def data = findTestData('Data Files/Consumer Data (1)')
+def data = findTestData('Data Files/Consumer_Data (1)')
 def Forename = data.getValue("Forename", GlobalVariable.row)
 def Surname = data.getValue("Surname", GlobalVariable.row)
 def Mobile = data.getValue("Mobile", GlobalVariable.row)
@@ -75,75 +75,127 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/WebOffice/Consumer
 
 WebUI.click(findTestObject('Object Repository/WebOffice/Consumers/Page_/input_Forename_ctl00CP1ctlSearchtbForenames'))
 
+// DEBUG
+
 '-------------------------------------------------------------------------------------------------------------------------------------'
 'Set Forename'
-if (!Forename==null){
+	WebUI.setText(findTestObject('Object Repository/WebOffice/Consumers/Page_/input_Forename_ctl00CP1ctlSearchtbForenames'), Forename)
+'-------------------------------------------------------------------------------------------------------------------------------------'
+'Set Surname'
+	WebUI.setText(findTestObject('Object Repository/WebOffice/Consumers/Page_/input_Surname_ctl00CP1ctlSearchtbSurname'), Surname)
+'-------------------------------------------------------------------------------------------------------------------------------------'
+'Set Mobile'
+	WebUI.setText(findTestObject('Object Repository/WebOffice/Consumers/Page_/input_Mobile_ctl00CP1ctlSearchtbMobile'), Mobile)
+'-------------------------------------------------------------------------------------------------------------------------------------'
+'Set Email'
+	WebUI.setText(findTestObject('Object Repository/WebOffice/Consumers/Page_/input_Email_ctl00CP1ctlSearchtbEmail'), Email)
+'-------------------------------------------------------------------------------------------------------------------------------------'
+'Set House'
+WebUI.setText(findTestObject('Object Repository/WebOffice/Consumers/Page_/input_House_ctl00CP1ctlSearchtbHouse'), House)
+'-------------------------------------------------------------------------------------------------------------------------------------'
+'Set Street'
+	WebUI.setText(findTestObject('Object Repository/WebOffice/Consumers/Page_/input_Street_ctl00CP1ctlSearchtbStreet'), Street)
+'-------------------------------------------------------------------------------------------------------------------------------------'
+'Set Town'
+	WebUI.setText(findTestObject('Object Repository/WebOffice/Consumers/Page_/input_Town_ctl00CP1ctlSearchtbTown'), Town)
+'-------------------------------------------------------------------------------------------------------------------------------------'
+'Set City'
+	WebUI.setText(findTestObject('Object Repository/WebOffice/Consumers/Page_/input_City_ctl00CP1ctlSearchtbCity'), City)
+'-------------------------------------------------------------------------------------------------------------------------------------'
+'Set County'
+	WebUI.setText(findTestObject('Object Repository/WebOffice/Consumers/Page_/input_County_ctl00CP1ctlSearchtbCounty'), County)
+'-------------------------------------------------------------------------------------------------------------------------------------'
+'Set Postcode'
+	WebUI.setText(findTestObject('Object Repository/WebOffice/Consumers/Page_/input_Postcode_ctl00CP1ctlSearchtbPostcode'), Postcode)
+'-------------------------------------------------------------------------------------------------------------------------------------'
+'Set Phone'
+	WebUI.setText(findTestObject('Object Repository/WebOffice/Consumers/Page_/input_Phone_ctl00CP1ctlSearchtbTel'), Phone)
+'-------------------------------------------------------------------------------------------------------------------------------------'
+'Set Status'
+	WebUI.selectOptionByValue(findTestObject('Object Repository/WebOffice/Consumers/Page_/select_AllActiveDeleted'), Status, true)
+'-------------------------------------------------------------------------------------------------------------------------------------'
+'Status 3 Options'
+//WebUI.selectOptionByValue(findTestObject('Object Repository/WebOffice/Consumers/Page_/select_AllActiveDeleted'), 'ALL',
+//    true)
+//
+//WebUI.selectOptionByValue(findTestObject('Object Repository/WebOffice/Consumers/Page_/select_AllActiveDeleted'), 'ACTIVE',
+//    true)
+//
+//WebUI.selectOptionByValue(findTestObject('Object Repository/WebOffice/Consumers/Page_/select_AllActiveDeleted'), 'DELETED',
+//    true)
+
+'-------------------------------------------------------------------------------------------------------------------------------------'
+'Set Type'
+	WebUI.selectOptionByValue(findTestObject('Object Repository/WebOffice/Consumers/Page_/select_BothConsumerTrade'), Type, true)
+/*'-------------------------------------------------------------------------------------------------------------------------------------'
+'Set Forename'
+if (Forename==null){
 	WebUI.setText(findTestObject('Object Repository/WebOffice/Consumers/Page_/input_Forename_ctl00CP1ctlSearchtbForenames'), Forename)
 }
 
 '-------------------------------------------------------------------------------------------------------------------------------------'
 'Set Surname'
-if (!Surname==null){
+if (Surname==null){
 	WebUI.setText(findTestObject('Object Repository/WebOffice/Consumers/Page_/input_Surname_ctl00CP1ctlSearchtbSurname'), Surname)
 }
 
 '-------------------------------------------------------------------------------------------------------------------------------------'
 'Set Mobile'
-if (!Mobile==null){
+if (Mobile==null){
 	WebUI.setText(findTestObject('Object Repository/WebOffice/Consumers/Page_/input_Mobile_ctl00CP1ctlSearchtbMobile'), Mobile)
 }
 
 '-------------------------------------------------------------------------------------------------------------------------------------'
 'Set Email'
-if (!Email==null){
+if (Email==null){
 	WebUI.setText(findTestObject('Object Repository/WebOffice/Consumers/Page_/input_Email_ctl00CP1ctlSearchtbEmail'), Email)
 }
 
 '-------------------------------------------------------------------------------------------------------------------------------------'
 'Set House'
-if (!House==null){
+if (House==null){
 WebUI.setText(findTestObject('Object Repository/WebOffice/Consumers/Page_/input_House_ctl00CP1ctlSearchtbHouse'), House)
 }
 
 '-------------------------------------------------------------------------------------------------------------------------------------'
 'Set Street'
-if (!Street==null){
+if (Street==null){
 	WebUI.setText(findTestObject('Object Repository/WebOffice/Consumers/Page_/input_Street_ctl00CP1ctlSearchtbStreet'), Street)
 }
 
 '-------------------------------------------------------------------------------------------------------------------------------------'
 'Set Town'
-if (!Town==null){
+if (Town==null){
 	WebUI.setText(findTestObject('Object Repository/WebOffice/Consumers/Page_/input_Town_ctl00CP1ctlSearchtbTown'), Town)
 }
 
 '-------------------------------------------------------------------------------------------------------------------------------------'
 'Set City'
-if (!City==null){
+if (City==null){
 	WebUI.setText(findTestObject('Object Repository/WebOffice/Consumers/Page_/input_City_ctl00CP1ctlSearchtbCity'), City)
 }
 
 '-------------------------------------------------------------------------------------------------------------------------------------'
 'Set County'
-if (!County==null){
+if (County==null){
 	WebUI.setText(findTestObject('Object Repository/WebOffice/Consumers/Page_/input_County_ctl00CP1ctlSearchtbCounty'), County)
 }
 
 '-------------------------------------------------------------------------------------------------------------------------------------'
 'Set Postcode'
-if (!Postcode==null){
+if (Postcode==null){
 	WebUI.setText(findTestObject('Object Repository/WebOffice/Consumers/Page_/input_Postcode_ctl00CP1ctlSearchtbPostcode'), Postcode)
 }
 
 '-------------------------------------------------------------------------------------------------------------------------------------'
 'Set Phone'
-if (!Phone==null){
+if (Phone==null){
 	WebUI.setText(findTestObject('Object Repository/WebOffice/Consumers/Page_/input_Phone_ctl00CP1ctlSearchtbTel'), Phone)
 }
 
 '-------------------------------------------------------------------------------------------------------------------------------------'
 'Set Status'
-if (!Status==null){
+if (Status==null){
 	WebUI.selectOptionByValue(findTestObject('Object Repository/WebOffice/Consumers/Page_/select_AllActiveDeleted'), Status, true)
 }
 
@@ -160,9 +212,9 @@ if (!Status==null){
 
 '-------------------------------------------------------------------------------------------------------------------------------------'
 'Set Type'
-if (!Type==null){
+if (Type==null){
 	WebUI.selectOptionByValue(findTestObject('Object Repository/WebOffice/Consumers/Page_/select_BothConsumerTrade'), Type, true)
-}
+}*/
 '-------------------------------------------------------------------------------------------------------------------------------------'
 'Type 3 Options'
 //WebUI.selectOptionByValue(findTestObject('Object Repository/WebOffice/Consumers/Page_/select_BothConsumerTrade'), '1', true)

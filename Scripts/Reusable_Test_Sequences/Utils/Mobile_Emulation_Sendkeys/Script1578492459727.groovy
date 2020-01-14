@@ -22,6 +22,11 @@ import java.awt.event.KeyEvent as KeyEvent
 ' Created on 08/01/2020 During Mobile Device Emulation Investigation       |'
 '--------------------------------------------------------------------------'
 
+'KEYS'
+'Select Emulation viaa Keystrokes'
+'F12'
+'Control+Shift+M'
+
 Robot robot = new Robot();
 
 robot.keyPress(KeyEvent.VK_F12)
@@ -41,6 +46,100 @@ robot.keyRelease(KeyEvent.VK_CONTROL)
 
 WebUI.delay(1)
 
+'KEYS'
+'Select Mobile Emulator Via Keystrokes'
+'Tabs x 1'
+'Enter'
+'Down Arrow n'
+'Enter'
+
+
+'-6 tabs from startup'
+'Enter'  // Default values
+'Down 1' // Responsive
+'Down 1' // Galaxy S5
+'Down 1' // Pixel 2
+'Down 1' // Pixel 2 XL
+'Down 1' // iPhone 5/SE
+'Down 1' // iPhone 6/7/8
+'Down 1' // iPhone 6/7/8 Plus
+'Down 1' // iPhone X
+'Down 1' // iPad
+'Down 1' // iPad Pro
+'Down 1' // Edit Above Values
+
+//Robot robot = new Robot()
+robot.keyPress(KeyEvent.VK_SHIFT)
+robot.keyPress(KeyEvent.VK_TAB)
+WebUI.delay(1)
+robot.keyRelease(KeyEvent.VK_TAB)
+robot.keyRelease(KeyEvent.VK_SHIFT)
+
+robot.keyPress(KeyEvent.VK_SHIFT)
+robot.keyPress(KeyEvent.VK_TAB)
+WebUI.delay(1)
+robot.keyRelease(KeyEvent.VK_TAB)
+robot.keyRelease(KeyEvent.VK_SHIFT)
+
+robot.keyPress(KeyEvent.VK_SHIFT)
+robot.keyPress(KeyEvent.VK_TAB)
+WebUI.delay(1)
+robot.keyRelease(KeyEvent.VK_TAB)
+robot.keyRelease(KeyEvent.VK_SHIFT)
+
+robot.keyPress(KeyEvent.VK_SHIFT)
+robot.keyPress(KeyEvent.VK_TAB)
+WebUI.delay(1)
+robot.keyRelease(KeyEvent.VK_TAB)
+robot.keyRelease(KeyEvent.VK_SHIFT)
+
+robot.keyPress(KeyEvent.VK_SHIFT)
+robot.keyPress(KeyEvent.VK_TAB)
+WebUI.delay(1)
+robot.keyRelease(KeyEvent.VK_TAB)
+robot.keyRelease(KeyEvent.VK_SHIFT)
+
+robot.keyPress(KeyEvent.VK_ENTER)
+WebUI.delay(1)
+robot.keyRelease(KeyEvent.VK_ENTER)
+
+robot.keyPress(KeyEvent.VK_DOWN)
+WebUI.delay(1)
+robot.keyRelease(KeyEvent.VK_DOWN)
+
+robot.keyPress(KeyEvent.VK_DOWN)
+WebUI.delay(1)
+robot.keyRelease(KeyEvent.VK_DOWN)
+
+robot.keyPress(KeyEvent.VK_DOWN)
+WebUI.delay(1)
+robot.keyRelease(KeyEvent.VK_DOWN)
+
+robot.keyPress(KeyEvent.VK_DOWN)
+WebUI.delay(1)
+robot.keyRelease(KeyEvent.VK_DOWN)
+
+robot.keyPress(KeyEvent.VK_DOWN)
+WebUI.delay(1)
+robot.keyRelease(KeyEvent.VK_DOWN)
+
+robot.keyPress(KeyEvent.VK_DOWN)
+WebUI.delay(1)
+robot.keyRelease(KeyEvent.VK_DOWN)
+
+robot.keyPress(KeyEvent.VK_DOWN)
+WebUI.delay(1)
+robot.keyRelease(KeyEvent.VK_DOWN)
+
+robot.keyPress(KeyEvent.VK_DOWN)
+WebUI.delay(1)
+robot.keyRelease(KeyEvent.VK_DOWN)
+
+robot.keyPress(KeyEvent.VK_DOWN)
+WebUI.delay(1)
+robot.keyRelease(KeyEvent.VK_DOWN)
+
+WebUI.delay(5)
 ///////////////////////////////////////
 //                END                //
 ///////////////////////////////////////

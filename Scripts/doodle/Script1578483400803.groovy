@@ -93,23 +93,30 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Mobile_Test_Dat
 	'Down Arrow n'
 	'Enter'
 	
-	Robot robot = new Robot()
-	robot.keyPress(KeyEvent.VK_TAB)
-	robot.keyRelease(KeyEvent.VK_TAB)
 
-	robot.keyPress(KeyEvent.VK_ENTER)
-	robot.keyRelease(KeyEvent.VK_ENTER)
-	
-	robot.keyPress(KeyEvent.VK_DOWN)
-	robot.keyRelease(KeyEvent.VK_DOWN)
-	
-	robot.keyPress(KeyEvent.VK_DOWN)
-	robot.keyRelease(KeyEvent.VK_DOWN)
-	
-	robot.keyPress(KeyEvent.VK_ENTER)
-	robot.keyRelease(KeyEvent.VK_ENTER)
 
-	// Page Up
+	
+	
+	
+//	robot.keyPress(KeyEvent.VK_ENTER)
+//	WebUI.delay(1)
+//	robot.keyRelease(KeyEvent.VK_ENTER)
+//	
+//	robot.keyPress(KeyEvent.VK_DOWN)
+//	WebUI.delay(1)
+//	robot.keyRelease(KeyEvent.VK_DOWN)
+//	
+//	robot.keyPress(KeyEvent.VK_DOWN)
+//	WebUI.delay(1)
+//	robot.keyRelease(KeyEvent.VK_DOWN)
+//	
+//	robot.keyPress(KeyEvent.VK_ENTER)
+//	WebUI.delay(1)
+//	robot.keyRelease(KeyEvent.VK_ENTER)
+
+	WebUI.delay(5)
+	
+/*	// Page Up
 	//WebUI.delay(1)
 	// Scroll Up a page
 	//WebUI.sendKeys(findTestObject(null), Keys.chord(Keys.ESCAPE))
@@ -160,7 +167,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Mobile_Test_Dat
 	// Set View Port Size
 	//----------------------------------------------------------
 	' Block Comment Start'
-/*	//----------------------------------------------------------
+	//----------------------------------------------------------
 	' ACTUAL SCREEN RESOLUTION SELECTION METHOD USED'       // |
 	//----------------------------------------------------------
 	// Pul X and Y from the spreadsheet (parse Integer from data sheet string value)
@@ -181,7 +188,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Mobile_Test_Dat
 	KeywordUtil.markPassed((('Set View Port Size is currently SET to X AXIS ' + XCOORD) + ' Y AXIS ') + YCOORD)
 	//---------------------------------------------------------------------
 	// Set The Trade Classification to Select on the Trade Search Screen  |
-*/	' Block Comment End'
+	' Block Comment End'
 	//------------------------------------------------------------------------------------------------------------------------------------------------
 //    'Set and SEARCH SELECTED TRADE'
 //	'---------------------------------'    WebUI.setText(findTestObject('Page_Checkatrade Find a tradesperson you can trust/input_Search through'),
@@ -235,34 +242,89 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Mobile_Test_Dat
 	'---------------------------------------'
 	' Set and SEARCH TRADE CLASSIFICATION   |'
 	'---------------------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Enter_Trade_Classification'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Enter_Trade_Classification'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
+	//WebUI.sendKeys(findTestObject('Object_Repository/Mobile_Device/Trade_Entry'), Keys.chord(Keys.ESCAPE))
+	//WebUI.setText(findTestObject('Object Repository/Mobile_Device/Trade_Entry'), 'tradeClassification', GlobalVariable.row)
+	//WebUI.waitForElementPresent(findTestObject('Object Repository/Mobile_Device/Trade_Entry'), 60)
+	//WebUI.click(findTestObject('Object Repository/Mobile_Device/Trade_Entry'))
+	WebUI.setText(findTestObject('Object Repository/Mobile_Device/Trade_Entry'),findTestData('searchTestData').
+		getValue('tradeClassification', GlobalVariable.row))
+	//WebUI.setText(findTestData('searchTestData').setValue('tradeLocationVerification', GlobalVariable.row), false,
+	
+	WebUI.delay(5)
+	
+//	robot.keyPress(KeyEvent.VK_ENTER)
+//	robot.keyRelease(KeyEvent.VK_ENTER)
+	
+	WebUI.delay(1)
+	
+	robot.keyPress(KeyEvent.VK_TAB)
+	WebUI.delay(1)
+	robot.keyRelease(KeyEvent.VK_TAB)
+	
+	
+	WebUI.delay(1)
+	
 	'---------------------------------------'
 	' Set and SEARCH TRADE LOCATION         |'
 	'---------------------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Enter_Trade_Location'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Enter_Trade_Location'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+	//WebUI.setText(findTestObject('Object Repository/Mobile_Device/Trade_Location'), 'tradeLotion', GlobalVariable.row)
+	//WebUI.waitForElementPresent(findTestObject('Object Repository/Mobile_Device/Trade_Location'), 60)
+	//gosportWebUI.click(findTestObject('Object Repository/Mobile_Device/Trade_Location'))
+	WebUI.setText(findTestObject('Object Repository/Mobile_Device/Trade_Location'),	findTestData('searchTestData').
+		getValue('tradeLocation', GlobalVariable.row))
+	
+	WebUI.delay(5)
+	
+	
+				
 
 	'---------------------------------------'
 	' Scroll Search Button into View        |' // SUperceeded
 	'---------------------------------------'
 	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Scroll_To_Search_Button'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-
+	
+	//WebUI.sendKeys(findTestObject(null), Keys.chord(Keys.ESCAPE))
+	
 	'---------------------------------------'
 	' Dispel New trades Header              |'  // TODO WTS
 	'---------------------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Dispel_Trade_Header'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Dispel_Trade_Header'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
+	//WebUI.sendKeys(findTestObject(null), Keys.chord(Keys.ESCAPE))
+	
 	'---------------------------------------'
 	' Hit Search Button                     |'
 	'---------------------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Hit_Search_Button'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Hit_Search_Button'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	//WebUI.waitForElementClickable(findTestObject('Object Repository/Mobile_Device/Search_Button'), 60)
+	//WebUI.click(findTestObject('Object Repository/Mobile_Device/Search_Button'))
 
+	robot.keyPress(KeyEvent.VK_TAB)
+	WebUI.delay(1)
+	robot.keyRelease(KeyEvent.VK_TAB)
+	WebUI.delay(1)
+	robot.keyPress(KeyEvent.VK_TAB)
+	WebUI.delay(1)
+	robot.keyRelease(KeyEvent.VK_TAB)
 	
+	WebUI.delay(1)
+	
+	robot.keyPress(KeyEvent.VK_ENTER)
+	WebUI.delay(1)
+	robot.keyRelease(KeyEvent.VK_ENTER)
+	
+	WebUI.delay(5)
 	'---------------------------------------'
 	' Verify Returned Page is as Expected   |'
 	'---------------------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Verification'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-//    WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeLocationVerification', GlobalVariable.row), false,
+	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Verification'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
+	WebUI.delay(5)
+    WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeLocationVerification', GlobalVariable.row), false,)*/
 //        FailureHandling.CONTINUE_ON_FAILURE)
 //    'Expected cantantenated text is Returned'
 		// WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeLocationVerification', GlobalVariable.row), FailureHandling.CONTINUE_ON_FAILURE)

@@ -90,8 +90,8 @@ if (GlobalVariable.Mobile_Flag == 'true') {
 'URL - Set from the ENVIRONMENT PROFILE '
 
 'OPEN BROWSER'
-WebUI.openBrowser(GlobalVariable.URL // 20/08/2019
-    )
+WebUI.openBrowser(GlobalVariable.URL) // 20/08/2019
+    
 
 //-----------------------------------------
 'MAXIMIZE BROWSER '
@@ -192,7 +192,7 @@ WebUI.waitForPageLoad(60)
 // WebUI.click(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF'))
 'WEBSITE VERSION DETECTION'
 
-if (WebUI.waitForElementVisible(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review'), 25)){
+if (WebUI.waitForElementVisible(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review'), 5)){
 	KeywordUtil.logInfo("Give Feedback STARTUP Process")
 	// Currently Give Feedback is the old Journey, when this upgrades then remove this <top> if statement and content
 }

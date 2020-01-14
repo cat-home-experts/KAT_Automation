@@ -20,7 +20,7 @@ import java.awt.event.KeyEvent as KeyEvent
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://www.preview.checkatrade.com/')
+WebUI.navigateToUrl('https://admin.preview.checkatrade.com/Consumers/')
 
 WebUI.waitForPageLoad(60)
 
@@ -28,26 +28,34 @@ WebUI.maximizeWindow()
 
 WebUI.waitForPageLoad(60)
 
-WebUI.click(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/button_Accept All'))
+WebUI.setText(findTestObject('Object Repository/WO_Consumer/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'), 
+    'davidHo')
 
-WebUI.click(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/div_Helping you find the right trade or ser_6c48f1'))
+WebUI.setEncryptedText(findTestObject('Object Repository/WO_Consumer/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'), 
+    '+TIXGDxHQ2djWoQBtb0BbQ==')
 
-Robot robot = new Robot();
+WebUI.click(findTestObject('Object Repository/WO_Consumer/Page_Checkatrade - Administration - Login/input_Remember me next time_LoginControlLog_86123a'))
 
-robot.keyPress(KeyEvent.VK_F12)
-robot.keyRelease(KeyEvent.VK_F12)
+WebUI.navigateToUrl('https://admin.preview.checkatrade.com/Login.aspx?ReturnUrl=%2fConsumers%2f')
 
-WebUI.delay(1)
+WebUI.setEncryptedText(findTestObject('Object Repository/WO_Consumer/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'), 
+    'AmDSJqbCZAGZ34/Q6uJgMA==')
 
-robot.keyPress(KeyEvent.VK_CONTROL)
-robot.keyPress(KeyEvent.VK_SHIFT)
-robot.keyPress(KeyEvent.VK_M)
+WebUI.click(findTestObject('Object Repository/WO_Consumer/Page_Checkatrade - Administration - Login/input_Remember me next time_LoginControlLog_86123a'))
 
-WebUI.delay(1)
+WebUI.click(findTestObject('Object Repository/WO_Consumer/Page_/a_Find Consumer'))
 
-robot.keyRelease(KeyEvent.VK_M)
-robot.keyRelease(KeyEvent.VK_SHIFT)
-robot.keyRelease(KeyEvent.VK_CONTROL)
+WebUI.setText(findTestObject('Object Repository/WO_Consumer/Page_/input_Forename_ctl00CP1ctlSearchtbForenames'), 'Gordon')
 
+WebUI.setText(findTestObject('Object Repository/WO_Consumer/Page_/input_Surname_ctl00CP1ctlSearchtbSurname'), 'Brown')
 
-// CTRL+P is now released
+WebUI.setText(findTestObject('Object Repository/WO_Consumer/Page_/input_County_ctl00CP1ctlSearchtbCounty'), 'West Sussex')
+
+WebUI.click(findTestObject('Object Repository/WO_Consumer/Page_/input_Clear_ctl00CP1ctlSearchbtnSearch'))
+
+WebUI.click(findTestObject('Object Repository/WO_Consumer/Page_/a_Feedback'))
+
+WebUI.click(findTestObject('Object Repository/WO_Consumer/Page_/a_Feedback'))
+
+WebUI.click(findTestObject('WO_Consumer/Page_/td_TopRow'))
+

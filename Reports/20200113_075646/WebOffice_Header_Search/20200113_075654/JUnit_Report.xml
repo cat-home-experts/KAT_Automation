@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="WebOffice_Header_Search" time="114.298" tests="1" failures="0" errors="0">
+   <testsuite name="WebOffice_Header_Search" tests="1" failures="0" errors="0" time="114.298" timestamp="2020-01-13 08:14:51" hostname="DavidHo - VETTEDSP36RF.check.local" id="Test Suites/WebOffice_Header_Search">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\davidho\\Katalon Studio\\Start\\Reports\\20200113_075646\\WebOffice_Header_Search\\20200113_075654"/>
+         <property name="logFiles" value="C:\\Users\\davidho\\Katalon Studio\\Start\\Reports\\20200113_075646\\WebOffice_Header_Search\\20200113_075654\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="DavidHo - VETTEDSP36RF.check.local"/>
+         <property name="os" value="Windows 10 32bit"/>
+         <property name="katalonVersion" value="7.1.2.1"/>
+         <property name="browser" value="Chrome 79.0.3945.117"/>
+         <property name="hostAddress" value="10.0.13.186"/>
+         <property name="sessionId" value="5c5813d4e2c4b0ed3d92afd72cbe5576"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Web_Office/WebOffice_Header_Search" time="113.943" classname="Test Cases/Web_Office/WebOffice_Header_Search" status="PASSED">
+         <system-out><![CDATA[2020-01-13 08:14:51 - [TEST_CASE][PASSED] - Test Cases/Web_Office/WebOffice_Header_Search: Test Cases/Web_Office/WebOffice_Header_Search
+
+2020-01-13 08:14:52 - [TEST_STEP][PASSED] - for ([row = 1, row <= findTestData("Mobile_Test_Data").getRowNumbers(), (internal.GlobalVariable.row++)]): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-01-13 08:14:53 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-01-13 08:14:53 - [TEST_STEP][PASSED] - " Web Office StartUp                  |": null
+
+2020-01-13 08:14:53 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-01-13 08:14:53 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp: Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp
+
+2020-01-13 08:14:53 - [TEST_STEP][PASSED] - if (URL == "https://www.preview.checkatrade.com/"): null
+
+2020-01-13 08:14:53 - [TEST_STEP][PASSED] - WebOfficeURL = "https://admin.preview.checkatrade.com/": null
+
+2020-01-13 08:14:53 - [TEST_STEP][PASSED] - if (URL == "https://www.checkatrade.com/"): null
+
+2020-01-13 08:14:53 - [TEST_STEP][PASSED] - "Set Function Area for "URL_Handler", URL Resolution": null
+
+2020-01-13 08:14:53 - [TEST_STEP][PASSED] - "Do Some Magic with URL(s) See the comments within URL Handler ": null
+
+2020-01-13 08:14:53 - [TEST_STEP][PASSED] - Username = "DavidHo": null
+
+2020-01-13 08:14:53 - [TEST_STEP][PASSED] - Password = "Check123": null
+
+2020-01-13 08:14:53 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-01-13 08:14:53 - [TEST_STEP][PASSED] - "WebOfficeURL - Set from the ENVIRONMENT PROFILE ": null
+
+2020-01-13 08:14:53 - [TEST_STEP][PASSED] - "OPEN BROWSER": null
+
+2020-01-13 08:14:53 - [TEST_STEP][PASSED] - "eg - https://admin.preview.checkatrade.com/  ": null
+
+2020-01-13 08:14:53 - [TEST_STEP][PASSED] - openBrowser(WebOfficeURL): Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-01-13 08:14:54 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-01-13 08:14:54 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2020-01-13 08:15:01 - [MESSAGE][PASSED] - Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-01-13 08:15:01 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-01-13 08:15:05 - [MESSAGE][PASSED] - Current window maximized
+
+2020-01-13 08:15:05 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button"), 25): Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-01-13 08:15:05 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-01-13 08:15:05 - [TEST_STEP][PASSED] - verifyTextPresent("Checkatrade Web Office", false): Text 'Checkatrade Web Office' is present on page 
+
+2020-01-13 08:15:05 - [MESSAGE][PASSED] - Text 'Checkatrade Web Office' is present on page 
+
+2020-01-13 08:15:05 - [TEST_STEP][PASSED] - verifyTextPresent("Access for staff use only", false): Text 'Access for staff use only' is present on page 
+
+2020-01-13 08:15:05 - [MESSAGE][PASSED] - Text 'Access for staff use only' is present on page 
+
+2020-01-13 08:15:05 - [TEST_STEP][PASSED] - verifyTextPresent("Forgotten password?", false): Text 'Forgotten password?' is present on page 
+
+2020-01-13 08:15:05 - [MESSAGE][PASSED] - Text 'Forgotten password?' is present on page 
+
+2020-01-13 08:15:05 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName"), Username): Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-01-13 08:15:06 - [MESSAGE][PASSED] - Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-01-13 08:15:06 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword"), Password): Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-01-13 08:15:06 - [MESSAGE][PASSED] - Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-01-13 08:15:06 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button")): Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-01-13 08:15:06 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-01-13 08:15:06 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-13 08:15:06 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-13 08:15:06 - [TEST_STEP][PASSED] - verifyTextPresent("Welcome " + Username, false): Text 'Welcome DavidHo' is present on page 
+
+2020-01-13 08:15:06 - [MESSAGE][PASSED] - Text 'Welcome DavidHo' is present on page 
+
+2020-01-13 08:15:06 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-01-13 08:15:06 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-01-13 08:15:06 - [TEST_STEP][PASSED] - " Home Page - Search                   |": null
+
+2020-01-13 08:15:06 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Home_Page_Search"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search' successfully
+
+2020-01-13 08:15:06 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search: Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search
+
+2020-01-13 08:15:07 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice_Home_page/input_Search_Criteria"), findTestData("searchTestData").getValue("Search_Selector", row)): Text '07818 446596' is set on object 'Object Repository/WebOffice_Home_page/input_Search_Criteria'
+
+2020-01-13 08:15:07 - [MESSAGE][PASSED] - Text '07818 446596' is set on object 'Object Repository/WebOffice_Home_page/input_Search_Criteria'
+
+2020-01-13 08:15:07 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-01-13 08:15:08 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-01-13 08:15:08 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice_Home_page/popout_Search_Item")): Object: 'Object Repository/WebOffice_Home_page/popout_Search_Item' is clicked on
+
+2020-01-13 08:15:21 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/popout_Search_Item' is clicked on
+
+2020-01-13 08:15:21 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-13 08:15:21 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-13 08:15:21 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search' successfully
+
+2020-01-13 08:15:21 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-01-13 08:15:21 - [TEST_STEP][PASSED] - " Web Office - Verify Returned Record  |": null
+
+2020-01-13 08:15:21 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Verification/Trader_Record"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record' successfully
+
+2020-01-13 08:15:21 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record: Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record
+
+2020-01-13 08:15:22 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("tradeName", row), false, CONTINUE_ON_FAILURE): Text 'Foster Tree Care' is present on page 
+
+2020-01-13 08:15:22 - [MESSAGE][PASSED] - Text 'Foster Tree Care' is present on page 
+
+2020-01-13 08:15:22 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("primeContact", row), false, CONTINUE_ON_FAILURE): Text 'Jim Foster' is present on page 
+
+2020-01-13 08:15:22 - [MESSAGE][PASSED] - Text 'Jim Foster' is present on page 
+
+2020-01-13 08:15:22 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("address", row), false, CONTINUE_ON_FAILURE): Text '70 Worthing Avenue, Gosport, Hampshire, PO12 4DH' is present on page 
+
+2020-01-13 08:15:23 - [MESSAGE][PASSED] - Text '70 Worthing Avenue, Gosport, Hampshire, PO12 4DH' is present on page 
+
+2020-01-13 08:15:23 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("mobile", row), false, CONTINUE_ON_FAILURE): Text '07818 446596' is present on page 
+
+2020-01-13 08:15:23 - [MESSAGE][PASSED] - Text '07818 446596' is present on page 
+
+2020-01-13 08:15:23 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("contact", row), false, CONTINUE_ON_FAILURE): Text '023 9258 3018' is present on page 
+
+2020-01-13 08:15:23 - [MESSAGE][PASSED] - Text '023 9258 3018' is present on page 
+
+2020-01-13 08:15:23 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("email", row), false, CONTINUE_ON_FAILURE): Text 'fostertreecare@tiscali.co.uk' is present on page 
+
+2020-01-13 08:15:24 - [MESSAGE][PASSED] - Text 'fostertreecare@tiscali.co.uk' is present on page 
+
+2020-01-13 08:15:24 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("dob", row), false, CONTINUE_ON_FAILURE): Text 'DoB: 31/01/1976' is present on page 
+
+2020-01-13 08:15:24 - [MESSAGE][PASSED] - Text 'DoB: 31/01/1976' is present on page 
+
+2020-01-13 08:15:24 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("catID", row), false, CONTINUE_ON_FAILURE): Text 'FOS002' is present on page 
+
+2020-01-13 08:15:24 - [MESSAGE][PASSED] - Text 'FOS002' is present on page 
+
+2020-01-13 08:15:24 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record' successfully
+
+2020-01-13 08:15:24 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-01-13 08:15:24 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2020-01-13 08:15:24 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-01-13 08:15:24 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2020-01-13 08:15:25 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-01-13 08:15:26 - [MESSAGE][PASSED] - Browser is closed
+
+2020-01-13 08:15:26 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-01-13 08:15:26 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-01-13 08:15:26 - [TEST_STEP][PASSED] - " Web Office StartUp                  |": null
+
+2020-01-13 08:15:26 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-01-13 08:15:26 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp: Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp
+
+2020-01-13 08:15:26 - [TEST_STEP][PASSED] - if (URL == "https://www.preview.checkatrade.com/"): null
+
+2020-01-13 08:15:26 - [TEST_STEP][PASSED] - WebOfficeURL = "https://admin.preview.checkatrade.com/": null
+
+2020-01-13 08:15:26 - [TEST_STEP][PASSED] - if (URL == "https://www.checkatrade.com/"): null
+
+2020-01-13 08:15:26 - [TEST_STEP][PASSED] - "Set Function Area for "URL_Handler", URL Resolution": null
+
+2020-01-13 08:15:26 - [TEST_STEP][PASSED] - "Do Some Magic with URL(s) See the comments within URL Handler ": null
+
+2020-01-13 08:15:26 - [TEST_STEP][PASSED] - Username = "DavidHo": null
+
+2020-01-13 08:15:26 - [TEST_STEP][PASSED] - Password = "Check123": null
+
+2020-01-13 08:15:26 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-01-13 08:15:26 - [TEST_STEP][PASSED] - "WebOfficeURL - Set from the ENVIRONMENT PROFILE ": null
+
+2020-01-13 08:15:26 - [TEST_STEP][PASSED] - "OPEN BROWSER": null
+
+2020-01-13 08:15:26 - [TEST_STEP][PASSED] - "eg - https://admin.preview.checkatrade.com/  ": null
+
+2020-01-13 08:15:26 - [TEST_STEP][PASSED] - openBrowser(WebOfficeURL): Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-01-13 08:15:26 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-01-13 08:15:32 - [MESSAGE][PASSED] - Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-01-13 08:15:32 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-01-13 08:15:36 - [MESSAGE][PASSED] - Current window maximized
+
+2020-01-13 08:15:36 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button"), 25): Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-01-13 08:15:36 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-01-13 08:15:36 - [TEST_STEP][PASSED] - verifyTextPresent("Checkatrade Web Office", false): Text 'Checkatrade Web Office' is present on page 
+
+2020-01-13 08:15:36 - [MESSAGE][PASSED] - Text 'Checkatrade Web Office' is present on page 
+
+2020-01-13 08:15:36 - [TEST_STEP][PASSED] - verifyTextPresent("Access for staff use only", false): Text 'Access for staff use only' is present on page 
+
+2020-01-13 08:15:36 - [MESSAGE][PASSED] - Text 'Access for staff use only' is present on page 
+
+2020-01-13 08:15:36 - [TEST_STEP][PASSED] - verifyTextPresent("Forgotten password?", false): Text 'Forgotten password?' is present on page 
+
+2020-01-13 08:15:36 - [MESSAGE][PASSED] - Text 'Forgotten password?' is present on page 
+
+2020-01-13 08:15:36 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName"), Username): Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-01-13 08:15:36 - [MESSAGE][PASSED] - Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-01-13 08:15:36 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword"), Password): Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-01-13 08:15:36 - [MESSAGE][PASSED] - Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-01-13 08:15:36 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button")): Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-01-13 08:15:37 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-01-13 08:15:37 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-13 08:15:37 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-13 08:15:37 - [TEST_STEP][PASSED] - verifyTextPresent("Welcome " + Username, false): Text 'Welcome DavidHo' is present on page 
+
+2020-01-13 08:15:37 - [MESSAGE][PASSED] - Text 'Welcome DavidHo' is present on page 
+
+2020-01-13 08:15:37 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-01-13 08:15:37 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-01-13 08:15:37 - [TEST_STEP][PASSED] - " Home Page - Search                   |": null
+
+2020-01-13 08:15:37 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Home_Page_Search"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search' successfully
+
+2020-01-13 08:15:37 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search: Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search
+
+2020-01-13 08:15:37 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice_Home_page/input_Search_Criteria"), findTestData("searchTestData").getValue("Search_Selector", row)): Text 'James Burton' is set on object 'Object Repository/WebOffice_Home_page/input_Search_Criteria'
+
+2020-01-13 08:15:37 - [MESSAGE][PASSED] - Text 'James Burton' is set on object 'Object Repository/WebOffice_Home_page/input_Search_Criteria'
+
+2020-01-13 08:15:37 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-01-13 08:15:38 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-01-13 08:15:38 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice_Home_page/popout_Search_Item")): Object: 'Object Repository/WebOffice_Home_page/popout_Search_Item' is clicked on
+
+2020-01-13 08:15:41 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/popout_Search_Item' is clicked on
+
+2020-01-13 08:15:41 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-13 08:15:41 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-13 08:15:41 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search' successfully
+
+2020-01-13 08:15:41 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-01-13 08:15:41 - [TEST_STEP][PASSED] - " Web Office - Verify Returned Record  |": null
+
+2020-01-13 08:15:41 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Verification/Trader_Record"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record' successfully
+
+2020-01-13 08:15:41 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record: Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record
+
+2020-01-13 08:15:41 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("tradeName", row), false, CONTINUE_ON_FAILURE): Text 'Burton Electrical Services' is present on page 
+
+2020-01-13 08:15:41 - [MESSAGE][PASSED] - Text 'Burton Electrical Services' is present on page 
+
+2020-01-13 08:15:41 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("primeContact", row), false, CONTINUE_ON_FAILURE): Text 'James Burton' is present on page 
+
+2020-01-13 08:15:41 - [MESSAGE][PASSED] - Text 'James Burton' is present on page 
+
+2020-01-13 08:15:41 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("address", row), false, CONTINUE_ON_FAILURE): Text 'Unit 4, Dukeries Court, Hallcroft Industrial Estate, Retford, Nottinghamshire, DN22 7PX' is present on page 
+
+2020-01-13 08:15:42 - [MESSAGE][PASSED] - Text 'Unit 4, Dukeries Court, Hallcroft Industrial Estate, Retford, Nottinghamshire, DN22 7PX' is present on page 
+
+2020-01-13 08:15:42 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("mobile", row), false, CONTINUE_ON_FAILURE): Text '07712 401461' is present on page 
+
+2020-01-13 08:15:42 - [MESSAGE][PASSED] - Text '07712 401461' is present on page 
+
+2020-01-13 08:15:42 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("contact", row), false, CONTINUE_ON_FAILURE): Text '01777 228982' is present on page 
+
+2020-01-13 08:15:42 - [MESSAGE][PASSED] - Text '01777 228982' is present on page 
+
+2020-01-13 08:15:42 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("email", row), false, CONTINUE_ON_FAILURE): Text 'info@burtonelectricalservices.net' is present on page 
+
+2020-01-13 08:15:43 - [MESSAGE][PASSED] - Text 'info@burtonelectricalservices.net' is present on page 
+
+2020-01-13 08:15:43 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("dob", row), false, CONTINUE_ON_FAILURE): Text 'DoB: 15/07/1989' is present on page 
+
+2020-01-13 08:15:43 - [MESSAGE][PASSED] - Text 'DoB: 15/07/1989' is present on page 
+
+2020-01-13 08:15:43 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("catID", row), false, CONTINUE_ON_FAILURE): Text '402921' is present on page 
+
+2020-01-13 08:15:43 - [MESSAGE][PASSED] - Text '402921' is present on page 
+
+2020-01-13 08:15:43 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record' successfully
+
+2020-01-13 08:15:43 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-01-13 08:15:43 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2020-01-13 08:15:43 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-01-13 08:15:43 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2020-01-13 08:15:43 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-01-13 08:15:44 - [MESSAGE][PASSED] - Browser is closed
+
+2020-01-13 08:15:44 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-01-13 08:15:44 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-01-13 08:15:44 - [TEST_STEP][PASSED] - " Web Office StartUp                  |": null
+
+2020-01-13 08:15:44 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-01-13 08:15:44 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp: Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp
+
+2020-01-13 08:15:44 - [TEST_STEP][PASSED] - if (URL == "https://www.preview.checkatrade.com/"): null
+
+2020-01-13 08:15:44 - [TEST_STEP][PASSED] - WebOfficeURL = "https://admin.preview.checkatrade.com/": null
+
+2020-01-13 08:15:44 - [TEST_STEP][PASSED] - if (URL == "https://www.checkatrade.com/"): null
+
+2020-01-13 08:15:44 - [TEST_STEP][PASSED] - "Set Function Area for "URL_Handler", URL Resolution": null
+
+2020-01-13 08:15:44 - [TEST_STEP][PASSED] - "Do Some Magic with URL(s) See the comments within URL Handler ": null
+
+2020-01-13 08:15:44 - [TEST_STEP][PASSED] - Username = "DavidHo": null
+
+2020-01-13 08:15:44 - [TEST_STEP][PASSED] - Password = "Check123": null
+
+2020-01-13 08:15:44 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-01-13 08:15:44 - [TEST_STEP][PASSED] - "WebOfficeURL - Set from the ENVIRONMENT PROFILE ": null
+
+2020-01-13 08:15:44 - [TEST_STEP][PASSED] - "OPEN BROWSER": null
+
+2020-01-13 08:15:44 - [TEST_STEP][PASSED] - "eg - https://admin.preview.checkatrade.com/  ": null
+
+2020-01-13 08:15:44 - [TEST_STEP][PASSED] - openBrowser(WebOfficeURL): Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-01-13 08:15:44 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-01-13 08:15:50 - [MESSAGE][PASSED] - Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-01-13 08:15:50 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-01-13 08:15:54 - [MESSAGE][PASSED] - Current window maximized
+
+2020-01-13 08:15:54 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button"), 25): Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-01-13 08:15:54 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-01-13 08:15:54 - [TEST_STEP][PASSED] - verifyTextPresent("Checkatrade Web Office", false): Text 'Checkatrade Web Office' is present on page 
+
+2020-01-13 08:15:54 - [MESSAGE][PASSED] - Text 'Checkatrade Web Office' is present on page 
+
+2020-01-13 08:15:54 - [TEST_STEP][PASSED] - verifyTextPresent("Access for staff use only", false): Text 'Access for staff use only' is present on page 
+
+2020-01-13 08:15:54 - [MESSAGE][PASSED] - Text 'Access for staff use only' is present on page 
+
+2020-01-13 08:15:54 - [TEST_STEP][PASSED] - verifyTextPresent("Forgotten password?", false): Text 'Forgotten password?' is present on page 
+
+2020-01-13 08:15:54 - [MESSAGE][PASSED] - Text 'Forgotten password?' is present on page 
+
+2020-01-13 08:15:54 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName"), Username): Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-01-13 08:15:55 - [MESSAGE][PASSED] - Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-01-13 08:15:55 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword"), Password): Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-01-13 08:15:55 - [MESSAGE][PASSED] - Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-01-13 08:15:55 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button")): Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-01-13 08:15:56 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-01-13 08:15:56 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-13 08:15:56 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-13 08:15:56 - [TEST_STEP][PASSED] - verifyTextPresent("Welcome " + Username, false): Text 'Welcome DavidHo' is present on page 
+
+2020-01-13 08:15:56 - [MESSAGE][PASSED] - Text 'Welcome DavidHo' is present on page 
+
+2020-01-13 08:15:56 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-01-13 08:15:56 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-01-13 08:15:56 - [TEST_STEP][PASSED] - " Home Page - Search                   |": null
+
+2020-01-13 08:15:56 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Home_Page_Search"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search' successfully
+
+2020-01-13 08:15:56 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search: Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search
+
+2020-01-13 08:15:56 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice_Home_page/input_Search_Criteria"), findTestData("searchTestData").getValue("Search_Selector", row)): Text 'Planvale Services' is set on object 'Object Repository/WebOffice_Home_page/input_Search_Criteria'
+
+2020-01-13 08:15:56 - [MESSAGE][PASSED] - Text 'Planvale Services' is set on object 'Object Repository/WebOffice_Home_page/input_Search_Criteria'
+
+2020-01-13 08:15:56 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-01-13 08:15:57 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-01-13 08:15:57 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice_Home_page/popout_Search_Item")): Object: 'Object Repository/WebOffice_Home_page/popout_Search_Item' is clicked on
+
+2020-01-13 08:16:00 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/popout_Search_Item' is clicked on
+
+2020-01-13 08:16:00 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-13 08:16:00 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-13 08:16:00 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search' successfully
+
+2020-01-13 08:16:00 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-01-13 08:16:00 - [TEST_STEP][PASSED] - " Web Office - Verify Returned Record  |": null
+
+2020-01-13 08:16:00 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Verification/Trader_Record"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record' successfully
+
+2020-01-13 08:16:00 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record: Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record
+
+2020-01-13 08:16:00 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("tradeName", row), false, CONTINUE_ON_FAILURE): Text 'Planvale Services' is present on page 
+
+2020-01-13 08:16:00 - [MESSAGE][PASSED] - Text 'Planvale Services' is present on page 
+
+2020-01-13 08:16:00 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("primeContact", row), false, CONTINUE_ON_FAILURE): Text 'Andrew Whitaker' is present on page 
+
+2020-01-13 08:16:00 - [MESSAGE][PASSED] - Text 'Andrew Whitaker' is present on page 
+
+2020-01-13 08:16:00 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("address", row), false, CONTINUE_ON_FAILURE): Text '66 Tony Humphries Road, Banbury, Oxfordshire, OX16 0FF' is present on page 
+
+2020-01-13 08:16:01 - [MESSAGE][PASSED] - Text '66 Tony Humphries Road, Banbury, Oxfordshire, OX16 0FF' is present on page 
+
+2020-01-13 08:16:01 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("mobile", row), false, CONTINUE_ON_FAILURE): Text '07960 633438' is present on page 
+
+2020-01-13 08:16:01 - [MESSAGE][PASSED] - Text '07960 633438' is present on page 
+
+2020-01-13 08:16:01 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("contact", row), false, CONTINUE_ON_FAILURE): Text '020 3686 0529' is present on page 
+
+2020-01-13 08:16:01 - [MESSAGE][PASSED] - Text '020 3686 0529' is present on page 
+
+2020-01-13 08:16:01 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("email", row), false, CONTINUE_ON_FAILURE): Text 'andrewwhitaker2009@hotmail.co.uk' is present on page 
+
+2020-01-13 08:16:01 - [MESSAGE][PASSED] - Text 'andrewwhitaker2009@hotmail.co.uk' is present on page 
+
+2020-01-13 08:16:01 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("dob", row), false, CONTINUE_ON_FAILURE): Text 'DoB: 25/02/1974' is present on page 
+
+2020-01-13 08:16:02 - [MESSAGE][PASSED] - Text 'DoB: 25/02/1974' is present on page 
+
+2020-01-13 08:16:02 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("catID", row), false, CONTINUE_ON_FAILURE): Text '308682' is present on page 
+
+2020-01-13 08:16:02 - [MESSAGE][PASSED] - Text '308682' is present on page 
+
+2020-01-13 08:16:02 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record' successfully
+
+2020-01-13 08:16:02 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-01-13 08:16:02 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2020-01-13 08:16:02 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-01-13 08:16:02 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2020-01-13 08:16:02 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-01-13 08:16:03 - [MESSAGE][PASSED] - Browser is closed
+
+2020-01-13 08:16:03 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-01-13 08:16:03 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-01-13 08:16:03 - [TEST_STEP][PASSED] - " Web Office StartUp                  |": null
+
+2020-01-13 08:16:03 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-01-13 08:16:03 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp: Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp
+
+2020-01-13 08:16:03 - [TEST_STEP][PASSED] - if (URL == "https://www.preview.checkatrade.com/"): null
+
+2020-01-13 08:16:03 - [TEST_STEP][PASSED] - WebOfficeURL = "https://admin.preview.checkatrade.com/": null
+
+2020-01-13 08:16:03 - [TEST_STEP][PASSED] - if (URL == "https://www.checkatrade.com/"): null
+
+2020-01-13 08:16:03 - [TEST_STEP][PASSED] - "Set Function Area for "URL_Handler", URL Resolution": null
+
+2020-01-13 08:16:03 - [TEST_STEP][PASSED] - "Do Some Magic with URL(s) See the comments within URL Handler ": null
+
+2020-01-13 08:16:03 - [TEST_STEP][PASSED] - Username = "DavidHo": null
+
+2020-01-13 08:16:03 - [TEST_STEP][PASSED] - Password = "Check123": null
+
+2020-01-13 08:16:03 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-01-13 08:16:03 - [TEST_STEP][PASSED] - "WebOfficeURL - Set from the ENVIRONMENT PROFILE ": null
+
+2020-01-13 08:16:03 - [TEST_STEP][PASSED] - "OPEN BROWSER": null
+
+2020-01-13 08:16:03 - [TEST_STEP][PASSED] - "eg - https://admin.preview.checkatrade.com/  ": null
+
+2020-01-13 08:16:03 - [TEST_STEP][PASSED] - openBrowser(WebOfficeURL): Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-01-13 08:16:03 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-01-13 08:16:09 - [MESSAGE][PASSED] - Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-01-13 08:16:09 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-01-13 08:16:13 - [MESSAGE][PASSED] - Current window maximized
+
+2020-01-13 08:16:13 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button"), 25): Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-01-13 08:16:13 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-01-13 08:16:13 - [TEST_STEP][PASSED] - verifyTextPresent("Checkatrade Web Office", false): Text 'Checkatrade Web Office' is present on page 
+
+2020-01-13 08:16:13 - [MESSAGE][PASSED] - Text 'Checkatrade Web Office' is present on page 
+
+2020-01-13 08:16:13 - [TEST_STEP][PASSED] - verifyTextPresent("Access for staff use only", false): Text 'Access for staff use only' is present on page 
+
+2020-01-13 08:16:13 - [MESSAGE][PASSED] - Text 'Access for staff use only' is present on page 
+
+2020-01-13 08:16:13 - [TEST_STEP][PASSED] - verifyTextPresent("Forgotten password?", false): Text 'Forgotten password?' is present on page 
+
+2020-01-13 08:16:13 - [MESSAGE][PASSED] - Text 'Forgotten password?' is present on page 
+
+2020-01-13 08:16:13 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName"), Username): Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-01-13 08:16:14 - [MESSAGE][PASSED] - Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-01-13 08:16:14 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword"), Password): Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-01-13 08:16:14 - [MESSAGE][PASSED] - Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-01-13 08:16:14 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button")): Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-01-13 08:16:14 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-01-13 08:16:14 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-13 08:16:14 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-13 08:16:14 - [TEST_STEP][PASSED] - verifyTextPresent("Welcome " + Username, false): Text 'Welcome DavidHo' is present on page 
+
+2020-01-13 08:16:15 - [MESSAGE][PASSED] - Text 'Welcome DavidHo' is present on page 
+
+2020-01-13 08:16:15 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-01-13 08:16:15 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-01-13 08:16:15 - [TEST_STEP][PASSED] - " Home Page - Search                   |": null
+
+2020-01-13 08:16:15 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Home_Page_Search"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search' successfully
+
+2020-01-13 08:16:15 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search: Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search
+
+2020-01-13 08:16:15 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice_Home_page/input_Search_Criteria"), findTestData("searchTestData").getValue("Search_Selector", row)): Text '381198' is set on object 'Object Repository/WebOffice_Home_page/input_Search_Criteria'
+
+2020-01-13 08:16:15 - [MESSAGE][PASSED] - Text '381198' is set on object 'Object Repository/WebOffice_Home_page/input_Search_Criteria'
+
+2020-01-13 08:16:15 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-01-13 08:16:16 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-01-13 08:16:16 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice_Home_page/popout_Search_Item")): Object: 'Object Repository/WebOffice_Home_page/popout_Search_Item' is clicked on
+
+2020-01-13 08:16:23 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/popout_Search_Item' is clicked on
+
+2020-01-13 08:16:23 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-13 08:16:23 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-13 08:16:23 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search' successfully
+
+2020-01-13 08:16:23 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-01-13 08:16:23 - [TEST_STEP][PASSED] - " Web Office - Verify Returned Record  |": null
+
+2020-01-13 08:16:23 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Verification/Trader_Record"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record' successfully
+
+2020-01-13 08:16:24 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record: Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record
+
+2020-01-13 08:16:24 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("tradeName", row), false, CONTINUE_ON_FAILURE): Text 'Glazing Solutions' is present on page 
+
+2020-01-13 08:16:24 - [MESSAGE][PASSED] - Text 'Glazing Solutions' is present on page 
+
+2020-01-13 08:16:24 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("primeContact", row), false, CONTINUE_ON_FAILURE): Text 'Mr Scott Heyburn' is present on page 
+
+2020-01-13 08:16:24 - [MESSAGE][PASSED] - Text 'Mr Scott Heyburn' is present on page 
+
+2020-01-13 08:16:24 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("address", row), false, CONTINUE_ON_FAILURE): Text '19 St. Peters Close, Bognor Regis, PO21 5QA' is present on page 
+
+2020-01-13 08:16:24 - [MESSAGE][PASSED] - Text '19 St. Peters Close, Bognor Regis, PO21 5QA' is present on page 
+
+2020-01-13 08:16:24 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("mobile", row), false, CONTINUE_ON_FAILURE): Text '07739 534957' is present on page 
+
+2020-01-13 08:16:25 - [MESSAGE][PASSED] - Text '07739 534957' is present on page 
+
+2020-01-13 08:16:25 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("contact", row), false, CONTINUE_ON_FAILURE): Text '' is present on page 
+
+2020-01-13 08:16:25 - [MESSAGE][PASSED] - Text '' is present on page 
+
+2020-01-13 08:16:25 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("email", row), false, CONTINUE_ON_FAILURE): Text 'trpselsey@gmail.com' is present on page 
+
+2020-01-13 08:16:25 - [MESSAGE][PASSED] - Text 'trpselsey@gmail.com' is present on page 
+
+2020-01-13 08:16:25 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("dob", row), false, CONTINUE_ON_FAILURE): Text 'DoB: 06/04/1970' is present on page 
+
+2020-01-13 08:16:25 - [MESSAGE][PASSED] - Text 'DoB: 06/04/1970' is present on page 
+
+2020-01-13 08:16:25 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("catID", row), false, CONTINUE_ON_FAILURE): Text '381198' is present on page 
+
+2020-01-13 08:16:26 - [MESSAGE][PASSED] - Text '381198' is present on page 
+
+2020-01-13 08:16:26 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record' successfully
+
+2020-01-13 08:16:26 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-01-13 08:16:26 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2020-01-13 08:16:26 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-01-13 08:16:26 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2020-01-13 08:16:26 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-01-13 08:16:26 - [MESSAGE][PASSED] - Browser is closed
+
+2020-01-13 08:16:26 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-01-13 08:16:26 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-01-13 08:16:26 - [TEST_STEP][PASSED] - " Web Office StartUp                  |": null
+
+2020-01-13 08:16:26 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-01-13 08:16:26 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp: Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp
+
+2020-01-13 08:16:26 - [TEST_STEP][PASSED] - if (URL == "https://www.preview.checkatrade.com/"): null
+
+2020-01-13 08:16:26 - [TEST_STEP][PASSED] - WebOfficeURL = "https://admin.preview.checkatrade.com/": null
+
+2020-01-13 08:16:26 - [TEST_STEP][PASSED] - if (URL == "https://www.checkatrade.com/"): null
+
+2020-01-13 08:16:26 - [TEST_STEP][PASSED] - "Set Function Area for "URL_Handler", URL Resolution": null
+
+2020-01-13 08:16:26 - [TEST_STEP][PASSED] - "Do Some Magic with URL(s) See the comments within URL Handler ": null
+
+2020-01-13 08:16:26 - [TEST_STEP][PASSED] - Username = "DavidHo": null
+
+2020-01-13 08:16:26 - [TEST_STEP][PASSED] - Password = "Check123": null
+
+2020-01-13 08:16:26 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-01-13 08:16:27 - [TEST_STEP][PASSED] - "WebOfficeURL - Set from the ENVIRONMENT PROFILE ": null
+
+2020-01-13 08:16:27 - [TEST_STEP][PASSED] - "OPEN BROWSER": null
+
+2020-01-13 08:16:27 - [TEST_STEP][PASSED] - "eg - https://admin.preview.checkatrade.com/  ": null
+
+2020-01-13 08:16:27 - [TEST_STEP][PASSED] - openBrowser(WebOfficeURL): Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-01-13 08:16:27 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-01-13 08:16:33 - [MESSAGE][PASSED] - Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-01-13 08:16:33 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-01-13 08:16:37 - [MESSAGE][PASSED] - Current window maximized
+
+2020-01-13 08:16:37 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button"), 25): Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-01-13 08:16:37 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-01-13 08:16:37 - [TEST_STEP][PASSED] - verifyTextPresent("Checkatrade Web Office", false): Text 'Checkatrade Web Office' is present on page 
+
+2020-01-13 08:16:37 - [MESSAGE][PASSED] - Text 'Checkatrade Web Office' is present on page 
+
+2020-01-13 08:16:37 - [TEST_STEP][PASSED] - verifyTextPresent("Access for staff use only", false): Text 'Access for staff use only' is present on page 
+
+2020-01-13 08:16:37 - [MESSAGE][PASSED] - Text 'Access for staff use only' is present on page 
+
+2020-01-13 08:16:37 - [TEST_STEP][PASSED] - verifyTextPresent("Forgotten password?", false): Text 'Forgotten password?' is present on page 
+
+2020-01-13 08:16:37 - [MESSAGE][PASSED] - Text 'Forgotten password?' is present on page 
+
+2020-01-13 08:16:37 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName"), Username): Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-01-13 08:16:37 - [MESSAGE][PASSED] - Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-01-13 08:16:37 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword"), Password): Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-01-13 08:16:37 - [MESSAGE][PASSED] - Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-01-13 08:16:37 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button")): Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-01-13 08:16:38 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-01-13 08:16:38 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-13 08:16:38 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-13 08:16:38 - [TEST_STEP][PASSED] - verifyTextPresent("Welcome " + Username, false): Text 'Welcome DavidHo' is present on page 
+
+2020-01-13 08:16:38 - [MESSAGE][PASSED] - Text 'Welcome DavidHo' is present on page 
+
+2020-01-13 08:16:38 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-01-13 08:16:38 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-01-13 08:16:38 - [TEST_STEP][PASSED] - " Home Page - Search                   |": null
+
+2020-01-13 08:16:38 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Home_Page_Search"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search' successfully
+
+2020-01-13 08:16:38 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search: Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search
+
+2020-01-13 08:16:38 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice_Home_page/input_Search_Criteria"), findTestData("searchTestData").getValue("Search_Selector", row)): Text '07778 777641' is set on object 'Object Repository/WebOffice_Home_page/input_Search_Criteria'
+
+2020-01-13 08:16:39 - [MESSAGE][PASSED] - Text '07778 777641' is set on object 'Object Repository/WebOffice_Home_page/input_Search_Criteria'
+
+2020-01-13 08:16:39 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-01-13 08:16:40 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-01-13 08:16:40 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice_Home_page/popout_Search_Item")): Object: 'Object Repository/WebOffice_Home_page/popout_Search_Item' is clicked on
+
+2020-01-13 08:16:42 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/popout_Search_Item' is clicked on
+
+2020-01-13 08:16:42 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-13 08:16:42 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-13 08:16:42 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search' successfully
+
+2020-01-13 08:16:42 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-01-13 08:16:42 - [TEST_STEP][PASSED] - " Web Office - Verify Returned Record  |": null
+
+2020-01-13 08:16:42 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Verification/Trader_Record"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record' successfully
+
+2020-01-13 08:16:42 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record: Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record
+
+2020-01-13 08:16:42 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("tradeName", row), false, CONTINUE_ON_FAILURE): Text 'Autopics Garage Services' is present on page 
+
+2020-01-13 08:16:43 - [MESSAGE][PASSED] - Text 'Autopics Garage Services' is present on page 
+
+2020-01-13 08:16:43 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("primeContact", row), false, CONTINUE_ON_FAILURE): Text 'David Clarke & Lisamarie Holt' is present on page 
+
+2020-01-13 08:16:43 - [MESSAGE][PASSED] - Text 'David Clarke & Lisamarie Holt' is present on page 
+
+2020-01-13 08:16:43 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("address", row), false, CONTINUE_ON_FAILURE): Text 'Unit 15, Brookside Business Park, Brookside Avenue, Rustington, West Sussex, BN16 3LP' is present on page 
+
+2020-01-13 08:16:43 - [MESSAGE][PASSED] - Text 'Unit 15, Brookside Business Park, Brookside Avenue, Rustington, West Sussex, BN16 3LP' is present on page 
+
+2020-01-13 08:16:43 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("mobile", row), false, CONTINUE_ON_FAILURE): Text '07778 777641' is present on page 
+
+2020-01-13 08:16:43 - [MESSAGE][PASSED] - Text '07778 777641' is present on page 
+
+2020-01-13 08:16:43 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("contact", row), false, CONTINUE_ON_FAILURE): Text '01903 856016' is present on page 
+
+2020-01-13 08:16:44 - [MESSAGE][PASSED] - Text '01903 856016' is present on page 
+
+2020-01-13 08:16:44 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("email", row), false, CONTINUE_ON_FAILURE): Text 'sales@autopics.co.uk' is present on page 
+
+2020-01-13 08:16:44 - [MESSAGE][PASSED] - Text 'sales@autopics.co.uk' is present on page 
+
+2020-01-13 08:16:44 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("dob", row), false, CONTINUE_ON_FAILURE): Text 'DoB: 02/01/1965' is present on page 
+
+2020-01-13 08:16:44 - [MESSAGE][PASSED] - Text 'DoB: 02/01/1965' is present on page 
+
+2020-01-13 08:16:44 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("catID", row), false, CONTINUE_ON_FAILURE): Text '230761' is present on page 
+
+2020-01-13 08:16:44 - [MESSAGE][PASSED] - Text '230761' is present on page 
+
+2020-01-13 08:16:44 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record' successfully
+
+2020-01-13 08:16:44 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-01-13 08:16:44 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2020-01-13 08:16:44 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-01-13 08:16:44 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2020-01-13 08:16:44 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-01-13 08:16:45 - [MESSAGE][PASSED] - Browser is closed
+
+2020-01-13 08:16:45 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-01-13 08:14:51 - [TEST_SUITE][PASSED] - WebOffice_Header_Search: Test Cases/Web_Office/WebOffice_Header_Search]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
