@@ -15,6 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.util.KeywordUtil
 
 //-----------------------
 // TEST HISTORY HEADER - |
@@ -27,7 +28,7 @@ import org.openqa.selenium.Keys as Keys
 //---------------------------------------------------------------------------------------------------------------
 // Set Search Items - WO Consumer Search      |   29/11/2019    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
-// Implementation after debug                 |   13/01/2020    |        DH        |                             |
+// Implementation after debug                 |   13/01/2020    |        DH        | iFrame issues for all of WO |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -51,41 +52,74 @@ import org.openqa.selenium.Keys as Keys
 
 // WebUI.setText(findTestObject('Page_/input_Surname_ctl00CP1ctlSearchtbSurname'), 'Smith')
 
-'----------------------------------------'
-'Initial Table View (Populated or Not    |'
-'----------------------------------------'
-
 '--------'
 'Search  |'
 '--------'
 WebUI.waitForPageLoad(60)
 WebUI.waitForElementClickable(findTestObject('Object Repository/WO_Consumer/Page_/input_Clear_ctl00CP1ctlSearchbtnSearch'), 60)
 WebUI.click(findTestObject('Object Repository/WO_Consumer/Page_/input_Clear_ctl00CP1ctlSearchbtnSearch'))
+WebUI.delay(5)
 '--------'
 'Synch   |'
 '--------'
-WebUI.waitForPageLoad(60)
+WebUI.waitForPageLoad(120)
 WebUI.waitForElementClickable(findTestObject('Object Repository/WO_Consumer/Page_/a_Feedback'), 60)
-'--------'
-'Sort    |'
-'--------'
-WebUI.click(findTestObject('Object Repository/WO_Consumer/Page_/a_Feedback'))
-WebUI.waitForElementClickable(findTestObject('Object Repository/WO_Consumer/Page_/a_Feedback'), 60)
-WebUI.waitForPageLoad(60)
-'--------'
-'Sort    |'
-'--------'
-WebUI.click(findTestObject('Object Repository/WO_Consumer/Page_/a_Feedback'))
-WebUI.waitForElementClickable(findTestObject('Object Repository/WO_Consumer/Page_/a_Feedback'), 60)
-WebUI.waitForPageLoad(60)
-'--------'
-'Select  |'
-'--------'
-WebUI.waitForElementClickable(findTestObject('WO_Consumer/Page_/td_TopRow'), 60)
-WebUI.click(findTestObject('WO_Consumer/Page_/td_TopRow'))
-//WebUI.click(findTestObject('Page_/input_Clear_ctl00CP1ctlSearchbtnSearch'))
 
-//WebUI.click(findTestObject('Object Repository/WebOffice/Consumers/Page_/td_Jim Smith'))
+'----------------------------------------'
+'Initial Table View (Populated or Not    |'
+'----------------------------------------'
+
+//try {
+'---------------------------------------------------'
+'If Record Exists Then rocess, Otherwise Jump Over  |'
+'---------------------------------------------------'
+
+//KeywordUtil.markPassed("* * * * "+GlobalVariable.aFirstName+" * * * *")
+
+//if (!GlobalVariable.aFirstName == ''){ // set in 'Set_Consumer_Data' // 'No Record Existing'
+	'----------------------------------------'
+	'Initial Table Return Checks'
+//if	(WebUI.(findTestObject('Object Repository/WO_Consumer/Page_/a_Feedback')){
+//	'Full Name'
+//	WebUI.verifyTextPresent("Mr Gordon Brown", false)
+//	'City'
+//	WebUI.verifyTextPresent("Haywards Heath", false)
+//	'Postcode'
+//	WebUI.verifyTextPresent("RH16 4ER", false)
+//	'Email'
+//	WebUI.verifyTextPresent("gordbro@gmail.com", false)
+	
+	'----------------------------------------'
+	'--------'
+	'Sort    |'
+	'--------'
+	WebUI.click(findTestObject('Object Repository/WO_Consumer/Page_/a_Feedback'))
+	//WebUI.waitForElementClickable(findTestObject('Object Repository/WO_Consumer/Page_/a_Feedback'), 60)
+	//WebUI.waitForPageLoad(60)
+	WebUI.delay(5)
+	'--------'
+	'Sort    |'
+	'--------'
+	WebUI.click(findTestObject('Object Repository/WO_Consumer/Page_/a_Feedback'))
+	//WebUI.waitForElementClickable(findTestObject('Object Repository/WO_Consumer/Page_/a_Feedback'), 60)
+	//WebUI.waitForPageLoad(60)
+	WebUI.delay(5)
+	'--------'
+	'Select  |'
+	'--------'
+	WebUI.waitForElementClickable(findTestObject('WO_Consumer/Page_/td_TopRow'), 60)
+	WebUI.click(findTestObject('WO_Consumer/Page_/td_TopRow'))
+	WebUI.delay(1)
+	//WebUI.click(findTestObject('Page_/input_Clear_ctl00CP1ctlSearchbtnSearch'))
+//}	
+	//WebUI.click(findTestObject('Object Repository/WebOffice/Consumers/Page_/td_Jim Smith'))
+	
+//}
+//catch (Exception e) {
+//else {(KeywordUtil.markPassed("No Data Returned as Expected for Invalid Search Criteria"))}
+	
+//}
+
 
 '--------------------------------'
 '           END                  |'

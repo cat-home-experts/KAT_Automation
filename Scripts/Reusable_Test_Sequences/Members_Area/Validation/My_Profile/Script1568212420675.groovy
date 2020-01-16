@@ -28,7 +28,7 @@ import internal.GlobalVariable as GlobalVariable
 //  Commented Ashot screen capture, evaluation|   30/09/2019    |      DH          |                             |
 //  Extended Element Wait Times to 60         |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//  Banner Image Check Removed - Function Rem |   16/01/2020    |      DH          |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -77,7 +77,8 @@ WebUI.verifyTextPresent("Where you work", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Company logo", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Banner image", false)
+'Removed 16/01/2020 Function Removed'
+//WebUI.verifyTextPresent("Banner image", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Vetting information", false)
 '----------------------------------------------'

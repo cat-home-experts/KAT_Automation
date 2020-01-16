@@ -43,6 +43,9 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 // Textual content change in Where You Work   |    25/11/2019   |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
+// REMOVED FROM CURRENT SITE - MIGHT RETURN   |    16/01/2020   |        DH        | Left Intact - uncommented   |
+//                                            |                 |                  | below                       |
+//---------------------------------------------------------------------------------------------------------------
 
 
 'WARNING - Be AWARE that, for example, That the Members Area Link on Preview doesnt take you to Preview, but takes you to LIVE Members Area'
@@ -131,14 +134,16 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Da
 		
 	//-----------------------------------------
 	// Navigate - To the Banner Iname Page    | TODO // Revisit - Just Uncomment this
-	//-----------------------------------------// My Profile Page - Banner image
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_You_Business/Profiles/BAnner_Image'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	//-----------------------------------------// My Profile Page - Banner Image Function Dropped
+	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Grow_You_Business/Profiles/BAnner_Image'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
+	'UNCOMMENTED -REMOVED FROM CURRENT FUNCTION 16/01/2020'
 	//-----------------------------------------
-	// Verify Banner image - Sub section      | TODO // Revisit - Fix This
+	// Verify Banner image - Sub section      | TODO // My Profile Page - Banner Image Function Dropped
 	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Profiles/Banner_Image'), [:], FailureHandling.CONTINUE_ON_FAILURE) 
-		
+	// WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Profiles/Banner_Image'), [:], FailureHandling.CONTINUE_ON_FAILURE) 
+	'UNCOMMENTED -REMOVED FROM CURRENT FUNCTION 16/01/2020'
+	
 	//-----------------------------------------
 	// Navigate - To Vetting Information Page |
 	//-----------------------------------------// My Profile Page - Vetting information

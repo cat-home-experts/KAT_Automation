@@ -27,7 +27,8 @@ import internal.GlobalVariable as GlobalVariable
 // Validation of Featured Items Members Page  |    17/12/2019   |        DH        |  2 Check Boxes to select    |
 //                                            |                 |                  |  Function currently No Save |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Radio buttons remoeved from page, was being|    16/01/2020   |        DH        |  Refactored to remove Radios|
+// used to switch view (12 latest, so faileur |                 |                  |  (commented  reinstatement  |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------

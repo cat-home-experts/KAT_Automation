@@ -15,6 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import internal.GlobalVariable
 
 //-----------------------
 // TEST HISTORY HEADER - |
@@ -27,7 +28,7 @@ import org.openqa.selenium.Keys as Keys
 //---------------------------------------------------------------------------------------------------------------
 // Set Search Items - WO Consumer Search      |   29/11/2019    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
-// Implementation after debug                 |   13/01/2020    |        DH        |                             |
+// Implementation after debug                 |   13/01/2020    |        DH        | iFrame issues for all of WO |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -63,6 +64,10 @@ def Phone = data.getValue("Phone", GlobalVariable.row)
 def Status = data.getValue("Status", GlobalVariable.row)
 def Type = data.getValue("Type", GlobalVariable.row)
 def Consumer_ID = data.getValue("Consumer_ID", GlobalVariable.row)
+
+//'GlobalVariable.aFirstName Used For No Data Test case (No Record Existing) String Detection '
+//GlobalVariable.aFirstName = data.getValue("Forename", GlobalVariable.row) // Used For 'Select_Consumer, no data existing case'
+
 '--------------------------------'
 'Read data from spreadsheet      |'
 '--------------------------------'
@@ -112,7 +117,8 @@ WebUI.setText(findTestObject('Object Repository/WebOffice/Consumers/Page_/input_
 	WebUI.setText(findTestObject('Object Repository/WebOffice/Consumers/Page_/input_Phone_ctl00CP1ctlSearchtbTel'), Phone)
 '-------------------------------------------------------------------------------------------------------------------------------------'
 'Set Status'
-	WebUI.selectOptionByValue(findTestObject('Object Repository/WebOffice/Consumers/Page_/select_AllActiveDeleted'), Status, true)
+	//WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice/Consumers/Page_/select_AllActiveDeleted', 60))
+	//WebUI.selectOptionByValue(findTestObject('Object Repository/WebOffice/Consumers/Page_/select_AllActiveDeleted'), Status, true)
 '-------------------------------------------------------------------------------------------------------------------------------------'
 'Status 3 Options'
 //WebUI.selectOptionByValue(findTestObject('Object Repository/WebOffice/Consumers/Page_/select_AllActiveDeleted'), 'ALL',
@@ -126,7 +132,8 @@ WebUI.setText(findTestObject('Object Repository/WebOffice/Consumers/Page_/input_
 
 '-------------------------------------------------------------------------------------------------------------------------------------'
 'Set Type'
-	WebUI.selectOptionByValue(findTestObject('Object Repository/WebOffice/Consumers/Page_/select_BothConsumerTrade'), Type, true)
+	//WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice/Consumers/Page_/select_BothConsumerTrade', 60))
+	//WebUI.selectOptionByValue(findTestObject('Object Repository/WebOffice/Consumers/Page_/select_BothConsumerTrade'), Type, true)
 /*'-------------------------------------------------------------------------------------------------------------------------------------'
 'Set Forename'
 if (Forename==null){

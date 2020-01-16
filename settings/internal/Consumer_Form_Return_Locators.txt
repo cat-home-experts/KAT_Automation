@@ -1,0 +1,19 @@
+Name - Title (Name - concatanated text)
+//*[@id="companyTitle"]/a
+OR
+//*[@id="companyTitle"]/a
+
+// ConsumerID
+//*[@id="pageheader"]/text()
+
+// Full Address
+//*[@id="mainaddress"]/text()[1]
+
+// Email
+//*[@id="mainaddress"]/text()[2]
+
+// Telephone
+//*[@id="mainaddress"]/text()[3]
+
+// Edit Consumer label LH form fill header
+//*[@id="contentctl"]/h4

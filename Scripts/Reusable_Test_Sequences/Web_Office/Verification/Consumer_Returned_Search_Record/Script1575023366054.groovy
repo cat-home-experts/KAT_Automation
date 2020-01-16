@@ -16,6 +16,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.util.KeywordUtil
+import com.kms.katalon.core.testobject.ConditionType
 
 //-----------------------
 // TEST HISTORY HEADER - |
@@ -28,7 +29,7 @@ import com.kms.katalon.core.util.KeywordUtil
 //---------------------------------------------------------------------------------------------------------------
 // Set Search Items - WO Consumer Search      |   29/11/2019    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
-// Implementation after debug                 |   13/01/2020    |        DH        |                             |
+// Implementation after debug                 |   13/01/2020    |        DH        | iFrame issues for all of WO |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -46,7 +47,7 @@ import com.kms.katalon.core.util.KeywordUtil
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 
-/*'--------------------------------'
+'--------------------------------'
 'Read data from spreadsheet      | r_ = Returned Data'
 '--------------------------------'
 def data = findTestData('Data Files/Consumer_Data (1)')
@@ -64,28 +65,105 @@ def Phone1 = data.getValue("r_Phone_1", GlobalVariable.row)
 def Phone2 = data.getValue("r_Phone_2", GlobalVariable.row)
 def Fax = data.getValue("r_Fax", GlobalVariable.row)
 
+def r_Full_Name = data.getValue("r_Full_Name", 1)
+def r_Full_Address = data.getValue("r_Full_Address", 1)
+
 '--------------------------------'
 'Read data from spreadsheet      |'
-'--------------------------------'*/
-def text_content = ""
-
+'--------------------------------'
+def Actual_Page_Text = ""
+def Expected_Page_Text = ""
 
 WebUI.waitForPageLoad(60)
 //WebUI.waitForElementVisible(findTestObject('Object Repository/WO_Consumer/Page_/Edit_Consumer_SAVE_Button'), 60)
-WebUI.delay(10)
+WebUI.delay(1)
 
-//Synch
+//WebUI.waitForElementVisible(findTestObject('Object Repository/WO_Consumer/Page_/lbl_ConsumerID'), 10)
+//Actual_Page_Text = WebUI.getAttribute(findTestObject('Object Repository/WO_Consumer/Page_/lbl_ConsumerID'), 'text')// textContent, text, innerText, value, class, innerText
+//Actual_Page_Text = WebUI.getAttribute(findTestObject(‘Object Repository/WO_Consumer/Page_/ibl_Edit_consumer’), ‘value’)
+//Expected_Page_Text = "408091"
 
-//if (WebUI.verifyTextPresent("No matching consumers", false)){
-//	//'Forename == No Record Existing' should return 'no matching consumers'
-//	WebUI.verifyTextPresent(findTestData('Data Files/Consumer_Data (1)').getValue('r_Forenames', 1), false)
-//	KeywordUtil.markPassed("No Matching Consumers returned as Expected")
+//KeywordUtil.markPassed(Expected_Page_Text+" Was Expected, But Actually "+Actual_Page_Text+" Was Presented")
+
+'HEADER DETAIL - iFrame'
+
+//WebUI.switchToFrame('Object Repository/iFrame/iFrame'(r_Full_Name, false), 30);
+
+'----------------'
+'Full Name       |'
+'----------------'
+WebUI.verifyElementPresent(findTestObject('Object Repository/WO_Consumer/Page_/Page_/a_Mr Gordon Brown'), 25)
+//WebUI.verifyTextPresent(findTestData('Data Files/Consumer_Data (1)').getValue(r_Full_Name, 1), false)
+//WebUI.verifyTextPresent(r_Full_Name, false)
+
+
+'----------------'
+'Full Address    |'
+'----------------'
+WebUI.verifyElementPresent(findTestObject('Object Repository/WO_Consumer/Page_/Page_/div_Haywards Heath West Sussex RH16 4ER4477_d20822'), 25)
+
+
+'BODY DETAIL - iFrame'
+
+'----------------'
+'EDIT Consumer   |'
+'----------------'
+// Title
+WebUI.verifyElementPresent(findTestObject('Object Repository/WO_Consumer/Page_/Page_/input_Title_ctledittbTitle'), 25)
+
+'----------------'
+'Address         |'
+'----------------'
+// Please ensure the Street / Road name is not in the Town field - Content Present
+WebUI.verifyElementPresent(findTestObject('Object Repository/WO_Consumer/Page_/Page_/span_Please ensure the Street  Road name is_e38a58'), 25)
+
+
+//WebUI.verifyElementText(findTestObject('Object Repository/WO_Consumer/Page_/Page_/input_City_ctleditctlConsumerAddresstbCity'), (findTestData('Data Files/Consumer_Data (1)').getValue('r_City', 1)))
+
+///WebUI.verifyTextPresent(findTestData('Data Files/Consumer_Data (1)').getValue('r_Forenames', 1), false)
+
+//WebUI.verifyTextPresent(r_Full_Address, false)
+//WebUI.verifyTextPresent(findTestData('Data Files/Consumer_Data (1)').getValue('r_Full_Address', 1), false)
+
+
+//if (Actual_Page_Text.equals(Expected_Page_Text)){
+//	KeywordUtil.markPassed(Actual_Page_Text)
 //}
 //else {
-/*	'--------------------------------------------------'
-	'RETURNED RECORD FIXED (COMMON Returned Content)   |'
+//	KeywordUtil.markFailed(Expected_Page_Text+" Was Expected, But Actually "+Actual_Page_Text+" Was Presented")
+//	
+//}
+//WebUI.delay(1)
+//Synch
+
+/*if (WebUI.verifyTextPresent("No matching consumers", false)){
+	//'Forename == No Record Existing' should return 'no matching consumers'
+	WebUI.verifyTextPresent(findTestData('Data Files/Consumer_Data (1)').getValue('r_Forenames', 1), false)
+	KeywordUtil.markPassed("No Matching Consumers returned as Expected")
+}
+else {
 	'--------------------------------------------------'
-	WebUI.verifyTextPresent("Edit Consumer", false)
+	'RETURNED RECORD FIXED (COMMON Returned Content)   | Content = Labels and Other Static values'
+	'--------------------------------------------------'
+	//WebUI.verifyTextPresent("Edit Consumer", false)
+	Actual_Page_Text = WebUI.getAttribute(findTestObject('Object Repository/WO_Consumer/Page_/ibl_Edit_consumer'))
+	//Actual_Page_Text = WebUI.getAttribute(findTestObject(‘Object Repository/WO_Consumer/Page_/ibl_Edit_consumer’), ‘value’)
+	Expected_page_Text = "Edit Consumer"
+	
+	if (Actual_Page_Text.equals(Expected_Page_Text)){
+		KeywordUtil.markPassed(Actual_Page_Text)
+	}
+	else {
+		KeywordUtil.markFailed(Expected_Page_Text+" Was Expected, But Actually "+Actual_Page_Text+" Was Presented")
+		
+	}
+	
+	//String t = WebUI.getAttribute(findTestObject('SPI_Project/Page_SV Project - Softvision Projec/input_Login1UserName'),
+	//	findTestData('SPIProject').getValue('UserNames', rownbr))
+	//Expected_Page_Text = WebUI.getText(findTestData('Data Files/Consumer_Data (1)').getValue('r_Forenames', 1), false)	
+	WebUI.delay(25)
+	
+	KeywordUtil.markPassed(Actual_Page_Text)
 	'----------------------------------------------'
 	WebUI.verifyTextPresent("Delete Consumer", false)
 	'----------------------------------------------'
@@ -126,7 +204,7 @@ WebUI.delay(10)
 	WebUI.verifyTextPresent("Telephone 2:", false)
 	'----------------------------------------------'
 	WebUI.verifyTextPresent("Fax", false)
-	'----------------------------------------------'*/
+	'----------------------------------------------'
 	
 	'--------------------------------------------------'
 	'RETURNED RECORD VARIABLE (UNIQUE Returned Content)|'
@@ -250,7 +328,7 @@ WebUI.delay(10)
 	//
 	//WebUI.click(findTestObject('Page_/input_Please supply a valid phone number_btnSave'))
 	
-//}
+}*/
 
 '--------------------------------'
 '           END                  |'

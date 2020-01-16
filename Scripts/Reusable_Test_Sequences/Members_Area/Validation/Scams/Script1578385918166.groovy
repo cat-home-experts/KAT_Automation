@@ -82,7 +82,7 @@ WebUI.verifyTextPresent("Here we will keep you informed of any threats we are ma
 WebUI.verifyTextPresent("Please contact your Membership Advice team if you are unsure about any emails", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent(" that you receive, especially those asking you for log on details", false)
-
+                        //that you recieve, especially those asking you for log on details
 WebUI.verifyTextPresent("DO NOT CLICK THE LINKS!", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Suspicious emails and calls", false)

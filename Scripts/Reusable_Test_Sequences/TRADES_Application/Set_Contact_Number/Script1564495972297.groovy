@@ -15,7 +15,9 @@ import internal.GlobalVariable as GlobalVariable
 
 //------------------------------------------------------------------------
 // Set Contact Number during membership application form fill form fill  | - Snip - 30/07/2019
-//------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------
+// Element name Changed on Contact Number Fld |    16/01/2020   |        DH        | tbContactMob to tbContactNum|
+//---------------------------------------------------------------------------------------------------------------
 
 WebUI.setText(findTestObject('Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob'),  GlobalVariable.ContactNumber)
 

@@ -23,7 +23,7 @@ import internal.GlobalVariable as GlobalVariable
 'Expected cantantenated text is Returned'
 ' DYNAMIC DELAY - Wait for <SEARCH> Button to Re-Appear after Search is completed'
 
-//WebUI.delay(3)
+WebUI.delay(1)
 WebUI.waitForPageLoad(60)
 //WebUI.waitForElementVisible(findTestObject('Checkatrade_Trade_Search_page/Page_Checkatrade Find a tradesperson you can trust/a_Search'), 120)
 // COncantanation unrelaible - watch this space

@@ -63,7 +63,13 @@ def YE_WorkCarriedOut
 // This is the first test of the suite (currently), included this (delay) to give the tool to catch it's breath      |         
 // WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Wait_a_bit'), [:], FailureHandling.OPTIONAL)       |
 //--------------------------------------------------------------------------------------------------------------------
+GlobalVariable.PAGE = ""
 GlobalVariable.PAGE = "GiveFeedback"
+
+//if (GlobalVariable.PAGE == "GiveFeedbackGiveFeedback"){
+//	GlobalVariable.PAGE == "GiveFeedback"
+//}
+
 GlobalVariable.URL = GlobalVariable.URL+GlobalVariable.PAGE
 
 'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test\r\n'

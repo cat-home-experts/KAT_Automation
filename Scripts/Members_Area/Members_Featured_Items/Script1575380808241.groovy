@@ -25,14 +25,16 @@ import internal.GlobalVariable as GlobalVariable
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
 // Prove the function Under Members Area      |                 |                  |                             |
-// Members Featured Items Functionality  |    17/12/2019   |        DH        |                             |
+// Members Featured Items Functionality       |    17/12/2019   |        DH        |                             |
 // Not available from Members Dashboard, (Menu|                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 // Need to add change preferences when availa |                 |                  |  TODO WHEN IMPLEMENTED      |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Radio buttons remoeved from page, was being|    16/01/2020   |        DH        |  Refactored to remove Radios|
+// used to switch view (12 latest, so faileur |                 |                  |  (commented  reinstatement  |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// REMOVED FROM CURRENT SITE - MIGHT RETURN   |    16/01/2020   |        DH        | Left Intact - unchecked in  |
+//                                            |                 |                  | Test Suite                  |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------

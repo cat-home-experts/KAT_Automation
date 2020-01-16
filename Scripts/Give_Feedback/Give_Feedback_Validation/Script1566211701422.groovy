@@ -51,7 +51,10 @@ import internal.GlobalVariable as GlobalVariable
 if (!GlobalVariable.PAGE == "GiveFeedback"){
 	GlobalVariable.PAGE = "GiveFeedback" // inherited from last test
 	GlobalVariable.URL = GlobalVariable.URL+GlobalVariable.PAGE
-}
+} 
+//GlobalVariable.PAGE = ""
+//GlobalVariable.PAGE = "GiveFeedback"
+//GlobalVariable.URL = GlobalVariable.URL+GlobalVariable.PAGE
 '------------------------------------------------------------'
 //-----------------------------------------
 // Call Setup Process - Browser Startup, Navigate, Maximize and Close Cookie Nagging Element
@@ -87,7 +90,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (
 	'--------------------------------------'
     ' Your Experience (page 1) Processing  |'
     '--------------------------------------'
-    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Your_Experience_Validation'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Your_Experience_Validation'), [:], FailureHandling.STOP_ON_FAILURE)
 
 	'--------------------------------------'
 	' Your Scores (page 2) Validation      |'
@@ -95,22 +98,22 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (
     '--------------------------------------'
     ' Your Scores (page 2) Processing      |'
     '--------------------------------------'
-    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Scores/Your_Scores_Validation'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Scores/Your_Scores_Validation'), [:], FailureHandling.STOP_ON_FAILURE)
 
     '--------------------------------------'
     ' Your Scores (page 3) Processing      |'
     '--------------------------------------'
-    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Details/Your_Details_Validation'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Details/Your_Details_Validation'), [:], FailureHandling.STOP_ON_FAILURE)
 
     '--------------------------------------'
     ' Further Info (page 4) Processing     |'                        // No Validation on Give Your Feedback (Value of Work) Page
     '--------------------------------------'
-    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Further_Infomation/Further_Infomation_Validation'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Further_Infomation/Further_Infomation_Validation'), [:], FailureHandling.STOP_ON_FAILURE)
 
 	'--------------------------------------'
 	' Thank You! (page 5) Processing       |'
 	'--------------------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Final_Page'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Final_Page'), [:], FailureHandling.STOP_ON_FAILURE)
 	
     '--------------------------------------'
     ' Processing Completion                |'

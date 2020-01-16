@@ -38,32 +38,32 @@ WebUI.click(findTestObject('Object Repository/Page_Checkatrade Give your feedbac
 '---------------------------------------------------------------------------------------'
 ' Your Experience (page 3) Verify Validation> Messages - This Field Is Required         |' // VERIFICATION AVAILABLE FROM sIGNUP fUNCTION
 '---------------------------------------------------------------------------------------'
-WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required'), [:], FailureHandling.STOP_ON_FAILURE)
 
 '---------------------------------------------------------------------------------------'
 ' Your Experience (page 3) Verify Validation> Messages  - Please Supply Home Phone      |' // Reuse of verification From Trades Function
 '---------------------------------------------------------------------------------------'
-WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Validation/Please_Supply_Home_Telephone_Number'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Validation/Please_Supply_Home_Telephone_Number'), [:], FailureHandling.STOP_ON_FAILURE)
 
 '-------------------------------------'
 ' Consumer or Customer Selection      |'
 '-------------------------------------'
-WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Details/Consumer_or_Customer_Selection'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Details/Consumer_or_Customer_Selection'), [:], FailureHandling.STOP_ON_FAILURE)
 
 '-------------------------------------'
 ' Fill Personal Details               |'
 '-------------------------------------'
-WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Details/Personal_Details_Formfill'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Details/Personal_Details_Formfill'), [:], FailureHandling.STOP_ON_FAILURE)
 
 '-------------------------------------'
 ' Fil Contact Details                 |'
 '-------------------------------------'
-WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Details/Contact_Details_Formfill'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Details/Contact_Details_Formfill'), [:], FailureHandling.STOP_ON_FAILURE)
 
 '-------------------------------------'
 ' CHeckatrade Questions               |'
 '-------------------------------------'
-WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Details/Checkatrade_Questions'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Details/Checkatrade_Questions'), [:], FailureHandling.STOP_ON_FAILURE)
 
 '-------------------------------------'
 ' Commit form                         |'  // WARNING - Details Auto Commit No Need To Hit The Commit Button
