@@ -49,18 +49,18 @@ import internal.GlobalVariable as GlobalVariable
 '--------------------------------------'
 WebUI.waitForPageLoad(60)
 WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Companies'), 60)
-WebUI.mouseOver(findTestObject('Object Repository/WebOffice_Home_page/a_Companies'))
+
 
 ////////////////////////////////////////////
 // Hover on Element                       //
 ////////////////////////////////////////////
-WebUI.mouseOver(findTestObject('Object Repository/Page_Members Area/Header_Menus/Page_Members Area/a_Grow Your Business'))
+WebUI.mouseOver(findTestObject('Object Repository/WebOffice_Home_page/a_Companies'))
 
 ////////////////////////////////////////////
 //  Select Target menuItem Element        //
 ////////////////////////////////////////////
-WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Header_Menus/Page_Members Area/a_Scams'), 1)
-WebUI.click(findTestObject('Object Repository/Page_Members Area/Header_Menus/Page_Members Area/a_Scams'))
+WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Header_Menus/Page_Members Area/a_Company_Advanced_Search'), 1)
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Header_Menus/Page_Members Area/a_Company_Advanced_Search'))
 
 
 

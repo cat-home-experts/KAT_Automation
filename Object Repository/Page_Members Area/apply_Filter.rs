@@ -7,12 +7,24 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#feedbackFilter > div:nth-child(10) > div > div > input</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;feedbackFilter&quot;]/div[6]/div/div/input</value>
+         <value>//*[@id=&quot;feedbackFilter&quot;]/div[5]/div/div/input</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>contains</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>primary filter</value>
+   </webElementProperties>
 </WebElementEntity>
