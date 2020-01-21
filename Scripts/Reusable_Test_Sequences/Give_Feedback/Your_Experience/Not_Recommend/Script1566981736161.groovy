@@ -61,6 +61,7 @@ else if (YE_WorkCarriedOut == ("Yes")) {
 //WebUI.selectOptionByValue(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select ShortForm'), YE_NatureOfIssue, true)
 //WebUI.selectOptionByValue(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select_Nature_of_Issue'),
 //	'39', true)
+WebUI.waitForElementClickable(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select ShortForm'), 5)
 WebUI.selectOptionByLabel(findTestObject('Feedback_Non_Recommend/Page_Checkatrade Give your feedback/select_Please Select ShortForm'),
 	YE_NatureOfIssue, false)
 '------------------------------------------------'

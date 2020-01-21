@@ -55,14 +55,24 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Mobile_Test_Dat
 		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp'), [:], FailureHandling.OPTIONAL)
 		
 		'--------------------------------------'
-		' Home Page - Search                   |'
+		' Navigate to <Companies> Menu Item    |'
 		'--------------------------------------'
-		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Home_Page_Search'), [:], FailureHandling.OPTIONAL)
+		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/navigation/Navigate_Advanced_Company_Search'), [:], FailureHandling.OPTIONAL)
 		
 		'--------------------------------------'
-		' Web Office - Verify Returned Record  |'
+		' LH Pane  - Apply Search Criteria     |'
 		'--------------------------------------'
-		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Verification/Trader_Record'), [:], FailureHandling.OPTIONAL)
+		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Actions/Set_Advanced_Company_Data'), [:], FailureHandling.OPTIONAL)
+		
+		'--------------------------------------'
+		' Select Returned Record to Verify     |'
+		'--------------------------------------'
+		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Actions/Select_Company'), [:], FailureHandling.OPTIONAL)
+		
+		'--------------------------------------'
+		' Verify Returned Consumer Record      |'
+		'--------------------------------------'
+		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Verification/Company_Returned_Search_Record'), [:], FailureHandling.OPTIONAL)
 		
 		'--------------------------'
 		' Teardown - CLose Browser |'

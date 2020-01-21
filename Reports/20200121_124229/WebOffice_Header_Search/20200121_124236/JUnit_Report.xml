@@ -1,0 +1,1463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="WebOffice_Header_Search" time="212.348" tests="1" failures="0" errors="0">
+   <testsuite name="WebOffice_Header_Search" tests="1" failures="0" errors="0" time="212.348" timestamp="2020-01-21 12:53:29" hostname="DavidHo - VETTEDSP36RF.check.local" id="Test Suites/WebOffice_Header_Search">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\davidho\\Katalon Studio\\Start\\Reports\\20200121_124229\\WebOffice_Header_Search\\20200121_124236"/>
+         <property name="logFiles" value="C:\\Users\\davidho\\Katalon Studio\\Start\\Reports\\20200121_124229\\WebOffice_Header_Search\\20200121_124236\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\davidho\\Katalon Studio\\Start\\Reports\\20200121_124229\\WebOffice_Header_Search\\20200121_124236\\1579611291135.png"/>
+         <property name="hostName" value="DavidHo - VETTEDSP36RF.check.local"/>
+         <property name="os" value="Windows 10 32bit"/>
+         <property name="katalonVersion" value="7.1.2.1"/>
+         <property name="browser" value="Chrome 79.0.3945.117"/>
+         <property name="hostAddress" value="10.0.13.186"/>
+         <property name="sessionId" value="5dbd17dab45cd28a3f86bea56672e77b"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Web_Office/WebOffice_Header_Search" time="211.653" classname="Test Cases/Web_Office/WebOffice_Header_Search" status="PASSED">
+         <system-out><![CDATA[2020-01-21 12:53:29 - [TEST_CASE][PASSED] - Test Cases/Web_Office/WebOffice_Header_Search: Test Cases/Web_Office/WebOffice_Header_Search
+
+2020-01-21 12:53:29 - [TEST_STEP][PASSED] - for ([row = 1, row <= findTestData("Mobile_Test_Data").getRowNumbers(), (internal.GlobalVariable.row++)]): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-01-21 12:53:31 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-01-21 12:53:31 - [TEST_STEP][PASSED] - " Web Office StartUp                  |": null
+
+2020-01-21 12:53:31 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-01-21 12:53:32 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp: Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp
+
+2020-01-21 12:53:33 - [TEST_STEP][PASSED] - if (URL == "https://www.preview.checkatrade.com/"): null
+
+2020-01-21 12:53:33 - [TEST_STEP][PASSED] - WebOfficeURL = "https://admin.preview.checkatrade.com/": null
+
+2020-01-21 12:53:33 - [TEST_STEP][PASSED] - if (URL == "https://www.checkatrade.com/"): null
+
+2020-01-21 12:53:33 - [TEST_STEP][PASSED] - "Set Function Area for "URL_Handler", URL Resolution": null
+
+2020-01-21 12:53:33 - [TEST_STEP][PASSED] - "Do Some Magic with URL(s) See the comments within URL Handler ": null
+
+2020-01-21 12:53:33 - [TEST_STEP][PASSED] - Username = "DavidHo": null
+
+2020-01-21 12:53:33 - [TEST_STEP][PASSED] - Password = "Check123": null
+
+2020-01-21 12:53:33 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-01-21 12:53:33 - [TEST_STEP][PASSED] - "WebOfficeURL - Set from the ENVIRONMENT PROFILE ": null
+
+2020-01-21 12:53:33 - [TEST_STEP][PASSED] - "OPEN BROWSER": null
+
+2020-01-21 12:53:33 - [TEST_STEP][PASSED] - "eg - https://admin.preview.checkatrade.com/  ": null
+
+2020-01-21 12:53:33 - [TEST_STEP][PASSED] - openBrowser(WebOfficeURL): Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-01-21 12:53:33 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-01-21 12:53:33 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2020-01-21 12:53:41 - [MESSAGE][PASSED] - Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-01-21 12:53:41 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-01-21 12:53:46 - [MESSAGE][PASSED] - Current window maximized
+
+2020-01-21 12:53:46 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button"), 25): Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-01-21 12:53:46 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-01-21 12:53:46 - [TEST_STEP][PASSED] - verifyTextPresent("Checkatrade Web Office", false): Text 'Checkatrade Web Office' is present on page 
+
+2020-01-21 12:53:46 - [MESSAGE][PASSED] - Text 'Checkatrade Web Office' is present on page 
+
+2020-01-21 12:53:46 - [TEST_STEP][PASSED] - verifyTextPresent("Access for staff use only", false): Text 'Access for staff use only' is present on page 
+
+2020-01-21 12:53:46 - [MESSAGE][PASSED] - Text 'Access for staff use only' is present on page 
+
+2020-01-21 12:53:46 - [TEST_STEP][PASSED] - verifyTextPresent("Forgotten password?", false): Text 'Forgotten password?' is present on page 
+
+2020-01-21 12:53:47 - [MESSAGE][PASSED] - Text 'Forgotten password?' is present on page 
+
+2020-01-21 12:53:47 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName"), Username): Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-01-21 12:53:47 - [MESSAGE][PASSED] - Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-01-21 12:53:47 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword"), Password): Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-01-21 12:53:48 - [MESSAGE][PASSED] - Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-01-21 12:53:48 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button")): Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-01-21 12:53:49 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-01-21 12:53:49 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-21 12:53:49 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-21 12:53:49 - [TEST_STEP][PASSED] - verifyTextPresent("Welcome " + Username, false): Text 'Welcome DavidHo' is present on page 
+
+2020-01-21 12:53:49 - [MESSAGE][PASSED] - Text 'Welcome DavidHo' is present on page 
+
+2020-01-21 12:53:49 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-01-21 12:53:49 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-01-21 12:53:49 - [TEST_STEP][PASSED] - " Home Page - Search                   |": null
+
+2020-01-21 12:53:49 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Home_Page_Search"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search' successfully
+
+2020-01-21 12:53:49 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search: Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search
+
+2020-01-21 12:53:50 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice_Home_page/input_Search_Criteria"), findTestData("searchTestData").getValue("Search_Selector", row)): Text '07818 446596' is set on object 'Object Repository/WebOffice_Home_page/input_Search_Criteria'
+
+2020-01-21 12:53:50 - [MESSAGE][PASSED] - Text '07818 446596' is set on object 'Object Repository/WebOffice_Home_page/input_Search_Criteria'
+
+2020-01-21 12:53:50 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-01-21 12:53:51 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-01-21 12:53:51 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice_Home_page/popout_Search_Item")): Object: 'Object Repository/WebOffice_Home_page/popout_Search_Item' is clicked on
+
+2020-01-21 12:54:05 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/popout_Search_Item' is clicked on
+
+2020-01-21 12:54:05 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-21 12:54:05 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-21 12:54:05 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search' successfully
+
+2020-01-21 12:54:05 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-01-21 12:54:05 - [TEST_STEP][PASSED] - " Web Office - Verify Returned Record  |": null
+
+2020-01-21 12:54:05 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Verification/Trader_Record"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record' successfully
+
+2020-01-21 12:54:05 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record: Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record
+
+2020-01-21 12:54:06 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("tradeName", row), false, CONTINUE_ON_FAILURE): Text 'Foster Tree Care' is present on page 
+
+2020-01-21 12:54:07 - [MESSAGE][PASSED] - Text 'Foster Tree Care' is present on page 
+
+2020-01-21 12:54:07 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("primeContact", row), false, CONTINUE_ON_FAILURE): Text 'Jim Foster' is present on page 
+
+2020-01-21 12:54:08 - [MESSAGE][PASSED] - Text 'Jim Foster' is present on page 
+
+2020-01-21 12:54:08 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("address", row), false, CONTINUE_ON_FAILURE): Text '70 Worthing Avenue, Gosport, Hampshire, PO12 4DH' is present on page 
+
+2020-01-21 12:54:08 - [MESSAGE][PASSED] - Text '70 Worthing Avenue, Gosport, Hampshire, PO12 4DH' is present on page 
+
+2020-01-21 12:54:08 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("mobile", row), false, CONTINUE_ON_FAILURE): Text '07818 446596' is present on page 
+
+2020-01-21 12:54:09 - [MESSAGE][PASSED] - Text '07818 446596' is present on page 
+
+2020-01-21 12:54:09 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("contact", row), false, CONTINUE_ON_FAILURE): Text '023 9258 3018' is present on page 
+
+2020-01-21 12:54:10 - [MESSAGE][PASSED] - Text '023 9258 3018' is present on page 
+
+2020-01-21 12:54:10 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("email", row), false, CONTINUE_ON_FAILURE): Text 'fostertreecare@tiscali.co.uk' is present on page 
+
+2020-01-21 12:54:10 - [MESSAGE][PASSED] - Text 'fostertreecare@tiscali.co.uk' is present on page 
+
+2020-01-21 12:54:10 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("dob", row), false, CONTINUE_ON_FAILURE): Text 'DoB: 31/01/1976' is present on page 
+
+2020-01-21 12:54:11 - [MESSAGE][PASSED] - Text 'DoB: 31/01/1976' is present on page 
+
+2020-01-21 12:54:11 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("catID", row), false, CONTINUE_ON_FAILURE): Text 'FOS002' is present on page 
+
+2020-01-21 12:54:11 - [MESSAGE][PASSED] - Text 'FOS002' is present on page 
+
+2020-01-21 12:54:11 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record' successfully
+
+2020-01-21 12:54:11 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-01-21 12:54:11 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2020-01-21 12:54:11 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-01-21 12:54:11 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2020-01-21 12:54:12 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-01-21 12:54:13 - [MESSAGE][PASSED] - Browser is closed
+
+2020-01-21 12:54:13 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-01-21 12:54:13 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-01-21 12:54:13 - [TEST_STEP][PASSED] - " Web Office StartUp                  |": null
+
+2020-01-21 12:54:13 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-01-21 12:54:13 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp: Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp
+
+2020-01-21 12:54:13 - [TEST_STEP][PASSED] - if (URL == "https://www.preview.checkatrade.com/"): null
+
+2020-01-21 12:54:13 - [TEST_STEP][PASSED] - WebOfficeURL = "https://admin.preview.checkatrade.com/": null
+
+2020-01-21 12:54:13 - [TEST_STEP][PASSED] - if (URL == "https://www.checkatrade.com/"): null
+
+2020-01-21 12:54:13 - [TEST_STEP][PASSED] - "Set Function Area for "URL_Handler", URL Resolution": null
+
+2020-01-21 12:54:13 - [TEST_STEP][PASSED] - "Do Some Magic with URL(s) See the comments within URL Handler ": null
+
+2020-01-21 12:54:13 - [TEST_STEP][PASSED] - Username = "DavidHo": null
+
+2020-01-21 12:54:13 - [TEST_STEP][PASSED] - Password = "Check123": null
+
+2020-01-21 12:54:13 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-01-21 12:54:13 - [TEST_STEP][PASSED] - "WebOfficeURL - Set from the ENVIRONMENT PROFILE ": null
+
+2020-01-21 12:54:13 - [TEST_STEP][PASSED] - "OPEN BROWSER": null
+
+2020-01-21 12:54:13 - [TEST_STEP][PASSED] - "eg - https://admin.preview.checkatrade.com/  ": null
+
+2020-01-21 12:54:13 - [TEST_STEP][PASSED] - openBrowser(WebOfficeURL): Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-01-21 12:54:13 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-01-21 12:54:20 - [MESSAGE][PASSED] - Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-01-21 12:54:20 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-01-21 12:54:25 - [MESSAGE][PASSED] - Current window maximized
+
+2020-01-21 12:54:25 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button"), 25): Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-01-21 12:54:25 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-01-21 12:54:25 - [TEST_STEP][PASSED] - verifyTextPresent("Checkatrade Web Office", false): Text 'Checkatrade Web Office' is present on page 
+
+2020-01-21 12:54:25 - [MESSAGE][PASSED] - Text 'Checkatrade Web Office' is present on page 
+
+2020-01-21 12:54:25 - [TEST_STEP][PASSED] - verifyTextPresent("Access for staff use only", false): Text 'Access for staff use only' is present on page 
+
+2020-01-21 12:54:25 - [MESSAGE][PASSED] - Text 'Access for staff use only' is present on page 
+
+2020-01-21 12:54:25 - [TEST_STEP][PASSED] - verifyTextPresent("Forgotten password?", false): Text 'Forgotten password?' is present on page 
+
+2020-01-21 12:54:25 - [MESSAGE][PASSED] - Text 'Forgotten password?' is present on page 
+
+2020-01-21 12:54:25 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName"), Username): Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-01-21 12:54:25 - [MESSAGE][PASSED] - Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-01-21 12:54:25 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword"), Password): Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-01-21 12:54:26 - [MESSAGE][PASSED] - Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-01-21 12:54:26 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button")): Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-01-21 12:54:27 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-01-21 12:54:27 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-21 12:54:27 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-21 12:54:27 - [TEST_STEP][PASSED] - verifyTextPresent("Welcome " + Username, false): Text 'Welcome DavidHo' is present on page 
+
+2020-01-21 12:54:27 - [MESSAGE][PASSED] - Text 'Welcome DavidHo' is present on page 
+
+2020-01-21 12:54:27 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-01-21 12:54:27 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-01-21 12:54:27 - [TEST_STEP][PASSED] - " Home Page - Search                   |": null
+
+2020-01-21 12:54:27 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Home_Page_Search"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search' successfully
+
+2020-01-21 12:54:27 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search: Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search
+
+2020-01-21 12:54:27 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice_Home_page/input_Search_Criteria"), findTestData("searchTestData").getValue("Search_Selector", row)): Text 'James Burton' is set on object 'Object Repository/WebOffice_Home_page/input_Search_Criteria'
+
+2020-01-21 12:54:27 - [MESSAGE][PASSED] - Text 'James Burton' is set on object 'Object Repository/WebOffice_Home_page/input_Search_Criteria'
+
+2020-01-21 12:54:27 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-01-21 12:54:28 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-01-21 12:54:28 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice_Home_page/popout_Search_Item")): Object: 'Object Repository/WebOffice_Home_page/popout_Search_Item' is clicked on
+
+2020-01-21 12:54:31 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/popout_Search_Item' is clicked on
+
+2020-01-21 12:54:31 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-21 12:54:31 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-21 12:54:31 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search' successfully
+
+2020-01-21 12:54:31 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-01-21 12:54:31 - [TEST_STEP][PASSED] - " Web Office - Verify Returned Record  |": null
+
+2020-01-21 12:54:31 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Verification/Trader_Record"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record' successfully
+
+2020-01-21 12:54:31 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record: Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record
+
+2020-01-21 12:54:31 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("tradeName", row), false, CONTINUE_ON_FAILURE): Text 'Burton Electrical Services' is present on page 
+
+2020-01-21 12:54:32 - [MESSAGE][PASSED] - Text 'Burton Electrical Services' is present on page 
+
+2020-01-21 12:54:32 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("primeContact", row), false, CONTINUE_ON_FAILURE): Text 'James Burton' is present on page 
+
+2020-01-21 12:54:33 - [MESSAGE][PASSED] - Text 'James Burton' is present on page 
+
+2020-01-21 12:54:33 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("address", row), false, CONTINUE_ON_FAILURE): Text 'Unit 4, Dukeries Court, Hallcroft Industrial Estate, Retford, Nottinghamshire, DN22 7PX' is present on page 
+
+2020-01-21 12:54:33 - [MESSAGE][PASSED] - Text 'Unit 4, Dukeries Court, Hallcroft Industrial Estate, Retford, Nottinghamshire, DN22 7PX' is present on page 
+
+2020-01-21 12:54:33 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("mobile", row), false, CONTINUE_ON_FAILURE): Text '07712 401461' is present on page 
+
+2020-01-21 12:54:34 - [MESSAGE][PASSED] - Text '07712 401461' is present on page 
+
+2020-01-21 12:54:34 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("contact", row), false, CONTINUE_ON_FAILURE): Text '01777 228982' is present on page 
+
+2020-01-21 12:54:34 - [MESSAGE][PASSED] - Text '01777 228982' is present on page 
+
+2020-01-21 12:54:34 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("email", row), false, CONTINUE_ON_FAILURE): Text 'info@burtonelectricalservices.net' is present on page 
+
+2020-01-21 12:54:34 - [MESSAGE][PASSED] - Text 'info@burtonelectricalservices.net' is present on page 
+
+2020-01-21 12:54:34 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("dob", row), false, CONTINUE_ON_FAILURE): Text 'DoB: 15/07/1989' is present on page 
+
+2020-01-21 12:54:35 - [MESSAGE][PASSED] - Text 'DoB: 15/07/1989' is present on page 
+
+2020-01-21 12:54:35 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("catID", row), false, CONTINUE_ON_FAILURE): Text '402921' is present on page 
+
+2020-01-21 12:54:36 - [MESSAGE][PASSED] - Text '402921' is present on page 
+
+2020-01-21 12:54:36 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record' successfully
+
+2020-01-21 12:54:36 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-01-21 12:54:36 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2020-01-21 12:54:36 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-01-21 12:54:36 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2020-01-21 12:54:36 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-01-21 12:54:37 - [MESSAGE][PASSED] - Browser is closed
+
+2020-01-21 12:54:37 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-01-21 12:54:37 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-01-21 12:54:37 - [TEST_STEP][PASSED] - " Web Office StartUp                  |": null
+
+2020-01-21 12:54:37 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp"), [:], OPTIONAL): Unable to call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' (Root cause: com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at WebOffice_Header_Search.run(WebOffice_Header_Search:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1579610556712.run(TempTestSuite1579610556712.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to verify text 'Welcome DavidHo' is present  (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to verify text 'Welcome DavidHo' is present 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.verifyTextPresent(VerifyTextPresentKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.execute(VerifyTextPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextPresent(WebUiBuiltInKeywords.groovy:1693)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextPresent$2.call(Unknown Source)
+	at WebOffice_StartUp.run(WebOffice_StartUp:151)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at WebOffice_Header_Search.run(WebOffice_Header_Search:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1579610556712.run(TempTestSuite1579610556712.groovy:36)
+Caused by: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=79.0.3945.117)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'VETTEDSP36RF', ip: '10.0.13.186', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\davidho\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dc653227e6923425bcfb3687a4942c25
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy9.getText(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.getText(EventFiringWebDriver.java:463)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.isTextPresent(WebUiCommonHelper.java:87)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.doCall(VerifyTextPresentKeyword.groovy:75)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.call(VerifyTextPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.verifyTextPresent(VerifyTextPresentKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.execute(VerifyTextPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextPresent(WebUiBuiltInKeywords.groovy:1693)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextPresent$2.call(Unknown Source)
+	at Script1573047447840.run(Script1573047447840.groovy:151)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Script1573048549655.run(Script1573048549655.groovy:55)
+	... 13 more
+)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.verifyTextPresent(VerifyTextPresentKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.execute(VerifyTextPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextPresent(WebUiBuiltInKeywords.groovy:1693)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextPresent$2.call(Unknown Source)
+	at WebOffice_StartUp.run(WebOffice_StartUp:151)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to verify text 'Welcome DavidHo' is present 
+	... 37 more
+Caused by: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=79.0.3945.117)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'VETTEDSP36RF', ip: '10.0.13.186', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\davidho\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dc653227e6923425bcfb3687a4942c25
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy9.getText(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.getText(EventFiringWebDriver.java:463)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.isTextPresent(WebUiCommonHelper.java:87)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.doCall(VerifyTextPresentKeyword.groovy:75)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.call(VerifyTextPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+)
+
+2020-01-21 12:54:37 - [TEST_CASE][FAILED] - Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp: Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to verify text 'Welcome DavidHo' is present  (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to verify text 'Welcome DavidHo' is present 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.verifyTextPresent(VerifyTextPresentKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.execute(VerifyTextPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextPresent(WebUiBuiltInKeywords.groovy:1693)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextPresent$2.call(Unknown Source)
+	at WebOffice_StartUp.run(WebOffice_StartUp:151)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at WebOffice_Header_Search.run(WebOffice_Header_Search:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1579610556712.run(TempTestSuite1579610556712.groovy:36)
+Caused by: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=79.0.3945.117)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'VETTEDSP36RF', ip: '10.0.13.186', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\davidho\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dc653227e6923425bcfb3687a4942c25
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy9.getText(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.getText(EventFiringWebDriver.java:463)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.isTextPresent(WebUiCommonHelper.java:87)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.doCall(VerifyTextPresentKeyword.groovy:75)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.call(VerifyTextPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.verifyTextPresent(VerifyTextPresentKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.execute(VerifyTextPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextPresent(WebUiBuiltInKeywords.groovy:1693)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextPresent$2.call(Unknown Source)
+	at Script1573047447840.run(Script1573047447840.groovy:151)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Script1573048549655.run(Script1573048549655.groovy:55)
+	... 13 more
+)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.verifyTextPresent(VerifyTextPresentKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.execute(VerifyTextPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextPresent(WebUiBuiltInKeywords.groovy:1693)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextPresent$2.call(Unknown Source)
+	at WebOffice_StartUp.run(WebOffice_StartUp:151)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at WebOffice_Header_Search.run(WebOffice_Header_Search:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1579610556712.run(TempTestSuite1579610556712.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to verify text 'Welcome DavidHo' is present 
+	... 37 more
+Caused by: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=79.0.3945.117)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'VETTEDSP36RF', ip: '10.0.13.186', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\davidho\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dc653227e6923425bcfb3687a4942c25
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy9.getText(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.getText(EventFiringWebDriver.java:463)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.isTextPresent(WebUiCommonHelper.java:87)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.doCall(VerifyTextPresentKeyword.groovy:75)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.call(VerifyTextPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+
+
+2020-01-21 12:54:37 - [TEST_STEP][PASSED] - if (URL == "https://www.preview.checkatrade.com/"): null
+
+2020-01-21 12:54:37 - [TEST_STEP][PASSED] - WebOfficeURL = "https://admin.preview.checkatrade.com/": null
+
+2020-01-21 12:54:37 - [TEST_STEP][PASSED] - if (URL == "https://www.checkatrade.com/"): null
+
+2020-01-21 12:54:37 - [TEST_STEP][PASSED] - "Set Function Area for "URL_Handler", URL Resolution": null
+
+2020-01-21 12:54:37 - [TEST_STEP][PASSED] - "Do Some Magic with URL(s) See the comments within URL Handler ": null
+
+2020-01-21 12:54:37 - [TEST_STEP][PASSED] - Username = "DavidHo": null
+
+2020-01-21 12:54:37 - [TEST_STEP][PASSED] - Password = "Check123": null
+
+2020-01-21 12:54:37 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-01-21 12:54:37 - [TEST_STEP][PASSED] - "WebOfficeURL - Set from the ENVIRONMENT PROFILE ": null
+
+2020-01-21 12:54:37 - [TEST_STEP][PASSED] - "OPEN BROWSER": null
+
+2020-01-21 12:54:37 - [TEST_STEP][PASSED] - "eg - https://admin.preview.checkatrade.com/  ": null
+
+2020-01-21 12:54:37 - [TEST_STEP][PASSED] - openBrowser(WebOfficeURL): Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-01-21 12:54:37 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-01-21 12:54:44 - [MESSAGE][PASSED] - Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-01-21 12:54:44 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-01-21 12:54:48 - [MESSAGE][PASSED] - Current window maximized
+
+2020-01-21 12:54:48 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button"), 25): Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-01-21 12:54:48 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-01-21 12:54:48 - [TEST_STEP][PASSED] - verifyTextPresent("Checkatrade Web Office", false): Text 'Checkatrade Web Office' is present on page 
+
+2020-01-21 12:54:49 - [MESSAGE][PASSED] - Text 'Checkatrade Web Office' is present on page 
+
+2020-01-21 12:54:49 - [TEST_STEP][PASSED] - verifyTextPresent("Access for staff use only", false): Text 'Access for staff use only' is present on page 
+
+2020-01-21 12:54:49 - [MESSAGE][PASSED] - Text 'Access for staff use only' is present on page 
+
+2020-01-21 12:54:49 - [TEST_STEP][PASSED] - verifyTextPresent("Forgotten password?", false): Text 'Forgotten password?' is present on page 
+
+2020-01-21 12:54:49 - [MESSAGE][PASSED] - Text 'Forgotten password?' is present on page 
+
+2020-01-21 12:54:49 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName"), Username): Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-01-21 12:54:49 - [MESSAGE][PASSED] - Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-01-21 12:54:49 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword"), Password): Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-01-21 12:54:49 - [MESSAGE][PASSED] - Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-01-21 12:54:49 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button")): Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-01-21 12:54:50 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-01-21 12:54:50 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-21 12:54:50 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-21 12:54:50 - [TEST_STEP][FAILED] - verifyTextPresent("Welcome " + Username, false): Unable to verify text 'Welcome DavidHo' is present  (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to verify text 'Welcome DavidHo' is present 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.verifyTextPresent(VerifyTextPresentKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.execute(VerifyTextPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextPresent(WebUiBuiltInKeywords.groovy:1693)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextPresent$2.call(Unknown Source)
+	at WebOffice_StartUp.run(WebOffice_StartUp:151)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at WebOffice_Header_Search.run(WebOffice_Header_Search:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1579610556712.run(TempTestSuite1579610556712.groovy:36)
+Caused by: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=79.0.3945.117)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'VETTEDSP36RF', ip: '10.0.13.186', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\davidho\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dc653227e6923425bcfb3687a4942c25
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy9.getText(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.getText(EventFiringWebDriver.java:463)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.isTextPresent(WebUiCommonHelper.java:87)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.doCall(VerifyTextPresentKeyword.groovy:75)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.call(VerifyTextPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.verifyTextPresent(VerifyTextPresentKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.execute(VerifyTextPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextPresent(WebUiBuiltInKeywords.groovy:1693)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextPresent$2.call(Unknown Source)
+	at Script1573047447840.run(Script1573047447840.groovy:151)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Script1573048549655.run(Script1573048549655.groovy:55)
+	... 13 more
+)
+
+2020-01-21 12:54:51 - [MESSAGE][FAILED] - Unable to verify text 'Welcome DavidHo' is present  (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to verify text 'Welcome DavidHo' is present 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.verifyTextPresent(VerifyTextPresentKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.execute(VerifyTextPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextPresent(WebUiBuiltInKeywords.groovy:1693)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextPresent$2.call(Unknown Source)
+	at WebOffice_StartUp.run(WebOffice_StartUp:151)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at WebOffice_Header_Search.run(WebOffice_Header_Search:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1579610556712.run(TempTestSuite1579610556712.groovy:36)
+Caused by: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=79.0.3945.117)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'VETTEDSP36RF', ip: '10.0.13.186', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\davidho\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dc653227e6923425bcfb3687a4942c25
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy9.getText(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.getText(EventFiringWebDriver.java:463)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.isTextPresent(WebUiCommonHelper.java:87)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.doCall(VerifyTextPresentKeyword.groovy:75)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.call(VerifyTextPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.verifyTextPresent(VerifyTextPresentKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.execute(VerifyTextPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextPresent(WebUiBuiltInKeywords.groovy:1693)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextPresent$2.call(Unknown Source)
+	at Script1573047447840.run(Script1573047447840.groovy:151)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Script1573048549655.run(Script1573048549655.groovy:55)
+	... 13 more
+)
+[[ATTACHMENT|C:\\Users\\davidho\\Katalon Studio\\Start\\Reports\\20200121_124229\\WebOffice_Header_Search\\20200121_124236\\1579611291135.png]]
+
+2020-01-21 12:54:51 - [MESSAGE][WARNING] - Unable to call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' (Root cause: com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at WebOffice_Header_Search.run(WebOffice_Header_Search:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1579610556712.run(TempTestSuite1579610556712.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to verify text 'Welcome DavidHo' is present  (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to verify text 'Welcome DavidHo' is present 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.verifyTextPresent(VerifyTextPresentKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.execute(VerifyTextPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextPresent(WebUiBuiltInKeywords.groovy:1693)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextPresent$2.call(Unknown Source)
+	at WebOffice_StartUp.run(WebOffice_StartUp:151)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at WebOffice_Header_Search.run(WebOffice_Header_Search:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1579610556712.run(TempTestSuite1579610556712.groovy:36)
+Caused by: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=79.0.3945.117)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'VETTEDSP36RF', ip: '10.0.13.186', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\davidho\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dc653227e6923425bcfb3687a4942c25
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy9.getText(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.getText(EventFiringWebDriver.java:463)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.isTextPresent(WebUiCommonHelper.java:87)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.doCall(VerifyTextPresentKeyword.groovy:75)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.call(VerifyTextPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.verifyTextPresent(VerifyTextPresentKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.execute(VerifyTextPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextPresent(WebUiBuiltInKeywords.groovy:1693)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextPresent$2.call(Unknown Source)
+	at Script1573047447840.run(Script1573047447840.groovy:151)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Script1573048549655.run(Script1573048549655.groovy:55)
+	... 13 more
+)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.verifyTextPresent(VerifyTextPresentKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.execute(VerifyTextPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextPresent(WebUiBuiltInKeywords.groovy:1693)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextPresent$2.call(Unknown Source)
+	at WebOffice_StartUp.run(WebOffice_StartUp:151)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to verify text 'Welcome DavidHo' is present 
+	... 37 more
+Caused by: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=79.0.3945.117)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'VETTEDSP36RF', ip: '10.0.13.186', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\davidho\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dc653227e6923425bcfb3687a4942c25
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy9.getText(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.getText(EventFiringWebDriver.java:463)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.isTextPresent(WebUiCommonHelper.java:87)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.doCall(VerifyTextPresentKeyword.groovy:75)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.call(VerifyTextPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+)
+
+2020-01-21 12:54:51 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-01-21 12:54:51 - [TEST_STEP][PASSED] - " Home Page - Search                   |": null
+
+2020-01-21 12:54:51 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Home_Page_Search"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search' successfully
+
+2020-01-21 12:54:51 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search: Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search
+
+2020-01-21 12:54:51 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice_Home_page/input_Search_Criteria"), findTestData("searchTestData").getValue("Search_Selector", row)): Text 'Planvale Services' is set on object 'Object Repository/WebOffice_Home_page/input_Search_Criteria'
+
+2020-01-21 12:54:52 - [MESSAGE][PASSED] - Text 'Planvale Services' is set on object 'Object Repository/WebOffice_Home_page/input_Search_Criteria'
+
+2020-01-21 12:54:52 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-01-21 12:54:53 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-01-21 12:54:53 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice_Home_page/popout_Search_Item")): Object: 'Object Repository/WebOffice_Home_page/popout_Search_Item' is clicked on
+
+2020-01-21 12:54:57 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/popout_Search_Item' is clicked on
+
+2020-01-21 12:54:57 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-21 12:54:57 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-21 12:54:57 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search' successfully
+
+2020-01-21 12:54:57 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-01-21 12:54:57 - [TEST_STEP][PASSED] - " Web Office - Verify Returned Record  |": null
+
+2020-01-21 12:54:57 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Verification/Trader_Record"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record' successfully
+
+2020-01-21 12:54:57 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record: Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record
+
+2020-01-21 12:54:57 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("tradeName", row), false, CONTINUE_ON_FAILURE): Text 'Planvale Services' is present on page 
+
+2020-01-21 12:54:58 - [MESSAGE][PASSED] - Text 'Planvale Services' is present on page 
+
+2020-01-21 12:54:58 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("primeContact", row), false, CONTINUE_ON_FAILURE): Text 'Andrew Whitaker' is present on page 
+
+2020-01-21 12:54:58 - [MESSAGE][PASSED] - Text 'Andrew Whitaker' is present on page 
+
+2020-01-21 12:54:58 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("address", row), false, CONTINUE_ON_FAILURE): Text '66 Tony Humphries Road, Banbury, Oxfordshire, OX16 0FF' is present on page 
+
+2020-01-21 12:54:59 - [MESSAGE][PASSED] - Text '66 Tony Humphries Road, Banbury, Oxfordshire, OX16 0FF' is present on page 
+
+2020-01-21 12:54:59 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("mobile", row), false, CONTINUE_ON_FAILURE): Text '07960 633438' is present on page 
+
+2020-01-21 12:54:59 - [MESSAGE][PASSED] - Text '07960 633438' is present on page 
+
+2020-01-21 12:54:59 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("contact", row), false, CONTINUE_ON_FAILURE): Text '020 3686 0529' is present on page 
+
+2020-01-21 12:55:00 - [MESSAGE][PASSED] - Text '020 3686 0529' is present on page 
+
+2020-01-21 12:55:00 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("email", row), false, CONTINUE_ON_FAILURE): Text 'andrewwhitaker2009@hotmail.co.uk' is present on page 
+
+2020-01-21 12:55:00 - [MESSAGE][PASSED] - Text 'andrewwhitaker2009@hotmail.co.uk' is present on page 
+
+2020-01-21 12:55:00 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("dob", row), false, CONTINUE_ON_FAILURE): Text 'DoB: 25/02/1974' is present on page 
+
+2020-01-21 12:55:01 - [MESSAGE][PASSED] - Text 'DoB: 25/02/1974' is present on page 
+
+2020-01-21 12:55:01 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("catID", row), false, CONTINUE_ON_FAILURE): Text '308682' is present on page 
+
+2020-01-21 12:55:02 - [MESSAGE][PASSED] - Text '308682' is present on page 
+
+2020-01-21 12:55:02 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record' successfully
+
+2020-01-21 12:55:02 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-01-21 12:55:02 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2020-01-21 12:55:02 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-01-21 12:55:02 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2020-01-21 12:55:02 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-01-21 12:55:03 - [MESSAGE][PASSED] - Browser is closed
+
+2020-01-21 12:55:03 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-01-21 12:55:03 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-01-21 12:55:03 - [TEST_STEP][PASSED] - " Web Office StartUp                  |": null
+
+2020-01-21 12:55:03 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-01-21 12:55:03 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp: Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp
+
+2020-01-21 12:55:03 - [TEST_STEP][PASSED] - if (URL == "https://www.preview.checkatrade.com/"): null
+
+2020-01-21 12:55:03 - [TEST_STEP][PASSED] - WebOfficeURL = "https://admin.preview.checkatrade.com/": null
+
+2020-01-21 12:55:03 - [TEST_STEP][PASSED] - if (URL == "https://www.checkatrade.com/"): null
+
+2020-01-21 12:55:03 - [TEST_STEP][PASSED] - "Set Function Area for "URL_Handler", URL Resolution": null
+
+2020-01-21 12:55:03 - [TEST_STEP][PASSED] - "Do Some Magic with URL(s) See the comments within URL Handler ": null
+
+2020-01-21 12:55:03 - [TEST_STEP][PASSED] - Username = "DavidHo": null
+
+2020-01-21 12:55:03 - [TEST_STEP][PASSED] - Password = "Check123": null
+
+2020-01-21 12:55:03 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-01-21 12:55:03 - [TEST_STEP][PASSED] - "WebOfficeURL - Set from the ENVIRONMENT PROFILE ": null
+
+2020-01-21 12:55:03 - [TEST_STEP][PASSED] - "OPEN BROWSER": null
+
+2020-01-21 12:55:03 - [TEST_STEP][PASSED] - "eg - https://admin.preview.checkatrade.com/  ": null
+
+2020-01-21 12:55:03 - [TEST_STEP][PASSED] - openBrowser(WebOfficeURL): Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-01-21 12:55:03 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-01-21 12:55:09 - [MESSAGE][PASSED] - Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-01-21 12:55:09 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-01-21 12:55:14 - [MESSAGE][PASSED] - Current window maximized
+
+2020-01-21 12:55:14 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button"), 25): Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-01-21 12:55:14 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-01-21 12:55:14 - [TEST_STEP][PASSED] - verifyTextPresent("Checkatrade Web Office", false): Text 'Checkatrade Web Office' is present on page 
+
+2020-01-21 12:55:14 - [MESSAGE][PASSED] - Text 'Checkatrade Web Office' is present on page 
+
+2020-01-21 12:55:14 - [TEST_STEP][PASSED] - verifyTextPresent("Access for staff use only", false): Text 'Access for staff use only' is present on page 
+
+2020-01-21 12:55:14 - [MESSAGE][PASSED] - Text 'Access for staff use only' is present on page 
+
+2020-01-21 12:55:14 - [TEST_STEP][PASSED] - verifyTextPresent("Forgotten password?", false): Text 'Forgotten password?' is present on page 
+
+2020-01-21 12:55:14 - [MESSAGE][PASSED] - Text 'Forgotten password?' is present on page 
+
+2020-01-21 12:55:14 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName"), Username): Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-01-21 12:55:15 - [MESSAGE][PASSED] - Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-01-21 12:55:15 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword"), Password): Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-01-21 12:55:16 - [MESSAGE][PASSED] - Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-01-21 12:55:16 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button")): Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-01-21 12:55:19 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-01-21 12:55:19 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-21 12:55:19 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-21 12:55:19 - [TEST_STEP][PASSED] - verifyTextPresent("Welcome " + Username, false): Text 'Welcome DavidHo' is present on page 
+
+2020-01-21 12:55:20 - [MESSAGE][PASSED] - Text 'Welcome DavidHo' is present on page 
+
+2020-01-21 12:55:20 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-01-21 12:55:20 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-01-21 12:55:20 - [TEST_STEP][PASSED] - " Home Page - Search                   |": null
+
+2020-01-21 12:55:20 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Home_Page_Search"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search' successfully
+
+2020-01-21 12:55:20 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search: Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search
+
+2020-01-21 12:55:20 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice_Home_page/input_Search_Criteria"), findTestData("searchTestData").getValue("Search_Selector", row)): Text '381198' is set on object 'Object Repository/WebOffice_Home_page/input_Search_Criteria'
+
+2020-01-21 12:55:20 - [MESSAGE][PASSED] - Text '381198' is set on object 'Object Repository/WebOffice_Home_page/input_Search_Criteria'
+
+2020-01-21 12:55:20 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-01-21 12:55:21 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-01-21 12:55:21 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice_Home_page/popout_Search_Item")): Object: 'Object Repository/WebOffice_Home_page/popout_Search_Item' is clicked on
+
+2020-01-21 12:55:59 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/popout_Search_Item' is clicked on
+
+2020-01-21 12:55:59 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-21 12:55:59 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-21 12:55:59 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search' successfully
+
+2020-01-21 12:55:59 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-01-21 12:55:59 - [TEST_STEP][PASSED] - " Web Office - Verify Returned Record  |": null
+
+2020-01-21 12:55:59 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Verification/Trader_Record"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record' successfully
+
+2020-01-21 12:55:59 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record: Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record
+
+2020-01-21 12:55:59 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("tradeName", row), false, CONTINUE_ON_FAILURE): Text 'Glazing Solutions' is present on page 
+
+2020-01-21 12:55:59 - [MESSAGE][PASSED] - Text 'Glazing Solutions' is present on page 
+
+2020-01-21 12:55:59 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("primeContact", row), false, CONTINUE_ON_FAILURE): Text 'Mr Scott Heyburn' is present on page 
+
+2020-01-21 12:56:00 - [MESSAGE][PASSED] - Text 'Mr Scott Heyburn' is present on page 
+
+2020-01-21 12:56:00 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("address", row), false, CONTINUE_ON_FAILURE): Text '19 St. Peters Close, Bognor Regis, PO21 5QA' is present on page 
+
+2020-01-21 12:56:01 - [MESSAGE][PASSED] - Text '19 St. Peters Close, Bognor Regis, PO21 5QA' is present on page 
+
+2020-01-21 12:56:01 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("mobile", row), false, CONTINUE_ON_FAILURE): Text '07739 534957' is present on page 
+
+2020-01-21 12:56:01 - [MESSAGE][PASSED] - Text '07739 534957' is present on page 
+
+2020-01-21 12:56:01 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("contact", row), false, CONTINUE_ON_FAILURE): Text '' is present on page 
+
+2020-01-21 12:56:02 - [MESSAGE][PASSED] - Text '' is present on page 
+
+2020-01-21 12:56:02 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("email", row), false, CONTINUE_ON_FAILURE): Text 'trpselsey@gmail.com' is present on page 
+
+2020-01-21 12:56:02 - [MESSAGE][PASSED] - Text 'trpselsey@gmail.com' is present on page 
+
+2020-01-21 12:56:02 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("dob", row), false, CONTINUE_ON_FAILURE): Text 'DoB: 06/04/1970' is present on page 
+
+2020-01-21 12:56:02 - [MESSAGE][PASSED] - Text 'DoB: 06/04/1970' is present on page 
+
+2020-01-21 12:56:02 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("catID", row), false, CONTINUE_ON_FAILURE): Text '381198' is present on page 
+
+2020-01-21 12:56:04 - [MESSAGE][PASSED] - Text '381198' is present on page 
+
+2020-01-21 12:56:04 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record' successfully
+
+2020-01-21 12:56:04 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-01-21 12:56:04 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2020-01-21 12:56:04 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-01-21 12:56:04 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2020-01-21 12:56:04 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-01-21 12:56:05 - [MESSAGE][PASSED] - Browser is closed
+
+2020-01-21 12:56:05 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-01-21 12:56:05 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-01-21 12:56:05 - [TEST_STEP][PASSED] - " Web Office StartUp                  |": null
+
+2020-01-21 12:56:05 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-01-21 12:56:06 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp: Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp
+
+2020-01-21 12:56:06 - [TEST_STEP][PASSED] - if (URL == "https://www.preview.checkatrade.com/"): null
+
+2020-01-21 12:56:06 - [TEST_STEP][PASSED] - WebOfficeURL = "https://admin.preview.checkatrade.com/": null
+
+2020-01-21 12:56:06 - [TEST_STEP][PASSED] - if (URL == "https://www.checkatrade.com/"): null
+
+2020-01-21 12:56:06 - [TEST_STEP][PASSED] - "Set Function Area for "URL_Handler", URL Resolution": null
+
+2020-01-21 12:56:06 - [TEST_STEP][PASSED] - "Do Some Magic with URL(s) See the comments within URL Handler ": null
+
+2020-01-21 12:56:06 - [TEST_STEP][PASSED] - Username = "DavidHo": null
+
+2020-01-21 12:56:06 - [TEST_STEP][PASSED] - Password = "Check123": null
+
+2020-01-21 12:56:06 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-01-21 12:56:06 - [TEST_STEP][PASSED] - "WebOfficeURL - Set from the ENVIRONMENT PROFILE ": null
+
+2020-01-21 12:56:06 - [TEST_STEP][PASSED] - "OPEN BROWSER": null
+
+2020-01-21 12:56:06 - [TEST_STEP][PASSED] - "eg - https://admin.preview.checkatrade.com/  ": null
+
+2020-01-21 12:56:06 - [TEST_STEP][PASSED] - openBrowser(WebOfficeURL): Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-01-21 12:56:06 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-01-21 12:56:13 - [MESSAGE][PASSED] - Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-01-21 12:56:13 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-01-21 12:56:17 - [MESSAGE][PASSED] - Current window maximized
+
+2020-01-21 12:56:17 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button"), 25): Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-01-21 12:56:17 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-01-21 12:56:17 - [TEST_STEP][PASSED] - verifyTextPresent("Checkatrade Web Office", false): Text 'Checkatrade Web Office' is present on page 
+
+2020-01-21 12:56:17 - [MESSAGE][PASSED] - Text 'Checkatrade Web Office' is present on page 
+
+2020-01-21 12:56:17 - [TEST_STEP][PASSED] - verifyTextPresent("Access for staff use only", false): Text 'Access for staff use only' is present on page 
+
+2020-01-21 12:56:17 - [MESSAGE][PASSED] - Text 'Access for staff use only' is present on page 
+
+2020-01-21 12:56:17 - [TEST_STEP][PASSED] - verifyTextPresent("Forgotten password?", false): Text 'Forgotten password?' is present on page 
+
+2020-01-21 12:56:17 - [MESSAGE][PASSED] - Text 'Forgotten password?' is present on page 
+
+2020-01-21 12:56:17 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName"), Username): Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-01-21 12:56:18 - [MESSAGE][PASSED] - Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-01-21 12:56:18 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword"), Password): Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-01-21 12:56:18 - [MESSAGE][PASSED] - Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-01-21 12:56:18 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button")): Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-01-21 12:56:20 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-01-21 12:56:20 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-21 12:56:20 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-21 12:56:20 - [TEST_STEP][PASSED] - verifyTextPresent("Welcome " + Username, false): Text 'Welcome DavidHo' is present on page 
+
+2020-01-21 12:56:21 - [MESSAGE][PASSED] - Text 'Welcome DavidHo' is present on page 
+
+2020-01-21 12:56:21 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-01-21 12:56:21 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-01-21 12:56:21 - [TEST_STEP][PASSED] - " Home Page - Search                   |": null
+
+2020-01-21 12:56:21 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Home_Page_Search"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search' successfully
+
+2020-01-21 12:56:21 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search: Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search
+
+2020-01-21 12:56:21 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice_Home_page/input_Search_Criteria"), findTestData("searchTestData").getValue("Search_Selector", row)): Text '07778 777641' is set on object 'Object Repository/WebOffice_Home_page/input_Search_Criteria'
+
+2020-01-21 12:56:22 - [MESSAGE][PASSED] - Text '07778 777641' is set on object 'Object Repository/WebOffice_Home_page/input_Search_Criteria'
+
+2020-01-21 12:56:22 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-01-21 12:56:23 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-01-21 12:56:23 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice_Home_page/popout_Search_Item")): Object: 'Object Repository/WebOffice_Home_page/popout_Search_Item' is clicked on
+
+2020-01-21 12:56:50 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/popout_Search_Item' is clicked on
+
+2020-01-21 12:56:50 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-01-21 12:56:50 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-01-21 12:56:50 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Home_Page_Search' successfully
+
+2020-01-21 12:56:50 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-01-21 12:56:50 - [TEST_STEP][PASSED] - " Web Office - Verify Returned Record  |": null
+
+2020-01-21 12:56:50 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Verification/Trader_Record"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record' successfully
+
+2020-01-21 12:56:50 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record: Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record
+
+2020-01-21 12:56:50 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("tradeName", row), false, CONTINUE_ON_FAILURE): Text 'Autopics Garage Services' is present on page 
+
+2020-01-21 12:56:51 - [MESSAGE][PASSED] - Text 'Autopics Garage Services' is present on page 
+
+2020-01-21 12:56:51 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("primeContact", row), false, CONTINUE_ON_FAILURE): Text 'David Clarke & Lisamarie Holt' is present on page 
+
+2020-01-21 12:56:52 - [MESSAGE][PASSED] - Text 'David Clarke & Lisamarie Holt' is present on page 
+
+2020-01-21 12:56:52 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("address", row), false, CONTINUE_ON_FAILURE): Text 'Unit 15, Brookside Business Park, Brookside Avenue, Rustington, West Sussex, BN16 3LP' is present on page 
+
+2020-01-21 12:56:52 - [MESSAGE][PASSED] - Text 'Unit 15, Brookside Business Park, Brookside Avenue, Rustington, West Sussex, BN16 3LP' is present on page 
+
+2020-01-21 12:56:52 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("mobile", row), false, CONTINUE_ON_FAILURE): Text '07778 777641' is present on page 
+
+2020-01-21 12:56:53 - [MESSAGE][PASSED] - Text '07778 777641' is present on page 
+
+2020-01-21 12:56:53 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("contact", row), false, CONTINUE_ON_FAILURE): Text '01903 856016' is present on page 
+
+2020-01-21 12:56:54 - [MESSAGE][PASSED] - Text '01903 856016' is present on page 
+
+2020-01-21 12:56:54 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("email", row), false, CONTINUE_ON_FAILURE): Text 'sales@autopics.co.uk' is present on page 
+
+2020-01-21 12:56:55 - [MESSAGE][PASSED] - Text 'sales@autopics.co.uk' is present on page 
+
+2020-01-21 12:56:55 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("dob", row), false, CONTINUE_ON_FAILURE): Text 'DoB: 02/01/1965' is present on page 
+
+2020-01-21 12:56:56 - [MESSAGE][PASSED] - Text 'DoB: 02/01/1965' is present on page 
+
+2020-01-21 12:56:56 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("searchTestData").getValue("catID", row), false, CONTINUE_ON_FAILURE): Text '230761' is present on page 
+
+2020-01-21 12:56:57 - [MESSAGE][PASSED] - Text '230761' is present on page 
+
+2020-01-21 12:56:57 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Trader_Record' successfully
+
+2020-01-21 12:56:57 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-01-21 12:56:57 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2020-01-21 12:56:57 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-01-21 12:56:57 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2020-01-21 12:56:57 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-01-21 12:57:01 - [MESSAGE][PASSED] - Browser is closed
+
+2020-01-21 12:57:01 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-01-21 12:53:29 - [TEST_SUITE][PASSED] - WebOffice_Header_Search: Test Cases/Web_Office/WebOffice_Header_Search]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
