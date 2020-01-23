@@ -1,0 +1,10 @@
+
+Batch File Notes:
+
+1) If you use gURL to point to the environment where the test executions will occur, then ensure you remove the profile setting from the batch file.
+
+2) Note: - The default profile is assumed by the system, if an alternate profile isn't specifiied.
+
+3) Previously, the specifle profile was not working from the command line process, with the later release, this issue was fixed. So, no longer need to specigy the global variable in the bat file for the URL (gURL)
+
+4) Update 22/01/2020 - Seperate Test Suite Collection(s) for Each Environment - So the BAT file obviously need to CALL the environment you want to test on - Currently set up for LIVE - DEV and PREVIEW (default profile)

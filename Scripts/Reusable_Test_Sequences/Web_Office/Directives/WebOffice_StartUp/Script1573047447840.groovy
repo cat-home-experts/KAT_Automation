@@ -28,7 +28,7 @@ import org.openqa.selenium.Keys as Keys
 // Initial Development Started                |   06/11/2019    |        DH        | Personal Credentials Used   |
 //                                            |                 |                  | Needs to be generic/test Cre|
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Login Credentials moved to <default> Prof. |   22/01/2020    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -68,8 +68,9 @@ if (GlobalVariable.URL == ("https://www.checkatrade.com/")){
 // Vars for possible inclusion in DataSheet
 // Switch to Generic/Test Creds at some point
 '------------------------------------------------'
-GlobalVariable.Username = "DavidHo"
-GlobalVariable.Password = "Check123"
+'Moved Login Credentials to <Default> profile 22/01/2020'
+//GlobalVariable.Username = "DavidHo"
+//GlobalVariable.Password = "Check123"
 '------------------------------------------------'
 'WebOfficeURL - Set from the ENVIRONMENT PROFILE '
 'OPEN BROWSER'
@@ -118,7 +119,7 @@ WebUI.verifyTextPresent("Forgotten password?", false)
 //////////////////////////////////////////////////
 'USERNAME'
 WebUI.setText(findTestObject('Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'),
-	GlobalVariable.Username)
+	GlobalVariable.wo_Username)
 
 //////////////////////////////////////////////////
 // Residual Encrypted Password
@@ -131,7 +132,7 @@ WebUI.setText(findTestObject('Object Repository/WebOffice/Page_Checkatrade - Adm
 //////////////////////////////////////////////////
 'PASSWORD'
 WebUI.setText(findTestObject('Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'),
-	GlobalVariable.Password)
+	GlobalVariable.wo_Password)
 
 //////////////////////////////////////////////////
 // Hit LOGIN (Submit) Button                    //

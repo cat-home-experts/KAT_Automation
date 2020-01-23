@@ -6,19 +6,18 @@
    <elementGuidId>17187ac0-86bb-4e73-8717-9bdc0b5d22c7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#feedbackFilter > div:nth-child(10) > div > div > input</value>
       </entry>
       <entry>
+         <key>BASIC</key>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;feedbackFilter&quot;]/div[5]/div/div/input</value>
+         <value>//*[@id=&quot;feedbackFilter&quot;]/div[6]/div/div/input</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

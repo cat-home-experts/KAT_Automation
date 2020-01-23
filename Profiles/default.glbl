@@ -139,4 +139,14 @@
       <initValue>true</initValue>
       <name>YE_Recommendations</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Web Office Login User Name</description>
+      <initValue>'DavidHo'</initValue>
+      <name>wo_Username</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Web Office Login Password</description>
+      <initValue>'Check123'</initValue>
+      <name>wo_Password</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -72,7 +72,8 @@ Profile Preview : Name</p>
      
     /**
      * <p>Profile default : Preview Members Area URL
-Profile Checkatrade_Live : Live Members Area URL</p>
+Profile Checkatrade_Live : Live Members Area URL
+Profile Dev_Test : Dev members URL</p>
      */
     public static Object MembersURL
      
@@ -156,7 +157,8 @@ Profile Preview : Validation Data Special Characters</p>
      
     /**
      * <p>Profile default : Web Office URL
-Profile Checkatrade_Live : Web Office URL</p>
+Profile Checkatrade_Live : Web Office URL
+Profile Dev_Test : Web Office URL</p>
      */
     public static Object WebOfficeURL
      
@@ -170,6 +172,16 @@ Profile Checkatrade_Live : Web Office URL</p>
 Profile Preview : Fix the format error here Give Feedback - Recommend? true OR false</p>
      */
     public static Object YE_Recommendations
+     
+    /**
+     * <p>Profile default : Web Office Login User Name</p>
+     */
+    public static Object wo_Username
+     
+    /**
+     * <p>Profile default : Web Office Login Password</p>
+     */
+    public static Object wo_Password
      
     /**
      * <p>Profile Checkatrade_Live : Row count on spread sheet iterator</p>
@@ -225,6 +237,8 @@ Profile Preview : Fix the format error here Give Feedback - Recommend? true OR f
             WebOfficeURL = selectedVariables['WebOfficeURL']
             Website_Version = selectedVariables['Website_Version']
             YE_Recommendations = selectedVariables['YE_Recommendations']
+            wo_Username = selectedVariables['wo_Username']
+            wo_Password = selectedVariables['wo_Password']
             row = selectedVariables['row']
             Standalone_TC_Execution = selectedVariables['Standalone_TC_Execution']
             Postcode = selectedVariables['Postcode']

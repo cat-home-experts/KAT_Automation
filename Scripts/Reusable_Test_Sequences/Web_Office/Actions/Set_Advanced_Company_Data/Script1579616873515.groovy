@@ -47,7 +47,11 @@ import internal.GlobalVariable as GlobalVariable
 '--------------------------------'
 'Read data from spreadsheet      |'
 '--------------------------------'
-def data = findTestData('Data Files/Consumer_Data (1)')
+def data = findTestData('Data Files/Advanced_Company_Search_Data')
+
+def Trader_ID = data.getValue("Trader_ID", GlobalVariable.row)
+def Limited_Company_Number = data.getValue("Limited_Company_Number", GlobalVariable.row)
+
 def Forename = data.getValue("Forename", GlobalVariable.row)
 def Surname = data.getValue("Surname", GlobalVariable.row)
 def Mobile = data.getValue("Mobile", GlobalVariable.row)
@@ -61,7 +65,7 @@ def Postcode = data.getValue("Postcode", GlobalVariable.row)
 def Phone = data.getValue("Phone", GlobalVariable.row)
 def Status = data.getValue("Status", GlobalVariable.row)
 def Type = data.getValue("Type", GlobalVariable.row)
-def Consumer_ID = data.getValue("Consumer_ID", GlobalVariable.row)
+
 
 //'GlobalVariable.aFirstName Used For No Data Test case (No Record Existing) String Detection '
 //GlobalVariable.aFirstName = data.getValue("Forename", GlobalVariable.row) // Used For 'Select_Consumer, no data existing case'
@@ -74,16 +78,18 @@ def Consumer_ID = data.getValue("Consumer_ID", GlobalVariable.row)
 ' Synchronisation                |'
 '--------------------------------'
 WebUI.waitForPageLoad(60)
-WebUI.waitForElementVisible(findTestObject('Object Repository/WebOffice/Consumers/Page_/input_Forename_ctl00CP1ctlSearchtbForenames'), 60)
+WebUI.waitForElementVisible(findTestObject('Object Repository/Web_Office_Advanced_Company_Search/Page_/input_Clear_ctl00ctl00CP1ctlSearchbtnSearch'), 60)
 
-WebUI.click(findTestObject('Object Repository/WebOffice/Consumers/Page_/input_Forename_ctl00CP1ctlSearchtbForenames'))
-
-// DEBUG
-
+'https://admin.preview.checkatrade.com/Companies/Search.aspx' //search url
 '-------------------------------------------------------------------------------------------------------------------------------------'
-'Set Forename'
-	WebUI.setText(findTestObject('Object Repository/WebOffice/Consumers/Page_/input_Forename_ctl00CP1ctlSearchtbForenames'), Forename)
+'Set Trader_ID'
+	WebUI.setText(findTestObject('Object Repository/Web_Office_Advanced_Company_Search/Page_/table_Trader ID'), Trader_ID)
 '-------------------------------------------------------------------------------------------------------------------------------------'
+
+
+
+
+
 'Set Surname'
 	WebUI.setText(findTestObject('Object Repository/WebOffice/Consumers/Page_/input_Surname_ctl00CP1ctlSearchtbSurname'), Surname)
 '-------------------------------------------------------------------------------------------------------------------------------------'

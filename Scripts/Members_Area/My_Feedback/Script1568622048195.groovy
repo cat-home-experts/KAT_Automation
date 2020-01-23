@@ -45,6 +45,9 @@ import internal.GlobalVariable as GlobalVariable
 // Your_Customers - CUrrently Preview Slugged |                 |                  |                             |
 // on this perspective, so TEMP DISABLED TEST |    28/11/2019   |        DH        | REVERSION - Test Reinstated |  
 //---------------------------------------------------------------------------------------------------------------
+// Flakinesss around the Page Members, Apply  |                 |                  |                             |
+// Filter button, changed back to XPATH select|    23/01/2020   |        DH        |                             |  
+//---------------------------------------------------------------------------------------------------------------
 
 'WARNING - Be AWARE that, for example, That the Members Area Link on Preview doesnt take you to Preview, but takes you to LIVE Members Area'
 

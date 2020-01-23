@@ -9,4 +9,14 @@
       <initValue>'http://www.dev.checkatrade.com/'</initValue>
       <name>URL</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Dev members URL</description>
+      <initValue>'http://members.dev.checkatrade.com/'</initValue>
+      <name>MembersURL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Web Office URL</description>
+      <initValue>'http://admin.dev.checkatrade.com/'</initValue>
+      <name>WebOfficeURL</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

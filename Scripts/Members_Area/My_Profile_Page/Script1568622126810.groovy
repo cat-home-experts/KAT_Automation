@@ -46,7 +46,10 @@ import internal.GlobalVariable as GlobalVariable
 // REMOVED FROM CURRENT SITE - MIGHT RETURN   |    16/01/2020   |        DH        | Left Intact - uncommented   |
 //                                            |                 |                  | below                       |
 //---------------------------------------------------------------------------------------------------------------
-
+//  Email address chg - Validation/My Profile |   23/01/2020    |                  |                             |
+//---------------------------------------------------------------------------------------------------------------
+//                                            |                 |                  |                             |
+//---------------------------------------------------------------------------------------------------------------
 
 'WARNING - Be AWARE that, for example, That the Members Area Link on Preview doesnt take you to Preview, but takes you to LIVE Members Area'
 //---------------------------------------------------------------------------------------------------------------

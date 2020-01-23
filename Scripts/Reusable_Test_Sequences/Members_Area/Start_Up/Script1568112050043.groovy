@@ -32,7 +32,7 @@ import internal.GlobalVariable as GlobalVariable
 // URL_Handler changes to cope with other     |   07/11/2019    |      DH          |                             |
 // Functional Areas of the Web Site(s)        |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Contact email address change               |   23/01/2020    |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -105,7 +105,7 @@ WebUI.verifyTextPresent("Trouble logging in? No username and password? Contact C
 // Member Services Link  //
 //------------------------
 'Member Services - Link'
-WebUI.verifyTextPresent("memberservices@checkatrade.com", false)
+WebUI.verifyTextPresent("membershipadvice@checkatrade.com", false) // memberservices@checkatrade.com
 
 
 

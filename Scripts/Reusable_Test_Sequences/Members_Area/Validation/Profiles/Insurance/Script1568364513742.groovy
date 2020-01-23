@@ -28,7 +28,7 @@ import java.awt.event.KeyEvent as KeyEvent
 //  Verify <Profile><Insurance> Page          |   13/09/2019    |      DH          |                             |
 //  from <Grow Your Business>                 |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//  Email address chnge -see below            |   23/01/2020    |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -99,7 +99,7 @@ WebUI.verifyTextPresent('Save PLI Details', false)
 '----------------------------------------------'
 WebUI.verifyTextPresent('You can also provide proof of insurance by the following method', false)
 '----------------------------------------------'
-WebUI.verifyTextPresent('Email memberservices@checkatrade.com', false)
+WebUI.verifyTextPresent('Email membershipadvice@checkatrade.com', false) // memberservices@checkatrade.com
 '----------------------------------------------'
 WebUI.verifyTextPresent('Post a copy of your Policy', false)
 '----------------------------------------------'
