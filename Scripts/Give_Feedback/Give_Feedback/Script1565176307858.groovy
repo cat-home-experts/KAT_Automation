@@ -75,18 +75,18 @@ GlobalVariable.URL = GlobalVariable.URL+GlobalVariable.PAGE
 'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test\r\n'
 for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (1)').getRowNumbers(); (GlobalVariable.row)++) {
     //def removed for globalisation
-    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.OPTIONAL)
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 
     //-----------------------------------------
     '-----------------------------------------------------'
     ' Hit the <Give Feedback> link in the header banner   |'
     '-----------------------------------------------------'
-    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Banner_Menu/Give_Feedback'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Banner_Menu/Give_Feedback'), [:], FailureHandling.STOP_ON_FAILURE)
 
     '-----------------------------------------------------'
     ' Enter Member Trade Name OR Checkatrade ID To Review |'
     '-----------------------------------------------------'
-    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Which_Member_to_Review'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Which_Member_to_Review'), [:], FailureHandling.STOP_ON_FAILURE)
 
     '--------------------------------------'
     ' Your Experience (page 1) Processing  |'
