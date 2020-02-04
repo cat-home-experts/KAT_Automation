@@ -3,7 +3,7 @@
    <description></description>
    <name>input_Trader ID_ctl00ctl00CP1ctlSearchtbID</name>
    <tag></tag>
-   <elementGuidId>8b0a661f-918e-4f76-953f-efa9c3647498</elementGuidId>
+   <elementGuidId>df48d3e6-d503-4de5-b05a-19a945991562</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

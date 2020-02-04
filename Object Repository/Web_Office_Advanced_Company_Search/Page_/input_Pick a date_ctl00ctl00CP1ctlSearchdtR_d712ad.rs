@@ -3,7 +3,7 @@
    <description></description>
    <name>input_Pick a date_ctl00ctl00CP1ctlSearchdtR_d712ad</name>
    <tag></tag>
-   <elementGuidId>16ea0954-d240-47d2-8de9-a95647bdf6f1</elementGuidId>
+   <elementGuidId>737e3c95-abe7-4a54-b16a-70b6bed9a146</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

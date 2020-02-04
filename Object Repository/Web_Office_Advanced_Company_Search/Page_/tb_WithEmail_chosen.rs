@@ -3,7 +3,7 @@
    <description></description>
    <name>tb_WithEmail_chosen</name>
    <tag></tag>
-   <elementGuidId>fa885150-874a-4b66-9cdc-416868864640</elementGuidId>
+   <elementGuidId>414c4f37-b27a-4374-a07b-5792afcf2a26</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

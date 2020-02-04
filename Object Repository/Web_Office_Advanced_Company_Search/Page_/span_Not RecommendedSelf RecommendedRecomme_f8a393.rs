@@ -3,7 +3,7 @@
    <description></description>
    <name>span_Not RecommendedSelf RecommendedRecomme_f8a393</name>
    <tag></tag>
-   <elementGuidId>b7cf66d0-7067-4297-aab0-a6262da1233b</elementGuidId>
+   <elementGuidId>c64455e9-f7ad-4102-9651-0d83fb3d4f49</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

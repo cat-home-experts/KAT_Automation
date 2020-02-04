@@ -3,7 +3,7 @@
    <description></description>
    <name>tb_Privacy_chosen</name>
    <tag></tag>
-   <elementGuidId>a173b5ec-1e7a-4f35-a510-e349f81b28ae</elementGuidId>
+   <elementGuidId>2d2fb618-19c3-457a-9e06-aad6682f44aa</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

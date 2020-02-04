@@ -3,7 +3,7 @@
    <description></description>
    <name>li_More</name>
    <tag></tag>
-   <elementGuidId>2bb93ada-561c-4bb2-89d6-403055f1a79b</elementGuidId>
+   <elementGuidId>99ee27c8-f798-46c3-88f3-4ec947a6a322</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

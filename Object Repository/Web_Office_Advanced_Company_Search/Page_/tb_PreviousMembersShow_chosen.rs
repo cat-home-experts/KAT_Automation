@@ -3,7 +3,7 @@
    <description></description>
    <name>tb_PreviousMembersShow_chosen</name>
    <tag></tag>
-   <elementGuidId>c1451820-0f33-4029-be4b-df30a3e25f18</elementGuidId>
+   <elementGuidId>cef5972a-253a-46fe-8ea0-1710b0857590</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

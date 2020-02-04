@@ -3,7 +3,7 @@
    <description></description>
    <name>span_Select an Option</name>
    <tag></tag>
-   <elementGuidId>be37a93d-44de-4dd2-8aaf-e6fe9f0d8d46</elementGuidId>
+   <elementGuidId>05fde3cc-ecfc-4b6a-aad8-036bbd17a848</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

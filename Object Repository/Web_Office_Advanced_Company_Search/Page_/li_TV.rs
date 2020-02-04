@@ -3,7 +3,7 @@
    <description></description>
    <name>li_TV</name>
    <tag></tag>
-   <elementGuidId>ebd38763-0168-414d-9657-0dd4df58d923</elementGuidId>
+   <elementGuidId>3e705716-7cf5-44d7-8abd-5d92dc0b323a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

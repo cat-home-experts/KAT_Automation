@@ -3,7 +3,7 @@
    <description></description>
    <name>input_Paper Invoicing_ctl00ctl00CP1ctlSearc_5414ce</name>
    <tag></tag>
-   <elementGuidId>d56f80c1-034d-4067-b2a3-6e97f6fbdbf0</elementGuidId>
+   <elementGuidId>ba0a3782-f17e-4279-a18f-f23ff638ced3</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

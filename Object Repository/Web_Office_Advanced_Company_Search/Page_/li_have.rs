@@ -3,7 +3,7 @@
    <description></description>
    <name>li_have</name>
    <tag></tag>
-   <elementGuidId>61161713-64e4-46cd-9458-8e900bbfbbff</elementGuidId>
+   <elementGuidId>1c41af4c-a234-476b-ae2e-7fbc7630fe92</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

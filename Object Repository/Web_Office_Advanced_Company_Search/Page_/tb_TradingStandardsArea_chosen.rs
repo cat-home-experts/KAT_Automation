@@ -3,7 +3,7 @@
    <description></description>
    <name>tb_TradingStandardsArea_chosen</name>
    <tag></tag>
-   <elementGuidId>a4240985-51b6-4a47-8b25-815504ab8560</elementGuidId>
+   <elementGuidId>1a690427-3e60-443f-9a66-89ad9d54b709</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

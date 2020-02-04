@@ -3,7 +3,7 @@
    <description></description>
    <name>tb_DirectoryArea_chosen</name>
    <tag></tag>
-   <elementGuidId>dcff87ee-2cca-421e-8ec7-cc0a2a960d4d</elementGuidId>
+   <elementGuidId>06de29ba-6767-4da7-b385-c84a41442ef7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

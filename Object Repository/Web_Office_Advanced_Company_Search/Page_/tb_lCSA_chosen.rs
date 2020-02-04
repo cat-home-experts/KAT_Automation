@@ -3,7 +3,7 @@
    <description></description>
    <name>tb_lCSA_chosen</name>
    <tag></tag>
-   <elementGuidId>1b983dd3-c4c3-4dc2-a640-06f83e2714bc</elementGuidId>
+   <elementGuidId>7862af29-5290-4da0-ab96-d55854ea810d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

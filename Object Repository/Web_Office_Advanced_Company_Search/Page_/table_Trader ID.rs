@@ -3,11 +3,11 @@
    <description></description>
    <name>table_Trader ID</name>
    <tag></tag>
-   <elementGuidId>706190da-65a4-4ce2-945f-204d6de377dc</elementGuidId>
+   <elementGuidId>4345737d-5ec2-4d89-9bd4-518043ae0993</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='SearchBox']/table</value>
+         <value>//*[@id=&quot;ctl00_ctl00_CP1_ctlSearch_tbID&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

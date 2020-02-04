@@ -3,7 +3,7 @@
    <description></description>
    <name>a_Clear</name>
    <tag></tag>
-   <elementGuidId>2c46a7b0-9e2f-40e9-81fc-dcfef93e7cd4</elementGuidId>
+   <elementGuidId>50f3d52d-1ca6-4643-99a3-a03f5ca43f9b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

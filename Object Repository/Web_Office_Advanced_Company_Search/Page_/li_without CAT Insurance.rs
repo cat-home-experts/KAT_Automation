@@ -3,7 +3,7 @@
    <description></description>
    <name>li_without CAT Insurance</name>
    <tag></tag>
-   <elementGuidId>1b2bf9aa-fc7c-44ed-96ec-eab46840617a</elementGuidId>
+   <elementGuidId>e0741174-c7ad-4d5c-a9ce-43274e9acf5f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

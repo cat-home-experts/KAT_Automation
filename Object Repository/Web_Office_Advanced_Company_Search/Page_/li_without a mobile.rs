@@ -3,7 +3,7 @@
    <description></description>
    <name>li_without a mobile</name>
    <tag></tag>
-   <elementGuidId>1d530c8d-4d4a-494d-8a69-5ba83d229850</elementGuidId>
+   <elementGuidId>47082eb5-de6a-499e-b1e1-9f2ff39697ed</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

@@ -3,7 +3,7 @@
    <description></description>
    <name>li_uploaded</name>
    <tag></tag>
-   <elementGuidId>4475468c-36f9-4872-9c86-1ce1fd9d5ce6</elementGuidId>
+   <elementGuidId>2e63809b-7a06-4716-b333-338de687a80b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

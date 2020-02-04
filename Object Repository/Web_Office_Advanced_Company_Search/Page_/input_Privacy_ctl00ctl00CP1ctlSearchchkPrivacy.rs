@@ -3,7 +3,7 @@
    <description></description>
    <name>input_Privacy_ctl00ctl00CP1ctlSearchchkPrivacy</name>
    <tag></tag>
-   <elementGuidId>29c82329-ed0b-414f-939b-2690b0ef5eed</elementGuidId>
+   <elementGuidId>8e79ac77-87a7-4212-a202-e870890d7d57</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

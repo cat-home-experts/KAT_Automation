@@ -3,7 +3,7 @@
    <description></description>
    <name>input_Edition_ctl00ctl00CP1ctlSearchchkRete_f4a622</name>
    <tag></tag>
-   <elementGuidId>d0dbfec1-e27c-4275-9d27-4e2850b0dc62</elementGuidId>
+   <elementGuidId>99c028ef-788f-47e6-9a55-d984a4291ae4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

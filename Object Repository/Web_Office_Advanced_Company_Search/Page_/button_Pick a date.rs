@@ -3,7 +3,7 @@
    <description></description>
    <name>button_Pick a date</name>
    <tag></tag>
-   <elementGuidId>ba160dec-e676-4218-9898-6779023f33f8</elementGuidId>
+   <elementGuidId>990e7e31-7cc4-4ae7-8871-aabf581d0939</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

@@ -3,7 +3,7 @@
    <description></description>
    <name>input_SMS_ctl00ctl00CP1ctlSearchrblTpsSMS</name>
    <tag></tag>
-   <elementGuidId>63802133-c340-42df-843d-21b539ad1739</elementGuidId>
+   <elementGuidId>6fe0e20a-1608-4693-af99-12870aab593d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

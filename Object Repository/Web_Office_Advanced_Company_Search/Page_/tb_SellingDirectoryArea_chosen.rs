@@ -3,7 +3,7 @@
    <description></description>
    <name>tb_SellingDirectoryArea_chosen</name>
    <tag></tag>
-   <elementGuidId>933605d8-b7ed-481b-81f0-0a7f6a36ed86</elementGuidId>
+   <elementGuidId>8e8bb941-fd96-4db9-9262-7364e18d07d1</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

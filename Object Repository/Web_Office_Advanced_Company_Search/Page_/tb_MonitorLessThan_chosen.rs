@@ -3,7 +3,7 @@
    <description></description>
    <name>tb_MonitorLessThan_chosen</name>
    <tag></tag>
-   <elementGuidId>ac128383-a3cc-4981-b5ab-3c5e01c4885d</elementGuidId>
+   <elementGuidId>ac77f918-d54a-4bd5-824f-12b15a153c10</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

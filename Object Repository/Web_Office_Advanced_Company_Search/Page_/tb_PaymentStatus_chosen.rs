@@ -3,7 +3,7 @@
    <description></description>
    <name>tb_PaymentStatus_chosen</name>
    <tag></tag>
-   <elementGuidId>6a19f73c-e5ff-4732-93f1-80a24c44b73e</elementGuidId>
+   <elementGuidId>9872b0d8-9127-493c-a15c-5d0e40624797</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

@@ -3,7 +3,7 @@
    <description></description>
    <name>input_Clear_ctl00ctl00CP1ctlSearchbtbSearchBottom</name>
    <tag></tag>
-   <elementGuidId>c35a2f1c-de49-4e1f-802b-31113b0f3b4d</elementGuidId>
+   <elementGuidId>7b3df460-577d-414f-80cf-8a8ce50fb3b9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

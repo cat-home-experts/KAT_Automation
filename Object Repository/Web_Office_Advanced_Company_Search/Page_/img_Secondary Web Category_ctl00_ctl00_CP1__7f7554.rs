@@ -3,7 +3,7 @@
    <description></description>
    <name>img_Secondary Web Category_ctl00_ctl00_CP1__7f7554</name>
    <tag></tag>
-   <elementGuidId>946e0784-3314-4aab-906b-c999714c171d</elementGuidId>
+   <elementGuidId>228f1a95-f024-4e74-853a-8cc590e2ecce</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

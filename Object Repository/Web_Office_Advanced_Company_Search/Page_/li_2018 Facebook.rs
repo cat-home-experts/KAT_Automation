@@ -3,7 +3,7 @@
    <description></description>
    <name>li_2018 Facebook</name>
    <tag></tag>
-   <elementGuidId>9f7cbb26-d1e6-4a9b-b9df-4d640f58a776</elementGuidId>
+   <elementGuidId>85705cb5-700d-4703-a796-82123e157e70</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

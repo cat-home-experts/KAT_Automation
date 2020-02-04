@@ -3,7 +3,7 @@
    <description></description>
    <name>input_Affiliate Member_ctl00ctl00CP1ctlSear_b655d4</name>
    <tag></tag>
-   <elementGuidId>0336f010-cd5c-4462-94af-87a12157c5c4</elementGuidId>
+   <elementGuidId>2f3c0d4e-ed05-4fcf-9dc6-596c0a4c274d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

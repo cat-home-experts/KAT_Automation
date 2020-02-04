@@ -3,7 +3,7 @@
    <description></description>
    <name>li_Affordable Windows</name>
    <tag></tag>
-   <elementGuidId>740fc6cf-94dc-470c-bd0f-8a7a7cc1cee6</elementGuidId>
+   <elementGuidId>a2c77f86-a9df-4b12-9435-0cdbfacce438</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

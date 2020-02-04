@@ -3,7 +3,7 @@
    <description></description>
    <name>li_Credibility</name>
    <tag></tag>
-   <elementGuidId>65762661-e3e8-4b66-bd6a-3266006cd105</elementGuidId>
+   <elementGuidId>2ede149f-93d4-497d-9647-d183210ae8a2</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

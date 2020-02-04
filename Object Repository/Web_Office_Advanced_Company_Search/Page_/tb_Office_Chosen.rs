@@ -3,7 +3,7 @@
    <description></description>
    <name>tb_Office_Chosen</name>
    <tag></tag>
-   <elementGuidId>3793a149-5c4e-46e7-9051-ffd5015fb462</elementGuidId>
+   <elementGuidId>ed87bf3a-7307-4f69-9253-7930cef69b38</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
