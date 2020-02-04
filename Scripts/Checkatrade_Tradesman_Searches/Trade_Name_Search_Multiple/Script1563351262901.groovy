@@ -75,7 +75,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Search_CAT_ID_D
 	'---------------------------------------------------------------------'
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Click_Search_Trade_Name'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
-	'---------------------------------------'
+		'---------------------------------------'
 	' Enter Trader Name (or ID) to Search   |'  // Changed 02/01/2020 - Refer header and script below
 	'---------------------------------------'
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Enter_Trade_Name'), [:], FailureHandling.CONTINUE_ON_FAILURE)
