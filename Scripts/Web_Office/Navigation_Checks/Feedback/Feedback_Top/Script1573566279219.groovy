@@ -100,6 +100,8 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/WebOffice/Feedback_
 '--------------------------------------------------------------'
 WebUI.verifyElementVisible(findTestObject('Object Repository/WebOffice/Feedback_Top/Page_/h3_Feedback Submissions (by week)'))
 // Left Hand Tree View (Top) Detail (Sample of Available)
+WebUI.delay(2)
+
 WebUI.verifyTextPresent("Reference Requests", false)
 WebUI.verifyTextPresent("References To Call", false)
 WebUI.verifyTextPresent("Online Reference Review", false)

@@ -31,7 +31,7 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 //  Commented Ashot screen capture, evaluation|   30/09/2019    |      DH          |                             |
 //  Extended Element Wait Times to 60         |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//  Content Change Refactored                 |   05/02/2020    |      DH          |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -83,13 +83,23 @@ WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Are
 '----------------------------------------------'
 WebUI.verifyTextPresent("Hello", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Welcome to the Checkatrade community where you can get involved with all things Checkatrade", false)
+WebUI.verifyTextPresent("Welcome to the Checkatrade Community, where you can find answers, connect", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("You can search below to find out if there is already a discussion on something you are looking for", false)
+WebUI.verifyTextPresent("with other members and get important updates from Checkatrade. Search the", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("conversations below or click on a board to start a discussion", false)
 '----------------------------------------------'
 //WebUI.verifyTextPresent("WELCOME & NEWS", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Community", false)
+'----------------------------------------------'
+//WebUI.verifyTextPresent("Members Spotlight", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Welcome to the", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Community", false)
+'----------------------------------------------'
+//WebUI.verifyTextPresent("Introduce Yourself", false)
 '----------------------------------------------'
 //WebUI.verifyTextPresent("NEW POST", false) // Could be flakey
 '----------------------------------------------'
@@ -101,6 +111,12 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Members Area/C
 WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Members Area/Community/Page_Checkatrade Community/img_1_2'), 1)
 // No LogOff on this Page - Navigaate Back
 WebUI.back()
+
+//WebUI.waitForPageLoad(60)
+//if ('Object Repository/Page_Members Area/Header_Attention_Text'){
+//	WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/Header_Attention_Text'), 60)
+//	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Utils/Popout_Handler'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+//}
 //WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/a_Dashboard'), 10)
 
 ///////////////////////////////////////
