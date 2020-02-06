@@ -3,7 +3,7 @@
    <description></description>
    <name>span_do not have</name>
    <tag></tag>
-   <elementGuidId>fb21d665-8819-4574-82ae-11e41903cc8f</elementGuidId>
+   <elementGuidId>cfa69896-fca2-40af-8f6f-ab25f2289317</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

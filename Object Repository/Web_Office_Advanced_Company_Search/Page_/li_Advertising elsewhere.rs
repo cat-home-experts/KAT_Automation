@@ -3,7 +3,7 @@
    <description></description>
    <name>li_Advertising elsewhere</name>
    <tag></tag>
-   <elementGuidId>cfe43caf-f90d-451e-871b-148d6defe70a</elementGuidId>
+   <elementGuidId>288f1f72-0ad0-4733-aad9-55d86faa1c6a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

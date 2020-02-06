@@ -3,7 +3,7 @@
    <description></description>
    <name>li_Arundel  Littlehampton (Test)</name>
    <tag></tag>
-   <elementGuidId>a54e65ac-965e-4132-9c0a-68df196e6eb3</elementGuidId>
+   <elementGuidId>3006f981-77f2-4940-aea8-df7fbe247b65</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

@@ -6,12 +6,12 @@
    <elementGuidId>ae97cdf6-5c85-4125-8a40-f5c8cdb8060c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>id(&quot;company_autocomplete_wrapper&quot;)/ul[@class=&quot;autocomplete__results&quot;]/li[@class=&quot;autocomplete__result autocomplete__result--highlighted&quot;]/a[1]/span[@class=&quot;autocomplete__column--name&quot;]</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//div[@id='company_autocomplete_wrapper']/ul/li/a/span[3]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;company_autocomplete_wrapper&quot;)/ul[@class=&quot;autocomplete__results&quot;]/li[@class=&quot;autocomplete__result autocomplete__result--highlighted&quot;]/a[1]/span[@class=&quot;autocomplete__column--name&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

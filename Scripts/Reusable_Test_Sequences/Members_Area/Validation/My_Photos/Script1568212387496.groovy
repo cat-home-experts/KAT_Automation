@@ -14,8 +14,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 
+
 //-----------------------
-// TEST HISTORY HEADER - |  
+// TEST HISTORY HEADER - |
 //-----------------------
 // Any changes to this script, please update the next available row below, with date, in the DATE CREATED column,
 // Your Name in the CREATED BY column, and Finaly, The actual change implemented in the NOTES column.
@@ -29,7 +30,7 @@ import internal.GlobalVariable as GlobalVariable
 //  Commented Ashot screen capture, evaluation|   30/09/2019    |      DH          |                             |
 //  Extended Element Wait Times to 60         |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//  Changes factoreed in, commented on rel    |   31/01/2020    |      DH          |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -75,11 +76,16 @@ WebUI.verifyTextPresent(findTestData('Members_Test_Data').getValue('MEMBER_ID', 
 '----------------------------------------------'
 WebUI.verifyTextPresent("MEMBER ID", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Manage Your Albums", false)
+// WebUI.verifyTextPresent("Manage Your Albums", false)
+WebUI.verifyTextPresent("Manage Your Gallery", false) // 31/01/20 - Manage Your Albums
 '----------------------------------------------'
-WebUI.verifyTextPresent("These albums are displayed in your public Gallery and are a great way to show the variety and quality of your work", false)
+//WebUI.verifyTextPresent("These albums are displayed in your public Gallery and are a great way to show the variety and quality of your work", false)
+WebUI.verifyTextPresent("Your photos and albums will appear in the gallery at the top of your profile", false)
+WebUI.verifyTextPresent("Images are a great way to show the variety and quality of your work", false)
+WebUI.verifyTextPresent(" If you do not upload any images then the gallery section will not show", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Click/tap on an album to open it and edit its photos and videos", false)
+'???????????????????' // Watch this
+// WebUI.verifyTextPresent("Click/tap on an album to open it and edit its photos and videos", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Add New Album", false)
 
@@ -90,5 +96,5 @@ WebUI.verifyTextPresent("Checkatrade", false)
 //WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/a_Dashboard'), 10)
 
 ///////////////////////////////////////
-//                END                // 
+//                END                //
 ///////////////////////////////////////

@@ -3,7 +3,7 @@
    <description></description>
    <name>li_Alloy Rescue</name>
    <tag></tag>
-   <elementGuidId>24f55941-fcbd-4d18-9490-65198602e6cb</elementGuidId>
+   <elementGuidId>27682595-7286-4e3b-913b-1c1eb76dda7a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

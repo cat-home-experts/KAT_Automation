@@ -3,7 +3,7 @@
    <description></description>
    <name>input_Only the selected items_ctl00ctl00CP1_03ef95</name>
    <tag></tag>
-   <elementGuidId>6f453216-c8f8-4a0c-8a04-0318c8dd1304</elementGuidId>
+   <elementGuidId>b449a6d5-fb21-4f7e-83ca-9fcdd1d0f488</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

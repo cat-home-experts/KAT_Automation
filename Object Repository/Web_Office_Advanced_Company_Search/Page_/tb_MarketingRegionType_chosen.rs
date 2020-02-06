@@ -3,7 +3,7 @@
    <description></description>
    <name>tb_MarketingRegionType_chosen</name>
    <tag></tag>
-   <elementGuidId>eae70fec-b9ba-4ad3-bee2-966e8dc3e5da</elementGuidId>
+   <elementGuidId>336bb2a5-54c5-486c-8fda-2f7305fa6fd1</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

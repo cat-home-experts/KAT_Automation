@@ -20,6 +20,7 @@ import internal.GlobalVariable as GlobalVariable
 // verifies the returns of Location for a Trader Name or CAT ID Search
 //-------------------------------------------
    'Verify the Correct Location for the Trader is Returned'
+   WebUI.waitForPageLoad(60)
     WebUI.verifyTextPresent(findTestData('Search_CAT_ID_Data (1)').getValue('tradeNameLocationVerification', GlobalVariable.row), false)
 //-------------------------------------------
 

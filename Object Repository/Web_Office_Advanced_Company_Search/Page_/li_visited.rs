@@ -3,7 +3,7 @@
    <description></description>
    <name>li_visited</name>
    <tag></tag>
-   <elementGuidId>2f555e46-ff77-40a7-a85d-f1476d5fc919</elementGuidId>
+   <elementGuidId>2ddc5b39-a471-416b-a2ea-189477a17b71</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

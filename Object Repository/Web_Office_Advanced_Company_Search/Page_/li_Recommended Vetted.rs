@@ -3,7 +3,7 @@
    <description></description>
    <name>li_Recommended Vetted</name>
    <tag></tag>
-   <elementGuidId>3ed5b9ef-a919-4729-8dba-8831c0675726</elementGuidId>
+   <elementGuidId>7b81041d-dc87-4092-9aa2-11b177a46afa</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

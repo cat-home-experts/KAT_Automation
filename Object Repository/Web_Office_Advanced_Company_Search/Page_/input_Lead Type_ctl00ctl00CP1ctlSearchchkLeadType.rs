@@ -3,7 +3,7 @@
    <description></description>
    <name>input_Lead Type_ctl00ctl00CP1ctlSearchchkLeadType</name>
    <tag></tag>
-   <elementGuidId>fc253d2e-1e96-4197-ae11-988bd9bf8242</elementGuidId>
+   <elementGuidId>591d4b53-df59-4dd8-912b-a694b3cc087d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

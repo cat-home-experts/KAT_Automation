@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;block_html_8&quot;]/center/a/img</value>
+         <value>//*[@id=&quot;block_html_13&quot;]/center/a/img</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

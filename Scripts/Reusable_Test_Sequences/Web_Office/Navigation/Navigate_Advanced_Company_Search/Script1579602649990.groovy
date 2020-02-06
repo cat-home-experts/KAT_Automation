@@ -28,7 +28,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 // Advanced Company Selection Implemented     |   21/01/2020    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// a_Company_Advance Obj referencing corrected|   04/02/2020    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -59,8 +59,8 @@ WebUI.mouseOver(findTestObject('Object Repository/WebOffice_Home_page/a_Companie
 ////////////////////////////////////////////
 //  Select Target menuItem Element        //
 ////////////////////////////////////////////
-WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Header_Menus/Page_Members Area/a_Company_Advanced_Search'), 1)
-WebUI.click(findTestObject('Object Repository/Page_Members Area/Header_Menus/Page_Members Area/a_Company_Advanced_Search'))
+WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Company_Advanced_Search'), 1)
+WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/a_Company_Advanced_Search'))
 
 
 

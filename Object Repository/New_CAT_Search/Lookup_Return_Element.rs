@@ -6,12 +6,11 @@
    <elementGuidId>d78637b6-9e1c-4619-bd8f-8eeb7c5cc6d7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//*[@id=&quot;search-page-suggestions-select-value--0&quot;]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

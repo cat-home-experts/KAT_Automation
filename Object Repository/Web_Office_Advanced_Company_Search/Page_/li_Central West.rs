@@ -3,7 +3,7 @@
    <description></description>
    <name>li_Central West</name>
    <tag></tag>
-   <elementGuidId>27c4641c-8a51-42f4-9061-8bfe4dde0c95</elementGuidId>
+   <elementGuidId>cb84b46c-4fe3-4814-849a-085320a8bea9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

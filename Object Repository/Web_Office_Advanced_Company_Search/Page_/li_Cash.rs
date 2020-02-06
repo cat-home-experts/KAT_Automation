@@ -3,7 +3,7 @@
    <description></description>
    <name>li_Cash</name>
    <tag></tag>
-   <elementGuidId>f7c0e764-bf4d-4d3c-acc8-05458191b45b</elementGuidId>
+   <elementGuidId>ce32fda4-a6d7-4ccc-aab0-b75d65ba2161</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

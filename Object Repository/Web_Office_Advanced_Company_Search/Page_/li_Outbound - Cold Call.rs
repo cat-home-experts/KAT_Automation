@@ -3,7 +3,7 @@
    <description></description>
    <name>li_Outbound - Cold Call</name>
    <tag></tag>
-   <elementGuidId>2dc82173-254a-49e8-89fc-e2147c266e48</elementGuidId>
+   <elementGuidId>71809991-dfe6-4504-93de-1fde9b387899</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

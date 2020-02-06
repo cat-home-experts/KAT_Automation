@@ -3,7 +3,7 @@
    <description></description>
    <name>tb_AccreditationType_chosen</name>
    <tag></tag>
-   <elementGuidId>3130126e-8e2f-43e9-9a76-334531101e04</elementGuidId>
+   <elementGuidId>fea2fa16-3499-4cf0-ad95-9924bfab574c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

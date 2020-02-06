@@ -3,7 +3,7 @@
    <description></description>
    <name>input_All_ctl00ctl00CP1ctlSearchchkRecReceived</name>
    <tag></tag>
-   <elementGuidId>e719a99b-a3e7-406f-aac8-2fc0ace21d04</elementGuidId>
+   <elementGuidId>77588397-b6bd-4eca-86ef-7771120628bd</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

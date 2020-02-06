@@ -3,7 +3,7 @@
    <description></description>
    <name>li_Directory Member</name>
    <tag></tag>
-   <elementGuidId>68c06425-2c52-4df7-82ca-ae4c1d065d91</elementGuidId>
+   <elementGuidId>3969befc-0cca-4898-a1aa-e4da3e2d5fdb</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

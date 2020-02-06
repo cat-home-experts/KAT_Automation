@@ -24,7 +24,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-// Search Items - Company/Person From WO Head |   28/11/2019    |        DH        |  Advancced COmpany Search   | TODO WIP
+// WO - Advanced Company Search Function      |   03/02/2020    |        DH        |  Advanced COmpany Search    |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -48,21 +48,21 @@ import internal.GlobalVariable as GlobalVariable
 // Call Setup Process - Browser Startup, Navigate, Maximize and Close Cookie Nagging Element
 //-----------------------------------------
 'For Loop to Iterate over the test data provided by the Excel spreadsheet, \r\nassociated with this test\r\n'
-for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Mobile_Test_Data').getRowNumbers(); (GlobalVariable.row)++) {
+for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Data Files/Advance_Company_Search_Data').getRowNumbers(); (GlobalVariable.row)++) {
 		'--------------------------------------'
 		' Web Office StartUp                  |'
 		'--------------------------------------'
-		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp'), [:], FailureHandling.OPTIONAL)
+		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp'), [:], FailureHandling.STOP_ON_FAILURE)
 		
 		'--------------------------------------'
 		' Navigate to <Companies> Menu Item    |'
 		'--------------------------------------'
-		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/navigation/Navigate_Advanced_Company_Search'), [:], FailureHandling.OPTIONAL)
+		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/navigation/Navigate_Advanced_Company_Search'), [:], FailureHandling.STOP_ON_FAILURE)
 		
 		'--------------------------------------'
 		' LH Pane  - Apply Search Criteria     |'
 		'--------------------------------------'
-		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Actions/Set_Advanced_Company_Data'), [:], FailureHandling.OPTIONAL)
+		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Actions/Set_Advanced_Company_Data'), [:], FailureHandling.STOP_ON_FAILURE)
 		
 		'--------------------------------------'
 		' Select Returned Record to Verify     |'
@@ -70,9 +70,9 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Mobile_Test_Dat
 		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Actions/Select_Company'), [:], FailureHandling.OPTIONAL)
 		
 		'--------------------------------------'
-		' Verify Returned Consumer Record      |'
+		' Verify Returned Company Record       |'
 		'--------------------------------------'
-		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Verification/Company_Returned_Search_Record'), [:], FailureHandling.OPTIONAL)
+		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Verification/Company_Returned_Advanced_Search_Record'), [:], FailureHandling.OPTIONAL)
 		
 		'--------------------------'
 		' Teardown - CLose Browser |'

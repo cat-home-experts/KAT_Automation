@@ -3,7 +3,7 @@
    <description></description>
    <name>li_Addagrip</name>
    <tag></tag>
-   <elementGuidId>d30481a0-c993-4801-986b-81caa67f8119</elementGuidId>
+   <elementGuidId>10d68c63-ee7c-494c-90a9-cf6acdf98a0a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

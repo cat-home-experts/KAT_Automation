@@ -3,7 +3,7 @@
    <description></description>
    <name>img_Primary Web Category_ctl00_ctl00_CP1_ct_3f0990</name>
    <tag></tag>
-   <elementGuidId>cb2bfb7f-7978-4178-8f90-a3f9ebd9b1a5</elementGuidId>
+   <elementGuidId>9d2b911f-746f-47c1-8e03-9a23f24462c2</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

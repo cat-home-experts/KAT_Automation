@@ -3,7 +3,7 @@
    <description></description>
    <name>tb_Visited_chosen</name>
    <tag></tag>
-   <elementGuidId>b2535db1-604f-421a-b187-c39a739bde3f</elementGuidId>
+   <elementGuidId>ff828c91-e947-4459-90f6-ae84b06da16d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

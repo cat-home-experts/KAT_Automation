@@ -3,7 +3,7 @@
    <description></description>
    <name>tb_Uploaded_chosen</name>
    <tag></tag>
-   <elementGuidId>6755373d-cfda-4c4b-bb15-a1290c7dde65</elementGuidId>
+   <elementGuidId>b97442df-4834-4a2d-b34b-152148dd36ad</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
