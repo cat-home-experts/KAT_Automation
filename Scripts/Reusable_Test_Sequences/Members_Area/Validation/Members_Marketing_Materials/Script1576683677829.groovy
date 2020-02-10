@@ -27,7 +27,7 @@ import internal.GlobalVariable as GlobalVariable
 // Validation of Members Marketing Materials  |    19/12/2019   |        DH        |                             |
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Content and Behavioral changes factored in |    10/02/2020   |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -71,9 +71,17 @@ WebUI.delay(1)
 '-----------------------------------------------------------'
 'CHECK'
 '-----------------------------------------------------------'
-WebUI.verifyTextPresent("The Checkatrade Report is a detailed report about your company", false)
-WebUI.verifyTextPresent("that you can give to potential customers to show them your credentials", false)
-WebUI.verifyTextPresent("Choose from these reports", false)
+' Textual presentation changed - 10/02/2020'
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/Page_Members Area/Marketing_Report_Download_Button'), 60)
+' Embeded text now difficult to resolve'
+
+//WebUI.verifyTextPresent("The Checkatrade Report is a detailed report about your company", false)
+////                       The Checkatrade Report is a detailed report about your company
+//WebUI.verifyTextPresent("that you can give to potential customers to show them your credentials", false)
+////                       that you can give to potential customers to show them your credentials
+//WebUI.verifyTextPresent("Choose from these reports", false)
+//                       Choose from these reports 
 '----------------------------------------------'
 'Marketing Materials Header - Top View'
 '----------------------------------------------'
@@ -111,10 +119,10 @@ WebUI.waitForPageLoad(60)
 '-----------------------------------------------------------'
 'CHECK'
 '-----------------------------------------------------------'
-WebUI.verifyTextPresent("If you run out of feedback cards or stickers, order more below", false)
-WebUI.verifyTextPresent("We will send them free of charge to the address we have registered for your company", false)
-WebUI.verifyTextPresent("To order, add the number of items you require. Confirm and", false)
-WebUI.verifyTextPresent("place your order with the blue button at the bottom of this section", false)
+//WebUI.verifyTextPresent("If you run out of feedback cards or stickers, order more below", false)
+//WebUI.verifyTextPresent("We will send them free of charge to the address we have registered for your company", false)
+//WebUI.verifyTextPresent("To order, add the number of items you require. Confirm and", false)
+//WebUI.verifyTextPresent("place your order with the blue button at the bottom of this section", false)
 '----------------------------------------------'
 'Customer Reputation'
 '----------------------------------------------'

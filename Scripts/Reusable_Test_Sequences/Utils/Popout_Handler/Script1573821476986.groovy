@@ -17,17 +17,35 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 //Snippit that was produced to handle the sudden appearance of a POPUP Screen - New Website Nagger
-WebUI.delay(2)
-WebUI.waitForPageLoad(60)
-try {
 
-	if ('Object Repository/Popout/go_Away'){
-		WebUI.click(findTestObject('Object Repository/Popout/go_Away'))
-		KeywordUtil.markPassed(" View Our New Website POPOUT Displayed")
-	}	
-} catch (Exception e) {
-   // Nothing to do, as popout wasn't presented
-		KeywordUtil.markPassed(" View Our New Website POPOUT NOT Displayed")
-}
+'---------------------------------------------------------------------------------'
+// Bahvioral changes - 10/02/2020 - Removed Try Catch for If Else - DH
+'---------------------------------------------------------------------------------'
+
+//WebUI.delay(2)
+//WebUI.waitForPageLoad(60)
+//
+//
+//if (!WebUI.verifyElementPresent(findTestObject('Object Repository/Popout/go_Away'))) {
+//	
+//	KeywordUtil.markPassed(" View Our New Website POPOUT NOT Displayed")
+//} else {
+//
+//	WebUI.click(findTestObject('Object Repository/Popout/go_Away'))
+//	KeywordUtil.markPassed(" View Our New Website POPOUT Displayed and Dispelled")
+//}
+
+// Commented 10/02/2020
+
+//try {
+//
+//	if ('Object Repository/Popout/go_Away'){
+//		WebUI.click(findTestObject('Object Repository/Popout/go_Away'))
+//		KeywordUtil.markPassed(" View Our New Website POPOUT Displayed")
+//	}	
+//} catch (Exception e) {
+//   // Nothing to do, as popout wasn't presented
+//		KeywordUtil.markPassed(" View Our New Website POPOUT NOT Displayed")
+//}
 
 // End
