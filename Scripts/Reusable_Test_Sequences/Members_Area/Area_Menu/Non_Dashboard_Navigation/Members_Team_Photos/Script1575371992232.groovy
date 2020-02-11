@@ -60,7 +60,7 @@ WebUI.mouseOver(findTestObject('Object Repository/Page_Members Area/Header_Menus
 ////////////////////////////////////////////
 //  Select Target menuItem Element        //
 ////////////////////////////////////////////
-WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Header_Menus/Page_Members Area/a_Team Photos'), 1)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Header_Menus/Page_Members Area/a_Team Photos'), 5)
 WebUI.click(findTestObject('Object Repository/Page_Members Area/Header_Menus/Page_Members Area/a_Team Photos'))
 
 ///////////////////////////////////////
