@@ -73,7 +73,7 @@
    <testCaseLink>
       <guid>21e48953-26a4-4858-baed-8b984423f2c1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Members_Area/Members_Marketing_Materials</testCaseId>
    </testCaseLink>
    <testCaseLink>

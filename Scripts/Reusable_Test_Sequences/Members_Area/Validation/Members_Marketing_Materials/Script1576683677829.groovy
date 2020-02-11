@@ -73,7 +73,7 @@ WebUI.delay(1)
 '-----------------------------------------------------------'
 ' Textual presentation changed - 10/02/2020'
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/Page_Members Area/Marketing_Report_Download_Button'), 60)
+//WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Page_Members Area/Marketing_Report_Download_Button'), 60)
 ' Embeded text now difficult to resolve'
 
 //WebUI.verifyTextPresent("The Checkatrade Report is a detailed report about your company", false)

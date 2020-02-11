@@ -78,11 +78,6 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Da
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Members_Contact_Preferences'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	//-----------------------------------------
-	// Set Whistle Blower Parameters          |  TODO - outline created in specified location, but need to be finalised (Function currently unavailable)
-	//-----------------------------------------
-	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Members_Contact_Preferences'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-		
-	//-----------------------------------------
 	// Log OFF the Members Area               |
 	//-----------------------------------------
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Banner_Menu/log_Off'), [:], FailureHandling.OPTIONAL)
