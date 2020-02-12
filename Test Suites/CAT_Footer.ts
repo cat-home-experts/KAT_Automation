@@ -100,4 +100,16 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/CAT_Footer/Homeowner/Secure_Contacts</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>9ea4d5b6-1aa8-4ca6-af28-7141b7b46515</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/CAT_Footer/Homeowner/The_Checkatrade_Standard</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2dc3fed8-7cc1-4c6e-82f1-ea94c954b279</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/CAT_Footer/Homeowner/Why_Checkatrade</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

@@ -19,7 +19,7 @@
          <configuration>
             <groupName>Web Desktop</groupName>
             <profileName>Dev_Test</profileName>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Firefox</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Members_Area</testSuiteEntity>
@@ -37,7 +37,7 @@
          <configuration>
             <groupName>Web Desktop</groupName>
             <profileName>Dev_Test</profileName>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Firefox</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/CAT_Footer</testSuiteEntity>
@@ -55,7 +55,7 @@
          <configuration>
             <groupName>Web Desktop</groupName>
             <profileName>Dev_Test</profileName>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Firefox</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Trade_Location_Multiple_Search</testSuiteEntity>
@@ -73,7 +73,7 @@
          <configuration>
             <groupName>Web Desktop</groupName>
             <profileName>Dev_Test</profileName>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Firefox</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Web_Office_Top_Level</testSuiteEntity>

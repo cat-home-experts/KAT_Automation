@@ -25,8 +25,8 @@ import internal.GlobalVariable as GlobalVariable
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
 // Verify Footer Navigation is correct        |                 |                  |                             |
-// navigating Trades->Trade Advice Ctr Returns|    05/02/2020   |         DH       |                             |
-// Trade Advice Centre Overview Page          |                 |                  |                             |
+// navigating Homeowner->Why Checkatrade      |    12/02/2020   |         DH       |                             |
+// Menu Returns Why Checkatrade Page          |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -46,9 +46,9 @@ import internal.GlobalVariable as GlobalVariable
 //                                                                                                               |
 //	GIVEN - The Chekatrade Website 'HOMEPAGE' is Presented on a Client Device                                    |
 //                                                                                                               |
-//	WHEN -  We Navigate Trades-Trades Adfvice Center from the Page Footer Hyperlink                              |
+//	WHEN -  We Navigate Homeowner - Why Checkatrade from the Page Footer Hyperlink                               |
 //                                                                                                               |
-//  THEN -  The Resulting Outcome is that the <Trade Advice Center> Page is Returned                             |
+//  THEN -  The Resulting Outcome is that the <Why Checkatrade> Page is Returned                                 |
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 	
@@ -61,16 +61,16 @@ import internal.GlobalVariable as GlobalVariable
 	' Home Page validation Checks after COOKIE Dispelled'
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Home'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
-	'---------------------------------------'
-	' Navigate to Trades->Find out More     |' //  Only Used ONCE - Hence, Not In Reuse Folder
-	'---------------------------------------'
-	WebUI.scrollToElement(findTestObject('Object Repository/CAT_Footer/Page_Checkatrade Find a tradesperson you can trust/div_Trade Advice Center'), 3)
-	WebUI.click(findTestObject('Object Repository/CAT_Footer/Page_Checkatrade Find a tradesperson you can trust/div_Trade Advice Center'))
+	'--------------------------------------------'
+	' Navigate to Homeowner->Why Checkatrade     |' //  Only Used ONCE - Hence, Not In Reuse Folder
+	'--------------------------------------------'
+	WebUI.scrollToElement(findTestObject('Object Repository/CAT_Footer/Page_Checkatrade Find a tradesperson you can trust/div_Why Checkatrade'), 3)
+	WebUI.click(findTestObject('Object Repository/CAT_Footer/Page_Checkatrade Find a tradesperson you can trust/div_Why Checkatrade'))
 	
 	'---------------------------------------'
 	' Verify Returned Page is as Expected   |'
 	'---------------------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Footer/Trades/Trade_Advice_Center_Verification'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Footer/Homeowner/Why_Checkatrade_Verification'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'--------------------------'
 	' Teardown - CLose Browser |'

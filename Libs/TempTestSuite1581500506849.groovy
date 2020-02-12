@@ -15,11 +15,11 @@ import internal.GlobalVariable as GlobalVariable
 Map<String, String> suiteProperties = new HashMap<String, String>();
 
 
-suiteProperties.put('id', 'Test Suites/Members_Area')
+suiteProperties.put('id', 'Test Suites/Web_Office_Top_Level')
 
-suiteProperties.put('name', 'Members_Area')
+suiteProperties.put('name', 'Web_Office_Top_Level')
 
-suiteProperties.put('description', 'Test Suite containing all MEMBERS AREA tets Function')
+suiteProperties.put('description', 'Confirms each of the Web Office views are intact when navigating throught the TOP LEVEL Menu Items on the Header Bar.\n1) Companies\n2) Directories\n3) Feedback\n4) Consumers\n5) Cases\n6) Tools\n7) Finance\n8) Reports\n9) Sales Area\n10) Settings')
  
 
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.webui.contribution.WebUiDriverCleaner())
@@ -29,8 +29,8 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 
 
 
-RunConfiguration.setExecutionSettingFile("C:\\Users\\davidho\\git\\src\\Reports\\20200211_145722\\Members_Area\\20200211_145723\\execution.properties")
+RunConfiguration.setExecutionSettingFile("C:\\Users\\davidho\\git\\src\\Reports\\20200212_094139\\Web_Office_Top_Level\\20200212_094146\\execution.properties")
 
 TestCaseMain.beforeStart()
 
-TestCaseMain.startTestSuite('Test Suites/Members_Area', suiteProperties, new File("C:\\Users\\davidho\\git\\src\\Reports\\20200211_145722\\Members_Area\\20200211_145723\\testCaseBinding"))
+TestCaseMain.startTestSuite('Test Suites/Web_Office_Top_Level', suiteProperties, new File("C:\\Users\\davidho\\git\\src\\Reports\\20200212_094139\\Web_Office_Top_Level\\20200212_094146\\testCaseBinding"))

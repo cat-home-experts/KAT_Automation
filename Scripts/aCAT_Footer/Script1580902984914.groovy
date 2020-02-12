@@ -21,10 +21,10 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.click(findTestObject('Object Repository/CAT_Footer/Page_Checkatrade Find a tradesperson you can trust/div_Why Checkatrade'))
 
-WebUI.click(findTestObject('Object Repository/CAT_Footer/Page_Checkatrade Find a tradesperson you can trust/div_The Checkatrade Standard'))
 
 
-WebUI.click(findTestObject('Object Repository/CAT_Footer/Page_Checkatrade Find a tradesperson you can trust/div_Secure Contacts'))
+
+
 
 
 

@@ -15,11 +15,11 @@ import internal.GlobalVariable as GlobalVariable
 Map<String, String> suiteProperties = new HashMap<String, String>();
 
 
-suiteProperties.put('id', 'Test Suites/Trade_Name_Multiple_Search')
+suiteProperties.put('id', 'Test Suites/Web_Office_Searches')
 
-suiteProperties.put('name', 'Trade_Name_Multiple_Search')
+suiteProperties.put('name', 'Web_Office_Searches')
 
-suiteProperties.put('description', 'Trade_Name_Multiple_Search')
+suiteProperties.put('description', '')
  
 
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.webui.contribution.WebUiDriverCleaner())
@@ -29,8 +29,8 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 
 
 
-RunConfiguration.setExecutionSettingFile("C:\\Users\\davidho\\git\\src\\Reports\\20200211_145722\\Trade_Name_Multiple_Search\\20200211_145728\\execution.properties")
+RunConfiguration.setExecutionSettingFile("C:\\Users\\davidho\\git\\src\\Reports\\20200212_094139\\Web_Office_Searches\\20200212_094147\\execution.properties")
 
 TestCaseMain.beforeStart()
 
-TestCaseMain.startTestSuite('Test Suites/Trade_Name_Multiple_Search', suiteProperties, new File("C:\\Users\\davidho\\git\\src\\Reports\\20200211_145722\\Trade_Name_Multiple_Search\\20200211_145728\\testCaseBinding"))
+TestCaseMain.startTestSuite('Test Suites/Web_Office_Searches', suiteProperties, new File("C:\\Users\\davidho\\git\\src\\Reports\\20200212_094139\\Web_Office_Searches\\20200212_094147\\testCaseBinding"))

@@ -15,11 +15,11 @@ import internal.GlobalVariable as GlobalVariable
 Map<String, String> suiteProperties = new HashMap<String, String>();
 
 
-suiteProperties.put('id', 'Test Suites/Web_Office_Searches')
+suiteProperties.put('id', 'Test Suites/Members_Area')
 
-suiteProperties.put('name', 'Web_Office_Searches')
+suiteProperties.put('name', 'Members_Area')
 
-suiteProperties.put('description', '')
+suiteProperties.put('description', 'Test Suite containing all MEMBERS AREA tets Function')
  
 
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.webui.contribution.WebUiDriverCleaner())
@@ -29,8 +29,8 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 
 
 
-RunConfiguration.setExecutionSettingFile("C:\\Users\\davidho\\git\\src\\Reports\\20200211_145722\\Web_Office_Searches\\20200211_145730\\execution.properties")
+RunConfiguration.setExecutionSettingFile("C:\\Users\\davidho\\git\\src\\Reports\\20200212_094139\\Members_Area\\20200212_094140\\execution.properties")
 
 TestCaseMain.beforeStart()
 
-TestCaseMain.startTestSuite('Test Suites/Web_Office_Searches', suiteProperties, new File("C:\\Users\\davidho\\git\\src\\Reports\\20200211_145722\\Web_Office_Searches\\20200211_145730\\testCaseBinding"))
+TestCaseMain.startTestSuite('Test Suites/Members_Area', suiteProperties, new File("C:\\Users\\davidho\\git\\src\\Reports\\20200212_094139\\Members_Area\\20200212_094140\\testCaseBinding"))

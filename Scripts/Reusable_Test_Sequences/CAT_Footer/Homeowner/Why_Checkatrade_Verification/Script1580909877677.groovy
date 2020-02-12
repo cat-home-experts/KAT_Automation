@@ -25,8 +25,8 @@ import internal.GlobalVariable as GlobalVariable
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
 // Verify Footer Navigation is correct        |                 |                  |                             |
-// navigating Trades->Find out More Returns   |    05/02/2020   |         DH       |                             |
-// Membership Overview Page VALIDATION        |                 |                  |                             |
+// navigating Homeowner->Why Checkatrade      |    12/02/2020   |         DH       |                             |
+// Menu Returns Why Checkatrade Page VALIDATIO|                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -77,56 +77,58 @@ WebUI.waitForPageLoad(60)
 //WebUI.verifyTextPresent("MEMBER ID", false)
 '----------------------------------------------'
 'Header'
-WebUI.verifyTextPresent("Membership Overview", false)
+WebUI.verifyTextPresent("Last year over 12 million people", false)
+WebUI.verifyTextPresent("trusted Checkatrade to help them find a reputable tradesperson", false)
 '----------------------------------------------'
-'Sub Header'
-WebUI.verifyTextPresent("Trades Application", false)
+'Sub Header - Ribbon Menu'
+WebUI.verifyTextPresent("Why Checkatrade", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("FAQ's", false)
+WebUI.verifyTextPresent("The Checkatrade Standard", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Enquire Now", false)
+WebUI.verifyTextPresent("Resolving issues", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("FAQ", false)
 '----------------------------------------------'
 
 'Page Body'
 
-WebUI.verifyTextPresent("GREAT TRADES OF BRITAIN", false)
+WebUI.verifyTextPresent("Millions of reviews", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Join Britain’s Busiest Network", false)
+WebUI.verifyTextPresent("Free to use", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Over 1 Million customers come to checkatrade.com every month to find trades with great reputations", false)
+WebUI.verifyTextPresent("Nationwide", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Call us on", false)
+WebUI.verifyTextPresent("Our members give out a feedback card with each and every job", false)
 '----------------------------------------------'
-//WebUI.verifyTextPresent("03301", false)
-//'----------------------------------------------'
-//WebUI.verifyTextPresent("625", false)
-//'----------------------------------------------'
-//WebUI.verifyTextPresent("349", false)
+WebUI.verifyTextPresent("Checkatrade is a completely free service", false)
+//                       Checkatrade is a completely free service
 '----------------------------------------------'
-WebUI.verifyTextPresent("Get Started", false)
+WebUI.verifyTextPresent("Search for tradespeople who work near you from anywhere in the UK", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Why Join Checkatrade?", false)
+WebUI.verifyTextPresent("About our members", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Every month we get over 1 million customers visiting checkatrade.com looking for a reliable tradesperson like you", false)
+WebUI.verifyTextPresent("Checkatrade runs strict background checks on tradespeople before they can become members. Once they join", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("members agree to have feedback from their customers put online for all to see", false)
 '----------------------------------------------'
 
 WebUI.scrollToPosition(1000, 1000)
 WebUI.delay(1)
 
+
 'Footer'
 
+'Put This In Shared'
+WebUI.verifyTextPresent("Trades", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Call us on", false)
+WebUI.verifyTextPresent("Homeowner", false)
 '----------------------------------------------'
-//WebUI.verifyTextPresent("03301", false)
-//'----------------------------------------------'
-//WebUI.verifyTextPresent("625", false)
-//'----------------------------------------------'
-//WebUI.verifyTextPresent("349", false)
+WebUI.verifyTextPresent("Company", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Get Started", false)
+WebUI.verifyTextPresent("Follow Us On", false)
 '----------------------------------------------'
-//WebUI.verifyTextPresent("LiveChat", false)
+
+
 '----------------------------------------------'
 WebUI.verifyTextPresent("We use cookies to help make this website better", false)
 '----------------------------------------------'

@@ -25,8 +25,8 @@ import internal.GlobalVariable as GlobalVariable
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
 // Verify Footer Navigation is correct        |                 |                  |                             |
-// navigating Trades->Find out More Returns   |    05/02/2020   |         DH       |                             |
-// Membership Overview Page VALIDATION        |                 |                  |                             |
+// navigating Homeowner->Checkatrade Standard |    12/02/2020   |         DH       |                             |
+// Menu Returns Checkatrade Standard Page VAL |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -77,56 +77,104 @@ WebUI.waitForPageLoad(60)
 //WebUI.verifyTextPresent("MEMBER ID", false)
 '----------------------------------------------'
 'Header'
-WebUI.verifyTextPresent("Membership Overview", false)
+WebUI.verifyTextPresent("The Checkatrade Standard", false)
 '----------------------------------------------'
-'Sub Header'
-WebUI.verifyTextPresent("Trades Application", false)
+'Sub Header - Ribbon Menu'
+WebUI.verifyTextPresent("Why Checkatrade", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("FAQ's", false)
+WebUI.verifyTextPresent("The Checkatrade Standard", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Enquire Now", false)
+WebUI.verifyTextPresent("Resolving issues", false)
 '----------------------------------------------'
+WebUI.verifyTextPresent("FAQ", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Our members are proud to be part of Checkatrade.com, and they stand by their work", false)
+WebUI.verifyTextPresent("To show their commitment to service and quality, every single member has agreed to uphold The Checkatrade Standard", false)
 
 'Page Body'
 
-WebUI.verifyTextPresent("GREAT TRADES OF BRITAIN", false)
+WebUI.verifyTextPresent("Checkatrade members agree to", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Join Britain’s Busiest Network", false)
+WebUI.verifyTextPresent("Be honest in all dealings with you", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Over 1 Million customers come to checkatrade.com every month to find trades with great reputations", false)
+WebUI.verifyTextPresent("Tell you about any call-out fees before coming to you", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Call us on", false)
+WebUI.verifyTextPresent("Let you know straight away if they can’t do the work", false)
 '----------------------------------------------'
-//WebUI.verifyTextPresent("03301", false)
-//'----------------------------------------------'
-//WebUI.verifyTextPresent("625", false)
-//'----------------------------------------------'
-//WebUI.verifyTextPresent("349", false)
+WebUI.verifyTextPresent("Keep appointments and arrive on time (calling in advance if they need to reschedule)", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Get Started", false)
+WebUI.verifyTextPresent("Be realistic about when they can start work and how long it will take", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Why Join Checkatrade?", false)
+WebUI.verifyTextPresent("Be courteous. Treat you, your property and belongings with respect", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Every month we get over 1 million customers visiting checkatrade.com looking for a reliable tradesperson like you", false)
+WebUI.verifyTextPresent("Keep you in the picture about all aspects of the work", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Return phone messages promptly", false)
+'----------------------------------------------'
+
+WebUI.scrollToPosition(500, 500)
+WebUI.delay(1)
+
+'Mid Page'
+
+WebUI.verifyTextPresent("Create an additional contract for variations from the original agreement", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Deal with complaints promptly and professionally", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Never demand cash payment", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Never be verbally or physically abusive or threatening to a customer in any way", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Not obtain work through cold calling", false)
+'----------------------------------------------'
+
+WebUI.verifyTextPresent("Checkatrade members will give you a feedback card up front. After they have finished the work", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("send it in to let the public know how they did. If you prefer, give your feedback online", false)
+'----------------------------------------------'
+
+WebUI.scrollToPosition(750, 750)
+WebUI.delay(1)
+
+'Mid Page'
+WebUI.verifyTextPresent("All Checkatrade members are thoroughly vetted before they are displayed on our website", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Interviewed", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Accreditations and Qualifications", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Public Liability Insurance", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("ID checked", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("References", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Address verified", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("No reliance on information", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("The content contained on the Website is provided for general information only.", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("It is not intended to amount to advice on which you should rely", false)
 '----------------------------------------------'
 
 WebUI.scrollToPosition(1000, 1000)
 WebUI.delay(1)
 
+
 'Footer'
 
+'Put This In Shared'
+WebUI.verifyTextPresent("Trades", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Call us on", false)
+WebUI.verifyTextPresent("Homeowner", false)
 '----------------------------------------------'
-//WebUI.verifyTextPresent("03301", false)
-//'----------------------------------------------'
-//WebUI.verifyTextPresent("625", false)
-//'----------------------------------------------'
-//WebUI.verifyTextPresent("349", false)
+WebUI.verifyTextPresent("Company", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Get Started", false)
+WebUI.verifyTextPresent("Follow Us On", false)
 '----------------------------------------------'
-//WebUI.verifyTextPresent("LiveChat", false)
+
+
 '----------------------------------------------'
 WebUI.verifyTextPresent("We use cookies to help make this website better", false)
 '----------------------------------------------'

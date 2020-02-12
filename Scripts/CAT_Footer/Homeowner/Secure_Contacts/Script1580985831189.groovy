@@ -26,7 +26,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 // Verify Footer Navigation is correct        |                 |                  |                             |
 // navigating Homeowner->Secure Contacts Memu |    11/02/2020   |         DH       |                             |
-// Returns Frequently Asked Questions Page    |                 |                  |                             |
+// Returns What Are Secure Contact Detail Page|                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
