@@ -118,4 +118,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/CAT_Footer/Follow_Us_On/Terms_of_Use</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>9efee77d-371b-4da1-b1eb-9030f10ed73e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/CAT_Footer/Follow_Us_On/Privacy_Notice</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
