@@ -27,7 +27,7 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
 // Fires up the website (CAT), Dispels Cookie |                 |                  |                             |
-// Nagging the Maximizes Browser              |    18/07/2019   |         DH       |                             |
+// Nagging then Maximizes Browser             |    18/07/2019   |         DH       |                             |
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 // Changed OpenBrowser/Navigate URL method    |    20/08/2019   |         DH       | OpenBrowser with preset URL |

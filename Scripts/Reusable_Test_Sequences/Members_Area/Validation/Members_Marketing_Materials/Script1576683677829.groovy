@@ -29,7 +29,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 // Content and Behavioral changes factored in |    10/02/2020   |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Embedded Textual Content - Verifying Prime |    13/02/2020   |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -74,7 +74,7 @@ WebUI.delay(1)
 ' Textual presentation changed - 10/02/2020'
 
 //WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Page_Members Area/Marketing_Report_Download_Button'), 60)
-' Embeded text now difficult to resolve'
+' Content Change'
 
 //WebUI.verifyTextPresent("The Checkatrade Report is a detailed report about your company", false)
 ////                       The Checkatrade Report is a detailed report about your company
@@ -119,35 +119,36 @@ WebUI.waitForPageLoad(60)
 '-----------------------------------------------------------'
 'CHECK'
 '-----------------------------------------------------------'
-//WebUI.verifyTextPresent("If you run out of feedback cards or stickers, order more below", false)
-//WebUI.verifyTextPresent("We will send them free of charge to the address we have registered for your company", false)
-//WebUI.verifyTextPresent("To order, add the number of items you require. Confirm and", false)
-//WebUI.verifyTextPresent("place your order with the blue button at the bottom of this section", false)
+// WebUI.verifyTextPresent("If you run out of feedback cards or stickers, order more below", false) // Embedded text changed 12/02/2020
+//WebUI.verifyTextPresent("We will send them free of charge to the address we have registered for your company", false) // Embedded text changed 12/02/2020
+//WebUI.verifyTextPresent("To order, add the number of items you require. Confirm and", false) // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("place your order with the blue button at the bottom of this section", false) // Embedded text changed 12/02/2020
 '----------------------------------------------'
 'Customer Reputation'
 '----------------------------------------------'
-WebUI.verifyTextPresent("Customer Reputation Report Cards (Feedback Cards)", false)
-WebUI.verifyTextPresent("Feedback Card. Sent in batches of 10", false)
-WebUI.verifyTextPresent("The most important element of your membership", false)
-WebUI.verifyTextPresent("You can now order", false)
-WebUI.verifyTextPresent("Change comments that appear on your cards", false)
-WebUI.verifyTextPresent("Preview (pdf)", false)
+// WebUI.verifyTextPresent("Customer Reputation Report Cards (Feedback Cards)", false)  // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("Feedback Card. Sent in batches of 10", false)  // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("The most important element of your membership", false)  // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("You can now order", false)  // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("Change comments that appear on your cards", false)
+// WebUI.verifyTextPresent("Preview (pdf)", false)
 '----------------------------------------------'
 'Checkatrade Vehicle Vinyl - Small'
 '----------------------------------------------'
-WebUI.verifyTextPresent("Checkatrade Vehicle Vinyl - Small", false)
-WebUI.verifyTextPresent("Checkatrade vinyl for your van or vehicle", false) // Multiple occurances
-WebUI.verifyTextPresent("Exterior use, size small (21 cm x 5.5cm)", false)
-WebUI.verifyTextPresent("There are different designs to suit different vehicle body colours", false) // Multiple occurances
-WebUI.verifyTextPresent("All vinyls are coloured letters on a clear background.", false)      	// Multiple occurances
-WebUI.verifyTextPresent("Please contact Members Services if you require more than 3", false)	// Multiple occurances
-WebUI.verifyTextPresent("What colour is your vehicle?", false)	// Multiple occurances
-WebUI.verifyTextPresent("Quantity", false)	// Multiple occurances
+// WebUI.verifyTextPresent("Checkatrade Vehicle Vinyl - Small", false)  // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("Checkatrade vinyl for your van or vehicle", false) // Multiple occurances  // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("Exterior use, size small (21 cm x 5.5cm)", false)  // Embedded text changed 12/02/2020  // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("There are different designs to suit different vehicle body colours", false) // Multiple occurances  // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("All vinyls are coloured letters on a clear background.", false)      	// Multiple occurances  // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("Please contact Members Services if you require more than 3", false)	// Multiple occurances  // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("What colour is your vehicle?", false)	// Multiple occurances  // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("Quantity", false)	// Multiple occurances
+
 '----------------------------------------------'
 'Checkatrade Vehicle Vinyl - Medium'
 '----------------------------------------------'
-WebUI.verifyTextPresent("Checkatrade Vehicle Vinyl - Medium", false)
-WebUI.verifyTextPresent("Exterior use, size medium (45 cm x 12cm)", false)
+// WebUI.verifyTextPresent("Checkatrade Vehicle Vinyl - Medium", false) // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("Exterior use, size medium (45 cm x 12cm)", false) // Embedded text changed 12/02/2020
 '----------------------------------------------'
 'NEED TO SCROLL TO HALF SCREEN'
 'Scroll Half Page Down'
@@ -155,28 +156,28 @@ WebUI.scrollToPosition(600, 600)
 '----------------------------------------------'
 'Checkatrade Vehicle Vinyl - Large'
 '----------------------------------------------'
-WebUI.verifyTextPresent("Checkatrade Vehicle Vinyl - Large", false)
-WebUI.verifyTextPresent("Exterior use, Size large (75 cm x 20cm)", false)
-WebUI.verifyTextPresent("PLEASE BE AWARE THESE ARE NEARLY 1", false)
-WebUI.verifyTextPresent("METRE LONG SO THEREFORE PLEASE", false)
-WebUI.verifyTextPresent("ENSURE THERE IS ENOUGH SPACE ON YOUR VEHICLE", false)
-WebUI.verifyTextPresent("These vinyls are coloured letter cut-outs with no background.", false)
-WebUI.verifyTextPresent("Please contact Members Services if you require these", false)
+// WebUI.verifyTextPresent("Checkatrade Vehicle Vinyl - Large", false) // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("Exterior use, Size large (75 cm x 20cm)", false) // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("PLEASE BE AWARE THESE ARE NEARLY 1", false) // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("METRE LONG SO THEREFORE PLEASE", false) // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("ENSURE THERE IS ENOUGH SPACE ON YOUR VEHICLE", false) // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("These vinyls are coloured letter cut-outs with no background.", false)  // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("Please contact Members Services if you require these", false)  // Embedded text changed 12/02/2020
 '----------------------------------------------'
 'Avoid Rogue Trades - Vinyl'
 '----------------------------------------------'
-WebUI.verifyTextPresent("Avoid Rogue Trades - Vinyl", false)
-WebUI.verifyTextPresent("(24 cm x 3 cm) Vehicle Vinyl,", false)
-WebUI.verifyTextPresent("printed on a red background", false)
-WebUI.verifyTextPresent("can be used in conjunction with Checkatrade vehicle vinyls", false)
+// WebUI.verifyTextPresent("Avoid Rogue Trades - Vinyl", false) // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("(24 cm x 3 cm) Vehicle Vinyl,", false) // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("printed on a red background", false) // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("can be used in conjunction with Checkatrade vehicle vinyls", false) // Embedded text changed 12/02/2020
 '----------------------------------------------'
 'NEED TO SCROLL A BIT MORE'
 'Scroll Half Page Down'
 WebUI.scrollToPosition(400, 400)
 '----------------------------------------------'
 'FOOTER'
-WebUI.verifyTextPresent("Review, edit and place your order", false)
-WebUI.verifyTextPresent("please allow 7 to 10 days for your order to arrive", false)
+// WebUI.verifyTextPresent("Review, edit and place your order", false) // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("please allow 7 to 10 days for your order to arrive", false) // Embedded text changed 12/02/2020
 //WebUI.verifyTextPresent("Select items to order", false)                       
 WebUI.verifyTextPresent("Images for your website", false)
 WebUI.verifyTextPresent("Your free QR code", false)
@@ -201,23 +202,23 @@ WebUI.waitForPageLoad(60)
 '-----------------------------------------------------------'
 'CHECK'
 '-----------------------------------------------------------'
-WebUI.verifyTextPresent("A powerful way of displaying your reputation on your website", false)
-WebUI.verifyTextPresent("If you have your own website, below are some useful images", false)
-WebUI.verifyTextPresent("that you can use to impress your customers", false)
-WebUI.verifyTextPresent("Feedback Chart - Sample", false)
-WebUI.verifyTextPresent("Feedback Summary - Sample", false)
-WebUI.verifyTextPresent("Click on the image to preview the link", false)
+// WebUI.verifyTextPresent("A powerful way of displaying your reputation on your website", false) // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("If you have your own website, below are some useful images", false) // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("that you can use to impress your customers", false) // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("Feedback Chart - Sample", false) // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("Feedback Summary - Sample", false) // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("Click on the image to preview the link", false) // Embedded text changed 12/02/2020
 '----------------------------------------------'
 'NEED TO SCROLL TO HALF SCREEN'
 'Scroll Half Page Down'
 WebUI.scrollToPosition(400, 400)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Checkatrade Logo - Sample", false)
-WebUI.verifyTextPresent("Download jpg", false)
-WebUI.verifyTextPresent("Download tif", false)
-WebUI.verifyTextPresent("Download EPS", false)
-WebUI.verifyTextPresent("Download EPS (small)", false)
-WebUI.verifyTextPresent("Code for your website", false)
+// WebUI.verifyTextPresent("Checkatrade Logo - Sample", false) // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("Download jpg", false) // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("Download tif", false) // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("Download EPS", false) // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("Download EPS (small)", false) // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("Code for your website", false) // Embedded text changed 12/02/2020
 '----------------------------------------------'
 'NEED TO SCROLL BACK Up'
 'Scroll Half Page Down'
@@ -239,15 +240,15 @@ WebUI.waitForPageLoad(60)
 '-----------------------------------------------------------'
 'Sub Header Textual Content'
 '----------------------------------------------'
-WebUI.verifyTextPresent("This is your personal QR code!", false)
-WebUI.verifyTextPresent("The code can be read by any mobile device that has QR software installed", false)
-WebUI.verifyTextPresent("link to your web page", false)
-WebUI.verifyTextPresent("You can download this image and print it on to stickers, business cards and stationery", false)
-WebUI.verifyTextPresent("To download your QR code, simply use your mouse to right click", false)
-WebUI.verifyTextPresent("on the image and select 'Save image as' from the menu that appears", false)
-WebUI.verifyTextPresent("Need A QR Code For Your Van?", false)
-WebUI.verifyTextPresent("If you would like to order your own unique QR code printed on vinyl that you", false)
-WebUI.verifyTextPresent("can place on your vehicle then please contact marketing@checkatrade.com or call", false)
+// WebUI.verifyTextPresent("This is your personal QR code!", false) // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("The code can be read by any mobile device that has QR software installed", false)
+// WebUI.verifyTextPresent("link to your web page", false) // Embedded text changed 12/02/2020 // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("You can download this image and print it on to stickers, business cards and stationery", false) // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("To download your QR code, simply use your mouse to right click", false) // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("on the image and select 'Save image as' from the menu that appears", false) // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("Need A QR Code For Your Van?", false) // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("If you would like to order your own unique QR code printed on vinyl that you", false) // Embedded text changed 12/02/2020
+// WebUI.verifyTextPresent("can place on your vehicle then please contact marketing@checkatrade.com or call", false) // Embedded text changed 12/02/2020
 '----------------------------------------------'
 'COLLAPSE'
 WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Area/mat-panel-title_Your free QR code'))

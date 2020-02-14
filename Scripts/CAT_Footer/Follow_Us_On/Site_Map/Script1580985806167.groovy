@@ -25,8 +25,8 @@ import internal.GlobalVariable as GlobalVariable
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
 // Verify Footer Navigation is correct        |                 |                  |                             |
-// navigating Trades->Trade Advice Ctr Returns|    05/02/2020   |         DH       |                             |
-// Trade Advice Centre Overview Page          |                 |                  |                             |
+// navigating Follow Us On>Privacy Notice Ret |    14/02/2020   |         DH       |                             |
+// The Smallprint Page VALIDATION             |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -62,10 +62,10 @@ import internal.GlobalVariable as GlobalVariable
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Home'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'---------------------------------------'
-	' Navigate to Trades->Find out More     |' //  Only Used ONCE - Hence, Not In Reuse Folder
+	' Navigate to Follow Us On->TErme Of Use|' //  Only Used ONCE - Hence, Not In Reuse Folder
 	'---------------------------------------'
-	WebUI.scrollToElement(findTestObject('Object Repository/CAT_Footer/Page_Checkatrade Find a tradesperson you can trust/div_Trade Advice Center'), 3)
-	WebUI.click(findTestObject('Object Repository/CAT_Footer/Page_Checkatrade Find a tradesperson you can trust/div_Trade Advice Center'))
+	WebUI.scrollToElement(findTestObject('Object Repository/CAT_Footer/Page_Checkatrade Small print  terms and conditions/div_Privacy Notice'), 3)
+	WebUI.click(findTestObject('Object Repository/CAT_Footer/Page_Checkatrade Small print  terms and conditions/div_Privacy Notice'))
 	
 	'---------------------------------------'
 	' Verify Returned Page is as Expected   |'

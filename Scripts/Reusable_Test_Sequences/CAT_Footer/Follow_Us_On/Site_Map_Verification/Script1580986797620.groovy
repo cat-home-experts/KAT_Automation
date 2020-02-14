@@ -25,7 +25,7 @@ import internal.GlobalVariable as GlobalVariable
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
 // Verify Footer Navigation is correct        |                 |                  |                             |
-// navigating Trades->Find out More Returns   |    05/02/2020   |         DH       |                             |
+// navigating Follow Us On>Privacy Notice Ret |    14/02/2020   |         DH       |                             |
 // Membership Overview Page VALIDATION        |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |

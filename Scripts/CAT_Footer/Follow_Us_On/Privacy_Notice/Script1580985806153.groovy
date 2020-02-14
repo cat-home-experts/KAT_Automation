@@ -25,8 +25,8 @@ import internal.GlobalVariable as GlobalVariable
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
 // Verify Footer Navigation is correct        |                 |                  |                             |
-// navigating Trades->Trade Advice Ctr Returns|    05/02/2020   |         DH       |                             |
-// Trade Advice Centre Overview Page          |                 |                  |                             |
+// navigating Follow Us On>Terms_OF_Use Return|    14/02/2020   |         DH       |                             |
+// The Smallprint Page                        |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -64,13 +64,13 @@ import internal.GlobalVariable as GlobalVariable
 	'---------------------------------------'
 	' Navigate to Trades->Find out More     |' //  Only Used ONCE - Hence, Not In Reuse Folder
 	'---------------------------------------'
-	WebUI.scrollToElement(findTestObject('Object Repository/CAT_Footer/Page_Checkatrade Find a tradesperson you can trust/div_Trade Advice Center'), 3)
-	WebUI.click(findTestObject('Object Repository/CAT_Footer/Page_Checkatrade Find a tradesperson you can trust/div_Trade Advice Center'))
+	WebUI.scrollToElement(findTestObject('Object Repository/CAT_Footer/Page_Checkatrade Small print  terms and conditions/div_Privacy Notice'), 3)
+	WebUI.click(findTestObject('Object Repository/CAT_Footer/Page_Checkatrade Small print  terms and conditions/div_Privacy Notice'))
 	
 	'---------------------------------------'
 	' Verify Returned Page is as Expected   |'
 	'---------------------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Footer/Trades/Trade_Advice_Center_Verification'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Footer/Follow_Us_On/Privacy_Notice_Verification'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'--------------------------'
 	' Teardown - CLose Browser |'

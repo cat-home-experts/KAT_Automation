@@ -26,7 +26,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 // Navigate and Verify Returned Content       |   12/11/2019    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Astra Clean, 124 Removed fro Verification  |   13/02/2020    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -74,8 +74,8 @@ WebUI.verifyTextPresent("Show", false)
 WebUI.verifyTextPresent("per page", false)
 WebUI.verifyTextPresent("Displaying 1 to 25 from", false)
 // Table Sample Row
-WebUI.verifyTextPresent("Astra Clean", false)
-WebUI.verifyTextPresent("124", false)
+//WebUI.verifyTextPresent("Astra Clean", false)
+//WebUI.verifyTextPresent("124", false)
 WebUI.verifyTextPresent("Chichester", false)
 WebUI.verifyTextPresent("West Sussex", false)
 WebUI.verifyTextPresent("CARPET & UPHOLSTERY CLEANING", false)

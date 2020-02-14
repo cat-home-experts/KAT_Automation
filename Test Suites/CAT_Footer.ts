@@ -112,4 +112,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/CAT_Footer/Homeowner/Why_Checkatrade</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>7806cb6b-c319-437c-912d-53dc2d2050b5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/CAT_Footer/Follow_Us_On/Terms_of_Use</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

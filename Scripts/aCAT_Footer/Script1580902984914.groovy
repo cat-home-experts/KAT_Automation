@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 
 
-WebUI.click(findTestObject('Object Repository/CAT_Footer/Page_Checkatrade Find a tradesperson you can trust/div_Why Checkatrade'))
+
 
 
 
@@ -32,9 +32,9 @@ WebUI.click(findTestObject('Object Repository/CAT_Footer/Page_Checkatrade Find a
 
 
 
-WebUI.click(findTestObject('Object Repository/CAT_Footer/Page_Checkatrade Contact us/div_Terms Of Use'))
 
-WebUI.click(findTestObject('Object Repository/CAT_Footer/Page_Checkatrade Small print  terms and conditions/div_Privacy Notice'))
+
+
 
 WebUI.click(findTestObject('Object Repository/CAT_Footer/Page_Checkatrade Checkatrade privacy notice/div_Site Map'))
 

@@ -153,10 +153,12 @@ WebUI.verifyTextPresent("The jingle is a key element of our brand, this should a
 
 'STOCK'
 
+'Changes to cookie messaging - 12/02/2020'
+'----------------------------------------------' 
+//WebUI.verifyTextPresent("We use cookies to help make this website better", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent(" Checkatrade.com all rights reserved", false)
 
-'----------------------------------------------'
-WebUI.verifyTextPresent("We use cookies to help make this website better", false)
-'----------------------------------------------'
 
 ///////////////////////////////////////
 //                END                //

@@ -128,7 +128,11 @@ WebUI.delay(1)
 //'----------------------------------------------'
 //WebUI.verifyTextPresent("LiveChat", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("We use cookies to help make this website better", false)
+WebUI.verifyTextPresent("Checkatrade.com all rights reserved", false)
+'----------------------------------------------'
+'cookie text change 12022020'
+// WebUI.verifyTextPresent("We use cookies to help make this website better", false)
+
 '----------------------------------------------'
 
 ///////////////////////////////////////

@@ -115,7 +115,8 @@ WebUI.scrollToPosition(999, 999)
 '----------------------------------------------'
 WebUI.verifyTextPresent("directories can help you expand your business footprint", false)
 '----------------------------------------------'//'----------------------------------------------'
-WebUI.verifyTextPresent("Increases your online profile page traffic", false)
+'Removed on 12/02/2020'
+//WebUI.verifyTextPresent("Increases your online profile page traffic", false)
 '----------------------------------------------'//'----------------------------------------------'
 WebUI.verifyTextPresent("Ready to feature in a directory?", false)
 '----------------------------------------------'//'----------------------------------------------'

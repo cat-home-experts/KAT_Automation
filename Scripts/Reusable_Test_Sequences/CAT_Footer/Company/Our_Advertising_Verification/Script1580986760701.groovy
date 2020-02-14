@@ -28,7 +28,7 @@ import internal.GlobalVariable as GlobalVariable
 // navigating Company->Our Advertising Returns|    10/02/2020   |         DH       |                             |
 // Our Advertising Page VALIDATION            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Coontent changes                           |    13/02/2020   |         FH       |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -80,9 +80,9 @@ WebUI.waitForPageLoad(60)
 WebUI.verifyTextPresent("Our Advertising", false)
 '----------------------------------------------'
 'Sub Header'
-WebUI.verifyTextPresent("Our new fast-paced and fun advertising highlights the checks we complete before any trade is listed on our site", false)
+WebUI.verifyTextPresent("Our new advert demonstrates the pitfalls of not using a recommended, vetted, and monitored tradesperson", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("We want everyone to understand that Checkatrade really checks trades so you can really trust your tradesperson", false)
+WebUI.verifyTextPresent("there’s a better way to carry out home improvements and repairs", false)
 '----------------------------------------------'
 // WebUI.verifyTextPresent("Enquire Now", false)
 '----------------------------------------------'
@@ -90,13 +90,13 @@ WebUI.verifyTextPresent("We want everyone to understand that Checkatrade really 
 
 'Page Body - Selection of checks, not comprehensive, 25%'
 
-WebUI.verifyTextPresent("How our advertising benefits our members & consumers", false)
+WebUI.verifyTextPresent("How our advertising benefits our members & consumers", false) //'12/02/2020 change'
 '----------------------------------------------'
-WebUI.verifyTextPresent("We all know the jingle, and the Checkatrade brand is a household name", false)
+WebUI.verifyTextPresent("We all know the jingle, and the Checkatrade brand is a household name", false)//'12/02/2020 change'
 '----------------------------------------------'
-WebUI.verifyTextPresent("Our advertising works hard to convey to customers all the vetting and checks we complete", false)
+WebUI.verifyTextPresent("How our advertising benefits our members & consumers", false)//'12/02/2020 change'
 '----------------------------------------------'
-WebUI.verifyTextPresent("The more we talk to customers about our network of over", false)
+WebUI.verifyTextPresent("The more we talk to customers about our network of over", false)//'12/02/2020 change'
 '----------------------------------------------'
 
 WebUI.scrollToPosition(500, 500)
@@ -105,15 +105,16 @@ WebUI.delay(1)
 
 WebUI.verifyTextPresent("Our current campaign", false)
 //'----------------------------------------------'
-WebUI.verifyTextPresent("We have created brand-new fast-paced comedic TV advert ", false)
+WebUI.verifyTextPresent("We have created a brand-new TV advert", false)
+//WebUI.verifyTextPresent("We have created brand-new fast-paced comedic TV advert ", false)
 //'----------------------------------------------'
-WebUI.verifyTextPresent("14 checks that we undertake before any trade is listed on our site", false)
+WebUI.verifyTextPresent("Did you know that we carry out up to 14 checks on trades so that consumers don’t have to", false)//'12/02/2020 change'
 '----------------------------------------------'
-WebUI.verifyTextPresent("The campaign was specifically designed to drive fame and build trust", false)
+WebUI.verifyTextPresent("peace of mind and trust which is what we want to bring to life in our new marketing campaign", false)//'12/02/2020 change'
 '----------------------------------------------'
-WebUI.verifyTextPresent("integrated campaign will specifically run across TV", false)
+WebUI.verifyTextPresent("The campaign will specifically run across TV and be supported by digital, radio and social media", false)//'12/02/2020 change'
 '----------------------------------------------'
-WebUI.verifyTextPresent("You can see our advert below and on ITV", false)
+WebUI.verifyTextPresent("Secured a 12-month TV sponsorship on Homes and Really channels", false)//'12/02/2020 change'
 '----------------------------------------------'
 
 WebUI.scrollToPosition(1000, 1000)
@@ -134,7 +135,11 @@ WebUI.delay(1)
 '----------------------------------------------'
 //WebUI.verifyTextPresent("LiveChat", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("We use cookies to help make this website better", false)
+WebUI.verifyTextPresent("Checkatrade.com all rights reserved", false)
+'----------------------------------------------'
+'cookie text change 12022020'
+// WebUI.verifyTextPresent("We use cookies to help make this website better", false)
+
 '----------------------------------------------'
 
 ///////////////////////////////////////

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='ctl00_ctl00_pnlMasterFooter']/div/div/div/div/div[4]/a[2]/div</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Terms Of Use'])[1]/following::div[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
