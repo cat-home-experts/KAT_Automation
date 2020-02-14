@@ -16,9 +16,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.c
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.windows.keyword.contribution.WindowsDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\davidho\\AppData\\Local\\Temp\\Katalon\\Test Cases\\CAT_Footer\\Follow_Us_On\\Privacy_Notice\\20200214_102536\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\davidho\\AppData\\Local\\Temp\\Katalon\\Test Cases\\Checkatrade_Tradesman_Searches\\Trade_Name_Search_Multiple\\20200214_120751\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/CAT_Footer/Follow_Us_On/Privacy_Notice', new TestCaseBinding('Test Cases/CAT_Footer/Follow_Us_On/Privacy_Notice',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('Test Cases/Checkatrade_Tradesman_Searches/Trade_Name_Search_Multiple', new TestCaseBinding('Test Cases/Checkatrade_Tradesman_Searches/Trade_Name_Search_Multiple',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     
