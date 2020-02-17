@@ -66,12 +66,17 @@ import internal.GlobalVariable as GlobalVariable
 	'--------------------------------------------'
 	WebUI.scrollToElement(findTestObject('Object Repository/CAT_Footer/Page_Checkatrade Find a tradesperson you can trust/div_Complaints About A Member'), 3)
 	WebUI.click(findTestObject('Object Repository/CAT_Footer/Page_Checkatrade Find a tradesperson you can trust/div_Complaints About A Member'))
-	
+		
 	'---------------------------------------'
 	' Verify Returned Page is as Expected   |'
 	'---------------------------------------'
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Footer/Homeowner/Complaints_About_A_Member_Verification'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
+	'---------------------------------------'
+	' Check Ribbon Menu                     |'
+	'---------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Footer/Homeowner/Ribbon_Menu'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
 	'--------------------------'
 	' Teardown - CLose Browser |'
 	'--------------------------'

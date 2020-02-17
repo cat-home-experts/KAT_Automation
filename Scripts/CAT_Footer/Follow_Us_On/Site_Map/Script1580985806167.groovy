@@ -25,8 +25,8 @@ import internal.GlobalVariable as GlobalVariable
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
 // Verify Footer Navigation is correct        |                 |                  |                             |
-// navigating Follow Us On>Privacy Notice Ret |    14/02/2020   |         DH       |                             |
-// The Smallprint Page VALIDATION             |                 |                  |                             |
+// navigating Follow Us On>Site Map Returns   |    14/02/2020   |         DH       |                             |
+// The Checkatrade Site Map Page              |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -62,15 +62,15 @@ import internal.GlobalVariable as GlobalVariable
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Home'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'---------------------------------------'
-	' Navigate to Follow Us On->TErme Of Use|' //  Only Used ONCE - Hence, Not In Reuse Folder
+	' Navigate to Follow Us On->Site Map    |' //  Only Used ONCE - Hence, Not In Reuse Folder
 	'---------------------------------------'
-	WebUI.scrollToElement(findTestObject('Object Repository/CAT_Footer/Page_Checkatrade Small print  terms and conditions/div_Privacy Notice'), 3)
-	WebUI.click(findTestObject('Object Repository/CAT_Footer/Page_Checkatrade Small print  terms and conditions/div_Privacy Notice'))
+	WebUI.scrollToElement(findTestObject('Object Repository/CAT_Footer/Page_Checkatrade Checkatrade privacy notice/div_Site Map'), 3)
+	WebUI.click(findTestObject('Object Repository/CAT_Footer/Page_Checkatrade Checkatrade privacy notice/div_Site Map'))
 	
 	'---------------------------------------'
 	' Verify Returned Page is as Expected   |'
 	'---------------------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Footer/Trades/Trade_Advice_Center_Verification'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Footer/Follow_Us_On/Site_Map_Verification'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'--------------------------'
 	' Teardown - CLose Browser |'

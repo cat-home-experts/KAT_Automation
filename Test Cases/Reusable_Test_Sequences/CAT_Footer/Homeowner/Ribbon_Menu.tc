@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Ribbon_Menu</name>
+   <tag></tag>
+   <comment>---------------------------------------
+ Navigate to Company->Careers          |
+--------------------------
+ Ribbon - About Us Menu   |
+--------------------------
+ Verify - About Us Return |
+--------------------------
+ Ribbon - Our Teams Menu  |
+--------------------------
+ Verify - Our Teams Return|
+--------------------------
+ Ribbon - Our Benefits    |
+--------------------------
+ Verify - Our Benefits Ret|
+--------------------------
+ Ribbon - Charity Leave   |
+--------------------------
+ Verify - Charity Leave Re|
+--------------------------
+ Ribbon - Our Offices Menu|
+--------------------------
+ Verify - Our Offices Ret |
+--------------------------
+ Ribbon - Contact Us Menu |
+--------------------------
+ Verify - Contact Us Ret  |
+--------------------------
+ Ribbon - Our vacancies   |
+---------------------------------------
+ Verify Returned Page is as Expected   | Return to Initial Company/DEFAULT PAGE - Verified from Ribbon Test (here) and Footer CAT Test (2 paths)
+--------------------------
+ Teardown - CLose Browser |
+--------------------------
+ END                      |
+--------------------------</comment>
+   <testCaseGuid>4b71d8dc-4956-4475-9e75-aa6aa33675fd</testCaseGuid>
+</TestCaseEntity>

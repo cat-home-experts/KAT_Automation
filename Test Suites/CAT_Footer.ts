@@ -124,4 +124,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/CAT_Footer/Follow_Us_On/Privacy_Notice</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>8b246fb6-ab5b-4520-a01a-4368f54191a7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/CAT_Footer/Follow_Us_On/Site_Map</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

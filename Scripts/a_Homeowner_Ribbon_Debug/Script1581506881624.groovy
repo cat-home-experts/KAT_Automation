@@ -22,19 +22,19 @@ WebUI.navigateToUrl('https://www.preview.checkatrade.com/')
 
 WebUI.click(findTestObject('Object Repository/CAT_Footer/Homeowner/Ribbon_Menu/Page_Checkatrade Find a tradesperson you can trust/div_Why Checkatrade'))
 
-WebUI.click(findTestObject('Object Repository/CAT_Footer/Homeowner/Ribbon_Menu/Page_Checkatrade Millions of reviews free t_c614ea/span_Why Checkatrade'))
+WebUI.click(findTestObject('CAT_Footer/Homeowner/Ribbon_Menu/span_Why Checkatrade'))
 
-WebUI.click(findTestObject('Object Repository/CAT_Footer/Homeowner/Ribbon_Menu/Page_Checkatrade Millions of reviews free t_c614ea/span_The Checkatrade Standard'))
+WebUI.click(findTestObject('CAT_Footer/Homeowner/Ribbon_Menu/span_The Checkatrade Standard'))
 
 WebUI.click(findTestObject('Object Repository/CAT_Footer/Homeowner/Ribbon_Menu/Page_Checkatrade the standard every member holds/span_Resolving issues'))
 
-WebUI.click(findTestObject('Object Repository/CAT_Footer/Homeowner/Ribbon_Menu/Page_Checkatrade Complaints About A Member/span_FAQ'))
+WebUI.click(findTestObject('CAT_Footer/Homeowner/Ribbon_Menu/span_FAQ'))
 
 WebUI.click(findTestObject('Object Repository/CAT_Footer/Homeowner/Ribbon_Menu/Page_Checkatrade Frequently asked questions/div_The Checkatrade Standard'))
 
-WebUI.click(findTestObject('Object Repository/CAT_Footer/Homeowner/Ribbon_Menu/Page_Checkatrade the standard every member holds/div_Complaints About A Member'))
+WebUI.click(findTestObject('CAT_Footer/Homeowner/Ribbon_Menu/div_Complaints About A Member'))
 
-WebUI.click(findTestObject('Object Repository/CAT_Footer/Homeowner/Ribbon_Menu/Page_Checkatrade Complaints About A Member/div_Complaints About A Member'))
+WebUI.click(findTestObject('CAT_Footer/Homeowner/Ribbon_Menu/div_Complaints About A Member (1)'))
 
 WebUI.click(findTestObject('Object Repository/CAT_Footer/Homeowner/Ribbon_Menu/Page_Checkatrade Complaints About A Member/div_FAQ'))
 

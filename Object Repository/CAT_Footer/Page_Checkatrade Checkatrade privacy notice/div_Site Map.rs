@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='ctl00_ctl00_pnlMasterFooter']/div/div/div/div/div[4]/a[3]/div</value>
+         <value>//*[@id=&quot;ctl00_pnlMasterFooter&quot;]/div/div/div/div[1]/div[4]/a[3]/div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

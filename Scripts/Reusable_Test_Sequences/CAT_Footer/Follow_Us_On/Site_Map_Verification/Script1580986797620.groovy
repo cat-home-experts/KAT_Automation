@@ -77,37 +77,44 @@ WebUI.waitForPageLoad(60)
 //WebUI.verifyTextPresent("MEMBER ID", false)
 '----------------------------------------------'
 'Header'
-WebUI.verifyTextPresent("Membership Overview", false)
+WebUI.verifyTextPresent("Checkatrade", false)
 '----------------------------------------------'
 'Sub Header'
-WebUI.verifyTextPresent("Trades Application", false)
+WebUI.verifyTextPresent("Locations", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("FAQ's", false)
+WebUI.verifyTextPresent("Counties", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Enquire Now", false)
+WebUI.verifyTextPresent("For Consumers", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Cities and Towns A - Z", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("Join Checkatrade", false)
+'----------------------------------------------'
+WebUI.verifyTextPresent("More from Checkatrade", false)
 '----------------------------------------------'
 
 'Page Body'
 
-WebUI.verifyTextPresent("GREAT TRADES OF BRITAIN", false)
+WebUI.verifyTextPresent("Plumbers Near Me", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Join Britain’s Busiest Network", false)
+WebUI.verifyTextPresent("Gloucestershire", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Over 1 Million customers come to checkatrade.com every month to find trades with great reputations", false)
+WebUI.verifyTextPresent("Bradford", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Call us on", false)
+WebUI.verifyTextPresent("Resolving issues", false)
 '----------------------------------------------'
-//WebUI.verifyTextPresent("03301", false)
-//'----------------------------------------------'
-//WebUI.verifyTextPresent("625", false)
-//'----------------------------------------------'
-//WebUI.verifyTextPresent("349", false)
+WebUI.verifyTextPresent("Frequently asked questions", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Get Started", false)
+
+WebUI.scrollToPosition(500, 500)
+WebUI.delay(1)
+
+
+WebUI.verifyTextPresent("Plymouth", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Why Join Checkatrade?", false)
+WebUI.verifyTextPresent("Poole", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Every month we get over 1 million customers visiting checkatrade.com looking for a reliable tradesperson like you", false)
+WebUI.verifyTextPresent("Portsmouth", false)
 '----------------------------------------------'
 
 WebUI.scrollToPosition(1000, 1000)
@@ -116,19 +123,9 @@ WebUI.delay(1)
 'Footer'
 
 '----------------------------------------------'
-WebUI.verifyTextPresent("Call us on", false)
+WebUI.verifyTextPresent("Directory of Checkatrade members", false)
 '----------------------------------------------'
-//WebUI.verifyTextPresent("03301", false)
-//'----------------------------------------------'
-//WebUI.verifyTextPresent("625", false)
-//'----------------------------------------------'
-//WebUI.verifyTextPresent("349", false)
-'----------------------------------------------'
-WebUI.verifyTextPresent("Get Started", false)
-'----------------------------------------------'
-//WebUI.verifyTextPresent("LiveChat", false)
-'----------------------------------------------'
-WebUI.verifyTextPresent("We use cookies to help make this website better", false)
+WebUI.verifyTextPresent("Checkatrade.com all rights reserved", false)
 '----------------------------------------------'
 
 ///////////////////////////////////////
