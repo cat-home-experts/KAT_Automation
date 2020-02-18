@@ -24,7 +24,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //  Initial Functionality Implemented         |   30/09/2019    |      DH          |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//  DEV, Duplicate User Message Different     |   18/02.2020    |      DH          |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -98,7 +98,10 @@ WebUI.click(findTestObject('Object Repository/Membership/Page_Members Area/butto
 WebUI.waitForElementPresent(findTestObject('Object Repository/Membership/Page_Members Area/Error_Occured_Username_Taken'), 60)
 '----------------------------------------------'
 // Duplication Flagged
-WebUI.verifyTextPresent("Error occured: That username has already been taken, please choose another username.", false)
+'DEV Messaging Different'
+WebUI.verifyTextPresent("There was a problem updating your details, please try again. If the problem persists please contact us", false)
+//WebUI.verifyTextPresent("Error occured: That username has already been taken, please choose another username.", false)
+
 '----------------------------------------------'
 // Change Password
 '----------------------------------------------'

@@ -28,7 +28,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 // IFrame Checks Added                        |   11/12/2019    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Removed Retention Letter Reference for Sync|   18/02/2020    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -71,7 +71,8 @@ WebUI.verifyTextPresent("Include Non Members", false)
 WebUI.verifyTextPresent("Welcome", false)
 WebUI.verifyTextPresent("Not you?", false)
 // Retention Letter Navigation
-WebUI.verifyElementVisible(findTestObject("Object Repository/WebOffice/Directories_Top/Page_/a_Retention Letters"))
+'Missing from DEV default - Could Use Edition Zero as these are Duplicates, Na'
+// WebUI.verifyElementVisible(findTestObject("Object Repository/WebOffice/Directories_Top/Page_/a_Retention Letters"))
 '-------------------------------'         
 // Table Header Row
 //WebUI.verifyTextPresent("CHURN +", false)

@@ -77,8 +77,9 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Da
 	//-----------------------------------------
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Validation/Members_Whistle_Blower'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
+	' This process has been included within the verification script, minus the data commit'
 	//-----------------------------------------
-	// Set Whistle Blower Parameters          |  TODO - outline created in specified location, but need to be finalised
+	// Set Whistle Blower Parameters          |  
 	//-----------------------------------------
 	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/Whistle_Blower'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 		

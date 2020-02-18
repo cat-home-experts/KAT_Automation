@@ -28,7 +28,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 // Astra Clean, 124 Removed fro Verification  |   13/02/2020    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Added View Per Page Setting to 25 (Devdef50|   18/02/2020    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -63,7 +63,14 @@ WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/a_Companies'),
 //----------------------------------------------------
 // Sync - Wait For Advanced Search Button to Appear  |
 //----------------------------------------------------
+//WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice/Companies_Top/Page_/span_Advanced Search'), 120)
+
+'Ensure Show Per Page ListBox is set to 25 - Dev Defaults to 50'
+WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice/Companies_Top/Page_/select_ShowPerPage'), 120)
+WebUI.selectOptionByValue(findTestObject('Object Repository/WebOffice/Companies_Top/Page_/select_ShowPerPage'),	'25', true)
+WebUI.delay(2)
 WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice/Companies_Top/Page_/span_Advanced Search'), 120)
+
 '--------------------------------------'
 ' Verify Returned Page Content         |'
 '--------------------------------------'

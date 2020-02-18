@@ -103,7 +103,37 @@ WebUI.verifyTextPresent("Sending this information does not mean the trade/servic
 WebUI.verifyTextPresent("Thank you for helping us keep the standards of Checkatrade membership", false)
 '----------------------------------------------'
 
-// No LogOff on this Page - Navigaate Back
+'----------------------------------------------------------------------------------------------------------'
+'Random Selction Of Radio Buttons Plus Text Entry, NO COMMIT - Ensure Page Is Interactive and takes Input  |'
+'----------------------------------------------------------------------------------------------------------'
+'Company Name  |'
+'--------------'
+WebUI.setText(findTestObject('Object Repository/Page_Members Area/WhistleBlower/Page_Members Area/input_Start typing to select a member_mat-input-0'), 'Test Data')
+'--------------'
+'Comment       |'
+'--------------'
+WebUI.setText(findTestObject('Object Repository/Page_Members Area/WhistleBlower/Page_Members Area/textarea_Enter your comments_txtComments'), 'Test Data')
+'--------------'
+'Radio 2       |'
+'--------------'
+WebUI.waitForElementClickable(findTestObject('Page_Members Area/WhistleBlower/Page_Members Area/input_WB2_Radio'), 3)
+WebUI.click(findTestObject('Page_Members Area/WhistleBlower/Page_Members Area/input_WB2_Radio'))
+'--------------'
+'Radio 3       |'
+'--------------'
+WebUI.waitForElementClickable(findTestObject('Page_Members Area/WhistleBlower/Page_Members Area/input_WB3_Radio'), 3)
+WebUI.click(findTestObject('Page_Members Area/WhistleBlower/Page_Members Area/input_WB3_Radio'))
+'--------------'
+'Radio 1       |'
+'--------------'
+WebUI.waitForElementClickable(findTestObject('Page_Members Area/WhistleBlower/Page_Members Area/input_WB1_Radio'), 3)
+WebUI.click(findTestObject('Page_Members Area/WhistleBlower/Page_Members Area/input_WB1_Radio'))
+'--------------'
+'Reset Entry   |' 
+'--------------'
+WebUI.click(findTestObject('Object Repository/Page_Members Area/WhistleBlower/Page_Members Area/button_Reset'))
+
+// No LogOff on this Page - Navigate Back
 // WebUI.back()
 //WebUI.scrollToElement(findTestObject('Object Repository/Page_Members Area/a_Dashboard'), 10)
 
