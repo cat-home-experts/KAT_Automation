@@ -32,6 +32,14 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //  Aligned sync between this page an log_On  |   20/11/2019    |      DH          |                             |
 //---------------------------------------------------------------------------------------------------------------
+//  Reduced differences that are returned undr|                 |                  |                             |
+//  <ITEMS NEED YOUR ATTENTION> Header PREVIEW|                 |      DH          |                             |
+//  and LIVE The Same, DEV Differfent Returns |                 |                  |                             |
+//---------------------------------------------------------------------------------------------------------------
+//                                            |                 |                  |                             |
+//---------------------------------------------------------------------------------------------------------------
+//                                            |                 |                  |                             |
+//---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //---------------------------------------------------------------------------------------------------------------
@@ -82,17 +90,21 @@ WebUI.verifyTextPresent("Contact us", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Item(s) that need your attention", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Accreditation(s) have expired", false)
+'Not consistently returned'
+//WebUI.verifyTextPresent("Accreditation(s) have expired", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("GAS SAFE REGISTER", false)
+'Not consistently returned'
+//WebUI.verifyTextPresent("GAS SAFE REGISTER", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Reputation Report Cards", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("PAST 30 DAYS", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Add Your Company Logo", false)
+'Not consistently returned'
+//WebUI.verifyTextPresent("Add Your Company Logo", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("WHY NOT DISPLAY IT", false)
+'Not consistently returned'
+//WebUI.verifyTextPresent("WHY NOT DISPLAY IT", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Your membership T", false)
 '----------------------------------------------'

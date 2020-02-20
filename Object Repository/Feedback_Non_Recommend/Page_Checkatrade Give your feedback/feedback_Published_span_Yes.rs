@@ -6,15 +6,15 @@
    <elementGuidId>c1803e61-c86d-4d6c-a0c5-bba26b3fe893</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>//*[@id=&quot;ctl00_content_ctlYourExperienceUpdatePanel&quot;]/div[5]/div[2]/div/div/label[1]/span</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;ctl00_content_ctlYourExperienceUpdatePanel&quot;]/div[5]/div[2]/div/div/label[1]/span</value>
+         <value>//*[@id=&quot;ctl00_content_ctlYourExperienceUpdatePanel&quot;]/div[6]/div[2]/div/div/label[1]/span</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

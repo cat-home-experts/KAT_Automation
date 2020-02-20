@@ -40,7 +40,7 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 //  Verify <Profile><Maximise Your Profile>   |   13/09/2019    |      DH          |                             |
 //  page from <Grow Your Business>            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//  MembersURL Hard wire, Changed for GlobalVa|   19/02/2020    |      DH          |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -102,7 +102,11 @@ WebUI.delay(1)
 //WebUI.waitForPageLoad(60)
 '----------------------------------------------'
 // Switch Back To My Profile - Dashboard
-WebUI.switchToWindowUrl('https://preview-ma.checkatrade.com/my-profile-page')
+//WebUI.switchToWindowUrl('https://preview-ma.checkatrade.com/my-profile-page')
+//WebUI.switchToWindowUrl(GlobalVariable.MembersURL+'/my-profile-page')
+WebUI.switchToWindowUrl(GlobalVariable.MembersURL+'my-profile-page')
+
+//WebUI.switchToWindowUrl("http://members.dev.checkatrade.com/my-profile-page")
 '----------------------------------------------'
 ///////////////////////////////////////
 //                END                //

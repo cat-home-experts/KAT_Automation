@@ -18,8 +18,32 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://admin.dev.checkatrade.com/Login.aspx?ReturnUrl=%2fCompanies%2fMembers%2fAll.aspx')
+WebUI.navigateToUrl('https://www.dev.checkatrade.com/GiveFeedback/')
 
-WebUI.selectOptionByValue(findTestObject('WebOffice/Companies_Top/Page_/select_ShowPerPage'), 
-    '25', true)
+WebUI.setText(findTestObject('Page_Checkatrade Give your feedback/input_Which member do you want to review_fe_95fcf0'), 
+    'test Account')
+
+WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Test Account'))
+
+WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No'))
+
+WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes'))
+
+WebUI.click(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/span_Other'))
+
+WebUI.click(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/span_Plumber'))
+
+WebUI.click(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/span_Other'))
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/select_Air ConditioningAlarms  SecurityAppl_6c61d9'), 
+    '11', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/select_Air ConditioningAlarms  SecurityAppl_6c61d9'), 
+    '1140', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/select_Air ConditioningAlarms  SecurityAppl_6c61d9'), 
+    '9', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/select_Air ConditioningAlarms  SecurityAppl_6c61d9'), 
+    '15', true)
 

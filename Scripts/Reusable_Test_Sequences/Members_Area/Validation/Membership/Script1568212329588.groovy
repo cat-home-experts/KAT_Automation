@@ -99,9 +99,10 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Membership/Page_Me
 '----------------------------------------------'
 // Duplication Flagged
 'DEV Messaging Different'
-WebUI.verifyTextPresent("There was a problem updating your details, please try again. If the problem persists please contact us", false)
-//WebUI.verifyTextPresent("Error occured: That username has already been taken, please choose another username.", false)
-
+//WebUI.verifyTextPresent("There was a problem updating your details, please try again. If the problem persists please contact us", false)
+'Preview Messaging'
+WebUI.verifyTextPresent("Error occured: That username has already been taken, please choose another username.", false)
+                         
 '----------------------------------------------'
 // Change Password
 '----------------------------------------------'

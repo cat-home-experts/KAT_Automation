@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='ctl00_content_ctlYourExperienceUpdatePanel']/div[4]/div[2]/select</value>
+         <value>//*[@id=&quot;ddlNatureOfComplaint&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>

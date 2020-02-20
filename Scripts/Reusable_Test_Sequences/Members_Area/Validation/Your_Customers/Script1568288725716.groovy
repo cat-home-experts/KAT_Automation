@@ -76,7 +76,8 @@ WebUI.verifyTextPresent("MEMBER ID", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("These are your customers who have left feedback", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Test", false)
+'Not Solid'
+//WebUI.verifyTextPresent("Test", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Address", false)
 '----------------------------------------------'

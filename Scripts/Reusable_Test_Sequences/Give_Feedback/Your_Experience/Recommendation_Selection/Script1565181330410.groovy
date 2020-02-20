@@ -22,10 +22,12 @@ import com.kms.katalon.core.util.KeywordUtil
 //--------------------------------------------------------------------
 def data = findTestData('Data Files/Give_Feedback (1)')  
 def YE_Recommend = data.getValue("YE_Recommendations", GlobalVariable.row) 
+def YE_Other_Trade = data.getValue("YE_Other_Trade", GlobalVariable.row)
 '--------------------------------'
 'Read data from spreadsheet      |'
 '--------------------------------'
- 
+
+
 //-------------------------------------------
 '--------------------------------'
 'Set Recommendation - Yes or No  |'
@@ -40,6 +42,12 @@ if (YE_Recommend == ("Yes")) {
 	WebUI.waitForElementClickable(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/Page_Checkatrade Give your feedback/span_Yes'), 5)
 	WebUI.click(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/Page_Checkatrade Give your feedback/span_Yes'))
 	WebUI.waitForPageLoad(2)
+
+	'---------------------------------------------------------------------------------------'
+	' Your Experience (page 1) Trader Type?     NEW - 20/02/2020                            |'
+	'---------------------------------------------------------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/What_Type_Of_Trade_Used'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
 } 
 else if (YE_Recommend == ("No")) {
     //WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No_Experience_Feedback'))
@@ -47,10 +55,29 @@ else if (YE_Recommend == ("No")) {
 	WebUI.waitForElementClickable(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/Page_Checkatrade Give your feedback/span_No'), 5)
 	WebUI.click(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/Page_Checkatrade Give your feedback/span_No'))
 	WebUI.waitForPageLoad(5)
-	//--------------------------------------------------------
-	// Complete the extra details that this selection reveals |
-	//--------------------------------------------------------
+	
+	'---------------------------------------------------------------------------------------'
+	' Your Experience (page 1) Trader Type?     NEW - 20/02/2020                            |'
+	'---------------------------------------------------------------------------------------'
+	// TODO Bug - Selecting Radios after selecting NO removes trade sealection - NEW
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/What_Type_Of_Trade_Used'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+
+	'original'
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Not_Recommend'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	'original'
+	
+	'---------------------------------------------------------------------------------------'
+	' Your Experience (page 1) Trader Type?     NEW - 20/02/2020                            |'
+	'---------------------------------------------------------------------------------------'
+	// TODO Bug - Selecting Radios after selecting NO removes trade sealection - NEW
+	
+	//WebUI.scrollToElement(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/span_Other'), 3)
+	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/What_Type_Of_Trade_Used'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	'Click on <OTHER> Radio'
+	WebUI.scrollToElement(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/span_Other'), 3)
+	WebUI.waitForElementClickable(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/span_Other'), 3)
+	WebUI.click(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/span_Other'))
+	// TODO Bug - Selecting Radios after selecting NO removes trade sealection - NEW
 }
 	'--------------------------------'
 	System.out.println("Your Experience, Recommendation, Click on the <"+YE_Recommend+"> Option Button ");

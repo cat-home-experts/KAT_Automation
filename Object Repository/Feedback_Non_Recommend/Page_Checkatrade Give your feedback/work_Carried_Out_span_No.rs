@@ -6,16 +6,15 @@
    <elementGuidId>f46e9f0f-1603-4fa4-ab2c-9c652e328c8a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//span[(text() = 'No' or . = 'No')]</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;ctl00_content_ctlYourExperienceUpdatePanel&quot;]/div[3]/div[2]/div/div/label[2]</value>
+         <value>//*[@id=&quot;ctl00_content_ctlYourExperienceUpdatePanel&quot;]/div[4]/div[2]/div/div/label[2]/span</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//span[(text() = 'No' or . = 'No')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
