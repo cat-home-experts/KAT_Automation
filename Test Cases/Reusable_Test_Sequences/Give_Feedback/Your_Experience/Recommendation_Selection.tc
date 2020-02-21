@@ -3,14 +3,7 @@
    <description>Selects the &lt;YOUR EXPERIENCE> - Recommendation radio buttons Yes OR No</description>
    <name>Recommendation_Selection</name>
    <tag>Feedback Recommendation</tag>
-   <comment>--------------------------------
-Read data from spreadsheet      |
---------------------------------
-----------------------------------------------------
-SPAGETTI NEEDS RATIONALIZING TODO DH 20/02/2020     |
-----------------------------------------------------
---------------------------------
-Set Recommendation - Yes or No  |</comment>
+   <comment></comment>
    <testCaseGuid>8b7f2bd7-71cf-4cd8-b656-db72a03ac017</testCaseGuid>
    <variable>
       <defaultValue>'Yes'</defaultValue>

@@ -12,6 +12,7 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.util.KeywordUtil
 
 //--------------------------------------------------------------------------------------
 // Click Search Trade Name (and ID) From the Home Page after Entering Search Criteria  | - Snip - 07/08/2019
@@ -46,7 +47,6 @@ import internal.GlobalVariable as GlobalVariable
 		WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/span_Trade_Name'))
 
 	}
-	//-----------------------------------------
 	
 	//-----------------------------------------
 	'Waits only as long as required'

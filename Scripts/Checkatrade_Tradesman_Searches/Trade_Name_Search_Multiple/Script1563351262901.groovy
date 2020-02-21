@@ -37,7 +37,10 @@ import org.openqa.selenium.Keys as Keys
 // Reusable_Test_Sequences/CAT_Search         |                 |                  |                             |
 //                     Trade_Name Updated     |    02/01/2020   |        DH        | Changes for NEW Web Site    |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Added Detection For NO LOOKUP Data and hndl|    21/02/2020   |        DH        |                             |
+//---------------------------------------------------------------------------------------------------------------
+// Priority Given to OLD Website Detection    |    21/02/2020   |        DH        | Time saving, will set back  |
+//                                            |                 |                  | to LIVE, when OLD is binned |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -73,17 +76,17 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Search_CAT_ID_D
 	'---------------------------------------------------------------------'
 	' Select Search on Trader Name (or ID) From Home page/Search Screen   |' // Changed 02/01/2020 - Refer header and script below
 	'---------------------------------------------------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Click_Search_Trade_Name'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Click_Search_Trade_Name'), [:], FailureHandling.STOP_ON_FAILURE)
 
 		'---------------------------------------'
 	' Enter Trader Name (or ID) to Search   |'  // Changed 02/01/2020 - Refer header and script below
 	'---------------------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Enter_Trade_Name'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Enter_Trade_Name'), [:], FailureHandling.STOP_ON_FAILURE)
 	
 	'---------------------------------------'
 	' Search Trader Name (or ID)            |'  // Changed 02/01/2020 - Refer header and script below
 	'---------------------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Search_Trade_Name'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Search_Trade_Name'), [:], FailureHandling.STOP_ON_FAILURE)
 
 	'------------------------------------------'
 	' Scroll to Page Footer to Reveal Results  |'

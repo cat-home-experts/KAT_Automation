@@ -74,9 +74,9 @@ else if (YE_Recommend == ("No")) {
 	//WebUI.scrollToElement(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/span_Other'), 3)
 	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/What_Type_Of_Trade_Used'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	'Click on <OTHER> Radio'
-	WebUI.scrollToElement(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/span_Other'), 3)
-	WebUI.waitForElementClickable(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/span_Other'), 3)
-	WebUI.click(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/span_Other'))
+//	WebUI.scrollToElement(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/span_Other'), 3)
+//	WebUI.waitForElementClickable(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/span_Other'), 3)
+//	WebUI.click(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/span_Other'))
 	// TODO Bug - Selecting Radios after selecting NO removes trade sealection - NEW
 }
 	'--------------------------------'
