@@ -73,6 +73,10 @@ else if (YE_Recommend == ("No")) {
 	
 	//WebUI.scrollToElement(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/span_Other'), 3)
 	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/What_Type_Of_Trade_Used'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	
+	'------------------------------------------------------------------------------------------------------------------------'
+	'DEFECT - Other Radio Button Resets in process, below cheat to reset - temporarily - now commented out again :-)         |'
+	'------------------------------------------------------------------------------------------------------------------------'
 	'Click on <OTHER> Radio'
 //	WebUI.scrollToElement(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/span_Other'), 3)
 //	WebUI.waitForElementClickable(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/span_Other'), 3)

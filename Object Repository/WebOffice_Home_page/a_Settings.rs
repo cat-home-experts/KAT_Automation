@@ -4,7 +4,25 @@
    <name>a_Settings</name>
    <tag></tag>
    <elementGuidId>9140b01b-470e-455b-a3e7-7270b2be109f</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;main-navigation&quot;]/nav/ul/li[10]/a</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@href = '#' and (text() = '
+                            
+                            Settings
+                            
+                        ' or . = '
+                            
+                            Settings
+                            
+                        ')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

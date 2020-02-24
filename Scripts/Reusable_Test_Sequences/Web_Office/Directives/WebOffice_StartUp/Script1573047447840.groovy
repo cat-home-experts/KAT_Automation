@@ -32,9 +32,9 @@ import org.openqa.selenium.Keys as Keys
 //---------------------------------------------------------------------------------------------------------------
 // Login Credentiala, Verification Bug Fixed  |   03/02/2020    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Adde Web Office Resolver for DEV           |   24/02/2020    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Applied Stop on Failure Behaviour to WO    |   24/02/2020    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -49,13 +49,23 @@ import org.openqa.selenium.Keys as Keys
 //---------------------------------------------------------------------------------------------------------------
 // TODO Issue with parsing this URL from the batch? INVESTIGATE FURTHER TODOD
 // This needs  rationaliising and incorporating Into the CAT Startupup URL Resolver
-if (GlobalVariable.URL == ("https://www.preview.checkatrade.com/")){
-	GlobalVariable.WebOfficeURL="https://admin.preview.checkatrade.com/" // TODO
-} 
 '-----------------------------------------------------------------------------'
+'DEV'
+if (GlobalVariable.URL == ("https://www.dev.checkatrade.com/")){
+	GlobalVariable.WebOfficeURL="https://admin.dev.checkatrade.com/" // TODO
+}
+'-----------------------------------------------------------------------------'
+'LIVE'
 if (GlobalVariable.URL == ("https://www.checkatrade.com/")){
 	GlobalVariable.WebOfficeURL="https://admin.checkatrade.com/" // TODO
 }
+'-----------------------------------------------------------------------------'
+'PREVIEW'
+if (GlobalVariable.URL == ("https://www.preview.checkatrade.com/")){
+	GlobalVariable.WebOfficeURL="https://admin.preview.checkatrade.com/" // TODO
+} 
+
+
 //--------------------------------------------------------------------------------
 
 //-----------------------------------------

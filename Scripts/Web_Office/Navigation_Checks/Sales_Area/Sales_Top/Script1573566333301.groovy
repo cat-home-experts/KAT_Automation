@@ -50,7 +50,7 @@ import internal.GlobalVariable as GlobalVariable
 '--------------------------------------'
 ' Web Office StartUp                  |'
 '--------------------------------------'
-WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp'), [:], FailureHandling.OPTIONAL)
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp'), [:], FailureHandling.STOP_ON_FAILURE)
 
 '--------------------------------------'
 ' Navigate Top level menu Item         |'

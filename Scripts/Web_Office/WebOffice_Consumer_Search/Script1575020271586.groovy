@@ -54,17 +54,17 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Consumer_Data (
 		'--------------------------------------'
 		' Web Office StartUp                   |'
 		'--------------------------------------'
-		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp'), [:], FailureHandling.OPTIONAL)
+		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp'), [:], FailureHandling.STOP_ON_FAILURE)
 		
 		'--------------------------------------'
 		' Navigate to <Consumer> Menu Item     |'
 		'--------------------------------------'
-		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/navigation/Navigate_Consumers'), [:], FailureHandling.OPTIONAL)
+		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/navigation/Navigate_Consumers'), [:], FailureHandling.STOP_ON_FAILURE)
 		
 		'--------------------------------------'
 		' LH Pane  - Apply Search Criteria     |'
 		'--------------------------------------'
-		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Actions/Set_Consumer_Data'), [:], FailureHandling.OPTIONAL)
+		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Actions/Set_Consumer_Data'), [:], FailureHandling.STOP_ON_FAILURE)
 		
 		'--------------------------------------'
 		' Select Returned Record to Verify     |'

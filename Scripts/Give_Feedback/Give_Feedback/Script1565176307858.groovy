@@ -49,7 +49,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 // Added Class What_Type_Of_Trade_Used        |    20/02/2020   |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
-' REVERT CODE IN RECOMMENDATION SELECTION - NO Option When Defect is Corrected'
+' REVERT CODE IN RECOMMENDATION SELECTION - NO Option re-selection When Defect is Corrected'
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
@@ -111,7 +111,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (
     '--------------------------------------'
     ' Your Experience (page 1) Processing  |'
     '--------------------------------------'
-    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Your_Experience'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Your_Experience'), [:], FailureHandling.STOP_ON_FAILURE)
 
     '--------------------------------------'
     ' Your Scores (page 2) Processing      |'
@@ -122,35 +122,35 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (
 	YE_WorkCarriedOut = data.getValue("YE_Work_Carried_Out", GlobalVariable.row)
 	'-------------------------------------------------'
 	if (YE_Recommend == ("Yes")) {
-		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Scores/Your_Scores'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Scores/Your_Scores'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
     '--------------------------------------'//--------------------------------------------------------------
 	// NEW Scores Page is Returned If Recommendation == 'NO' BUT WORK CARRIED OT AND/OR MONEY CHANGED HANDS |
 	//------------------------------------------------------------------------------------------------------
 	if (YE_Recommend == ("No") && (YE_WorkCarriedOut == "Yes")) {
-		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Scores/Your_Scores_Alt'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Scores/Your_Scores_Alt'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 	
 	'--------------------------------------'
     ' Your Details (page 3) Processing     |'
     '--------------------------------------'
-    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Details/Your_Details'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Details/Your_Details'), [:], FailureHandling.STOP_ON_FAILURE)
 
     '--------------------------------------'
     ' Further Info (page 4) Processing     |'
     '--------------------------------------'
-    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Further_Infomation/Further_Information'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Further_Infomation/Further_Information'), [:], FailureHandling.STOP_ON_FAILURE)
 
 	'--------------------------------------'
 	' Thank You! (page 5) Processing       |'
 	'--------------------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Final_Page'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Final_Page'), [:], FailureHandling.STOP_ON_FAILURE)
 	
 	'--------------------------------------'
 	'  Verify Return to Home Page          |' // Refactored 29/08/2019
 	'--------------------------------------'
 	
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Home'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Home'), [:], FailureHandling.STOP_ON_FAILURE)
 	
     '--------------------------------------'
     ' Processing Completion                |'

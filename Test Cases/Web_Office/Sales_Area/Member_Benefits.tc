@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Member_Benefits</name>
+   <tag></tag>
+   <comment>--------------------------------------
+ Web Office StartUp                  |
+--------------------------------------
+ Navigate to &lt;Tools> Menu Item        |
+--------------------------------------
+ LH Pane  - Apply Search Criteria     |
+--------------------------------------
+ Select Returned Record to Verify     |
+--------------------------------------
+ Verify Returned Company Record       |
+--------------------------
+ Teardown - CLose Browser |
+--------------------------
+ END                      |
+--------------------------</comment>
+   <testCaseGuid>e85a1b55-316f-4d3b-877c-309c551184a5</testCaseGuid>
+</TestCaseEntity>

@@ -44,21 +44,52 @@ import internal.GlobalVariable as GlobalVariable
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 
+' TOOLS Does not return a page directly, need to NAVIGATE To Sub Functions'
 //-----------------------------------------
 // Call Setup Process - Browser Startup, Navigate
 //-----------------------------------------
 '--------------------------------------'
 ' Web Office StartUp                  |'
 '--------------------------------------'
-WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp'), [:], FailureHandling.OPTIONAL)
+WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp'), [:], FailureHandling.STOP_ON_FAILURE)
 
 '--------------------------------------'
 ' Navigate Top level menu Item         |'
 '--------------------------------------'
 WebUI.waitForPageLoad(60)
 WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Tools'), 60)
-WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/a_Tools'))
+//WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/a_Tools'))
 WebUI.waitForPageLoad(60)
+//
+'--------------------------------------'
+' Navigate To <Marketing Materials Req>|'
+'--------------------------------------'
+
+////////////////////////////////////////////
+// Hover on Element                       //
+////////////////////////////////////////////
+WebUI.mouseOver(findTestObject('Object Repository/WebOffice_Home_page/a_Tools'))
+
+////////////////////////////////////////////
+//  Select Target menuItem Element        //
+////////////////////////////////////////////
+WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Header_Menus/Page_Members Area/a_Acceptacard'), 1)
+WebUI.click(findTestObject('Object Repository/Page_Members Area/Header_Menus/Page_Members Area/a_Acceptacard'))
+
+///////////////////////////////////////
+//                END                //
+///////////////////////////////////////
+
+
+
+'--------------------------------------'
+' Verify Returned Page Content         |'
+'--------------------------------------'
+// Header
+
+
+
+
 '--------------------------------------'
 ' Verify Returned Page Content         |'
 '--------------------------------------'

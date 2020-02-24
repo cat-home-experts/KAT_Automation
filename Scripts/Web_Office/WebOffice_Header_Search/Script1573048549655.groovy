@@ -52,12 +52,12 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Mobile_Test_Dat
 		'--------------------------------------'
 		' Web Office StartUp                  |'
 		'--------------------------------------'
-		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp'), [:], FailureHandling.OPTIONAL)
+		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp'), [:], FailureHandling.STOP_ON_FAILURE)
 		
 		'--------------------------------------'
 		' Home Page - Search                   |'
 		'--------------------------------------'
-		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Home_Page_Search'), [:], FailureHandling.OPTIONAL)
+		WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Home_Page_Search'), [:], FailureHandling.STOP_ON_FAILURE)
 		
 		'--------------------------------------'
 		' Web Office - Verify Returned Record  |'
