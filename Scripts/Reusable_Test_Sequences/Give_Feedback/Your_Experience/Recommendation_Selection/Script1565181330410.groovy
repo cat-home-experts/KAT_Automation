@@ -60,7 +60,7 @@ else if (YE_Recommend == ("No")) {
 	' Your Experience (page 1) Trader Type?     NEW - 20/02/2020                            |'
 	'---------------------------------------------------------------------------------------'
 	// TODO Bug - Selecting Radios after selecting NO removes trade sealection - NEW
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/What_Type_Of_Trade_Used'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/What_Type_Of_Trade_Used'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 	'original'
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Give_Feedback/Your_Experience/Not_Recommend'), [:], FailureHandling.CONTINUE_ON_FAILURE)

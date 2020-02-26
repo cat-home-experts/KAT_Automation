@@ -28,7 +28,10 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 // Only validate on one DataSet for obvious R |    04/09/2019   |     Dave Horne   |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Added <HOMEOWNER> Step - Due To Method Chge|    26/02/2020   |        DH        |                             |
+//---------------------------------------------------------------------------------------------------------------
+// Also Changed The User Account to 443671    |                 |                  |    Test Account Hardwierd   |
+// As The Original TEST ACCOUNT was Dropped?  |    26/02/2020   |        DH        |    on FINAL PAGE Verify     |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -48,10 +51,11 @@ import internal.GlobalVariable as GlobalVariable
 '-----------------------------------------------------------------'
 'Run as a Suite, this is ignored, stand alone, then this applies  |'
 '-----------------------------------------------------------------'
-if (!GlobalVariable.PAGE == "GiveFeedback"){
-	GlobalVariable.PAGE = "GiveFeedback" // inherited from last test
-	GlobalVariable.URL = GlobalVariable.URL+GlobalVariable.PAGE
-} 
+'Withdrawn'
+//if (!GlobalVariable.PAGE == "GiveFeedback"){
+//	GlobalVariable.PAGE = "GiveFeedback" // inherited from last test
+//	GlobalVariable.URL = GlobalVariable.URL+GlobalVariable.PAGE
+//} 
 //GlobalVariable.PAGE = ""
 //GlobalVariable.PAGE = "GiveFeedback"
 //GlobalVariable.URL = GlobalVariable.URL+GlobalVariable.PAGE
@@ -74,6 +78,11 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (
 	// StartUp Sequence
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 
+	'-----------------------------------------------------'
+	' Hit the <HomeOwner> link in the header banner   |'
+	'-----------------------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Banner_Menu/HomeOwner'), [:], FailureHandling.STOP_ON_FAILURE)
+	
     '-----------------------------------------------------'
     ' Hit the <Give Feedback> link in the header banner   |'
     '-----------------------------------------------------'

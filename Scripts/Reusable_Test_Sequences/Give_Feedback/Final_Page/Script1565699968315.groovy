@@ -43,7 +43,9 @@ if (YE_Recommend == ("Yes")) {
 	WebUI.verifyTextPresent('A Checkatrade staff member will now review your feedback for', false)
 	'------------------------------------'
 	// Account name that left the Feedback
-	WebUI.verifyTextPresent(Account_Verification_Name, false)
+	//WebUI.verifyTextPresent(Account_Verification_Name, false)
+	'Hard Wired Sue To Original TEst Account Dropping Off'
+	WebUI.verifyTextPresent("Test Account", false)
 	'------------------------------------'
 	// Finish Button is Displayed
 	WebUI.verifyTextPresent('Finish', false)

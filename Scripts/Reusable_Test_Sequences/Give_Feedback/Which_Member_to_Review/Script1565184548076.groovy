@@ -25,9 +25,13 @@ import internal.GlobalVariable as GlobalVariable
 '--------------------------------------------------------'
 ' Major Changes Factored Into Function - 05/12/2019      |'
 '--------------------------------------------------------'
+' Behaviour Changes Factored Into Function - 26/02/2020  |'
+'--------------------------------------------------------'
 
 // First hit from cold sometimes takes and age to render member lookup values
 WebUI.waitForPageLoad(60)
+
+
 WebUI.waitForElementPresent(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review'), 25)
 
 //----------------------------------------------------------
@@ -47,22 +51,39 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Feedback/Page_Chec
 //WebUI.waitForElementPresent(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/div_Close'), 10)
 //WebUI.click(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/div_Close'))
 
-'----------------------------------------------------------------------'
-try {
-    'Try Catch Included 14/08/2019 - Sometimes the Trader isnt returned?   |'
-    '----------------------------------------------------------------------'
+' Detect Lookup Not Working or Page Error'
 
-	//----------------------------------------------------------------------------------
-    WebUI.click(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/span_Search_Member')) 
-	KeywordUtil.markPassed(" * * * Trader OR CAT ID Selected, and Returned as Expected!")
+if (WebUI.verifyTextNotPresent("Sorry, no results found", false) || (WebUI.verifyTextNotPresent("Internal server error", false))){
 	
-}
-catch (Exception e) {
-    System.out.println.(' * * * Trader OR CAT ID <Detail reported in log>') 
+	WebUI.click(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/span_Search_Member'))
+	KeywordUtil.markPassed(" * * * Trader OR CAT ID Selected, and Returned as Expected!")
 
-    KeywordUtil.markFailed(" * * * Trader OR CAT ID Not Returned - Service Isn't Running OR Slow to Start Up!") 
-} 
-'----------------------------------------------------------------------'
+} else {
+	KeywordUtil.markFailed(" * * * Trader OR CAT ID Not Returned - Service Isn't Running OR (Really) Slow to Start Up!")
+}
+
+
+
+	//KeywordUtil.markFailed(" * * * Trader OR CAT ID Not Returned - Service Isn't Running OR Slow to Start Up!") 
+//}
+
+
+//'----------------------------------------------------------------------'
+//try {
+//    'Try Catch Included 14/08/2019 - Sometimes the Trader isnt returned?   |'
+//'----------------------------------------------------------------------'
+//
+//	//----------------------------------------------------------------------------------
+//    WebUI.click(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/span_Search_Member')) 
+//	KeywordUtil.markPassed(" * * * Trader OR CAT ID Selected, and Returned as Expected!")
+//	
+//}
+//catch (Exception e) {
+//    System.out.println.(' * * * Trader OR CAT ID <Detail reported in log>') 
+//
+//    KeywordUtil.markFailed(" * * * Trader OR CAT ID Not Returned - Service Isn't Running OR Slow to Start Up!") 
+//} 
+//'----------------------------------------------------------------------'
 //////////////////////////////
 //// END
 //////////////////////////////

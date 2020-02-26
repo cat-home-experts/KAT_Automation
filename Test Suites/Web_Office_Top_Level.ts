@@ -68,4 +68,28 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Web_Office/Settings/Preferences</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>1d6391d3-3cda-4995-919b-c0f9a62d111b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Settings/My_User_Account</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6bde5b9c-d640-4771-82ae-12af500d4ea6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Settings/Stats</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b6371c7f-955b-47f0-ab4d-fe83780bcac0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Finance/ARUDD_Import_Process</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e27dbd85-7136-401f-81af-4e5937433de7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Finance/Eureka_File_Export</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

@@ -24,7 +24,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |    24/02/2020   |        DH        |                             |
+//  WO/Finance/ARUDD Import Process Page Verfy|    25/02/2020   |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -34,57 +34,37 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-
-'WIP TODO'
-
 //---------------------------------------------------------------------------------------------------------------
 //                                                                                                               |
 //	GIVEN -  With Web Office Open                                                                                |
 //                                                                                                               |
-//	WHEN - We CLICK on the <CONSUMERS> menu Item (Top Level)                                                     |
+//	WHEN - We CLICK on the <FINANCE> menu Item (Top Level) - Then ARUDD IMPORT PROCESS Sub Menu                  |
 //                                                                                                               |
 //  THEN - Verify Details of the RETURNED Page are As Expected                                                   |
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 
+
 '--------------------------------------'
 ' Navigate Top level menu Item         |'
 '--------------------------------------'
 WebUI.waitForPageLoad(60)
-WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Companies'), 60)
+WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Finance'), 60)
 
 
 ////////////////////////////////////////////
 // Hover on Element                       //
 ////////////////////////////////////////////
-WebUI.mouseOver(findTestObject('Object Repository/WebOffice_Home_page/a_Companies'))
+WebUI.mouseOver(findTestObject('Object Repository/WebOffice_Home_page/a_Finance'))
 
 ////////////////////////////////////////////
 //  Select Target menuItem Element        //
 ////////////////////////////////////////////
-WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Company_Advanced_Search'), 1)
-WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/a_Company_Advanced_Search'))
+WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_ARUDD Import Process'), 1)
+WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/a_ARUDD Import Process'))
 
 '--------------------------------------'
-
-////////////////////////////////////////////
-// Hover on Element                       //
-////////////////////////////////////////////
-WebUI.mouseOver(findTestObject('Object Repository/WebOffice_Home_page/a_Tools'))
-
-////////////////////////////////////////////
-//  Select Target menuItem Element        //
-////////////////////////////////////////////
-WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Header_Menus/Page_Members Area/a_Acceptacard'), 1)
-WebUI.click(findTestObject('Object Repository/Page_Members Area/Header_Menus/Page_Members Area/a_Acceptacard'))
-
-
 
 ///////////////////////////////////////
 //                END                //
 ///////////////////////////////////////
-
-
-'--------------------------'
-' END                      |'
-'--------------------------'

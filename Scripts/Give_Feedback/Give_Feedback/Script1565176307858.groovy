@@ -49,10 +49,10 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 // Added Class What_Type_Of_Trade_Used        |    20/02/2020   |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
-' REVERT CODE IN RECOMMENDATION SELECTION - NO Option re-selection When Defect is Corrected'
-//                                            |                 |                  |                             |
+// Added <HOMEOWNER> Step - Due To Method Chge|    26/02/2020   |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Also Changed The User Account to 443671    |                 |                  |    Test Account Hardwierd   |
+// As The Original TEST ACCOUNT was Dropped?  |    26/02/2020   |        DH        |    on FINAL PAGE Verify     |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -98,6 +98,12 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Give_Feedback (
     WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 
     //-----------------------------------------
+	
+	'-----------------------------------------------------'
+	' Hit the <HomeOwner> link in the header banner   |'
+	'-----------------------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Banner_Menu/HomeOwner'), [:], FailureHandling.STOP_ON_FAILURE)
+
     '-----------------------------------------------------'
     ' Hit the <Give Feedback> link in the header banner   |'
     '-----------------------------------------------------'
