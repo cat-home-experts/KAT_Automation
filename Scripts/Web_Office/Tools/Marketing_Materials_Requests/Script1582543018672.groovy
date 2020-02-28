@@ -24,7 +24,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-// WO - Tools->marketing Materials Requests   |   24/02/2020    |        DH        |                             |
+// WO - Tools->Marketing Materials Requests   |   24/02/2020    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -55,22 +55,12 @@ import internal.GlobalVariable as GlobalVariable
 	'--------------------------------------'
 	' Navigate to <Tools> Menu Item        |'
 	'--------------------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/navigation/Navigate_Advanced_Company_Search'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Tools/Marketing_Materials_Request'), [:], FailureHandling.STOP_ON_FAILURE)
 	
 	'--------------------------------------'
-	' LH Pane  - Apply Search Criteria     |'
+	' Verify Returned Page Detail          |'
 	'--------------------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Actions/Set_Advanced_Company_Data'), [:], FailureHandling.STOP_ON_FAILURE)
-	
-	'--------------------------------------'
-	' Select Returned Record to Verify     |'
-	'--------------------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Actions/Select_Company'), [:], FailureHandling.OPTIONAL)
-	
-	'--------------------------------------'
-	' Verify Returned Company Record       |'
-	'--------------------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Verification/Company_Returned_Advanced_Search_Record'), [:], FailureHandling.OPTIONAL)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Verification/Tools/Marketing_Materials_Requests'), [:], FailureHandling.OPTIONAL)
 	
 	'--------------------------'
 	' Teardown - CLose Browser |'

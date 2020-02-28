@@ -22,4 +22,10 @@
          <variableId>ac5ddb1d-2b02-4632-af1d-5f956b0f1b74</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>72f967c6-e44b-4005-9279-477f27ec6f9c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Checkatrade_Tradesman_Searches/Trader_Location_Not_Listed</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

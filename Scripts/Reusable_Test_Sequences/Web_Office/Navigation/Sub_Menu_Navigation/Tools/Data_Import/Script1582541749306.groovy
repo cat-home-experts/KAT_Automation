@@ -15,6 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+
 //-----------------------
 // TEST HISTORY HEADER - |
 //-----------------------
@@ -24,7 +25,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |    24/02/2020   |        DH        |                             |
+//  navigation ->Tools->Data Import           |    26/02/2020   |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -34,14 +35,12 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-
-'WIP TODO'
 
 //---------------------------------------------------------------------------------------------------------------
 //                                                                                                               |
 //	GIVEN -  With Web Office Open                                                                                |
 //                                                                                                               |
-//	WHEN - We CLICK on the <CONSUMERS> menu Item (Top Level)                                                     |
+//	WHEN - We CLICK on the <TOOLS> menu Item (Top Level) Then Sub Menu <DATA IMPORT>                             |
 //                                                                                                               |
 //  THEN - Verify Details of the RETURNED Page are As Expected                                                   |
 //                                                                                                               |
@@ -51,21 +50,7 @@ import internal.GlobalVariable as GlobalVariable
 ' Navigate Top level menu Item         |'
 '--------------------------------------'
 WebUI.waitForPageLoad(60)
-WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Companies'), 60)
-
-
-////////////////////////////////////////////
-// Hover on Element                       //
-////////////////////////////////////////////
-WebUI.mouseOver(findTestObject('Object Repository/WebOffice_Home_page/a_Companies'))
-
-////////////////////////////////////////////
-//  Select Target menuItem Element        //
-////////////////////////////////////////////
-WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Company_Advanced_Search'), 1)
-WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/a_Company_Advanced_Search'))
-
-'--------------------------------------'
+WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Tools'), 60)
 
 ////////////////////////////////////////////
 // Hover on Element                       //
@@ -75,15 +60,12 @@ WebUI.mouseOver(findTestObject('Object Repository/WebOffice_Home_page/a_Tools'))
 ////////////////////////////////////////////
 //  Select Target menuItem Element        //
 ////////////////////////////////////////////
-WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Header_Menus/Page_Members Area/a_Acceptacard'), 1)
-WebUI.click(findTestObject('Object Repository/Page_Members Area/Header_Menus/Page_Members Area/a_Acceptacard'))
-
-
+WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Data Import'), 1)
+WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/a_Data Import'))
 
 ///////////////////////////////////////
 //                END                //
 ///////////////////////////////////////
-
 
 '--------------------------'
 ' END                      |'

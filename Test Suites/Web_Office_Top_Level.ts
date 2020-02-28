@@ -92,4 +92,16 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Web_Office/Finance/Eureka_File_Export</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>d5d863f8-85af-4489-bf28-75ddea165c21</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Tools/Marketing_Materials_Requests</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6f405e58-ab7d-47c5-a9b7-6c8883ce3b8c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Tools/Data_Import</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

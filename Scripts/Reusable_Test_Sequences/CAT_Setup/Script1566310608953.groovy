@@ -54,7 +54,8 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 //---------------------------------------------------------------------------------------------------------------
 // Old RO new Website Detection Added         |    07/01/2019   |         DH       |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Try/Catch Issue with the tool - Added Fail |                 |                  |                             |
+// Handling to the T/Cs                       |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //
 //---------------------------------------------------------------------------------------------------------------
@@ -106,6 +107,8 @@ WebUI.waitForPageLoad(60)
 //WebUI.waitForElementPresent(null, 10)
 'Previous Functionalilty Left Commented For Ease Of reversion'
 
+
+' Katalon Try/Catches currently have issues? SEE HEADER'
 //try {
 //	//----------------------------------------------
 //	//'Closes COOKIE nagging element, If it Exists  |'
@@ -149,12 +152,12 @@ try {
     //'Closes COOKIE nagging element, If it Exists  |'
     //----------------------------------------------
     WebUI.verifyElementPresent(findTestObject('Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All'), 
-        5)
+        5,FailureHandling.OPTIONAL)
 
     //WebUI.verifyElementPresent(findTestObject('Object Repository/New_Home/Page_Checkatrade Find a tradesperson you can trust/div_Close'), 1, FailureHandling.OPTIONAL)
-    // // Default locator was hide_button - stopped working, use close button locator now - 27/08/2019
+    // // Default locator was hide_button - stopped working, use close button locator now - 27/08/2019,FailureHandling.OPTIONAL)
     '---------------------------------'
-    WebUI.click(findTestObject('Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All'))
+    WebUI.click(findTestObject('Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All'),FailureHandling.OPTIONAL)
 
     //WebUI.click(findTestObject('Object Repository/New_Home/Page_Checkatrade Find a tradesperson you can trust/div_Close'))
     '---------------------------------'

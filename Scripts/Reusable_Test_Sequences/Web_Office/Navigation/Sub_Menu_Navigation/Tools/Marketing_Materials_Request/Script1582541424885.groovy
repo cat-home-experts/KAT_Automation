@@ -51,19 +51,19 @@ import internal.GlobalVariable as GlobalVariable
 ' Navigate Top level menu Item         |'
 '--------------------------------------'
 WebUI.waitForPageLoad(60)
-WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Companies'), 60)
+WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Tools'), 60)
 
 
 ////////////////////////////////////////////
 // Hover on Element                       //
 ////////////////////////////////////////////
-WebUI.mouseOver(findTestObject('Object Repository/WebOffice_Home_page/a_Companies'))
+WebUI.mouseOver(findTestObject('Object Repository/WebOffice_Home_page/a_Tools'))
 
 ////////////////////////////////////////////
 //  Select Target menuItem Element        //
 ////////////////////////////////////////////
-WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Company_Advanced_Search'), 1)
-WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/a_Company_Advanced_Search'))
+WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Marketing Materials Requests'), 1)
+WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/a_Marketing Materials Requests'))
 
 
 

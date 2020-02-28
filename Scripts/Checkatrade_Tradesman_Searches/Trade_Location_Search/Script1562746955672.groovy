@@ -16,7 +16,6 @@ import internal.GlobalVariable as GlobalVariable
 //import NewTestListener as NewTestListener
 import org.openqa.selenium.Keys as Keys
 
-
 //-----------------------
 // TEST HISTORY HEADER - |                                                                               
 //-----------------------
