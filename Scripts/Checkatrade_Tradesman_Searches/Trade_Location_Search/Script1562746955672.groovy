@@ -104,38 +104,4 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('searchTestData'
 	'--------------------------'
 	' END                      |'
 	'--------------------------'
-
-//    //-----------------------------------------
-//	// Call Setup Process - Browser Startup, Navigate, Maximize and Close Cookie Nagging Element
-//	//-----------------------------------------
-//	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup_Old'), [:], FailureHandling.STOP_ON_FAILURE)
-//	//-----------------------------------------
-//	
-//    //-----------------------------------------
-//    'SEARCH TRADE CLASSIFICATION'
-//    WebUI.setText(findTestObject('Page_Checkatrade Find a tradesperson you can trust/input_Search through'), 
-//        findTestData('searchTestData').getValue('tradeClassification', GlobalVariable.row))
-//
-//    //------------------------------------------------------------------------------------------------------------------------------------------------
-//    'SEARCH SELECTED LOCATION'
-//    WebUI.setText(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_location'), 
-//        findTestData('searchTestData').getValue('tradeLocation', GlobalVariable.row))
-//
-//	 //------------------------------------------------------------------------------------------------------------------------------------------------
-//	'Double click on the search button'
-//	
-//	'HIT SEARCH'
-//	
-//	'--------------------------------'
-//	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Hit_Search_Button'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-//	
-//	//------------------------------------------------------------------------------------------------------------------------------------------------
-//    'Expected cantantenated text is Returned'
-//    WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeLocationVerification', GlobalVariable.row), false)
-//
-// 	//-----------------------------------------
-//	// Call Teardown Process -
-//	//-----------------------------------------
-//	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.STOP_ON_FAILURE)
-//	//------------------------------------------------------------------------------------------------------------------------------------------------
 }

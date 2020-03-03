@@ -16,24 +16,16 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.util.KeywordUtil
 
-//-------------------------------------------------------
-// Verification - Required Search Returned as Expected  | - Snip - 27/02/2020
-//-------------------------------------------------------
+//-----------------------------------------------------------
+// Verification - Required Search NOT Returned as Expected  | - Snip - 27/02/2020
+//-----------------------------------------------------------
 'For later Extension'
 '--------------------------------'
 'Read data from spreadsheet      | r_ = Returned Data'
 '--------------------------------'
-//def data = findTestData('Data Files/Consumer_Data (1)')
-//def Consumer_ID = data.getValue("Search_Trader_Location_Data_NEG", GlobalVariable.row)
-//
-//def r_Full_Name = data.getValue("r_Full_Name", 1)
-//def r_Full_Address = data.getValue("r_Full_Address", 1)
-//
-//'--------------------------------'
-//'Read data from spreadsheet      |'
-//'--------------------------------'
-//def Actual_Page_Text = ""
-//def Expected_Page_Text = ""
+def data = findTestData('Data Files/Search_Trader_Location_Data_NEG')
+def Search_Trader_Location = data.getValue("tradeNameLocation", GlobalVariable.row)
+def Search_Trade_Clasification = data.getValue("tradeClassification", GlobalVariable.row)
 '------------------------------------------------------------------------'
 'VALUES - 1 = Enter Trade Location Status - 2 = 404 No File or Directory |'
 '------------------------------------------------------------------------'
@@ -42,9 +34,8 @@ def Flag_Search_Location_Error = "0"
 WebUI.delay(1)
 WebUI.waitForPageLoad(60)
 
-
 '-------------------------------------------------------------------------------------------------------------------------'
-'Scenario 1 - Location, Incorrect Numeric Value or Posecode Returns Highlighted (RED) Text Please enter a valid Location  |'
+'Scenario 1 - Location, Incorrect Numeric Value or Postcode Returns Highlighted (RED) Text Please enter a valid Location  |'
 '-------------------------------------------------------------------------------------------------------------------------'
 try{
 
@@ -61,7 +52,6 @@ catch (Exception e1){
 '-----------------------------------------------------------------------------------------------------------------------------------'
 'Scenario 2 - Location, Incorrect or Non Existing Data Beyond the Realms of the Database - Return 404 - File or Directory NOT FOUND |'
 '-----------------------------------------------------------------------------------------------------------------------------------'
-  
 try{
 	  
 	WebUI.verifyTextPresent('404 - File or directory not found', false,FailureHandling.OPTIONAL)
@@ -85,48 +75,10 @@ if (Flag_Search_Location_Error == "2"){
 if (Flag_Search_Location_Error == "0"){
 	KeywordUtil.markFailed("Page Content Returned, Is Not What Was Expected - INVESTIGATE! :-)") 
 }
-//// verifies the NON returns of Classification against Invalid Location
-////-------------------------------------------
-//'Expected cantantenated text is Returned'
-//' DYNAMIC DELAY - Wait for <SEARCH> Button to Re-Appear after Search is completed'
-//
-//WebUI.delay(1)
-//WebUI.waitForPageLoad(60)
-//
-//'-------------------------------------------------------------------------------------------------------------------------'
-//'Scenario 1 - Location, Incorrect Numeric Value or Posecode Returns Highlighted (RED) Text Please enter a valid Location  |'
-//'-------------------------------------------------------------------------------------------------------------------------'
-//
-//if (WebUI.verifyTextPresent('Please enter a trade and a location', false)) {
-//	Flag_Search_Location_Error = "1"
-//	WebUI.closeBrowser()
-//	'Need To Terminate WebDriver Process Also'
-//'-----------------------------------------------------------------------------------------------------------------------------------'
-//'Scenario 2 - Location, Incorrector Non Existing Data Beyond the Realms of the Database - Return 404 - File or Directory NOT FOUND  |'
-//'-----------------------------------------------------------------------------------------------------------------------------------'
-//	} 
-//
-//else if (!WebUI.verifyTextPresent('404 - File or directory not found', false)) {
-//	Flag_Search_Location_Error = "2"
-//} 
-//
-//else {
-//	KeywordUtil.markFailed("Page Returned, Is Not What Was Expected - INVESTIGATE! :-)") // for Location "
-//}
-//
-//if (Flag_Search_Location_Error == "1"){
-//	KeywordUtil.markPassed("Enter a VALID Trade and Location is Reported, As Expected") // for Location "
-//}
-//
-//if (Flag_Search_Location_Error == "2"){
-//	KeywordUtil.markPassed("Error 404 Reported as Expected, Resource Unavailable")
-//}
-//
-//// snip for future reference
-//// WebUI.verifyTextPresent(findTestData('Search_Trader_Location_Data_NEG').getValue('tradeClassification', GlobalVariable.row), false)
-// //WebUI.verifyTextPresent(findTestData('Search_Trader_Location_Data_NEG').getValue('tradeLocation', GlobalVariable.row), false)
-// 
-////-------------------------------------------
+'Report on Trade v Location Iteration'
+if (Flag_Search_Location_Error > "0"){
+	KeywordUtil.markPassed("Invalid Location was Correctly Highlighted for Trade Type <"+Search_Trade_Clasification+"> Based in <"+Search_Trader_Location+">") // for Location "
+}
 
 //------------------------------------
 // END                               | - Snip - 27/02/2020

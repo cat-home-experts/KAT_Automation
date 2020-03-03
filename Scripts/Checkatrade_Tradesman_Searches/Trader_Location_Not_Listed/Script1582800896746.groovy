@@ -58,7 +58,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Search_Trader_L
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 	//-----------------------------------------
 
-	' Home Page validation Checks after COOKIE Dispelled NOT REWUIRED IN THIS INSTANCE'
+	' Home Page validation Checks after COOKIE Dispelled NOT REQUIRED IN THIS INSTANCE'
 	// WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Home'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'---------------------------------------'

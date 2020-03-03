@@ -16,4 +16,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Checkatrade_Tradesman_Searches/Trade_Name_Search_Multiple</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>c92aa261-667e-4297-8813-f540f730561c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Checkatrade_Tradesman_Searches/Trader_Name_Not_Listed</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

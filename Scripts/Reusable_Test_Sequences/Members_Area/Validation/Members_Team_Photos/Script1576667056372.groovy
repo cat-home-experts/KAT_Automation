@@ -28,7 +28,7 @@ import internal.GlobalVariable as GlobalVariable
 // Validation of Members Team Photos Page     |    18/12/2019   |        DH        |                             |
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Slight content change hardened             |    03/03/2020   |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -70,7 +70,7 @@ WebUI.verifyTextPresent("MEMBER ID", false)
 '----------------------------------------------'
 'DEFAULT TAB - Contact Preferences     '
 '---------------------------------'
-WebUI.verifyTextPresent("Album “Team photos”", false)
+// WebUI.verifyTextPresent("Album “Team photos”", false) // minor change 03/03/0202
 '----------------------------------------------'
 WebUI.verifyTextPresent("Click/tap on an image or video to edit it", false)
 '----------------------------------------------'

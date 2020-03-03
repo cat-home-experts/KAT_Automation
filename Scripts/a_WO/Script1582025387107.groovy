@@ -18,32 +18,14 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://www.dev.checkatrade.com/GiveFeedback/')
+WebUI.navigateToUrl('https://www.preview.checkatrade.com/')
 
-WebUI.setText(findTestObject('Page_Checkatrade Give your feedback/input_Which member do you want to review_fe_95fcf0'), 
-    'test Account')
+WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name'))
 
-WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Test Account'))
+WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/input_or look up a member by name_company_a_4b2513'), 
+    '99999')
 
-WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_No'))
+WebUI.click(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/span_Sorry no results found'))
 
-WebUI.click(findTestObject('Page_Checkatrade Give your feedback/span_Yes'))
-
-WebUI.click(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/span_Other'))
-
-WebUI.click(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/span_Plumber'))
-
-WebUI.click(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/span_Other'))
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/select_Air ConditioningAlarms  SecurityAppl_6c61d9'), 
-    '11', true)
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/select_Air ConditioningAlarms  SecurityAppl_6c61d9'), 
-    '1140', true)
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/select_Air ConditioningAlarms  SecurityAppl_6c61d9'), 
-    '9', true)
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/select_Air ConditioningAlarms  SecurityAppl_6c61d9'), 
-    '15', true)
+WebUI.click(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Not here'))
 

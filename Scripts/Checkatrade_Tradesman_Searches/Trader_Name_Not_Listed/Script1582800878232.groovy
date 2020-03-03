@@ -58,27 +58,27 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Search_CAT_ID_D
 	//-----------------------------------------
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Setup'), [:], FailureHandling.STOP_ON_FAILURE)
 	
-	' Home Page validation Checks after COOKIE Dispelled'  // Changed 02/01/2020 - Refer header and script below
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Home'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	' Home Page validation Checks after COOKIE Dispelled'  // Not Required Here
+	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Home'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'---------------------------------------------------------------------'
 	' Select Search on Trader Name (or ID) From Home page/Search Screen   |' // Changed 02/01/2020 - Refer header and script below
 	'---------------------------------------------------------------------'
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Click_Search_Trade_Name'), [:], FailureHandling.STOP_ON_FAILURE)
 
-		'---------------------------------------'
+	'---------------------------------------'
 	' Enter Trader Name (or ID) to Search   |'  // Changed 02/01/2020 - Refer header and script below
 	'---------------------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Enter_Trade_Name'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Enter_Trade_Name_NEG'), [:], FailureHandling.STOP_ON_FAILURE)
 	
 	'---------------------------------------'
-	' Search Trader Name (or ID)            |'  // Changed 02/01/2020 - Refer header and script below
+	' Search Trader Name (or ID)            |'  // Not Utilised Here Due To Behaviour of CAT
 	'---------------------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Search_Trade_Name'), [:], FailureHandling.STOP_ON_FAILURE)
+	// WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Search_Trade_Name'), [:], FailureHandling.STOP_ON_FAILURE)
 
-	'------------------------------------------'
-	' Expected ERROR Reported                  |'
-	'------------------------------------------'
+	'---------------------------------------'
+	' Expected ERROR Reported               |'
+	'---------------------------------------'
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Search_Tradename_Not_Returned'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'--------------------------'
