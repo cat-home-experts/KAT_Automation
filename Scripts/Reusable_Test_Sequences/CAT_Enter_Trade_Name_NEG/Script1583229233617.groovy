@@ -30,8 +30,8 @@ import internal.GlobalVariable as GlobalVariable
 
 	if (GlobalVariable.Website_Version != "new"){
 		// Old website
-		// WebUI.waitForElementClickable(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name'), 5)
-		WebUI.setText(findTestObject('Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search'), findTestData(
+		WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search'), 5)
+		WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/Trader_Name_To_Search'), findTestData(
 			'Search_CAT_ID_Data_NEG').getValue('tradeName', GlobalVariable.row))
 
 	}

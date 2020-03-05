@@ -54,6 +54,9 @@ import com.kms.katalon.core.util.KeywordUtil
 		KeywordUtil.markWarning("The Expected Lookup Result(s) ARE NOT being returned by the Lookup Service")
 		
 		WebUI.closeBrowser()
+		super.finalize()
+		System.gc();
+		
 	}
 
 //------------------------------------

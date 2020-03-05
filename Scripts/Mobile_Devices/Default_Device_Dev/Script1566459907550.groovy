@@ -39,6 +39,10 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 //---------------------------------------------------------------------------------------------------------------
 // Mobile Tetsing flag included - Line 70     |    13/12/2019   |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
+// Beahiour issues when RESIZE rowser Now?    |    05/03/2020   |        DH        | To Investigate - OK on Reg  |
+//---------------------------------------------------------------------------------------------------------------
+//                                            |                 |                  |                             |
+//---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 '------------------------------------------------------------------------------------------------------'
@@ -196,12 +200,12 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Mobile_Test_Dat
 	'---------------------------------------'
 	' Scroll Search Button into View        |' // SUperceeded
 	'---------------------------------------'
-	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Scroll_To_Search_Button'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Scroll_To_Search_Button'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 	'---------------------------------------'
-	' Dispel New trades Header              |'  // TODO WTS
+	' Dispel New trades Header              |'  // SUperceeded
 	'---------------------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Dispel_Trade_Header'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Dispel_Trade_Header'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 	'---------------------------------------'
 	' Hit Search Button                     |'

@@ -196,7 +196,7 @@ WebUI.waitForPageLoad(60)
 'WEBSITE VERSION DETECTION'
 
 if (WebUI.waitForElementVisible(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review'), 5)){
-	KeywordUtil.logInfo("Give Feedback STARTUP Process")
+	KeywordUtil.logInfo("CAT STARTUP Process")
 	// Currently Give Feedback is the old Journey, when this upgrades then remove this <top> if statement and content
 }
 

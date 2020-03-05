@@ -3,14 +3,6 @@
    <description></description>
    <name>CAT_Search_Tradename_Not_Returned</name>
    <tag></tag>
-   <comment>For later Extension
---------------------------------
-Read data from spreadsheet      | r_ = Returned Data
-------------------------------------------------------------------------
-VALUES - 1 = Enter Trade Location Status - 2 = 404 No File or Directory |
--------------------------------------------------------------------------------------------------------------------------
-Scenario 1 - Location, Incorrect Numeric Value (CAT_ID) or Trade Name Returns Sorry, no results found and NOT HERE? Link |
------------------------------------------------------------------------------------------------------------------------------------
-Scenario 2 - Location, Incorrect or Non Existing Data Beyond the Realms of the Database - Return 404 - File or Directory NOT FOUND |</comment>
+   <comment></comment>
    <testCaseGuid>09eddaad-5834-4cf3-90a2-d93dd0364212</testCaseGuid>
 </TestCaseEntity>

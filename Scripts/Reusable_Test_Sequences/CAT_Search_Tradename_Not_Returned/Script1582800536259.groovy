@@ -38,16 +38,19 @@ WebUI.verifyTextPresent('Not here', false)
 ' Navigate Not Here Link         |'
 '--------------------------------'
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Not here'), 10)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Not here'), 10)
 WebUI.click(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Not here'))
 
 '--------------------------------'
 ' Verify Returned Page           |'
 '--------------------------------'
 
-WebUI.delay(2)
-WebUI.waitForPageLoad(60)
+'SYNC'
 
+WebUI.delay(3)
+WebUI.waitForPageLoad(60)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/link_Give_Your_Feedback'), 25)
+                                                                                                       
 '---------------------------------------'
 WebUI.verifyTextPresent('Company not listed?', false)
 '----------------------------------------'
@@ -63,7 +66,7 @@ WebUI.verifyTextPresent('If you would like help searching for a company, please 
 'Give Feedback Link NOT CHECKED Here     |'
 '----------------------------------------'
 
-
+System.gc();
 //------------------------------------
 // END                               | - Snip - 27/02/2020
 //------------------------------------

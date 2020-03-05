@@ -9,8 +9,12 @@
          <key>BASIC</key>
          <value>id(&quot;company_autocomplete_input&quot;)[count(. | //*[@type = 'text' and @placeholder = 'Company name or Checkatrade ID']) = count(//*[@type = 'text' and @placeholder = 'Company name or Checkatrade ID'])]</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;company_autocomplete_input&quot;]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

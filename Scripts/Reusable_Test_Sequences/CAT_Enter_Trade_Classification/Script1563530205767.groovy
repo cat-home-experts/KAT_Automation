@@ -42,7 +42,10 @@ else {
 	WebUI.click(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF'))
 	WebUI.setText(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF'),
 		findTestData('searchTestData').getValue('tradeClassification', GlobalVariable.row))
-
+	// added 05/03/2020
+	//WebUI.click(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/a_Mobile_Symu_Discrepency'))
+	
+	 
 }
 
 //------------------------------------

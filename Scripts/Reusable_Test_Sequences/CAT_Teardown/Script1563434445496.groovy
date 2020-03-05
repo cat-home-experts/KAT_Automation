@@ -26,7 +26,7 @@ import internal.GlobalVariable as GlobalVariable
 //                                            |    18/07/2019   |     Dave Horne   |                             |
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Added GC - Garbage Collection Command      |    04/03/2020   |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -48,6 +48,8 @@ import internal.GlobalVariable as GlobalVariable
 //------------------
 'Teardown Browser'
 WebUI.closeBrowser()
+super.finalize()
+System.gc();
 
 // GlobalVariable.URL = ""
 // GlobalVariable.PAGE = ""
