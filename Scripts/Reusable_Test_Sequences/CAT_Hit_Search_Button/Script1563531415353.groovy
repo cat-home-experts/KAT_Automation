@@ -47,8 +47,8 @@ if (GlobalVariable.Website_Version == "new"){
 
 else {
 	// Old website
-	WebUI.waitForElementClickable(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/Page_Checkatrade Find a tradesperson you can trust/a_Search'), 25)
-	WebUI.click(findTestObject('Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/Page_Checkatrade Find a tradesperson you can trust/a_Search'))
+	WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Search'), 25)
+	WebUI.click(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Search'))
 
 }
 

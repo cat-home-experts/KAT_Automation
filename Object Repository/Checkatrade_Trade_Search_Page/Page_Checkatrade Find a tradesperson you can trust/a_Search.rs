@@ -6,15 +6,15 @@
    <elementGuidId>4aac8e6c-5ba6-4e55-a292-0efa71b41581</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = 'Search' or . = 'Search')]</value>
+         <key>XPATH</key>
+         <value>/html/body/form/div[6]/div[1]/div/div[1]/div[1]/div/div[1]/div[1]/div[3]/a</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;feedback-form__company_autocomplete_input&quot;]</value>
+         <key>BASIC</key>
+         <value>id(&quot;search&quot;)/div[@class=&quot;search__trade&quot;]/div[@class=&quot;search__form&quot;]/div[@class=&quot;search__input search__input__cta&quot;]/a[@class=&quot;btn btn--primary&quot;]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,14 +38,14 @@
       <value>btn btn--primary</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
       <value>Search</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>

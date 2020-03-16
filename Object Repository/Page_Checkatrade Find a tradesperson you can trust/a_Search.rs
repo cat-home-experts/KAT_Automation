@@ -6,12 +6,12 @@
    <elementGuidId>b874b841-5e1a-48f6-913a-1e56554c5de4</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = 'Search' or . = 'Search')]</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//div[@id='search']/div/div/div[3]/a</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;search&quot;)/div[@class=&quot;search__trade&quot;]/div[@class=&quot;search__form&quot;]/div[@class=&quot;search__input search__input__cta&quot;]/a[@class=&quot;btn btn--primary&quot;][count(. | //*[@data-vars-search-element = 'Search']) = count(//*[@data-vars-search-element = 'Search'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -40,19 +40,26 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>text</name>
+      <name>data-vars-search-element</name>
       <type>Main</type>
       <value>Search</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Search</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;search&quot;)/div[@class=&quot;search__trade&quot;]/div[@class=&quot;search__form&quot;]/div[@class=&quot;search__input search__input__cta&quot;]/a[@class=&quot;btn btn--primary&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
@@ -96,9 +103,16 @@
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Search']/parent::*</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath:href</name>
       <type>Main</type>
-      <value>(//a[contains(@href, 'javascript:void(0);')])[7]</value>
+      <value>(//a[contains(@href, 'javascript:void(0);')])[3]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -106,5 +120,12 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div/div/div/div/div/div[3]/a</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>(//a[contains(@href, 'javascript:void(0);')])[7]</value>
    </webElementXpaths>
 </WebElementEntity>

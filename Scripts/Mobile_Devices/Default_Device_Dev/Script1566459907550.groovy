@@ -41,7 +41,7 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 //---------------------------------------------------------------------------------------------------------------
 // Beahiour issues when RESIZE rowser Now?    |    05/03/2020   |        DH        | To Investigate - OK on Reg  |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Commented Out Scroll To Searcb - Superceed |    16/03/2020   |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -198,9 +198,9 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Mobile_Test_Dat
 	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Enter_Trade_Location'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 	'---------------------------------------'
-	' Scroll Search Button into View        |' // SUperceeded
+	' Scroll Search Button into View        |'  // SUperceeded
 	'---------------------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Scroll_To_Search_Button'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Scroll_To_Search_Button'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 	'---------------------------------------'
 	' Dispel New trades Header              |'  // SUperceeded

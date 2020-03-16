@@ -28,7 +28,7 @@ import internal.GlobalVariable as GlobalVariable
 // navigating Follow Us On>Privacy Notice Ret |    14/02/2020   |         DH       |                             |
 // Membership Overview Page VALIDATION        |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Changes to Content Facrored Into Tests     |    16/03/2020   |         DH       |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -80,17 +80,17 @@ WebUI.waitForPageLoad(60)
 WebUI.verifyTextPresent("Checkatrade", false)
 '----------------------------------------------'
 'Sub Header'
-WebUI.verifyTextPresent("Locations", false)
+//WebUI.verifyTextPresent("Locations", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Counties", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("For Consumers", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Cities and Towns A - Z", false)
+WebUI.verifyTextPresent("Cities & Towns A - Z", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Join Checkatrade", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("More from Checkatrade", false)
+//WebUI.verifyTextPresent("More from Checkatrade", false)
 '----------------------------------------------'
 
 'Page Body'
@@ -123,7 +123,7 @@ WebUI.delay(1)
 'Footer'
 
 '----------------------------------------------'
-WebUI.verifyTextPresent("Directory of Checkatrade members", false)
+// WebUI.verifyTextPresent("Directory of Checkatrade members", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Checkatrade.com all rights reserved", false)
 '----------------------------------------------'

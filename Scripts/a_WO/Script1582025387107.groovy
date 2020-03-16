@@ -20,12 +20,12 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://www.preview.checkatrade.com/')
 
-WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_or look up a member by name'))
+WebUI.setText(findTestObject('Page_Checkatrade Find a tradesperson you can trust/input_Search through overrecommended vetted_c74dba'), 
+    'plumber')
 
-WebUI.setText(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/input_or look up a member by name_company_a_4b2513'), 
-    '99999')
+WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_Plumber'))
 
-WebUI.click(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/span_Sorry no results found'))
+WebUI.setText(findTestObject('Page_Checkatrade Find a tradesperson you can trust/input_Not here_location'), 'po12 4sd')
 
-WebUI.click(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Not here'))
+WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_Search'))
 
