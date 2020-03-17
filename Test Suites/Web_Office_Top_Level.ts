@@ -63,6 +63,24 @@
       <testCaseId>Test Cases/Web_Office/Sales_Area/Member_Benefits</testCaseId>
    </testCaseLink>
    <testCaseLink>
+      <guid>ccb1ec13-9bb3-47c4-b361-3f391adf18c0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Sales_Area/Consultancy_Questions</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>537c19fe-5e26-4f33-b164-4d763b3c0a3c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Sales_Area/Sales_Area</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>39b0a125-e4d3-48c5-b96e-c14737cdecc3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Sales_Area/Email_Templates</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
       <guid>5db4ab91-22e0-46a7-bee6-435d6f469cbe</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

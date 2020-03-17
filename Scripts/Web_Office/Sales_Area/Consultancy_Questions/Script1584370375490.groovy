@@ -24,7 +24,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-//   Web Office ->Sales Area->Email Templates |    16/03/2020   |        DH        |          WIP Navigation         |
+// WO - Sales Area->Consultancy Question Check|   16/03/2020    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -34,44 +34,39 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-
-'WIP TODO'
-
 //---------------------------------------------------------------------------------------------------------------
 //                                                                                                               |
 //	GIVEN -  With Web Office Open                                                                                |
 //                                                                                                               |
-//	WHEN - We CLICK on the <SALES AREA> menu Item (Top Level) - Then EMAIL TEMPLATES Sub Menu                    |
+//	WHEN - We CLICK on the <SALES AREA> menu Item (Top Level) - Then <Consultancy Questions> Sub Menu            |
 //                                                                                                               |
 //  THEN - Verify Details of the RETURNED Page are As Expected                                                   |
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 
-'--------------------------------------'
-' Navigate Top level menu Item         |'
-'--------------------------------------'
-WebUI.waitForPageLoad(60)
-WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Sales Area'), 60)
-
-
-////////////////////////////////////////////
-// Hover on Element                       //
-////////////////////////////////////////////
-WebUI.mouseOver(findTestObject('Object Repository/WebOffice_Home_page/a_Sales Area'))
-
-////////////////////////////////////////////
-//  Select Target menuItem Element        //
-////////////////////////////////////////////
-WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Email Templates'), 1)
-WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/a_Email Templates'))
-
-'--------------------------------------'
-
-///////////////////////////////////////
-//                END                //
-///////////////////////////////////////
-
-
+//-----------------------------------------
+// Call Setup Process - Browser Startup, Navigate, Maximize and Close Cookie Nagging Element
+//-----------------------------------------
+	'--------------------------------------'
+	' Web Office StartUp                  |'
+	'--------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp'), [:], FailureHandling.STOP_ON_FAILURE)
+	
+	'--------------------------------------'
+	' Navigate to <Tools> Menu Item        |'
+	'--------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Sales_Area/Consultancy_Questions'), [:], FailureHandling.STOP_ON_FAILURE)
+	
+	'--------------------------------------'
+	' Verify Returned Page Detail          |'
+	'--------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Verification/Sales_Area/Consultancy_Questions'), [:], FailureHandling.OPTIONAL)
+	
+	'--------------------------'
+	' Teardown - CLose Browser |'
+	'--------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.OPTIONAL)
+		
 '--------------------------'
 ' END                      |'
 '--------------------------'

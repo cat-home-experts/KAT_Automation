@@ -24,7 +24,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-//   Web Office ->Sales Area->Email Templates |    16/03/2020   |        DH        |          WIP Navigation         |
+//  WO/Sales Area/Members Sales Page Verify   |    16/03/2020   |        DH        |          WIP                |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -34,44 +34,55 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-
-'WIP TODO'
-
 //---------------------------------------------------------------------------------------------------------------
 //                                                                                                               |
 //	GIVEN -  With Web Office Open                                                                                |
 //                                                                                                               |
-//	WHEN - We CLICK on the <SALES AREA> menu Item (Top Level) - Then EMAIL TEMPLATES Sub Menu                    |
+//	WHEN - We CLICK on the <SALES AREA> menu Item (Top Level) - Then <Sales Area> Sub Menu                    |
 //                                                                                                               |
 //  THEN - Verify Details of the RETURNED Page are As Expected                                                   |
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 
-'--------------------------------------'
-' Navigate Top level menu Item         |'
-'--------------------------------------'
+
 WebUI.waitForPageLoad(60)
-WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Sales Area'), 60)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/WO_Consumer/Page_/Edit_Consumer_SAVE_Button'), 60)
+WebUI.delay(1)
+
+	// Header
+	'----------------------------------------------'
+	// WebUI.verifyTextPresent("Postcode", false)
+	'----------------------------------------------'
+	// Buttons
+	WebUI.verifyTextPresent("From", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("To", false)
+	'----------------------------------------------'
+	
+	// Sub Header
+	WebUI.verifyTextPresent("Distance", false)
+	'----------------------------------------------'
+	// Buttons
+	WebUI.verifyTextPresent("Price", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Vetting Details", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent('MC Availability', false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Member Benefits", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Consultancy", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Send Email Template", false)
+	'----------------------------------------------'
+	
+	// Only Pick 2 Items From The List (Attempt at Robustness of Test (NA)
+	//WebUI.verifyTextPresent("You control the trade category and the distance you travel", false)
+	'----------------------------------------------'
+	//WebUI.verifyTextPresent("Membership Advisor to help you achieve success", false)
+	'----------------------------------------------'
 
 
-////////////////////////////////////////////
-// Hover on Element                       //
-////////////////////////////////////////////
-WebUI.mouseOver(findTestObject('Object Repository/WebOffice_Home_page/a_Sales Area'))
-
-////////////////////////////////////////////
-//  Select Target menuItem Element        //
-////////////////////////////////////////////
-WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Email Templates'), 1)
-WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/a_Email Templates'))
-
-'--------------------------------------'
-
-///////////////////////////////////////
-//                END                //
-///////////////////////////////////////
-
-
-'--------------------------'
-' END                      |'
-'--------------------------'
+'--------------------------------'
+'           END                  |'
+'--------------------------------'

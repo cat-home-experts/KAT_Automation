@@ -24,7 +24,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-//   Web Office ->Sales Area->Email Templates |    16/03/2020   |        DH        |          WIP Navigation         |
+//  WO/Sales Area/Consultancy Questions Page  |    16/03/2020   |        DH        |           WIP               |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -34,44 +34,67 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-
-'WIP TODO'
-
 //---------------------------------------------------------------------------------------------------------------
 //                                                                                                               |
 //	GIVEN -  With Web Office Open                                                                                |
 //                                                                                                               |
-//	WHEN - We CLICK on the <SALES AREA> menu Item (Top Level) - Then EMAIL TEMPLATES Sub Menu                    |
+//	WHEN - We CLICK on the <SALES AREA> menu Item (Top Level) - Then <Consultancy Questions> Sub Menu            |
 //                                                                                                               |
 //  THEN - Verify Details of the RETURNED Page are As Expected                                                   |
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 
-'--------------------------------------'
-' Navigate Top level menu Item         |'
-'--------------------------------------'
+
 WebUI.waitForPageLoad(60)
-WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Sales Area'), 60)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/WO_Consumer/Page_/Edit_Consumer_SAVE_Button'), 60)
+WebUI.delay(1)
+
+	// Header
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Consultancy Questions", false)
+	'----------------------------------------------'
+	// Buttons
+	WebUI.verifyTextPresent("Add new section", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Save changes", false)
+	'----------------------------------------------'
+	
+	// Sub Header
+	WebUI.verifyTextPresent("Configure the consultancy questions that are listed on the sales area screen", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Edit the consultancy questions and re-order them", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Questions can be marked as hidden from the sales area screen or can be deleted permenantly", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent('You can add new sections and related questions', false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent('All changes will take effect when you click "Save Changes"', false)
+	'----------------------------------------------'
+
+	// Table Header
+	WebUI.verifyTextPresent("Is displayed", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Question Description", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("ID", false)
+	'----------------------------------------------'
+	
+//	// Selective Table Content How did you hear about us
+//	WebUI.verifyTextPresent("How did you hear about us", false)
+//	'----------------------------------------------'
+//	WebUI.verifyTextPresent("Is your business where you want it to be", false)
+//	'----------------------------------------------'
+//	WebUI.verifyTextPresent("How long have you been trading", false)
+//	'----------------------------------------------'
+
+	
+	// Only Pick 2 Items From The List (Attempt at Robustness of Test (NA)
+	//WebUI.verifyTextPresent("You control the trade category and the distance you travel", false)
+	'----------------------------------------------'
+	//WebUI.verifyTextPresent("Membership Advisor to help you achieve success", false)
+	'----------------------------------------------'
 
 
-////////////////////////////////////////////
-// Hover on Element                       //
-////////////////////////////////////////////
-WebUI.mouseOver(findTestObject('Object Repository/WebOffice_Home_page/a_Sales Area'))
-
-////////////////////////////////////////////
-//  Select Target menuItem Element        //
-////////////////////////////////////////////
-WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Email Templates'), 1)
-WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/a_Email Templates'))
-
-'--------------------------------------'
-
-///////////////////////////////////////
-//                END                //
-///////////////////////////////////////
-
-
-'--------------------------'
-' END                      |'
-'--------------------------'
+'--------------------------------'
+'           END                  |'
+'--------------------------------'

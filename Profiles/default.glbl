@@ -105,8 +105,8 @@
       <name>URL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description> - changeed to jenkins on 11/02/2020</description>
-      <initValue>'jenkins'</initValue>
+      <description> - changed to jenkins on 11/02/2020, reverted 26/03/2020</description>
+      <initValue>'check1234'</initValue>
       <name>Username</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

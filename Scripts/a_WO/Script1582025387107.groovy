@@ -16,16 +16,4 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('https://www.preview.checkatrade.com/')
-
-WebUI.setText(findTestObject('Page_Checkatrade Find a tradesperson you can trust/input_Search through overrecommended vetted_c74dba'), 
-    'plumber')
-
-WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_Plumber'))
-
-WebUI.setText(findTestObject('Page_Checkatrade Find a tradesperson you can trust/input_Not here_location'), 'po12 4sd')
-
-WebUI.click(findTestObject('Page_Checkatrade Find a tradesperson you can trust/a_Search'))
 
