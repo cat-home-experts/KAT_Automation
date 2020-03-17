@@ -45,6 +45,9 @@ import internal.GlobalVariable as GlobalVariable
 /////////////////////////////////////////////
 //Wait for Membership Element Availability //
 /////////////////////////////////////////////
+
+
+
 WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/div_Membership'), 5)
 
 /////////////////////////////////////////////

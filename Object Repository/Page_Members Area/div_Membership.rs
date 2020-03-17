@@ -6,11 +6,15 @@
    <elementGuidId>902a6905-1788-4937-8f68-1c21c0b8169a</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Membership' or . = 'Membership')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>//div[@id='membership']/a/div[2]</value>
+         <value>//*[@id=&quot;Top&quot;]/div[1]/ul/li[4]/span/span[2]/span[5]/a[1]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

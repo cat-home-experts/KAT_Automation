@@ -55,7 +55,7 @@
    <testCaseLink>
       <guid>38bce2cc-64df-40bf-ad6d-6a451692e314</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Members_Area/Members_Achievements</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -109,7 +109,7 @@
    <testCaseLink>
       <guid>f36620f5-4cb8-44e5-97dc-21789a344c11</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Members_Area/My_Membership</testCaseId>
    </testCaseLink>
    <testCaseLink>

@@ -30,9 +30,9 @@ import internal.GlobalVariable as GlobalVariable
 
 //----------------------------------------
 'Hit Give Feedback from the Homepage Header Banner '
-WebUI.waitForElementClickable(findTestObject('Object Repository/Feedback/Page_Checkatrade Find a tradesperson you can trust/a_Leave a review'), 60)
+//WebUI.waitForElementClickable(findTestObject('Object Repository/Feedback/Page_Checkatrade Find a tradesperson you can trust/a_Leave a review'), 60)
 //WebUI.click(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/a_Give feedback'))
-WebUI.click(findTestObject('Object Repository/Feedback/Page_Checkatrade Find a tradesperson you can trust/a_Leave a review'))
+//WebUI.click(findTestObject('Object Repository/Feedback/Page_Checkatrade Find a tradesperson you can trust/a_Leave a review'))
 //----------------------------------------
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review'), 25)

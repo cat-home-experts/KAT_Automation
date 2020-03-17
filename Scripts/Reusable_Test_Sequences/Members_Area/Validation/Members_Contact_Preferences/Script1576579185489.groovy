@@ -84,13 +84,13 @@ WebUI.verifyTextPresent("MEMBER ID", false)
 '---------------------------------'
 WebUI.verifyTextPresent("Set Your Contact Preferences", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Managed Contacts", false)
+//WebUI.verifyTextPresent("Managed Contacts", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("Unable to alter these details at this time", false)
+//WebUI.verifyTextPresent("Unable to alter these details at this time", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("please contact your Membership Advice team on 01243 608138", false)
+//WebUI.verifyTextPresent("please contact your Membership Advice team on 01243 608138", false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("email managedcontacts@checkatrade.com", false)
+//WebUI.verifyTextPresent("email managedcontacts@checkatrade.com", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("Contact Preferences", false)
 '----------------------------------------------'
