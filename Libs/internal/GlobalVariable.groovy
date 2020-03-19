@@ -156,7 +156,8 @@ Profile Preview : Validation Data Special Characters</p>
     public static Object Validation_Data_Special_Chars
      
     /**
-     * <p>Profile default : Web Office URL
+     * <p>Profile default : WO URL
+Profile Admin2 : WO Admin2
 Profile Checkatrade_Live : Web Office URL
 Profile Dev_Test : Web Office URL</p>
      */

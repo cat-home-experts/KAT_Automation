@@ -32,6 +32,8 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //  DEV, Duplicate User Message Different     |   18/02/2020    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
+//  Menu Item Mods Broke Test, Test Fixed     |   19/03/2020    |        DH        |                             |
+//---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
@@ -69,7 +71,8 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Members_Test_Da
 	//-----------------------------------------
 	// Navigate Membership Page               |
 	//-----------------------------------------
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/Membership'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Non_Dashboard_Navigation/Members_Membership'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	//WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Members_Area/Area_Menu/Your_Account/Membership'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	//-----------------------------------------
 	// Confirm Data on Top - Membership Page  |

@@ -109,7 +109,7 @@
    <testCaseLink>
       <guid>f36620f5-4cb8-44e5-97dc-21789a344c11</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Members_Area/My_Membership</testCaseId>
    </testCaseLink>
    <testCaseLink>

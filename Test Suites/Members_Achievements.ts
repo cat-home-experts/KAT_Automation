@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
-   <description>Members_Achievements (not on Dashboard)</description>
+   <description>Feature Withdrawn - 17/03/2020 - Left Intact - - Members_Achievements (not on Dashboard)</description>
    <name>Members_Achievements</name>
    <tag></tag>
    <isRerun>false</isRerun>

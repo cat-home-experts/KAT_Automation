@@ -65,7 +65,7 @@ if (GlobalVariable.URL == ("https://www.preview.checkatrade.com/")){
 	GlobalVariable.WebOfficeURL="https://admin.preview.checkatrade.com/" // TODO
 } 
 
-
+//GlobalVariable.WebOfficeURL="https://admin2.dev.checkatrade.com/"
 //--------------------------------------------------------------------------------
 
 //-----------------------------------------

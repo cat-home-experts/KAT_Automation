@@ -23,9 +23,11 @@ import internal.GlobalVariable as GlobalVariable
 'Expected cantantenated text is Returned'
 ' DYNAMIC DELAY - Wait for <SEARCH> Button to Re-Appear after Search is completed'
 
-WebUI.delay(1)
+'Unable To Wait For Object issue - Hence Hard Delay Prior To Web Page Loader'
+
+WebUI.delay(5)
+//WebUI.waitForElementPresent(findTestObject('Object Repository/Checkatrade_Trade_Search_page/Page_Checkatrade Find a tradesperson you can trust/Searc_Sync_Point'), 25)
 WebUI.waitForPageLoad(60)
-//WebUI.waitForElementVisible(findTestObject('Checkatrade_Trade_Search_page/Page_Checkatrade Find a tradesperson you can trust/a_Search'), 120)
 // COncantanation unrelaible - watch this space
 //WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeLocationVerification', GlobalVariable.row), false)
 'Verify Returned Trade classification and Locaion is Returned'
