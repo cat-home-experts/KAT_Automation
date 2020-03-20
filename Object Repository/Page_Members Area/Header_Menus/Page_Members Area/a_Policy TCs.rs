@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;Top&quot;]/div[1]/ul/li[4]/span/span[2]/span[5]/a[5]</value>
+         <value>//a[contains(@href, 'https://www.checkatrade.com/blog/terms-and-conditions/')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

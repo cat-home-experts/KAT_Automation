@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;Top&quot;]/div[1]/ul/li[3]/span/span[2]/span[5]/a[4]</value>
+         <value>//a[contains(text(),'Contact Preferences')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

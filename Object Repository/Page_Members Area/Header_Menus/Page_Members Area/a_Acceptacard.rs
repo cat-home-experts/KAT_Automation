@@ -6,8 +6,12 @@
    <elementGuidId>70c9f870-54df-44b3-83e6-314c25ac8e76</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[@href = '/acceptacard' and (text() = 'Acceptacard' or . = 'Acceptacard')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>//div[@id='Top']/div/ul/li[4]/span/span[2]/span[3]/a[2]</value>
+         <value>//a[contains(text(),'Acceptacard')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

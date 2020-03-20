@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;Top&quot;]/div[1]/ul/li[3]/span/span[2]/span[3]/a[2]</value>
+         <value>//a[contains(@href, '/team-photos')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

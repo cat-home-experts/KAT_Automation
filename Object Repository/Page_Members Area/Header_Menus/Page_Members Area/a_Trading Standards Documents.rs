@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='Top']/div/ul/li[4]/span/span[2]/span/a[2]</value>
+         <value>//a[contains(@href, '/trading-standards')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

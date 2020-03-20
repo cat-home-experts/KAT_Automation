@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='Top']/div/ul/li[3]/span/span[2]/span[3]/a</value>
+         <value>//a[contains(text(),'Manage Albums')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
