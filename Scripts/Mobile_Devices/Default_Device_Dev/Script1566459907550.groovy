@@ -39,12 +39,20 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 //---------------------------------------------------------------------------------------------------------------
 // Mobile Tetsing flag included - Line 70     |    13/12/2019   |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
-// Beahiour issues when RESIZE rowser Now?    |    05/03/2020   |        DH        | To Investigate - OK on Reg  |
+// Behaviour issues when RESIZE rowser Now?   |    05/03/2020   |        DH        | To Investigate - OK on Reg  |
 //---------------------------------------------------------------------------------------------------------------
 // Commented Out Scroll To Searcb - Superceed |    16/03/2020   |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
+// Reliability Low, Trying to Harden With New |                 |                  |  CAT Verification Class     |
+// and Alternate Synchronisation Methods      |    23/03/2030   |        DH        |                             |
+//---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
+//                                            |                 |                  |                             |
+//---------------------------------------------------------------------------------------------------------------
+//                                            |                 |                  |                             |
+//---------------------------------------------------------------------------------------------------------------
+
 '------------------------------------------------------------------------------------------------------'
 'TODO script need to be Restructure - Using browser Capabilities rather than setViewPortSize           |'
 '------------------------------------------------------------------------------------------------------'
@@ -216,7 +224,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('Mobile_Test_Dat
 	'---------------------------------------'
 	' Verify Returned Page is as Expected   |'
 	'---------------------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Verification'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Verification'), [:], FailureHandling.STOP_ON_FAILURE)
 //    WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeLocationVerification', GlobalVariable.row), false, 
 //        FailureHandling.CONTINUE_ON_FAILURE)
 //    'Expected cantantenated text is Returned'

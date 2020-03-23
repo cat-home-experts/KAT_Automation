@@ -94,7 +94,7 @@ for (GlobalVariable.row = 1; GlobalVariable.row <= findTestData('searchTestData'
 	'---------------------------------------'
 	' Verify Returned Page is as Expected   |'
 	'---------------------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Verification'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Verification'), [:], FailureHandling.STOP_ON_FAILURE)
 	
 	'--------------------------'
 	' Teardown - CLose Browser |'

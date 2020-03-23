@@ -12,6 +12,7 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 //-------------------------------------------------------
 // Verification - Required Search Returned as Expected  | - Snip - 07/08/2019
@@ -24,11 +25,28 @@ import internal.GlobalVariable as GlobalVariable
 ' DYNAMIC DELAY - Wait for <SEARCH> Button to Re-Appear after Search is completed'
 
 'Unable To Wait For Object issue - Hence Hard Delay Prior To Web Page Loader'
+WebUI.delay(1)
+WebUI.waitForPageLoad(30)
+WebUI.waitForAngularLoad(30)
 
-WebUI.delay(2)
+'------------------------------------------------------------------------------------------------------------------------'
+'PREVIEW INCONSISTENCY - SOMETIME THE FIRST ITERATION RETURNS 404 - SEEMS TO BE A PREVIEW GLITCH THAT OCCURS TOO OFTEN   |  23/03/2020 - DH'
+'------------------------------------------------------------------------------------------------------------------------'
+
+
+//if (WebUI.verifyTextPresent("404", false)){
+//		
+//	KeywordUtil.markFailed("FAILED TO RETURN SEARCH RESULTS - SYSTEM ERROR")
+//}
+
+
+'NEW Approach - Detect IMPROVE SEARCH PoPout and Syn on THIS'
+//WebUI.waitForElementVisible(findTestObject('Object Repository/Page_Checkatrade Find a tradesperson you can trust/aa_Improve_Your_Search_Popout'), 60)
+
+//WebUI.delay(2)
 //WebUI.waitForElementPresent(findTestObject('Object Repository/Checkatrade_Trade_Search_page/Page_Checkatrade Find a tradesperson you can trust/Searc_Sync_Point'), 25)
-WebUI.waitForPageLoad(60)
-WebUI.delay(2)
+//WebUI.waitForPageLoad(60)
+//WebUI.delay(2)
 // COncantanation unrelaible - watch this space
 //WebUI.verifyTextPresent(findTestData('searchTestData').getValue('tradeLocationVerification', GlobalVariable.row), false)
 'Verify Returned Trade classification and Locaion is Returned'

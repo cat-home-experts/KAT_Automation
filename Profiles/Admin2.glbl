@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>Admin2</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description>WO Admin2</description>
+      <initValue>'https://admin2.dev.checkatrade.com/'</initValue>
+      <name>WebOfficeURL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Dev 2</description>
+      <initValue>'https://www.dev2.checkatrade.com/'</initValue>
+      <name>URL</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>
