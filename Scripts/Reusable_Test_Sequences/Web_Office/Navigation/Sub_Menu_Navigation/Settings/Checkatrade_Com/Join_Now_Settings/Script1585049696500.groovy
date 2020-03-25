@@ -25,7 +25,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-//  Settings->Chekatrade.Com-> Sub Menu Item  |    23/03/2020   |        DH        |                             |
+//  Settings->Chekatrade.Com-> Sub Menu Item  |    25/03/2020   |        DH        |     a_Join Now Settings     |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -39,7 +39,7 @@ import internal.GlobalVariable as GlobalVariable
 //                                                                                                               |
 //	GIVEN -  With Web Office Open                                                                                |
 //                                                                                                               |
-//	WHEN - We CLICK on the <SETTINGS> menu Item (Top Level) - Then Sub Menu Item                                 |
+//	WHEN - We CLICK on the <SETTINGS> menu Item (Top Level) - Then Sub Menu Item    (a_Join Now Settings)        |
 //                                                                                                               |
 //  THEN - Verify Details of the RETURNED Page are As Expected                                                   |
 //                                                                                                               |
@@ -66,8 +66,8 @@ WebUI.mouseOver(findTestObject('Object Repository/WebOffice_Home_page/a_wwwcheck
 ////////////////////////////////////////////
 //  Select Target menuItem Element        //
 ////////////////////////////////////////////
-WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Homepage Boxes'), 1)
-WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/a_Homepage Boxes'))
+WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Join Now Settings'), 1)
+WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/a_Join Now Settings'))
 
 '--------------------------------------'
 

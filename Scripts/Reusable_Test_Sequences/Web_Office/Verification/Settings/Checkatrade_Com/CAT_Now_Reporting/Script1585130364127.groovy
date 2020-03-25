@@ -24,7 +24,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-//  Settings->Chekatrade.Com-> Sub Menu Item  |    25/03/2020   |        DH        |      a_Search Radius        |
+//  WO/Settings->Settings->Checkatrade.com    |    25/03/2020   |        DH        |       CAT Now Reporting     |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -38,38 +38,50 @@ import internal.GlobalVariable as GlobalVariable
 //                                                                                                               |
 //	GIVEN -  With Web Office Open                                                                                |
 //                                                                                                               |
-//	WHEN - We CLICK on the <SETTINGS> menu Item (Top Level) - Then Sub Menu Item    (a_Search Radius)           |
+//	WHEN - We CLICK on the <SETTINGS> menu Item (Top Level) - Then Settings Sub Menu Item  (CAT Now Reporting )  |
 //                                                                                                               |
 //  THEN - Verify Details of the RETURNED Page are As Expected                                                   |
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 
 
-'--------------------------------------'
-' Navigate Top level menu Item         |'
-'--------------------------------------'
 WebUI.waitForPageLoad(60)
-WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Settings'), 60)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/WO_Consumer/Page_/Edit_Consumer_SAVE_Button'), 60)
+WebUI.delay(1)
 
+	// Header
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Homepage Boxes", false)
+	'----------------------------------------------'
+	// Sub Section - Personal Details (Subset)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Box 1", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Currently unavailable as box has been replaced", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Contents", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Statistics boxes", false)
+	'----------------------------------------------'
+	// Sub Section - Stats
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Stat box 1", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Stat box 2", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Stat box 3", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Feedback", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Note: It may take up to 15 minutes for these changes to take effect on the homepage.", false)
+	'----------------------------------------------'
+	//Button
+	// WebUI.verifyTextPresent("Find Address", false) // Embedded Text in IFrame
+	'----------------------------------------------'
+	// Sub Section - Sales Appointment Area (Subset)
+	// WebUI.verifyTextPresent("Save", false)
+	'----------------------------------------------'
 
-////////////////////////////////////////////
-// Hover on Element                       //
-////////////////////////////////////////////
-WebUI.mouseOver(findTestObject('Object Repository/WebOffice_Home_page/a_Settings'))
-
-////////////////////////////////////////////
-// Hover on Element                       //
-////////////////////////////////////////////
-WebUI.mouseOver(findTestObject('Object Repository/WebOffice_Home_page/a_wwwcheckatradecom'))
-
-////////////////////////////////////////////
-//  Select Target menuItem Element        //
-////////////////////////////////////////////
-WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Search Radius'), 1)
-WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/a_Search Radius'))
-
-'--------------------------------------'
-
-///////////////////////////////////////
-//                END                //
-///////////////////////////////////////
+'--------------------------------'
+'           END                  |'
+'--------------------------------'

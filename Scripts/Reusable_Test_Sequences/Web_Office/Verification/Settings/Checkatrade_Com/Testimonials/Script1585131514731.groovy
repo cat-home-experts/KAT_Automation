@@ -24,7 +24,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-//  Settings->Chekatrade.Com-> Sub Menu Item  |    25/03/2020   |        DH        |      a_Search Radius        |
+//  WO/Settings->Settings->Checkatrade.com    |    25/03/2020   |        DH        |          Testimonials       |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -38,38 +38,62 @@ import internal.GlobalVariable as GlobalVariable
 //                                                                                                               |
 //	GIVEN -  With Web Office Open                                                                                |
 //                                                                                                               |
-//	WHEN - We CLICK on the <SETTINGS> menu Item (Top Level) - Then Sub Menu Item    (a_Search Radius)           |
+//	WHEN - We CLICK on the <SETTINGS> menu Item (Top Level) - Then Settings Sub Menu Item  (Testimonials )       |
 //                                                                                                               |
 //  THEN - Verify Details of the RETURNED Page are As Expected                                                   |
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 
 
-'--------------------------------------'
-' Navigate Top level menu Item         |'
-'--------------------------------------'
 WebUI.waitForPageLoad(60)
-WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Settings'), 60)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/WO_Consumer/Page_/Edit_Consumer_SAVE_Button'), 60)
+WebUI.delay(1)
 
+	// Header
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Testimonials", false)
+	'----------------------------------------------'
+	// Button (iframe - resolve with time)
+	'----------------------------------------------'
+	// WebUI.verifyTextPresent("Add New", false)
+	'----------------------------------------------'
 
-////////////////////////////////////////////
-// Hover on Element                       //
-////////////////////////////////////////////
-WebUI.mouseOver(findTestObject('Object Repository/WebOffice_Home_page/a_Settings'))
+	// Sub Section - Table Header
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Type", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Name or Location", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Company", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Quote", false)
+	'----------------------------------------------'
+	// Table Body (sample)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Consumer", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Watford", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("My wife and I find the service", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Trade", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Jason", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Mops And Buckets", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Trade", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Being a new member to Checkatrade has opened a lot of doors ", false)
+	'----------------------------------------------'
 
-////////////////////////////////////////////
-// Hover on Element                       //
-////////////////////////////////////////////
-WebUI.mouseOver(findTestObject('Object Repository/WebOffice_Home_page/a_wwwcheckatradecom'))
+		//Button
+	// WebUI.verifyTextPresent("Find Address", false) // Embedded Text in IFrame
+	'----------------------------------------------'
+	// Sub Section - Sales Appointment Area (Subset)
+	// WebUI.verifyTextPresent("Save", false)
+	'----------------------------------------------'
 
-////////////////////////////////////////////
-//  Select Target menuItem Element        //
-////////////////////////////////////////////
-WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Search Radius'), 1)
-WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/a_Search Radius'))
-
-'--------------------------------------'
-
-///////////////////////////////////////
-//                END                //
-///////////////////////////////////////
+'--------------------------------'
+'           END                  |'
+'--------------------------------'

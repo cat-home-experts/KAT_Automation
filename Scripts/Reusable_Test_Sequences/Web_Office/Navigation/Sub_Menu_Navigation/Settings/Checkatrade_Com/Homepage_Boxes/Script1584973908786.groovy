@@ -24,7 +24,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-//  Settings->Chekatrade.Com-> Sub Menu Item  |    23/03/2020   |        DH        |                             |
+//  Settings->Chekatrade.Com-> Sub Menu Item  |    23/03/2020   |        DH        |      a_Homepage Boxes       |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -38,7 +38,7 @@ import internal.GlobalVariable as GlobalVariable
 //                                                                                                               |
 //	GIVEN -  With Web Office Open                                                                                |
 //                                                                                                               |
-//	WHEN - We CLICK on the <SETTINGS> menu Item (Top Level) - Then Sub Menu Item                                 |
+//	WHEN - We CLICK on the <SETTINGS> menu Item (Top Level) - Then Sub Menu Item    (a_Homepage Boxes)           |
 //                                                                                                               |
 //  THEN - Verify Details of the RETURNED Page are As Expected                                                   |
 //                                                                                                               |

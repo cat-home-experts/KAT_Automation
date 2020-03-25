@@ -24,7 +24,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-//  Settings->Chekatrade.Com-> Sub Menu Item  |    25/03/2020   |        DH        |      a_Search Radius        |
+// WO - Settings->Checkatrade->Join_Now_Setti |   25/03/2020    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -38,38 +38,35 @@ import internal.GlobalVariable as GlobalVariable
 //                                                                                                               |
 //	GIVEN -  With Web Office Open                                                                                |
 //                                                                                                               |
-//	WHEN - We CLICK on the <SETTINGS> menu Item (Top Level) - Then Sub Menu Item    (a_Search Radius)           |
+//	WHEN - We CLICK on the <Settings> menu Item (Top Level) - Then Preferences Sub Menu   (Join_Now_Settings)    |
 //                                                                                                               |
 //  THEN - Verify Details of the RETURNED Page are As Expected                                                   |
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 
-
-'--------------------------------------'
-' Navigate Top level menu Item         |'
-'--------------------------------------'
-WebUI.waitForPageLoad(60)
-WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Settings'), 60)
-
-
-////////////////////////////////////////////
-// Hover on Element                       //
-////////////////////////////////////////////
-WebUI.mouseOver(findTestObject('Object Repository/WebOffice_Home_page/a_Settings'))
-
-////////////////////////////////////////////
-// Hover on Element                       //
-////////////////////////////////////////////
-WebUI.mouseOver(findTestObject('Object Repository/WebOffice_Home_page/a_wwwcheckatradecom'))
-
-////////////////////////////////////////////
-//  Select Target menuItem Element        //
-////////////////////////////////////////////
-WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Search Radius'), 1)
-WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/a_Search Radius'))
-
-'--------------------------------------'
-
-///////////////////////////////////////
-//                END                //
-///////////////////////////////////////
+//-----------------------------------------
+// Call Setup Process - Browser Startup, Navigate, Maximize and Close Cookie Nagging Element
+//-----------------------------------------
+	'--------------------------------------'
+	' Web Office StartUp                  |'
+	'--------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp'), [:], FailureHandling.STOP_ON_FAILURE)
+	
+	'-----------------------------------------------------------------'
+	' Navigate to <Settings->Checkatrade.Com->Sub Item> Menu Item     |'
+	'-----------------------------------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Settings/Checkatrade_Com/Join_Now_Settings'), [:], FailureHandling.STOP_ON_FAILURE)
+	
+	'--------------------------------------'
+	' Verify Returned Page Detail          |'
+	'--------------------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Verification/Settings/Checkatrade_Com/Join_Now_Settings'), [:], FailureHandling.OPTIONAL)
+	
+	'--------------------------'
+	' Teardown - CLose Browser |'
+	'--------------------------'
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/CAT_Teardown'), [:], FailureHandling.OPTIONAL)
+		
+'--------------------------'
+' END                      |'
+'--------------------------'
