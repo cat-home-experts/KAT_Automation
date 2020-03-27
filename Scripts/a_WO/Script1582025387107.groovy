@@ -23,20 +23,18 @@ WebUI.navigateToUrl('https://admin.preview.checkatrade.com/Login.aspx?ReturnUrl=
 WebUI.setText(findTestObject('Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'), 'DavidHo')
 
 WebUI.setEncryptedText(findTestObject('Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'), 
+    'GrRjCB/Rw47kliZ2RFU+0g==')
+
+WebUI.click(findTestObject('Page_Checkatrade - Administration - Login/input_Remember me next time_LoginControlLog_86123a'))
+
+WebUI.setEncryptedText(findTestObject('Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'), 
     'AmDSJqbCZAGZ34/Q6uJgMA==')
 
 WebUI.click(findTestObject('Page_Checkatrade - Administration - Login/input_Remember me next time_LoginControlLog_86123a'))
 
-WebUI.click(findTestObject('Page_/a_Join Now Campaigns'))
+WebUI.click(findTestObject('Page_/a_Settings'))
 
-WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/Page_/input_Set manual text_ctl00CP1btnCreateCampaign'))
+WebUI.click(findTestObject('Page_/a_wwwcheckatradecom'))
 
-WebUI.setText(findTestObject('Object Repository/WebOffice_Home_page/Page_/input_Title_ctl00CP1txtTitle'), 'Tester')
-
-WebUI.setText(findTestObject('Object Repository/WebOffice_Home_page/Page_/input_Description_ctl00CP1txtDescription'), 'Testing')
-
-WebUI.setText(findTestObject('Object Repository/WebOffice_Home_page/Page_/textarea_Terms and Conditions_ctl00CP1txtTerms'), 
-    'Testing Tester')
-
-WebUI.click(findTestObject('Page_/a_Join Now Campaigns'))
+WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/Page_/a_Trade App Settings'))
 

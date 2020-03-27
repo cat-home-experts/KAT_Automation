@@ -19,4 +19,9 @@
       <initValue>'http://admin.dev.checkatrade.com/'</initValue>
       <name>WebOfficeURL</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Sadly, Preview and live have different logon creds</description>
+      <initValue>'jenkins'</initValue>
+      <name>Username</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -24,7 +24,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-//  WO/Settings->Settings->Checkatrade.com    |    25/03/2020   |        DH        |      Trade App Settings     |
+//  WO/Settings->Settings->Checkatrade.com    |    27/03/2020   |        DH        |      Trade App Settings     |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -51,35 +51,19 @@ WebUI.delay(1)
 
 	// Header
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Homepage Boxes", false)
+	WebUI.verifyTextPresent("System Settings", false)
 	'----------------------------------------------'
-	// Sub Section - Personal Details (Subset)
+	// Sub Section - Dialog
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Box 1", false)
+	WebUI.verifyTextPresent("Status", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Currently unavailable as box has been replaced", false)
+	WebUI.verifyTextPresent("JSON Settings", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Contents", false)
+	WebUI.verifyTextPresent("Stopped", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Statistics boxes", false)
+	WebUI.verifyTextPresent("Start date range", false)
 	'----------------------------------------------'
-	// Sub Section - Stats
-	'----------------------------------------------'
-	WebUI.verifyTextPresent("Stat box 1", false)
-	'----------------------------------------------'
-	WebUI.verifyTextPresent("Stat box 2", false)
-	'----------------------------------------------'
-	WebUI.verifyTextPresent("Stat box 3", false)
-	'----------------------------------------------'
-	WebUI.verifyTextPresent("Feedback", false)
-	'----------------------------------------------'
-	WebUI.verifyTextPresent("Note: It may take up to 15 minutes for these changes to take effect on the homepage.", false)
-	'----------------------------------------------'
-	//Button
-	// WebUI.verifyTextPresent("Find Address", false) // Embedded Text in IFrame
-	'----------------------------------------------'
-	// Sub Section - Sales Appointment Area (Subset)
-	// WebUI.verifyTextPresent("Save", false)
+	WebUI.verifyTextPresent("Show Community Page", false)
 	'----------------------------------------------'
 
 '--------------------------------'

@@ -26,7 +26,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-//  Settings->Chekatrade.Com-> Sub Menu Item  |    25/03/2020   |        DH        |    a_Trade App Settings    |
+//  Settings->Chekatrade.Com-> Sub Menu Item  |    27/03/2020   |        DH        |    a_Trade App Settings    |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -67,8 +67,8 @@ WebUI.mouseOver(findTestObject('Object Repository/WebOffice_Home_page/a_wwwcheck
 ////////////////////////////////////////////
 //  Select Target menuItem Element        //
 ////////////////////////////////////////////
-WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Trade App Settings'), 1)
-WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/a_Trade App Settings'))
+WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/Page_/a_Trade App Settings'), 1)
+WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/Page_/a_Trade App Settings'))
 
 '--------------------------------------'
 

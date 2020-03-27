@@ -24,7 +24,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-//  WO/Settings->Settings->Checkatrade.com    |    25/03/2020   |        DH        |         Company Heroes      |
+//  WO/Settings->Settings->Checkatrade.com    |    27/03/2020   |        DH        |         Company Heroes      |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -51,36 +51,45 @@ WebUI.delay(1)
 
 	// Header
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Homepage Boxes", false)
+	WebUI.verifyTextPresent("Company Heroes", false)
 	'----------------------------------------------'
-	// Sub Section - Personal Details (Subset)
+	// Sub Section - Add a NEEW COmpany Hero Form
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Box 1", false)
+	WebUI.verifyTextPresent("Add New Company Hero", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Currently unavailable as box has been replaced", false)
+	WebUI.verifyTextPresent("Company ID (TTR)", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Contents", false)
+	WebUI.verifyTextPresent("Trader Name", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Statistics boxes", false)
+	WebUI.verifyTextPresent("Hero Image", false)
 	'----------------------------------------------'
-	// Sub Section - Stats
+	WebUI.verifyTextPresent("Note: Image height must be exactly 373px. PNG format only.", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Stat box 1", false)
+	//WebUI.verifyTextPresent("Preview", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Stat box 2", false)
+	
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Stat box 3", false)
+	// Sub Section - COmpany Heros Table
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Feedback", false)
+	
+	WebUI.verifyTextPresent("Company Heroes", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Note: It may take up to 15 minutes for these changes to take effect on the homepage.", false)
+	// Table Header
+	WebUI.verifyTextPresent("Edit", false)
 	'----------------------------------------------'
-	//Button
-	// WebUI.verifyTextPresent("Find Address", false) // Embedded Text in IFrame
+	WebUI.verifyTextPresent("TTRId", false)
 	'----------------------------------------------'
-	// Sub Section - Sales Appointment Area (Subset)
-	// WebUI.verifyTextPresent("Save", false)
+	WebUI.verifyTextPresent("Company", false)
 	'----------------------------------------------'
+	WebUI.verifyTextPresent("Trader Name", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Status", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Pick", false)
+	'----------------------------------------------'
+
+	'Not Checking Table COntent - Live Data'
+
 
 '--------------------------------'
 '           END                  |'

@@ -24,7 +24,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-//  WO/Settings->Settings->Checkatrade.com    |    25/03/2020   |        DH        |          Search Radius      |
+//  WO/Settings->Settings->Checkatrade.com    |    26/03/2020   |        DH        |          Search Radius      |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -44,6 +44,9 @@ import internal.GlobalVariable as GlobalVariable
 //                                                                                                               |
 //---------------------------------------------------------------------------------------------------------------
 
+'-------------------------------------------------------------------------'
+' Needs Extendig to change radius, do a CAT Search, the revert settings   |'
+'-------------------------------------------------------------------------'
 
 WebUI.waitForPageLoad(60)
 //WebUI.waitForElementVisible(findTestObject('Object Repository/WO_Consumer/Page_/Edit_Consumer_SAVE_Button'), 60)
@@ -51,36 +54,37 @@ WebUI.delay(1)
 
 	// Header
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Homepage Boxes", false)
+	WebUI.verifyTextPresent("Search Radius", false)
 	'----------------------------------------------'
 	// Sub Section - Personal Details (Subset)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Box 1", false)
+	WebUI.verifyTextPresent("20 Miles", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Currently unavailable as box has been replaced", false)
+	// Button
+//	WebUI.verifyTextPresent("Save", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Contents", false)
-	'----------------------------------------------'
-	WebUI.verifyTextPresent("Statistics boxes", false)
-	'----------------------------------------------'
-	// Sub Section - Stats
-	'----------------------------------------------'
-	WebUI.verifyTextPresent("Stat box 1", false)
-	'----------------------------------------------'
-	WebUI.verifyTextPresent("Stat box 2", false)
-	'----------------------------------------------'
-	WebUI.verifyTextPresent("Stat box 3", false)
-	'----------------------------------------------'
-	WebUI.verifyTextPresent("Feedback", false)
-	'----------------------------------------------'
-	WebUI.verifyTextPresent("Note: It may take up to 15 minutes for these changes to take effect on the homepage.", false)
-	'----------------------------------------------'
-	//Button
-	// WebUI.verifyTextPresent("Find Address", false) // Embedded Text in IFrame
-	'----------------------------------------------'
-	// Sub Section - Sales Appointment Area (Subset)
-	// WebUI.verifyTextPresent("Save", false)
-	'----------------------------------------------'
+//	WebUI.verifyTextPresent("Contents", false)
+//	'----------------------------------------------'
+//	WebUI.verifyTextPresent("Statistics boxes", false)
+//	'----------------------------------------------'
+//	// Sub Section - Stats
+//	'----------------------------------------------'
+//	WebUI.verifyTextPresent("Stat box 1", false)
+//	'----------------------------------------------'
+//	WebUI.verifyTextPresent("Stat box 2", false)
+//	'----------------------------------------------'
+//	WebUI.verifyTextPresent("Stat box 3", false)
+//	'----------------------------------------------'
+//	WebUI.verifyTextPresent("Feedback", false)
+//	'----------------------------------------------'
+//	WebUI.verifyTextPresent("Note: It may take up to 15 minutes for these changes to take effect on the homepage.", false)
+//	'----------------------------------------------'
+//	//Button
+//	// WebUI.verifyTextPresent("Find Address", false) // Embedded Text in IFrame
+//	'----------------------------------------------'
+//	// Sub Section - Sales Appointment Area (Subset)
+//	// WebUI.verifyTextPresent("Save", false)
+//	'----------------------------------------------'
 
 '--------------------------------'
 '           END                  |'

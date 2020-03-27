@@ -24,7 +24,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-//  WO/Settings->Settings->Checkatrade.com    |    25/03/2020   |        DH        |       CAT Now Reporting     |
+//  WO/Settings->Settings->Checkatrade.com    |    27/03/2020   |        DH        |       CAT Now Reporting     |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -51,36 +51,84 @@ WebUI.delay(1)
 
 	// Header
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Homepage Boxes", false)
+	WebUI.verifyTextPresent("Checkatrade Now Report - Last 30 Days", false)
 	'----------------------------------------------'
-	// Sub Section - Personal Details (Subset)
+	// Sub Section - Job Summary Table 
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Box 1", false)
+	WebUI.verifyTextPresent("Jobs Summary", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Currently unavailable as box has been replaced", false)
+	// Table Headings
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Contents", false)
+	WebUI.verifyTextPresent("Central Heating", false)	
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Statistics boxes", false)
+	WebUI.verifyTextPresent("Electrician", false)
 	'----------------------------------------------'
-	// Sub Section - Stats
+	WebUI.verifyTextPresent("Plumber", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Stat box 1", false)
+	// First Table Column Data
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Stat box 2", false)
+	WebUI.verifyTextPresent("All", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Stat box 3", false)
+	WebUI.verifyTextPresent("PO", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Feedback", false)
+	WebUI.verifyTextPresent("GU", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Note: It may take up to 15 minutes for these changes to take effect on the homepage.", false)
+	WebUI.verifyTextPresent("SO", false)
 	'----------------------------------------------'
-	//Button
-	// WebUI.verifyTextPresent("Find Address", false) // Embedded Text in IFrame
+	WebUI.verifyTextPresent("BH", false)
 	'----------------------------------------------'
-	// Sub Section - Sales Appointment Area (Subset)
-	// WebUI.verifyTextPresent("Save", false)
+	// 2 Samples of Test Data 
 	'----------------------------------------------'
+	WebUI.verifyTextPresent("0", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("9", false)
+	'----------------------------------------------'
+
+	'----------------------------------------------'
+	// Sub Section - Live Job Table (subset)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Live Jobs", false)
+	'----------------------------------------------'
+	// Table Headings
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Status", false)	
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Created", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Customer Recreated", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Customer Name", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Customer Number", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Customer Postcode", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Description ", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Trader Name ", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Job History ", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Dismissals", false)
+	'----------------------------------------------'
+	// First Table Column Data Sample
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Complete", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Accepted", false)
+	'----------------------------------------------'
+	// might need to scrolto here
+	WebUI.verifyTextPresent("Cancelled", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Failed", false)
+	'----------------------------------------------'
+	// 2 Samples of Test Data 
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Electrics tripping", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("RG26", false)
+	'----------------------------------------------'
+
 
 '--------------------------------'
 '           END                  |'

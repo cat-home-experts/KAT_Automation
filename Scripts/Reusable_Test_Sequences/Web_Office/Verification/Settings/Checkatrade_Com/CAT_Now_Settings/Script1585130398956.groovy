@@ -24,7 +24,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-//  WO/Settings->Settings->Checkatrade.com    |    25/03/2020   |        DH        |      (CAT Now Settings)     |
+//  WO/Settings->Settings->Checkatrade.com    |    26/03/2020   |        DH        |      (CAT Now Settings)     |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -51,36 +51,108 @@ WebUI.delay(1)
 
 	// Header
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Homepage Boxes", false)
+	WebUI.verifyTextPresent("Categories", false)
 	'----------------------------------------------'
 	// Sub Section - Personal Details (Subset)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Box 1", false)
+	// Sub Header LH Side
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Currently unavailable as box has been replaced", false)
+	WebUI.verifyTextPresent("Emergency Categories", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Contents", false)
+	// Table Header
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Statistics boxes", false)
+	WebUI.verifyTextPresent("Name", false)
 	'----------------------------------------------'
-	// Sub Section - Stats
+	WebUI.verifyTextPresent("Edit", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Stat box 1", false)
+	WebUI.verifyTextPresent("Delete", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Stat box 2", false)
+	// Table Name Data
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Stat box 3", false)
+	WebUI.verifyTextPresent("Alarms Security Specialist", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Feedback", false)
+	WebUI.verifyTextPresent("Central Heating", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Note: It may take up to 15 minutes for these changes to take effect on the homepage.", false)
+	WebUI.verifyTextPresent("Drains Expert", false)
 	'----------------------------------------------'
-	//Button
-	// WebUI.verifyTextPresent("Find Address", false) // Embedded Text in IFrame
+	WebUI.verifyTextPresent("Electrician", false)
 	'----------------------------------------------'
-	// Sub Section - Sales Appointment Area (Subset)
-	// WebUI.verifyTextPresent("Save", false)
+	WebUI.verifyTextPresent("Locksmith", false)
 	'----------------------------------------------'
+	WebUI.verifyTextPresent("Pest Control Expert", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Plumber", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Roofer", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Tree Surgeon", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Windows Doors Conservatories", false)
+	'----------------------------------------------'
+	
+	// Sub Header RH Side
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("System Settings", false)
+	'----------------------------------------------'
+	// Field Names (Sample)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Status", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Allowed Postcodes", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Admin Emails", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Test Trader IDs", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Start Time", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("End Time", false)
+	'----------------------------------------------'
+	// Field Content (sample)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Running", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("KT13, PO12", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("richard@vocala.co", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("536", false)
+	'----------------------------------------------'
+	//WebUI.verifyTextPresent("00:01:00", false)
+	'----------------------------------------------'
+	//WebUI.verifyTextPresent("23:58:00", false)
+	'----------------------------------------------'
+	'----------------------------------------------'
+	'EXTEND AND MODIFY FOR GREATER COVERAGE'
+	'----------------------------------------------'
+	
+	
+//	WebUI.verifyTextPresent("Box 1", false)
+//	'----------------------------------------------'
+//	WebUI.verifyTextPresent("Currently unavailable as box has been replaced", false)
+//	'----------------------------------------------'
+//	WebUI.verifyTextPresent("Contents", false)
+//	'----------------------------------------------'
+//	WebUI.verifyTextPresent("Statistics boxes", false)
+//	'----------------------------------------------'
+//	// Sub Section - Stats
+//	'----------------------------------------------'
+//	WebUI.verifyTextPresent("Stat box 1", false)
+//	'----------------------------------------------'
+//	WebUI.verifyTextPresent("Stat box 2", false)
+//	'----------------------------------------------'
+//	WebUI.verifyTextPresent("Stat box 3", false)
+//	'----------------------------------------------'
+//	WebUI.verifyTextPresent("Feedback", false)
+//	'----------------------------------------------'
+//	WebUI.verifyTextPresent("Note: It may take up to 15 minutes for these changes to take effect on the homepage.", false)
+//	'----------------------------------------------'
+//	//Button
+//	// WebUI.verifyTextPresent("Find Address", false) // Embedded Text in IFrame
+//	'----------------------------------------------'
+//	// Sub Section - Sales Appointment Area (Subset)
+//	// WebUI.verifyTextPresent("Save", false)
+//	'----------------------------------------------'
 
 '--------------------------------'
 '           END                  |'
