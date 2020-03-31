@@ -18,23 +18,24 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://admin.preview.checkatrade.com/Login.aspx?ReturnUrl=%2fSettings%2fWebSite%2fJoinNowPageSettings.aspx')
+WebUI.navigateToUrl('https://preview-ma.checkatrade.com/login?return=%2Fvetting-information')
 
-WebUI.setText(findTestObject('Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'), 'DavidHo')
+WebUI.setText(findTestObject('Page_Members Area/input_Username_username'), 'check1234')
 
-WebUI.setEncryptedText(findTestObject('Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'), 
-    'GrRjCB/Rw47kliZ2RFU+0g==')
+WebUI.setEncryptedText(findTestObject('Page_Members Area/input_Password_password'), 'fzqqY0qJjYTuJiVJRZh4ag==')
 
-WebUI.click(findTestObject('Page_Checkatrade - Administration - Login/input_Remember me next time_LoginControlLog_86123a'))
+WebUI.click(findTestObject('Page_Members Area/button_Log in'))
 
-WebUI.setEncryptedText(findTestObject('Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'), 
-    'AmDSJqbCZAGZ34/Q6uJgMA==')
+WebUI.click(findTestObject('Page_Members Area/button_Add Accreditation'))
 
-WebUI.click(findTestObject('Page_Checkatrade - Administration - Login/input_Remember me next time_LoginControlLog_86123a'))
+WebUI.selectOptionByValue(findTestObject('Object Repository/Membership/Page_Members Area/select_Select accreditation typeARB - Archi_177ae5'), 
+    '128', true)
 
-WebUI.click(findTestObject('Page_/a_Settings'))
+WebUI.setText(findTestObject('Object Repository/Membership/Page_Members Area/textarea_Notes_txtNotes'), 'barf')
 
-WebUI.click(findTestObject('Page_/a_wwwcheckatradecom'))
+WebUI.click(findTestObject('Object Repository/Membership/Page_Members Area/button_Select Document'))
 
-WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/Page_/a_Trade App Settings'))
+WebUI.click(findTestObject('Object Repository/Membership/Page_Members Area/button_Close'))
+
+WebUI.closeBrowser()
 

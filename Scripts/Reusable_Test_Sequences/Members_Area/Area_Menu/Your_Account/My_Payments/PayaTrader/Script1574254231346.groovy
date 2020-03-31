@@ -25,10 +25,10 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-//  Members Area Payments testing             |   20/11/2019    |      DH          | Make payments with dummy,   |
+//  Members Area Payments testing             |   20/11/2019    |        DH        | Make payments with dummy,   |
 //  Fill initial page, then navigate to next  |                 |                  | Test Visa card -            |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// URL Link to the payments portal changed    |    27/03/2020   |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -80,11 +80,12 @@ WebUI.click(findTestObject('Object Repository/Page_Members Area/Payments/Pay_By_
 /////////////////////////////////////////////
 WebUI.waitForPageLoad(20)
 
+WebUI.switchToWindowUrl('https://www.payatrader.com/hhpt_specific_trader.php?tid=1061477&name=Checkatrade%20HQ%20-%20TRAINING/TEST%20PAGE&reference=218630')
 //WebUI.switchToWindowUrl('https://www.payatrader.com/hhpt_specific_trader.php?tid=1061477&name=Checkatrade%20HQ%20-%20TRAINING/TEST%20PAGE%20&reference=218630')
-
+//                         https://www.payatrader.com/hhpt_specific_trader.php?tid=1061477&name=Checkatrade%20HQ%20-%20TRAINING/TEST%20PAGE&reference=218630
 WebUI.waitForPageLoad(20)
-//WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/textarea_Description'), 25)
-//WebUI.waitForElementVisible(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/input_Account ID_public_trader_id'), 25)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/textarea_Description'), 25)
+WebUI.waitForElementVisible(findTestObject('Object Repository/Page_Members Area/Payments/Page_Payatrader/input_Account ID_public_trader_id'), 25)
 
 /////////////////////////////////////////////
 // Verification of Initial WELCOME Page    //

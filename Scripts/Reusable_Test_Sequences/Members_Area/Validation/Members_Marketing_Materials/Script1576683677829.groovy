@@ -231,9 +231,9 @@ WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Are
 '-----------------------------------------------------------'
 // 43) 
 '-----------------------------------------------------------'
-WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Page_Members Area/mat-panel-title_Your free QR code'), 5)
-WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Area/mat-panel-title_Your free QR code'))
-WebUI.waitForPageLoad(60)
+//WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Members Area/Page_Members Area/mat-panel-title_Your free QR code'), 5)
+//WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Area/mat-panel-title_Your free QR code'))
+//WebUI.waitForPageLoad(60)
 //WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/Page_Members Area/mat-panel-title_Your free QR code'), 2)
 '-----------------------------------------------------------'
 'CHECK'
@@ -251,7 +251,7 @@ WebUI.waitForPageLoad(60)
 // WebUI.verifyTextPresent("can place on your vehicle then please contact marketing@checkatrade.com or call", false) // Embedded text changed 12/02/2020
 '----------------------------------------------'
 'COLLAPSE'
-WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Area/mat-panel-title_Your free QR code'))
+//WebUI.click(findTestObject('Object Repository/Page_Members Area/Page_Members Area/mat-panel-title_Your free QR code'))
 '-----------------------------------------------------------'
 
 ///////////////////////////////////////

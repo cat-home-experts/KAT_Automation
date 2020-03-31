@@ -25,11 +25,12 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 ' DYNAMIC DELAY - Wait for <SEARCH> Button to Re-Appear after Search is completed'
 
 'Unable To Wait For Object issue - Hence Hard Delay Prior To Web Page Loader'
+WebUI.delay(3)
+WebUI.waitForPageLoad(60)
+//WebUI.waitForAngularLoad(30)
 WebUI.delay(1)
-WebUI.waitForPageLoad(30)
-WebUI.waitForAngularLoad(30)
-
-'------------------------------------------------------------------------------------------------------------------------'
+'--------------------'
+'----------------------------------------------------------------------------------------------------'
 'PREVIEW INCONSISTENCY - SOMETIME THE FIRST ITERATION RETURNS 404 - SEEMS TO BE A PREVIEW GLITCH THAT OCCURS TOO OFTEN   |  23/03/2020 - DH'
 '------------------------------------------------------------------------------------------------------------------------'
 

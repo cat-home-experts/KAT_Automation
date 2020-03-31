@@ -76,7 +76,7 @@ WebUI.click(findTestObject('Object Repository/Page_Members Area/apply_Filter'))
 WebUI.delay(2) // desperation :-) other 2 syncs don't seem to work on this page - Not really, takes at leaast 10 seconds, so stick with this
 WebUI.waitForPageLoad(60)
 WebUI.waitForElementVisible(findTestObject('Object Repository/Page_Members Area/apply_Filter'), 60)
-WebUI.scrollToPosition(500, 500)
+WebUI.scrollToPosition(2500, 2500)
 
 //////////////////////////////////////////////////
 //   Verify Returned data from Search           //

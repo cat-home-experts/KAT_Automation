@@ -25,13 +25,13 @@ import java.awt.event.KeyEvent as KeyEvent
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-//  Verify <Profile><Vetting Information><Add |   25/09/2019    |      DH          |                             |
+//  Verify <Profile><Vetting Information><Add |   25/09/2019    |        DH        |                             |
 //  Accreditation> Page from <Grow Your       |                 |                  |                             |
 //  Business>                                 |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//  Add Accreditation Form - Member ID Removed|    27/03/2000   |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//  Acreditation List Box Locator Change      |    31/03/2020   |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -61,9 +61,9 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Members Area/
 '---------------------------------------------------'
 'THIS TAB - Vetting Information-> New Accreditation |'
 // MEMBER ID CHECK
-WebUI.verifyTextPresent(findTestData('Members_Test_Data').getValue('MEMBER_ID', 1), false)
+//WebUI.verifyTextPresent(findTestData('Members_Test_Data').getValue('MEMBER_ID', 1), false)
 '----------------------------------------------'
-WebUI.verifyTextPresent("MEMBER ID", false)
+//WebUI.verifyTextPresent("MEMBER ID", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent('Add New Accreditation', false)
 '----------------------------------------------'
@@ -87,11 +87,15 @@ WebUI.verifyTextPresent('Close', false)
 //--------------------------------------------------------
 // Select a Accreditation TYPE and Type Some Notes Text  |
 //--------------------------------------------------------
-WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/select_Select accreditation type'),
+WebUI.selectOptionByValue(findTestObject('Object Repository/Membership/Page_Members Area/select_Select accreditation typeARB - Archi_177ae5'),
 	'128', true)
+//WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/select_Select accreditation type'),
+//	'128', true)
 '----------------------------------------------'
-WebUI.setText(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/textarea_Notes_txtNotes'),
-	'testing, testing, 123')
+WebUI.setText(findTestObject('Object Repository/Membership/Page_Members Area/textarea_Notes_txtNotes'), 'testing, testing, 123')
+
+//WebUI.setText(findTestObject('Object Repository/Page_Members Area/Profiles/Page_Members Area/textarea_Notes_txtNotes'),
+//	'testing, testing, 123')
 '----------------------------------------------'
 // Hit <Select Document>
 '----------------------------------------------' 

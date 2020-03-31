@@ -85,7 +85,7 @@
    <testCaseLink>
       <guid>efa5837e-ee4b-4406-8161-a61c4b988d20</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Members_Area/Members_Scams</testCaseId>
    </testCaseLink>
    <testCaseLink>

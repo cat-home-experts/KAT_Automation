@@ -6,11 +6,15 @@
    <elementGuidId>4a3b14d4-0500-4ceb-9d3c-9750a22bbca1</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[@href = '/scams' and (text() = 'Scams' or . = 'Scams')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//a[contains(text(),'Scams')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
