@@ -24,7 +24,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-//  Settings->Members_Area-> Sub Menu Item    |    31/03/2020   |        DH        |        a_Benefits           |
+//  Settings->Members_Area-> Sub Menu Item    |    01/04/2020   |        DH        |        a_Benefits           |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -60,13 +60,13 @@ WebUI.mouseOver(findTestObject('Object Repository/WebOffice_Home_page/a_Settings
 ////////////////////////////////////////////
 // Hover on Element                       //
 ////////////////////////////////////////////
-WebUI.mouseOver(findTestObject('Object Repository/WebOffice_Home_page/a_wwwcheckatradecom'))
+WebUI.mouseOver(findTestObject('Object Repository/WebOffice_Home_page/a_Members Area'))
 
 ////////////////////////////////////////////
 //  Select Target menuItem Element        //
 ////////////////////////////////////////////
-WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Testimonials'), 1)
-WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/a_Testimonials'))
+WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice_Home_page/a_Members Benefits'), 1)
+WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/a_Members Benefits'))
 
 '--------------------------------------'
 

@@ -24,7 +24,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-//  WO/Settings->Settings->Members Area       |    31/03/2020   |        DH        |      Members Benefits       |
+//  WO/Settings->Settings->Members Area       |    01/04/2020   |        DH        |      Members Benefits       |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -51,42 +51,46 @@ WebUI.delay(1)
 
 	// Header
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Testimonials", false)
+	WebUI.verifyTextPresent("Member Benefits", false)
 	'----------------------------------------------'
 	// Button (iframe - resolve with time)
 	'----------------------------------------------'
-	// WebUI.verifyTextPresent("Add New", false)
+	WebUI.verifyTextPresent("Preview Live", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Add New", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Search", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Filter", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Published", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Show", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("entries", false)
 	'----------------------------------------------'
 
 	// Sub Section - Table Header
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Type", false)
+	WebUI.verifyTextPresent("Status", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Name or Location", false)
+	WebUI.verifyTextPresent("Title", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Company", false)
+	WebUI.verifyTextPresent("Description", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Quote", false)
+	//WebUI.verifyTextPresent("Quote", false)
 	'----------------------------------------------'
 	// Table Body (sample)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Consumer", false)
+	WebUI.verifyTextPresent("Save on fuel with Esso", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Watford", false)
+	WebUI.verifyTextPresent("Apply for an Esso Card fuel card", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("My wife and I find the service", false)
+	WebUI.verifyTextPresent("Hero", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Trade", false)
+	WebUI.verifyTextPresent("Edit", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Jason", false)
-	'----------------------------------------------'
-	WebUI.verifyTextPresent("Mops And Buckets", false)
-	'----------------------------------------------'
-	WebUI.verifyTextPresent("Trade", false)
-	'----------------------------------------------'
-	WebUI.verifyTextPresent("Being a new member to Checkatrade has opened a lot of doors ", false)
-	'----------------------------------------------'
-
+	
 		//Button
 	// WebUI.verifyTextPresent("Find Address", false) // Embedded Text in IFrame
 	'----------------------------------------------'

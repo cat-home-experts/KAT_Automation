@@ -24,7 +24,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
 //---------------------------------------------------------------------------------------------------------------
-//  Settings->Members_Area-> Sub Menu Item    |    31/03/2020   |        DH        |        a_Benefits           |
+//  Settings->Members_Area-> Sub Menu Item    |    01/04/2020   |        DH        |        a_Benefits           |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -55,12 +55,12 @@ import internal.GlobalVariable as GlobalVariable
 	'-----------------------------------------------------------------'
 	' Navigate to <Settings->Checkatrade.Com->Sub Item> Menu Item     |'
 	'-----------------------------------------------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Settings/Checkatrade_Com/Testimonials'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Settings/Members_Area/Members_Benefits'), [:], FailureHandling.STOP_ON_FAILURE)
 	
 	'--------------------------------------'
 	' Verify Returned Page Detail          |'
 	'--------------------------------------'
-	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Verification/Settings/Checkatrade_Com/Testimonials'), [:], FailureHandling.OPTIONAL)
+	WebUI.callTestCase(findTestCase('Reusable_Test_Sequences/Web_Office/Verification/Settings/Members_Area/Members_Benefits'), [:], FailureHandling.OPTIONAL)
 	
 	'--------------------------'
 	' Teardown - CLose Browser |'
