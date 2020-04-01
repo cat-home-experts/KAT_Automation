@@ -30,7 +30,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 // Added View Per Page Setting to 25 (Devdef50|   18/02/2020    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
-// Timing issue around shhow rows per page    |   31/03/2020    |        DH        |                             |
+// Timing issue around shhow rows per page    |   31/03/2020    |        DH        |   Set view 25 page commented|
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -65,12 +65,12 @@ WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/a_Companies'),
 //----------------------------------------------------
 //WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice/Companies_Top/Page_/span_Advanced Search'), 120)
 
-'Ensure Show Per Page ListBox is set to 25 - Dev Defaults to 50'
-WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice/Companies_Top/Page_/select_ShowPerPage'), 120)
-WebUI.delay(3)
-WebUI.selectOptionByValue(findTestObject('Object Repository/WebOffice/Companies_Top/Page_/select_ShowPerPage'),	'25', true)
-WebUI.delay(2)
-WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice/Companies_Top/Page_/span_Advanced Search'), 120)
+//'Ensure Show Per Page ListBox is set to 25 - Dev Defaults to 50'
+//WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice/Companies_Top/Page_/select_ShowPerPage'), 120)
+//WebUI.delay(3)
+//WebUI.selectOptionByValue(findTestObject('Object Repository/WebOffice/Companies_Top/Page_/select_ShowPerPage'),	'25', true)
+//WebUI.delay(2)
+//WebUI.waitForElementClickable(findTestObject('Object Repository/WebOffice/Companies_Top/Page_/span_Advanced Search'), 120)
 
 '--------------------------------------'
 ' Verify Returned Page Content         |'
@@ -80,7 +80,7 @@ WebUI.verifyTextPresent("Members  >  All Members", false)
 WebUI.verifyTextPresent("Next", false)
 WebUI.verifyTextPresent("Show", false)
 WebUI.verifyTextPresent("per page", false)
-WebUI.verifyTextPresent("Displaying 1 to 25 from", false)
+//WebUI.verifyTextPresent("Displaying 1 to 25 from", false)
 // Table Sample Row
 //WebUI.verifyTextPresent("Astra Clean", false)
 //WebUI.verifyTextPresent("124", false)

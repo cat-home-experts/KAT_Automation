@@ -15,3 +15,63 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+//-----------------------
+// TEST HISTORY HEADER - |
+//-----------------------
+// Any changes to this script, please update the next available row below, with date, in the DATE CREATED column,
+// Your Name in the CREATED BY column, and Finaly, The actual change implemented in the NOTES column.
+//
+//---------------------------------------------------------------------------------------------------------------
+//       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
+//---------------------------------------------------------------------------------------------------------------
+//  WO/Settings->Settings->Members Area       |    01/04/2020   |        DH        |       a_Members Alerts      |
+//---------------------------------------------------------------------------------------------------------------
+//                                            |                 |                  |                             |
+//---------------------------------------------------------------------------------------------------------------
+//                                            |                 |                  |                             |
+//---------------------------------------------------------------------------------------------------------------
+//                                            |                 |                  |                             |
+//---------------------------------------------------------------------------------------------------------------
+//                                            |                 |                  |                             |
+//---------------------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------
+//                                                                                                               |
+//	GIVEN -  With Web Office Open                                                                                |
+//                                                                                                               |
+//	WHEN - We CLICK on the <SETTINGS> menu Item (Top Level) - Then Settings Sub Menu Item  (a_Members Alerts)    |
+//                                                                                                               |
+//  THEN - Verify Details of the RETURNED Page are As Expected                                                   |
+//                                                                                                               |
+//---------------------------------------------------------------------------------------------------------------
+
+
+WebUI.waitForPageLoad(60)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/WO_Consumer/Page_/Edit_Consumer_SAVE_Button'), 60)
+WebUI.delay(1)
+
+	// Header
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Members Blog Posts", false)
+	'----------------------------------------------'
+	// Sub Header
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Use this page to add new Blog posts and amend which ones are shown. These are posts are only visible on the Members Area.", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Subject", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Add New Blog Post", false)
+	'----------------------------------------------'
+
+	// Sub Section - Table Header
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Active Blog Posts", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Secure Contacts FAQ's", false)
+	'----------------------------------------------'
+
+
+	'----------------------------------------------'
+
+'--------------------------------'
+'           END                  |'
+'--------------------------------'

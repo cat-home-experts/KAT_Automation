@@ -70,4 +70,70 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Web_Office/Settings/Checkatrade_Com/Feedback_Searching_Capabilities</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>1d05083e-292a-4878-bd03-f5d396c68519</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Settings/Members_Area/Members_Benefits</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>fa15613c-9cba-4512-899a-9808743f3de9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Settings/Members_Area/Downloads</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1fbde9f0-8c0a-456e-8d13-e295f894a36b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Settings/Members_Area/AskKev</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>146744d7-684f-44ad-bb92-9e5e198d7785</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Settings/Members_Area/Members_Panel_Suggestions</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c833ddfa-8427-4054-8070-191fec868c16</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Settings/Members_Area/Members_Panel_Minutes</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>30ddd482-0f75-43dd-8ca2-93a4e591a794</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Settings/Members_Area/Members_Alerts</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1fc11103-dd0d-46eb-89d3-2a1ad69eb642</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Settings/Members_Area/Members_Blog_Posts</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>12308c8d-4740-4129-a24e-ccdfada8be97</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Settings/Members_Area/Manage_Accreditation_Types</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>fe6456dc-d6e3-4919-8d57-f76bb7e41d14</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Settings/Members_Area/Manage_Advert_Banners</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>920c5cd1-3581-48a9-9ea5-0d85bf28de4f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Settings/Members_Area/Manage_Members_Achievments</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>fb1d81a3-c5eb-476a-843e-1293b53fed6d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Settings/Members_Area/Checkatrade_News</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

@@ -15,3 +15,105 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+//-----------------------
+// TEST HISTORY HEADER - |
+//-----------------------
+// Any changes to this script, please update the next available row below, with date, in the DATE CREATED column,
+// Your Name in the CREATED BY column, and Finaly, The actual change implemented in the NOTES column.
+//
+//---------------------------------------------------------------------------------------------------------------
+//       Test Definition / Description        |   Date Created  |    Created By    |             Notes           |
+//---------------------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------
+//  Settings->Members_Area-> Sub Menu Item    |    01/04/2020   |        DH        |a_Manage Accreditation Types |
+//---------------------------------------------------------------------------------------------------------------
+//                                            |                 |                  |                             |
+//---------------------------------------------------------------------------------------------------------------
+//                                            |                 |                  |                             |
+//---------------------------------------------------------------------------------------------------------------
+//                                            |                 |                  |                             |
+//---------------------------------------------------------------------------------------------------------------
+//                                            |                 |                  |                             |
+//---------------------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------
+//                                                                                                               |
+//	GIVEN -  With Web Office Open                                                                                |
+//                                                                                                               |
+//	WHEN - We CLICK on the <Settings> menu Item (Top Level) - Then Members Area Sub Menu   (Manage Accreditation)|
+//                                                                                                               |
+//  THEN - Verify Details of the RETURNED Page are As Expected                                                   |
+//                                                                                                               |
+//---------------------------------------------------------------------------------------------------------------
+
+
+
+WebUI.waitForPageLoad(60)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/WO_Consumer/Page_/Edit_Consumer_SAVE_Button'), 60)
+WebUI.delay(1)
+
+	// Header
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Members Accreditations", false)
+	'----------------------------------------------'
+	// Sub Header
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Add New Accreditation", false)
+	'----------------------------------------------'
+	// Body
+	WebUI.verifyTextPresent("Name", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Description", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Start Date", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("End Date", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Status", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Valid", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Options", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Expiry Date Required", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Visibility", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Email", false)
+	'----------------------------------------------'
+
+	// Sub Section - Table Header
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Edit", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Status", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Name", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Description", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Expiry Date", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Reg", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Start Date", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("End Date", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Notes", false)
+	'----------------------------------------------'
+	// Table Data Sample
+	WebUI.verifyTextPresent("Valid", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("CORGI", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("British Standards Institution", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("Electrical Contractors Association", false)
+	'----------------------------------------------'
+
+
+	'----------------------------------------------'
+
+'--------------------------------'
+'           END                  |'
+'--------------------------------'
