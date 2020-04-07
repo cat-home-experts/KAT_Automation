@@ -4,7 +4,17 @@
    <name>a_CAT Now Settings</name>
    <tag></tag>
    <elementGuidId>62b43997-572d-4fe6-b24a-9b334692be8a</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[contains(text(),'CAT Now Settings')]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@href = '/Settings/Website/ToD.aspx' and (text() = 'CAT Now Settings' or . = 'CAT Now Settings')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

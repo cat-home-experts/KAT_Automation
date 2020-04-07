@@ -26,7 +26,9 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //  WO/Settings->Settings->Checkatrade.com    |    26/03/2020   |        DH        |      (CAT Now Settings)     |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//  MenuItem  ->Settings->cheka*.*>CAT Now Set|   07/06/2020    |        DH        |   Prop ref changed to xpath |
+//---------------------------------------------------------------------------------------------------------------
+//  Page content changes, robustified changes |   07/06/2020    |        DH        |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -69,25 +71,25 @@ WebUI.delay(1)
 	'----------------------------------------------'
 	// Table Name Data
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Alarms Security Specialist", false)
+	//WebUI.verifyTextPresent("Alarms Security Specialist", false)
 	'----------------------------------------------'
 	WebUI.verifyTextPresent("Central Heating", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Drains Expert", false)
+	//WebUI.verifyTextPresent("Drains Expert", false)
 	'----------------------------------------------'
 	WebUI.verifyTextPresent("Electrician", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Locksmith", false)
+	//WebUI.verifyTextPresent("Locksmith", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Pest Control Expert", false)
+	//WebUI.verifyTextPresent("Pest Control Expert", false)
 	'----------------------------------------------'
 	WebUI.verifyTextPresent("Plumber", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Roofer", false)
+	//WebUI.verifyTextPresent("Roofer", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Tree Surgeon", false)
+	//WebUI.verifyTextPresent("Tree Surgeon", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("Windows Doors Conservatories", false)
+	//WebUI.verifyTextPresent("Windows Doors Conservatories", false)
 	'----------------------------------------------'
 	
 	// Sub Header RH Side
@@ -112,7 +114,13 @@ WebUI.delay(1)
 	'----------------------------------------------'
 	WebUI.verifyTextPresent("Running", false)
 	'----------------------------------------------'
-	WebUI.verifyTextPresent("KT13, PO12", false)
+	WebUI.verifyTextPresent("KT13", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("PO12", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("BH25", false)
+	'----------------------------------------------'
+	WebUI.verifyTextPresent("RG26", false)
 	'----------------------------------------------'
 	WebUI.verifyTextPresent("richard@vocala.co", false)
 	'----------------------------------------------'
