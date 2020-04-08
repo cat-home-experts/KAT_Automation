@@ -18,24 +18,20 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://preview-ma.checkatrade.com/login?return=%2Fvetting-information')
+WebUI.navigateToUrl('https://admin.preview.checkatrade.com/Login.aspx?ReturnUrl=%2f')
 
-WebUI.setText(findTestObject('Page_Members Area/input_Username_username'), 'check1234')
+WebUI.setText(findTestObject('Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'), 'DavidHo')
 
-WebUI.setEncryptedText(findTestObject('Page_Members Area/input_Password_password'), 'fzqqY0qJjYTuJiVJRZh4ag==')
+WebUI.setEncryptedText(findTestObject('Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'), 
+    'AmDSJqbCZAGZ34/Q6uJgMA==')
 
-WebUI.click(findTestObject('Page_Members Area/button_Log in'))
+WebUI.click(findTestObject('Page_Checkatrade - Administration - Login/input_Remember me next time_LoginControlLog_86123a'))
 
-WebUI.click(findTestObject('Page_Members Area/button_Add Accreditation'))
+WebUI.click(findTestObject('Page_Checkatrade Web Office (preview)/a_Settings'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Membership/Page_Members Area/select_Select accreditation typeARB - Archi_177ae5'), 
-    '128', true)
+WebUI.click(findTestObject('Page_Checkatrade Web Office (preview)/a_Web Office'))
 
-WebUI.setText(findTestObject('Object Repository/Membership/Page_Members Area/textarea_Notes_txtNotes'), 'barf')
+WebUI.click(findTestObject('Page_Checkatrade Web Office (preview)/a_Engagement Score Drop Alerts'))
 
-WebUI.click(findTestObject('Object Repository/Membership/Page_Members Area/button_Select Document'))
-
-WebUI.click(findTestObject('Object Repository/Membership/Page_Members Area/button_Close'))
-
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/Page_Checkatrade Web Office (preview)/a_Engagement Score Drop Alerts_1'))
 
