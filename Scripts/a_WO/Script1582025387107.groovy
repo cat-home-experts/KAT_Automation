@@ -27,11 +27,27 @@ WebUI.setEncryptedText(findTestObject('Page_Checkatrade - Administration - Login
 
 WebUI.click(findTestObject('Page_Checkatrade - Administration - Login/input_Remember me next time_LoginControlLog_86123a'))
 
-WebUI.click(findTestObject('Page_Checkatrade Web Office (preview)/a_Settings'))
+WebUI.click(findTestObject('Page_Checkatrade Web Office (preview)/a_Reports'))
 
-WebUI.click(findTestObject('Page_Checkatrade Web Office (preview)/a_Web Office'))
+WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/Page_Checkatrade Web Office (preview)/a_Consumers'))
 
-WebUI.click(findTestObject('Page_Checkatrade Web Office (preview)/a_Engagement Score Drop Alerts'))
+WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/Page_/a_Reports'))
 
-WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/Page_Checkatrade Web Office (preview)/a_Engagement Score Drop Alerts_1'))
+WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/Page_/a_Consumers'))
+
+WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/Page_/a_Consumer Searches'))
+
+WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/Page_/a_Most Popular'))
+
+WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/Page_/a_By Category and Location'))
+
+WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/Page_/a_By Category'))
+
+WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/Page_/a_By Location'))
+
+WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/Page_/a_By Location'))
+
+WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/Page_/a_Returning No Results'))
+
+WebUI.click(findTestObject('Object Repository/WebOffice_Home_page/Page_/a_Search Tracking'))
 

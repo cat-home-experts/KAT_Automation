@@ -4,7 +4,17 @@
    <name>a_Consumers</name>
    <tag></tag>
    <elementGuidId>750c15dd-3c3d-4fc2-b574-8dafbcb2e6a2</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[contains(text(),'Consumers')]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@href = '/Consumers/' and (text() = 'Consumers' or . = 'Consumers')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
