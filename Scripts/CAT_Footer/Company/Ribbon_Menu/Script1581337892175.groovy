@@ -28,7 +28,7 @@ import internal.GlobalVariable as GlobalVariable
 // navigating Company->Ribbon Menu Returns    |    10/02/2020   |         DH       |                             |
 // The Correct Set Of Pages                   |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+// Verif HOME (About Us) Removed, function Cng|    17/04/2020   |         DH       |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -78,7 +78,7 @@ import internal.GlobalVariable as GlobalVariable
 	' Verify - About Us Return |' 
 	'--------------------------'
 
-	WebUI.verifyTextPresent('Home', false)
+	//WebUI.verifyTextPresent('Home', false)
 	WebUI.scrollToPosition(500, 500)
 	WebUI.verifyTextPresent('Checka-who', false)
 	WebUI.scrollToPosition(0, 0)

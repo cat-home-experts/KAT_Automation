@@ -38,6 +38,11 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
 //---------------------------------------------------------------------------------------------------------------
+//                                            |                 |                  |                             |
+//---------------------------------------------------------------------------------------------------------------
+//                                            |                 |                  |                             |
+//---------------------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------
 //                                                                                                               |
 //	GIVEN -                                                                                                      |
 //                                                                                                               |
@@ -108,7 +113,7 @@ WebUI.verifyTextPresent("Community", false)
 'Graphics Present'
 WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Members Area/Community/Page_Checkatrade Community/img'), 1)
 WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Members Area/Community/Page_Checkatrade Community/img_1'), 1)
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Members Area/Community/Page_Checkatrade Community/img_1_2'), 1)
+//WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Members Area/Community/Page_Checkatrade Community/img_1_2'), 1)
 // No LogOff on this Page - Navigaate Back
 WebUI.back()
 
