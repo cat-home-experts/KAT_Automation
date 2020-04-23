@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Trades_Apply_Here" time="105.984" tests="2" failures="0" errors="0">
+   <testsuite name="Trades_Apply_Here" tests="2" failures="0" errors="0" time="105.984" timestamp="2020-04-15 08:39:18" hostname="DavidHo - 192.168.1.238" id="Test Suites/Trades_Apply_Here">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\davidho\\git\\src\\Reports\\20200415_083537\\Trades_Apply_Here\\20200415_083540"/>
+         <property name="logFiles" value="C:\\Users\\davidho\\git\\src\\Reports\\20200415_083537\\Trades_Apply_Here\\20200415_083540\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="DavidHo - 192.168.1.238"/>
+         <property name="os" value="Windows 10 32bit"/>
+         <property name="katalonVersion" value="7.3.0.1"/>
+         <property name="browser" value="Firefox 74.0"/>
+         <property name="hostAddress" value="192.168.1.238"/>
+         <property name="sessionId" value="5b51acf3-7162-4ec0-b98a-a176fc2d42bf"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Sign_Up/Trades_Apply_Here_Validation" time="68.442" classname="Test Cases/Sign_Up/Trades_Apply_Here_Validation" status="PASSED">
+         <system-out><![CDATA[2020-04-15 08:39:19 - [TEST_CASE][PASSED] - Test Cases/Sign_Up/Trades_Apply_Here_Validation: Test Cases/Sign_Up/Trades_Apply_Here_Validation]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Sign_Up/Trades_Apply_Here" time="37.038" classname="Test Cases/Sign_Up/Trades_Apply_Here" status="PASSED">
+         <system-out><![CDATA[2020-04-15 08:40:27 - [TEST_CASE][PASSED] - Test Cases/Sign_Up/Trades_Apply_Here: Test Cases/Sign_Up/Trades_Apply_Here]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-04-15 08:39:18 - [TEST_SUITE][PASSED] - Trades_Apply_Here: Test Cases/Sign_Up/Trades_Apply_Here]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

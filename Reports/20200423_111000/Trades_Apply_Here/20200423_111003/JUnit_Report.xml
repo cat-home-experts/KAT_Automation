@@ -1,0 +1,1501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Trades_Apply_Here" time="97.206" tests="2" failures="0" errors="0">
+   <testsuite name="Trades_Apply_Here" tests="2" failures="0" errors="0" time="97.206" timestamp="2020-04-23 11:11:10" hostname="DavidHo - 192.168.1.238" id="Test Suites/Trades_Apply_Here">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\davidho\\git\\src\\Reports\\20200423_111000\\Trades_Apply_Here\\20200423_111003"/>
+         <property name="logFiles" value="C:\\Users\\davidho\\git\\src\\Reports\\20200423_111000\\Trades_Apply_Here\\20200423_111003\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\davidho\\git\\src\\Reports\\20200423_111000\\Trades_Apply_Here\\20200423_111003\\1587636742120.png"/>
+         <property name="hostName" value="DavidHo - 192.168.1.238"/>
+         <property name="os" value="Windows 10 32bit"/>
+         <property name="katalonVersion" value="7.4.0.1"/>
+         <property name="browser" value="Firefox 74.0"/>
+         <property name="hostAddress" value="192.168.1.238"/>
+         <property name="sessionId" value="e2f71c32-7a53-491d-955d-a8d115130c48"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Sign_Up/Trades_Apply_Here_Validation" time="61.119" classname="Test Cases/Sign_Up/Trades_Apply_Here_Validation" status="PASSED">
+         <system-out><![CDATA[2020-04-23 11:11:10 - [TEST_CASE][PASSED] - Test Cases/Sign_Up/Trades_Apply_Here_Validation: Test Cases/Sign_Up/Trades_Apply_Here_Validation
+
+2020-04-23 11:11:10 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Setup"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' successfully
+
+2020-04-23 11:11:10 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Setup: Test Cases/Reusable_Test_Sequences/CAT_Setup
+
+2020-04-23 11:11:11 - [TEST_STEP][PASSED] - "------------------------------": null
+
+2020-04-23 11:11:11 - [TEST_STEP][PASSED] - " Set Mobile Device Testing    |": null
+
+2020-04-23 11:11:11 - [TEST_STEP][PASSED] - if (Mobile_Flag == "true"): null
+
+2020-04-23 11:11:11 - [TEST_STEP][PASSED] - "------------------------------": null
+
+2020-04-23 11:11:11 - [TEST_STEP][PASSED] - " Set Mobile Device Testing    |": null
+
+2020-04-23 11:11:11 - [TEST_STEP][PASSED] - "------------------------------": null
+
+2020-04-23 11:11:11 - [TEST_STEP][PASSED] - "URL - Set from the ENVIRONMENT PROFILE ": null
+
+2020-04-23 11:11:11 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://www.preview.checkatrade.com/'
+
+2020-04-23 11:11:12 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-04-23 11:11:12 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2020-04-23 11:11:22 - [MESSAGE][PASSED] - Browser is opened with url: 'https://www.preview.checkatrade.com/'
+
+2020-04-23 11:11:22 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-04-23 11:11:22 - [MESSAGE][PASSED] - Current window maximized
+
+2020-04-23 11:11:22 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-23 11:11:22 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-23 11:11:22 - [TEST_STEP][PASSED] - "Previous Functionalilty Left Commented For Ease Of reversion": null
+
+2020-04-23 11:11:22 - [TEST_STEP][PASSED] - " Katalon Try/Catches currently have issues? SEE HEADER": null
+
+2020-04-23 11:11:22 - [TEST_STEP][PASSED] - try: Text 'Cookie Policy' is not present on page
+
+2020-04-23 11:11:22 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All"), 5, OPTIONAL): Object 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is present
+
+2020-04-23 11:11:23 - [MESSAGE][PASSED] - Object 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is present
+
+2020-04-23 11:11:23 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All"), OPTIONAL): Object: 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is clicked on
+
+2020-04-23 11:11:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is clicked on
+
+2020-04-23 11:11:23 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-04-23 11:11:23 - [TEST_STEP][PASSED] - "COOKIE POPOUT REMOVED - Confirmed": null
+
+2020-04-23 11:11:23 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-04-23 11:11:24 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-04-23 11:11:24 - [TEST_STEP][PASSED] - verifyTextNotPresent("We use cookies to personalise content and ads, to provide social media features and to analyse our traffic", false): Text 'We use cookies to personalise content and ads, to provide social media features and to analyse our traffic' is not present on page
+
+2020-04-23 11:11:25 - [MESSAGE][PASSED] - Text 'We use cookies to personalise content and ads, to provide social media features and to analyse our traffic' is not present on page
+
+2020-04-23 11:11:25 - [TEST_STEP][PASSED] - verifyTextNotPresent(" We also share information about your use of our site with our social media, advertising and analytics partners", false): Text ' We also share information about your use of our site with our social media, advertising and analytics partners' is not present on page
+
+2020-04-23 11:11:25 - [MESSAGE][PASSED] - Text ' We also share information about your use of our site with our social media, advertising and analytics partners' is not present on page
+
+2020-04-23 11:11:26 - [TEST_STEP][PASSED] - verifyTextNotPresent("Cookie Policy", false): Text 'Cookie Policy' is not present on page
+
+2020-04-23 11:11:26 - [MESSAGE][PASSED] - Text 'Cookie Policy' is not present on page
+
+2020-04-23 11:11:26 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-23 11:11:26 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-23 11:11:26 - [TEST_STEP][PASSED] - "COOKIE - ORIGINAL": null
+
+2020-04-23 11:11:26 - [TEST_STEP][PASSED] - if (waitForElementVisible(findTestObject("Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review"), 5)): Web element with id: 'Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review' located by 'By.xpath: //input[@id='feedback-form__company_autocomplete_input']' not found
+
+2020-04-23 11:11:31 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //input[@id='feedback-form__company_autocomplete_input']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2020-04-23 11:11:31 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review' located by 'By.xpath: //input[@id='feedback-form__company_autocomplete_input']' not found
+
+2020-04-23 11:11:31 - [TEST_STEP][PASSED] - else: The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-04-23 11:11:31 - [TEST_STEP][PASSED] - if (!(verifyElementVisible(findTestObject("Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF")))): Object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF' is visible
+
+2020-04-23 11:11:31 - [MESSAGE][PASSED] - Object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF' is visible
+
+2020-04-23 11:11:31 - [TEST_STEP][PASSED] - else: The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-04-23 11:11:31 - [TEST_STEP][PASSED] - Website_Version = "old": null
+
+2020-04-23 11:11:31 - [TEST_STEP][PASSED] - logInfo("The <<<OLD>>> Website was detected by the STARTUP Process"): The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-04-23 11:11:31 - [MESSAGE][INFO] - The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-04-23 11:11:31 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' successfully
+
+2020-04-23 11:11:31 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-23 11:11:31 - [TEST_STEP][PASSED] - " Hit the <TRADES, APPLY HERE> Button  |": null
+
+2020-04-23 11:11:31 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here' successfully
+
+2020-04-23 11:11:32 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here: Test Cases/Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here
+
+2020-04-23 11:11:32 - [TEST_STEP][PASSED] - if (Website_Version == "new"): null
+
+2020-04-23 11:11:32 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application' is clicked on
+
+2020-04-23 11:11:32 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-04-23 11:11:32 - [TEST_STEP][PASSED] - " Click on <Trades> Header Button |": null
+
+2020-04-23 11:11:32 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades"), 10): Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades' is clickable
+
+2020-04-23 11:11:32 - [MESSAGE][PASSED] - Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades' is clickable
+
+2020-04-23 11:11:32 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades")): Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades' is clicked on
+
+2020-04-23 11:11:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades' is clicked on
+
+2020-04-23 11:11:32 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-04-23 11:11:32 - [TEST_STEP][PASSED] - " Click on <Find Out More> Banner |": null
+
+2020-04-23 11:11:32 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more"), 10): Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more' is clickable
+
+2020-04-23 11:11:33 - [MESSAGE][PASSED] - Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more' is clickable
+
+2020-04-23 11:11:33 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more")): Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more' is clicked on
+
+2020-04-23 11:11:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more' is clicked on
+
+2020-04-23 11:11:37 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-04-23 11:11:37 - [TEST_STEP][PASSED] - " Click on <Trade Application> B  |": null
+
+2020-04-23 11:11:37 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application"), 10): Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application' is clickable
+
+2020-04-23 11:11:37 - [MESSAGE][PASSED] - Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application' is clickable
+
+2020-04-23 11:11:37 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application")): Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application' is clicked on
+
+2020-04-23 11:11:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application' is clicked on
+
+2020-04-23 11:11:40 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here' successfully
+
+2020-04-23 11:11:40 - [TEST_STEP][PASSED] - "---------------------------------------------------------------------------": null
+
+2020-04-23 11:11:40 - [TEST_STEP][PASSED] - " Hit the <SUBMIT> Button  | Attempt a COMMITAL of form with no data filled |": null
+
+2020-04-23 11:11:40 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Hit_Submit"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit' successfully
+
+2020-04-23 11:11:40 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit: Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit
+
+2020-04-23 11:11:41 - [TEST_STEP][PASSED] - "----------------------------------------------------------------------------------": null
+
+2020-04-23 11:11:41 - [TEST_STEP][PASSED] - "SUBMIT BUTTON IS OFF THE BOTTOM OF THE PAGE - SO NEED TO SCROLL TO BOTTOM OF PAGE |": null
+
+2020-04-23 11:11:41 - [TEST_STEP][PASSED] - "----------------------------------------------------------------------------------": null
+
+2020-04-23 11:11:41 - [TEST_STEP][PASSED] - "Wholesale cahnges on 05/12/2019 Cause refactor - Old left Commented": null
+
+2020-04-23 11:11:41 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-04-23 11:11:42 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-04-23 11:11:42 - [TEST_STEP][PASSED] - "-------------": null
+
+2020-04-23 11:11:42 - [TEST_STEP][PASSED] - "Click Submit |": null
+
+2020-04-23 11:11:42 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_Privacy Notice_ctl00contentbtnSubmit")): Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_Privacy Notice_ctl00contentbtnSubmit' is clicked on
+
+2020-04-23 11:11:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_Privacy Notice_ctl00contentbtnSubmit' is clicked on
+
+2020-04-23 11:11:42 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit' successfully
+
+2020-04-23 11:11:42 - [TEST_STEP][PASSED] - "--------------------------------------------------": null
+
+2020-04-23 11:11:42 - [TEST_STEP][PASSED] - " Check initial Validation Message(s) are Produced |": null
+
+2020-04-23 11:11:42 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required' successfully
+
+2020-04-23 11:11:42 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required: Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required
+
+2020-04-23 11:11:43 - [TEST_STEP][PASSED] - verifyTextPresent("This field is required", false): Text 'This field is required' is present on page 
+
+2020-04-23 11:11:44 - [MESSAGE][PASSED] - Text 'This field is required' is present on page 
+
+2020-04-23 11:11:44 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required' successfully
+
+2020-04-23 11:11:44 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-23 11:11:44 - [TEST_STEP][PASSED] - " Set - Email Address Incorrect Form   |": null
+
+2020-04-23 11:11:44 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_INVALID_Email_Address"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_INVALID_Email_Address' successfully
+
+2020-04-23 11:11:44 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_INVALID_Email_Address: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_INVALID_Email_Address
+
+2020-04-23 11:11:44 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail"), Invalid_Email): Text 'Billy Bob' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail'
+
+2020-04-23 11:11:44 - [MESSAGE][PASSED] - Text 'Billy Bob' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail'
+
+2020-04-23 11:11:44 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_INVALID_Email_Address' successfully
+
+2020-04-23 11:11:44 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-23 11:11:44 - [TEST_STEP][PASSED] - " Check Email Validation Message       |": null
+
+2020-04-23 11:11:44 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Validation/Please_Enter_Valid_Email"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Enter_Valid_Email' successfully
+
+2020-04-23 11:11:44 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Enter_Valid_Email: Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Enter_Valid_Email
+
+2020-04-23 11:11:45 - [TEST_STEP][PASSED] - verifyTextPresent("Please enter a valid email address", false): Text 'Please enter a valid email address' is present on page 
+
+2020-04-23 11:11:46 - [MESSAGE][PASSED] - Text 'Please enter a valid email address' is present on page 
+
+2020-04-23 11:11:46 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Enter_Valid_Email' successfully
+
+2020-04-23 11:11:46 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2020-04-23 11:11:51 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2020-04-23 11:11:51 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-23 11:11:51 - [TEST_STEP][PASSED] - " Set - Email Address      |": null
+
+2020-04-23 11:11:51 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Email_Address"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address' successfully
+
+2020-04-23 11:11:51 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address
+
+2020-04-23 11:11:51 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail"), EmailAddress): Text 'ron_mctavish@xtc_0z0.com' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail'
+
+2020-04-23 11:11:51 - [MESSAGE][PASSED] - Text 'ron_mctavish@xtc_0z0.com' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail'
+
+2020-04-23 11:11:51 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address' successfully
+
+2020-04-23 11:11:51 - [TEST_STEP][PASSED] - "---------------------------------------------------------------------------------": null
+
+2020-04-23 11:11:51 - [TEST_STEP][PASSED] - " FIll Remaining Empty Fields With Random Data - To Elicit Validation Message(s)  |": null
+
+2020-04-23 11:11:51 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Random_Data_In_Empty_Fields"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Random_Data_In_Empty_Fields' successfully
+
+2020-04-23 11:11:51 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Random_Data_In_Empty_Fields: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Random_Data_In_Empty_Fields
+
+2020-04-23 11:11:52 - [TEST_STEP][PASSED] - "----------------------------------------------------------------------------------------------": null
+
+2020-04-23 11:11:52 - [TEST_STEP][PASSED] - " Major Changes 05/12/2019 Factored in - As highlighted In The TOP (Driver) Script Header      |": null
+
+2020-04-23 11:11:52 - [TEST_STEP][PASSED] - "----------------------------------------------------------------------------------------------": null
+
+2020-04-23 11:11:52 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName"), Validation_Data_Special_Chars): Text '#£|' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName'
+
+2020-04-23 11:11:52 - [MESSAGE][PASSED] - Text '#£|' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName'
+
+2020-04-23 11:11:52 - [TEST_STEP][PASSED] - "YOUR FULL NAME": null
+
+2020-04-23 11:11:52 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-04-23 11:11:52 - [TEST_STEP][PASSED] - " Set First Name Field on App Sc  |": null
+
+2020-04-23 11:11:52 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName"), 10): Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName' is clickable
+
+2020-04-23 11:11:52 - [MESSAGE][PASSED] - Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName' is clickable
+
+2020-04-23 11:11:52 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName"), Validation_Data_Special_Chars): Text '#£|' is set on object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName'
+
+2020-04-23 11:11:52 - [MESSAGE][PASSED] - Text '#£|' is set on object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName'
+
+2020-04-23 11:11:52 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-04-23 11:11:52 - [TEST_STEP][PASSED] - " Set First Surname Field on App S|": null
+
+2020-04-23 11:11:52 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName"), 10): Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName' is clickable
+
+2020-04-23 11:11:52 - [MESSAGE][PASSED] - Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName' is clickable
+
+2020-04-23 11:11:52 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName"), Validation_Data_Special_Chars): Text '#£|' is set on object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName'
+
+2020-04-23 11:11:52 - [MESSAGE][PASSED] - Text '#£|' is set on object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName'
+
+2020-04-23 11:11:52 - [TEST_STEP][PASSED] - "TRADE CATEGORY": null
+
+2020-04-23 11:11:52 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode"), Validation_Data_Special_Chars): Text '#£|' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode'
+
+2020-04-23 11:11:53 - [MESSAGE][PASSED] - Text '#£|' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode'
+
+2020-04-23 11:11:53 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob"), Validation_Data_Special_Chars): Text '#£|' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob'
+
+2020-04-23 11:11:53 - [MESSAGE][PASSED] - Text '#£|' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob'
+
+2020-04-23 11:11:53 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Random_Data_In_Empty_Fields' successfully
+
+2020-04-23 11:11:53 - [TEST_STEP][PASSED] - "---------------------------------------------": null
+
+2020-04-23 11:11:53 - [TEST_STEP][PASSED] - " Check Trade Category Validation Message     |": null
+
+2020-04-23 11:11:53 - [TEST_STEP][PASSED] - "---------------------------------------------": null
+
+2020-04-23 11:11:53 - [TEST_STEP][PASSED] - "---------------------------------------------------------": null
+
+2020-04-23 11:11:53 - [TEST_STEP][PASSED] - " Check specify a valid phone number Validation Message   |": null
+
+2020-04-23 11:11:53 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Validation/Please_Specify_Valid_Phone_Number"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Specify_Valid_Phone_Number' successfully
+
+2020-04-23 11:11:53 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Specify_Valid_Phone_Number: Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Specify_Valid_Phone_Number
+
+2020-04-23 11:11:53 - [TEST_STEP][PASSED] - verifyTextPresent("Please specify a valid phone number", false): Text 'Please specify a valid phone number' is present on page 
+
+2020-04-23 11:11:54 - [MESSAGE][PASSED] - Text 'Please specify a valid phone number' is present on page 
+
+2020-04-23 11:11:54 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Specify_Valid_Phone_Number' successfully
+
+2020-04-23 11:11:54 - [TEST_STEP][PASSED] - "---------------------------------------------------------": null
+
+2020-04-23 11:11:54 - [TEST_STEP][PASSED] - " Check Remaining Fields with NULL Data Validation Message|": null
+
+2020-04-23 11:11:54 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_NULL_Data_In_Fields_Containing_Invalid_Data"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_NULL_Data_In_Fields_Containing_Invalid_Data' successfully
+
+2020-04-23 11:11:54 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_NULL_Data_In_Fields_Containing_Invalid_Data: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_NULL_Data_In_Fields_Containing_Invalid_Data
+
+2020-04-23 11:11:54 - [TEST_STEP][PASSED] - "----------------------------------------------------------------------------------------------": null
+
+2020-04-23 11:11:54 - [TEST_STEP][PASSED] - " Major Changes 05/12/2019 Factored in - As highlighted In The TOP (Driver) Script Header      |": null
+
+2020-04-23 11:11:54 - [TEST_STEP][PASSED] - "----------------------------------------------------------------------------------------------": null
+
+2020-04-23 11:11:54 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName"), ""): Text '' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName'
+
+2020-04-23 11:11:54 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName'
+
+2020-04-23 11:11:54 - [TEST_STEP][PASSED] - "YOUR FULL NAME": null
+
+2020-04-23 11:11:54 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-04-23 11:11:54 - [TEST_STEP][PASSED] - " Set First Name Field on App Sc  |": null
+
+2020-04-23 11:11:54 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName"), ""): Text '' is set on object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName'
+
+2020-04-23 11:11:54 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName'
+
+2020-04-23 11:11:54 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-04-23 11:11:54 - [TEST_STEP][PASSED] - " Set First Surname Field on App S|": null
+
+2020-04-23 11:11:54 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName"), ""): Text '' is set on object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName'
+
+2020-04-23 11:11:55 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName'
+
+2020-04-23 11:11:55 - [TEST_STEP][PASSED] - "TRADE CATEGORY": null
+
+2020-04-23 11:11:55 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode"), ""): Text '' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode'
+
+2020-04-23 11:11:55 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode'
+
+2020-04-23 11:11:55 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob"), ""): Text '' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob'
+
+2020-04-23 11:11:55 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob'
+
+2020-04-23 11:11:55 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_NULL_Data_In_Fields_Containing_Invalid_Data' successfully
+
+2020-04-23 11:11:55 - [TEST_STEP][PASSED] - "--------------------------------------------------": null
+
+2020-04-23 11:11:55 - [TEST_STEP][PASSED] - " Check initial Validation Message(s) are Produced |": null
+
+2020-04-23 11:11:55 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required' successfully
+
+2020-04-23 11:11:55 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required: Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required
+
+2020-04-23 11:11:55 - [TEST_STEP][PASSED] - verifyTextPresent("This field is required", false): Text 'This field is required' is present on page 
+
+2020-04-23 11:11:55 - [MESSAGE][PASSED] - Text 'This field is required' is present on page 
+
+2020-04-23 11:11:55 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required' successfully
+
+2020-04-23 11:11:55 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-23 11:11:55 - [TEST_STEP][PASSED] - " Set - Company Name       |": null
+
+2020-04-23 11:11:55 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Company_Name"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name' successfully
+
+2020-04-23 11:11:55 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name
+
+2020-04-23 11:11:56 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName"), CompanyName): Text 'Gutter Snipes' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName'
+
+2020-04-23 11:11:56 - [MESSAGE][PASSED] - Text 'Gutter Snipes' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName'
+
+2020-04-23 11:11:56 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name' successfully
+
+2020-04-23 11:11:56 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-23 11:11:56 - [TEST_STEP][PASSED] - " Set - Full Name          |": null
+
+2020-04-23 11:11:56 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Full_Name"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name' successfully
+
+2020-04-23 11:11:56 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name
+
+2020-04-23 11:11:56 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-04-23 11:11:56 - [TEST_STEP][PASSED] - " Set First Name Field on App Sc  |": null
+
+2020-04-23 11:11:56 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName"), 10): Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName' is clickable
+
+2020-04-23 11:11:56 - [MESSAGE][PASSED] - Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName' is clickable
+
+2020-04-23 11:11:56 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName"), aFirstName): Text 'Ronald' is set on object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName'
+
+2020-04-23 11:11:57 - [MESSAGE][PASSED] - Text 'Ronald' is set on object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName'
+
+2020-04-23 11:11:57 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-04-23 11:11:57 - [TEST_STEP][PASSED] - " Set First Surname Field on App S|": null
+
+2020-04-23 11:11:57 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName"), 10): Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName' is clickable
+
+2020-04-23 11:11:57 - [MESSAGE][PASSED] - Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName' is clickable
+
+2020-04-23 11:11:57 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName"), aSurName): Text 'MacGinty' is set on object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName'
+
+2020-04-23 11:11:57 - [MESSAGE][PASSED] - Text 'MacGinty' is set on object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName'
+
+2020-04-23 11:11:57 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name' successfully
+
+2020-04-23 11:11:57 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-23 11:11:57 - [TEST_STEP][PASSED] - " Set - Trade Category     |": null
+
+2020-04-23 11:11:57 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-23 11:11:57 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-23 11:11:57 - [TEST_STEP][PASSED] - " lookup - Trade Category  |": null
+
+2020-04-23 11:11:57 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-23 11:11:57 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-23 11:11:57 - [TEST_STEP][PASSED] - " Postcode Prompt          |": null
+
+2020-04-23 11:11:57 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-23 11:11:57 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-23 11:11:57 - [TEST_STEP][PASSED] - " Set - Postcode           |": null
+
+2020-04-23 11:11:57 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Postcode"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode' successfully
+
+2020-04-23 11:11:57 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode
+
+2020-04-23 11:11:58 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Checkatrade Want to build your business/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode"), postcode): Text 'PO12 4SD' is set on object 'Object Repository/Page_Checkatrade Want to build your business/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode'
+
+2020-04-23 11:11:58 - [MESSAGE][PASSED] - Text 'PO12 4SD' is set on object 'Object Repository/Page_Checkatrade Want to build your business/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode'
+
+2020-04-23 11:11:58 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode' successfully
+
+2020-04-23 11:11:58 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-23 11:11:58 - [TEST_STEP][PASSED] - " Set - Contact Number     |": null
+
+2020-04-23 11:11:58 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number' successfully
+
+2020-04-23 11:11:58 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number
+
+2020-04-23 11:11:58 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob"), ContactNumber): Text '02380123456' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob'
+
+2020-04-23 11:11:58 - [MESSAGE][PASSED] - Text '02380123456' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob'
+
+2020-04-23 11:11:58 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number' successfully
+
+2020-04-23 11:11:58 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-23 11:11:58 - [TEST_STEP][PASSED] - " Hit the <SUBMIT> Button  |": null
+
+2020-04-23 11:11:58 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Hit_Submit"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit' successfully
+
+2020-04-23 11:11:58 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit: Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit
+
+2020-04-23 11:11:58 - [TEST_STEP][PASSED] - "----------------------------------------------------------------------------------": null
+
+2020-04-23 11:11:58 - [TEST_STEP][PASSED] - "SUBMIT BUTTON IS OFF THE BOTTOM OF THE PAGE - SO NEED TO SCROLL TO BOTTOM OF PAGE |": null
+
+2020-04-23 11:11:58 - [TEST_STEP][PASSED] - "----------------------------------------------------------------------------------": null
+
+2020-04-23 11:11:58 - [TEST_STEP][PASSED] - "Wholesale cahnges on 05/12/2019 Cause refactor - Old left Commented": null
+
+2020-04-23 11:11:58 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-04-23 11:11:59 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-04-23 11:11:59 - [TEST_STEP][PASSED] - "-------------": null
+
+2020-04-23 11:11:59 - [TEST_STEP][PASSED] - "Click Submit |": null
+
+2020-04-23 11:11:59 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_Privacy Notice_ctl00contentbtnSubmit")): Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_Privacy Notice_ctl00contentbtnSubmit' is clicked on
+
+2020-04-23 11:12:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_Privacy Notice_ctl00contentbtnSubmit' is clicked on
+
+2020-04-23 11:12:04 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit' successfully
+
+2020-04-23 11:12:04 - [TEST_STEP][PASSED] - "---------------------------------------------------": null
+
+2020-04-23 11:12:04 - [TEST_STEP][PASSED] - "Verify CONGRATULATIONS is reported after form fill ": null
+
+2020-04-23 11:12:04 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported' successfully
+
+2020-04-23 11:12:04 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported: Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported
+
+2020-04-23 11:12:05 - [TEST_STEP][PASSED] - "-----------------------------": null
+
+2020-04-23 11:12:05 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-23 11:12:05 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-23 11:12:05 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-04-23 11:12:06 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-04-23 11:12:06 - [TEST_STEP][PASSED] - "-----------------------------": null
+
+2020-04-23 11:12:06 - [TEST_STEP][PASSED] - verifyTextPresent("Congratulations, you're one step closer to becoming a Checkatrade Member!", false): Text 'Congratulations, you're one step closer to becoming a Checkatrade Member!' is present on page 
+
+2020-04-23 11:12:07 - [MESSAGE][PASSED] - Text 'Congratulations, you're one step closer to becoming a Checkatrade Member!' is present on page 
+
+2020-04-23 11:12:07 - [TEST_STEP][PASSED] - verifyTextPresent("One of the team will call you within 1 working day to discuss how a Checkatrade membership can work for you", false): Text 'One of the team will call you within 1 working day to discuss how a Checkatrade membership can work for you' is present on page 
+
+2020-04-23 11:12:07 - [MESSAGE][PASSED] - Text 'One of the team will call you within 1 working day to discuss how a Checkatrade membership can work for you' is present on page 
+
+2020-04-23 11:12:07 - [TEST_STEP][PASSED] - verifyTextPresent("Thank you for your interest, we look forward to speaking to you", false): Text 'Thank you for your interest, we look forward to speaking to you' is present on page 
+
+2020-04-23 11:12:08 - [MESSAGE][PASSED] - Text 'Thank you for your interest, we look forward to speaking to you' is present on page 
+
+2020-04-23 11:12:08 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported' successfully
+
+2020-04-23 11:12:08 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-23 11:12:08 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2020-04-23 11:12:08 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-04-23 11:12:08 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2020-04-23 11:12:08 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-04-23 11:12:11 - [MESSAGE][PASSED] - Browser is closed
+
+2020-04-23 11:12:11 - [TEST_STEP][PASSED] - super.finalize(): null
+
+2020-04-23 11:12:11 - [TEST_STEP][PASSED] - System.gc(): null
+
+2020-04-23 11:12:11 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-04-23 11:12:11 - [TEST_STEP][PASSED] - "-------------------------------------------": null
+
+2020-04-23 11:12:11 - [TEST_STEP][PASSED] - " Web Office Call to Ensure NEW CASE Opened |": null
+
+2020-04-23 11:12:11 - [TEST_STEP][PASSED] - "-------------------------------------------": null
+
+2020-04-23 11:12:11 - [TEST_STEP][PASSED] - "------": null
+
+2020-04-23 11:12:11 - [TEST_STEP][PASSED] - "TODO  |": null
+
+2020-04-23 11:12:11 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Web_Office/Case_Opened"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Web_Office/Case_Opened' successfully
+
+2020-04-23 11:12:11 - [TEST_CASE][PASSED] - Test Cases/Web_Office/Case_Opened: Test Cases/Web_Office/Case_Opened
+
+2020-04-23 11:12:11 - [TEST_STEP][PASSED] - return null: null
+
+2020-04-23 11:12:11 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Web_Office/Case_Opened' successfully
+
+2020-04-23 11:12:11 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-23 11:12:11 - [TEST_STEP][PASSED] - " END                      |": null
+
+2020-04-23 11:12:11 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-23 11:12:11 - [TEST_STEP][PASSED] - markWarning("No Validation of POSTCODE apart from NULL Entry Check! * FOR INRORMATION ONLY *"): No Validation of POSTCODE apart from NULL Entry Check! * FOR INRORMATION ONLY *
+
+2020-04-23 11:12:11 - [MESSAGE][WARNING] - No Validation of POSTCODE apart from NULL Entry Check! * FOR INRORMATION ONLY *
+
+2020-04-23 11:12:11 - [TEST_STEP][PASSED] - markWarning("No Validation of COMPANY NAME apart from NULL Entry Check! * FOR INRORMATION ONLY *"): No Validation of COMPANY NAME apart from NULL Entry Check! * FOR INRORMATION ONLY *
+
+2020-04-23 11:12:11 - [MESSAGE][WARNING] - No Validation of COMPANY NAME apart from NULL Entry Check! * FOR INRORMATION ONLY *
+
+2020-04-23 11:12:11 - [TEST_STEP][PASSED] - markWarning("No Validation of YOUR FULL NAME apart from NULL Entry Check! * FOR INRORMATION ONLY *"): No Validation of YOUR FULL NAME apart from NULL Entry Check! * FOR INRORMATION ONLY *
+
+2020-04-23 11:12:11 - [MESSAGE][WARNING] - No Validation of YOUR FULL NAME apart from NULL Entry Check! * FOR INRORMATION ONLY *]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Sign_Up/Trades_Apply_Here" time="35.733" classname="Test Cases/Sign_Up/Trades_Apply_Here" status="PASSED">
+         <system-out><![CDATA[2020-04-23 11:12:11 - [TEST_CASE][PASSED] - Test Cases/Sign_Up/Trades_Apply_Here: Test Cases/Sign_Up/Trades_Apply_Here
+
+2020-04-23 11:12:11 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Setup"), [:], OPTIONAL): Unable to call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' (Root cause: com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Trades_Apply_Here.run(Trades_Apply_Here:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1587636603992.run(TempTestSuite1587636603992.groovy:37)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Text 'Cookie Policy' is present on page  (Root cause: com.kms.katalon.core.exception.StepFailedException: Text 'Cookie Policy' is present on page 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword$_verifyTextNotPresent_closure1.doCall(VerifyTextNotPresentKeyword.groovy:77)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword$_verifyTextNotPresent_closure1.call(VerifyTextNotPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword.verifyTextNotPresent(VerifyTextNotPresentKeyword.groovy:82)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword.execute(VerifyTextNotPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextNotPresent(WebUiBuiltInKeywords.groovy:1752)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextNotPresent$4.call(Unknown Source)
+	at CAT_Setup.run(CAT_Setup:177)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Trades_Apply_Here.run(Trades_Apply_Here:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1587636603992.run(TempTestSuite1587636603992.groovy:37)
+)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword$_verifyTextNotPresent_closure1.doCall(VerifyTextNotPresentKeyword.groovy:77)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword$_verifyTextNotPresent_closure1.call(VerifyTextNotPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword.verifyTextNotPresent(VerifyTextNotPresentKeyword.groovy:82)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword.execute(VerifyTextNotPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextNotPresent(WebUiBuiltInKeywords.groovy:1752)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextNotPresent$4.call(Unknown Source)
+	at CAT_Setup.run(CAT_Setup:177)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: com.kms.katalon.core.exception.StepFailedException: Text 'Cookie Policy' is present on page 
+	... 39 more
+)
+
+2020-04-23 11:12:11 - [TEST_CASE][FAILED] - Test Cases/Reusable_Test_Sequences/CAT_Setup: Test Cases/Reusable_Test_Sequences/CAT_Setup FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Text 'Cookie Policy' is present on page  (Root cause: com.kms.katalon.core.exception.StepFailedException: Text 'Cookie Policy' is present on page 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword$_verifyTextNotPresent_closure1.doCall(VerifyTextNotPresentKeyword.groovy:77)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword$_verifyTextNotPresent_closure1.call(VerifyTextNotPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword.verifyTextNotPresent(VerifyTextNotPresentKeyword.groovy:82)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword.execute(VerifyTextNotPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextNotPresent(WebUiBuiltInKeywords.groovy:1752)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextNotPresent$4.call(Unknown Source)
+	at CAT_Setup.run(CAT_Setup:177)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Trades_Apply_Here.run(Trades_Apply_Here:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1587636603992.run(TempTestSuite1587636603992.groovy:37)
+)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword$_verifyTextNotPresent_closure1.doCall(VerifyTextNotPresentKeyword.groovy:77)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword$_verifyTextNotPresent_closure1.call(VerifyTextNotPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword.verifyTextNotPresent(VerifyTextNotPresentKeyword.groovy:82)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword.execute(VerifyTextNotPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextNotPresent(WebUiBuiltInKeywords.groovy:1752)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextNotPresent$4.call(Unknown Source)
+	at CAT_Setup.run(CAT_Setup:177)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Trades_Apply_Here.run(Trades_Apply_Here:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1587636603992.run(TempTestSuite1587636603992.groovy:37)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Text 'Cookie Policy' is present on page 
+	... 39 more
+
+
+2020-04-23 11:12:12 - [TEST_STEP][PASSED] - "------------------------------": null
+
+2020-04-23 11:12:12 - [TEST_STEP][PASSED] - " Set Mobile Device Testing    |": null
+
+2020-04-23 11:12:12 - [TEST_STEP][PASSED] - if (Mobile_Flag == "true"): null
+
+2020-04-23 11:12:12 - [TEST_STEP][PASSED] - "------------------------------": null
+
+2020-04-23 11:12:12 - [TEST_STEP][PASSED] - " Set Mobile Device Testing    |": null
+
+2020-04-23 11:12:12 - [TEST_STEP][PASSED] - "------------------------------": null
+
+2020-04-23 11:12:12 - [TEST_STEP][PASSED] - "URL - Set from the ENVIRONMENT PROFILE ": null
+
+2020-04-23 11:12:12 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://www.preview.checkatrade.com/'
+
+2020-04-23 11:12:12 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-04-23 11:12:12 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2020-04-23 11:12:21 - [MESSAGE][PASSED] - Browser is opened with url: 'https://www.preview.checkatrade.com/'
+
+2020-04-23 11:12:21 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-04-23 11:12:21 - [MESSAGE][PASSED] - Current window maximized
+
+2020-04-23 11:12:21 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-23 11:12:21 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-23 11:12:21 - [TEST_STEP][PASSED] - "Previous Functionalilty Left Commented For Ease Of reversion": null
+
+2020-04-23 11:12:21 - [TEST_STEP][PASSED] - " Katalon Try/Catches currently have issues? SEE HEADER": null
+
+2020-04-23 11:12:21 - [TEST_STEP][FAILED] - try: Text 'Cookie Policy' is present on page  (Root cause: com.kms.katalon.core.exception.StepFailedException: Text 'Cookie Policy' is present on page 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword$_verifyTextNotPresent_closure1.doCall(VerifyTextNotPresentKeyword.groovy:77)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword$_verifyTextNotPresent_closure1.call(VerifyTextNotPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword.verifyTextNotPresent(VerifyTextNotPresentKeyword.groovy:82)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword.execute(VerifyTextNotPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextNotPresent(WebUiBuiltInKeywords.groovy:1752)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextNotPresent$4.call(Unknown Source)
+	at CAT_Setup.run(CAT_Setup:177)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Trades_Apply_Here.run(Trades_Apply_Here:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1587636603992.run(TempTestSuite1587636603992.groovy:37)
+)
+
+2020-04-23 11:12:21 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All"), 5, OPTIONAL): Object 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is present
+
+2020-04-23 11:12:21 - [MESSAGE][PASSED] - Object 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is present
+
+2020-04-23 11:12:21 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All"), OPTIONAL): Unable to click on object 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:604)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at CAT_Setup.run(CAT_Setup:160)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Trades_Apply_Here.run(Trades_Apply_Here:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1587636603992.run(TempTestSuite1587636603992.groovy:37)
+Caused by: org.openqa.selenium.ElementNotInteractableException: Element <button class="optanon-allow-all accept-cookies-button"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'VETTEDSP36RF', ip: '192.168.1.238', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 74.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403064753, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 54908, moz:profile: C:\Users\davidho\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e2f71c32-7a53-491d-955d-a8d115130c48
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CFirefoxDriver.execute(CFirefoxDriver.java:27)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:604)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at Script1566310608953.run(Script1566310608953.groovy:160)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Script1564485480008.run(Script1564485480008.groovy:61)
+	... 13 more
+)
+
+2020-04-23 11:12:22 - [MESSAGE][WARNING] - Unable to click on object 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:604)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at CAT_Setup.run(CAT_Setup:160)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Trades_Apply_Here.run(Trades_Apply_Here:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1587636603992.run(TempTestSuite1587636603992.groovy:37)
+Caused by: org.openqa.selenium.ElementNotInteractableException: Element <button class="optanon-allow-all accept-cookies-button"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'VETTEDSP36RF', ip: '192.168.1.238', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 74.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403064753, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 54908, moz:profile: C:\Users\davidho\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e2f71c32-7a53-491d-955d-a8d115130c48
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CFirefoxDriver.execute(CFirefoxDriver.java:27)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:604)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at Script1566310608953.run(Script1566310608953.groovy:160)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Script1564485480008.run(Script1564485480008.groovy:61)
+	... 13 more
+)
+[[ATTACHMENT|C:\\Users\\davidho\\git\\src\\Reports\\20200423_111000\\Trades_Apply_Here\\20200423_111003\\1587636742120.png]]
+
+2020-04-23 11:12:22 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-04-23 11:12:22 - [TEST_STEP][PASSED] - "COOKIE POPOUT REMOVED - Confirmed": null
+
+2020-04-23 11:12:22 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-04-23 11:12:23 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-04-23 11:12:23 - [TEST_STEP][PASSED] - verifyTextNotPresent("We use cookies to personalise content and ads, to provide social media features and to analyse our traffic", false): Text 'We use cookies to personalise content and ads, to provide social media features and to analyse our traffic' is not present on page
+
+2020-04-23 11:12:23 - [MESSAGE][PASSED] - Text 'We use cookies to personalise content and ads, to provide social media features and to analyse our traffic' is not present on page
+
+2020-04-23 11:12:23 - [TEST_STEP][PASSED] - verifyTextNotPresent(" We also share information about your use of our site with our social media, advertising and analytics partners", false): Text ' We also share information about your use of our site with our social media, advertising and analytics partners' is not present on page
+
+2020-04-23 11:12:24 - [MESSAGE][PASSED] - Text ' We also share information about your use of our site with our social media, advertising and analytics partners' is not present on page
+
+2020-04-23 11:12:24 - [TEST_STEP][FAILED] - verifyTextNotPresent("Cookie Policy", false): Text 'Cookie Policy' is present on page  (Root cause: com.kms.katalon.core.exception.StepFailedException: Text 'Cookie Policy' is present on page 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword$_verifyTextNotPresent_closure1.doCall(VerifyTextNotPresentKeyword.groovy:77)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword$_verifyTextNotPresent_closure1.call(VerifyTextNotPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword.verifyTextNotPresent(VerifyTextNotPresentKeyword.groovy:82)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword.execute(VerifyTextNotPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextNotPresent(WebUiBuiltInKeywords.groovy:1752)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextNotPresent$4.call(Unknown Source)
+	at CAT_Setup.run(CAT_Setup:177)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Trades_Apply_Here.run(Trades_Apply_Here:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1587636603992.run(TempTestSuite1587636603992.groovy:37)
+)
+
+2020-04-23 11:12:24 - [MESSAGE][FAILED] - Text 'Cookie Policy' is present on page  (Root cause: com.kms.katalon.core.exception.StepFailedException: Text 'Cookie Policy' is present on page 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword$_verifyTextNotPresent_closure1.doCall(VerifyTextNotPresentKeyword.groovy:77)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword$_verifyTextNotPresent_closure1.call(VerifyTextNotPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword.verifyTextNotPresent(VerifyTextNotPresentKeyword.groovy:82)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword.execute(VerifyTextNotPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextNotPresent(WebUiBuiltInKeywords.groovy:1752)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextNotPresent$4.call(Unknown Source)
+	at CAT_Setup.run(CAT_Setup:177)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Trades_Apply_Here.run(Trades_Apply_Here:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1587636603992.run(TempTestSuite1587636603992.groovy:37)
+)
+
+2020-04-23 11:12:24 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-23 11:12:24 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-23 11:12:24 - [TEST_STEP][PASSED] - "COOKIE - ORIGINAL": null
+
+2020-04-23 11:12:24 - [TEST_STEP][PASSED] - if (waitForElementVisible(findTestObject("Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review"), 5)): Web element with id: 'Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review' located by 'By.xpath: //input[@id='feedback-form__company_autocomplete_input']' not found
+
+2020-04-23 11:12:29 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //input[@id='feedback-form__company_autocomplete_input']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2020-04-23 11:12:29 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review' located by 'By.xpath: //input[@id='feedback-form__company_autocomplete_input']' not found
+
+2020-04-23 11:12:29 - [TEST_STEP][PASSED] - else: The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-04-23 11:12:29 - [TEST_STEP][PASSED] - if (!(verifyElementVisible(findTestObject("Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF")))): Object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF' is visible
+
+2020-04-23 11:12:29 - [MESSAGE][PASSED] - Object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF' is visible
+
+2020-04-23 11:12:29 - [TEST_STEP][PASSED] - else: The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-04-23 11:12:29 - [TEST_STEP][PASSED] - Website_Version = "old": null
+
+2020-04-23 11:12:29 - [TEST_STEP][PASSED] - logInfo("The <<<OLD>>> Website was detected by the STARTUP Process"): The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-04-23 11:12:29 - [MESSAGE][INFO] - The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-04-23 11:12:29 - [MESSAGE][WARNING] - Unable to call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' (Root cause: com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Trades_Apply_Here.run(Trades_Apply_Here:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1587636603992.run(TempTestSuite1587636603992.groovy:37)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Text 'Cookie Policy' is present on page  (Root cause: com.kms.katalon.core.exception.StepFailedException: Text 'Cookie Policy' is present on page 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword$_verifyTextNotPresent_closure1.doCall(VerifyTextNotPresentKeyword.groovy:77)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword$_verifyTextNotPresent_closure1.call(VerifyTextNotPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword.verifyTextNotPresent(VerifyTextNotPresentKeyword.groovy:82)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword.execute(VerifyTextNotPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextNotPresent(WebUiBuiltInKeywords.groovy:1752)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextNotPresent$4.call(Unknown Source)
+	at CAT_Setup.run(CAT_Setup:177)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Trades_Apply_Here.run(Trades_Apply_Here:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1587636603992.run(TempTestSuite1587636603992.groovy:37)
+)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword$_verifyTextNotPresent_closure1.doCall(VerifyTextNotPresentKeyword.groovy:77)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword$_verifyTextNotPresent_closure1.call(VerifyTextNotPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword.verifyTextNotPresent(VerifyTextNotPresentKeyword.groovy:82)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextNotPresentKeyword.execute(VerifyTextNotPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextNotPresent(WebUiBuiltInKeywords.groovy:1752)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextNotPresent$4.call(Unknown Source)
+	at CAT_Setup.run(CAT_Setup:177)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: com.kms.katalon.core.exception.StepFailedException: Text 'Cookie Policy' is present on page 
+	... 39 more
+)
+
+2020-04-23 11:12:29 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-23 11:12:29 - [TEST_STEP][PASSED] - " Hit the <TRADES, APPLY HERE> Button  |": null
+
+2020-04-23 11:12:29 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here' successfully
+
+2020-04-23 11:12:29 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here: Test Cases/Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here
+
+2020-04-23 11:12:29 - [TEST_STEP][PASSED] - if (Website_Version == "new"): null
+
+2020-04-23 11:12:29 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application' is clicked on
+
+2020-04-23 11:12:29 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-04-23 11:12:29 - [TEST_STEP][PASSED] - " Click on <Trades> Header Button |": null
+
+2020-04-23 11:12:29 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades"), 10): Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades' is clickable
+
+2020-04-23 11:12:29 - [MESSAGE][PASSED] - Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades' is clickable
+
+2020-04-23 11:12:29 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades")): Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades' is clicked on
+
+2020-04-23 11:12:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades' is clicked on
+
+2020-04-23 11:12:30 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-04-23 11:12:30 - [TEST_STEP][PASSED] - " Click on <Find Out More> Banner |": null
+
+2020-04-23 11:12:30 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more"), 10): Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more' is clickable
+
+2020-04-23 11:12:30 - [MESSAGE][PASSED] - Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more' is clickable
+
+2020-04-23 11:12:30 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more")): Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more' is clicked on
+
+2020-04-23 11:12:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more' is clicked on
+
+2020-04-23 11:12:33 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-04-23 11:12:33 - [TEST_STEP][PASSED] - " Click on <Trade Application> B  |": null
+
+2020-04-23 11:12:33 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application"), 10): Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application' is clickable
+
+2020-04-23 11:12:33 - [MESSAGE][PASSED] - Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application' is clickable
+
+2020-04-23 11:12:33 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application")): Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application' is clicked on
+
+2020-04-23 11:12:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application' is clicked on
+
+2020-04-23 11:12:36 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here' successfully
+
+2020-04-23 11:12:36 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-23 11:12:36 - [TEST_STEP][PASSED] - " Set - Full Name          |": null
+
+2020-04-23 11:12:36 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Full_Name"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name' successfully
+
+2020-04-23 11:12:36 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name
+
+2020-04-23 11:12:36 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-04-23 11:12:36 - [TEST_STEP][PASSED] - " Set First Name Field on App Sc  |": null
+
+2020-04-23 11:12:36 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName"), 10): Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName' is clickable
+
+2020-04-23 11:12:36 - [MESSAGE][PASSED] - Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName' is clickable
+
+2020-04-23 11:12:36 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName"), aFirstName): Text 'Ronald' is set on object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName'
+
+2020-04-23 11:12:36 - [MESSAGE][PASSED] - Text 'Ronald' is set on object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName'
+
+2020-04-23 11:12:36 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-04-23 11:12:36 - [TEST_STEP][PASSED] - " Set First Surname Field on App S|": null
+
+2020-04-23 11:12:36 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName"), 10): Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName' is clickable
+
+2020-04-23 11:12:36 - [MESSAGE][PASSED] - Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName' is clickable
+
+2020-04-23 11:12:36 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName"), aSurName): Text 'MacGinty' is set on object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName'
+
+2020-04-23 11:12:36 - [MESSAGE][PASSED] - Text 'MacGinty' is set on object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName'
+
+2020-04-23 11:12:36 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name' successfully
+
+2020-04-23 11:12:36 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-23 11:12:36 - [TEST_STEP][PASSED] - " Set - Email Address      |": null
+
+2020-04-23 11:12:36 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Email_Address"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address' successfully
+
+2020-04-23 11:12:36 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address
+
+2020-04-23 11:12:36 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail"), EmailAddress): Text 'ron_mctavish@xtc_0z0.com' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail'
+
+2020-04-23 11:12:37 - [MESSAGE][PASSED] - Text 'ron_mctavish@xtc_0z0.com' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail'
+
+2020-04-23 11:12:37 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address' successfully
+
+2020-04-23 11:12:37 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-23 11:12:37 - [TEST_STEP][PASSED] - " Set - Company Name       |": null
+
+2020-04-23 11:12:37 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Company_Name"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name' successfully
+
+2020-04-23 11:12:37 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name
+
+2020-04-23 11:12:37 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName"), CompanyName): Text 'Gutter Snipes' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName'
+
+2020-04-23 11:12:37 - [MESSAGE][PASSED] - Text 'Gutter Snipes' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName'
+
+2020-04-23 11:12:37 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name' successfully
+
+2020-04-23 11:12:37 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-23 11:12:37 - [TEST_STEP][PASSED] - " Set - Trade Category     |": null
+
+2020-04-23 11:12:37 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-23 11:12:37 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-23 11:12:37 - [TEST_STEP][PASSED] - " lookup - Trade Category  |": null
+
+2020-04-23 11:12:37 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-23 11:12:37 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-23 11:12:37 - [TEST_STEP][PASSED] - " Postcode Prompt          |": null
+
+2020-04-23 11:12:37 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-23 11:12:37 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-23 11:12:37 - [TEST_STEP][PASSED] - " Set - Postcode           |": null
+
+2020-04-23 11:12:37 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-23 11:12:37 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-23 11:12:37 - [TEST_STEP][PASSED] - " Set - Contact Number     |": null
+
+2020-04-23 11:12:37 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number' successfully
+
+2020-04-23 11:12:37 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number
+
+2020-04-23 11:12:37 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob"), ContactNumber): Text '02380123456' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob'
+
+2020-04-23 11:12:37 - [MESSAGE][PASSED] - Text '02380123456' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob'
+
+2020-04-23 11:12:37 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number' successfully
+
+2020-04-23 11:12:37 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-23 11:12:37 - [TEST_STEP][PASSED] - " Set - Postcode NEW       |": null
+
+2020-04-23 11:12:37 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Postcode"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode' successfully
+
+2020-04-23 11:12:37 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode
+
+2020-04-23 11:12:37 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Checkatrade Want to build your business/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode"), postcode): Text 'PO12 4SD' is set on object 'Object Repository/Page_Checkatrade Want to build your business/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode'
+
+2020-04-23 11:12:37 - [MESSAGE][PASSED] - Text 'PO12 4SD' is set on object 'Object Repository/Page_Checkatrade Want to build your business/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode'
+
+2020-04-23 11:12:37 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode' successfully
+
+2020-04-23 11:12:37 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-23 11:12:37 - [TEST_STEP][PASSED] - " Hit the <SUBMIT> Button  |": null
+
+2020-04-23 11:12:37 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Hit_Submit"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit' successfully
+
+2020-04-23 11:12:37 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit: Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit
+
+2020-04-23 11:12:38 - [TEST_STEP][PASSED] - "----------------------------------------------------------------------------------": null
+
+2020-04-23 11:12:38 - [TEST_STEP][PASSED] - "SUBMIT BUTTON IS OFF THE BOTTOM OF THE PAGE - SO NEED TO SCROLL TO BOTTOM OF PAGE |": null
+
+2020-04-23 11:12:38 - [TEST_STEP][PASSED] - "----------------------------------------------------------------------------------": null
+
+2020-04-23 11:12:38 - [TEST_STEP][PASSED] - "Wholesale cahnges on 05/12/2019 Cause refactor - Old left Commented": null
+
+2020-04-23 11:12:38 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-04-23 11:12:39 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-04-23 11:12:39 - [TEST_STEP][PASSED] - "-------------": null
+
+2020-04-23 11:12:39 - [TEST_STEP][PASSED] - "Click Submit |": null
+
+2020-04-23 11:12:39 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_Privacy Notice_ctl00contentbtnSubmit")): Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_Privacy Notice_ctl00contentbtnSubmit' is clicked on
+
+2020-04-23 11:12:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_Privacy Notice_ctl00contentbtnSubmit' is clicked on
+
+2020-04-23 11:12:42 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit' successfully
+
+2020-04-23 11:12:42 - [TEST_STEP][PASSED] - "---------------------------------------------------": null
+
+2020-04-23 11:12:42 - [TEST_STEP][PASSED] - "Verify CONGRATULATIONS is reported after form fill ": null
+
+2020-04-23 11:12:42 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported' successfully
+
+2020-04-23 11:12:42 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported: Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported
+
+2020-04-23 11:12:42 - [TEST_STEP][PASSED] - "-----------------------------": null
+
+2020-04-23 11:12:42 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-23 11:12:42 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-23 11:12:42 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-04-23 11:12:43 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-04-23 11:12:43 - [TEST_STEP][PASSED] - "-----------------------------": null
+
+2020-04-23 11:12:43 - [TEST_STEP][PASSED] - verifyTextPresent("Congratulations, you're one step closer to becoming a Checkatrade Member!", false): Text 'Congratulations, you're one step closer to becoming a Checkatrade Member!' is present on page 
+
+2020-04-23 11:12:44 - [MESSAGE][PASSED] - Text 'Congratulations, you're one step closer to becoming a Checkatrade Member!' is present on page 
+
+2020-04-23 11:12:44 - [TEST_STEP][PASSED] - verifyTextPresent("One of the team will call you within 1 working day to discuss how a Checkatrade membership can work for you", false): Text 'One of the team will call you within 1 working day to discuss how a Checkatrade membership can work for you' is present on page 
+
+2020-04-23 11:12:44 - [MESSAGE][PASSED] - Text 'One of the team will call you within 1 working day to discuss how a Checkatrade membership can work for you' is present on page 
+
+2020-04-23 11:12:44 - [TEST_STEP][PASSED] - verifyTextPresent("Thank you for your interest, we look forward to speaking to you", false): Text 'Thank you for your interest, we look forward to speaking to you' is present on page 
+
+2020-04-23 11:12:45 - [MESSAGE][PASSED] - Text 'Thank you for your interest, we look forward to speaking to you' is present on page 
+
+2020-04-23 11:12:45 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported' successfully
+
+2020-04-23 11:12:45 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-23 11:12:45 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2020-04-23 11:12:45 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-04-23 11:12:45 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2020-04-23 11:12:45 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-04-23 11:12:47 - [MESSAGE][PASSED] - Browser is closed
+
+2020-04-23 11:12:47 - [TEST_STEP][PASSED] - super.finalize(): null
+
+2020-04-23 11:12:47 - [TEST_STEP][PASSED] - System.gc(): null
+
+2020-04-23 11:12:47 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-04-23 11:11:10 - [TEST_SUITE][PASSED] - Trades_Apply_Here: Test Cases/Sign_Up/Trades_Apply_Here]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

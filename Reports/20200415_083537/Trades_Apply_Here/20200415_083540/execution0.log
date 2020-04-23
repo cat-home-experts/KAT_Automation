@@ -1,0 +1,2820 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-04-15T08:39:18</date>
+  <millis>1586936358968</millis>
+  <sequence>0</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startSuite</method>
+  <thread>1</thread>
+  <message>Start Test Suite : Test Suites/Trades_Apply_Here</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="name">Trades_Apply_Here</property>
+  <property name="description"></property>
+  <property name="id">Test Suites/Trades_Apply_Here</property>
+</record>
+<record>
+  <date>2020-04-15T08:39:19</date>
+  <millis>1586936359024</millis>
+  <sequence>1</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>hostName = DavidHo - 192.168.1.238</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="hostName">DavidHo - 192.168.1.238</property>
+</record>
+<record>
+  <date>2020-04-15T08:39:19</date>
+  <millis>1586936359028</millis>
+  <sequence>2</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>os = Windows 10 32bit</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="os">Windows 10 32bit</property>
+</record>
+<record>
+  <date>2020-04-15T08:39:19</date>
+  <millis>1586936359029</millis>
+  <sequence>3</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>hostAddress = 192.168.1.238</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="hostAddress">192.168.1.238</property>
+</record>
+<record>
+  <date>2020-04-15T08:39:19</date>
+  <millis>1586936359030</millis>
+  <sequence>4</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>katalonVersion = 7.3.0.1</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="katalonVersion">7.3.0.1</property>
+</record>
+<record>
+  <date>2020-04-15T08:39:19</date>
+  <millis>1586936359304</millis>
+  <sequence>5</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Sign_Up/Trades_Apply_Here_Validation</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/Sign_Up/Trades_Apply_Here_Validation</property>
+  <property name="description"></property>
+  <property name="id">Test Cases/Sign_Up/Trades_Apply_Here_Validation</property>
+  <property name="source">C:\\Users\\davidho\\git\\src\\Test Cases\\Sign_Up\\Trades_Apply_Here_Validation.tc</property>
+  <property name="tag"></property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-04-15T08:39:20</date>
+  <millis>1586936360188</millis>
+  <sequence>9</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/CAT_Setup</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/CAT_Setup</property>
+  <property name="description"></property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/CAT_Setup</property>
+  <property name="source">C:\\Users\\davidho\\git\\src\\Test Cases\\Reusable_Test_Sequences\\CAT_Setup.tc</property>
+  <property name="tag"></property>
+  <property name="isOptional">true</property>
+</record>
+<record>
+  <date>2020-04-15T08:39:22</date>
+  <millis>1586936362257</millis>
+  <sequence>12</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Starting &amp;apos;Firefox&amp;apos; driver</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:22</date>
+  <millis>1586936362434</millis>
+  <sequence>14</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Action delay is set to 0 milliseconds</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:31</date>
+  <millis>1586936371366</millis>
+  <sequence>16</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>sessionId = b74b4159-5bb6-4bb7-9e0c-4e8f76524303</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="sessionId">b74b4159-5bb6-4bb7-9e0c-4e8f76524303</property>
+</record>
+<record>
+  <date>2020-04-15T08:39:31</date>
+  <millis>1586936371386</millis>
+  <sequence>17</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>browser = Firefox 74.0</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="browser">Firefox 74.0</property>
+</record>
+<record>
+  <date>2020-04-15T08:39:31</date>
+  <millis>1586936371387</millis>
+  <sequence>18</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>platform = Windows 10</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="platform">Windows 10</property>
+</record>
+<record>
+  <date>2020-04-15T08:39:31</date>
+  <millis>1586936371387</millis>
+  <sequence>19</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>seleniumVersion = 3.141.59</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="seleniumVersion">3.141.59</property>
+</record>
+<record>
+  <date>2020-04-15T08:39:31</date>
+  <millis>1586936371388</millis>
+  <sequence>20</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>proxyInformation = ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="proxyInformation">ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}</property>
+</record>
+<record>
+  <date>2020-04-15T08:39:35</date>
+  <millis>1586936375299</millis>
+  <sequence>22</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Browser is opened with url: &amp;apos;https://www.preview.checkatrade.com/&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:35</date>
+  <millis>1586936375681</millis>
+  <sequence>24</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Current window maximized</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:36</date>
+  <millis>1586936376163</millis>
+  <sequence>26</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Wait for page load successfully</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:36</date>
+  <millis>1586936376440</millis>
+  <sequence>33</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object &amp;apos;Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All&amp;apos; is present</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:37</date>
+  <millis>1586936377284</millis>
+  <sequence>41</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:38</date>
+  <millis>1586936378341</millis>
+  <sequence>43</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Delayed 1 second(s)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:39</date>
+  <millis>1586936379303</millis>
+  <sequence>46</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;We use cookies to personalise content and ads, to provide social media features and to analyse our traffic&amp;apos; is not present on page</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:40</date>
+  <millis>1586936380033</millis>
+  <sequence>49</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos; We also share information about your use of our site with our social media, advertising and analytics partners&amp;apos; is not present on page</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:40</date>
+  <millis>1586936380716</millis>
+  <sequence>52</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;Cookie Policy&amp;apos; is not present on page</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:40</date>
+  <millis>1586936380734</millis>
+  <sequence>54</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Wait for page load successfully</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:45</date>
+  <millis>1586936385959</millis>
+  <sequence>61</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Unable to find the element located by &amp;apos;By.xpath: //input[@id=&amp;apos;feedback-form__company_autocomplete_input&amp;apos;]&amp;apos;. Please recheck the objects properties to make sure the desired element is located. </message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:45</date>
+  <millis>1586936385993</millis>
+  <sequence>63</sequence>
+  <level>WARNING</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Web element with id: &amp;apos;Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review&amp;apos; located by &amp;apos;By.xpath: //input[@id=&amp;apos;feedback-form__company_autocomplete_input&amp;apos;]&amp;apos; not found</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="failed.exception.class">com.kms.katalon.core.webui.exception.WebElementNotFoundException</property>
+  <property name="failed.exception.stacktrace">com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: &apos;Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review&apos; located by &apos;By.xpath: //input[@id=&apos;feedback-form__company_autocomplete_input&apos;]&apos; not found\r\n\tat com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1154)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword$findWebElement.call(Unknown Source)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.WaitForElementVisibleKeyword$_waitForElementVisible_closure1.doCall(WaitForElementVisibleKeyword.groovy:79)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.WaitForElementVisibleKeyword$_waitForElementVisible_closure1.doCall(WaitForElementVisibleKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$runKeyword.call(Unknown Source)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.WaitForElementVisibleKeyword.waitForElementVisible(WaitForElementVisibleKeyword.groovy:98)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.WaitForElementVisibleKeyword.execute(WaitForElementVisibleKeyword.groovy:68)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForElementVisible(WebUiBuiltInKeywords.groovy:434)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$waitForElementVisible$5.call(Unknown Source)\r\n\tat CAT_Setup.run(CAT_Setup:198)\r\n\tat com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)\r\n\tat com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)\r\n\tat com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)\r\n\tat com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)\r\n\tat com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)\r\n\tat com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)\r\n\tat com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)\r\n\tat com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)\r\n\tat Trades_Apply_Here_Validation.run(Trades_Apply_Here_Validation:64)\r\n\tat com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)\r\n\tat com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)\r\n\tat com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)\r\n\tat TempTestSuite1586936140810.run(TempTestSuite1586936140810.groovy:36)\r\n</property>
+  <property name="failed.exception.message">Web element with id: &apos;Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review&apos; located by &apos;By.xpath: //input[@id=&apos;feedback-form__company_autocomplete_input&apos;]&apos; not found</property>
+</record>
+<record>
+  <date>2020-04-15T08:39:46</date>
+  <millis>1586936386392</millis>
+  <sequence>70</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object &amp;apos;Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF&amp;apos; is visible</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:46</date>
+  <millis>1586936386401</millis>
+  <sequence>71</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>The &amp;lt;&amp;lt;&amp;lt;OLD&amp;gt;&amp;gt;&amp;gt; Website was detected by the STARTUP Process</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:46</date>
+  <millis>1586936386401</millis>
+  <sequence>72</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/CAT_Setup</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:46</date>
+  <millis>1586936386402</millis>
+  <sequence>73</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/CAT_Setup</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:46</date>
+  <millis>1586936386410</millis>
+  <sequence>74</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/CAT_Setup&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:46</date>
+  <millis>1586936386475</millis>
+  <sequence>77</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here</property>
+  <property name="description">Hit the SIGNUP button to trigger the Trades membership application form fill</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here</property>
+  <property name="source">C:\\Users\\davidho\\git\\src\\Test Cases\\Reusable_Test_Sequences\\Banner_Menu\\Trades_Apply_Here.tc</property>
+  <property name="tag">Header Banner Menu</property>
+  <property name="isOptional">true</property>
+</record>
+<record>
+  <date>2020-04-15T08:39:47</date>
+  <millis>1586936387367</millis>
+  <sequence>86</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object &amp;apos;Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades&amp;apos; is clickable</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:47</date>
+  <millis>1586936387701</millis>
+  <sequence>94</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:47</date>
+  <millis>1586936387807</millis>
+  <sequence>102</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object &amp;apos;Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more&amp;apos; is clickable</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:51</date>
+  <millis>1586936391630</millis>
+  <sequence>110</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:51</date>
+  <millis>1586936391974</millis>
+  <sequence>118</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object &amp;apos;Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application&amp;apos; is clickable</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:56</date>
+  <millis>1586936396003</millis>
+  <sequence>126</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:56</date>
+  <millis>1586936396003</millis>
+  <sequence>127</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:56</date>
+  <millis>1586936396004</millis>
+  <sequence>128</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:56</date>
+  <millis>1586936396004</millis>
+  <sequence>129</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:56</date>
+  <millis>1586936396066</millis>
+  <sequence>132</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit</property>
+  <property name="description">Hit the trades application submit button after enter field data (and with no or incorrect field values) - sunny day (provision to data drive and iterate)</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit</property>
+  <property name="source">C:\\Users\\davidho\\git\\src\\Test Cases\\Reusable_Test_Sequences\\TRADES_Application\\Hit_Submit.tc</property>
+  <property name="tag">Trades Membership Application</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-04-15T08:39:57</date>
+  <millis>1586936397532</millis>
+  <sequence>135</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Delayed 1 second(s)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:58</date>
+  <millis>1586936398012</millis>
+  <sequence>143</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_Privacy Notice_ctl00contentbtnSubmit&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:58</date>
+  <millis>1586936398013</millis>
+  <sequence>144</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:58</date>
+  <millis>1586936398015</millis>
+  <sequence>145</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:58</date>
+  <millis>1586936398016</millis>
+  <sequence>146</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:58</date>
+  <millis>1586936398090</millis>
+  <sequence>149</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required</property>
+  <property name="description">This field is required message is displayed when field is empty</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required</property>
+  <property name="source">C:\\Users\\davidho\\git\\src\\Test Cases\\Reusable_Test_Sequences\\TRADES_Application\\Validation\\This_Field_Is_Required.tc</property>
+  <property name="tag">Validation</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-04-15T08:39:58</date>
+  <millis>1586936398750</millis>
+  <sequence>153</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;This field is required&amp;apos; is present on page </message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:58</date>
+  <millis>1586936398751</millis>
+  <sequence>154</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:58</date>
+  <millis>1586936398751</millis>
+  <sequence>155</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:58</date>
+  <millis>1586936398751</millis>
+  <sequence>156</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:58</date>
+  <millis>1586936398812</millis>
+  <sequence>159</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_INVALID_Email_Address</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_INVALID_Email_Address</property>
+  <property name="description">Attempt to set email address in correct format</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_INVALID_Email_Address</property>
+  <property name="source">C:\\Users\\davidho\\git\\src\\Test Cases\\Reusable_Test_Sequences\\TRADES_Application\\Set_INVALID_Email_Address.tc</property>
+  <property name="tag"></property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-04-15T08:39:59</date>
+  <millis>1586936399333</millis>
+  <sequence>174</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;Billy Bob&amp;apos; is set on object &amp;apos;Object Repository/Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:59</date>
+  <millis>1586936399334</millis>
+  <sequence>175</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_INVALID_Email_Address</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:59</date>
+  <millis>1586936399334</millis>
+  <sequence>176</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_INVALID_Email_Address</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:59</date>
+  <millis>1586936399335</millis>
+  <sequence>177</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_INVALID_Email_Address&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:39:59</date>
+  <millis>1586936399398</millis>
+  <sequence>180</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Enter_Valid_Email</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Enter_Valid_Email</property>
+  <property name="description">Ensure that an email address is entered containing @ with no spaces present</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Enter_Valid_Email</property>
+  <property name="source">C:\\Users\\davidho\\git\\src\\Test Cases\\Reusable_Test_Sequences\\TRADES_Application\\Validation\\Please_Enter_Valid_Email.tc</property>
+  <property name="tag">Validation</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-04-15T08:40:01</date>
+  <millis>1586936401215</millis>
+  <sequence>184</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;Please enter a valid email address&amp;apos; is present on page </message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:01</date>
+  <millis>1586936401216</millis>
+  <sequence>185</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Enter_Valid_Email</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:01</date>
+  <millis>1586936401216</millis>
+  <sequence>186</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Enter_Valid_Email</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:01</date>
+  <millis>1586936401216</millis>
+  <sequence>187</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Enter_Valid_Email&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:06</date>
+  <millis>1586936406219</millis>
+  <sequence>189</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Delayed 5 second(s)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:06</date>
+  <millis>1586936406285</millis>
+  <sequence>192</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address</property>
+  <property name="description">Sets the Email Address field, during the Trades membership application form fill</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address</property>
+  <property name="source">C:\\Users\\davidho\\git\\src\\Test Cases\\Reusable_Test_Sequences\\TRADES_Application\\Set_Email_Address.tc</property>
+  <property name="tag">Trades Membership Application</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-04-15T08:40:07</date>
+  <millis>1586936407149</millis>
+  <sequence>207</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;ron_mctavish@xtc_0z0.com&amp;apos; is set on object &amp;apos;Object Repository/Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:07</date>
+  <millis>1586936407150</millis>
+  <sequence>208</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:07</date>
+  <millis>1586936407150</millis>
+  <sequence>209</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:07</date>
+  <millis>1586936407151</millis>
+  <sequence>210</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:07</date>
+  <millis>1586936407214</millis>
+  <sequence>213</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Random_Data_In_Empty_Fields</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Random_Data_In_Empty_Fields</property>
+  <property name="description">Sets random data in remaining empty fields to check on validation for each field</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Random_Data_In_Empty_Fields</property>
+  <property name="source">C:\\Users\\davidho\\git\\src\\Test Cases\\Reusable_Test_Sequences\\TRADES_Application\\Set_Random_Data_In_Empty_Fields.tc</property>
+  <property name="tag"></property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-04-15T08:40:07</date>
+  <millis>1586936407968</millis>
+  <sequence>228</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;#\u00A3|&amp;apos; is set on object &amp;apos;Object Repository/Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:08</date>
+  <millis>1586936408093</millis>
+  <sequence>236</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object &amp;apos;Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName&amp;apos; is clickable</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:08</date>
+  <millis>1586936408302</millis>
+  <sequence>250</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;#\u00A3|&amp;apos; is set on object &amp;apos;Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:08</date>
+  <millis>1586936408420</millis>
+  <sequence>258</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object &amp;apos;Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName&amp;apos; is clickable</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:08</date>
+  <millis>1586936408641</millis>
+  <sequence>272</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;#\u00A3|&amp;apos; is set on object &amp;apos;Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:08</date>
+  <millis>1586936408821</millis>
+  <sequence>286</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;#\u00A3|&amp;apos; is set on object &amp;apos;Object Repository/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:09</date>
+  <millis>1586936409025</millis>
+  <sequence>300</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;#\u00A3|&amp;apos; is set on object &amp;apos;Object Repository/Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:09</date>
+  <millis>1586936409025</millis>
+  <sequence>301</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Random_Data_In_Empty_Fields</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:09</date>
+  <millis>1586936409026</millis>
+  <sequence>302</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Random_Data_In_Empty_Fields</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:09</date>
+  <millis>1586936409026</millis>
+  <sequence>303</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Random_Data_In_Empty_Fields&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:09</date>
+  <millis>1586936409089</millis>
+  <sequence>306</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Specify_Valid_Phone_Number</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Specify_Valid_Phone_Number</property>
+  <property name="description">Please specify a valid phone number is presened when the contact details field contain no valid characters or data entered</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Specify_Valid_Phone_Number</property>
+  <property name="source">C:\\Users\\davidho\\git\\src\\Test Cases\\Reusable_Test_Sequences\\TRADES_Application\\Validation\\Please_Specify_Valid_Phone_Number.tc</property>
+  <property name="tag">Validation</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-04-15T08:40:09</date>
+  <millis>1586936409912</millis>
+  <sequence>310</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;Please specify a valid phone number&amp;apos; is present on page </message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:09</date>
+  <millis>1586936409912</millis>
+  <sequence>311</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Specify_Valid_Phone_Number</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:09</date>
+  <millis>1586936409912</millis>
+  <sequence>312</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Specify_Valid_Phone_Number</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:09</date>
+  <millis>1586936409912</millis>
+  <sequence>313</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Specify_Valid_Phone_Number&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:09</date>
+  <millis>1586936409972</millis>
+  <sequence>316</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_NULL_Data_In_Fields_Containing_Invalid_Data</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_NULL_Data_In_Fields_Containing_Invalid_Data</property>
+  <property name="description">Set null data into field(s) containing invalid data, where the validation constraint don&apos;t detect special characters, so try same check with null values</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_NULL_Data_In_Fields_Containing_Invalid_Data</property>
+  <property name="source">C:\\Users\\davidho\\git\\src\\Test Cases\\Reusable_Test_Sequences\\TRADES_Application\\Set_NULL_Data_In_Fields_Containing_Invalid_Data.tc</property>
+  <property name="tag">Validation</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-04-15T08:40:10</date>
+  <millis>1586936410363</millis>
+  <sequence>331</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;&amp;apos; is set on object &amp;apos;Object Repository/Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:10</date>
+  <millis>1586936410667</millis>
+  <sequence>345</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;&amp;apos; is set on object &amp;apos;Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:10</date>
+  <millis>1586936410914</millis>
+  <sequence>359</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;&amp;apos; is set on object &amp;apos;Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:11</date>
+  <millis>1586936411278</millis>
+  <sequence>373</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;&amp;apos; is set on object &amp;apos;Object Repository/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:11</date>
+  <millis>1586936411586</millis>
+  <sequence>387</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;&amp;apos; is set on object &amp;apos;Object Repository/Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:11</date>
+  <millis>1586936411587</millis>
+  <sequence>388</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_NULL_Data_In_Fields_Containing_Invalid_Data</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:11</date>
+  <millis>1586936411587</millis>
+  <sequence>389</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_NULL_Data_In_Fields_Containing_Invalid_Data</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:11</date>
+  <millis>1586936411588</millis>
+  <sequence>390</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_NULL_Data_In_Fields_Containing_Invalid_Data&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:11</date>
+  <millis>1586936411652</millis>
+  <sequence>393</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required</property>
+  <property name="description">This field is required message is displayed when field is empty</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required</property>
+  <property name="source">C:\\Users\\davidho\\git\\src\\Test Cases\\Reusable_Test_Sequences\\TRADES_Application\\Validation\\This_Field_Is_Required.tc</property>
+  <property name="tag">Validation</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-04-15T08:40:12</date>
+  <millis>1586936412481</millis>
+  <sequence>397</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;This field is required&amp;apos; is present on page </message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:12</date>
+  <millis>1586936412481</millis>
+  <sequence>398</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:12</date>
+  <millis>1586936412482</millis>
+  <sequence>399</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:12</date>
+  <millis>1586936412482</millis>
+  <sequence>400</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:12</date>
+  <millis>1586936412544</millis>
+  <sequence>403</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name</property>
+  <property name="description">Sets the COMPANY NAME field during the Trades membership application form fill</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name</property>
+  <property name="source">C:\\Users\\davidho\\git\\src\\Test Cases\\Reusable_Test_Sequences\\TRADES_Application\\Set_Company_Name.tc</property>
+  <property name="tag">Trades Membership Application</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-04-15T08:40:13</date>
+  <millis>1586936413529</millis>
+  <sequence>418</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;Gutter Snipes&amp;apos; is set on object &amp;apos;Object Repository/Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:13</date>
+  <millis>1586936413530</millis>
+  <sequence>419</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:13</date>
+  <millis>1586936413530</millis>
+  <sequence>420</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:13</date>
+  <millis>1586936413531</millis>
+  <sequence>421</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:13</date>
+  <millis>1586936413592</millis>
+  <sequence>424</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name</property>
+  <property name="description">Sets the Full Name field, during the Trades membership application form fill</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name</property>
+  <property name="source">C:\\Users\\davidho\\git\\src\\Test Cases\\Reusable_Test_Sequences\\TRADES_Application\\Set_Full_Name.tc</property>
+  <property name="tag">Trades Membership Application</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-04-15T08:40:14</date>
+  <millis>1586936414152</millis>
+  <sequence>433</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object &amp;apos;Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName&amp;apos; is clickable</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:14</date>
+  <millis>1586936414297</millis>
+  <sequence>447</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;Ronald&amp;apos; is set on object &amp;apos;Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:14</date>
+  <millis>1586936414409</millis>
+  <sequence>455</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object &amp;apos;Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName&amp;apos; is clickable</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:14</date>
+  <millis>1586936414597</millis>
+  <sequence>469</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;MacGinty&amp;apos; is set on object &amp;apos;Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:14</date>
+  <millis>1586936414598</millis>
+  <sequence>470</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:14</date>
+  <millis>1586936414598</millis>
+  <sequence>471</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:14</date>
+  <millis>1586936414599</millis>
+  <sequence>472</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:14</date>
+  <millis>1586936414662</millis>
+  <sequence>475</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode</property>
+  <property name="description">Sets the postcode field, during the Trades membership application form fill</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode</property>
+  <property name="source">C:\\Users\\davidho\\git\\src\\Test Cases\\Reusable_Test_Sequences\\TRADES_Application\\Set_Postcode.tc</property>
+  <property name="tag">Trades Membership Application</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-04-15T08:40:15</date>
+  <millis>1586936415342</millis>
+  <sequence>490</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;PO12 4SD&amp;apos; is set on object &amp;apos;Object Repository/Page_Checkatrade Want to build your business/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:15</date>
+  <millis>1586936415342</millis>
+  <sequence>491</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:15</date>
+  <millis>1586936415343</millis>
+  <sequence>492</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:15</date>
+  <millis>1586936415343</millis>
+  <sequence>493</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:15</date>
+  <millis>1586936415411</millis>
+  <sequence>496</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number</property>
+  <property name="description">Sets the contact (phone) number  field during the Trades membership application form fill</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number</property>
+  <property name="source">C:\\Users\\davidho\\git\\src\\Test Cases\\Reusable_Test_Sequences\\TRADES_Application\\Set_Contact_Number.tc</property>
+  <property name="tag">Trades Membership Application</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-04-15T08:40:16</date>
+  <millis>1586936416442</millis>
+  <sequence>511</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;02380123456&amp;apos; is set on object &amp;apos;Object Repository/Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:16</date>
+  <millis>1586936416442</millis>
+  <sequence>512</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:16</date>
+  <millis>1586936416443</millis>
+  <sequence>513</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:16</date>
+  <millis>1586936416443</millis>
+  <sequence>514</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:16</date>
+  <millis>1586936416508</millis>
+  <sequence>517</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit</property>
+  <property name="description">Hit the trades application submit button after enter field data (and with no or incorrect field values) - sunny day (provision to data drive and iterate)</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit</property>
+  <property name="source">C:\\Users\\davidho\\git\\src\\Test Cases\\Reusable_Test_Sequences\\TRADES_Application\\Hit_Submit.tc</property>
+  <property name="tag">Trades Membership Application</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-04-15T08:40:17</date>
+  <millis>1586936417521</millis>
+  <sequence>520</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Delayed 1 second(s)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:19</date>
+  <millis>1586936419947</millis>
+  <sequence>528</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_Privacy Notice_ctl00contentbtnSubmit&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:19</date>
+  <millis>1586936419947</millis>
+  <sequence>529</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:19</date>
+  <millis>1586936419947</millis>
+  <sequence>530</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:19</date>
+  <millis>1586936419948</millis>
+  <sequence>531</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:20</date>
+  <millis>1586936420007</millis>
+  <sequence>534</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported</property>
+  <property name="description">On completion of form fill and hitting submit will return a CONGRATULATIONS salutation, confirming you are closer to becoming a Checkatrade member</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported</property>
+  <property name="source">C:\\Users\\davidho\\git\\src\\Test Cases\\Reusable_Test_Sequences\\TRADES_Application\\Congratulations_Reported.tc</property>
+  <property name="tag">Trades Membership Application</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-04-15T08:40:20</date>
+  <millis>1586936420500</millis>
+  <sequence>537</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Wait for page load successfully</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:21</date>
+  <millis>1586936421502</millis>
+  <sequence>539</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Delayed 1 second(s)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:21</date>
+  <millis>1586936421954</millis>
+  <sequence>542</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;Congratulations, you&amp;apos;re one step closer to becoming a Checkatrade Member!&amp;apos; is present on page </message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:22</date>
+  <millis>1586936422409</millis>
+  <sequence>545</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;One of the team will call you within 1 working day to discuss how a Checkatrade membership can work for you&amp;apos; is present on page </message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:22</date>
+  <millis>1586936422792</millis>
+  <sequence>548</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;Thank you for your interest, we look forward to speaking to you&amp;apos; is present on page </message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:22</date>
+  <millis>1586936422793</millis>
+  <sequence>549</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:22</date>
+  <millis>1586936422793</millis>
+  <sequence>550</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:22</date>
+  <millis>1586936422794</millis>
+  <sequence>551</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:22</date>
+  <millis>1586936422859</millis>
+  <sequence>554</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/CAT_Teardown</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/CAT_Teardown</property>
+  <property name="description">Checkatrade website Clean Closure</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/CAT_Teardown</property>
+  <property name="source">C:\\Users\\davidho\\git\\src\\Test Cases\\Reusable_Test_Sequences\\CAT_Teardown.tc</property>
+  <property name="tag">Teardown</property>
+  <property name="isOptional">true</property>
+</record>
+<record>
+  <date>2020-04-15T08:40:27</date>
+  <millis>1586936427065</millis>
+  <sequence>557</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Browser is closed</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:27</date>
+  <millis>1586936427142</millis>
+  <sequence>558</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/CAT_Teardown</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:27</date>
+  <millis>1586936427143</millis>
+  <sequence>559</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/CAT_Teardown</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:27</date>
+  <millis>1586936427144</millis>
+  <sequence>560</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/CAT_Teardown&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:27</date>
+  <millis>1586936427218</millis>
+  <sequence>563</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Web_Office/Case_Opened</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Web_Office/Case_Opened</property>
+  <property name="description">Process to confirm that a web application for a trader to join checkatrade was successful</property>
+  <property name="id">Test Cases/Web_Office/Case_Opened</property>
+  <property name="source">C:\\Users\\davidho\\git\\src\\Test Cases\\Web_Office\\Case_Opened.tc</property>
+  <property name="tag">Web Office Verification</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-04-15T08:40:27</date>
+  <millis>1586936427740</millis>
+  <sequence>565</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Web_Office/Case_Opened</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:27</date>
+  <millis>1586936427741</millis>
+  <sequence>566</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Web_Office/Case_Opened</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:27</date>
+  <millis>1586936427741</millis>
+  <sequence>567</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Web_Office/Case_Opened&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:27</date>
+  <millis>1586936427744</millis>
+  <sequence>568</sequence>
+  <level>WARNING</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>No Validation of POSTCODE apart from NULL Entry Check! * FOR INRORMATION ONLY *</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:27</date>
+  <millis>1586936427745</millis>
+  <sequence>569</sequence>
+  <level>WARNING</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>No Validation of COMPANY NAME apart from NULL Entry Check! * FOR INRORMATION ONLY *</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:27</date>
+  <millis>1586936427745</millis>
+  <sequence>570</sequence>
+  <level>WARNING</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>No Validation of YOUR FULL NAME apart from NULL Entry Check! * FOR INRORMATION ONLY *</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:27</date>
+  <millis>1586936427745</millis>
+  <sequence>571</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Sign_Up/Trades_Apply_Here_Validation</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:27</date>
+  <millis>1586936427746</millis>
+  <sequence>572</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Sign_Up/Trades_Apply_Here_Validation</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:27</date>
+  <millis>1586936427759</millis>
+  <sequence>573</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Sign_Up/Trades_Apply_Here</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/Sign_Up/Trades_Apply_Here</property>
+  <property name="description">SIgn up for a Trade ACCOUNT</property>
+  <property name="id">Test Cases/Sign_Up/Trades_Apply_Here</property>
+  <property name="source">C:\\Users\\davidho\\git\\src\\Test Cases\\Sign_Up\\Trades_Apply_Here.tc</property>
+  <property name="tag">Sign Up</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-04-15T08:40:28</date>
+  <millis>1586936428215</millis>
+  <sequence>577</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/CAT_Setup</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/CAT_Setup</property>
+  <property name="description"></property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/CAT_Setup</property>
+  <property name="source">C:\\Users\\davidho\\git\\src\\Test Cases\\Reusable_Test_Sequences\\CAT_Setup.tc</property>
+  <property name="tag"></property>
+  <property name="isOptional">true</property>
+</record>
+<record>
+  <date>2020-04-15T08:40:28</date>
+  <millis>1586936428242</millis>
+  <sequence>580</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Starting &amp;apos;Firefox&amp;apos; driver</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:28</date>
+  <millis>1586936428245</millis>
+  <sequence>582</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Action delay is set to 0 milliseconds</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:34</date>
+  <millis>1586936434036</millis>
+  <sequence>584</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>sessionId = 5b51acf3-7162-4ec0-b98a-a176fc2d42bf</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="sessionId">5b51acf3-7162-4ec0-b98a-a176fc2d42bf</property>
+</record>
+<record>
+  <date>2020-04-15T08:40:34</date>
+  <millis>1586936434049</millis>
+  <sequence>585</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>browser = Firefox 74.0</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="browser">Firefox 74.0</property>
+</record>
+<record>
+  <date>2020-04-15T08:40:34</date>
+  <millis>1586936434050</millis>
+  <sequence>586</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>platform = Windows 10</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="platform">Windows 10</property>
+</record>
+<record>
+  <date>2020-04-15T08:40:34</date>
+  <millis>1586936434050</millis>
+  <sequence>587</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>seleniumVersion = 3.141.59</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="seleniumVersion">3.141.59</property>
+</record>
+<record>
+  <date>2020-04-15T08:40:34</date>
+  <millis>1586936434050</millis>
+  <sequence>588</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>proxyInformation = ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="proxyInformation">ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}</property>
+</record>
+<record>
+  <date>2020-04-15T08:40:39</date>
+  <millis>1586936439442</millis>
+  <sequence>590</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Browser is opened with url: &amp;apos;https://www.preview.checkatrade.com/&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:40</date>
+  <millis>1586936440170</millis>
+  <sequence>592</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Current window maximized</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:40</date>
+  <millis>1586936440221</millis>
+  <sequence>594</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Wait for page load successfully</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:40</date>
+  <millis>1586936440340</millis>
+  <sequence>601</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object &amp;apos;Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All&amp;apos; is present</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:40</date>
+  <millis>1586936440806</millis>
+  <sequence>609</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:41</date>
+  <millis>1586936441814</millis>
+  <sequence>611</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Delayed 1 second(s)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:42</date>
+  <millis>1586936442414</millis>
+  <sequence>614</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;We use cookies to personalise content and ads, to provide social media features and to analyse our traffic&amp;apos; is not present on page</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:42</date>
+  <millis>1586936442922</millis>
+  <sequence>617</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos; We also share information about your use of our site with our social media, advertising and analytics partners&amp;apos; is not present on page</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:43</date>
+  <millis>1586936443325</millis>
+  <sequence>620</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;Cookie Policy&amp;apos; is not present on page</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:43</date>
+  <millis>1586936443338</millis>
+  <sequence>622</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Wait for page load successfully</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:48</date>
+  <millis>1586936448524</millis>
+  <sequence>629</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Unable to find the element located by &amp;apos;By.xpath: //input[@id=&amp;apos;feedback-form__company_autocomplete_input&amp;apos;]&amp;apos;. Please recheck the objects properties to make sure the desired element is located. </message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:48</date>
+  <millis>1586936448530</millis>
+  <sequence>631</sequence>
+  <level>WARNING</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Web element with id: &amp;apos;Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review&amp;apos; located by &amp;apos;By.xpath: //input[@id=&amp;apos;feedback-form__company_autocomplete_input&amp;apos;]&amp;apos; not found</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="failed.exception.class">com.kms.katalon.core.webui.exception.WebElementNotFoundException</property>
+  <property name="failed.exception.stacktrace">com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: &apos;Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review&apos; located by &apos;By.xpath: //input[@id=&apos;feedback-form__company_autocomplete_input&apos;]&apos; not found\r\n\tat com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1154)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword$findWebElement.call(Unknown Source)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.WaitForElementVisibleKeyword$_waitForElementVisible_closure1.doCall(WaitForElementVisibleKeyword.groovy:79)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.WaitForElementVisibleKeyword$_waitForElementVisible_closure1.doCall(WaitForElementVisibleKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$runKeyword.call(Unknown Source)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.WaitForElementVisibleKeyword.waitForElementVisible(WaitForElementVisibleKeyword.groovy:98)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.WaitForElementVisibleKeyword.execute(WaitForElementVisibleKeyword.groovy:68)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.waitForElementVisible(WebUiBuiltInKeywords.groovy:434)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$waitForElementVisible$5.call(Unknown Source)\r\n\tat CAT_Setup.run(CAT_Setup:198)\r\n\tat com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)\r\n\tat com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)\r\n\tat com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)\r\n\tat com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)\r\n\tat com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)\r\n\tat com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)\r\n\tat com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)\r\n\tat com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)\r\n\tat Trades_Apply_Here.run(Trades_Apply_Here:61)\r\n\tat com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)\r\n\tat com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)\r\n\tat com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)\r\n\tat TempTestSuite1586936140810.run(TempTestSuite1586936140810.groovy:36)\r\n</property>
+  <property name="failed.exception.message">Web element with id: &apos;Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review&apos; located by &apos;By.xpath: //input[@id=&apos;feedback-form__company_autocomplete_input&apos;]&apos; not found</property>
+</record>
+<record>
+  <date>2020-04-15T08:40:48</date>
+  <millis>1586936448682</millis>
+  <sequence>638</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object &amp;apos;Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF&amp;apos; is visible</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:48</date>
+  <millis>1586936448683</millis>
+  <sequence>639</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>The &amp;lt;&amp;lt;&amp;lt;OLD&amp;gt;&amp;gt;&amp;gt; Website was detected by the STARTUP Process</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:48</date>
+  <millis>1586936448684</millis>
+  <sequence>640</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/CAT_Setup</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:48</date>
+  <millis>1586936448684</millis>
+  <sequence>641</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/CAT_Setup</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:48</date>
+  <millis>1586936448684</millis>
+  <sequence>642</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/CAT_Setup&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:48</date>
+  <millis>1586936448744</millis>
+  <sequence>645</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here</property>
+  <property name="description">Hit the SIGNUP button to trigger the Trades membership application form fill</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here</property>
+  <property name="source">C:\\Users\\davidho\\git\\src\\Test Cases\\Reusable_Test_Sequences\\Banner_Menu\\Trades_Apply_Here.tc</property>
+  <property name="tag">Header Banner Menu</property>
+  <property name="isOptional">true</property>
+</record>
+<record>
+  <date>2020-04-15T08:40:48</date>
+  <millis>1586936448937</millis>
+  <sequence>654</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object &amp;apos;Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades&amp;apos; is clickable</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:49</date>
+  <millis>1586936449296</millis>
+  <sequence>662</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:49</date>
+  <millis>1586936449371</millis>
+  <sequence>670</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object &amp;apos;Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more&amp;apos; is clickable</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:51</date>
+  <millis>1586936451898</millis>
+  <sequence>678</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:52</date>
+  <millis>1586936452102</millis>
+  <sequence>686</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object &amp;apos;Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application&amp;apos; is clickable</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:54</date>
+  <millis>1586936454251</millis>
+  <sequence>694</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:54</date>
+  <millis>1586936454251</millis>
+  <sequence>695</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:54</date>
+  <millis>1586936454252</millis>
+  <sequence>696</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:54</date>
+  <millis>1586936454252</millis>
+  <sequence>697</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:54</date>
+  <millis>1586936454313</millis>
+  <sequence>700</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name</property>
+  <property name="description">Sets the Full Name field, during the Trades membership application form fill</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name</property>
+  <property name="source">C:\\Users\\davidho\\git\\src\\Test Cases\\Reusable_Test_Sequences\\TRADES_Application\\Set_Full_Name.tc</property>
+  <property name="tag">Trades Membership Application</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-04-15T08:40:54</date>
+  <millis>1586936454453</millis>
+  <sequence>709</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object &amp;apos;Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName&amp;apos; is clickable</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:54</date>
+  <millis>1586936454630</millis>
+  <sequence>723</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;Ronald&amp;apos; is set on object &amp;apos;Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:54</date>
+  <millis>1586936454733</millis>
+  <sequence>731</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object &amp;apos;Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName&amp;apos; is clickable</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:54</date>
+  <millis>1586936454899</millis>
+  <sequence>745</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;MacGinty&amp;apos; is set on object &amp;apos;Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:54</date>
+  <millis>1586936454900</millis>
+  <sequence>746</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:54</date>
+  <millis>1586936454900</millis>
+  <sequence>747</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:54</date>
+  <millis>1586936454901</millis>
+  <sequence>748</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:54</date>
+  <millis>1586936454960</millis>
+  <sequence>751</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address</property>
+  <property name="description">Sets the Email Address field, during the Trades membership application form fill</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address</property>
+  <property name="source">C:\\Users\\davidho\\git\\src\\Test Cases\\Reusable_Test_Sequences\\TRADES_Application\\Set_Email_Address.tc</property>
+  <property name="tag">Trades Membership Application</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-04-15T08:40:55</date>
+  <millis>1586936455249</millis>
+  <sequence>766</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;ron_mctavish@xtc_0z0.com&amp;apos; is set on object &amp;apos;Object Repository/Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:55</date>
+  <millis>1586936455249</millis>
+  <sequence>767</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:55</date>
+  <millis>1586936455250</millis>
+  <sequence>768</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:55</date>
+  <millis>1586936455250</millis>
+  <sequence>769</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:55</date>
+  <millis>1586936455312</millis>
+  <sequence>772</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name</property>
+  <property name="description">Sets the COMPANY NAME field during the Trades membership application form fill</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name</property>
+  <property name="source">C:\\Users\\davidho\\git\\src\\Test Cases\\Reusable_Test_Sequences\\TRADES_Application\\Set_Company_Name.tc</property>
+  <property name="tag">Trades Membership Application</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-04-15T08:40:55</date>
+  <millis>1586936455491</millis>
+  <sequence>787</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;Gutter Snipes&amp;apos; is set on object &amp;apos;Object Repository/Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:55</date>
+  <millis>1586936455492</millis>
+  <sequence>788</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:55</date>
+  <millis>1586936455492</millis>
+  <sequence>789</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:55</date>
+  <millis>1586936455492</millis>
+  <sequence>790</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:55</date>
+  <millis>1586936455557</millis>
+  <sequence>793</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number</property>
+  <property name="description">Sets the contact (phone) number  field during the Trades membership application form fill</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number</property>
+  <property name="source">C:\\Users\\davidho\\git\\src\\Test Cases\\Reusable_Test_Sequences\\TRADES_Application\\Set_Contact_Number.tc</property>
+  <property name="tag">Trades Membership Application</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-04-15T08:40:55</date>
+  <millis>1586936455748</millis>
+  <sequence>808</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;02380123456&amp;apos; is set on object &amp;apos;Object Repository/Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:55</date>
+  <millis>1586936455749</millis>
+  <sequence>809</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:55</date>
+  <millis>1586936455749</millis>
+  <sequence>810</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:55</date>
+  <millis>1586936455749</millis>
+  <sequence>811</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:55</date>
+  <millis>1586936455812</millis>
+  <sequence>814</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode</property>
+  <property name="description">Sets the postcode field, during the Trades membership application form fill</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode</property>
+  <property name="source">C:\\Users\\davidho\\git\\src\\Test Cases\\Reusable_Test_Sequences\\TRADES_Application\\Set_Postcode.tc</property>
+  <property name="tag">Trades Membership Application</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-04-15T08:40:55</date>
+  <millis>1586936455933</millis>
+  <sequence>829</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;PO12 4SD&amp;apos; is set on object &amp;apos;Object Repository/Page_Checkatrade Want to build your business/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode&amp;apos;</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:55</date>
+  <millis>1586936455933</millis>
+  <sequence>830</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:55</date>
+  <millis>1586936455934</millis>
+  <sequence>831</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:55</date>
+  <millis>1586936455934</millis>
+  <sequence>832</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:40:55</date>
+  <millis>1586936455992</millis>
+  <sequence>835</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit</property>
+  <property name="description">Hit the trades application submit button after enter field data (and with no or incorrect field values) - sunny day (provision to data drive and iterate)</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit</property>
+  <property name="source">C:\\Users\\davidho\\git\\src\\Test Cases\\Reusable_Test_Sequences\\TRADES_Application\\Hit_Submit.tc</property>
+  <property name="tag">Trades Membership Application</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-04-15T08:40:57</date>
+  <millis>1586936457012</millis>
+  <sequence>838</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Delayed 1 second(s)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:41:00</date>
+  <millis>1586936460430</millis>
+  <sequence>846</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Object: &amp;apos;Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_Privacy Notice_ctl00contentbtnSubmit&amp;apos; is clicked on</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:41:00</date>
+  <millis>1586936460430</millis>
+  <sequence>847</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:41:00</date>
+  <millis>1586936460430</millis>
+  <sequence>848</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:41:00</date>
+  <millis>1586936460431</millis>
+  <sequence>849</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:41:00</date>
+  <millis>1586936460491</millis>
+  <sequence>852</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported</property>
+  <property name="description">On completion of form fill and hitting submit will return a CONGRATULATIONS salutation, confirming you are closer to becoming a Checkatrade member</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported</property>
+  <property name="source">C:\\Users\\davidho\\git\\src\\Test Cases\\Reusable_Test_Sequences\\TRADES_Application\\Congratulations_Reported.tc</property>
+  <property name="tag">Trades Membership Application</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-04-15T08:41:00</date>
+  <millis>1586936460606</millis>
+  <sequence>855</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Wait for page load successfully</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:41:01</date>
+  <millis>1586936461608</millis>
+  <sequence>857</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Delayed 1 second(s)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:41:01</date>
+  <millis>1586936461886</millis>
+  <sequence>860</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;Congratulations, you&amp;apos;re one step closer to becoming a Checkatrade Member!&amp;apos; is present on page </message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:41:02</date>
+  <millis>1586936462076</millis>
+  <sequence>863</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;One of the team will call you within 1 working day to discuss how a Checkatrade membership can work for you&amp;apos; is present on page </message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:41:02</date>
+  <millis>1586936462220</millis>
+  <sequence>866</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;Thank you for your interest, we look forward to speaking to you&amp;apos; is present on page </message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:41:02</date>
+  <millis>1586936462220</millis>
+  <sequence>867</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:41:02</date>
+  <millis>1586936462220</millis>
+  <sequence>868</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:41:02</date>
+  <millis>1586936462220</millis>
+  <sequence>869</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:41:02</date>
+  <millis>1586936462288</millis>
+  <sequence>872</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Reusable_Test_Sequences/CAT_Teardown</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="name">Test Cases/Reusable_Test_Sequences/CAT_Teardown</property>
+  <property name="description">Checkatrade website Clean Closure</property>
+  <property name="id">Test Cases/Reusable_Test_Sequences/CAT_Teardown</property>
+  <property name="source">C:\\Users\\davidho\\git\\src\\Test Cases\\Reusable_Test_Sequences\\CAT_Teardown.tc</property>
+  <property name="tag">Teardown</property>
+  <property name="isOptional">true</property>
+</record>
+<record>
+  <date>2020-04-15T08:41:04</date>
+  <millis>1586936464744</millis>
+  <sequence>875</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Browser is closed</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:41:04</date>
+  <millis>1586936464795</millis>
+  <sequence>876</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Reusable_Test_Sequences/CAT_Teardown</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:41:04</date>
+  <millis>1586936464796</millis>
+  <sequence>877</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Reusable_Test_Sequences/CAT_Teardown</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:41:04</date>
+  <millis>1586936464797</millis>
+  <sequence>878</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Call Test Case &amp;apos;Test Cases/Reusable_Test_Sequences/CAT_Teardown&amp;apos; successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:41:04</date>
+  <millis>1586936464797</millis>
+  <sequence>879</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Sign_Up/Trades_Apply_Here</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:41:04</date>
+  <millis>1586936464797</millis>
+  <sequence>880</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Sign_Up/Trades_Apply_Here</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-04-15T08:41:04</date>
+  <millis>1586936464952</millis>
+  <sequence>881</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endSuite</method>
+  <thread>1</thread>
+  <message>End Test Suite : Test Suites/Trades_Apply_Here</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+</log>

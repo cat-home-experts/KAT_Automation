@@ -1,0 +1,2695 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Web_Office_Reports" time="974.45" tests="12" failures="0" errors="0">
+   <testsuite name="Web_Office_Reports" tests="12" failures="0" errors="0" time="974.45" timestamp="2020-04-20 12:29:49" hostname="DavidHo - 192.168.1.238" id="Test Suites/Web_Office_Reports">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\davidho\\git\\src\\Reports\\20200420_122926\\Web_Office_Reports\\20200420_122926"/>
+         <property name="logFiles" value="C:\\Users\\davidho\\git\\src\\Reports\\20200420_122926\\Web_Office_Reports\\20200420_122926\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="DavidHo - 192.168.1.238"/>
+         <property name="os" value="Windows 10 32bit"/>
+         <property name="katalonVersion" value="7.3.1.1"/>
+         <property name="browser" value="Chrome 81.0.4044.113"/>
+         <property name="hostAddress" value="192.168.1.238"/>
+         <property name="sessionId" value="a9152be0e58076bea93e0808d53b3930"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Web_Office/Reports/Web_Activity" time="43.79" classname="Test Cases/Web_Office/Reports/Web_Activity" status="PASSED">
+         <system-out><![CDATA[2020-04-20 12:29:49 - [TEST_CASE][PASSED] - Test Cases/Web_Office/Reports/Web_Activity: Test Cases/Web_Office/Reports/Web_Activity
+
+2020-04-20 12:29:49 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:29:49 - [TEST_STEP][PASSED] - " Web Office StartUp                  |": null
+
+2020-04-20 12:29:49 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-04-20 12:29:50 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp: Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp
+
+2020-04-20 12:29:50 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:29:50 - [TEST_STEP][PASSED] - if (URL == "https://www.dev.checkatrade.com/"): null
+
+2020-04-20 12:29:50 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:29:50 - [TEST_STEP][PASSED] - if (URL == "https://www.checkatrade.com/"): null
+
+2020-04-20 12:29:50 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:29:50 - [TEST_STEP][PASSED] - if (URL == "https://www.preview.checkatrade.com/"): null
+
+2020-04-20 12:29:50 - [TEST_STEP][PASSED] - WebOfficeURL = "https://admin.preview.checkatrade.com/": null
+
+2020-04-20 12:29:50 - [TEST_STEP][PASSED] - if (URL == "https://www.dev2.checkatrade.com/"): null
+
+2020-04-20 12:29:50 - [TEST_STEP][PASSED] - "Set Function Area for "URL_Handler", URL Resolution": null
+
+2020-04-20 12:29:50 - [TEST_STEP][PASSED] - "Do Some Magic with URL(s) See the comments within URL Handler ": null
+
+2020-04-20 12:29:50 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-04-20 12:29:50 - [TEST_STEP][PASSED] - "Moved Login Credentials to <Default> profile 22/01/2020": null
+
+2020-04-20 12:29:50 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-04-20 12:29:50 - [TEST_STEP][PASSED] - "WebOfficeURL - Set from the ENVIRONMENT PROFILE ": null
+
+2020-04-20 12:29:50 - [TEST_STEP][PASSED] - "OPEN BROWSER": null
+
+2020-04-20 12:29:50 - [TEST_STEP][PASSED] - "eg - https://admin.preview.checkatrade.com/  ": null
+
+2020-04-20 12:29:50 - [TEST_STEP][PASSED] - openBrowser(WebOfficeURL): Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-04-20 12:29:51 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-04-20 12:29:51 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2020-04-20 12:29:57 - [MESSAGE][PASSED] - Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-04-20 12:29:57 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-04-20 12:29:59 - [MESSAGE][PASSED] - Current window maximized
+
+2020-04-20 12:29:59 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button"), 25): Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-04-20 12:30:00 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-04-20 12:30:00 - [TEST_STEP][PASSED] - verifyTextPresent("Checkatrade Web Office", false): Text 'Checkatrade Web Office' is present on page 
+
+2020-04-20 12:30:00 - [MESSAGE][PASSED] - Text 'Checkatrade Web Office' is present on page 
+
+2020-04-20 12:30:00 - [TEST_STEP][PASSED] - verifyTextPresent("Access for staff use only", false): Text 'Access for staff use only' is present on page 
+
+2020-04-20 12:30:00 - [MESSAGE][PASSED] - Text 'Access for staff use only' is present on page 
+
+2020-04-20 12:30:00 - [TEST_STEP][PASSED] - verifyTextPresent("Forgotten password?", false): Text 'Forgotten password?' is present on page 
+
+2020-04-20 12:30:00 - [MESSAGE][PASSED] - Text 'Forgotten password?' is present on page 
+
+2020-04-20 12:30:00 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName"), wo_Username): Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-04-20 12:30:00 - [MESSAGE][PASSED] - Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-04-20 12:30:00 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword"), wo_Password): Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-04-20 12:30:00 - [MESSAGE][PASSED] - Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-04-20 12:30:00 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button")): Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-04-20 12:30:02 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-04-20 12:30:02 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-20 12:30:02 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:30:02 - [TEST_STEP][PASSED] - verifyTextPresent("Welcome " + wo_Username, false): Text 'Welcome DavidHo' is present on page 
+
+2020-04-20 12:30:03 - [MESSAGE][PASSED] - Text 'Welcome DavidHo' is present on page 
+
+2020-04-20 12:30:03 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-04-20 12:30:03 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------": null
+
+2020-04-20 12:30:03 - [TEST_STEP][PASSED] - " Navigate to <Settings->Checkatrade.Com->Sub Item> Menu Item     |": null
+
+2020-04-20 12:30:03 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Web_Activity"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Web_Activity' successfully
+
+2020-04-20 12:30:03 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Web_Activity: Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Web_Activity
+
+2020-04-20 12:30:03 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:30:03 - [TEST_STEP][PASSED] - " Navigate Top level menu Item         |": null
+
+2020-04-20 12:30:03 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-20 12:30:03 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:30:03 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice_Home_page/a_Reports"), 60): Object 'Object Repository/WebOffice_Home_page/a_Reports' is clickable
+
+2020-04-20 12:30:03 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice_Home_page/a_Reports' is clickable
+
+2020-04-20 12:30:03 - [TEST_STEP][PASSED] - mouseOver(findTestObject("Object Repository/WebOffice_Home_page/a_Reports")): Object: 'Object Repository/WebOffice_Home_page/a_Reports' is hovered
+
+2020-04-20 12:30:04 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/a_Reports' is hovered
+
+2020-04-20 12:30:04 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2020-04-20 12:30:04 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:30:04 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice_Home_page/a_Web Activity"), 5): Object 'Object Repository/WebOffice_Home_page/a_Web Activity' is clickable
+
+2020-04-20 12:30:04 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice_Home_page/a_Web Activity' is clickable
+
+2020-04-20 12:30:04 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice_Home_page/a_Web Activity")): Object: 'Object Repository/WebOffice_Home_page/a_Web Activity' is clicked on
+
+2020-04-20 12:30:26 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/a_Web Activity' is clicked on
+
+2020-04-20 12:30:26 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Web_Activity' successfully
+
+2020-04-20 12:30:26 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:30:26 - [TEST_STEP][PASSED] - " Verify Returned Page Detail          |": null
+
+2020-04-20 12:30:26 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Verification/Reports/Web_Activity"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Web_Activity' successfully
+
+2020-04-20 12:30:26 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Web_Activity: Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Web_Activity
+
+2020-04-20 12:30:27 - [TEST_STEP][PASSED] - waitForPageLoad(120): Wait for page load successfully
+
+2020-04-20 12:30:27 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:30:27 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-04-20 12:30:28 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-04-20 12:30:28 - [TEST_STEP][PASSED] - verifyTextPresent("Web Activity", false): Text 'Web Activity' is present on page 
+
+2020-04-20 12:30:28 - [MESSAGE][PASSED] - Text 'Web Activity' is present on page 
+
+2020-04-20 12:30:28 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:30:28 - [TEST_STEP][PASSED] - verifyTextPresent("Recent Searches", false): Text 'Recent Searches' is present on page 
+
+2020-04-20 12:30:28 - [MESSAGE][PASSED] - Text 'Recent Searches' is present on page 
+
+2020-04-20 12:30:28 - [TEST_STEP][PASSED] - verifyTextPresent("Most Viewed Companies (in past 7 days)", false): Text 'Most Viewed Companies (in past 7 days)' is present on page 
+
+2020-04-20 12:30:29 - [MESSAGE][PASSED] - Text 'Most Viewed Companies (in past 7 days)' is present on page 
+
+2020-04-20 12:30:29 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:30:29 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:30:29 - [TEST_STEP][PASSED] - verifyTextPresent("Search on", false): Text 'Search on' is present on page 
+
+2020-04-20 12:30:29 - [MESSAGE][PASSED] - Text 'Search on' is present on page 
+
+2020-04-20 12:30:29 - [TEST_STEP][PASSED] - verifyTextPresent("Search for", false): Text 'Search for' is present on page 
+
+2020-04-20 12:30:29 - [MESSAGE][PASSED] - Text 'Search for' is present on page 
+
+2020-04-20 12:30:29 - [TEST_STEP][PASSED] - verifyTextPresent("In", false): Text 'In' is present on page 
+
+2020-04-20 12:30:29 - [MESSAGE][PASSED] - Text 'In' is present on page 
+
+2020-04-20 12:30:29 - [TEST_STEP][PASSED] - verifyTextPresent("No. Results", false): Text 'No. Results' is present on page 
+
+2020-04-20 12:30:29 - [MESSAGE][PASSED] - Text 'No. Results' is present on page 
+
+2020-04-20 12:30:29 - [TEST_STEP][PASSED] - verifyTextPresent("Company", false): Text 'Company' is present on page 
+
+2020-04-20 12:30:30 - [MESSAGE][PASSED] - Text 'Company' is present on page 
+
+2020-04-20 12:30:30 - [TEST_STEP][PASSED] - verifyTextPresent("From Search", false): Text 'From Search' is present on page 
+
+2020-04-20 12:30:30 - [MESSAGE][PASSED] - Text 'From Search' is present on page 
+
+2020-04-20 12:30:30 - [TEST_STEP][PASSED] - verifyTextPresent("Checkatrade", false): Text 'Checkatrade' is present on page 
+
+2020-04-20 12:30:30 - [MESSAGE][PASSED] - Text 'Checkatrade' is present on page 
+
+2020-04-20 12:30:30 - [TEST_STEP][PASSED] - verifyTextPresent("External Link", false): Text 'External Link' is present on page 
+
+2020-04-20 12:30:31 - [MESSAGE][PASSED] - Text 'External Link' is present on page 
+
+2020-04-20 12:30:31 - [TEST_STEP][PASSED] - verifyTextPresent("Other", false): Text 'Other' is present on page 
+
+2020-04-20 12:30:31 - [MESSAGE][PASSED] - Text 'Other' is present on page 
+
+2020-04-20 12:30:31 - [TEST_STEP][PASSED] - verifyTextPresent("Total", false): Text 'Total' is present on page 
+
+2020-04-20 12:30:31 - [MESSAGE][PASSED] - Text 'Total' is present on page 
+
+2020-04-20 12:30:31 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:30:31 - [TEST_STEP][PASSED] - verifyTextPresent("Foster Tree Care", false): Text 'Foster Tree Care' is present on page 
+
+2020-04-20 12:30:31 - [MESSAGE][PASSED] - Text 'Foster Tree Care' is present on page 
+
+2020-04-20 12:30:31 - [TEST_STEP][PASSED] - verifyTextPresent("Burton Electrical Services", false): Text 'Burton Electrical Services' is present on page 
+
+2020-04-20 12:30:32 - [MESSAGE][PASSED] - Text 'Burton Electrical Services' is present on page 
+
+2020-04-20 12:30:32 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Web_Activity' successfully
+
+2020-04-20 12:30:32 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-20 12:30:32 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2020-04-20 12:30:32 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-04-20 12:30:32 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2020-04-20 12:30:32 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-04-20 12:30:33 - [MESSAGE][PASSED] - Browser is closed
+
+2020-04-20 12:30:33 - [TEST_STEP][PASSED] - super.finalize(): null
+
+2020-04-20 12:30:33 - [TEST_STEP][PASSED] - System.gc(): null
+
+2020-04-20 12:30:33 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Web_Office/Reports/Company_Views" time="18.555" classname="Test Cases/Web_Office/Reports/Company_Views" status="PASSED">
+         <system-out><![CDATA[2020-04-20 12:30:33 - [TEST_CASE][PASSED] - Test Cases/Web_Office/Reports/Company_Views: Test Cases/Web_Office/Reports/Company_Views
+
+2020-04-20 12:30:33 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:30:33 - [TEST_STEP][PASSED] - " Web Office StartUp                  |": null
+
+2020-04-20 12:30:33 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-04-20 12:30:33 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp: Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp
+
+2020-04-20 12:30:33 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:30:33 - [TEST_STEP][PASSED] - if (URL == "https://www.dev.checkatrade.com/"): null
+
+2020-04-20 12:30:33 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:30:33 - [TEST_STEP][PASSED] - if (URL == "https://www.checkatrade.com/"): null
+
+2020-04-20 12:30:33 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:30:33 - [TEST_STEP][PASSED] - if (URL == "https://www.preview.checkatrade.com/"): null
+
+2020-04-20 12:30:33 - [TEST_STEP][PASSED] - WebOfficeURL = "https://admin.preview.checkatrade.com/": null
+
+2020-04-20 12:30:33 - [TEST_STEP][PASSED] - if (URL == "https://www.dev2.checkatrade.com/"): null
+
+2020-04-20 12:30:33 - [TEST_STEP][PASSED] - "Set Function Area for "URL_Handler", URL Resolution": null
+
+2020-04-20 12:30:33 - [TEST_STEP][PASSED] - "Do Some Magic with URL(s) See the comments within URL Handler ": null
+
+2020-04-20 12:30:33 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-04-20 12:30:33 - [TEST_STEP][PASSED] - "Moved Login Credentials to <Default> profile 22/01/2020": null
+
+2020-04-20 12:30:33 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-04-20 12:30:33 - [TEST_STEP][PASSED] - "WebOfficeURL - Set from the ENVIRONMENT PROFILE ": null
+
+2020-04-20 12:30:33 - [TEST_STEP][PASSED] - "OPEN BROWSER": null
+
+2020-04-20 12:30:33 - [TEST_STEP][PASSED] - "eg - https://admin.preview.checkatrade.com/  ": null
+
+2020-04-20 12:30:33 - [TEST_STEP][PASSED] - openBrowser(WebOfficeURL): Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-04-20 12:30:33 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-04-20 12:30:33 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2020-04-20 12:30:39 - [MESSAGE][PASSED] - Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-04-20 12:30:39 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-04-20 12:30:41 - [MESSAGE][PASSED] - Current window maximized
+
+2020-04-20 12:30:41 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button"), 25): Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-04-20 12:30:41 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-04-20 12:30:41 - [TEST_STEP][PASSED] - verifyTextPresent("Checkatrade Web Office", false): Text 'Checkatrade Web Office' is present on page 
+
+2020-04-20 12:30:41 - [MESSAGE][PASSED] - Text 'Checkatrade Web Office' is present on page 
+
+2020-04-20 12:30:41 - [TEST_STEP][PASSED] - verifyTextPresent("Access for staff use only", false): Text 'Access for staff use only' is present on page 
+
+2020-04-20 12:30:42 - [MESSAGE][PASSED] - Text 'Access for staff use only' is present on page 
+
+2020-04-20 12:30:42 - [TEST_STEP][PASSED] - verifyTextPresent("Forgotten password?", false): Text 'Forgotten password?' is present on page 
+
+2020-04-20 12:30:42 - [MESSAGE][PASSED] - Text 'Forgotten password?' is present on page 
+
+2020-04-20 12:30:42 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName"), wo_Username): Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-04-20 12:30:42 - [MESSAGE][PASSED] - Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-04-20 12:30:42 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword"), wo_Password): Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-04-20 12:30:42 - [MESSAGE][PASSED] - Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-04-20 12:30:42 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button")): Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-04-20 12:30:43 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-04-20 12:30:43 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-20 12:30:43 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:30:43 - [TEST_STEP][PASSED] - verifyTextPresent("Welcome " + wo_Username, false): Text 'Welcome DavidHo' is present on page 
+
+2020-04-20 12:30:43 - [MESSAGE][PASSED] - Text 'Welcome DavidHo' is present on page 
+
+2020-04-20 12:30:43 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-04-20 12:30:43 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------": null
+
+2020-04-20 12:30:43 - [TEST_STEP][PASSED] - " Navigate to <Settings->Checkatrade.Com->Sub Item> Menu Item     |": null
+
+2020-04-20 12:30:43 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Company_Views"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Company_Views' successfully
+
+2020-04-20 12:30:43 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Company_Views: Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Company_Views
+
+2020-04-20 12:30:44 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:30:44 - [TEST_STEP][PASSED] - " Navigate Top level menu Item         |": null
+
+2020-04-20 12:30:44 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-20 12:30:44 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:30:44 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice_Home_page/a_Reports"), 60): Object 'Object Repository/WebOffice_Home_page/a_Reports' is clickable
+
+2020-04-20 12:30:44 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice_Home_page/a_Reports' is clickable
+
+2020-04-20 12:30:44 - [TEST_STEP][PASSED] - mouseOver(findTestObject("Object Repository/WebOffice_Home_page/a_Reports")): Object: 'Object Repository/WebOffice_Home_page/a_Reports' is hovered
+
+2020-04-20 12:30:44 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/a_Reports' is hovered
+
+2020-04-20 12:30:44 - [TEST_STEP][PASSED] - mouseOver(findTestObject("Object Repository/WebOffice_Home_page/Page_/a_Consumers")): Object: 'Object Repository/WebOffice_Home_page/Page_/a_Consumers' is hovered
+
+2020-04-20 12:30:45 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/Page_/a_Consumers' is hovered
+
+2020-04-20 12:30:45 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2020-04-20 12:30:45 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:30:45 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice_Home_page/a_Company Views"), 5): Object 'Object Repository/WebOffice_Home_page/a_Company Views' is clickable
+
+2020-04-20 12:30:45 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice_Home_page/a_Company Views' is clickable
+
+2020-04-20 12:30:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice_Home_page/a_Company Views")): Object: 'Object Repository/WebOffice_Home_page/a_Company Views' is clicked on
+
+2020-04-20 12:30:45 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/a_Company Views' is clicked on
+
+2020-04-20 12:30:45 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Company_Views' successfully
+
+2020-04-20 12:30:45 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:30:45 - [TEST_STEP][PASSED] - " Verify Returned Page Detail          |": null
+
+2020-04-20 12:30:45 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Verification/Reports/Company_Views"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Company_Views' successfully
+
+2020-04-20 12:30:46 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Company_Views: Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Company_Views
+
+2020-04-20 12:30:46 - [TEST_STEP][PASSED] - waitForPageLoad(120): Wait for page load successfully
+
+2020-04-20 12:30:46 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:30:46 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-04-20 12:30:47 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-04-20 12:30:47 - [TEST_STEP][PASSED] - verifyTextPresent("Company Viewing History", false): Text 'Company Viewing History' is present on page 
+
+2020-04-20 12:30:47 - [MESSAGE][PASSED] - Text 'Company Viewing History' is present on page 
+
+2020-04-20 12:30:47 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:30:47 - [TEST_STEP][PASSED] - verifyTextPresent("From", false): Text 'From' is present on page 
+
+2020-04-20 12:30:47 - [MESSAGE][PASSED] - Text 'From' is present on page 
+
+2020-04-20 12:30:47 - [TEST_STEP][PASSED] - verifyTextPresent("Select Company", false): Text 'Select Company' is present on page 
+
+2020-04-20 12:30:48 - [MESSAGE][PASSED] - Text 'Select Company' is present on page 
+
+2020-04-20 12:30:48 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:30:48 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:30:48 - [TEST_STEP][PASSED] - verifyTextPresent("Company", false): Text 'Company' is present on page 
+
+2020-04-20 12:30:48 - [MESSAGE][PASSED] - Text 'Company' is present on page 
+
+2020-04-20 12:30:48 - [TEST_STEP][PASSED] - verifyTextPresent("From Search", false): Text 'From Search' is present on page 
+
+2020-04-20 12:30:49 - [MESSAGE][PASSED] - Text 'From Search' is present on page 
+
+2020-04-20 12:30:49 - [TEST_STEP][PASSED] - verifyTextPresent("Checkatrade", false): Text 'Checkatrade' is present on page 
+
+2020-04-20 12:30:49 - [MESSAGE][PASSED] - Text 'Checkatrade' is present on page 
+
+2020-04-20 12:30:49 - [TEST_STEP][PASSED] - verifyTextPresent("External Link", false): Text 'External Link' is present on page 
+
+2020-04-20 12:30:49 - [MESSAGE][PASSED] - Text 'External Link' is present on page 
+
+2020-04-20 12:30:49 - [TEST_STEP][PASSED] - verifyTextPresent("Other", false): Text 'Other' is present on page 
+
+2020-04-20 12:30:50 - [MESSAGE][PASSED] - Text 'Other' is present on page 
+
+2020-04-20 12:30:50 - [TEST_STEP][PASSED] - verifyTextPresent("Total", false): Text 'Total' is present on page 
+
+2020-04-20 12:30:50 - [MESSAGE][PASSED] - Text 'Total' is present on page 
+
+2020-04-20 12:30:50 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:30:50 - [TEST_STEP][PASSED] - verifyTextPresent("Foster Tree Care", false): Text 'Foster Tree Care' is present on page 
+
+2020-04-20 12:30:50 - [MESSAGE][PASSED] - Text 'Foster Tree Care' is present on page 
+
+2020-04-20 12:30:50 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Company_Views' successfully
+
+2020-04-20 12:30:50 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-20 12:30:50 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2020-04-20 12:30:50 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-04-20 12:30:50 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2020-04-20 12:30:50 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-04-20 12:30:51 - [MESSAGE][PASSED] - Browser is closed
+
+2020-04-20 12:30:51 - [TEST_STEP][PASSED] - super.finalize(): null
+
+2020-04-20 12:30:51 - [TEST_STEP][PASSED] - System.gc(): null
+
+2020-04-20 12:30:51 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Web_Office/Reports/Company_Website_Status_Changes" time="24.434" classname="Test Cases/Web_Office/Reports/Company_Website_Status_Changes" status="PASSED">
+         <system-out><![CDATA[2020-04-20 12:30:51 - [TEST_CASE][PASSED] - Test Cases/Web_Office/Reports/Company_Website_Status_Changes: Test Cases/Web_Office/Reports/Company_Website_Status_Changes
+
+2020-04-20 12:30:52 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:30:52 - [TEST_STEP][PASSED] - " Web Office StartUp                  |": null
+
+2020-04-20 12:30:52 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-04-20 12:30:52 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp: Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp
+
+2020-04-20 12:30:52 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:30:52 - [TEST_STEP][PASSED] - if (URL == "https://www.dev.checkatrade.com/"): null
+
+2020-04-20 12:30:52 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:30:52 - [TEST_STEP][PASSED] - if (URL == "https://www.checkatrade.com/"): null
+
+2020-04-20 12:30:52 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:30:52 - [TEST_STEP][PASSED] - if (URL == "https://www.preview.checkatrade.com/"): null
+
+2020-04-20 12:30:52 - [TEST_STEP][PASSED] - WebOfficeURL = "https://admin.preview.checkatrade.com/": null
+
+2020-04-20 12:30:52 - [TEST_STEP][PASSED] - if (URL == "https://www.dev2.checkatrade.com/"): null
+
+2020-04-20 12:30:52 - [TEST_STEP][PASSED] - "Set Function Area for "URL_Handler", URL Resolution": null
+
+2020-04-20 12:30:52 - [TEST_STEP][PASSED] - "Do Some Magic with URL(s) See the comments within URL Handler ": null
+
+2020-04-20 12:30:52 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-04-20 12:30:52 - [TEST_STEP][PASSED] - "Moved Login Credentials to <Default> profile 22/01/2020": null
+
+2020-04-20 12:30:52 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-04-20 12:30:52 - [TEST_STEP][PASSED] - "WebOfficeURL - Set from the ENVIRONMENT PROFILE ": null
+
+2020-04-20 12:30:52 - [TEST_STEP][PASSED] - "OPEN BROWSER": null
+
+2020-04-20 12:30:52 - [TEST_STEP][PASSED] - "eg - https://admin.preview.checkatrade.com/  ": null
+
+2020-04-20 12:30:52 - [TEST_STEP][PASSED] - openBrowser(WebOfficeURL): Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-04-20 12:30:52 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-04-20 12:30:52 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2020-04-20 12:30:58 - [MESSAGE][PASSED] - Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-04-20 12:30:58 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-04-20 12:31:00 - [MESSAGE][PASSED] - Current window maximized
+
+2020-04-20 12:31:00 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button"), 25): Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-04-20 12:31:00 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-04-20 12:31:00 - [TEST_STEP][PASSED] - verifyTextPresent("Checkatrade Web Office", false): Text 'Checkatrade Web Office' is present on page 
+
+2020-04-20 12:31:00 - [MESSAGE][PASSED] - Text 'Checkatrade Web Office' is present on page 
+
+2020-04-20 12:31:00 - [TEST_STEP][PASSED] - verifyTextPresent("Access for staff use only", false): Text 'Access for staff use only' is present on page 
+
+2020-04-20 12:31:00 - [MESSAGE][PASSED] - Text 'Access for staff use only' is present on page 
+
+2020-04-20 12:31:00 - [TEST_STEP][PASSED] - verifyTextPresent("Forgotten password?", false): Text 'Forgotten password?' is present on page 
+
+2020-04-20 12:31:00 - [MESSAGE][PASSED] - Text 'Forgotten password?' is present on page 
+
+2020-04-20 12:31:00 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName"), wo_Username): Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-04-20 12:31:01 - [MESSAGE][PASSED] - Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-04-20 12:31:01 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword"), wo_Password): Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-04-20 12:31:01 - [MESSAGE][PASSED] - Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-04-20 12:31:01 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button")): Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-04-20 12:31:02 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-04-20 12:31:02 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-20 12:31:02 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:31:02 - [TEST_STEP][PASSED] - verifyTextPresent("Welcome " + wo_Username, false): Text 'Welcome DavidHo' is present on page 
+
+2020-04-20 12:31:02 - [MESSAGE][PASSED] - Text 'Welcome DavidHo' is present on page 
+
+2020-04-20 12:31:02 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-04-20 12:31:02 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------": null
+
+2020-04-20 12:31:02 - [TEST_STEP][PASSED] - " Navigate to <Settings->Checkatrade.Com->Sub Item> Menu Item     |": null
+
+2020-04-20 12:31:02 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Company_Website_Status_Changes"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Company_Website_Status_Changes' successfully
+
+2020-04-20 12:31:02 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Company_Website_Status_Changes: Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Company_Website_Status_Changes
+
+2020-04-20 12:31:03 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:31:03 - [TEST_STEP][PASSED] - " Navigate Top level menu Item         |": null
+
+2020-04-20 12:31:03 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-20 12:31:03 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:31:03 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice_Home_page/a_Reports"), 60): Object 'Object Repository/WebOffice_Home_page/a_Reports' is clickable
+
+2020-04-20 12:31:03 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice_Home_page/a_Reports' is clickable
+
+2020-04-20 12:31:03 - [TEST_STEP][PASSED] - mouseOver(findTestObject("Object Repository/WebOffice_Home_page/a_Reports")): Object: 'Object Repository/WebOffice_Home_page/a_Reports' is hovered
+
+2020-04-20 12:31:03 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/a_Reports' is hovered
+
+2020-04-20 12:31:03 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice_Home_page/Page_/a_Consumers")): Object: 'Object Repository/WebOffice_Home_page/Page_/a_Consumers' is clicked on
+
+2020-04-20 12:31:03 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/Page_/a_Consumers' is clicked on
+
+2020-04-20 12:31:03 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2020-04-20 12:31:04 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:31:04 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice_Home_page/a_Company Website Status Changes"), 5): Object 'Object Repository/WebOffice_Home_page/a_Company Website Status Changes' is clickable
+
+2020-04-20 12:31:04 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice_Home_page/a_Company Website Status Changes' is clickable
+
+2020-04-20 12:31:04 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice_Home_page/a_Company Website Status Changes")): Object: 'Object Repository/WebOffice_Home_page/a_Company Website Status Changes' is clicked on
+
+2020-04-20 12:31:08 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/a_Company Website Status Changes' is clicked on
+
+2020-04-20 12:31:08 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Company_Website_Status_Changes' successfully
+
+2020-04-20 12:31:08 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:31:08 - [TEST_STEP][PASSED] - " Verify Returned Page Detail          |": null
+
+2020-04-20 12:31:08 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Verification/Reports/Company_Website_Status_Changes"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Company_Website_Status_Changes' successfully
+
+2020-04-20 12:31:08 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Company_Website_Status_Changes: Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Company_Website_Status_Changes
+
+2020-04-20 12:31:09 - [TEST_STEP][PASSED] - waitForPageLoad(120): Wait for page load successfully
+
+2020-04-20 12:31:09 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:31:09 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-04-20 12:31:10 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-04-20 12:31:10 - [TEST_STEP][PASSED] - verifyTextPresent("Company Website Status Change Report", false): Text 'Company Website Status Change Report' is present on page 
+
+2020-04-20 12:31:10 - [MESSAGE][PASSED] - Text 'Company Website Status Change Report' is present on page 
+
+2020-04-20 12:31:10 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:31:10 - [TEST_STEP][PASSED] - verifyTextPresent("All Available Dates:", false): Text 'All Available Dates:' is present on page 
+
+2020-04-20 12:31:11 - [MESSAGE][PASSED] - Text 'All Available Dates:' is present on page 
+
+2020-04-20 12:31:11 - [TEST_STEP][PASSED] - verifyTextPresent("Total no. companies", false): Text 'Total no. companies' is present on page 
+
+2020-04-20 12:31:12 - [MESSAGE][PASSED] - Text 'Total no. companies' is present on page 
+
+2020-04-20 12:31:12 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:31:12 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:31:12 - [TEST_STEP][PASSED] - verifyTextPresent("Company", false): Text 'Company' is present on page 
+
+2020-04-20 12:31:12 - [MESSAGE][PASSED] - Text 'Company' is present on page 
+
+2020-04-20 12:31:12 - [TEST_STEP][PASSED] - verifyTextPresent("Status", false): Text 'Status' is present on page 
+
+2020-04-20 12:31:12 - [MESSAGE][PASSED] - Text 'Status' is present on page 
+
+2020-04-20 12:31:12 - [TEST_STEP][PASSED] - verifyTextPresent("Description", false): Text 'Description' is present on page 
+
+2020-04-20 12:31:13 - [MESSAGE][PASSED] - Text 'Description' is present on page 
+
+2020-04-20 12:31:13 - [TEST_STEP][PASSED] - verifyTextPresent("Date Changed", false): Text 'Date Changed' is present on page 
+
+2020-04-20 12:31:13 - [MESSAGE][PASSED] - Text 'Date Changed' is present on page 
+
+2020-04-20 12:31:13 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:31:13 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:31:13 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:31:13 - [TEST_STEP][PASSED] - verifyTextPresent("Added to Website", false): Text 'Added to Website' is present on page 
+
+2020-04-20 12:31:14 - [MESSAGE][PASSED] - Text 'Added to Website' is present on page 
+
+2020-04-20 12:31:14 - [TEST_STEP][PASSED] - verifyTextPresent("Removed from website", false): Text 'Removed from website' is present on page 
+
+2020-04-20 12:31:14 - [MESSAGE][PASSED] - Text 'Removed from website' is present on page 
+
+2020-04-20 12:31:14 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Company_Website_Status_Changes' successfully
+
+2020-04-20 12:31:14 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-20 12:31:14 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2020-04-20 12:31:14 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-04-20 12:31:14 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2020-04-20 12:31:14 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-04-20 12:31:16 - [MESSAGE][PASSED] - Browser is closed
+
+2020-04-20 12:31:16 - [TEST_STEP][PASSED] - super.finalize(): null
+
+2020-04-20 12:31:16 - [TEST_STEP][PASSED] - System.gc(): null
+
+2020-04-20 12:31:16 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Web_Office/Reports/Directory_Preferences" time="663.349" classname="Test Cases/Web_Office/Reports/Directory_Preferences" status="PASSED">
+         <system-out><![CDATA[2020-04-20 12:31:16 - [TEST_CASE][PASSED] - Test Cases/Web_Office/Reports/Directory_Preferences: Test Cases/Web_Office/Reports/Directory_Preferences
+
+2020-04-20 12:31:16 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:31:16 - [TEST_STEP][PASSED] - " Web Office StartUp                  |": null
+
+2020-04-20 12:31:16 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-04-20 12:31:16 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp: Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp
+
+2020-04-20 12:31:16 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:31:16 - [TEST_STEP][PASSED] - if (URL == "https://www.dev.checkatrade.com/"): null
+
+2020-04-20 12:31:16 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:31:16 - [TEST_STEP][PASSED] - if (URL == "https://www.checkatrade.com/"): null
+
+2020-04-20 12:31:16 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:31:16 - [TEST_STEP][PASSED] - if (URL == "https://www.preview.checkatrade.com/"): null
+
+2020-04-20 12:31:16 - [TEST_STEP][PASSED] - WebOfficeURL = "https://admin.preview.checkatrade.com/": null
+
+2020-04-20 12:31:16 - [TEST_STEP][PASSED] - if (URL == "https://www.dev2.checkatrade.com/"): null
+
+2020-04-20 12:31:16 - [TEST_STEP][PASSED] - "Set Function Area for "URL_Handler", URL Resolution": null
+
+2020-04-20 12:31:16 - [TEST_STEP][PASSED] - "Do Some Magic with URL(s) See the comments within URL Handler ": null
+
+2020-04-20 12:31:16 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-04-20 12:31:16 - [TEST_STEP][PASSED] - "Moved Login Credentials to <Default> profile 22/01/2020": null
+
+2020-04-20 12:31:16 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-04-20 12:31:16 - [TEST_STEP][PASSED] - "WebOfficeURL - Set from the ENVIRONMENT PROFILE ": null
+
+2020-04-20 12:31:16 - [TEST_STEP][PASSED] - "OPEN BROWSER": null
+
+2020-04-20 12:31:16 - [TEST_STEP][PASSED] - "eg - https://admin.preview.checkatrade.com/  ": null
+
+2020-04-20 12:31:16 - [TEST_STEP][PASSED] - openBrowser(WebOfficeURL): Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-04-20 12:31:16 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-04-20 12:31:16 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2020-04-20 12:31:21 - [MESSAGE][PASSED] - Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-04-20 12:31:21 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-04-20 12:31:24 - [MESSAGE][PASSED] - Current window maximized
+
+2020-04-20 12:31:24 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button"), 25): Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-04-20 12:31:24 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-04-20 12:31:24 - [TEST_STEP][PASSED] - verifyTextPresent("Checkatrade Web Office", false): Text 'Checkatrade Web Office' is present on page 
+
+2020-04-20 12:31:24 - [MESSAGE][PASSED] - Text 'Checkatrade Web Office' is present on page 
+
+2020-04-20 12:31:24 - [TEST_STEP][PASSED] - verifyTextPresent("Access for staff use only", false): Text 'Access for staff use only' is present on page 
+
+2020-04-20 12:31:24 - [MESSAGE][PASSED] - Text 'Access for staff use only' is present on page 
+
+2020-04-20 12:31:24 - [TEST_STEP][PASSED] - verifyTextPresent("Forgotten password?", false): Text 'Forgotten password?' is present on page 
+
+2020-04-20 12:31:24 - [MESSAGE][PASSED] - Text 'Forgotten password?' is present on page 
+
+2020-04-20 12:31:24 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName"), wo_Username): Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-04-20 12:31:25 - [MESSAGE][PASSED] - Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-04-20 12:31:25 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword"), wo_Password): Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-04-20 12:31:25 - [MESSAGE][PASSED] - Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-04-20 12:31:25 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button")): Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-04-20 12:31:26 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-04-20 12:31:26 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-20 12:31:26 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:31:26 - [TEST_STEP][PASSED] - verifyTextPresent("Welcome " + wo_Username, false): Text 'Welcome DavidHo' is present on page 
+
+2020-04-20 12:31:26 - [MESSAGE][PASSED] - Text 'Welcome DavidHo' is present on page 
+
+2020-04-20 12:31:26 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-04-20 12:31:26 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------": null
+
+2020-04-20 12:31:26 - [TEST_STEP][PASSED] - " Navigate to <Settings->Checkatrade.Com->Sub Item> Menu Item     |": null
+
+2020-04-20 12:31:26 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Directory_Preferences"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Directory_Preferences' successfully
+
+2020-04-20 12:31:26 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Directory_Preferences: Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Directory_Preferences
+
+2020-04-20 12:31:27 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:31:27 - [TEST_STEP][PASSED] - " Navigate Top level menu Item         |": null
+
+2020-04-20 12:31:27 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-20 12:31:27 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:31:27 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice_Home_page/a_Reports"), 60): Object 'Object Repository/WebOffice_Home_page/a_Reports' is clickable
+
+2020-04-20 12:31:27 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice_Home_page/a_Reports' is clickable
+
+2020-04-20 12:31:27 - [TEST_STEP][PASSED] - mouseOver(findTestObject("Object Repository/WebOffice_Home_page/a_Reports")): Object: 'Object Repository/WebOffice_Home_page/a_Reports' is hovered
+
+2020-04-20 12:31:27 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/a_Reports' is hovered
+
+2020-04-20 12:31:27 - [TEST_STEP][PASSED] - mouseOver(findTestObject("Object Repository/WebOffice_Home_page/Page_/a_Consumers")): Object: 'Object Repository/WebOffice_Home_page/Page_/a_Consumers' is hovered
+
+2020-04-20 12:31:27 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/Page_/a_Consumers' is hovered
+
+2020-04-20 12:31:27 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2020-04-20 12:31:27 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:31:27 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice_Home_page/a_Directory Preferences"), 5): Object 'Object Repository/WebOffice_Home_page/a_Directory Preferences' is clickable
+
+2020-04-20 12:31:27 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice_Home_page/a_Directory Preferences' is clickable
+
+2020-04-20 12:31:27 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice_Home_page/a_Directory Preferences")): Object: 'Object Repository/WebOffice_Home_page/a_Directory Preferences' is clicked on
+
+2020-04-20 12:33:15 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/a_Directory Preferences' is clicked on
+
+2020-04-20 12:33:15 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Directory_Preferences' successfully
+
+2020-04-20 12:33:15 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:33:15 - [TEST_STEP][PASSED] - " Verify Returned Page Detail          |": null
+
+2020-04-20 12:33:15 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Verification/Reports/Directory_Preferences"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Directory_Preferences' successfully
+
+2020-04-20 12:33:15 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Directory_Preferences: Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Directory_Preferences
+
+2020-04-20 12:33:15 - [TEST_STEP][PASSED] - waitForPageLoad(120): Wait for page load successfully
+
+2020-04-20 12:33:15 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:33:15 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-04-20 12:33:16 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-04-20 12:33:16 - [TEST_STEP][PASSED] - verifyTextPresent("Directory Performance Report", false): Text 'Directory Performance Report' is present on page 
+
+2020-04-20 12:33:41 - [MESSAGE][PASSED] - Text 'Directory Performance Report' is present on page 
+
+2020-04-20 12:33:41 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:33:41 - [TEST_STEP][PASSED] - verifyTextPresent("Hide Old", false): Text 'Hide Old' is present on page 
+
+2020-04-20 12:34:13 - [MESSAGE][PASSED] - Text 'Hide Old' is present on page 
+
+2020-04-20 12:34:13 - [TEST_STEP][PASSED] - verifyTextPresent("Hide Current", false): Text 'Hide Current' is present on page 
+
+2020-04-20 12:34:45 - [MESSAGE][PASSED] - Text 'Hide Current' is present on page 
+
+2020-04-20 12:34:45 - [TEST_STEP][PASSED] - verifyTextPresent("Hide Future", false): Text 'Hide Future' is present on page 
+
+2020-04-20 12:35:20 - [MESSAGE][PASSED] - Text 'Hide Future' is present on page 
+
+2020-04-20 12:35:20 - [TEST_STEP][PASSED] - verifyTextPresent("Hide Prospective", false): Text 'Hide Prospective' is present on page 
+
+2020-04-20 12:35:45 - [MESSAGE][PASSED] - Text 'Hide Prospective' is present on page 
+
+2020-04-20 12:35:45 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:35:45 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:35:45 - [TEST_STEP][PASSED] - verifyTextPresent("DIRECTORY NAME", false): Text 'DIRECTORY NAME' is present on page 
+
+2020-04-20 12:36:06 - [MESSAGE][PASSED] - Text 'DIRECTORY NAME' is present on page 
+
+2020-04-20 12:36:06 - [TEST_STEP][PASSED] - verifyTextPresent("EDITION", false): Text 'EDITION' is present on page 
+
+2020-04-20 12:36:27 - [MESSAGE][PASSED] - Text 'EDITION' is present on page 
+
+2020-04-20 12:36:27 - [TEST_STEP][PASSED] - verifyTextPresent("BOXES SOLD", false): Text 'BOXES SOLD' is present on page 
+
+2020-04-20 12:36:52 - [MESSAGE][PASSED] - Text 'BOXES SOLD' is present on page 
+
+2020-04-20 12:36:52 - [TEST_STEP][PASSED] - verifyTextPresent("BOXES FOC", false): Text 'BOXES FOC' is present on page 
+
+2020-04-20 12:37:18 - [MESSAGE][PASSED] - Text 'BOXES FOC' is present on page 
+
+2020-04-20 12:37:18 - [TEST_STEP][PASSED] - verifyTextPresent("BOXES TOTAL", false): Text 'BOXES TOTAL' is present on page 
+
+2020-04-20 12:37:47 - [MESSAGE][PASSED] - Text 'BOXES TOTAL' is present on page 
+
+2020-04-20 12:37:47 - [TEST_STEP][PASSED] - verifyTextPresent("FIRST RESERVE", false): Text 'FIRST RESERVE' is present on page 
+
+2020-04-20 12:38:10 - [MESSAGE][PASSED] - Text 'FIRST RESERVE' is present on page 
+
+2020-04-20 12:38:10 - [TEST_STEP][PASSED] - verifyTextPresent("DEFINITELY", false): Text 'DEFINITELY' is present on page 
+
+2020-04-20 12:38:33 - [MESSAGE][PASSED] - Text 'DEFINITELY' is present on page 
+
+2020-04-20 12:38:33 - [TEST_STEP][PASSED] - verifyTextPresent("WOULD CONSIDER", false): Text 'WOULD CONSIDER' is present on page 
+
+2020-04-20 12:39:01 - [MESSAGE][PASSED] - Text 'WOULD CONSIDER' is present on page 
+
+2020-04-20 12:39:01 - [TEST_STEP][PASSED] - verifyTextPresent("DESIRED TOTAL", false): Text 'DESIRED TOTAL' is present on page 
+
+2020-04-20 12:39:29 - [MESSAGE][PASSED] - Text 'DESIRED TOTAL' is present on page 
+
+2020-04-20 12:39:29 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:39:29 - [TEST_STEP][PASSED] - verifyTextPresent("Abingdon + Didcot 7 (Old)", false): Text 'Abingdon + Didcot 7 (Old)' is present on page 
+
+2020-04-20 12:40:00 - [MESSAGE][PASSED] - Text 'Abingdon + Didcot 7 (Old)' is present on page 
+
+2020-04-20 12:40:00 - [TEST_STEP][PASSED] - verifyTextPresent("Amersham + Chesham 12 (Current)", false): Text 'Amersham + Chesham 12 (Current)' is present on page 
+
+2020-04-20 12:40:36 - [MESSAGE][PASSED] - Text 'Amersham + Chesham 12 (Current)' is present on page 
+
+2020-04-20 12:40:36 - [TEST_STEP][PASSED] - verifyTextPresent("11", false): Text '11' is present on page 
+
+2020-04-20 12:41:10 - [MESSAGE][PASSED] - Text '11' is present on page 
+
+2020-04-20 12:41:10 - [TEST_STEP][PASSED] - verifyTextPresent("133", false): Text '133' is present on page 
+
+2020-04-20 12:41:41 - [MESSAGE][PASSED] - Text '133' is present on page 
+
+2020-04-20 12:41:41 - [TEST_STEP][PASSED] - verifyTextPresent("58", false): Text '58' is present on page 
+
+2020-04-20 12:42:17 - [MESSAGE][PASSED] - Text '58' is present on page 
+
+2020-04-20 12:42:17 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Directory_Preferences' successfully
+
+2020-04-20 12:42:17 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-20 12:42:17 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2020-04-20 12:42:17 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-04-20 12:42:18 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2020-04-20 12:42:18 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-04-20 12:42:19 - [MESSAGE][PASSED] - Browser is closed
+
+2020-04-20 12:42:19 - [TEST_STEP][PASSED] - super.finalize(): null
+
+2020-04-20 12:42:19 - [TEST_STEP][PASSED] - System.gc(): null
+
+2020-04-20 12:42:19 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Web_Office/Reports/Most_Popular" time="22.993" classname="Test Cases/Web_Office/Reports/Most_Popular" status="PASSED">
+         <system-out><![CDATA[2020-04-20 12:42:19 - [TEST_CASE][PASSED] - Test Cases/Web_Office/Reports/Most_Popular: Test Cases/Web_Office/Reports/Most_Popular
+
+2020-04-20 12:42:20 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:42:20 - [TEST_STEP][PASSED] - " Web Office StartUp                  |": null
+
+2020-04-20 12:42:20 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-04-20 12:42:20 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp: Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp
+
+2020-04-20 12:42:20 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:42:20 - [TEST_STEP][PASSED] - if (URL == "https://www.dev.checkatrade.com/"): null
+
+2020-04-20 12:42:20 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:42:20 - [TEST_STEP][PASSED] - if (URL == "https://www.checkatrade.com/"): null
+
+2020-04-20 12:42:20 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:42:20 - [TEST_STEP][PASSED] - if (URL == "https://www.preview.checkatrade.com/"): null
+
+2020-04-20 12:42:20 - [TEST_STEP][PASSED] - WebOfficeURL = "https://admin.preview.checkatrade.com/": null
+
+2020-04-20 12:42:20 - [TEST_STEP][PASSED] - if (URL == "https://www.dev2.checkatrade.com/"): null
+
+2020-04-20 12:42:20 - [TEST_STEP][PASSED] - "Set Function Area for "URL_Handler", URL Resolution": null
+
+2020-04-20 12:42:20 - [TEST_STEP][PASSED] - "Do Some Magic with URL(s) See the comments within URL Handler ": null
+
+2020-04-20 12:42:20 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-04-20 12:42:20 - [TEST_STEP][PASSED] - "Moved Login Credentials to <Default> profile 22/01/2020": null
+
+2020-04-20 12:42:20 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-04-20 12:42:20 - [TEST_STEP][PASSED] - "WebOfficeURL - Set from the ENVIRONMENT PROFILE ": null
+
+2020-04-20 12:42:20 - [TEST_STEP][PASSED] - "OPEN BROWSER": null
+
+2020-04-20 12:42:20 - [TEST_STEP][PASSED] - "eg - https://admin.preview.checkatrade.com/  ": null
+
+2020-04-20 12:42:20 - [TEST_STEP][PASSED] - openBrowser(WebOfficeURL): Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-04-20 12:42:20 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-04-20 12:42:20 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2020-04-20 12:42:28 - [MESSAGE][PASSED] - Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-04-20 12:42:28 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-04-20 12:42:30 - [MESSAGE][PASSED] - Current window maximized
+
+2020-04-20 12:42:30 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button"), 25): Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-04-20 12:42:30 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-04-20 12:42:30 - [TEST_STEP][PASSED] - verifyTextPresent("Checkatrade Web Office", false): Text 'Checkatrade Web Office' is present on page 
+
+2020-04-20 12:42:31 - [MESSAGE][PASSED] - Text 'Checkatrade Web Office' is present on page 
+
+2020-04-20 12:42:31 - [TEST_STEP][PASSED] - verifyTextPresent("Access for staff use only", false): Text 'Access for staff use only' is present on page 
+
+2020-04-20 12:42:31 - [MESSAGE][PASSED] - Text 'Access for staff use only' is present on page 
+
+2020-04-20 12:42:31 - [TEST_STEP][PASSED] - verifyTextPresent("Forgotten password?", false): Text 'Forgotten password?' is present on page 
+
+2020-04-20 12:42:31 - [MESSAGE][PASSED] - Text 'Forgotten password?' is present on page 
+
+2020-04-20 12:42:31 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName"), wo_Username): Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-04-20 12:42:31 - [MESSAGE][PASSED] - Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-04-20 12:42:31 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword"), wo_Password): Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-04-20 12:42:32 - [MESSAGE][PASSED] - Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-04-20 12:42:32 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button")): Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-04-20 12:42:33 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-04-20 12:42:33 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-20 12:42:34 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:42:34 - [TEST_STEP][PASSED] - verifyTextPresent("Welcome " + wo_Username, false): Text 'Welcome DavidHo' is present on page 
+
+2020-04-20 12:42:35 - [MESSAGE][PASSED] - Text 'Welcome DavidHo' is present on page 
+
+2020-04-20 12:42:35 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-04-20 12:42:35 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------": null
+
+2020-04-20 12:42:35 - [TEST_STEP][PASSED] - " Navigate to <Settings->Checkatrade.Com->Sub Item> Menu Item     |": null
+
+2020-04-20 12:42:35 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Most_Popular"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Most_Popular' successfully
+
+2020-04-20 12:42:35 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Most_Popular: Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Most_Popular
+
+2020-04-20 12:42:36 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:42:36 - [TEST_STEP][PASSED] - " Navigate Top level menu Item         |": null
+
+2020-04-20 12:42:36 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-20 12:42:36 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:42:36 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice_Home_page/a_Reports"), 60): Object 'Object Repository/WebOffice_Home_page/a_Reports' is clickable
+
+2020-04-20 12:42:36 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice_Home_page/a_Reports' is clickable
+
+2020-04-20 12:42:36 - [TEST_STEP][PASSED] - mouseOver(findTestObject("Object Repository/WebOffice_Home_page/a_Reports")): Object: 'Object Repository/WebOffice_Home_page/a_Reports' is hovered
+
+2020-04-20 12:42:36 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/a_Reports' is hovered
+
+2020-04-20 12:42:36 - [TEST_STEP][PASSED] - mouseOver(findTestObject("Object Repository/WebOffice_Home_page/Page_/a_Consumers")): Object: 'Object Repository/WebOffice_Home_page/Page_/a_Consumers' is hovered
+
+2020-04-20 12:42:37 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/Page_/a_Consumers' is hovered
+
+2020-04-20 12:42:37 - [TEST_STEP][PASSED] - mouseOver(findTestObject("Object Repository/WebOffice_Home_page/Page_/a_Consumer Searches")): Object: 'Object Repository/WebOffice_Home_page/Page_/a_Consumer Searches' is hovered
+
+2020-04-20 12:42:37 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/Page_/a_Consumer Searches' is hovered
+
+2020-04-20 12:42:37 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2020-04-20 12:42:37 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:42:37 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice_Home_page/a_Most Popular"), 5): Object 'Object Repository/WebOffice_Home_page/a_Most Popular' is clickable
+
+2020-04-20 12:42:37 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice_Home_page/a_Most Popular' is clickable
+
+2020-04-20 12:42:37 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice_Home_page/a_Most Popular")): Object: 'Object Repository/WebOffice_Home_page/a_Most Popular' is clicked on
+
+2020-04-20 12:42:39 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/a_Most Popular' is clicked on
+
+2020-04-20 12:42:39 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Most_Popular' successfully
+
+2020-04-20 12:42:39 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:42:39 - [TEST_STEP][PASSED] - " Verify Returned Page Detail          |": null
+
+2020-04-20 12:42:39 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Verification/Reports/Most_Popular"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Most_Popular' successfully
+
+2020-04-20 12:42:39 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Most_Popular: Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Most_Popular
+
+2020-04-20 12:42:40 - [TEST_STEP][PASSED] - waitForPageLoad(120): Wait for page load successfully
+
+2020-04-20 12:42:40 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:42:40 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-04-20 12:42:41 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-04-20 12:42:41 - [TEST_STEP][PASSED] - verifyTextPresent("Consumer Searches", false): Text 'Consumer Searches' is present on page 
+
+2020-04-20 12:42:41 - [MESSAGE][PASSED] - Text 'Consumer Searches' is present on page 
+
+2020-04-20 12:42:41 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:42:41 - [TEST_STEP][PASSED] - verifyTextPresent("Most Popular Searches", false): Text 'Most Popular Searches' is present on page 
+
+2020-04-20 12:42:41 - [MESSAGE][PASSED] - Text 'Most Popular Searches' is present on page 
+
+2020-04-20 12:42:41 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:42:41 - [TEST_STEP][PASSED] - verifyTextPresent("From", false): Text 'From' is present on page 
+
+2020-04-20 12:42:41 - [MESSAGE][PASSED] - Text 'From' is present on page 
+
+2020-04-20 12:42:41 - [TEST_STEP][PASSED] - verifyTextPresent("To", false): Text 'To' is present on page 
+
+2020-04-20 12:42:41 - [MESSAGE][PASSED] - Text 'To' is present on page 
+
+2020-04-20 12:42:41 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Most_Popular' successfully
+
+2020-04-20 12:42:41 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-20 12:42:41 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2020-04-20 12:42:41 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-04-20 12:42:41 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2020-04-20 12:42:41 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-04-20 12:42:42 - [MESSAGE][PASSED] - Browser is closed
+
+2020-04-20 12:42:42 - [TEST_STEP][PASSED] - super.finalize(): null
+
+2020-04-20 12:42:42 - [TEST_STEP][PASSED] - System.gc(): null
+
+2020-04-20 12:42:42 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Web_Office/Reports/By_Category_and_Location" time="39.41" classname="Test Cases/Web_Office/Reports/By_Category_and_Location" status="PASSED">
+         <system-out><![CDATA[2020-04-20 12:42:42 - [TEST_CASE][PASSED] - Test Cases/Web_Office/Reports/By_Category_and_Location: Test Cases/Web_Office/Reports/By_Category_and_Location
+
+2020-04-20 12:42:43 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:42:43 - [TEST_STEP][PASSED] - " Web Office StartUp                  |": null
+
+2020-04-20 12:42:43 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-04-20 12:42:43 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp: Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp
+
+2020-04-20 12:42:43 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:42:43 - [TEST_STEP][PASSED] - if (URL == "https://www.dev.checkatrade.com/"): null
+
+2020-04-20 12:42:43 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:42:43 - [TEST_STEP][PASSED] - if (URL == "https://www.checkatrade.com/"): null
+
+2020-04-20 12:42:43 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:42:43 - [TEST_STEP][PASSED] - if (URL == "https://www.preview.checkatrade.com/"): null
+
+2020-04-20 12:42:43 - [TEST_STEP][PASSED] - WebOfficeURL = "https://admin.preview.checkatrade.com/": null
+
+2020-04-20 12:42:43 - [TEST_STEP][PASSED] - if (URL == "https://www.dev2.checkatrade.com/"): null
+
+2020-04-20 12:42:43 - [TEST_STEP][PASSED] - "Set Function Area for "URL_Handler", URL Resolution": null
+
+2020-04-20 12:42:43 - [TEST_STEP][PASSED] - "Do Some Magic with URL(s) See the comments within URL Handler ": null
+
+2020-04-20 12:42:43 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-04-20 12:42:43 - [TEST_STEP][PASSED] - "Moved Login Credentials to <Default> profile 22/01/2020": null
+
+2020-04-20 12:42:43 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-04-20 12:42:43 - [TEST_STEP][PASSED] - "WebOfficeURL - Set from the ENVIRONMENT PROFILE ": null
+
+2020-04-20 12:42:43 - [TEST_STEP][PASSED] - "OPEN BROWSER": null
+
+2020-04-20 12:42:43 - [TEST_STEP][PASSED] - "eg - https://admin.preview.checkatrade.com/  ": null
+
+2020-04-20 12:42:43 - [TEST_STEP][PASSED] - openBrowser(WebOfficeURL): Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-04-20 12:42:43 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-04-20 12:42:43 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2020-04-20 12:42:49 - [MESSAGE][PASSED] - Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-04-20 12:42:49 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-04-20 12:42:51 - [MESSAGE][PASSED] - Current window maximized
+
+2020-04-20 12:42:51 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button"), 25): Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-04-20 12:42:51 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-04-20 12:42:51 - [TEST_STEP][PASSED] - verifyTextPresent("Checkatrade Web Office", false): Text 'Checkatrade Web Office' is present on page 
+
+2020-04-20 12:42:51 - [MESSAGE][PASSED] - Text 'Checkatrade Web Office' is present on page 
+
+2020-04-20 12:42:51 - [TEST_STEP][PASSED] - verifyTextPresent("Access for staff use only", false): Text 'Access for staff use only' is present on page 
+
+2020-04-20 12:42:52 - [MESSAGE][PASSED] - Text 'Access for staff use only' is present on page 
+
+2020-04-20 12:42:52 - [TEST_STEP][PASSED] - verifyTextPresent("Forgotten password?", false): Text 'Forgotten password?' is present on page 
+
+2020-04-20 12:42:52 - [MESSAGE][PASSED] - Text 'Forgotten password?' is present on page 
+
+2020-04-20 12:42:52 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName"), wo_Username): Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-04-20 12:42:52 - [MESSAGE][PASSED] - Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-04-20 12:42:52 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword"), wo_Password): Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-04-20 12:42:53 - [MESSAGE][PASSED] - Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-04-20 12:42:53 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button")): Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-04-20 12:42:54 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-04-20 12:42:54 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-20 12:42:54 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:42:54 - [TEST_STEP][PASSED] - verifyTextPresent("Welcome " + wo_Username, false): Text 'Welcome DavidHo' is present on page 
+
+2020-04-20 12:42:54 - [MESSAGE][PASSED] - Text 'Welcome DavidHo' is present on page 
+
+2020-04-20 12:42:54 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-04-20 12:42:54 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------": null
+
+2020-04-20 12:42:54 - [TEST_STEP][PASSED] - " Navigate to <Settings->Checkatrade.Com->Sub Item> Menu Item     |": null
+
+2020-04-20 12:42:54 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/By_Category_and_Location"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/By_Category_and_Location' successfully
+
+2020-04-20 12:42:54 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/By_Category_and_Location: Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/By_Category_and_Location
+
+2020-04-20 12:42:55 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:42:55 - [TEST_STEP][PASSED] - " Navigate Top level menu Item         |": null
+
+2020-04-20 12:42:55 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-20 12:42:55 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:42:55 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice_Home_page/a_Reports"), 60): Object 'Object Repository/WebOffice_Home_page/a_Reports' is clickable
+
+2020-04-20 12:42:55 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice_Home_page/a_Reports' is clickable
+
+2020-04-20 12:42:55 - [TEST_STEP][PASSED] - mouseOver(findTestObject("Object Repository/WebOffice_Home_page/a_Reports")): Object: 'Object Repository/WebOffice_Home_page/a_Reports' is hovered
+
+2020-04-20 12:42:55 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/a_Reports' is hovered
+
+2020-04-20 12:42:55 - [TEST_STEP][PASSED] - mouseOver(findTestObject("Object Repository/WebOffice_Home_page/Page_/a_Consumers")): Object: 'Object Repository/WebOffice_Home_page/Page_/a_Consumers' is hovered
+
+2020-04-20 12:42:55 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/Page_/a_Consumers' is hovered
+
+2020-04-20 12:42:55 - [TEST_STEP][PASSED] - mouseOver(findTestObject("Object Repository/WebOffice_Home_page/Page_/a_Consumer Searches")): Object: 'Object Repository/WebOffice_Home_page/Page_/a_Consumer Searches' is hovered
+
+2020-04-20 12:42:56 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/Page_/a_Consumer Searches' is hovered
+
+2020-04-20 12:42:56 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2020-04-20 12:42:56 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:42:56 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice_Home_page/a_By Category and Location"), 5): Object 'Object Repository/WebOffice_Home_page/a_By Category and Location' is clickable
+
+2020-04-20 12:42:56 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice_Home_page/a_By Category and Location' is clickable
+
+2020-04-20 12:42:56 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice_Home_page/a_By Category and Location")): Object: 'Object Repository/WebOffice_Home_page/a_By Category and Location' is clicked on
+
+2020-04-20 12:42:58 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/a_By Category and Location' is clicked on
+
+2020-04-20 12:42:58 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/By_Category_and_Location' successfully
+
+2020-04-20 12:42:58 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:42:58 - [TEST_STEP][PASSED] - " Verify Returned Page Detail          |": null
+
+2020-04-20 12:42:58 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Verification/Reports/By_Category_and_Location"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/By_Category_and_Location' successfully
+
+2020-04-20 12:42:58 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/By_Category_and_Location: Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/By_Category_and_Location
+
+2020-04-20 12:42:59 - [TEST_STEP][PASSED] - waitForPageLoad(120): Wait for page load successfully
+
+2020-04-20 12:42:59 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:42:59 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-04-20 12:43:00 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-04-20 12:43:00 - [TEST_STEP][PASSED] - verifyTextPresent("Searches by Location and Category", false): Text 'Searches by Location and Category' is present on page 
+
+2020-04-20 12:43:03 - [MESSAGE][PASSED] - Text 'Searches by Location and Category' is present on page 
+
+2020-04-20 12:43:03 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:43:03 - [TEST_STEP][PASSED] - verifyTextPresent("County", false): Text 'County' is present on page 
+
+2020-04-20 12:43:04 - [MESSAGE][PASSED] - Text 'County' is present on page 
+
+2020-04-20 12:43:04 - [TEST_STEP][PASSED] - verifyTextPresent("Town", false): Text 'Town' is present on page 
+
+2020-04-20 12:43:06 - [MESSAGE][PASSED] - Text 'Town' is present on page 
+
+2020-04-20 12:43:06 - [TEST_STEP][PASSED] - verifyTextPresent("By Postcode", false): Text 'By Postcode' is present on page 
+
+2020-04-20 12:43:08 - [MESSAGE][PASSED] - Text 'By Postcode' is present on page 
+
+2020-04-20 12:43:08 - [TEST_STEP][PASSED] - verifyTextPresent("Select Categories", false): Text 'Select Categories' is present on page 
+
+2020-04-20 12:43:10 - [MESSAGE][PASSED] - Text 'Select Categories' is present on page 
+
+2020-04-20 12:43:10 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:43:10 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:43:10 - [TEST_STEP][PASSED] - verifyTextPresent("Angus", false): Text 'Angus' is present on page 
+
+2020-04-20 12:43:10 - [MESSAGE][PASSED] - Text 'Angus' is present on page 
+
+2020-04-20 12:43:10 - [TEST_STEP][PASSED] - verifyTextPresent("Berkshire", false): Text 'Berkshire' is present on page 
+
+2020-04-20 12:43:12 - [MESSAGE][PASSED] - Text 'Berkshire' is present on page 
+
+2020-04-20 12:43:12 - [TEST_STEP][PASSED] - verifyTextPresent("Avon", false): Text 'Avon' is present on page 
+
+2020-04-20 12:43:14 - [MESSAGE][PASSED] - Text 'Avon' is present on page 
+
+2020-04-20 12:43:14 - [TEST_STEP][PASSED] - verifyTextPresent("Air Conditioning", false): Text 'Air Conditioning' is present on page 
+
+2020-04-20 12:43:15 - [MESSAGE][PASSED] - Text 'Air Conditioning' is present on page 
+
+2020-04-20 12:43:15 - [TEST_STEP][PASSED] - verifyTextPresent("Alarms/Security", false): Text 'Alarms/Security' is present on page 
+
+2020-04-20 12:43:15 - [MESSAGE][PASSED] - Text 'Alarms/Security' is present on page 
+
+2020-04-20 12:43:15 - [TEST_STEP][PASSED] - verifyTextPresent("CCTV", false): Text 'CCTV' is present on page 
+
+2020-04-20 12:43:17 - [MESSAGE][PASSED] - Text 'CCTV' is present on page 
+
+2020-04-20 12:43:17 - [TEST_STEP][PASSED] - verifyTextPresent("Fire", false): Text 'Fire' is present on page 
+
+2020-04-20 12:43:18 - [MESSAGE][PASSED] - Text 'Fire' is present on page 
+
+2020-04-20 12:43:18 - [TEST_STEP][PASSED] - verifyTextPresent("Alarms", false): Text 'Alarms' is present on page 
+
+2020-04-20 12:43:19 - [MESSAGE][PASSED] - Text 'Alarms' is present on page 
+
+2020-04-20 12:43:19 - [TEST_STEP][PASSED] - verifyTextPresent("Extinguishers", false): Text 'Extinguishers' is present on page 
+
+2020-04-20 12:43:20 - [MESSAGE][PASSED] - Text 'Extinguishers' is present on page 
+
+2020-04-20 12:43:20 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/By_Category_and_Location' successfully
+
+2020-04-20 12:43:20 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-20 12:43:20 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2020-04-20 12:43:20 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-04-20 12:43:20 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2020-04-20 12:43:20 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-04-20 12:43:22 - [MESSAGE][PASSED] - Browser is closed
+
+2020-04-20 12:43:22 - [TEST_STEP][PASSED] - super.finalize(): null
+
+2020-04-20 12:43:22 - [TEST_STEP][PASSED] - System.gc(): null
+
+2020-04-20 12:43:22 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Web_Office/Reports/By_Category" time="23.827" classname="Test Cases/Web_Office/Reports/By_Category" status="PASSED">
+         <system-out><![CDATA[2020-04-20 12:43:22 - [TEST_CASE][PASSED] - Test Cases/Web_Office/Reports/By_Category: Test Cases/Web_Office/Reports/By_Category
+
+2020-04-20 12:43:22 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:43:22 - [TEST_STEP][PASSED] - " Web Office StartUp                  |": null
+
+2020-04-20 12:43:22 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-04-20 12:43:22 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp: Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp
+
+2020-04-20 12:43:22 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:43:22 - [TEST_STEP][PASSED] - if (URL == "https://www.dev.checkatrade.com/"): null
+
+2020-04-20 12:43:22 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:43:22 - [TEST_STEP][PASSED] - if (URL == "https://www.checkatrade.com/"): null
+
+2020-04-20 12:43:22 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:43:22 - [TEST_STEP][PASSED] - if (URL == "https://www.preview.checkatrade.com/"): null
+
+2020-04-20 12:43:22 - [TEST_STEP][PASSED] - WebOfficeURL = "https://admin.preview.checkatrade.com/": null
+
+2020-04-20 12:43:22 - [TEST_STEP][PASSED] - if (URL == "https://www.dev2.checkatrade.com/"): null
+
+2020-04-20 12:43:22 - [TEST_STEP][PASSED] - "Set Function Area for "URL_Handler", URL Resolution": null
+
+2020-04-20 12:43:22 - [TEST_STEP][PASSED] - "Do Some Magic with URL(s) See the comments within URL Handler ": null
+
+2020-04-20 12:43:22 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-04-20 12:43:22 - [TEST_STEP][PASSED] - "Moved Login Credentials to <Default> profile 22/01/2020": null
+
+2020-04-20 12:43:22 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-04-20 12:43:22 - [TEST_STEP][PASSED] - "WebOfficeURL - Set from the ENVIRONMENT PROFILE ": null
+
+2020-04-20 12:43:22 - [TEST_STEP][PASSED] - "OPEN BROWSER": null
+
+2020-04-20 12:43:22 - [TEST_STEP][PASSED] - "eg - https://admin.preview.checkatrade.com/  ": null
+
+2020-04-20 12:43:22 - [TEST_STEP][PASSED] - openBrowser(WebOfficeURL): Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-04-20 12:43:22 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-04-20 12:43:22 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2020-04-20 12:43:27 - [MESSAGE][PASSED] - Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-04-20 12:43:27 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-04-20 12:43:30 - [MESSAGE][PASSED] - Current window maximized
+
+2020-04-20 12:43:30 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button"), 25): Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-04-20 12:43:30 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-04-20 12:43:30 - [TEST_STEP][PASSED] - verifyTextPresent("Checkatrade Web Office", false): Text 'Checkatrade Web Office' is present on page 
+
+2020-04-20 12:43:31 - [MESSAGE][PASSED] - Text 'Checkatrade Web Office' is present on page 
+
+2020-04-20 12:43:31 - [TEST_STEP][PASSED] - verifyTextPresent("Access for staff use only", false): Text 'Access for staff use only' is present on page 
+
+2020-04-20 12:43:31 - [MESSAGE][PASSED] - Text 'Access for staff use only' is present on page 
+
+2020-04-20 12:43:31 - [TEST_STEP][PASSED] - verifyTextPresent("Forgotten password?", false): Text 'Forgotten password?' is present on page 
+
+2020-04-20 12:43:31 - [MESSAGE][PASSED] - Text 'Forgotten password?' is present on page 
+
+2020-04-20 12:43:31 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName"), wo_Username): Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-04-20 12:43:31 - [MESSAGE][PASSED] - Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-04-20 12:43:31 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword"), wo_Password): Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-04-20 12:43:32 - [MESSAGE][PASSED] - Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-04-20 12:43:32 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button")): Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-04-20 12:43:34 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-04-20 12:43:34 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-20 12:43:34 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:43:34 - [TEST_STEP][PASSED] - verifyTextPresent("Welcome " + wo_Username, false): Text 'Welcome DavidHo' is present on page 
+
+2020-04-20 12:43:34 - [MESSAGE][PASSED] - Text 'Welcome DavidHo' is present on page 
+
+2020-04-20 12:43:34 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-04-20 12:43:34 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------": null
+
+2020-04-20 12:43:34 - [TEST_STEP][PASSED] - " Navigate to <Settings->Checkatrade.Com->Sub Item> Menu Item     |": null
+
+2020-04-20 12:43:34 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/By_Category"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/By_Category' successfully
+
+2020-04-20 12:43:34 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/By_Category: Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/By_Category
+
+2020-04-20 12:43:35 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:43:35 - [TEST_STEP][PASSED] - " Navigate Top level menu Item         |": null
+
+2020-04-20 12:43:35 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-20 12:43:35 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:43:35 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice_Home_page/a_Reports"), 60): Object 'Object Repository/WebOffice_Home_page/a_Reports' is clickable
+
+2020-04-20 12:43:35 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice_Home_page/a_Reports' is clickable
+
+2020-04-20 12:43:35 - [TEST_STEP][PASSED] - mouseOver(findTestObject("Object Repository/WebOffice_Home_page/a_Reports")): Object: 'Object Repository/WebOffice_Home_page/a_Reports' is hovered
+
+2020-04-20 12:43:35 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/a_Reports' is hovered
+
+2020-04-20 12:43:35 - [TEST_STEP][PASSED] - mouseOver(findTestObject("Object Repository/WebOffice_Home_page/Page_/a_Consumers")): Object: 'Object Repository/WebOffice_Home_page/Page_/a_Consumers' is hovered
+
+2020-04-20 12:43:36 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/Page_/a_Consumers' is hovered
+
+2020-04-20 12:43:36 - [TEST_STEP][PASSED] - mouseOver(findTestObject("Object Repository/WebOffice_Home_page/Page_/a_Consumer Searches")): Object: 'Object Repository/WebOffice_Home_page/Page_/a_Consumer Searches' is hovered
+
+2020-04-20 12:43:36 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/Page_/a_Consumer Searches' is hovered
+
+2020-04-20 12:43:36 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2020-04-20 12:43:36 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:43:36 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice_Home_page/a_By Category"), 5): Object 'Object Repository/WebOffice_Home_page/a_By Category' is clickable
+
+2020-04-20 12:43:36 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice_Home_page/a_By Category' is clickable
+
+2020-04-20 12:43:36 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice_Home_page/a_By Category")): Object: 'Object Repository/WebOffice_Home_page/a_By Category' is clicked on
+
+2020-04-20 12:43:37 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/a_By Category' is clicked on
+
+2020-04-20 12:43:37 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/By_Category' successfully
+
+2020-04-20 12:43:37 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:43:37 - [TEST_STEP][PASSED] - " Verify Returned Page Detail          |": null
+
+2020-04-20 12:43:37 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Verification/Reports/By_Category"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/By_Category' successfully
+
+2020-04-20 12:43:37 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/By_Category: Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/By_Category
+
+2020-04-20 12:43:37 - [TEST_STEP][PASSED] - waitForPageLoad(120): Wait for page load successfully
+
+2020-04-20 12:43:37 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:43:37 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-04-20 12:43:38 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-04-20 12:43:38 - [TEST_STEP][PASSED] - verifyTextPresent("Consumer Searches", false): Text 'Consumer Searches' is present on page 
+
+2020-04-20 12:43:39 - [MESSAGE][PASSED] - Text 'Consumer Searches' is present on page 
+
+2020-04-20 12:43:39 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:43:39 - [TEST_STEP][PASSED] - verifyTextPresent("From", false): Text 'From' is present on page 
+
+2020-04-20 12:43:39 - [MESSAGE][PASSED] - Text 'From' is present on page 
+
+2020-04-20 12:43:39 - [TEST_STEP][PASSED] - verifyTextPresent("Popular Categories", false): Text 'Popular Categories' is present on page 
+
+2020-04-20 12:43:40 - [MESSAGE][PASSED] - Text 'Popular Categories' is present on page 
+
+2020-04-20 12:43:40 - [TEST_STEP][PASSED] - verifyTextPresent("Search for", false): Text 'Search for' is present on page 
+
+2020-04-20 12:43:40 - [MESSAGE][PASSED] - Text 'Search for' is present on page 
+
+2020-04-20 12:43:40 - [TEST_STEP][PASSED] - verifyTextPresent("No. Results", false): Text 'No. Results' is present on page 
+
+2020-04-20 12:43:40 - [MESSAGE][PASSED] - Text 'No. Results' is present on page 
+
+2020-04-20 12:43:40 - [TEST_STEP][PASSED] - verifyTextPresent("No. Searches", false): Text 'No. Searches' is present on page 
+
+2020-04-20 12:43:41 - [MESSAGE][PASSED] - Text 'No. Searches' is present on page 
+
+2020-04-20 12:43:41 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:43:41 - [TEST_STEP][PASSED] - verifyTextPresent("Plumber", false): Text 'Plumber' is present on page 
+
+2020-04-20 12:43:41 - [MESSAGE][PASSED] - Text 'Plumber' is present on page 
+
+2020-04-20 12:43:41 - [TEST_STEP][PASSED] - verifyTextPresent("Builder", false): Text 'Builder' is present on page 
+
+2020-04-20 12:43:41 - [MESSAGE][PASSED] - Text 'Builder' is present on page 
+
+2020-04-20 12:43:41 - [TEST_STEP][PASSED] - verifyTextPresent("Electrician", false): Text 'Electrician' is present on page 
+
+2020-04-20 12:43:42 - [MESSAGE][PASSED] - Text 'Electrician' is present on page 
+
+2020-04-20 12:43:42 - [TEST_STEP][PASSED] - verifyTextPresent("Roofer", false): Text 'Roofer' is present on page 
+
+2020-04-20 12:43:42 - [MESSAGE][PASSED] - Text 'Roofer' is present on page 
+
+2020-04-20 12:43:42 - [TEST_STEP][PASSED] - verifyTextPresent("Painter/Decorator", false): Text 'Painter/Decorator' is present on page 
+
+2020-04-20 12:43:43 - [MESSAGE][PASSED] - Text 'Painter/Decorator' is present on page 
+
+2020-04-20 12:43:43 - [TEST_STEP][PASSED] - verifyTextPresent("Carpenter", false): Text 'Carpenter' is present on page 
+
+2020-04-20 12:43:43 - [MESSAGE][PASSED] - Text 'Carpenter' is present on page 
+
+2020-04-20 12:43:43 - [TEST_STEP][PASSED] - verifyTextPresent("Plasterer", false): Text 'Plasterer' is present on page 
+
+2020-04-20 12:43:44 - [MESSAGE][PASSED] - Text 'Plasterer' is present on page 
+
+2020-04-20 12:43:44 - [TEST_STEP][PASSED] - verifyTextPresent("Roofing Repairs", false): Text 'Roofing Repairs' is present on page 
+
+2020-04-20 12:43:44 - [MESSAGE][PASSED] - Text 'Roofing Repairs' is present on page 
+
+2020-04-20 12:43:44 - [TEST_STEP][PASSED] - verifyTextPresent("Landscaper", false): Text 'Landscaper' is present on page 
+
+2020-04-20 12:43:44 - [MESSAGE][PASSED] - Text 'Landscaper' is present on page 
+
+2020-04-20 12:43:44 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/By_Category' successfully
+
+2020-04-20 12:43:44 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-20 12:43:44 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2020-04-20 12:43:44 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-04-20 12:43:44 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2020-04-20 12:43:44 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-04-20 12:43:45 - [MESSAGE][PASSED] - Browser is closed
+
+2020-04-20 12:43:45 - [TEST_STEP][PASSED] - super.finalize(): null
+
+2020-04-20 12:43:45 - [TEST_STEP][PASSED] - System.gc(): null
+
+2020-04-20 12:43:45 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Web_Office/Reports/By_Location" time="27.278" classname="Test Cases/Web_Office/Reports/By_Location" status="PASSED">
+         <system-out><![CDATA[2020-04-20 12:43:45 - [TEST_CASE][PASSED] - Test Cases/Web_Office/Reports/By_Location: Test Cases/Web_Office/Reports/By_Location
+
+2020-04-20 12:43:46 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:43:46 - [TEST_STEP][PASSED] - " Web Office StartUp                  |": null
+
+2020-04-20 12:43:46 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-04-20 12:43:46 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp: Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp
+
+2020-04-20 12:43:46 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:43:46 - [TEST_STEP][PASSED] - if (URL == "https://www.dev.checkatrade.com/"): null
+
+2020-04-20 12:43:46 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:43:46 - [TEST_STEP][PASSED] - if (URL == "https://www.checkatrade.com/"): null
+
+2020-04-20 12:43:46 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:43:46 - [TEST_STEP][PASSED] - if (URL == "https://www.preview.checkatrade.com/"): null
+
+2020-04-20 12:43:46 - [TEST_STEP][PASSED] - WebOfficeURL = "https://admin.preview.checkatrade.com/": null
+
+2020-04-20 12:43:46 - [TEST_STEP][PASSED] - if (URL == "https://www.dev2.checkatrade.com/"): null
+
+2020-04-20 12:43:46 - [TEST_STEP][PASSED] - "Set Function Area for "URL_Handler", URL Resolution": null
+
+2020-04-20 12:43:46 - [TEST_STEP][PASSED] - "Do Some Magic with URL(s) See the comments within URL Handler ": null
+
+2020-04-20 12:43:46 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-04-20 12:43:46 - [TEST_STEP][PASSED] - "Moved Login Credentials to <Default> profile 22/01/2020": null
+
+2020-04-20 12:43:46 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-04-20 12:43:46 - [TEST_STEP][PASSED] - "WebOfficeURL - Set from the ENVIRONMENT PROFILE ": null
+
+2020-04-20 12:43:46 - [TEST_STEP][PASSED] - "OPEN BROWSER": null
+
+2020-04-20 12:43:46 - [TEST_STEP][PASSED] - "eg - https://admin.preview.checkatrade.com/  ": null
+
+2020-04-20 12:43:46 - [TEST_STEP][PASSED] - openBrowser(WebOfficeURL): Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-04-20 12:43:46 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-04-20 12:43:46 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2020-04-20 12:43:52 - [MESSAGE][PASSED] - Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-04-20 12:43:52 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-04-20 12:43:55 - [MESSAGE][PASSED] - Current window maximized
+
+2020-04-20 12:43:55 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button"), 25): Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-04-20 12:43:56 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-04-20 12:43:56 - [TEST_STEP][PASSED] - verifyTextPresent("Checkatrade Web Office", false): Text 'Checkatrade Web Office' is present on page 
+
+2020-04-20 12:43:57 - [MESSAGE][PASSED] - Text 'Checkatrade Web Office' is present on page 
+
+2020-04-20 12:43:57 - [TEST_STEP][PASSED] - verifyTextPresent("Access for staff use only", false): Text 'Access for staff use only' is present on page 
+
+2020-04-20 12:43:57 - [MESSAGE][PASSED] - Text 'Access for staff use only' is present on page 
+
+2020-04-20 12:43:57 - [TEST_STEP][PASSED] - verifyTextPresent("Forgotten password?", false): Text 'Forgotten password?' is present on page 
+
+2020-04-20 12:43:57 - [MESSAGE][PASSED] - Text 'Forgotten password?' is present on page 
+
+2020-04-20 12:43:57 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName"), wo_Username): Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-04-20 12:43:58 - [MESSAGE][PASSED] - Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-04-20 12:43:58 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword"), wo_Password): Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-04-20 12:43:59 - [MESSAGE][PASSED] - Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-04-20 12:43:59 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button")): Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-04-20 12:44:00 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-04-20 12:44:00 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-20 12:44:00 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:44:00 - [TEST_STEP][PASSED] - verifyTextPresent("Welcome " + wo_Username, false): Text 'Welcome DavidHo' is present on page 
+
+2020-04-20 12:44:01 - [MESSAGE][PASSED] - Text 'Welcome DavidHo' is present on page 
+
+2020-04-20 12:44:01 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-04-20 12:44:01 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------": null
+
+2020-04-20 12:44:01 - [TEST_STEP][PASSED] - " Navigate to <Reports->Checkatrade.Com->Sub Item> Menu Item     |": null
+
+2020-04-20 12:44:01 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/By_Location"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/By_Location' successfully
+
+2020-04-20 12:44:02 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/By_Location: Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/By_Location
+
+2020-04-20 12:44:02 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:44:02 - [TEST_STEP][PASSED] - " Navigate Top level menu Item         |": null
+
+2020-04-20 12:44:02 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-20 12:44:03 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:44:03 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice_Home_page/a_Reports"), 60): Object 'Object Repository/WebOffice_Home_page/a_Reports' is clickable
+
+2020-04-20 12:44:03 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice_Home_page/a_Reports' is clickable
+
+2020-04-20 12:44:03 - [TEST_STEP][PASSED] - mouseOver(findTestObject("Object Repository/WebOffice_Home_page/a_Reports")): Object: 'Object Repository/WebOffice_Home_page/a_Reports' is hovered
+
+2020-04-20 12:44:04 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/a_Reports' is hovered
+
+2020-04-20 12:44:04 - [TEST_STEP][PASSED] - mouseOver(findTestObject("Object Repository/WebOffice_Home_page/Page_/a_Consumers")): Object: 'Object Repository/WebOffice_Home_page/Page_/a_Consumers' is hovered
+
+2020-04-20 12:44:04 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/Page_/a_Consumers' is hovered
+
+2020-04-20 12:44:04 - [TEST_STEP][PASSED] - mouseOver(findTestObject("Object Repository/WebOffice_Home_page/Page_/a_Consumer Searches")): Object: 'Object Repository/WebOffice_Home_page/Page_/a_Consumer Searches' is hovered
+
+2020-04-20 12:44:04 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/Page_/a_Consumer Searches' is hovered
+
+2020-04-20 12:44:04 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2020-04-20 12:44:04 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:44:04 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice_Home_page/a_By Location"), 5): Object 'Object Repository/WebOffice_Home_page/a_By Location' is clickable
+
+2020-04-20 12:44:05 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice_Home_page/a_By Location' is clickable
+
+2020-04-20 12:44:05 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice_Home_page/a_By Location")): Object: 'Object Repository/WebOffice_Home_page/a_By Location' is clicked on
+
+2020-04-20 12:44:05 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/a_By Location' is clicked on
+
+2020-04-20 12:44:05 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/By_Location' successfully
+
+2020-04-20 12:44:05 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:44:05 - [TEST_STEP][PASSED] - " Verify Returned Page Detail          |": null
+
+2020-04-20 12:44:05 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Verification/Reports/By_Location"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/By_Location' successfully
+
+2020-04-20 12:44:05 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/By_Location: Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/By_Location
+
+2020-04-20 12:44:06 - [TEST_STEP][PASSED] - waitForPageLoad(120): Wait for page load successfully
+
+2020-04-20 12:44:06 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:44:06 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-04-20 12:44:07 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-04-20 12:44:07 - [TEST_STEP][PASSED] - verifyTextPresent("Searches by Location", false): Text 'Searches by Location' is present on page 
+
+2020-04-20 12:44:07 - [MESSAGE][PASSED] - Text 'Searches by Location' is present on page 
+
+2020-04-20 12:44:07 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:44:07 - [TEST_STEP][PASSED] - verifyTextPresent("Select counties", false): Text 'Select counties' is present on page 
+
+2020-04-20 12:44:08 - [MESSAGE][PASSED] - Text 'Select counties' is present on page 
+
+2020-04-20 12:44:08 - [TEST_STEP][PASSED] - verifyTextPresent("Town", false): Text 'Town' is present on page 
+
+2020-04-20 12:44:08 - [MESSAGE][PASSED] - Text 'Town' is present on page 
+
+2020-04-20 12:44:08 - [TEST_STEP][PASSED] - verifyTextPresent("By Postcode", false): Text 'By Postcode' is present on page 
+
+2020-04-20 12:44:08 - [MESSAGE][PASSED] - Text 'By Postcode' is present on page 
+
+2020-04-20 12:44:08 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:44:08 - [TEST_STEP][PASSED] - verifyTextPresent("Angus", false): Text 'Angus' is present on page 
+
+2020-04-20 12:44:09 - [MESSAGE][PASSED] - Text 'Angus' is present on page 
+
+2020-04-20 12:44:09 - [TEST_STEP][PASSED] - verifyTextPresent("Berkshire", false): Text 'Berkshire' is present on page 
+
+2020-04-20 12:44:09 - [MESSAGE][PASSED] - Text 'Berkshire' is present on page 
+
+2020-04-20 12:44:09 - [TEST_STEP][PASSED] - verifyTextPresent("Avon", false): Text 'Avon' is present on page 
+
+2020-04-20 12:44:10 - [MESSAGE][PASSED] - Text 'Avon' is present on page 
+
+2020-04-20 12:44:10 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:44:10 - [TEST_STEP][PASSED] - verifyTextPresent("Tip: Use Shift or Control when clicking on the lists to select multiple options", false): Text 'Tip: Use Shift or Control when clicking on the lists to select multiple options' is present on page 
+
+2020-04-20 12:44:10 - [MESSAGE][PASSED] - Text 'Tip: Use Shift or Control when clicking on the lists to select multiple options' is present on page 
+
+2020-04-20 12:44:10 - [TEST_STEP][PASSED] - verifyTextPresent("Select Date Range", false): Text 'Select Date Range' is present on page 
+
+2020-04-20 12:44:10 - [MESSAGE][PASSED] - Text 'Select Date Range' is present on page 
+
+2020-04-20 12:44:10 - [TEST_STEP][PASSED] - verifyTextPresent("From", false): Text 'From' is present on page 
+
+2020-04-20 12:44:11 - [MESSAGE][PASSED] - Text 'From' is present on page 
+
+2020-04-20 12:44:11 - [TEST_STEP][PASSED] - verifyTextPresent("To", false): Text 'To' is present on page 
+
+2020-04-20 12:44:11 - [MESSAGE][PASSED] - Text 'To' is present on page 
+
+2020-04-20 12:44:11 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/By_Location' successfully
+
+2020-04-20 12:44:11 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-20 12:44:11 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2020-04-20 12:44:11 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-04-20 12:44:11 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2020-04-20 12:44:11 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-04-20 12:44:13 - [MESSAGE][PASSED] - Browser is closed
+
+2020-04-20 12:44:13 - [TEST_STEP][PASSED] - super.finalize(): null
+
+2020-04-20 12:44:13 - [TEST_STEP][PASSED] - System.gc(): null
+
+2020-04-20 12:44:13 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Web_Office/Reports/Returning_No_Results" time="19.43" classname="Test Cases/Web_Office/Reports/Returning_No_Results" status="PASSED">
+         <system-out><![CDATA[2020-04-20 12:44:13 - [TEST_CASE][PASSED] - Test Cases/Web_Office/Reports/Returning_No_Results: Test Cases/Web_Office/Reports/Returning_No_Results
+
+2020-04-20 12:44:13 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:44:13 - [TEST_STEP][PASSED] - " Web Office StartUp                  |": null
+
+2020-04-20 12:44:13 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-04-20 12:44:13 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp: Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp
+
+2020-04-20 12:44:13 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:44:13 - [TEST_STEP][PASSED] - if (URL == "https://www.dev.checkatrade.com/"): null
+
+2020-04-20 12:44:13 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:44:13 - [TEST_STEP][PASSED] - if (URL == "https://www.checkatrade.com/"): null
+
+2020-04-20 12:44:13 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:44:13 - [TEST_STEP][PASSED] - if (URL == "https://www.preview.checkatrade.com/"): null
+
+2020-04-20 12:44:13 - [TEST_STEP][PASSED] - WebOfficeURL = "https://admin.preview.checkatrade.com/": null
+
+2020-04-20 12:44:13 - [TEST_STEP][PASSED] - if (URL == "https://www.dev2.checkatrade.com/"): null
+
+2020-04-20 12:44:13 - [TEST_STEP][PASSED] - "Set Function Area for "URL_Handler", URL Resolution": null
+
+2020-04-20 12:44:13 - [TEST_STEP][PASSED] - "Do Some Magic with URL(s) See the comments within URL Handler ": null
+
+2020-04-20 12:44:13 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-04-20 12:44:13 - [TEST_STEP][PASSED] - "Moved Login Credentials to <Default> profile 22/01/2020": null
+
+2020-04-20 12:44:13 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-04-20 12:44:13 - [TEST_STEP][PASSED] - "WebOfficeURL - Set from the ENVIRONMENT PROFILE ": null
+
+2020-04-20 12:44:13 - [TEST_STEP][PASSED] - "OPEN BROWSER": null
+
+2020-04-20 12:44:13 - [TEST_STEP][PASSED] - "eg - https://admin.preview.checkatrade.com/  ": null
+
+2020-04-20 12:44:13 - [TEST_STEP][PASSED] - openBrowser(WebOfficeURL): Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-04-20 12:44:13 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-04-20 12:44:13 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2020-04-20 12:44:18 - [MESSAGE][PASSED] - Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-04-20 12:44:18 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-04-20 12:44:21 - [MESSAGE][PASSED] - Current window maximized
+
+2020-04-20 12:44:21 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button"), 25): Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-04-20 12:44:21 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-04-20 12:44:21 - [TEST_STEP][PASSED] - verifyTextPresent("Checkatrade Web Office", false): Text 'Checkatrade Web Office' is present on page 
+
+2020-04-20 12:44:21 - [MESSAGE][PASSED] - Text 'Checkatrade Web Office' is present on page 
+
+2020-04-20 12:44:21 - [TEST_STEP][PASSED] - verifyTextPresent("Access for staff use only", false): Text 'Access for staff use only' is present on page 
+
+2020-04-20 12:44:21 - [MESSAGE][PASSED] - Text 'Access for staff use only' is present on page 
+
+2020-04-20 12:44:21 - [TEST_STEP][PASSED] - verifyTextPresent("Forgotten password?", false): Text 'Forgotten password?' is present on page 
+
+2020-04-20 12:44:21 - [MESSAGE][PASSED] - Text 'Forgotten password?' is present on page 
+
+2020-04-20 12:44:21 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName"), wo_Username): Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-04-20 12:44:22 - [MESSAGE][PASSED] - Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-04-20 12:44:22 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword"), wo_Password): Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-04-20 12:44:22 - [MESSAGE][PASSED] - Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-04-20 12:44:22 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button")): Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-04-20 12:44:24 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-04-20 12:44:24 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-20 12:44:24 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:44:24 - [TEST_STEP][PASSED] - verifyTextPresent("Welcome " + wo_Username, false): Text 'Welcome DavidHo' is present on page 
+
+2020-04-20 12:44:24 - [MESSAGE][PASSED] - Text 'Welcome DavidHo' is present on page 
+
+2020-04-20 12:44:24 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-04-20 12:44:24 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------": null
+
+2020-04-20 12:44:24 - [TEST_STEP][PASSED] - " Navigate to <Reports->Checkatrade.Com->Sub Item> Menu Item     |": null
+
+2020-04-20 12:44:24 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Returning_No_Results"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Returning_No_Results' successfully
+
+2020-04-20 12:44:24 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Returning_No_Results: Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Returning_No_Results
+
+2020-04-20 12:44:25 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:44:25 - [TEST_STEP][PASSED] - " Navigate Top level menu Item         |": null
+
+2020-04-20 12:44:25 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-20 12:44:25 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:44:25 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice_Home_page/a_Reports"), 60): Object 'Object Repository/WebOffice_Home_page/a_Reports' is clickable
+
+2020-04-20 12:44:25 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice_Home_page/a_Reports' is clickable
+
+2020-04-20 12:44:25 - [TEST_STEP][PASSED] - mouseOver(findTestObject("Object Repository/WebOffice_Home_page/a_Reports")): Object: 'Object Repository/WebOffice_Home_page/a_Reports' is hovered
+
+2020-04-20 12:44:26 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/a_Reports' is hovered
+
+2020-04-20 12:44:26 - [TEST_STEP][PASSED] - mouseOver(findTestObject("Object Repository/WebOffice_Home_page/Page_/a_Consumers")): Object: 'Object Repository/WebOffice_Home_page/Page_/a_Consumers' is hovered
+
+2020-04-20 12:44:26 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/Page_/a_Consumers' is hovered
+
+2020-04-20 12:44:26 - [TEST_STEP][PASSED] - mouseOver(findTestObject("Object Repository/WebOffice_Home_page/Page_/a_Consumer Searches")): Object: 'Object Repository/WebOffice_Home_page/Page_/a_Consumer Searches' is hovered
+
+2020-04-20 12:44:27 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/Page_/a_Consumer Searches' is hovered
+
+2020-04-20 12:44:27 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2020-04-20 12:44:27 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:44:27 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice_Home_page/a_Returning No Results"), 5): Object 'Object Repository/WebOffice_Home_page/a_Returning No Results' is clickable
+
+2020-04-20 12:44:27 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice_Home_page/a_Returning No Results' is clickable
+
+2020-04-20 12:44:27 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice_Home_page/a_Returning No Results")): Object: 'Object Repository/WebOffice_Home_page/a_Returning No Results' is clicked on
+
+2020-04-20 12:44:29 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/a_Returning No Results' is clicked on
+
+2020-04-20 12:44:29 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Returning_No_Results' successfully
+
+2020-04-20 12:44:29 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:44:29 - [TEST_STEP][PASSED] - " Verify Returned Page Detail          |": null
+
+2020-04-20 12:44:29 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Verification/Reports/Returning_No_Results"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Returning_No_Results' successfully
+
+2020-04-20 12:44:29 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Returning_No_Results: Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Returning_No_Results
+
+2020-04-20 12:44:29 - [TEST_STEP][PASSED] - waitForPageLoad(120): Wait for page load successfully
+
+2020-04-20 12:44:29 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:44:29 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-04-20 12:44:30 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-04-20 12:44:30 - [TEST_STEP][PASSED] - verifyTextPresent("Consumer Searches", false): Text 'Consumer Searches' is present on page 
+
+2020-04-20 12:44:31 - [MESSAGE][PASSED] - Text 'Consumer Searches' is present on page 
+
+2020-04-20 12:44:31 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:44:31 - [TEST_STEP][PASSED] - verifyTextPresent("Returning No Results", false): Text 'Returning No Results' is present on page 
+
+2020-04-20 12:44:31 - [MESSAGE][PASSED] - Text 'Returning No Results' is present on page 
+
+2020-04-20 12:44:31 - [TEST_STEP][PASSED] - verifyTextPresent("From", false): Text 'From' is present on page 
+
+2020-04-20 12:44:31 - [MESSAGE][PASSED] - Text 'From' is present on page 
+
+2020-04-20 12:44:31 - [TEST_STEP][PASSED] - verifyTextPresent("To", false): Text 'To' is present on page 
+
+2020-04-20 12:44:31 - [MESSAGE][PASSED] - Text 'To' is present on page 
+
+2020-04-20 12:44:31 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Returning_No_Results' successfully
+
+2020-04-20 12:44:31 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-20 12:44:31 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2020-04-20 12:44:31 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-04-20 12:44:31 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2020-04-20 12:44:31 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-04-20 12:44:32 - [MESSAGE][PASSED] - Browser is closed
+
+2020-04-20 12:44:32 - [TEST_STEP][PASSED] - super.finalize(): null
+
+2020-04-20 12:44:32 - [TEST_STEP][PASSED] - System.gc(): null
+
+2020-04-20 12:44:32 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Web_Office/Reports/Search_Tracking" time="31.686" classname="Test Cases/Web_Office/Reports/Search_Tracking" status="PASSED">
+         <system-out><![CDATA[2020-04-20 12:44:32 - [TEST_CASE][PASSED] - Test Cases/Web_Office/Reports/Search_Tracking: Test Cases/Web_Office/Reports/Search_Tracking
+
+2020-04-20 12:44:33 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:44:33 - [TEST_STEP][PASSED] - " Web Office StartUp                  |": null
+
+2020-04-20 12:44:33 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-04-20 12:44:33 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp: Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp
+
+2020-04-20 12:44:33 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:44:33 - [TEST_STEP][PASSED] - if (URL == "https://www.dev.checkatrade.com/"): null
+
+2020-04-20 12:44:33 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:44:33 - [TEST_STEP][PASSED] - if (URL == "https://www.checkatrade.com/"): null
+
+2020-04-20 12:44:33 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:44:33 - [TEST_STEP][PASSED] - if (URL == "https://www.preview.checkatrade.com/"): null
+
+2020-04-20 12:44:33 - [TEST_STEP][PASSED] - WebOfficeURL = "https://admin.preview.checkatrade.com/": null
+
+2020-04-20 12:44:33 - [TEST_STEP][PASSED] - if (URL == "https://www.dev2.checkatrade.com/"): null
+
+2020-04-20 12:44:33 - [TEST_STEP][PASSED] - "Set Function Area for "URL_Handler", URL Resolution": null
+
+2020-04-20 12:44:33 - [TEST_STEP][PASSED] - "Do Some Magic with URL(s) See the comments within URL Handler ": null
+
+2020-04-20 12:44:33 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-04-20 12:44:33 - [TEST_STEP][PASSED] - "Moved Login Credentials to <Default> profile 22/01/2020": null
+
+2020-04-20 12:44:33 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-04-20 12:44:33 - [TEST_STEP][PASSED] - "WebOfficeURL - Set from the ENVIRONMENT PROFILE ": null
+
+2020-04-20 12:44:33 - [TEST_STEP][PASSED] - "OPEN BROWSER": null
+
+2020-04-20 12:44:33 - [TEST_STEP][PASSED] - "eg - https://admin.preview.checkatrade.com/  ": null
+
+2020-04-20 12:44:33 - [TEST_STEP][PASSED] - openBrowser(WebOfficeURL): Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-04-20 12:44:33 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-04-20 12:44:33 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2020-04-20 12:44:37 - [MESSAGE][PASSED] - Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-04-20 12:44:37 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-04-20 12:44:40 - [MESSAGE][PASSED] - Current window maximized
+
+2020-04-20 12:44:40 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button"), 25): Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-04-20 12:44:40 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-04-20 12:44:40 - [TEST_STEP][PASSED] - verifyTextPresent("Checkatrade Web Office", false): Text 'Checkatrade Web Office' is present on page 
+
+2020-04-20 12:44:40 - [MESSAGE][PASSED] - Text 'Checkatrade Web Office' is present on page 
+
+2020-04-20 12:44:40 - [TEST_STEP][PASSED] - verifyTextPresent("Access for staff use only", false): Text 'Access for staff use only' is present on page 
+
+2020-04-20 12:44:40 - [MESSAGE][PASSED] - Text 'Access for staff use only' is present on page 
+
+2020-04-20 12:44:40 - [TEST_STEP][PASSED] - verifyTextPresent("Forgotten password?", false): Text 'Forgotten password?' is present on page 
+
+2020-04-20 12:44:40 - [MESSAGE][PASSED] - Text 'Forgotten password?' is present on page 
+
+2020-04-20 12:44:40 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName"), wo_Username): Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-04-20 12:44:41 - [MESSAGE][PASSED] - Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-04-20 12:44:41 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword"), wo_Password): Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-04-20 12:44:42 - [MESSAGE][PASSED] - Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-04-20 12:44:42 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button")): Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-04-20 12:44:43 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-04-20 12:44:43 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-20 12:44:43 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:44:43 - [TEST_STEP][PASSED] - verifyTextPresent("Welcome " + wo_Username, false): Text 'Welcome DavidHo' is present on page 
+
+2020-04-20 12:44:44 - [MESSAGE][PASSED] - Text 'Welcome DavidHo' is present on page 
+
+2020-04-20 12:44:44 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-04-20 12:44:44 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------": null
+
+2020-04-20 12:44:44 - [TEST_STEP][PASSED] - " Navigate to <Reports->Checkatrade.Com->Sub Item> Menu Item     |": null
+
+2020-04-20 12:44:44 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Search_Tracking"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Search_Tracking' successfully
+
+2020-04-20 12:44:44 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Search_Tracking: Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Search_Tracking
+
+2020-04-20 12:44:45 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:44:45 - [TEST_STEP][PASSED] - " Navigate Top level menu Item         |": null
+
+2020-04-20 12:44:45 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-20 12:44:45 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:44:45 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice_Home_page/a_Reports"), 60): Object 'Object Repository/WebOffice_Home_page/a_Reports' is clickable
+
+2020-04-20 12:44:45 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice_Home_page/a_Reports' is clickable
+
+2020-04-20 12:44:45 - [TEST_STEP][PASSED] - mouseOver(findTestObject("Object Repository/WebOffice_Home_page/a_Reports")): Object: 'Object Repository/WebOffice_Home_page/a_Reports' is hovered
+
+2020-04-20 12:44:45 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/a_Reports' is hovered
+
+2020-04-20 12:44:45 - [TEST_STEP][PASSED] - mouseOver(findTestObject("Object Repository/WebOffice_Home_page/Page_/a_Consumers")): Object: 'Object Repository/WebOffice_Home_page/Page_/a_Consumers' is hovered
+
+2020-04-20 12:44:46 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/Page_/a_Consumers' is hovered
+
+2020-04-20 12:44:46 - [TEST_STEP][PASSED] - mouseOver(findTestObject("Object Repository/WebOffice_Home_page/Page_/a_Consumer Searches")): Object: 'Object Repository/WebOffice_Home_page/Page_/a_Consumer Searches' is hovered
+
+2020-04-20 12:44:46 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/Page_/a_Consumer Searches' is hovered
+
+2020-04-20 12:44:46 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2020-04-20 12:44:46 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:44:46 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice_Home_page/a_Search Tracking"), 5): Object 'Object Repository/WebOffice_Home_page/a_Search Tracking' is clickable
+
+2020-04-20 12:44:46 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice_Home_page/a_Search Tracking' is clickable
+
+2020-04-20 12:44:46 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice_Home_page/a_Search Tracking")): Object: 'Object Repository/WebOffice_Home_page/a_Search Tracking' is clicked on
+
+2020-04-20 12:44:48 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/a_Search Tracking' is clicked on
+
+2020-04-20 12:44:48 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Search_Tracking' successfully
+
+2020-04-20 12:44:48 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:44:48 - [TEST_STEP][PASSED] - " Verify Returned Page Detail          |": null
+
+2020-04-20 12:44:48 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Verification/Reports/Search_Tracking"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Search_Tracking' successfully
+
+2020-04-20 12:44:48 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Search_Tracking: Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Search_Tracking
+
+2020-04-20 12:44:49 - [TEST_STEP][PASSED] - waitForPageLoad(120): Wait for page load successfully
+
+2020-04-20 12:44:49 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:44:49 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-04-20 12:44:50 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-04-20 12:44:50 - [TEST_STEP][PASSED] - verifyTextPresent("Search Tracking", false): Text 'Search Tracking' is present on page 
+
+2020-04-20 12:44:51 - [MESSAGE][PASSED] - Text 'Search Tracking' is present on page 
+
+2020-04-20 12:44:51 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:44:51 - [TEST_STEP][PASSED] - verifyTextPresent("ID", false): Text 'ID' is present on page 
+
+2020-04-20 12:44:52 - [MESSAGE][PASSED] - Text 'ID' is present on page 
+
+2020-04-20 12:44:52 - [TEST_STEP][PASSED] - verifyTextPresent("TRADE", false): Text 'TRADE' is present on page 
+
+2020-04-20 12:44:54 - [MESSAGE][PASSED] - Text 'TRADE' is present on page 
+
+2020-04-20 12:44:54 - [TEST_STEP][PASSED] - verifyTextPresent("LOCATION", false): Text 'LOCATION' is present on page 
+
+2020-04-20 12:44:55 - [MESSAGE][PASSED] - Text 'LOCATION' is present on page 
+
+2020-04-20 12:44:55 - [TEST_STEP][PASSED] - verifyTextPresent("DATETIME", false): Text 'DATETIME' is present on page 
+
+2020-04-20 12:44:56 - [MESSAGE][PASSED] - Text 'DATETIME' is present on page 
+
+2020-04-20 12:44:56 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:44:56 - [TEST_STEP][PASSED] - verifyTextPresent("14262747", false): Text '14262747' is present on page 
+
+2020-04-20 12:44:57 - [MESSAGE][PASSED] - Text '14262747' is present on page 
+
+2020-04-20 12:44:57 - [TEST_STEP][PASSED] - verifyTextPresent("UPVC Repairs", false): Text 'UPVC Repairs' is present on page 
+
+2020-04-20 12:44:59 - [MESSAGE][PASSED] - Text 'UPVC Repairs' is present on page 
+
+2020-04-20 12:44:59 - [TEST_STEP][PASSED] - verifyTextPresent("MILFORD HAVEN", false): Text 'MILFORD HAVEN' is present on page 
+
+2020-04-20 12:45:00 - [MESSAGE][PASSED] - Text 'MILFORD HAVEN' is present on page 
+
+2020-04-20 12:45:00 - [TEST_STEP][PASSED] - verifyTextPresent("28-09-2017 7:19:10", false): Text '28-09-2017 7:19:10' is present on page 
+
+2020-04-20 12:45:01 - [MESSAGE][PASSED] - Text '28-09-2017 7:19:10' is present on page 
+
+2020-04-20 12:45:01 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Search_Tracking' successfully
+
+2020-04-20 12:45:01 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-20 12:45:01 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2020-04-20 12:45:01 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-04-20 12:45:01 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2020-04-20 12:45:01 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-04-20 12:45:04 - [MESSAGE][PASSED] - Browser is closed
+
+2020-04-20 12:45:04 - [TEST_STEP][PASSED] - super.finalize(): null
+
+2020-04-20 12:45:04 - [TEST_STEP][PASSED] - System.gc(): null
+
+2020-04-20 12:45:04 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Web_Office/Reports/Overnight_Import_History" time="21.815" classname="Test Cases/Web_Office/Reports/Overnight_Import_History" status="PASSED">
+         <system-out><![CDATA[2020-04-20 12:45:04 - [TEST_CASE][PASSED] - Test Cases/Web_Office/Reports/Overnight_Import_History: Test Cases/Web_Office/Reports/Overnight_Import_History
+
+2020-04-20 12:45:04 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:45:04 - [TEST_STEP][PASSED] - " Web Office StartUp                  |": null
+
+2020-04-20 12:45:04 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-04-20 12:45:04 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp: Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp
+
+2020-04-20 12:45:04 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:45:04 - [TEST_STEP][PASSED] - if (URL == "https://www.dev.checkatrade.com/"): null
+
+2020-04-20 12:45:04 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:45:04 - [TEST_STEP][PASSED] - if (URL == "https://www.checkatrade.com/"): null
+
+2020-04-20 12:45:04 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:45:04 - [TEST_STEP][PASSED] - if (URL == "https://www.preview.checkatrade.com/"): null
+
+2020-04-20 12:45:04 - [TEST_STEP][PASSED] - WebOfficeURL = "https://admin.preview.checkatrade.com/": null
+
+2020-04-20 12:45:04 - [TEST_STEP][PASSED] - if (URL == "https://www.dev2.checkatrade.com/"): null
+
+2020-04-20 12:45:04 - [TEST_STEP][PASSED] - "Set Function Area for "URL_Handler", URL Resolution": null
+
+2020-04-20 12:45:04 - [TEST_STEP][PASSED] - "Do Some Magic with URL(s) See the comments within URL Handler ": null
+
+2020-04-20 12:45:04 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-04-20 12:45:04 - [TEST_STEP][PASSED] - "Moved Login Credentials to <Default> profile 22/01/2020": null
+
+2020-04-20 12:45:04 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-04-20 12:45:04 - [TEST_STEP][PASSED] - "WebOfficeURL - Set from the ENVIRONMENT PROFILE ": null
+
+2020-04-20 12:45:04 - [TEST_STEP][PASSED] - "OPEN BROWSER": null
+
+2020-04-20 12:45:04 - [TEST_STEP][PASSED] - "eg - https://admin.preview.checkatrade.com/  ": null
+
+2020-04-20 12:45:04 - [TEST_STEP][PASSED] - openBrowser(WebOfficeURL): Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-04-20 12:45:04 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-04-20 12:45:04 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2020-04-20 12:45:09 - [MESSAGE][PASSED] - Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-04-20 12:45:09 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-04-20 12:45:11 - [MESSAGE][PASSED] - Current window maximized
+
+2020-04-20 12:45:11 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button"), 25): Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-04-20 12:45:11 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-04-20 12:45:11 - [TEST_STEP][PASSED] - verifyTextPresent("Checkatrade Web Office", false): Text 'Checkatrade Web Office' is present on page 
+
+2020-04-20 12:45:11 - [MESSAGE][PASSED] - Text 'Checkatrade Web Office' is present on page 
+
+2020-04-20 12:45:11 - [TEST_STEP][PASSED] - verifyTextPresent("Access for staff use only", false): Text 'Access for staff use only' is present on page 
+
+2020-04-20 12:45:12 - [MESSAGE][PASSED] - Text 'Access for staff use only' is present on page 
+
+2020-04-20 12:45:12 - [TEST_STEP][PASSED] - verifyTextPresent("Forgotten password?", false): Text 'Forgotten password?' is present on page 
+
+2020-04-20 12:45:12 - [MESSAGE][PASSED] - Text 'Forgotten password?' is present on page 
+
+2020-04-20 12:45:12 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName"), wo_Username): Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-04-20 12:45:12 - [MESSAGE][PASSED] - Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-04-20 12:45:12 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword"), wo_Password): Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-04-20 12:45:12 - [MESSAGE][PASSED] - Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-04-20 12:45:12 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button")): Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-04-20 12:45:13 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-04-20 12:45:13 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-20 12:45:14 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:45:14 - [TEST_STEP][PASSED] - verifyTextPresent("Welcome " + wo_Username, false): Text 'Welcome DavidHo' is present on page 
+
+2020-04-20 12:45:14 - [MESSAGE][PASSED] - Text 'Welcome DavidHo' is present on page 
+
+2020-04-20 12:45:14 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-04-20 12:45:14 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------": null
+
+2020-04-20 12:45:14 - [TEST_STEP][PASSED] - " Navigate to <Settings->Checkatrade.Com->Sub Item> Menu Item     |": null
+
+2020-04-20 12:45:14 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Overnight_Import_History"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Overnight_Import_History' successfully
+
+2020-04-20 12:45:14 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Overnight_Import_History: Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Overnight_Import_History
+
+2020-04-20 12:45:15 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:45:15 - [TEST_STEP][PASSED] - " Navigate Top level menu Item         |": null
+
+2020-04-20 12:45:15 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-20 12:45:15 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:45:15 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice_Home_page/a_Reports"), 60): Object 'Object Repository/WebOffice_Home_page/a_Reports' is clickable
+
+2020-04-20 12:45:15 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice_Home_page/a_Reports' is clickable
+
+2020-04-20 12:45:15 - [TEST_STEP][PASSED] - mouseOver(findTestObject("Object Repository/WebOffice_Home_page/a_Reports")): Object: 'Object Repository/WebOffice_Home_page/a_Reports' is hovered
+
+2020-04-20 12:45:16 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/a_Reports' is hovered
+
+2020-04-20 12:45:16 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2020-04-20 12:45:16 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:45:16 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice_Home_page/Page_/a_Overnight Import History"), 5): Object 'Object Repository/WebOffice_Home_page/Page_/a_Overnight Import History' is clickable
+
+2020-04-20 12:45:16 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice_Home_page/Page_/a_Overnight Import History' is clickable
+
+2020-04-20 12:45:16 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice_Home_page/Page_/a_Overnight Import History")): Object: 'Object Repository/WebOffice_Home_page/Page_/a_Overnight Import History' is clicked on
+
+2020-04-20 12:45:17 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/Page_/a_Overnight Import History' is clicked on
+
+2020-04-20 12:45:17 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Overnight_Import_History' successfully
+
+2020-04-20 12:45:17 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:45:17 - [TEST_STEP][PASSED] - " Verify Returned Page Detail          |": null
+
+2020-04-20 12:45:17 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Verification/Reports/Overnight_Import_History"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Overnight_Import_History' successfully
+
+2020-04-20 12:45:17 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Overnight_Import_History: Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Overnight_Import_History
+
+2020-04-20 12:45:18 - [TEST_STEP][PASSED] - waitForPageLoad(120): Wait for page load successfully
+
+2020-04-20 12:45:18 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:45:18 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-04-20 12:45:19 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-04-20 12:45:19 - [TEST_STEP][PASSED] - verifyTextPresent("Trade Register - Overnight Import Statistics", false): Text 'Trade Register - Overnight Import Statistics' is present on page 
+
+2020-04-20 12:45:19 - [MESSAGE][PASSED] - Text 'Trade Register - Overnight Import Statistics' is present on page 
+
+2020-04-20 12:45:19 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:45:19 - [TEST_STEP][PASSED] - verifyTextPresent("Import Date", false): Text 'Import Date' is present on page 
+
+2020-04-20 12:45:20 - [MESSAGE][PASSED] - Text 'Import Date' is present on page 
+
+2020-04-20 12:45:20 - [TEST_STEP][PASSED] - verifyTextPresent("New Company", false): Text 'New Company' is present on page 
+
+2020-04-20 12:45:20 - [MESSAGE][PASSED] - Text 'New Company' is present on page 
+
+2020-04-20 12:45:20 - [TEST_STEP][PASSED] - verifyTextPresent("Modified Company", false): Text 'Modified Company' is present on page 
+
+2020-04-20 12:45:21 - [MESSAGE][PASSED] - Text 'Modified Company' is present on page 
+
+2020-04-20 12:45:21 - [TEST_STEP][PASSED] - verifyTextPresent("New Feedback", false): Text 'New Feedback' is present on page 
+
+2020-04-20 12:45:21 - [MESSAGE][PASSED] - Text 'New Feedback' is present on page 
+
+2020-04-20 12:45:21 - [TEST_STEP][PASSED] - verifyTextPresent("New Vetting Reference", false): Text 'New Vetting Reference' is present on page 
+
+2020-04-20 12:45:22 - [MESSAGE][PASSED] - Text 'New Vetting Reference' is present on page 
+
+2020-04-20 12:45:22 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:45:22 - [TEST_STEP][PASSED] - verifyTextPresent("Thu", false): Text 'Thu' is present on page 
+
+2020-04-20 12:45:23 - [MESSAGE][PASSED] - Text 'Thu' is present on page 
+
+2020-04-20 12:45:23 - [TEST_STEP][PASSED] - verifyTextPresent("Wed", false): Text 'Wed' is present on page 
+
+2020-04-20 12:45:23 - [MESSAGE][PASSED] - Text 'Wed' is present on page 
+
+2020-04-20 12:45:23 - [TEST_STEP][PASSED] - verifyTextPresent("Mar", false): Text 'Mar' is present on page 
+
+2020-04-20 12:45:24 - [MESSAGE][PASSED] - Text 'Mar' is present on page 
+
+2020-04-20 12:45:24 - [TEST_STEP][PASSED] - verifyTextPresent("20", false): Text '20' is present on page 
+
+2020-04-20 12:45:24 - [MESSAGE][PASSED] - Text '20' is present on page 
+
+2020-04-20 12:45:24 - [TEST_STEP][PASSED] - verifyTextPresent("1", false): Text '1' is present on page 
+
+2020-04-20 12:45:25 - [MESSAGE][PASSED] - Text '1' is present on page 
+
+2020-04-20 12:45:25 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Overnight_Import_History' successfully
+
+2020-04-20 12:45:25 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-20 12:45:25 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2020-04-20 12:45:25 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-04-20 12:45:25 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2020-04-20 12:45:25 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-04-20 12:45:26 - [MESSAGE][PASSED] - Browser is closed
+
+2020-04-20 12:45:26 - [TEST_STEP][PASSED] - super.finalize(): null
+
+2020-04-20 12:45:26 - [TEST_STEP][PASSED] - System.gc(): null
+
+2020-04-20 12:45:26 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Web_Office/Reports/Population_Report" time="37.476" classname="Test Cases/Web_Office/Reports/Population_Report" status="PASSED">
+         <system-out><![CDATA[2020-04-20 12:45:26 - [TEST_CASE][PASSED] - Test Cases/Web_Office/Reports/Population_Report: Test Cases/Web_Office/Reports/Population_Report
+
+2020-04-20 12:45:26 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:45:26 - [TEST_STEP][PASSED] - " Web Office StartUp                  |": null
+
+2020-04-20 12:45:26 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-04-20 12:45:26 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp: Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp
+
+2020-04-20 12:45:26 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:45:26 - [TEST_STEP][PASSED] - if (URL == "https://www.dev.checkatrade.com/"): null
+
+2020-04-20 12:45:26 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:45:26 - [TEST_STEP][PASSED] - if (URL == "https://www.checkatrade.com/"): null
+
+2020-04-20 12:45:26 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------------------": null
+
+2020-04-20 12:45:26 - [TEST_STEP][PASSED] - if (URL == "https://www.preview.checkatrade.com/"): null
+
+2020-04-20 12:45:26 - [TEST_STEP][PASSED] - WebOfficeURL = "https://admin.preview.checkatrade.com/": null
+
+2020-04-20 12:45:26 - [TEST_STEP][PASSED] - if (URL == "https://www.dev2.checkatrade.com/"): null
+
+2020-04-20 12:45:26 - [TEST_STEP][PASSED] - "Set Function Area for "URL_Handler", URL Resolution": null
+
+2020-04-20 12:45:26 - [TEST_STEP][PASSED] - "Do Some Magic with URL(s) See the comments within URL Handler ": null
+
+2020-04-20 12:45:26 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-04-20 12:45:26 - [TEST_STEP][PASSED] - "Moved Login Credentials to <Default> profile 22/01/2020": null
+
+2020-04-20 12:45:26 - [TEST_STEP][PASSED] - "------------------------------------------------": null
+
+2020-04-20 12:45:26 - [TEST_STEP][PASSED] - "WebOfficeURL - Set from the ENVIRONMENT PROFILE ": null
+
+2020-04-20 12:45:26 - [TEST_STEP][PASSED] - "OPEN BROWSER": null
+
+2020-04-20 12:45:26 - [TEST_STEP][PASSED] - "eg - https://admin.preview.checkatrade.com/  ": null
+
+2020-04-20 12:45:26 - [TEST_STEP][PASSED] - openBrowser(WebOfficeURL): Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-04-20 12:45:26 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-04-20 12:45:26 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2020-04-20 12:45:31 - [MESSAGE][PASSED] - Browser is opened with url: 'https://admin.preview.checkatrade.com/'
+
+2020-04-20 12:45:31 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-04-20 12:45:34 - [MESSAGE][PASSED] - Current window maximized
+
+2020-04-20 12:45:34 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button"), 25): Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-04-20 12:45:34 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clickable
+
+2020-04-20 12:45:34 - [TEST_STEP][PASSED] - verifyTextPresent("Checkatrade Web Office", false): Text 'Checkatrade Web Office' is present on page 
+
+2020-04-20 12:45:34 - [MESSAGE][PASSED] - Text 'Checkatrade Web Office' is present on page 
+
+2020-04-20 12:45:34 - [TEST_STEP][PASSED] - verifyTextPresent("Access for staff use only", false): Text 'Access for staff use only' is present on page 
+
+2020-04-20 12:45:34 - [MESSAGE][PASSED] - Text 'Access for staff use only' is present on page 
+
+2020-04-20 12:45:34 - [TEST_STEP][PASSED] - verifyTextPresent("Forgotten password?", false): Text 'Forgotten password?' is present on page 
+
+2020-04-20 12:45:35 - [MESSAGE][PASSED] - Text 'Forgotten password?' is present on page 
+
+2020-04-20 12:45:35 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName"), wo_Username): Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-04-20 12:45:35 - [MESSAGE][PASSED] - Text 'DavidHo' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Username_LoginControlUserName'
+
+2020-04-20 12:45:35 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword"), wo_Password): Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-04-20 12:45:36 - [MESSAGE][PASSED] - Text 'Check123' is set on object 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/input_Password_LoginControlPassword'
+
+2020-04-20 12:45:36 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button")): Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-04-20 12:45:37 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice/Page_Checkatrade - Administration - Login/Login_Button' is clicked on
+
+2020-04-20 12:45:37 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-20 12:45:37 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:45:37 - [TEST_STEP][PASSED] - verifyTextPresent("Welcome " + wo_Username, false): Text 'Welcome DavidHo' is present on page 
+
+2020-04-20 12:45:38 - [MESSAGE][PASSED] - Text 'Welcome DavidHo' is present on page 
+
+2020-04-20 12:45:38 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Directives/WebOffice_StartUp' successfully
+
+2020-04-20 12:45:38 - [TEST_STEP][PASSED] - "-----------------------------------------------------------------": null
+
+2020-04-20 12:45:38 - [TEST_STEP][PASSED] - " Navigate to <Settings->Checkatrade.Com->Sub Item> Menu Item     |": null
+
+2020-04-20 12:45:38 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Population_Report"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Population_Report' successfully
+
+2020-04-20 12:45:38 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Population_Report: Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Population_Report
+
+2020-04-20 12:45:38 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:45:38 - [TEST_STEP][PASSED] - " Navigate Top level menu Item         |": null
+
+2020-04-20 12:45:38 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-20 12:45:38 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:45:38 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice_Home_page/a_Reports"), 60): Object 'Object Repository/WebOffice_Home_page/a_Reports' is clickable
+
+2020-04-20 12:45:39 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice_Home_page/a_Reports' is clickable
+
+2020-04-20 12:45:39 - [TEST_STEP][PASSED] - mouseOver(findTestObject("Object Repository/WebOffice_Home_page/a_Reports")): Object: 'Object Repository/WebOffice_Home_page/a_Reports' is hovered
+
+2020-04-20 12:45:39 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/a_Reports' is hovered
+
+2020-04-20 12:45:39 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2020-04-20 12:45:39 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:45:39 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/WebOffice_Home_page/Page_/a_Population Report"), 5): Object 'Object Repository/WebOffice_Home_page/Page_/a_Population Report' is clickable
+
+2020-04-20 12:45:40 - [MESSAGE][PASSED] - Object 'Object Repository/WebOffice_Home_page/Page_/a_Population Report' is clickable
+
+2020-04-20 12:45:40 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/WebOffice_Home_page/Page_/a_Population Report")): Object: 'Object Repository/WebOffice_Home_page/Page_/a_Population Report' is clicked on
+
+2020-04-20 12:45:41 - [MESSAGE][PASSED] - Object: 'Object Repository/WebOffice_Home_page/Page_/a_Population Report' is clicked on
+
+2020-04-20 12:45:41 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Navigation/Sub_Menu_Navigation/Reports/Population_Report' successfully
+
+2020-04-20 12:45:41 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-20 12:45:41 - [TEST_STEP][PASSED] - " Verify Returned Page Detail          |": null
+
+2020-04-20 12:45:41 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Web_Office/Verification/Reports/Population_Report"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Population_Report' successfully
+
+2020-04-20 12:45:41 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Population_Report: Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Population_Report
+
+2020-04-20 12:45:42 - [TEST_STEP][PASSED] - waitForPageLoad(120): Wait for page load successfully
+
+2020-04-20 12:45:42 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-20 12:45:42 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-04-20 12:45:43 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-04-20 12:45:43 - [TEST_STEP][PASSED] - verifyTextPresent("Searches by Location and Category", false): Text 'Searches by Location and Category' is present on page 
+
+2020-04-20 12:45:44 - [MESSAGE][PASSED] - Text 'Searches by Location and Category' is present on page 
+
+2020-04-20 12:45:44 - [TEST_STEP][PASSED] - "----------------------------------------------": null
+
+2020-04-20 12:45:44 - [TEST_STEP][PASSED] - verifyTextPresent("Postcodes", false): Text 'Postcodes' is present on page 
+
+2020-04-20 12:45:45 - [MESSAGE][PASSED] - Text 'Postcodes' is present on page 
+
+2020-04-20 12:45:45 - [TEST_STEP][PASSED] - verifyTextPresent("Select Categories", false): Text 'Select Categories' is present on page 
+
+2020-04-20 12:45:46 - [MESSAGE][PASSED] - Text 'Select Categories' is present on page 
+
+2020-04-20 12:45:46 - [TEST_STEP][PASSED] - verifyTextPresent("Search Radiuse", false): Text 'Search Radiuse' is present on page 
+
+2020-04-20 12:45:47 - [MESSAGE][PASSED] - Text 'Search Radiuse' is present on page 
+
+2020-04-20 12:45:47 - [TEST_STEP][PASSED] - verifyTextPresent("Included postcodes based on search radius", false): Text 'Included postcodes based on search radius' is present on page 
+
+2020-04-20 12:45:48 - [MESSAGE][PASSED] - Text 'Included postcodes based on search radius' is present on page 
+
+2020-04-20 12:45:48 - [TEST_STEP][PASSED] - verifyTextPresent("Select Date Range", false): Text 'Select Date Range' is present on page 
+
+2020-04-20 12:45:50 - [MESSAGE][PASSED] - Text 'Select Date Range' is present on page 
+
+2020-04-20 12:45:50 - [TEST_STEP][PASSED] - verifyTextPresent("Populate Grid", false): Text 'Populate Grid' is present on page 
+
+2020-04-20 12:45:52 - [MESSAGE][PASSED] - Text 'Populate Grid' is present on page 
+
+2020-04-20 12:45:52 - [TEST_STEP][PASSED] - verifyTextPresent("Note: Be patient, to show the final", false): Text 'Note: Be patient, to show the final' is present on page 
+
+2020-04-20 12:45:54 - [MESSAGE][PASSED] - Text 'Note: Be patient, to show the final' is present on page 
+
+2020-04-20 12:45:54 - [TEST_STEP][PASSED] - verifyTextPresent("result may take some time,", false): Text 'result may take some time,' is present on page 
+
+2020-04-20 12:45:56 - [MESSAGE][PASSED] - Text 'result may take some time,' is present on page 
+
+2020-04-20 12:45:56 - [TEST_STEP][PASSED] - verifyTextPresent("depending on the number of postcodes,", false): Text 'depending on the number of postcodes,' is present on page 
+
+2020-04-20 12:45:57 - [MESSAGE][PASSED] - Text 'depending on the number of postcodes,' is present on page 
+
+2020-04-20 12:45:57 - [TEST_STEP][PASSED] - verifyTextPresent("radius and categories selected!", false): Text 'radius and categories selected!' is present on page 
+
+2020-04-20 12:45:59 - [MESSAGE][PASSED] - Text 'radius and categories selected!' is present on page 
+
+2020-04-20 12:45:59 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Web_Office/Verification/Reports/Population_Report' successfully
+
+2020-04-20 12:45:59 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-20 12:45:59 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2020-04-20 12:45:59 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-04-20 12:45:59 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2020-04-20 12:45:59 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-04-20 12:46:03 - [MESSAGE][PASSED] - Browser is closed
+
+2020-04-20 12:46:03 - [TEST_STEP][PASSED] - super.finalize(): null
+
+2020-04-20 12:46:03 - [TEST_STEP][PASSED] - System.gc(): null
+
+2020-04-20 12:46:03 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-04-20 12:29:49 - [TEST_SUITE][PASSED] - Web_Office_Reports: Test Cases/Web_Office/Reports/Population_Report]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

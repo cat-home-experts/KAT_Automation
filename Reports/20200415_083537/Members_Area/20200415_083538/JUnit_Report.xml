@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Members_Area" time="888.649" tests="19" failures="0" errors="0">
+   <testsuite name="Members_Area" tests="19" failures="0" errors="0" time="888.649" timestamp="2020-04-15 08:35:56" hostname="DavidHo - 192.168.1.238" id="Test Suites/Members_Area">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\davidho\\git\\src\\Reports\\20200415_083537\\Members_Area\\20200415_083538"/>
+         <property name="logFiles" value="C:\\Users\\davidho\\git\\src\\Reports\\20200415_083537\\Members_Area\\20200415_083538\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="DavidHo - 192.168.1.238"/>
+         <property name="os" value="Windows 10 32bit"/>
+         <property name="katalonVersion" value="7.3.0.1"/>
+         <property name="browser" value="Chrome 80.0.3987.163"/>
+         <property name="hostAddress" value="192.168.1.238"/>
+         <property name="sessionId" value="ac536567ad1b18dc3e662c7ce4ff4e12"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Members_Area/Payments" time="54.187" classname="Test Cases/Members_Area/Payments" status="PASSED">
+         <system-out><![CDATA[2020-04-15 08:35:56 - [TEST_CASE][PASSED] - Test Cases/Members_Area/Payments: Test Cases/Members_Area/Payments]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Members_Area/Members_Team_Photos" time="35.911" classname="Test Cases/Members_Area/Members_Team_Photos" status="PASSED">
+         <system-out><![CDATA[2020-04-15 08:36:50 - [TEST_CASE][PASSED] - Test Cases/Members_Area/Members_Team_Photos: Test Cases/Members_Area/Members_Team_Photos]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Members_Area/Advertise_Directory" time="33.993" classname="Test Cases/Members_Area/Advertise_Directory" status="PASSED">
+         <system-out><![CDATA[2020-04-15 08:37:26 - [TEST_CASE][PASSED] - Test Cases/Members_Area/Advertise_Directory: Test Cases/Members_Area/Advertise_Directory]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Members_Area/Callback_Requests" time="74.421" classname="Test Cases/Members_Area/Callback_Requests" status="PASSED">
+         <system-out><![CDATA[2020-04-15 08:38:00 - [TEST_CASE][PASSED] - Test Cases/Members_Area/Callback_Requests: Test Cases/Members_Area/Callback_Requests]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Members_Area/Community" time="35.307" classname="Test Cases/Members_Area/Community" status="PASSED">
+         <system-out><![CDATA[2020-04-15 08:39:15 - [TEST_CASE][PASSED] - Test Cases/Members_Area/Community: Test Cases/Members_Area/Community]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Members_Area/Members_AcceptaCard" time="36.848" classname="Test Cases/Members_Area/Members_AcceptaCard" status="PASSED">
+         <system-out><![CDATA[2020-04-15 08:39:50 - [TEST_CASE][PASSED] - Test Cases/Members_Area/Members_AcceptaCard: Test Cases/Members_Area/Members_AcceptaCard]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Members_Area/Members_Contact_Preferences" time="28.915" classname="Test Cases/Members_Area/Members_Contact_Preferences" status="PASSED">
+         <system-out><![CDATA[2020-04-15 08:40:27 - [TEST_CASE][PASSED] - Test Cases/Members_Area/Members_Contact_Preferences: Test Cases/Members_Area/Members_Contact_Preferences]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Members_Area/Members_Marketing_Materials" time="37.727" classname="Test Cases/Members_Area/Members_Marketing_Materials" status="PASSED">
+         <system-out><![CDATA[2020-04-15 08:40:56 - [TEST_CASE][PASSED] - Test Cases/Members_Area/Members_Marketing_Materials: Test Cases/Members_Area/Members_Marketing_Materials]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Members_Area/Members_Policy_TnC" time="40.214" classname="Test Cases/Members_Area/Members_Policy_TnC" status="PASSED">
+         <system-out><![CDATA[2020-04-15 08:41:34 - [TEST_CASE][PASSED] - Test Cases/Members_Area/Members_Policy_TnC: Test Cases/Members_Area/Members_Policy_TnC]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Members_Area/Members_Trading_Standards" time="26.361" classname="Test Cases/Members_Area/Members_Trading_Standards" status="PASSED">
+         <system-out><![CDATA[2020-04-15 08:42:14 - [TEST_CASE][PASSED] - Test Cases/Members_Area/Members_Trading_Standards: Test Cases/Members_Area/Members_Trading_Standards]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Members_Area/Members_Whistle_Blower" time="30.431" classname="Test Cases/Members_Area/Members_Whistle_Blower" status="PASSED">
+         <system-out><![CDATA[2020-04-15 08:42:40 - [TEST_CASE][PASSED] - Test Cases/Members_Area/Members_Whistle_Blower: Test Cases/Members_Area/Members_Whistle_Blower]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Members_Area/My_Feedback" time="107.191" classname="Test Cases/Members_Area/My_Feedback" status="PASSED">
+         <system-out><![CDATA[2020-04-15 08:43:11 - [TEST_CASE][PASSED] - Test Cases/Members_Area/My_Feedback: Test Cases/Members_Area/My_Feedback]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Members_Area/My_Membership" time="35.069" classname="Test Cases/Members_Area/My_Membership" status="PASSED">
+         <system-out><![CDATA[2020-04-15 08:44:58 - [TEST_CASE][PASSED] - Test Cases/Members_Area/My_Membership: Test Cases/Members_Area/My_Membership]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Members_Area/My_Photos" time="25.294" classname="Test Cases/Members_Area/My_Photos" status="PASSED">
+         <system-out><![CDATA[2020-04-15 08:45:33 - [TEST_CASE][PASSED] - Test Cases/Members_Area/My_Photos: Test Cases/Members_Area/My_Photos]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Members_Area/My_Profile_Page" time="147.098" classname="Test Cases/Members_Area/My_Profile_Page" status="PASSED">
+         <system-out><![CDATA[2020-04-15 08:45:58 - [TEST_CASE][PASSED] - Test Cases/Members_Area/My_Profile_Page: Test Cases/Members_Area/My_Profile_Page]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Members_Area/My_Stats" time="37.435" classname="Test Cases/Members_Area/My_Stats" status="PASSED">
+         <system-out><![CDATA[2020-04-15 08:48:25 - [TEST_CASE][PASSED] - Test Cases/Members_Area/My_Stats: Test Cases/Members_Area/My_Stats]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Members_Area/Offers_Discounts" time="28.646" classname="Test Cases/Members_Area/Offers_Discounts" status="PASSED">
+         <system-out><![CDATA[2020-04-15 08:49:03 - [TEST_CASE][PASSED] - Test Cases/Members_Area/Offers_Discounts: Test Cases/Members_Area/Offers_Discounts]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Members_Area/Received_Negative_Review" time="34.653" classname="Test Cases/Members_Area/Received_Negative_Review" status="PASSED">
+         <system-out><![CDATA[2020-04-15 08:49:31 - [TEST_CASE][PASSED] - Test Cases/Members_Area/Received_Negative_Review: Test Cases/Members_Area/Received_Negative_Review]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Members_Area/Useful_Documents" time="38.259" classname="Test Cases/Members_Area/Useful_Documents" status="PASSED">
+         <system-out><![CDATA[2020-04-15 08:50:06 - [TEST_CASE][PASSED] - Test Cases/Members_Area/Useful_Documents: Test Cases/Members_Area/Useful_Documents]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-04-15 08:35:56 - [TEST_SUITE][PASSED] - Members_Area: Test Cases/Members_Area/Useful_Documents]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

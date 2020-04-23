@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Competitor_Analysis</name>
+   <tag></tag>
+   <comment>--------------------------------------
+ Web Office StartUp                  |
+-----------------------------------------------------------------
+ Navigate to &lt;Settings->Checkatrade.Com->Sub Item> Menu Item     |
+--------------------------------------
+ Verify Returned Page Detail          |
+--------------------------
+ Teardown - CLose Browser |
+--------------------------
+ END                      |
+--------------------------</comment>
+   <testCaseGuid>625bc949-df3b-465e-a2ad-8a1ee2e3c437</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Web_Office_Searches" time="1126.201" tests="3" failures="0" errors="0">
+   <testsuite name="Web_Office_Searches" tests="3" failures="0" errors="0" time="1126.201" timestamp="2020-04-15 08:50:56" hostname="DavidHo - 192.168.1.238" id="Test Suites/Web_Office_Searches">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\davidho\\git\\src\\Reports\\20200415_083537\\Web_Office_Searches\\20200415_083545"/>
+         <property name="logFiles" value="C:\\Users\\davidho\\git\\src\\Reports\\20200415_083537\\Web_Office_Searches\\20200415_083545\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="DavidHo - 192.168.1.238"/>
+         <property name="os" value="Windows 10 32bit"/>
+         <property name="katalonVersion" value="7.3.0.1"/>
+         <property name="browser" value="Chrome 80.0.3987.163"/>
+         <property name="hostAddress" value="192.168.1.238"/>
+         <property name="sessionId" value="8a7383c835fa603a5cfde566f79d0bb3"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Web_Office/WebOffice_Companies_Advanced_Search" time="627.521" classname="Test Cases/Web_Office/WebOffice_Companies_Advanced_Search" status="PASSED">
+         <system-out><![CDATA[2020-04-15 08:50:56 - [TEST_CASE][PASSED] - Test Cases/Web_Office/WebOffice_Companies_Advanced_Search: Test Cases/Web_Office/WebOffice_Companies_Advanced_Search]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Web_Office/WebOffice_Consumer_Search" time="346.298" classname="Test Cases/Web_Office/WebOffice_Consumer_Search" status="PASSED">
+         <system-out><![CDATA[2020-04-15 09:01:24 - [TEST_CASE][PASSED] - Test Cases/Web_Office/WebOffice_Consumer_Search: Test Cases/Web_Office/WebOffice_Consumer_Search]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Web_Office/WebOffice_Header_Search" time="151.701" classname="Test Cases/Web_Office/WebOffice_Header_Search" status="PASSED">
+         <system-out><![CDATA[2020-04-15 09:07:10 - [TEST_CASE][PASSED] - Test Cases/Web_Office/WebOffice_Header_Search: Test Cases/Web_Office/WebOffice_Header_Search]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-04-15 08:50:56 - [TEST_SUITE][PASSED] - Web_Office_Searches: Test Cases/Web_Office/WebOffice_Header_Search]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
