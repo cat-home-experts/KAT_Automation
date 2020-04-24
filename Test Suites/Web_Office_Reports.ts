@@ -166,4 +166,34 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Web_Office/Reports/Members_Marketing_Requests_By_Type</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>86915349-ba29-4ba7-9c57-6fdbc8078367</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Reports/Engagement_Score_Report</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c1908f75-c5ce-48eb-aaba-6baadb9f832d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Reports/Renewal_Leavers_Engagement_Score</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d09abc5d-8170-4fd3-828d-29157f5cfb98</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Reports/Directory_Reconciliation_Report</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>11371ca3-e8cb-47c0-9425-07ce2afb8ccb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Reports/Members_Complaints</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d235efed-44a3-4ac4-9aba-6ffb9c945d70</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Reports/Members_Complaints_History</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

@@ -26,7 +26,7 @@ import internal.GlobalVariable as GlobalVariable
 //---------------------------------------------------------------------------------------------------------------
 //  DEV, Duplicate User Message Different     |   18/02.2020    |      DH          |                             |
 //---------------------------------------------------------------------------------------------------------------
-//                                            |                 |                  |                             |
+//  Typo Fixed - Error Occurred (occured)     |   24/04/2020    |      DH          |                             |
 //---------------------------------------------------------------------------------------------------------------
 //                                            |                 |                  |                             |
 //---------------------------------------------------------------------------------------------------------------
@@ -101,8 +101,8 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Membership/Page_Me
 'DEV Messaging Different'
 //WebUI.verifyTextPresent("There was a problem updating your details, please try again. If the problem persists please contact us", false)
 'Preview Messaging'
-WebUI.verifyTextPresent("Error occured: That username has already been taken, please choose another username.", false)
-                         
+WebUI.verifyTextPresent("Error occurred: That username has already been taken, please choose another username.", false)
+                       //Error occured: That username has already been taken, please choose another username
 '----------------------------------------------'
 // Change Password
 '----------------------------------------------'
