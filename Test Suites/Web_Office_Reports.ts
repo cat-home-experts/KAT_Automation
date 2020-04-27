@@ -196,4 +196,40 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Web_Office/Reports/Members_Complaints_History</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>7c3aa5de-1fcc-42ef-947c-8d0d0b90fd17</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Reports/Total_Leads_Enquiries</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>17612a5f-66ee-4096-8a5d-9b243cc36a2a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Reports/Leads_For_All_Companies</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>14b89140-1b84-4c8f-9743-144879f430ed</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Reports/Member_Web_Categories</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c6edc62d-53a1-4a42-b0ff-ab39027b93ff</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Reports/DIaler_Leads</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e0453add-a698-4998-9ed4-56318db3670f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Reports/Application_Progress_On_Hold</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>cf8a589d-5117-40cf-b4f2-292aa8c33410</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Reports/Feedback_Cap_Report</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
