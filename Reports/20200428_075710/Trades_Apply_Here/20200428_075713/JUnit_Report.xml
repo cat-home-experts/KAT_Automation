@@ -1,0 +1,959 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Trades_Apply_Here" time="98.192" tests="2" failures="0" errors="0">
+   <testsuite name="Trades_Apply_Here" tests="2" failures="0" errors="0" time="98.192" timestamp="2020-04-28 08:00:44" hostname="DavidHo - 192.168.1.237" id="Test Suites/Trades_Apply_Here">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\davidho\\git\\src\\Reports\\20200428_075710\\Trades_Apply_Here\\20200428_075713"/>
+         <property name="logFiles" value="C:\\Users\\davidho\\git\\src\\Reports\\20200428_075710\\Trades_Apply_Here\\20200428_075713\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="DavidHo - 192.168.1.237"/>
+         <property name="os" value="Windows 10 32bit"/>
+         <property name="katalonVersion" value="7.4.0.1"/>
+         <property name="browser" value="Firefox 74.0"/>
+         <property name="hostAddress" value="192.168.1.237"/>
+         <property name="sessionId" value="5deff46b-8ce5-4501-b488-63ae5a0b4e21"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Sign_Up/Trades_Apply_Here_Validation" time="59.531" classname="Test Cases/Sign_Up/Trades_Apply_Here_Validation" status="PASSED">
+         <system-out><![CDATA[2020-04-28 08:00:45 - [TEST_CASE][PASSED] - Test Cases/Sign_Up/Trades_Apply_Here_Validation: Test Cases/Sign_Up/Trades_Apply_Here_Validation
+
+2020-04-28 08:00:45 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Setup"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' successfully
+
+2020-04-28 08:00:46 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Setup: Test Cases/Reusable_Test_Sequences/CAT_Setup
+
+2020-04-28 08:00:46 - [TEST_STEP][PASSED] - "------------------------------": null
+
+2020-04-28 08:00:46 - [TEST_STEP][PASSED] - " Set Mobile Device Testing    |": null
+
+2020-04-28 08:00:46 - [TEST_STEP][PASSED] - if (Mobile_Flag == "true"): null
+
+2020-04-28 08:00:47 - [TEST_STEP][PASSED] - "------------------------------": null
+
+2020-04-28 08:00:47 - [TEST_STEP][PASSED] - " Set Mobile Device Testing    |": null
+
+2020-04-28 08:00:47 - [TEST_STEP][PASSED] - "------------------------------": null
+
+2020-04-28 08:00:47 - [TEST_STEP][PASSED] - "URL - Set from the ENVIRONMENT PROFILE ": null
+
+2020-04-28 08:00:47 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://www.preview.checkatrade.com/'
+
+2020-04-28 08:00:47 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-04-28 08:00:48 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2020-04-28 08:00:59 - [MESSAGE][PASSED] - Browser is opened with url: 'https://www.preview.checkatrade.com/'
+
+2020-04-28 08:00:59 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-04-28 08:00:59 - [MESSAGE][PASSED] - Current window maximized
+
+2020-04-28 08:00:59 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-28 08:01:00 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-28 08:01:00 - [TEST_STEP][PASSED] - "Previous Functionalilty Left Commented For Ease Of reversion": null
+
+2020-04-28 08:01:00 - [TEST_STEP][PASSED] - " Katalon Try/Catches currently have issues? SEE HEADER": null
+
+2020-04-28 08:01:00 - [TEST_STEP][PASSED] - try: Text 'Cookie Policy' is not present on page
+
+2020-04-28 08:01:00 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All"), 5, OPTIONAL): Object 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is present
+
+2020-04-28 08:01:00 - [MESSAGE][PASSED] - Object 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is present
+
+2020-04-28 08:01:00 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All"), OPTIONAL): Object: 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is clicked on
+
+2020-04-28 08:01:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is clicked on
+
+2020-04-28 08:01:00 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-04-28 08:01:00 - [TEST_STEP][PASSED] - "COOKIE POPOUT REMOVED - Confirmed": null
+
+2020-04-28 08:01:00 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-04-28 08:01:01 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-04-28 08:01:01 - [TEST_STEP][PASSED] - verifyTextNotPresent("We use cookies to personalise content and ads, to provide social media features and to analyse our traffic", false): Text 'We use cookies to personalise content and ads, to provide social media features and to analyse our traffic' is not present on page
+
+2020-04-28 08:01:02 - [MESSAGE][PASSED] - Text 'We use cookies to personalise content and ads, to provide social media features and to analyse our traffic' is not present on page
+
+2020-04-28 08:01:02 - [TEST_STEP][PASSED] - verifyTextNotPresent(" We also share information about your use of our site with our social media, advertising and analytics partners", false): Text ' We also share information about your use of our site with our social media, advertising and analytics partners' is not present on page
+
+2020-04-28 08:01:03 - [MESSAGE][PASSED] - Text ' We also share information about your use of our site with our social media, advertising and analytics partners' is not present on page
+
+2020-04-28 08:01:03 - [TEST_STEP][PASSED] - verifyTextNotPresent("Cookie Policy", false): Text 'Cookie Policy' is not present on page
+
+2020-04-28 08:01:03 - [MESSAGE][PASSED] - Text 'Cookie Policy' is not present on page
+
+2020-04-28 08:01:03 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-28 08:01:03 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-28 08:01:03 - [TEST_STEP][PASSED] - "COOKIE - ORIGINAL": null
+
+2020-04-28 08:01:03 - [TEST_STEP][PASSED] - if (waitForElementVisible(findTestObject("Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review"), 5)): Web element with id: 'Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review' located by 'By.xpath: //input[@id='feedback-form__company_autocomplete_input']' not found
+
+2020-04-28 08:01:09 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //input[@id='feedback-form__company_autocomplete_input']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2020-04-28 08:01:09 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review' located by 'By.xpath: //input[@id='feedback-form__company_autocomplete_input']' not found
+
+2020-04-28 08:01:09 - [TEST_STEP][PASSED] - else: The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-04-28 08:01:09 - [TEST_STEP][PASSED] - if (!(verifyElementVisible(findTestObject("Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF")))): Object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF' is visible
+
+2020-04-28 08:01:09 - [MESSAGE][PASSED] - Object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF' is visible
+
+2020-04-28 08:01:09 - [TEST_STEP][PASSED] - else: The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-04-28 08:01:09 - [TEST_STEP][PASSED] - Website_Version = "old": null
+
+2020-04-28 08:01:09 - [TEST_STEP][PASSED] - logInfo("The <<<OLD>>> Website was detected by the STARTUP Process"): The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-04-28 08:01:09 - [MESSAGE][INFO] - The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-04-28 08:01:09 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' successfully
+
+2020-04-28 08:01:09 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-28 08:01:09 - [TEST_STEP][PASSED] - " Hit the <TRADES, APPLY HERE> Button  |": null
+
+2020-04-28 08:01:09 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here' successfully
+
+2020-04-28 08:01:09 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here: Test Cases/Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here
+
+2020-04-28 08:01:09 - [TEST_STEP][PASSED] - if (Website_Version == "new"): null
+
+2020-04-28 08:01:09 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application' is clicked on
+
+2020-04-28 08:01:09 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-04-28 08:01:09 - [TEST_STEP][PASSED] - " Click on <Trades> Header Button |": null
+
+2020-04-28 08:01:09 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades"), 10): Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades' is clickable
+
+2020-04-28 08:01:09 - [MESSAGE][PASSED] - Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades' is clickable
+
+2020-04-28 08:01:09 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades")): Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades' is clicked on
+
+2020-04-28 08:01:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades' is clicked on
+
+2020-04-28 08:01:10 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-04-28 08:01:10 - [TEST_STEP][PASSED] - " Click on <Find Out More> Banner |": null
+
+2020-04-28 08:01:10 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more"), 10): Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more' is clickable
+
+2020-04-28 08:01:10 - [MESSAGE][PASSED] - Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more' is clickable
+
+2020-04-28 08:01:10 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more")): Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more' is clicked on
+
+2020-04-28 08:01:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more' is clicked on
+
+2020-04-28 08:01:13 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-04-28 08:01:13 - [TEST_STEP][PASSED] - " Click on <Trade Application> B  |": null
+
+2020-04-28 08:01:13 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application"), 10): Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application' is clickable
+
+2020-04-28 08:01:13 - [MESSAGE][PASSED] - Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application' is clickable
+
+2020-04-28 08:01:13 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application")): Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application' is clicked on
+
+2020-04-28 08:01:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application' is clicked on
+
+2020-04-28 08:01:15 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here' successfully
+
+2020-04-28 08:01:15 - [TEST_STEP][PASSED] - "---------------------------------------------------------------------------": null
+
+2020-04-28 08:01:15 - [TEST_STEP][PASSED] - " Hit the <SUBMIT> Button  | Attempt a COMMITAL of form with no data filled |": null
+
+2020-04-28 08:01:15 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Hit_Submit"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit' successfully
+
+2020-04-28 08:01:15 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit: Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit
+
+2020-04-28 08:01:16 - [TEST_STEP][PASSED] - "----------------------------------------------------------------------------------": null
+
+2020-04-28 08:01:16 - [TEST_STEP][PASSED] - "SUBMIT BUTTON IS OFF THE BOTTOM OF THE PAGE - SO NEED TO SCROLL TO BOTTOM OF PAGE |": null
+
+2020-04-28 08:01:16 - [TEST_STEP][PASSED] - "----------------------------------------------------------------------------------": null
+
+2020-04-28 08:01:16 - [TEST_STEP][PASSED] - "Wholesale cahnges on 05/12/2019 Cause refactor - Old left Commented": null
+
+2020-04-28 08:01:16 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-04-28 08:01:17 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-04-28 08:01:17 - [TEST_STEP][PASSED] - "-------------": null
+
+2020-04-28 08:01:17 - [TEST_STEP][PASSED] - "Click Submit |": null
+
+2020-04-28 08:01:17 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_Privacy Notice_ctl00contentbtnSubmit")): Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_Privacy Notice_ctl00contentbtnSubmit' is clicked on
+
+2020-04-28 08:01:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_Privacy Notice_ctl00contentbtnSubmit' is clicked on
+
+2020-04-28 08:01:17 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit' successfully
+
+2020-04-28 08:01:17 - [TEST_STEP][PASSED] - "--------------------------------------------------": null
+
+2020-04-28 08:01:17 - [TEST_STEP][PASSED] - " Check initial Validation Message(s) are Produced |": null
+
+2020-04-28 08:01:17 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required' successfully
+
+2020-04-28 08:01:17 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required: Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required
+
+2020-04-28 08:01:18 - [TEST_STEP][PASSED] - verifyTextPresent("This field is required", false): Text 'This field is required' is present on page 
+
+2020-04-28 08:01:18 - [MESSAGE][PASSED] - Text 'This field is required' is present on page 
+
+2020-04-28 08:01:18 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required' successfully
+
+2020-04-28 08:01:18 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-28 08:01:18 - [TEST_STEP][PASSED] - " Set - Email Address Incorrect Form   |": null
+
+2020-04-28 08:01:18 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_INVALID_Email_Address"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_INVALID_Email_Address' successfully
+
+2020-04-28 08:01:18 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_INVALID_Email_Address: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_INVALID_Email_Address
+
+2020-04-28 08:01:19 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail"), Invalid_Email): Text 'Billy Bob' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail'
+
+2020-04-28 08:01:19 - [MESSAGE][PASSED] - Text 'Billy Bob' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail'
+
+2020-04-28 08:01:19 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_INVALID_Email_Address' successfully
+
+2020-04-28 08:01:19 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-28 08:01:19 - [TEST_STEP][PASSED] - " Check Email Validation Message       |": null
+
+2020-04-28 08:01:19 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Validation/Please_Enter_Valid_Email"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Enter_Valid_Email' successfully
+
+2020-04-28 08:01:19 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Enter_Valid_Email: Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Enter_Valid_Email
+
+2020-04-28 08:01:19 - [TEST_STEP][PASSED] - verifyTextPresent("Please enter a valid email address", false): Text 'Please enter a valid email address' is present on page 
+
+2020-04-28 08:01:20 - [MESSAGE][PASSED] - Text 'Please enter a valid email address' is present on page 
+
+2020-04-28 08:01:20 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Enter_Valid_Email' successfully
+
+2020-04-28 08:01:20 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2020-04-28 08:01:25 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2020-04-28 08:01:25 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-28 08:01:25 - [TEST_STEP][PASSED] - " Set - Email Address      |": null
+
+2020-04-28 08:01:25 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Email_Address"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address' successfully
+
+2020-04-28 08:01:25 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address
+
+2020-04-28 08:01:25 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail"), EmailAddress): Text 'ron_mctavish@xtc_0z0.com' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail'
+
+2020-04-28 08:01:25 - [MESSAGE][PASSED] - Text 'ron_mctavish@xtc_0z0.com' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail'
+
+2020-04-28 08:01:25 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address' successfully
+
+2020-04-28 08:01:25 - [TEST_STEP][PASSED] - "---------------------------------------------------------------------------------": null
+
+2020-04-28 08:01:25 - [TEST_STEP][PASSED] - " FIll Remaining Empty Fields With Random Data - To Elicit Validation Message(s)  |": null
+
+2020-04-28 08:01:25 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Random_Data_In_Empty_Fields"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Random_Data_In_Empty_Fields' successfully
+
+2020-04-28 08:01:25 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Random_Data_In_Empty_Fields: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Random_Data_In_Empty_Fields
+
+2020-04-28 08:01:26 - [TEST_STEP][PASSED] - "----------------------------------------------------------------------------------------------": null
+
+2020-04-28 08:01:26 - [TEST_STEP][PASSED] - " Major Changes 05/12/2019 Factored in - As highlighted In The TOP (Driver) Script Header      |": null
+
+2020-04-28 08:01:26 - [TEST_STEP][PASSED] - "----------------------------------------------------------------------------------------------": null
+
+2020-04-28 08:01:26 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName"), Validation_Data_Special_Chars): Text '#£|' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName'
+
+2020-04-28 08:01:26 - [MESSAGE][PASSED] - Text '#£|' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName'
+
+2020-04-28 08:01:26 - [TEST_STEP][PASSED] - "YOUR FULL NAME": null
+
+2020-04-28 08:01:26 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-04-28 08:01:26 - [TEST_STEP][PASSED] - " Set First Name Field on App Sc  |": null
+
+2020-04-28 08:01:26 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName"), 10): Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName' is clickable
+
+2020-04-28 08:01:26 - [MESSAGE][PASSED] - Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName' is clickable
+
+2020-04-28 08:01:26 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName"), Validation_Data_Special_Chars): Text '#£|' is set on object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName'
+
+2020-04-28 08:01:27 - [MESSAGE][PASSED] - Text '#£|' is set on object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName'
+
+2020-04-28 08:01:27 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-04-28 08:01:27 - [TEST_STEP][PASSED] - " Set First Surname Field on App S|": null
+
+2020-04-28 08:01:27 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName"), 10): Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName' is clickable
+
+2020-04-28 08:01:27 - [MESSAGE][PASSED] - Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName' is clickable
+
+2020-04-28 08:01:27 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName"), Validation_Data_Special_Chars): Text '#£|' is set on object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName'
+
+2020-04-28 08:01:27 - [MESSAGE][PASSED] - Text '#£|' is set on object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName'
+
+2020-04-28 08:01:27 - [TEST_STEP][PASSED] - "TRADE CATEGORY": null
+
+2020-04-28 08:01:27 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode"), Validation_Data_Special_Chars): Text '#£|' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode'
+
+2020-04-28 08:01:27 - [MESSAGE][PASSED] - Text '#£|' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode'
+
+2020-04-28 08:01:27 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob"), Validation_Data_Special_Chars): Text '#£|' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob'
+
+2020-04-28 08:01:27 - [MESSAGE][PASSED] - Text '#£|' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob'
+
+2020-04-28 08:01:27 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Random_Data_In_Empty_Fields' successfully
+
+2020-04-28 08:01:27 - [TEST_STEP][PASSED] - "---------------------------------------------": null
+
+2020-04-28 08:01:27 - [TEST_STEP][PASSED] - " Check Trade Category Validation Message     |": null
+
+2020-04-28 08:01:27 - [TEST_STEP][PASSED] - "---------------------------------------------": null
+
+2020-04-28 08:01:27 - [TEST_STEP][PASSED] - "---------------------------------------------------------": null
+
+2020-04-28 08:01:27 - [TEST_STEP][PASSED] - " Check specify a valid phone number Validation Message   |": null
+
+2020-04-28 08:01:27 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Validation/Please_Specify_Valid_Phone_Number"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Specify_Valid_Phone_Number' successfully
+
+2020-04-28 08:01:27 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Specify_Valid_Phone_Number: Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Specify_Valid_Phone_Number
+
+2020-04-28 08:01:28 - [TEST_STEP][PASSED] - verifyTextPresent("Please specify a valid phone number", false): Text 'Please specify a valid phone number' is present on page 
+
+2020-04-28 08:01:28 - [MESSAGE][PASSED] - Text 'Please specify a valid phone number' is present on page 
+
+2020-04-28 08:01:28 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/Please_Specify_Valid_Phone_Number' successfully
+
+2020-04-28 08:01:28 - [TEST_STEP][PASSED] - "---------------------------------------------------------": null
+
+2020-04-28 08:01:28 - [TEST_STEP][PASSED] - " Check Remaining Fields with NULL Data Validation Message|": null
+
+2020-04-28 08:01:28 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_NULL_Data_In_Fields_Containing_Invalid_Data"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_NULL_Data_In_Fields_Containing_Invalid_Data' successfully
+
+2020-04-28 08:01:28 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_NULL_Data_In_Fields_Containing_Invalid_Data: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_NULL_Data_In_Fields_Containing_Invalid_Data
+
+2020-04-28 08:01:29 - [TEST_STEP][PASSED] - "----------------------------------------------------------------------------------------------": null
+
+2020-04-28 08:01:29 - [TEST_STEP][PASSED] - " Major Changes 05/12/2019 Factored in - As highlighted In The TOP (Driver) Script Header      |": null
+
+2020-04-28 08:01:29 - [TEST_STEP][PASSED] - "----------------------------------------------------------------------------------------------": null
+
+2020-04-28 08:01:29 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName"), ""): Text '' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName'
+
+2020-04-28 08:01:29 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName'
+
+2020-04-28 08:01:29 - [TEST_STEP][PASSED] - "YOUR FULL NAME": null
+
+2020-04-28 08:01:29 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-04-28 08:01:29 - [TEST_STEP][PASSED] - " Set First Name Field on App Sc  |": null
+
+2020-04-28 08:01:29 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName"), ""): Text '' is set on object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName'
+
+2020-04-28 08:01:29 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName'
+
+2020-04-28 08:01:29 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-04-28 08:01:29 - [TEST_STEP][PASSED] - " Set First Surname Field on App S|": null
+
+2020-04-28 08:01:29 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName"), ""): Text '' is set on object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName'
+
+2020-04-28 08:01:29 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName'
+
+2020-04-28 08:01:29 - [TEST_STEP][PASSED] - "TRADE CATEGORY": null
+
+2020-04-28 08:01:29 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode"), ""): Text '' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode'
+
+2020-04-28 08:01:30 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode'
+
+2020-04-28 08:01:30 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob"), ""): Text '' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob'
+
+2020-04-28 08:01:30 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob'
+
+2020-04-28 08:01:30 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_NULL_Data_In_Fields_Containing_Invalid_Data' successfully
+
+2020-04-28 08:01:30 - [TEST_STEP][PASSED] - "--------------------------------------------------": null
+
+2020-04-28 08:01:30 - [TEST_STEP][PASSED] - " Check initial Validation Message(s) are Produced |": null
+
+2020-04-28 08:01:30 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required' successfully
+
+2020-04-28 08:01:30 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required: Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required
+
+2020-04-28 08:01:30 - [TEST_STEP][PASSED] - verifyTextPresent("This field is required", false): Text 'This field is required' is present on page 
+
+2020-04-28 08:01:30 - [MESSAGE][PASSED] - Text 'This field is required' is present on page 
+
+2020-04-28 08:01:30 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Validation/This_Field_Is_Required' successfully
+
+2020-04-28 08:01:30 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-28 08:01:30 - [TEST_STEP][PASSED] - " Set - Company Name       |": null
+
+2020-04-28 08:01:30 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Company_Name"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name' successfully
+
+2020-04-28 08:01:30 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name
+
+2020-04-28 08:01:31 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName"), CompanyName): Text 'Gutter Snipes' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName'
+
+2020-04-28 08:01:31 - [MESSAGE][PASSED] - Text 'Gutter Snipes' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName'
+
+2020-04-28 08:01:31 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name' successfully
+
+2020-04-28 08:01:31 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-28 08:01:31 - [TEST_STEP][PASSED] - " Set - Full Name          |": null
+
+2020-04-28 08:01:31 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Full_Name"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name' successfully
+
+2020-04-28 08:01:31 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name
+
+2020-04-28 08:01:32 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-04-28 08:01:32 - [TEST_STEP][PASSED] - " Set First Name Field on App Sc  |": null
+
+2020-04-28 08:01:32 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName"), 10): Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName' is clickable
+
+2020-04-28 08:01:32 - [MESSAGE][PASSED] - Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName' is clickable
+
+2020-04-28 08:01:32 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName"), aFirstName): Text 'Ronald' is set on object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName'
+
+2020-04-28 08:01:32 - [MESSAGE][PASSED] - Text 'Ronald' is set on object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName'
+
+2020-04-28 08:01:32 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-04-28 08:01:32 - [TEST_STEP][PASSED] - " Set First Surname Field on App S|": null
+
+2020-04-28 08:01:32 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName"), 10): Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName' is clickable
+
+2020-04-28 08:01:32 - [MESSAGE][PASSED] - Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName' is clickable
+
+2020-04-28 08:01:32 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName"), aSurName): Text 'MacGinty' is set on object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName'
+
+2020-04-28 08:01:33 - [MESSAGE][PASSED] - Text 'MacGinty' is set on object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName'
+
+2020-04-28 08:01:33 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name' successfully
+
+2020-04-28 08:01:33 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-28 08:01:33 - [TEST_STEP][PASSED] - " Set - Trade Category     |": null
+
+2020-04-28 08:01:33 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-28 08:01:33 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-28 08:01:33 - [TEST_STEP][PASSED] - " lookup - Trade Category  |": null
+
+2020-04-28 08:01:33 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-28 08:01:33 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-28 08:01:33 - [TEST_STEP][PASSED] - " Postcode Prompt          |": null
+
+2020-04-28 08:01:33 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-28 08:01:33 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-28 08:01:33 - [TEST_STEP][PASSED] - " Set - Postcode           |": null
+
+2020-04-28 08:01:33 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Postcode"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode' successfully
+
+2020-04-28 08:01:33 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode
+
+2020-04-28 08:01:33 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Checkatrade Want to build your business/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode"), postcode): Text 'PO12 4SD' is set on object 'Object Repository/Page_Checkatrade Want to build your business/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode'
+
+2020-04-28 08:01:33 - [MESSAGE][PASSED] - Text 'PO12 4SD' is set on object 'Object Repository/Page_Checkatrade Want to build your business/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode'
+
+2020-04-28 08:01:33 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode' successfully
+
+2020-04-28 08:01:33 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-28 08:01:33 - [TEST_STEP][PASSED] - " Set - Contact Number     |": null
+
+2020-04-28 08:01:33 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number' successfully
+
+2020-04-28 08:01:33 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number
+
+2020-04-28 08:01:33 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob"), ContactNumber): Text '02380123456' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob'
+
+2020-04-28 08:01:34 - [MESSAGE][PASSED] - Text '02380123456' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob'
+
+2020-04-28 08:01:34 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number' successfully
+
+2020-04-28 08:01:34 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-28 08:01:34 - [TEST_STEP][PASSED] - " Hit the <SUBMIT> Button  |": null
+
+2020-04-28 08:01:34 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Hit_Submit"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit' successfully
+
+2020-04-28 08:01:34 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit: Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit
+
+2020-04-28 08:01:34 - [TEST_STEP][PASSED] - "----------------------------------------------------------------------------------": null
+
+2020-04-28 08:01:34 - [TEST_STEP][PASSED] - "SUBMIT BUTTON IS OFF THE BOTTOM OF THE PAGE - SO NEED TO SCROLL TO BOTTOM OF PAGE |": null
+
+2020-04-28 08:01:34 - [TEST_STEP][PASSED] - "----------------------------------------------------------------------------------": null
+
+2020-04-28 08:01:34 - [TEST_STEP][PASSED] - "Wholesale cahnges on 05/12/2019 Cause refactor - Old left Commented": null
+
+2020-04-28 08:01:34 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-04-28 08:01:35 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-04-28 08:01:35 - [TEST_STEP][PASSED] - "-------------": null
+
+2020-04-28 08:01:35 - [TEST_STEP][PASSED] - "Click Submit |": null
+
+2020-04-28 08:01:35 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_Privacy Notice_ctl00contentbtnSubmit")): Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_Privacy Notice_ctl00contentbtnSubmit' is clicked on
+
+2020-04-28 08:01:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_Privacy Notice_ctl00contentbtnSubmit' is clicked on
+
+2020-04-28 08:01:38 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit' successfully
+
+2020-04-28 08:01:38 - [TEST_STEP][PASSED] - "---------------------------------------------------": null
+
+2020-04-28 08:01:38 - [TEST_STEP][PASSED] - "Verify CONGRATULATIONS is reported after form fill ": null
+
+2020-04-28 08:01:38 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported' successfully
+
+2020-04-28 08:01:38 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported: Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported
+
+2020-04-28 08:01:38 - [TEST_STEP][PASSED] - "-----------------------------": null
+
+2020-04-28 08:01:38 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-28 08:01:38 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-28 08:01:38 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-04-28 08:01:39 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-04-28 08:01:39 - [TEST_STEP][PASSED] - "-----------------------------": null
+
+2020-04-28 08:01:39 - [TEST_STEP][PASSED] - verifyTextPresent("Congratulations, you're one step closer to becoming a Checkatrade Member!", false): Text 'Congratulations, you're one step closer to becoming a Checkatrade Member!' is present on page 
+
+2020-04-28 08:01:40 - [MESSAGE][PASSED] - Text 'Congratulations, you're one step closer to becoming a Checkatrade Member!' is present on page 
+
+2020-04-28 08:01:40 - [TEST_STEP][PASSED] - verifyTextPresent("One of the team will call you within 1 working day to discuss how a Checkatrade membership can work for you", false): Text 'One of the team will call you within 1 working day to discuss how a Checkatrade membership can work for you' is present on page 
+
+2020-04-28 08:01:40 - [MESSAGE][PASSED] - Text 'One of the team will call you within 1 working day to discuss how a Checkatrade membership can work for you' is present on page 
+
+2020-04-28 08:01:40 - [TEST_STEP][PASSED] - verifyTextPresent("Thank you for your interest, we look forward to speaking to you", false): Text 'Thank you for your interest, we look forward to speaking to you' is present on page 
+
+2020-04-28 08:01:41 - [MESSAGE][PASSED] - Text 'Thank you for your interest, we look forward to speaking to you' is present on page 
+
+2020-04-28 08:01:41 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported' successfully
+
+2020-04-28 08:01:41 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-28 08:01:41 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2020-04-28 08:01:41 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-04-28 08:01:41 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2020-04-28 08:01:41 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-04-28 08:01:44 - [MESSAGE][PASSED] - Browser is closed
+
+2020-04-28 08:01:44 - [TEST_STEP][PASSED] - super.finalize(): null
+
+2020-04-28 08:01:44 - [TEST_STEP][PASSED] - System.gc(): null
+
+2020-04-28 08:01:44 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-04-28 08:01:44 - [TEST_STEP][PASSED] - "-------------------------------------------": null
+
+2020-04-28 08:01:44 - [TEST_STEP][PASSED] - " Web Office Call to Ensure NEW CASE Opened |": null
+
+2020-04-28 08:01:44 - [TEST_STEP][PASSED] - "-------------------------------------------": null
+
+2020-04-28 08:01:44 - [TEST_STEP][PASSED] - "------": null
+
+2020-04-28 08:01:44 - [TEST_STEP][PASSED] - "TODO  |": null
+
+2020-04-28 08:01:44 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Web_Office/Case_Opened"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Web_Office/Case_Opened' successfully
+
+2020-04-28 08:01:44 - [TEST_CASE][PASSED] - Test Cases/Web_Office/Case_Opened: Test Cases/Web_Office/Case_Opened
+
+2020-04-28 08:01:44 - [TEST_STEP][PASSED] - return null: null
+
+2020-04-28 08:01:44 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Web_Office/Case_Opened' successfully
+
+2020-04-28 08:01:44 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-28 08:01:44 - [TEST_STEP][PASSED] - " END                      |": null
+
+2020-04-28 08:01:44 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-28 08:01:44 - [TEST_STEP][PASSED] - markWarning("No Validation of POSTCODE apart from NULL Entry Check! * FOR INRORMATION ONLY *"): No Validation of POSTCODE apart from NULL Entry Check! * FOR INRORMATION ONLY *
+
+2020-04-28 08:01:44 - [MESSAGE][WARNING] - No Validation of POSTCODE apart from NULL Entry Check! * FOR INRORMATION ONLY *
+
+2020-04-28 08:01:44 - [TEST_STEP][PASSED] - markWarning("No Validation of COMPANY NAME apart from NULL Entry Check! * FOR INRORMATION ONLY *"): No Validation of COMPANY NAME apart from NULL Entry Check! * FOR INRORMATION ONLY *
+
+2020-04-28 08:01:44 - [MESSAGE][WARNING] - No Validation of COMPANY NAME apart from NULL Entry Check! * FOR INRORMATION ONLY *
+
+2020-04-28 08:01:44 - [TEST_STEP][PASSED] - markWarning("No Validation of YOUR FULL NAME apart from NULL Entry Check! * FOR INRORMATION ONLY *"): No Validation of YOUR FULL NAME apart from NULL Entry Check! * FOR INRORMATION ONLY *
+
+2020-04-28 08:01:44 - [MESSAGE][WARNING] - No Validation of YOUR FULL NAME apart from NULL Entry Check! * FOR INRORMATION ONLY *]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Sign_Up/Trades_Apply_Here" time="38.074" classname="Test Cases/Sign_Up/Trades_Apply_Here" status="PASSED">
+         <system-out><![CDATA[2020-04-28 08:01:44 - [TEST_CASE][PASSED] - Test Cases/Sign_Up/Trades_Apply_Here: Test Cases/Sign_Up/Trades_Apply_Here
+
+2020-04-28 08:01:45 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Setup"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' successfully
+
+2020-04-28 08:01:45 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Setup: Test Cases/Reusable_Test_Sequences/CAT_Setup
+
+2020-04-28 08:01:45 - [TEST_STEP][PASSED] - "------------------------------": null
+
+2020-04-28 08:01:45 - [TEST_STEP][PASSED] - " Set Mobile Device Testing    |": null
+
+2020-04-28 08:01:45 - [TEST_STEP][PASSED] - if (Mobile_Flag == "true"): null
+
+2020-04-28 08:01:45 - [TEST_STEP][PASSED] - "------------------------------": null
+
+2020-04-28 08:01:45 - [TEST_STEP][PASSED] - " Set Mobile Device Testing    |": null
+
+2020-04-28 08:01:45 - [TEST_STEP][PASSED] - "------------------------------": null
+
+2020-04-28 08:01:45 - [TEST_STEP][PASSED] - "URL - Set from the ENVIRONMENT PROFILE ": null
+
+2020-04-28 08:01:45 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://www.preview.checkatrade.com/'
+
+2020-04-28 08:01:45 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-04-28 08:01:45 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2020-04-28 08:01:56 - [MESSAGE][PASSED] - Browser is opened with url: 'https://www.preview.checkatrade.com/'
+
+2020-04-28 08:01:56 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-04-28 08:01:56 - [MESSAGE][PASSED] - Current window maximized
+
+2020-04-28 08:01:56 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-28 08:01:56 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-28 08:01:56 - [TEST_STEP][PASSED] - "Previous Functionalilty Left Commented For Ease Of reversion": null
+
+2020-04-28 08:01:56 - [TEST_STEP][PASSED] - " Katalon Try/Catches currently have issues? SEE HEADER": null
+
+2020-04-28 08:01:56 - [TEST_STEP][PASSED] - try: Text 'Cookie Policy' is not present on page
+
+2020-04-28 08:01:56 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All"), 5, OPTIONAL): Object 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is present
+
+2020-04-28 08:01:56 - [MESSAGE][PASSED] - Object 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is present
+
+2020-04-28 08:01:56 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All"), OPTIONAL): Object: 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is clicked on
+
+2020-04-28 08:01:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Cookies/Page_Checkatrade Find a tradesperson you can trust/button_Accept All' is clicked on
+
+2020-04-28 08:01:57 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-04-28 08:01:57 - [TEST_STEP][PASSED] - "COOKIE POPOUT REMOVED - Confirmed": null
+
+2020-04-28 08:01:57 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-04-28 08:01:58 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-04-28 08:01:58 - [TEST_STEP][PASSED] - verifyTextNotPresent("We use cookies to personalise content and ads, to provide social media features and to analyse our traffic", false): Text 'We use cookies to personalise content and ads, to provide social media features and to analyse our traffic' is not present on page
+
+2020-04-28 08:01:59 - [MESSAGE][PASSED] - Text 'We use cookies to personalise content and ads, to provide social media features and to analyse our traffic' is not present on page
+
+2020-04-28 08:01:59 - [TEST_STEP][PASSED] - verifyTextNotPresent(" We also share information about your use of our site with our social media, advertising and analytics partners", false): Text ' We also share information about your use of our site with our social media, advertising and analytics partners' is not present on page
+
+2020-04-28 08:02:00 - [MESSAGE][PASSED] - Text ' We also share information about your use of our site with our social media, advertising and analytics partners' is not present on page
+
+2020-04-28 08:02:00 - [TEST_STEP][PASSED] - verifyTextNotPresent("Cookie Policy", false): Text 'Cookie Policy' is not present on page
+
+2020-04-28 08:02:00 - [MESSAGE][PASSED] - Text 'Cookie Policy' is not present on page
+
+2020-04-28 08:02:00 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-28 08:02:00 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-28 08:02:00 - [TEST_STEP][PASSED] - "COOKIE - ORIGINAL": null
+
+2020-04-28 08:02:00 - [TEST_STEP][PASSED] - if (waitForElementVisible(findTestObject("Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review"), 5)): Web element with id: 'Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review' located by 'By.xpath: //input[@id='feedback-form__company_autocomplete_input']' not found
+
+2020-04-28 08:02:05 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //input[@id='feedback-form__company_autocomplete_input']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2020-04-28 08:02:05 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Feedback/Page_Checkatrade Give your feedback/input_Member_to_Review' located by 'By.xpath: //input[@id='feedback-form__company_autocomplete_input']' not found
+
+2020-04-28 08:02:05 - [TEST_STEP][PASSED] - else: The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-04-28 08:02:05 - [TEST_STEP][PASSED] - if (!(verifyElementVisible(findTestObject("Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF")))): Object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF' is visible
+
+2020-04-28 08:02:05 - [MESSAGE][PASSED] - Object 'Object Repository/Checkatrade_Trade_Search_Page/Page_Checkatrade Find a tradesperson you can trust/input_Search_Button_FF' is visible
+
+2020-04-28 08:02:05 - [TEST_STEP][PASSED] - else: The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-04-28 08:02:05 - [TEST_STEP][PASSED] - Website_Version = "old": null
+
+2020-04-28 08:02:05 - [TEST_STEP][PASSED] - logInfo("The <<<OLD>>> Website was detected by the STARTUP Process"): The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-04-28 08:02:05 - [MESSAGE][INFO] - The <<<OLD>>> Website was detected by the STARTUP Process
+
+2020-04-28 08:02:05 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Setup' successfully
+
+2020-04-28 08:02:05 - [TEST_STEP][PASSED] - "--------------------------------------": null
+
+2020-04-28 08:02:05 - [TEST_STEP][PASSED] - " Hit the <TRADES, APPLY HERE> Button  |": null
+
+2020-04-28 08:02:05 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here' successfully
+
+2020-04-28 08:02:05 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here: Test Cases/Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here
+
+2020-04-28 08:02:05 - [TEST_STEP][PASSED] - if (Website_Version == "new"): null
+
+2020-04-28 08:02:05 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application' is clicked on
+
+2020-04-28 08:02:05 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-04-28 08:02:05 - [TEST_STEP][PASSED] - " Click on <Trades> Header Button |": null
+
+2020-04-28 08:02:05 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades"), 10): Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades' is clickable
+
+2020-04-28 08:02:05 - [MESSAGE][PASSED] - Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades' is clickable
+
+2020-04-28 08:02:05 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades")): Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades' is clicked on
+
+2020-04-28 08:02:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Trades' is clicked on
+
+2020-04-28 08:02:06 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-04-28 08:02:06 - [TEST_STEP][PASSED] - " Click on <Find Out More> Banner |": null
+
+2020-04-28 08:02:06 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more"), 10): Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more' is clickable
+
+2020-04-28 08:02:06 - [MESSAGE][PASSED] - Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more' is clickable
+
+2020-04-28 08:02:06 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more")): Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more' is clicked on
+
+2020-04-28 08:02:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Find a tradesperson you can trust/div_Find out more' is clicked on
+
+2020-04-28 08:02:08 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-04-28 08:02:08 - [TEST_STEP][PASSED] - " Click on <Trade Application> B  |": null
+
+2020-04-28 08:02:08 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application"), 10): Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application' is clickable
+
+2020-04-28 08:02:08 - [MESSAGE][PASSED] - Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application' is clickable
+
+2020-04-28 08:02:08 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application")): Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application' is clicked on
+
+2020-04-28 08:02:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Membership Overview/span_Trades Application' is clicked on
+
+2020-04-28 08:02:11 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/Banner_Menu/Trades_Apply_Here' successfully
+
+2020-04-28 08:02:11 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-28 08:02:11 - [TEST_STEP][PASSED] - " Set - Full Name          |": null
+
+2020-04-28 08:02:11 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Full_Name"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name' successfully
+
+2020-04-28 08:02:11 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name
+
+2020-04-28 08:02:11 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-04-28 08:02:11 - [TEST_STEP][PASSED] - " Set First Name Field on App Sc  |": null
+
+2020-04-28 08:02:11 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName"), 10): Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName' is clickable
+
+2020-04-28 08:02:11 - [MESSAGE][PASSED] - Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName' is clickable
+
+2020-04-28 08:02:11 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName"), aFirstName): Text 'Ronald' is set on object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName'
+
+2020-04-28 08:02:11 - [MESSAGE][PASSED] - Text 'Ronald' is set on object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactFirstName'
+
+2020-04-28 08:02:11 - [TEST_STEP][PASSED] - "---------------------------------": null
+
+2020-04-28 08:02:11 - [TEST_STEP][PASSED] - " Set First Surname Field on App S|": null
+
+2020-04-28 08:02:11 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName"), 10): Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName' is clickable
+
+2020-04-28 08:02:11 - [MESSAGE][PASSED] - Object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName' is clickable
+
+2020-04-28 08:02:11 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName"), aSurName): Text 'MacGinty' is set on object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName'
+
+2020-04-28 08:02:12 - [MESSAGE][PASSED] - Text 'MacGinty' is set on object 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_find out more_ctl00contenttbContactLastName'
+
+2020-04-28 08:02:12 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Full_Name' successfully
+
+2020-04-28 08:02:12 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-28 08:02:12 - [TEST_STEP][PASSED] - " Set - Email Address      |": null
+
+2020-04-28 08:02:12 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Email_Address"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address' successfully
+
+2020-04-28 08:02:12 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address
+
+2020-04-28 08:02:12 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail"), EmailAddress): Text 'ron_mctavish@xtc_0z0.com' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail'
+
+2020-04-28 08:02:12 - [MESSAGE][PASSED] - Text 'ron_mctavish@xtc_0z0.com' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Email Address_ctl00contenttbContactEmail'
+
+2020-04-28 08:02:12 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Email_Address' successfully
+
+2020-04-28 08:02:12 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-28 08:02:12 - [TEST_STEP][PASSED] - " Set - Company Name       |": null
+
+2020-04-28 08:02:12 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Company_Name"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name' successfully
+
+2020-04-28 08:02:12 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name
+
+2020-04-28 08:02:12 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName"), CompanyName): Text 'Gutter Snipes' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName'
+
+2020-04-28 08:02:12 - [MESSAGE][PASSED] - Text 'Gutter Snipes' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Company Name_ctl00contenttbCompanyName'
+
+2020-04-28 08:02:12 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Company_Name' successfully
+
+2020-04-28 08:02:12 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-28 08:02:12 - [TEST_STEP][PASSED] - " Set - Trade Category     |": null
+
+2020-04-28 08:02:12 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-28 08:02:12 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-28 08:02:12 - [TEST_STEP][PASSED] - " lookup - Trade Category  |": null
+
+2020-04-28 08:02:12 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-28 08:02:12 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-28 08:02:12 - [TEST_STEP][PASSED] - " Postcode Prompt          |": null
+
+2020-04-28 08:02:12 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-28 08:02:12 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-28 08:02:12 - [TEST_STEP][PASSED] - " Set - Postcode           |": null
+
+2020-04-28 08:02:12 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-28 08:02:12 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-28 08:02:12 - [TEST_STEP][PASSED] - " Set - Contact Number     |": null
+
+2020-04-28 08:02:12 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number' successfully
+
+2020-04-28 08:02:12 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number
+
+2020-04-28 08:02:12 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob"), ContactNumber): Text '02380123456' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob'
+
+2020-04-28 08:02:13 - [MESSAGE][PASSED] - Text '02380123456' is set on object 'Object Repository/Page_Checkatrade Want to build your business/input_Contact Number_ctl00contenttbContactMob'
+
+2020-04-28 08:02:13 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Contact_Number' successfully
+
+2020-04-28 08:02:13 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-28 08:02:13 - [TEST_STEP][PASSED] - " Set - Postcode NEW       |": null
+
+2020-04-28 08:02:13 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Set_Postcode"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode' successfully
+
+2020-04-28 08:02:13 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode: Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode
+
+2020-04-28 08:02:13 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Checkatrade Want to build your business/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode"), postcode): Text 'PO12 4SD' is set on object 'Object Repository/Page_Checkatrade Want to build your business/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode'
+
+2020-04-28 08:02:13 - [MESSAGE][PASSED] - Text 'PO12 4SD' is set on object 'Object Repository/Page_Checkatrade Want to build your business/Page_Checkatrade Want to build your business/input_Postcode_ctl00contenttbPostCode'
+
+2020-04-28 08:02:13 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Set_Postcode' successfully
+
+2020-04-28 08:02:13 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-28 08:02:13 - [TEST_STEP][PASSED] - " Hit the <SUBMIT> Button  |": null
+
+2020-04-28 08:02:13 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Hit_Submit"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit' successfully
+
+2020-04-28 08:02:13 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit: Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit
+
+2020-04-28 08:02:13 - [TEST_STEP][PASSED] - "----------------------------------------------------------------------------------": null
+
+2020-04-28 08:02:13 - [TEST_STEP][PASSED] - "SUBMIT BUTTON IS OFF THE BOTTOM OF THE PAGE - SO NEED TO SCROLL TO BOTTOM OF PAGE |": null
+
+2020-04-28 08:02:13 - [TEST_STEP][PASSED] - "----------------------------------------------------------------------------------": null
+
+2020-04-28 08:02:13 - [TEST_STEP][PASSED] - "Wholesale cahnges on 05/12/2019 Cause refactor - Old left Commented": null
+
+2020-04-28 08:02:13 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-04-28 08:02:14 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-04-28 08:02:14 - [TEST_STEP][PASSED] - "-------------": null
+
+2020-04-28 08:02:14 - [TEST_STEP][PASSED] - "Click Submit |": null
+
+2020-04-28 08:02:14 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_Privacy Notice_ctl00contentbtnSubmit")): Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_Privacy Notice_ctl00contentbtnSubmit' is clicked on
+
+2020-04-28 08:02:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Trades_Apply_Here/Page_Checkatrade Want to build your business/input_Privacy Notice_ctl00contentbtnSubmit' is clicked on
+
+2020-04-28 08:02:17 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Hit_Submit' successfully
+
+2020-04-28 08:02:17 - [TEST_STEP][PASSED] - "---------------------------------------------------": null
+
+2020-04-28 08:02:17 - [TEST_STEP][PASSED] - "Verify CONGRATULATIONS is reported after form fill ": null
+
+2020-04-28 08:02:17 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported' successfully
+
+2020-04-28 08:02:17 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported: Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported
+
+2020-04-28 08:02:17 - [TEST_STEP][PASSED] - "-----------------------------": null
+
+2020-04-28 08:02:17 - [TEST_STEP][PASSED] - waitForPageLoad(60): Wait for page load successfully
+
+2020-04-28 08:02:17 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2020-04-28 08:02:17 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-04-28 08:02:18 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-04-28 08:02:18 - [TEST_STEP][PASSED] - "-----------------------------": null
+
+2020-04-28 08:02:18 - [TEST_STEP][PASSED] - verifyTextPresent("Congratulations, you're one step closer to becoming a Checkatrade Member!", false): Text 'Congratulations, you're one step closer to becoming a Checkatrade Member!' is present on page 
+
+2020-04-28 08:02:19 - [MESSAGE][PASSED] - Text 'Congratulations, you're one step closer to becoming a Checkatrade Member!' is present on page 
+
+2020-04-28 08:02:19 - [TEST_STEP][PASSED] - verifyTextPresent("One of the team will call you within 1 working day to discuss how a Checkatrade membership can work for you", false): Text 'One of the team will call you within 1 working day to discuss how a Checkatrade membership can work for you' is present on page 
+
+2020-04-28 08:02:19 - [MESSAGE][PASSED] - Text 'One of the team will call you within 1 working day to discuss how a Checkatrade membership can work for you' is present on page 
+
+2020-04-28 08:02:19 - [TEST_STEP][PASSED] - verifyTextPresent("Thank you for your interest, we look forward to speaking to you", false): Text 'Thank you for your interest, we look forward to speaking to you' is present on page 
+
+2020-04-28 08:02:19 - [MESSAGE][PASSED] - Text 'Thank you for your interest, we look forward to speaking to you' is present on page 
+
+2020-04-28 08:02:19 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/TRADES_Application/Congratulations_Reported' successfully
+
+2020-04-28 08:02:19 - [TEST_STEP][PASSED] - "--------------------------": null
+
+2020-04-28 08:02:19 - [TEST_STEP][PASSED] - " Teardown - CLose Browser |": null
+
+2020-04-28 08:02:19 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Reusable_Test_Sequences/CAT_Teardown"), [:], OPTIONAL): Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully
+
+2020-04-28 08:02:19 - [TEST_CASE][PASSED] - Test Cases/Reusable_Test_Sequences/CAT_Teardown: Test Cases/Reusable_Test_Sequences/CAT_Teardown
+
+2020-04-28 08:02:19 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-04-28 08:02:22 - [MESSAGE][PASSED] - Browser is closed
+
+2020-04-28 08:02:22 - [TEST_STEP][PASSED] - super.finalize(): null
+
+2020-04-28 08:02:22 - [TEST_STEP][PASSED] - System.gc(): null
+
+2020-04-28 08:02:22 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Reusable_Test_Sequences/CAT_Teardown' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-04-28 08:00:44 - [TEST_SUITE][PASSED] - Trades_Apply_Here: Test Cases/Sign_Up/Trades_Apply_Here]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

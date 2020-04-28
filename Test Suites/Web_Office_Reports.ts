@@ -232,4 +232,64 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Web_Office/Reports/Feedback_Cap_Report</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>e238e446-47fb-4f7a-8028-0e76ea24746f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Reports/Feedback_Data_Entry</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8b90462f-6e9b-4cd5-9205-d88f7f9ec147</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Reports/Feedback_Reviewed</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>770c8b85-fcc4-4a42-9179-039ba2eafda5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Reports/Reference_Statistics_Report</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>80b2cf0d-3d2c-455b-bb28-662db28145d8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Reports/Spotcheck_Yearly</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>523a2f4e-6548-47ed-b569-eaa2624fa4a1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Reports/Spotcheck_Updated</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ea95d239-49d8-4efe-93c0-cf5713c4d11a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Reports/Spotcheck_Feedback_Reasons</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>261792fb-4875-40b8-8efe-a168428cfb84</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Reports/Membership_Consultant_Map</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8c3342ef-2a8f-4b76-854f-aa878aad7484</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Reports/Staff_Sales_Appointments</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b72d0fc4-cbfd-4cb1-9d6b-abee236df7fd</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Reports/Staff_Sales_Mailing</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a610cbe2-7d11-47c1-8deb-11910a93ef66</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web_Office/Reports/Staff_Sales_Response_To_Visit</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
