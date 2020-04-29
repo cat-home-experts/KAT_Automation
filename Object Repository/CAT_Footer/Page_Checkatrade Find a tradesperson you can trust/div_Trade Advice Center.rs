@@ -14,7 +14,7 @@
          <value>//div[@id='ctl00_pnlMasterFooter']/div/div/div/div/div/a[3]/div</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
