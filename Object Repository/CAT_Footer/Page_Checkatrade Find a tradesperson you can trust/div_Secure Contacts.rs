@@ -6,11 +6,15 @@
    <elementGuidId>f56efdbd-8085-4263-a9e3-10a5565cdd21</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Secure Contacts' or . = 'Secure Contacts')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//div[@id='ctl00_pnlMasterFooter']/div/div/div/div/div[2]/a[5]/div</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

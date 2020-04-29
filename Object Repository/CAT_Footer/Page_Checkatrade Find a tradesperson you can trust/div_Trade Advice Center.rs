@@ -6,11 +6,15 @@
    <elementGuidId>17ec8037-4a1d-4b6a-bac4-89b6153c633c</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Trade Advice Center' or . = 'Trade Advice Center')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//div[@id='ctl00_pnlMasterFooter']/div/div/div/div/div/a[3]/div</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

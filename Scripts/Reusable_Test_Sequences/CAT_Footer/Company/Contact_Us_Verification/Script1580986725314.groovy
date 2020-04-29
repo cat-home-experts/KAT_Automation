@@ -54,7 +54,8 @@ import internal.GlobalVariable as GlobalVariable
 '----------------------------------------------'
 WebUI.delay(1)
 '----------------------------------------------'
-WebUI.waitForPageLoad(60)
+WebUI.waitForPageLoad(120)
+//WebUI.waitForElementClickable(findTestObject('Object Repository/CAT_Footer/Page_Checkatrade Contact us/div_Apply Online'), 20)
 
 ////////////////////////////////////////////////////////////
 //     Take an Initial Screenshot of Home After Login     //
@@ -166,6 +167,7 @@ WebUI.verifyTextPresent("Tel:01243 601234", false)
 '----------------------------------------------'
 WebUI.verifyTextPresent("contact@checkatrade.com", false)
 '----------------------------------------------'
+//                       contact@checkatrade.com
 
 WebUI.scrollToPosition(1000, 1000)
 WebUI.delay(1)

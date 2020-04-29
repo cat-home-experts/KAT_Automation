@@ -6,11 +6,15 @@
    <elementGuidId>a0a54b59-0952-4711-a28d-d0d0c6f8d5a2</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Contact Us' or . = 'Contact Us')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//div[@id='ctl00_pnlMasterFooter']/div/div/div/div/div[3]/a[7]/div</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

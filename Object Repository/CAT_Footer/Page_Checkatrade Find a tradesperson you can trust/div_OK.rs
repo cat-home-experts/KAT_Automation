@@ -6,11 +6,15 @@
    <elementGuidId>180d0431-5e71-443f-802d-5dcd12383a26</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'OK' or . = 'OK')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//body[@id='ctl00_body']/div/div[2]/div[4]/div[2]/div</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

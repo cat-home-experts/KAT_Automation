@@ -6,11 +6,15 @@
    <elementGuidId>22de5d7b-acef-4689-bfb5-11a407167ac6</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Find Out More' or . = 'Find Out More')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//div[@id='ctl00_pnlMasterFooter']/div/div/div/div/div/a/div</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

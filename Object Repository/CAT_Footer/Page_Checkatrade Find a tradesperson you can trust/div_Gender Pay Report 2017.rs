@@ -6,6 +6,10 @@
    <elementGuidId>aeddf4dd-e94b-41d2-aab2-63d6c4f00729</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Gender Pay Report 2017' or . = 'Gender Pay Report 2017')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//div[@id='ctl00_pnlMasterFooter']/div/div/div/div/div[3]/a[4]/div</value>
       </entry>
